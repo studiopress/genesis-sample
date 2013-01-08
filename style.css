@@ -1,0 +1,1362 @@
+/*
+	Theme Name: Genesis Sample
+	Description: This is the sample theme created for the Genesis Framework.
+	Author: StudioPress
+	Author URI: http://www.studiopress.com/
+ 
+	Version: 1.9
+ 
+	Tags: black, orange, white, one-column, two-columns, three-columns, fixed-width, custom-menu, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
+ 
+	Template: genesis
+	Template Version: 1.9
+ 
+	License: GPL-2.0+
+	License URI: http://www.opensource.org/licenses/gpl-license.php 
+*/
+ 
+
+/* Table of Contents
+
+	01 Import Fonts
+	02 Defaults
+	03 Typography
+		- Font Color
+		- Font Family
+		- Font Size
+		- Font Miscellaneous
+	04 Layout
+		- Structure
+		- 1152px CSS Grid
+		- Header
+		- Main Content
+		- Post Info & Meta
+		- Column Classes
+		- Miscellaneous
+	05 Menus
+		- Primary Navigation Extras
+	06 Headings
+	07 Lists
+	08 Post Navigation
+	09 Comments
+	10 Sidebars
+	11 Footer
+		- Footer Widgets
+	12 Forms & Buttons
+		- Gravity Forms
+	13 Images & Captions
+	14 Media Queries
+		- max-width: 1024px
+		- max-width: 768px
+		- max-width: 480px
+
+*/
+
+
+/*
+01 Import Fonts
+---------------------------------------------------------------------------------------------------- */
+
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
+
+/*
+02 Defaults
+---------------------------------------------------------------------------------------------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+input, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+html {
+	font-size: 100%; /* 16px browser default */
+}
+
+body {
+	background-color: #fff;
+	line-height: 1;
+}
+
+body,
+input,
+select,
+textarea,
+.footer-widgets-1,
+.footer-widgets-2,
+.footer-widgets-3 {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+a,
+a:visited,
+button,
+input[type="button"],
+input[type="submit"],
+.btn {
+	-moz-transition: all 0.1s ease-in-out;
+	-webkit-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;
+}
+
+::-moz-selection {
+	background-color: #1e1e1e;
+	color: #fff;
+}
+
+::selection {
+	background-color: #1e1e1e;
+	color: #fff;
+}
+
+a img {
+	border: none;
+}
+
+
+/*
+03 Typography
+-------------------------------------------------------------------------------------------------------
+
+	This section covers font colors, families, size, styles and weight.
+
+	This style sheet uses rem values with a pixel fallback.
+	The rem values are calculated per the examples below:
+
+	12 / 16 =		0.75rem
+	14 / 16 =		0.875rem
+	16 / 16 =		1rem	
+	18 / 16 =		1.125rem
+	20 / 16 =		1.25rem
+	24 / 16 =		1.5rem
+	30 / 16 =		1.875rem
+	36 / 16 =		2.25rem
+	42 / 16 =		2.625rem
+	48 / 16 =		3rem
+	
+	Further reading on the use and compatibility of rems:
+	
+	http://caniuse.com/rem
+	http://snook.ca/archives/html_and_css/font-size-with-rem
+	
+*/
+
+/* 03a - Font Color ----------- */
+
+a:hover,
+body,
+h2 a,
+h2 a:visited,
+h4.widgettitle a,
+input,
+.author,
+.date,
+.genesis-nav-menu a,
+.genesis-nav-menu li li a,
+.genesis-nav-menu li li a:link,
+.genesis-nav-menu li li a:visited,
+.post-comments,
+#title a,
+#title a:hover {
+	color: #1e1e1e;
+}
+
+a,
+h2 a:hover,
+.genesis-nav-menu li a:hover,
+.genesis-nav-menu li:hover a,
+.genesis-nav-menu li li a:hover,
+.genesis-nav-menu .current-menu-item a {
+	color: #ff2a00;
+}
+
+.post-info,
+.post-meta,
+#description {
+	color: #636363;
+}
+
+blockquote::before,
+blockquote p,
+input,
+select,
+textarea {
+	color: #999;
+}
+
+button,
+input[type="button"],
+input[type="submit"],
+.btn,
+.genesis-nav-menu .highlight-menu-item a,
+.genesis-nav-menu .highlight-menu-item a:hover,
+.navigation li a,
+.navigation li a:hover,
+.navigation li.active a,
+.navigation li.disabled {
+	color: #fff;
+}
+
+/* 03b - Font Family ----------- */
+
+body,
+input,
+textarea,
+.author-box h1 {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.entry-title a,
+#title {
+	font-family: 'Lato', sans-serif;
+}
+
+/* 03c - Font Size ----------- */
+
+#title {
+	font-size: 42px;
+	font-size: 2.625rem;
+}
+
+h1,
+.entry-title,
+.entry-title a {
+	font-size: 36px;
+	font-size: 2.25rem;
+}
+
+blockquote::before {
+	font-size: 32px;
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 30px;
+	font-size: 1.875rem;
+}
+
+h3 {
+	font-size: 24px;
+	font-size: 1.5rem;
+}
+
+h4,
+.archive-title,
+.taxonomy-description h1,
+.widgettitle {
+	font-size: 20px;
+	font-size: 1.25rem;
+}
+
+h5 {
+	font-size: 18px;
+	font-size: 1.125rem;
+}
+
+h6,
+.author-box h1,
+.sidebar h2 a {
+	font-size: 16px;
+	font-size: 1rem;
+}
+
+input,
+select,
+textarea,
+.genesis-nav-menu,
+.post-info,
+.post-meta,
+.wp-caption,
+#footer p {
+	font-size: 14px;
+	font-size: 0.875rem;
+}
+
+
+/* 03d - Font Miscellaneous ----------- */
+
+blockquote p {
+	font-style: italic;
+}
+
+cite {
+	font-style: normal;
+}
+
+button,
+input[type="button"],
+input[type="submit"],
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.btn,
+.entry-title a,
+.genesis-nav-menu,
+.post-comments,
+.post-info .author,
+.post-info .date,
+.wp-caption,
+#footer p,
+#title {
+	font-weight: 700;
+}
+
+.wp-caption {
+	text-align: center;
+}
+
+h2 a,
+h2 a:visited,
+.genesis-nav-menu a,
+.navigation li a,
+.widgettitle a,
+#title a {
+	text-decoration: none;
+}
+
+
+/*
+04 Layout
+---------------------------------------------------------------------------------------------------- */
+
+/* 04a - Structure ----------- */
+
+#wrap {
+	margin: 0 auto;
+	max-width: 1152px;
+}
+
+#inner {
+	clear: both;
+	overflow: hidden;
+	padding-top: 40px;
+	padding-top: 2.5rem;
+}
+
+/* 04b - 1152px CSS Grid ----------- */
+
+#sidebar-alt {
+	width: 15.277777777%; /* 176px / 1152px */
+}
+
+.footer-widgets-1,
+.footer-widgets-2,
+.footer-widgets-3,
+.sidebar,
+#header .widget-area {
+	width: 30.555555555%; /* 352px / 1152px */
+}
+
+.content-sidebar-sidebar .sidebar,
+.sidebar-content-sidebar .sidebar,
+.sidebar-sidebar-content .sidebar {
+	width: 37.931034482%; /* 352px / 928px */
+}
+
+.content-sidebar-sidebar #content,
+.sidebar-content-sidebar #content,
+.sidebar-sidebar-content #content {
+	width: 56.896551724%; /* 528px / 928px */
+}
+
+.content-sidebar #content,
+.sidebar-content #content,
+#title-area {
+	width: 65.277777777%; /* 752px / 1152px */
+}
+
+.content-sidebar-sidebar #content-sidebar-wrap,
+.sidebar-content-sidebar #content-sidebar-wrap,
+.sidebar-sidebar-content #content-sidebar-wrap {
+	width: 80.555555555%; /* 928px / 1152px */
+}
+
+.content-sidebar #content-sidebar-wrap,
+.full-width-content #content,
+.full-width-content #content-sidebar-wrap,
+.sidebar-content #content-sidebar-wrap {
+	width: 100%; /* 1152px / 1152px */
+}
+
+.footer-widgets-1,
+.footer-widgets-2,
+.sidebar-content #sidebar,
+.sidebar-sidebar-content #sidebar,
+#content,
+#content-sidebar-wrap,
+#footer .gototop,
+#sidebar-alt,
+#title-area {
+	float: left;
+}
+
+.content-sidebar-sidebar #sidebar-alt,
+.footer-widgets-3,
+.sidebar,
+.sidebar-content #content,
+.sidebar-content-sidebar #content-sidebar-wrap,
+.sidebar-sidebar-content #content,
+.sidebar-sidebar-content #content-sidebar-wrap,
+#footer .creds,
+#header .widget-area {
+	float: right;
+}
+
+/* 04c - Header ----------- */
+
+#header {
+	border-bottom: 2px solid #1e1e1e;
+	min-height: 120px;
+	overflow: hidden;
+	padding-bottom: 32px;
+	padding-bottom: 2rem;
+}
+
+#title {
+	line-height: 1;
+	margin: 40px 0 8px;
+	margin: 2.5rem 0 0.5rem;
+}
+
+.header-image #title {
+	margin: 0;
+}
+
+#description {
+	line-height: 1.25;
+}
+
+.header-full-width #title,
+.header-full-width #title a,
+.header-full-width #title-area {
+	width: 100%;
+}
+
+.header-image #title,
+.header-image #title a,
+.header-image #title-area {
+	display: block;
+	float: left;
+	min-height: 120px;
+	overflow: hidden;
+	text-indent: -9999px;
+	width: 50%;
+}
+
+.header-image #description {
+	display: block;
+	overflow: hidden;
+}
+
+/* 04d - Main Content ----------- */
+
+#content {
+	padding-bottom: 40px;
+	padding-bottom: 2.5rem;
+}
+
+.entry,
+.page .post.entry {
+	margin-bottom: 80px;
+	margin-bottom: 5rem;
+}
+
+.single .entry {
+	margin-bottom: 48px;
+	margin-bottom: 3rem;
+}
+
+.page .entry {
+	margin: 0;
+}
+
+.entry-content {
+	overflow: hidden;
+}
+
+.entry-content,
+.entry-content p {
+	line-height: 1.625;
+}
+
+.entry-content p {
+	margin-bottom: 26px;
+	margin-bottom: 1.625rem;
+}
+
+blockquote {
+	padding: 24px 64px;
+	padding: 1.5rem 4rem;
+}
+
+blockquote::before {
+	content: "“";
+	display: block;
+	height: 0;
+	left: -20px;
+	position: relative;
+	top: -10px;
+}
+
+/* 04e - Post Info & Meta ----------- */
+
+.post-info,
+.post-meta {
+	clear: both;
+	line-height: 1.5;
+}
+
+.post-info {
+	margin-bottom: 24px;
+	margin-bottom: 1.5rem;
+}
+
+.post-comments {
+	background: url(images/post-comments.png) no-repeat center left;
+	margin-left: 16px;
+	margin-left: 1rem;
+	padding-left: 20px;
+	padding-left: 1.25rem;
+}
+
+.post-meta {
+	border-top: 1px solid #ccc;
+	padding-top: 24px;
+	padding-top: 1.5rem;
+}
+
+.categories,
+.tags {
+	display: block;
+}
+
+/* 04f - Column Classes ----------- */
+
+.five-sixths,
+.four-fifths,
+.four-sixths,
+.one-fifth,
+.one-fourth,
+.one-half,
+.one-sixth,
+.one-third,
+.three-fifths,
+.three-fourths,
+.three-sixths,
+.two-fifths,
+.two-fourths,
+.two-sixths,
+.two-thirds {
+	float: left;
+	margin-left: 4.166666666%; /* 48px / 1152px */
+}
+
+.one-half,
+.three-sixths,
+.two-fourths {
+	width: 47.9166666666%; /* 552px / 1152px */
+}
+
+.one-third,
+.two-sixths {
+	width: 30.555555555%; /* 352px / 1152px */
+}
+
+.four-sixths,
+.two-thirds {
+	width: 65.277777777%; /* 752px / 1152px */
+}
+
+.one-fourth {
+	width: 21.875%; /* 252px / 1152px */
+}
+
+.three-fourths {
+	width: 73.958333333%; /* 852px / 1152px */
+}
+
+.one-fifth {
+	width: 16.666666666%; /* 192px / 1152px */
+}
+
+.two-fifths {
+	width: 37.5%; /* 432px / 1152px */
+}
+
+.three-fifths {
+	width: 58.333333333%; /* 672px / 1152px */
+}
+
+.four-fifths {
+	width: 79.166666666%; /* 912px / 1152px */
+}
+
+.one-sixth {
+	width: 13.194444444%; /* 152px / 1152px */
+}
+
+.five-sixths {
+	width: 82.638888888%; /* 952px / 1152px */
+}
+
+.first {
+	margin-left: 0;
+}
+
+/* 04g - Miscellaneous ----------- */
+
+p.subscribe-to-comments {
+	padding: 24px 0 16px;
+	padding: 1.5rem 0 1rem;
+}
+
+p.pages,
+.clear,
+.clear-line,
+.first {
+	clear: both;
+}
+
+.clear-line {
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 26px;
+	margin-bottom: 1.625rem;
+}
+
+.alignleft,
+.archive-page {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+.archive-page {
+	width: 50%;
+}
+
+.author-box,
+.sticky {
+	margin-bottom: 80px;
+	margin-bottom: 5rem;
+}
+
+.author-box,
+.author-box h1,
+.taxonomy-description {
+	line-height: 1.5;
+}
+
+.author-box,
+.breadcrumb,
+.sticky,
+.taxonomy-description {
+	background-color: #f5f5f5;
+	margin-bottom: 48px;
+	margin-bottom: 3rem;
+	overflow: hidden;
+	padding: 32px;
+	padding: 2rem;
+}
+
+
+/*
+05 Menus
+---------------------------------------------------------------------------------------------------- */
+
+.genesis-nav-menu {
+	clear: both;
+	overflow: hidden;
+}
+
+#header .genesis-nav-menu {
+	float: right;
+	margin-top: 48px;
+	margin-top: 3rem;
+	width: auto;
+}
+
+.genesis-nav-menu.menu-primary,
+.genesis-nav-menu.menu-secondary {
+	border-bottom: 1px solid #ccc;
+}
+
+.genesis-nav-menu ul {
+	float: left;
+	width: 100%;
+}
+
+.genesis-nav-menu li {
+	display: inline-block;
+	float: left;
+	list-style-type: none;
+	text-align: left;
+}
+
+.genesis-nav-menu a {
+	display: block;
+	padding: 24px 20px;
+	padding: 1.5rem 1.25rem;
+	position: relative;
+}
+
+.genesis-nav-menu li.highlight-menu-item {
+	margin-left: 20px;
+	margin-left: 1.25rem;
+}
+
+.genesis-nav-menu .highlight-menu-item a {
+	background-color: #1e1e1e;
+}
+
+.genesis-nav-menu .highlight-menu-item a:hover {
+	background-color: #ff2a00;
+}
+
+.genesis-nav-menu li li a,
+.genesis-nav-menu li li a:link,
+.genesis-nav-menu li li a:visited {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-top: none;
+	padding: 20px;
+	padding: 1.25rem;
+	position: relative;
+	width: 170px;
+}
+
+.genesis-nav-menu li ul {
+	left: -9999px;
+	position: absolute;
+	width: 212px;
+	z-index: 99;
+}
+
+.genesis-nav-menu li ul ul {
+	margin: -55px 0 0 211px;
+}
+
+.genesis-nav-menu li:hover ul ul,
+.genesis-nav-menu li.sfHover ul ul {
+	left: -9999px;
+}
+
+.genesis-nav-menu li:hover,
+.genesis-nav-menu li.sfHover {
+	position: static;
+}
+
+ul.genesis-nav-menu li:hover>ul,
+ul.genesis-nav-menu li.sfHover ul,
+#header .genesis-nav-menu li:hover>ul,
+#header .genesis-nav-menu li.sfHover ul {
+	left: auto;
+}
+
+.genesis-nav-menu li a .sf-sub-indicator,
+.genesis-nav-menu li li a .sf-sub-indicator,
+.genesis-nav-menu li li li a .sf-sub-indicator {
+	position: absolute;
+	text-indent: -9999px;
+}
+
+#wpadminbar li:hover ul ul {
+	left: 0;
+}
+
+/* 05a - Primary Navigation Extras ----------- */
+
+.genesis-nav-menu li.right {
+	float: right;
+	padding: 24px 20px;
+	padding: 1.5rem 1.25rem;
+}
+
+.genesis-nav-menu li.right a {
+	display: inline;
+	padding: 0;
+}
+
+.genesis-nav-menu li.search {
+	padding: 6px 0 0;
+	padding: 0.375rem 0 0;
+}
+
+.genesis-nav-menu li.rss a {
+	background: url(images/rss.png) no-repeat center left;
+	margin-left: 20px;
+	margin-left: 1.25rem;
+	padding-left: 20px;
+	padding-left: 1.25rem;
+}
+
+.genesis-nav-menu li.twitter a {
+	background: url(images/twitter-nav.png) no-repeat center left;
+	padding-left: 24px;
+	padding-left: 1.5rem;
+}
+
+
+/*
+06 Headings
+---------------------------------------------------------------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.entry-title a {
+	line-height: 1.2;
+	margin-bottom: 16px;
+	margin-bottom: 1rem;
+}
+
+.author-box h1 {
+	margin: 0
+}
+
+.taxonomy-description h1 {
+	margin-bottom: 4px;
+	margin-bottom: 0.25rem;
+}
+
+.archive-title {
+	margin-bottom: 24px;
+	margin-bottom: 1.5rem;
+}
+
+
+/*
+07 Lists
+---------------------------------------------------------------------------------------------------- */
+
+.entry-content ol,
+.entry-content ul {
+	margin-bottom: 26px;
+	margin-bottom: 1.625rem;
+}
+
+.entry-content ol li,
+.entry-content ul li {
+	line-height: 1.625;
+}
+
+.entry-content ol li,
+.entry-content ul li {
+	margin-left: 40px;
+	margin-left: 2.5rem;
+}
+
+.entry-content ol li {
+	list-style-type: decimal;
+}
+
+.entry-content ul li {
+	list-style-type: disc;
+}
+
+.entry-content ol ol,
+.entry-content ul ul {
+	margin-bottom: 0;
+}
+
+
+/*
+08 Post Navigation
+---------------------------------------------------------------------------------------------------- */
+
+.navigation li {
+	display: inline;
+}
+
+.navigation li a,
+.navigation li a:hover,
+.navigation li.active a,
+.navigation li.disabled {
+	background-color: #1e1e1e;
+	border-radius: 3px;
+	cursor: pointer;
+	padding: 12px;
+	padding: 0.75rem;
+}
+
+.navigation li a:hover,
+.navigation li.active a {
+	background-color: #ff2a00;
+}
+
+
+/*
+09 Comments
+---------------------------------------------------------------------------------------------------- */
+
+#comments,
+#respond {
+	line-height: 1.5;
+	overflow: hidden;
+}
+
+.ping-list,
+#comments {
+	margin-bottom: 48px;
+	margin-bottom: 3rem;
+}
+
+#author,
+#email,
+#url {
+	width: 50%;
+}
+
+.commentmetadata,
+#author,
+#email,
+#url {
+	margin-bottom: 12px;
+	margin-bottom: 0.75rem;
+}
+
+#comment {
+	margin: 12px 0;
+	margin: 0.75rem 0;
+}
+
+label {
+	margin-left: 12px;
+	margin-left: 0.75rem;
+}
+
+.comment-list li,
+.ping-list li {
+	list-style-type: none;
+	margin-top: 24px;
+	margin-top: 1.5rem;
+	padding: 32px;
+	padding: 2rem;
+}
+
+.comment-list li ul li {
+	margin-right: -32px;
+	margin-right: -2rem;
+}
+
+.comment-header {
+	overflow: hidden;
+}
+
+.comment {
+	background-color: #f5f5f5;
+	border: 2px solid #fff;
+	border-right: none;
+}
+
+.comment-content p {
+	margin-bottom: 24px;
+	margin-bottom: 1.5rem;
+}
+
+.bypostauthor {
+}
+
+#comments .navigation {
+	margin-top: 32px;
+	margin-top: 2rem;
+}
+
+
+/*
+10 Sidebars
+---------------------------------------------------------------------------------------------------- */
+
+.sidebar {
+	display: inline;
+	line-height: 1.5;
+}
+
+.sidebar p {
+	margin-bottom: 16px;
+	margin-bottom: 1rem;
+}
+
+.sidebar .widget {
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 32px;
+	margin-bottom: 2rem;
+	padding-bottom: 32px;
+	padding-bottom: 2rem;
+	overflow: hidden;
+}
+
+.sidebar.widget-area ul li {
+	list-style-type: none;
+	margin-bottom: 6px;
+	margin-bottom: 0.375rem;
+	word-wrap: break-word;
+}
+
+
+/*
+11 Footer
+---------------------------------------------------------------------------------------------------- */
+
+#footer {
+	clear: both;
+}
+
+#footer .wrap {
+	border-top: 2px solid #1e1e1e;
+	overflow: hidden;
+	padding: 48px 0;
+	padding: 3rem 0;
+}
+
+#footer .creds {
+	text-align: right;
+}
+
+#footer .creds,
+#footer .gototop {
+	margin: 8px 0;
+	margin: 0.5rem 0;
+}
+
+/* 11a - Footer Widgets ----------- */
+
+.footer-widgets {
+	border-top: 2px solid #1e1e1e;
+	clear: both;
+	line-height: 1.5;
+	overflow: hidden;
+	padding: 32px 0 16px;
+	padding: 2rem 0 1rem;
+}
+
+.footer-widgets p {
+	margin-bottom: 16px;
+	margin-bottom: 1rem;
+}
+
+.footer-widgets .widget {
+	margin-bottom: 24px;
+	margin-bottom: 1.5rem;
+}
+
+.footer-widgets .widget-area ul li {
+	list-style-type: none;
+	margin-bottom: 6px;
+	margin-bottom: 0.375rem;
+	word-wrap: break-word;
+}
+
+.footer-widgets-1 {
+	margin-right: 4.166666666%; /* 48px / 1152px */
+}
+
+
+/*
+12 Forms & Buttons
+---------------------------------------------------------------------------------------------------- */
+
+input,
+select,
+textarea {
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	box-shadow: 0 0 5px #ddd inset;
+	padding: 16px;
+	padding: 1rem;
+	width: 100%;
+}
+
+#header .search-form {
+	float: right;
+	margin-top: 56px;
+	margin-top: 3.5rem;
+	width: 100%;
+}
+
+button,
+input[type="button"],
+input[type="submit"],
+.btn {
+	background-color: #1e1e1e;
+	border: none;
+	box-shadow: none;
+	cursor: pointer;
+	padding: 16px 24px;
+	padding: 1rem 1.5rem;
+	width: auto;
+}
+
+button:hover,
+input:hover[type="button"],
+input:hover[type="submit"],
+.btn:hover {
+	background-color: #ff2a00;
+}
+
+.enews input[type="submit"],
+.search-form input[type="submit"] {
+	border: 0;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+/* 12a - Gravity Forms ----------- */
+
+#content div.gform_wrapper input,
+#content div.gform_wrapper select,
+#content div.gform_wrapper textarea,
+#content div.gform_wrapper .ginput_complex label {
+	font-size: 16px;
+	font-size: 1rem;
+	padding: 16px;
+	padding: 1rem;
+}
+
+#content div.gform_wrapper input[type="submit"] {
+	padding: 16px 24px;
+	padding: 1rem 1.5rem;
+}
+
+#content div.gform_wrapper .ginput_complex label {
+	padding: 0;
+}
+
+div.gform_wrapper li,
+div.gform_wrapper form li {
+	margin: 16px 0 0;
+	margin: 1rem 0 0;
+}
+
+
+/*
+13 Images & Captions
+---------------------------------------------------------------------------------------------------- */
+
+embed,
+img,
+object,
+video {
+	max-width: 100%;
+}
+
+img {
+	height: auto;
+}
+
+.alignleft .avatar {
+	margin-right: 24px;
+	margin-right: 1.5rem;
+}
+
+.alignright .avatar {
+	margin-left: 24px;
+	margin-left: 1.5rem;
+}
+
+.author-box .avatar {
+	float: left;
+	margin-right: 24px;
+	margin-right: 1.5rem
+}
+
+.comment-list li .avatar {
+	float: left;
+	margin: 0 16px 24px 0;
+	margin: 0 1rem 1.5rem 0;
+}
+
+img.centered,
+.aligncenter {
+	display: block;
+	margin: 0 auto 24px;
+	margin: 0 auto 1.5rem
+}
+
+img.alignnone {
+	display: inline;
+	margin-bottom: 12px;
+	margin-bottom: 0.75rem;
+}
+
+img.alignleft,
+.post-image,
+.wp-caption.alignleft {
+	display: inline;
+	margin: 0 24px 24px 0;
+	margin: 0 1.5rem 1.5rem 0;
+}
+
+img.alignright,
+.wp-caption.alignright {
+	display: inline;
+	margin: 0 0 24px 24px;
+	margin: 0 0 1.5rem 1.5rem;
+}
+
+p.wp-caption-text {
+	line-height: 1.2;
+	margin-top: 12px;
+	margin-top: 0.75rem;
+}
+
+.gallery-caption {
+}
+
+
+/*
+14 Media Queries
+---------------------------------------------------------------------------------------------------- */
+
+/* Desktops, laptops and iPads (landscape) ----------- */
+
+@media only screen and (max-width: 1024px) {
+
+	#wrap {
+		max-width: 960px;
+	}	
+
+}
+
+/* iPads (portrait) ----------- */
+
+@media only screen and (max-width: 768px) {
+
+	#wrap {
+		padding: 0 5%;
+	}
+
+	.footer-widgets-1,
+	.footer-widgets-2,
+	.footer-widgets-3,
+	.wrap,
+	#footer .creds,
+	#footer .gototop,
+	#header .widget-area,
+	#inner,
+	#title-area,
+	#wrap .sidebar,
+	#wrap #content,
+	#wrap #content-sidebar-wrap,
+	#wrap #sidebar-alt {
+		width: 100%;
+	}
+
+	.genesis-nav-menu li,
+	#footer .creds,
+	#footer .gototop,
+	#header ul.genesis-nav-menu,
+	#header .search-form {
+		float: none;
+	}
+
+	.genesis-nav-menu,
+	#description,
+	#footer .creds,
+	#footer .gototop,
+	#header .search-form,
+	#title,
+	#title-area {
+		text-align: center;
+	}
+
+	.genesis-nav-menu a {
+		padding: 20px 16px;
+		padding: 1.25rem 1rem;
+	}
+
+	#title {
+		margin: 16px 0;
+		margin: 1rem 0;
+	}
+
+	#header .search-form {
+		margin: 32px auto 0;
+		margin: 2rem auto 0;
+		width: 50%;
+	}
+
+	.genesis-nav-menu li.right {
+		display: none;
+	}
+
+	#footer .wrap {
+		padding: 24px 0;
+		padding: 1.5rem 0;
+	}
+
+	.footer-widgets-1,
+	#header .genesis-nav-menu {
+		margin: 0;
+	}
+
+}
+
+/* iPhones (portrait and landscape) ----------- */
+
+@media only screen and (max-width: 480px) {
+
+	html {
+		font-size: 87.5%; /* 14px base */
+	}
+
+	#header .search-form {
+		width: 100%;
+	}
+
+	.archive-page,
+	.five-sixths,
+	.four-fifths,
+	.four-sixths,
+	.one-fifth,
+	.one-fourth,
+	.one-half,
+	.one-sixth,
+	.one-third,
+	.three-fifths,
+	.three-fourths,
+	.three-sixths,
+	.two-fifths,
+	.two-fourths,
+	.two-sixths,
+	.two-thirds {
+		margin: 0;
+		width: 100%;
+	}
+
+}
