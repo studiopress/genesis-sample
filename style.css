@@ -183,7 +183,7 @@ h2 a:hover,
 .genesis-nav-menu li:hover a,
 .genesis-nav-menu li li a:hover,
 .genesis-nav-menu .current-menu-item a {
-	color: #ff2a00;
+	color: #00abd7;
 }
 
 .post-info,
@@ -736,7 +736,7 @@ p.pages,
 }
 
 .genesis-nav-menu .highlight-menu-item a:hover {
-	background-color: #ff2a00;
+	background-color: #00abd7;
 }
 
 .genesis-nav-menu li li a,
@@ -910,7 +910,7 @@ h6,
 
 .navigation li a:hover,
 .navigation li.active a {
-	background-color: #ff2a00;
+	background-color: #00abd7;
 }
 
 
@@ -1121,7 +1121,7 @@ button:hover,
 input:hover[type="button"],
 input:hover[type="submit"],
 .btn:hover {
-	background-color: #ff2a00;
+	background-color: #00abd7;
 }
 
 .enews input[type="submit"],
