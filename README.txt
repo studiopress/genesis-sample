@@ -1,6 +1,6 @@
 === Genesis Sample Theme ===
 
-Github project link: https://github.com/bgardner/genesis-sample
+Github project link: https://github.com/copyblogger/genesis-sample
 
 
 === Installation Instructions ===

@@ -4,12 +4,12 @@
 	Author: StudioPress
 	Author URI: http://www.studiopress.com/
  
-	Version: 1.9
+	Version: 1.9.1
  
 	Tags: black, orange, white, one-column, two-columns, three-columns, fixed-width, custom-menu, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
  
 	Template: genesis
-	Template Version: 1.9
+	Template Version: 1.9.1
  
 	License: GPL-2.0+
 	License URI: http://www.opensource.org/licenses/gpl-license.php 
@@ -57,7 +57,6 @@
 01 Import Fonts
 ---------------------------------------------------------------------------------------------------- */
 
-@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
 
 
 /*
@@ -183,7 +182,7 @@ h2 a:hover,
 .genesis-nav-menu li:hover a,
 .genesis-nav-menu li li a:hover,
 .genesis-nav-menu .current-menu-item a {
-	color: #ff2a00;
+	color: #00abd7;
 }
 
 .post-info,
@@ -230,7 +229,8 @@ h5,
 h6,
 .entry-title a,
 #title {
-	font-family: 'Lato', sans-serif;
+	font-family: inherit;
+	/*font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; – uncomment if different from body font-family.*/
 }
 
 /* 03c - Font Size ----------- */
@@ -430,7 +430,7 @@ h2 a:visited,
 /* 04c - Header ----------- */
 
 #header {
-	border-bottom: 2px solid #1e1e1e;
+	border-bottom: 1px solid #ccc;
 	min-height: 120px;
 	overflow: hidden;
 	padding-bottom: 32px;
@@ -736,7 +736,7 @@ p.pages,
 }
 
 .genesis-nav-menu .highlight-menu-item a:hover {
-	background-color: #ff2a00;
+	background-color: #00abd7;
 }
 
 .genesis-nav-menu li li a,
@@ -910,7 +910,7 @@ h6,
 
 .navigation li a:hover,
 .navigation li.active a {
-	background-color: #ff2a00;
+	background-color: #00abd7;
 }
 
 
@@ -1032,7 +1032,7 @@ label {
 }
 
 #footer .wrap {
-	border-top: 2px solid #1e1e1e;
+	border-top: 1px solid #ccc;
 	overflow: hidden;
 	padding: 48px 0;
 	padding: 3rem 0;
@@ -1051,7 +1051,7 @@ label {
 /* 11a - Footer Widgets ----------- */
 
 .footer-widgets {
-	border-top: 2px solid #1e1e1e;
+	border-top: 1px solid #ccc;
 	clear: both;
 	line-height: 1.5;
 	overflow: hidden;
@@ -1121,7 +1121,7 @@ button:hover,
 input:hover[type="button"],
 input:hover[type="submit"],
 .btn:hover {
-	background-color: #ff2a00;
+	background-color: #00abd7;
 }
 
 .enews input[type="submit"],
