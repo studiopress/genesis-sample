@@ -57,7 +57,6 @@
 01 Import Fonts
 ---------------------------------------------------------------------------------------------------- */
 
-@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
 
 
 /*
@@ -230,7 +229,8 @@ h5,
 h6,
 .entry-title a,
 #title {
-	font-family: 'Lato', sans-serif;
+	font-family: inherit;
+	/*font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; – uncomment if different from body font-family.*/
 }
 
 /* 03c - Font Size ----------- */
