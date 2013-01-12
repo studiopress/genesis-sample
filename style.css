@@ -430,7 +430,7 @@ h2 a:visited,
 /* 04c - Header ----------- */
 
 #header {
-	border-bottom: 2px solid #1e1e1e;
+	border-bottom: 1px solid #ccc;
 	min-height: 120px;
 	overflow: hidden;
 	padding-bottom: 32px;
@@ -1032,7 +1032,7 @@ label {
 }
 
 #footer .wrap {
-	border-top: 2px solid #1e1e1e;
+	border-top: 1px solid #ccc;
 	overflow: hidden;
 	padding: 48px 0;
 	padding: 3rem 0;
@@ -1051,7 +1051,7 @@ label {
 /* 11a - Footer Widgets ----------- */
 
 .footer-widgets {
-	border-top: 2px solid #1e1e1e;
+	border-top: 1px solid #ccc;
 	clear: both;
 	line-height: 1.5;
 	overflow: hidden;
