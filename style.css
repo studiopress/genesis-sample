@@ -1,12 +1,9 @@
 /*
 	Theme Name: Genesis Sample
-	
 	Description: This is the sample theme created for the Genesis Framework.
-	
 	Author: StudioPress
 	Author URI: http://www.studiopress.com/
- 
-	Version: 2.0.0-dev
+	Version: 2.0.0-beta2
  
 	Tags: black, orange, white, one-column, two-columns, three-columns, fixed-width, custom-menu, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
  
@@ -43,7 +40,6 @@
 		- Genesis eNews Extended
 		- Genesis Latest Tweets
 		- Gravity Forms
-		- Jetpack
 	- Site Header
 		- Title Area
 		- Widget Area
@@ -71,7 +67,7 @@ HTML5 Reset
 ---------------------------------------------------------------------------------------------------- */
 
 /* Baseline Reset (normalize.css 2.1.2)
-    Link: http://necolas.github.com/normalize.css/
+	Link: http://necolas.github.com/normalize.css/
 --------------------------------------------- */
 
 article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden]{display:none}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{font-size:2em;margin:.67em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}mark{background:#ff0;color:#000}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em}pre{white-space:pre-wrap}q{quotes:"\201C" "\201D" "\2018" "\2019"}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:0}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}button,input{line-height:normal}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
@@ -163,6 +159,7 @@ body {
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	font-size: 1.6rem;
+	font-weight: 300;
 	line-height: 1.625;
 }
 
@@ -208,6 +205,10 @@ p {
 	margin: 0 0 24px;
 	margin: 0 0 2.4rem;
 	padding: 0;
+}
+
+strong {
+	font-weight: 700;
 }
 
 ol,
@@ -316,10 +317,6 @@ img {
 	width: auto; /* IE8 */
 }
 
-.format-gallery #gallery-1 img {
-	border: none;
-}
-
 /* Forms
 --------------------------------------------- */
 
@@ -341,7 +338,7 @@ textarea {
 
 input:focus,
 textarea:focus {
-	border: 1px solid #888;
+	border: 1px solid #aaa;
 	outline: none;
 }
 
@@ -362,7 +359,6 @@ input[type="submit"] {
 	box-shadow: none;
 	color: #fff;
 	cursor: pointer;
-	font-weight: 700;
 	letter-spacing: 1px;
 	letter-spacing: 0.1rem;
 	padding: 16px 24px;
@@ -423,7 +419,7 @@ Structure and Layout
 	float: right;
 }
 
-/* Content  */
+/* Content */
 
 .content {
 	float: right;
@@ -470,7 +466,7 @@ Structure and Layout
 }
 
 /* Column Classes
-    Link: http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css
+	Link: http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css
 --------------------------------------------- */
 
 .five-sixths,
@@ -684,8 +680,8 @@ img.alignright,
 }
 
 .widgettitle {
-	font-size: 14px;
-	font-size: 1.4rem;
+	font-size: 16px;
+	font-size: 1.6rem;
 	letter-spacing: 1px;
 	letter-spacing: 0.1rem;
 	margin-bottom: 24px;
@@ -720,10 +716,15 @@ Widgets
 	padding: 0 0 2.4rem;
 }
 
-.featured-content .entry-title a {
+.featured-content .entry-title {
 	border: none;
 	font-size: 24px;
 	font-size: 2.4rem;
+	line-height: 1.2;
+}
+
+.featured-content .entry-title a {
+	border: none;
 }
 
 
@@ -774,17 +775,17 @@ Plugins
 /* Gravity Forms
 --------------------------------------------- */
 
-.site-container div.gform_wrapper input[type="email"],
-.site-container div.gform_wrapper input[type="text"],
-.site-container div.gform_wrapper textarea,
-.site-container div.gform_wrapper .ginput_complex label {
+div.gform_wrapper input[type="email"],
+div.gform_wrapper input[type="text"],
+div.gform_wrapper textarea,
+div.gform_wrapper .ginput_complex label {
 	font-size: 16px;
 	font-size: 1.6rem;
 	padding: 16px;
 	padding: 1.6rem;
 }
 
-.site-container div.gform_wrapper .ginput_complex label {
+div.gform_wrapper .ginput_complex label {
 	padding: 0;
 }
 
@@ -794,20 +795,9 @@ div.gform_wrapper form li {
 	margin: 1.6rem 0 0;
 }
 
-.site-container div.gform_wrapper input[type="submit"] {
+div.gform_wrapper .gform_footer input[type="submit"] {
 	font-size: 14px;
 	font-size: 1.4rem;
-}
-
-/* Jetpack
---------------------------------------------- */
-
-#wpstats {
-	height: 0;
-	overflow: hidden;
-	position: absolute;
-	top: 0;
-	width: 0;
 }
 
 
@@ -887,7 +877,6 @@ Site Header
 	width: 100%;
 }
 
-
 /* Widget Area
 --------------------------------------------- */
 
@@ -917,9 +906,6 @@ Site Navigation
 	clear: both;
 	color: #999;
 	font-family: 'Lato', sans-serif;
-	font-size: 14px;
-	font-size: 1.4rem;
-	font-weight: 700;
 	letter-spacing: 1px;
 	letter-spacing: 0.1rem;
 	line-height: 1.5;
@@ -977,6 +963,8 @@ Site Navigation
 	background: #fff;
 	border: 1px solid #eee;
 	border-top: none;
+	font-size: 14px;
+	font-size: 1.4rem;
 	letter-spacing: 0;
 	padding: 16px 20px;
 	padding: 1.6rem 2rem;
@@ -1128,18 +1116,11 @@ Content Area
 
 .entry-meta a {
 	border-bottom: 1px solid #ddd;
-	font-weight: 700;
 }
 
 .entry-header .entry-meta {
 	margin-bottom: 24px;
 	margin-bottom: 2.4rem;
-}
-
-.entry-meta .entry-comments::before {
-	content: "\2014";
-	margin: 0 6px 0 2px;
-	margin: 0 0.6rem 0 0.2rem;
 }
 
 .entry-footer .entry-meta {
@@ -1150,8 +1131,14 @@ Content Area
 	padding: 3.2rem 4rem 0.8rem;
 }
 
-.entry-meta .entry-categories,
-.entry-meta .entry-tags {
+.entry-comments-link::before {
+	content: "\2014";
+	margin: 0 6px 0 2px;
+	margin: 0 0.6rem 0 0.2rem;
+}
+
+.entry-categories,
+.entry-tags {
 	display: block;
 }
 
@@ -1159,6 +1146,7 @@ Content Area
 --------------------------------------------- */
 
 .navigation {
+	clear: both;
 	font-size: 14px;
 	font-size: 1.4rem;
 	margin: 40px 0;
@@ -1179,7 +1167,6 @@ Content Area
 	color: #fff;
 	cursor: pointer;
 	display: inline-block;
-	font-weight: 700;
 	padding: 8px 12px;
 	padding: 0.8rem 1.2rem;
 }
@@ -1192,26 +1179,26 @@ Content Area
 /* Comments
 --------------------------------------------- */
 
-#comments,
+.entry-comments,
 #respond {
 	background: #fff;
 	padding: 40px;
 	padding: 4rem;
 }
 
+.entry-comments,
 .ping-list,
-#comments,
 #respond {
 	margin-bottom: 40px;
 	margin-bottom: 4rem;
 }
 
-#comments a,
+.entry-comments a,
 #respond a {
 	border-bottom: 1px solid #ddd;
 }
 
-#comments .comment-author {
+.entry-comments .comment-author {
 	margin: 0;
 }
 
@@ -1270,8 +1257,6 @@ Sidebars
 
 .sidebar {
 	color: #999;
-	font-size: 14px;
-	font-size: 1.4rem;
 }
 
 .sidebar a {
@@ -1321,8 +1306,6 @@ Footer Widgets
 	background: #333;
 	color: #999;
 	clear: both;
-	font-size: 14px;
-	font-size: 1.4rem;
 	padding: 40px 0 16px;
 	padding: 4rem 0 1.6rem;
 }
@@ -1377,6 +1360,10 @@ Footer Widgets
 
 .footer-widgets .search-form {
 	width: 100%;
+}
+
+.footer-widgets .search-form input:focus {
+	border: 1px solid #ddd;
 }
 
 
@@ -1484,10 +1471,10 @@ Media Queries
 	.archive-description,
 	.author-box,
 	.entry,
+	.entry-comments,
 	.entry-footer .entry-meta,
 	.sidebar .widget,
 	.site-header,
-	#comments,
 	#respond {
 		padding: 0;
 	}
