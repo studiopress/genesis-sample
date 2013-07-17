@@ -3,7 +3,7 @@
 	Description: This is the sample theme created for the Genesis Framework.
 	Author: StudioPress
 	Author URI: http://www.studiopress.com/
-	Version: 2.0.0-beta2
+	Version: 2.0.0-RC1
  
 	Tags: black, orange, white, one-column, two-columns, three-columns, fixed-width, custom-menu, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
  
@@ -18,7 +18,7 @@
 /* Table of Contents
 
 	- HTML5 Reset
-		- Baseline Reset
+		- Baseline Normalize
 		- Box Sizing
 		- Float Clearing
 	- Defaults
@@ -26,6 +26,7 @@
 		- Headings
 		- Objects
 		- Forms
+		- Tables
 	- Structure and Layout
 		- Site Containers
 		- Column Widths and Positions
@@ -35,10 +36,11 @@
 		- Genesis
 		- Headings
 	- Widgets
-		- Featured Page and Featured Post
+		- Featured Content
 	- Plugins
 		- Genesis eNews Extended
 		- Genesis Latest Tweets
+		- Jetpack
 		- Gravity Forms
 	- Site Header
 		- Title Area
@@ -71,7 +73,6 @@ HTML5 Reset
 --------------------------------------------- */
 
 article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden]{display:none}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{font-size:2em;margin:.67em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}mark{background:#ff0;color:#000}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em}pre{white-space:pre-wrap}q{quotes:"\201C" "\201D" "\2018" "\2019"}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:0}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}button,input{line-height:normal}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
-
 
 /* Box Sizing
 --------------------------------------------- */
@@ -112,6 +113,13 @@ video:before, video:after,
 .clearfix:before, .clearfix:after {
 	content: " ";
 	display: table;
+}
+
+.line::after,
+.line::before,
+.line-pre::after,
+.line-pre::before {
+	content: '';
 }
 
 address:after,
@@ -169,7 +177,8 @@ input:focus,
 input[type="button"],
 input[type="reset"],
 input[type="submit"],
-textarea:focus {
+textarea:focus,
+.button {
 	-webkit-transition: all 0.1s ease-in-out;
 	-moz-transition:    all 0.1s ease-in-out;
 	-ms-transition:     all 0.1s ease-in-out;
@@ -238,9 +247,9 @@ blockquote::before {
 	top: -10px;
 }
 
-code {
-    background-color: #333;
-    color: #ddd;
+.entry-content code {
+	background-color: #333;
+	color: #ddd;
 }
 
 cite {
@@ -303,7 +312,8 @@ embed,
 iframe,
 img,
 object,
-video {
+video,
+.wp-caption {
 	max-width: 100%;
 }
 
@@ -338,6 +348,7 @@ textarea:focus {
 
 ::-moz-placeholder {
 	color: #999;
+	opacity: 1;
 }
 
 ::-webkit-input-placeholder {
@@ -347,7 +358,9 @@ textarea:focus {
 button,
 input[type="button"],
 input[type="reset"],
-input[type="submit"] {
+input[type="submit"],
+.button,
+.entry-content .button {
 	background-color: #333;
 	border: none;
 	box-shadow: none;
@@ -364,13 +377,56 @@ input[type="submit"] {
 button:hover,
 input:hover[type="button"],
 input:hover[type="reset"],
-input:hover[type="submit"] {
+input:hover[type="submit"],
+.button:hover,
+.entry-content .button:hover {
 	background-color: #f15123;
+}
+
+.entry-content .button:hover {
+	color: #fff;
+}
+
+.button {
+	border-radius: 3px;
+	display: inline-block;
 }
 
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button {
 	display: none;
+}
+
+/* Tables
+--------------------------------------------- */
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	line-height: 2;
+	margin-bottom: 40px;
+	margin-bottom: 4rem;
+	width: 100%;
+}
+
+tbody {
+	border-bottom: 1px solid #ddd;
+}
+
+th,
+td {
+	text-align: left;
+}
+
+th {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+td {
+	border-top: 1px solid #ddd;
+	padding: 6px 0;
+	padding: 0.6rem 0;
 }
 
 
@@ -693,7 +749,7 @@ img.alignright,
 Widgets
 ---------------------------------------------------------------------------------------------------- */
 
-/* Featured Page and Featured Post
+/* Featured Content
 --------------------------------------------- */
 
 .featured-content .entry {
@@ -758,6 +814,13 @@ Plugins
 .latest-tweets ul li {
 	margin-bottom: 16px;
 	margin-bottom: 1.6rem;
+}
+
+/* Jetpack
+--------------------------------------------- */
+
+img#wpstats {
+	display: none;
 }
 
 /* Gravity Forms
@@ -1091,8 +1154,7 @@ Content Area
 }
 
 .entry-content ol ol,
-.entry-content ul ul,
-.entry-content .wp-caption p {
+.entry-content ul ul {
 	margin-bottom: 0;
 }
 
@@ -1172,22 +1234,27 @@ Content Area
 /* Comments
 --------------------------------------------- */
 
+.comment-respond,
 .entry-comments,
-#respond {
+.entry-pings {
 	background-color: #fff;
-	padding: 40px;
-	padding: 4rem;
-}
-
-.entry-comments,
-.ping-list,
-#respond {
 	margin-bottom: 40px;
 	margin-bottom: 4rem;
 }
 
-.entry-comments a,
-#respond a {
+.entry-comments {
+	padding: 40px;
+	padding: 4rem;
+}
+
+.comment-respond,
+.entry-pings {
+	padding: 40px 40px 16px;
+	padding: 4rem 4rem 1.6rem;
+}
+
+.comment-respond a,
+.entry-comments a {
 	border-bottom: 1px solid #ddd;
 }
 
@@ -1195,13 +1262,13 @@ Content Area
 	margin-bottom: 0;
 }
 
-#respond input[type="email"],
-#respond input[type="text"],
-#respond input[type="url"] {
+.comment-respond input[type="email"],
+.comment-respond input[type="text"],
+.comment-respond input[type="url"] {
 	width: 50%
 }
 
-#respond label {
+.comment-respond label {
 	display: block;
 	margin-right: 12px;
 	margin-right: 1.2rem;
@@ -1210,6 +1277,9 @@ Content Area
 .comment-list li,
 .ping-list li {
 	list-style-type: none;
+}
+
+.comment-list li {
 	margin-top: 24px;
 	margin-top: 2.4rem;
 	padding: 32px;
@@ -1230,6 +1300,10 @@ li.comment {
 .comment .avatar {
 	margin: 0 16px 24px 0;
 	margin: 0 1.6rem 2.4rem 0;
+}
+
+.entry-pings .reply {
+	display: none;
 }
 
 .bypostauthor {
@@ -1445,6 +1519,11 @@ Media Queries
 		width: 100%;
 	}
 
+	.site-header .wrap {
+		padding: 20px 0;
+		padding: 2rem 0;
+	}
+
 	.header-image .site-header .wrap {
 		background-position: center top;
 	}
@@ -1456,13 +1535,13 @@ Media Queries
 
 	.archive-description,
 	.author-box,
+	.comment-respond,
 	.entry,
 	.entry-comments,
 	.entry-footer .entry-meta,
 	.header-image .site-header .widget-area,
 	.sidebar .widget,
-	.site-header,
-	#respond {
+	.site-header {
 		padding: 0;
 	}
 
