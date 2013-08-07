@@ -577,7 +577,7 @@ img.centered,
 .aligncenter {
 	display: block;
 	margin: 0 auto 24px;
-	margin: 0 auto 2.4rem
+	margin: 0 auto 2.4rem;
 }
 
 img.alignnone {
