@@ -3,7 +3,7 @@
 	Description: This is the sample theme created for the Genesis Framework.
 	Author: StudioPress
 	Author URI: http://www.studiopress.com/
-	Version: 2.0.0-RC2
+	Version: 2.0.0
  
 	Tags: black, orange, white, one-column, two-columns, three-columns, fixed-width, custom-menu, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
  
@@ -17,7 +17,6 @@
 
 /* Table of Contents
 
-	- Imports
 	- HTML5 Reset
 		- Baseline Normalize
 		- Box Sizing
@@ -35,14 +34,14 @@
 	- Common Classes
 		- WordPress
 		- Genesis
-		- Headings
+		- Titles
 	- Widgets
 		- Featured Content
 	- Plugins
 		- Genesis eNews Extended
 		- Genesis Latest Tweets
-		- Jetpack
 		- Gravity Forms
+		- Jetpack
 	- Site Header
 		- Title Area
 		- Widget Area
@@ -52,7 +51,7 @@
 		- Secondary Navigation
 	- Content Area
 		- Entries
-		- Navigation
+		- Pagination
 		- Comments
 	- Sidebars
 	- Footer Widgets
@@ -88,10 +87,10 @@ input[type="search"] {
 /* Float Clearing
 --------------------------------------------- */
 
-.archive-navigation:before,
+.archive-pagination:before,
 .clearfix:before,
 .entry:before,
-.entry-navigation:before,
+.entry-pagination:before,
 .footer-widgets:before,
 .nav-primary:before,
 .nav-secondary:before,
@@ -104,10 +103,10 @@ input[type="search"] {
 	display: table;
 }
 
-.archive-navigation:after,
+.archive-pagination:after,
 .clearfix:after,
 .entry:after,
-.entry-navigation:after,
+.entry-pagination:after,
 .footer-widgets:after,
 .nav-primary:after,
 .nav-secondary:after,
@@ -674,7 +673,7 @@ img.alignright,
 	margin-right: 2.4rem;
 }
 
-/* Headings
+/* Titles
 --------------------------------------------- */
 
 .entry-title {
@@ -783,13 +782,6 @@ Plugins
 	margin-bottom: 1.6rem;
 }
 
-/* Jetpack
---------------------------------------------- */
-
-img#wpstats {
-	display: none;
-}
-
 /* Gravity Forms
 --------------------------------------------- */
 
@@ -818,6 +810,13 @@ div.gform_wrapper .gform_footer input[type="submit"] {
 	font-size: 1.4rem;
 }
 
+/* Jetpack
+--------------------------------------------- */
+
+img#wpstats {
+	display: none;
+}
+
 
 /*
 Site Header
@@ -836,9 +835,9 @@ Site Header
 --------------------------------------------- */
 
 .title-area {
+	float: left;
 	font-family: Lato, sans-serif;
 	font-weight: 700;
-	float: left;
 	padding: 16px 0;
 	padding: 1.6rem 0;
 	width: 320px;
@@ -1125,7 +1124,6 @@ Content Area
 }
 
 .entry-meta {
-	clear: both;
 	color: #999;
 	font-size: 14px;
 	font-size: 1.4rem;
@@ -1159,22 +1157,22 @@ Content Area
 	display: block;
 }
 
-/* Navigation
+/* Pagination
 --------------------------------------------- */
 
-.archive-navigation,
-.entry-navigation {
+.archive-pagination,
+.entry-pagination {
 	font-size: 14px;
 	font-size: 1.4rem;
 	margin: 40px 0;
 	margin: 4rem 0;
 }
 
-.archive-navigation li {
+.archive-pagination li {
 	display: inline;
 }
 
-.archive-navigation li a {
+.archive-pagination li a {
 	background-color: #333;
 	border-radius: 3px;
 	color: #fff;
@@ -1184,12 +1182,12 @@ Content Area
 	padding: 0.8rem 1.2rem;
 }
 
-.archive-navigation li a:hover,
-.archive-navigation li.active a {
+.archive-pagination li a:hover,
+.archive-pagination li.active a {
 	background-color: #f15123;
 }
 
-.entry-navigation a {
+.entry-pagination a {
 	border-bottom: 1px solid #ddd;
 }
 
