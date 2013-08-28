@@ -899,6 +899,10 @@ Site Header
 /* Widget Area
 --------------------------------------------- */
 
+.widget-area {
+	word-wrap: break-word;
+}
+
 .site-header .widget-area {
 	float: right;
 	text-align: right;
