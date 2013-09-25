@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-<!-- generator="WordPress/3.6-alpha-23288" created="2013-01-07 14:24" -->
+<!-- generator="WordPress/3.7-alpha-24954" created="2013-09-25 02:20" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -28,44 +28,44 @@
 <channel>
 	<title>Genesis Framework</title>
 	<link>http://www.genesisframework.com</link>
-	<description>The Industry Standard for Premium WordPress Themes</description>
-	<pubDate>Mon, 07 Jan 2013 14:24:50 +0000</pubDate>
+	<description>Supports HTML5 &#38; Mobile Responsive Design</description>
+	<pubDate>Wed, 25 Sep 2013 02:20:49 +0000</pubDate>
 	<language>en-US</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>http://www.genesisframework.com</wp:base_site_url>
 	<wp:base_blog_url>http://www.genesisframework.com</wp:base_blog_url>
 
-	<wp:author><wp:author_id>2</wp:author_id><wp:author_login>bgardner</wp:author_login><wp:author_email>brian@briangardner.com</wp:author_email><wp:author_display_name><![CDATA[Brian Gardner]]></wp:author_display_name><wp:author_first_name><![CDATA[Brian]]></wp:author_first_name><wp:author_last_name><![CDATA[Gardner]]></wp:author_last_name></wp:author>
+	<wp:author><wp:author_id>2</wp:author_id><wp:author_login>bgardner</wp:author_login><wp:author_email>demo-comments@studiopress.com</wp:author_email><wp:author_display_name><![CDATA[Brian Gardner]]></wp:author_display_name><wp:author_first_name><![CDATA[Brian]]></wp:author_first_name><wp:author_last_name><![CDATA[Gardner]]></wp:author_last_name></wp:author>
 
-	<wp:category><wp:term_id>3</wp:term_id><wp:category_nicename>category-1</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[Category #1]]></wp:cat_name><wp:category_description><![CDATA[This is an sample category description, which can be used to boost SEO rankings.  Make sure you enabled this from the Edit Category screen in your dashboard.]]></wp:category_description></wp:category>
-	<wp:category><wp:term_id>4</wp:term_id><wp:category_nicename>category-2</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[Category #2]]></wp:cat_name><wp:category_description><![CDATA[This is an sample category description, which can be used to boost SEO rankings.  Make sure you enabled this from the Edit Category screen in your dashboard.]]></wp:category_description></wp:category>
-	<wp:category><wp:term_id>5</wp:term_id><wp:category_nicename>category-3</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[Category #3]]></wp:cat_name><wp:category_description><![CDATA[This is an sample category description, which can be used to boost SEO rankings.  Make sure you enabled this from the Edit Category screen in your dashboard.]]></wp:category_description></wp:category>
-	<wp:category><wp:term_id>6</wp:term_id><wp:category_nicename>category-4</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[Category #4]]></wp:cat_name><wp:category_description><![CDATA[This is an sample category description, which can be used to boost SEO rankings.  Make sure you enabled this from the Edit Category screen in your dashboard.]]></wp:category_description></wp:category>
-	<wp:category><wp:term_id>7</wp:term_id><wp:category_nicename>category-5</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[Category #5]]></wp:cat_name><wp:category_description><![CDATA[This is an sample category description, which can be used to boost SEO rankings.  Make sure you enabled this from the Edit Category screen in your dashboard.]]></wp:category_description></wp:category>
-	<wp:category><wp:term_id>8</wp:term_id><wp:category_nicename>sub-category-11</wp:category_nicename><wp:category_parent>category-1</wp:category_parent><wp:cat_name><![CDATA[Sub Category 1.1]]></wp:cat_name><wp:category_description><![CDATA[This is an sample category description, which can be used to boost SEO rankings.  Make sure you enabled this from the Edit Category screen in your dashboard.]]></wp:category_description></wp:category>
-	<wp:category><wp:term_id>9</wp:term_id><wp:category_nicename>sub-category-12</wp:category_nicename><wp:category_parent>category-1</wp:category_parent><wp:cat_name><![CDATA[Sub Category 1.2]]></wp:cat_name><wp:category_description><![CDATA[This is an sample category description, which can be used to boost SEO rankings.  Make sure you enabled this from the Edit Category screen in your dashboard.]]></wp:category_description></wp:category>
-	<wp:category><wp:term_id>10</wp:term_id><wp:category_nicename>sub-category-13</wp:category_nicename><wp:category_parent>category-1</wp:category_parent><wp:cat_name><![CDATA[Sub Category 1.3]]></wp:cat_name><wp:category_description><![CDATA[This is an sample category description, which can be used to boost SEO rankings.  Make sure you enabled this from the Edit Category screen in your dashboard.]]></wp:category_description></wp:category>
-	<wp:category><wp:term_id>11</wp:term_id><wp:category_nicename>sub-category-21</wp:category_nicename><wp:category_parent>sub-category-11</wp:category_parent><wp:cat_name><![CDATA[Sub Category 2.1]]></wp:cat_name><wp:category_description><![CDATA[This is an sample category description, which can be used to boost SEO rankings.  Make sure you enabled this from the Edit Category screen in your dashboard.]]></wp:category_description></wp:category>
-	<wp:category><wp:term_id>12</wp:term_id><wp:category_nicename>sub-category-22</wp:category_nicename><wp:category_parent>sub-category-11</wp:category_parent><wp:cat_name><![CDATA[Sub Category 2.2]]></wp:cat_name><wp:category_description><![CDATA[This is an sample category description, which can be used to boost SEO rankings.  Make sure you enabled this from the Edit Category screen in your dashboard.]]></wp:category_description></wp:category>
-	<wp:category><wp:term_id>13</wp:term_id><wp:category_nicename>sub-category-23</wp:category_nicename><wp:category_parent>sub-category-11</wp:category_parent><wp:cat_name><![CDATA[Sub Category 2.3]]></wp:cat_name><wp:category_description><![CDATA[This is an sample category description, which can be used to boost SEO rankings.  Make sure you enabled this from the Edit Category screen in your dashboard.]]></wp:category_description></wp:category>
-	<wp:category><wp:term_id>14</wp:term_id><wp:category_nicename>sub-category-31</wp:category_nicename><wp:category_parent>sub-category-21</wp:category_parent><wp:cat_name><![CDATA[Sub Category 3.1]]></wp:cat_name><wp:category_description><![CDATA[This is an sample category description, which can be used to boost SEO rankings.  Make sure you enabled this from the Edit Category screen in your dashboard.]]></wp:category_description></wp:category>
-	<wp:category><wp:term_id>15</wp:term_id><wp:category_nicename>sub-category-32</wp:category_nicename><wp:category_parent>sub-category-21</wp:category_parent><wp:cat_name><![CDATA[Sub Category 3.2]]></wp:cat_name><wp:category_description><![CDATA[This is an sample category description, which can be used to boost SEO rankings.  Make sure you enabled this from the Edit Category screen in your dashboard.]]></wp:category_description></wp:category>
-	<wp:category><wp:term_id>16</wp:term_id><wp:category_nicename>sub-category-33</wp:category_nicename><wp:category_parent>sub-category-21</wp:category_parent><wp:cat_name><![CDATA[Sub Category 3.3]]></wp:cat_name><wp:category_description><![CDATA[This is an sample category description, which can be used to boost SEO rankings.  Make sure you enabled this from the Edit Category screen in your dashboard.]]></wp:category_description></wp:category>
-	<wp:category><wp:term_id>1</wp:term_id><wp:category_nicename>uncategorized</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[Uncategorized]]></wp:cat_name></wp:category>
+	<wp:category><wp:term_id>3</wp:term_id><wp:category_nicename>category-1</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[Category #1]]></wp:cat_name><wp:category_description><![CDATA[This is a sample category description, which can be used to boost SEO rankings.  Make sure you have enabled this from the Edit Category screen in your dashboard.]]></wp:category_description></wp:category>
+	<wp:category><wp:term_id>4</wp:term_id><wp:category_nicename>category-2</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[Category #2]]></wp:cat_name><wp:category_description><![CDATA[This is a sample category description, which can be used to boost SEO rankings.  Make sure you have enabled this from the Edit Category screen in your dashboard.]]></wp:category_description></wp:category>
+	<wp:category><wp:term_id>5</wp:term_id><wp:category_nicename>category-3</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[Category #3]]></wp:cat_name><wp:category_description><![CDATA[This is a sample category description, which can be used to boost SEO rankings.  Make sure you have enabled this from the Edit Category screen in your dashboard.]]></wp:category_description></wp:category>
+	<wp:category><wp:term_id>6</wp:term_id><wp:category_nicename>category-4</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[Category #4]]></wp:cat_name><wp:category_description><![CDATA[This is a sample category description, which can be used to boost SEO rankings.  Make sure you have enabled this from the Edit Category screen in your dashboard.]]></wp:category_description></wp:category>
+	<wp:category><wp:term_id>38</wp:term_id><wp:category_nicename>category-5</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[Category #5]]></wp:cat_name><wp:category_description><![CDATA[This is a sample category description, which can be used to boost SEO rankings.  Make sure you have enabled this from the Edit Category screen in your dashboard.]]></wp:category_description></wp:category>
+	<wp:category><wp:term_id>1</wp:term_id><wp:category_nicename>post-formats</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[Post Formats]]></wp:cat_name><wp:category_description><![CDATA[A Post Format is a piece of meta information that can be used by a theme to customize its presentation of a post. The Post Formats feature provides a standardized list of formats that are available to all themes that support the feature. ]]></wp:category_description></wp:category>
+	<wp:category><wp:term_id>8</wp:term_id><wp:category_nicename>sub-category-11</wp:category_nicename><wp:category_parent>category-1</wp:category_parent><wp:cat_name><![CDATA[Sub Category 1.1]]></wp:cat_name><wp:category_description><![CDATA[This is a sample category description, which can be used to boost SEO rankings.  Make sure you have enabled this from the Edit Category screen in your dashboard.]]></wp:category_description></wp:category>
+	<wp:category><wp:term_id>9</wp:term_id><wp:category_nicename>sub-category-12</wp:category_nicename><wp:category_parent>category-1</wp:category_parent><wp:cat_name><![CDATA[Sub Category 1.2]]></wp:cat_name><wp:category_description><![CDATA[This is a sample category description, which can be used to boost SEO rankings.  Make sure you have enabled this from the Edit Category screen in your dashboard.]]></wp:category_description></wp:category>
+	<wp:category><wp:term_id>10</wp:term_id><wp:category_nicename>sub-category-13</wp:category_nicename><wp:category_parent>category-1</wp:category_parent><wp:cat_name><![CDATA[Sub Category 1.3]]></wp:cat_name><wp:category_description><![CDATA[This is a sample category description, which can be used to boost SEO rankings.  Make sure you have enabled this from the Edit Category screen in your dashboard.]]></wp:category_description></wp:category>
+	<wp:category><wp:term_id>11</wp:term_id><wp:category_nicename>sub-category-21</wp:category_nicename><wp:category_parent>sub-category-11</wp:category_parent><wp:cat_name><![CDATA[Sub Category 2.1]]></wp:cat_name><wp:category_description><![CDATA[This is a sample category description, which can be used to boost SEO rankings.  Make sure you have enabled this from the Edit Category screen in your dashboard.]]></wp:category_description></wp:category>
+	<wp:category><wp:term_id>12</wp:term_id><wp:category_nicename>sub-category-22</wp:category_nicename><wp:category_parent>sub-category-11</wp:category_parent><wp:cat_name><![CDATA[Sub Category 2.2]]></wp:cat_name><wp:category_description><![CDATA[This is a sample category description, which can be used to boost SEO rankings.  Make sure you have enabled this from the Edit Category screen in your dashboard.]]></wp:category_description></wp:category>
+	<wp:category><wp:term_id>13</wp:term_id><wp:category_nicename>sub-category-23</wp:category_nicename><wp:category_parent>sub-category-11</wp:category_parent><wp:cat_name><![CDATA[Sub Category 2.3]]></wp:cat_name><wp:category_description><![CDATA[This is a sample category description, which can be used to boost SEO rankings.  Make sure you have enabled this from the Edit Category screen in your dashboard.]]></wp:category_description></wp:category>
+	<wp:category><wp:term_id>14</wp:term_id><wp:category_nicename>sub-category-31</wp:category_nicename><wp:category_parent>sub-category-21</wp:category_parent><wp:cat_name><![CDATA[Sub Category 3.1]]></wp:cat_name><wp:category_description><![CDATA[This is a sample category description, which can be used to boost SEO rankings.  Make sure you have enabled this from the Edit Category screen in your dashboard.]]></wp:category_description></wp:category>
+	<wp:category><wp:term_id>15</wp:term_id><wp:category_nicename>sub-category-32</wp:category_nicename><wp:category_parent>sub-category-21</wp:category_parent><wp:cat_name><![CDATA[Sub Category 3.2]]></wp:cat_name><wp:category_description><![CDATA[This is a sample category description, which can be used to boost SEO rankings.  Make sure you have enabled this from the Edit Category screen in your dashboard.]]></wp:category_description></wp:category>
+	<wp:category><wp:term_id>16</wp:term_id><wp:category_nicename>sub-category-33</wp:category_nicename><wp:category_parent>sub-category-21</wp:category_parent><wp:cat_name><![CDATA[Sub Category 3.3]]></wp:cat_name><wp:category_description><![CDATA[This is a sample category description, which can be used to boost SEO rankings.  Make sure you have enabled this from the Edit Category screen in your dashboard.]]></wp:category_description></wp:category>
 	<wp:tag><wp:term_id>17</wp:term_id><wp:tag_slug>blockquotes</wp:tag_slug><wp:tag_name><![CDATA[Blockquotes]]></wp:tag_name><wp:tag_description><![CDATA[This is an sample tag description, which can be used to boost SEO rankings.  Make sure you enabled this from the Edit Post Tags screen in your dashboard.]]></wp:tag_description></wp:tag>
 	<wp:tag><wp:term_id>18</wp:term_id><wp:tag_slug>headlines</wp:tag_slug><wp:tag_name><![CDATA[Headlines]]></wp:tag_name><wp:tag_description><![CDATA[This is an sample tag description, which can be used to boost SEO rankings.  Make sure you enabled this from the Edit Post Tags screen in your dashboard.]]></wp:tag_description></wp:tag>
 	<wp:tag><wp:term_id>19</wp:term_id><wp:tag_slug>images-centered</wp:tag_slug><wp:tag_name><![CDATA[Images Centered]]></wp:tag_name><wp:tag_description><![CDATA[This is an sample tag description, which can be used to boost SEO rankings.  Make sure you enabled this from the Edit Post Tags screen in your dashboard.]]></wp:tag_description></wp:tag>
 	<wp:tag><wp:term_id>20</wp:term_id><wp:tag_slug>images-left</wp:tag_slug><wp:tag_name><![CDATA[Images Left]]></wp:tag_name><wp:tag_description><![CDATA[This is an sample tag description, which can be used to boost SEO rankings.  Make sure you enabled this from the Edit Post Tags screen in your dashboard.]]></wp:tag_description></wp:tag>
 	<wp:tag><wp:term_id>21</wp:term_id><wp:tag_slug>images-right</wp:tag_slug><wp:tag_name><![CDATA[Images Right]]></wp:tag_name><wp:tag_description><![CDATA[This is an sample tag description, which can be used to boost SEO rankings.  Make sure you enabled this from the Edit Post Tags screen in your dashboard.]]></wp:tag_description></wp:tag>
 	<wp:tag><wp:term_id>22</wp:term_id><wp:tag_slug>ordered-lists</wp:tag_slug><wp:tag_name><![CDATA[Ordered Lists]]></wp:tag_name><wp:tag_description><![CDATA[This is an sample tag description, which can be used to boost SEO rankings.  Make sure you enabled this from the Edit Post Tags screen in your dashboard.]]></wp:tag_description></wp:tag>
+	<wp:tag><wp:term_id>39</wp:term_id><wp:tag_slug>tables</wp:tag_slug><wp:tag_name><![CDATA[Tables]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>23</wp:term_id><wp:tag_slug>threaded-comments</wp:tag_slug><wp:tag_name><![CDATA[Threaded Comments]]></wp:tag_name><wp:tag_description><![CDATA[This is an sample tag description, which can be used to boost SEO rankings.  Make sure you enabled this from the Edit Post Tags screen in your dashboard.]]></wp:tag_description></wp:tag>
 	<wp:tag><wp:term_id>24</wp:term_id><wp:tag_slug>unordered-lists</wp:tag_slug><wp:tag_name><![CDATA[Unordered Lists]]></wp:tag_name><wp:tag_description><![CDATA[This is an sample tag description, which can be used to boost SEO rankings.  Make sure you enabled this from the Edit Post Tags screen in your dashboard.]]></wp:tag_description></wp:tag>
 	<wp:term><wp:term_id>25</wp:term_id><wp:term_taxonomy>nav_menu</wp:term_taxonomy><wp:term_slug>primary-navigation</wp:term_slug><wp:term_name><![CDATA[Primary Navigation]]></wp:term_name></wp:term>
 	<wp:term><wp:term_id>26</wp:term_id><wp:term_taxonomy>nav_menu</wp:term_taxonomy><wp:term_slug>secondary-navigation</wp:term_slug><wp:term_name><![CDATA[Secondary Navigation]]></wp:term_name></wp:term>
-	<wp:term><wp:term_id>27</wp:term_id><wp:term_taxonomy>nav_menu</wp:term_taxonomy><wp:term_slug>mobile-navigation</wp:term_slug><wp:term_name><![CDATA[Mobile Navigation]]></wp:term_name></wp:term>
 	<wp:term><wp:term_id>28</wp:term_id><wp:term_taxonomy>nav_menu</wp:term_taxonomy><wp:term_slug>contributors</wp:term_slug><wp:term_name><![CDATA[Contributors]]></wp:term_name></wp:term>
 
-	<generator>http://wordpress.org/?v=3.6-alpha-23288</generator>
+	<generator>http://wordpress.org/?v=3.7-alpha-24954</generator>
 
 	<item>
 		<title></title>
@@ -74,8 +74,7 @@
 		<dc:creator>bgardner</dc:creator>
 		<guid isPermaLink="false">http://genesisframework.com/2012/09/24/36/</guid>
 		<description></description>
-		<content:encoded><![CDATA[This is an sample category description, which can be used to boost SEO rankings.  Make sure you enabled this from the Edit Category screen in your dashboard.
-]]></content:encoded>
+		<content:encoded><![CDATA[This is an sample category description, which can be used to boost SEO rankings. Make sure you enabled this from the Edit Category screen in your dashboard.]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>36</wp:post_id>
 		<wp:post_date>2012-09-24 19:34:05</wp:post_date>
@@ -112,7 +111,7 @@
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>_menu_item_classes</wp:meta_key>
-			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+			<wp:meta_value><![CDATA[a:1:{i:0;s:5:"first";}]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>_menu_item_xfn</wp:meta_key>
@@ -130,8 +129,7 @@
 		<dc:creator>bgardner</dc:creator>
 		<guid isPermaLink="false">http://genesisframework.com/2012/09/24/37/</guid>
 		<description></description>
-		<content:encoded><![CDATA[This is an sample category description, which can be used to boost SEO rankings.  Make sure you enabled this from the Edit Category screen in your dashboard.
-]]></content:encoded>
+		<content:encoded><![CDATA[This is an sample category description, which can be used to boost SEO rankings. Make sure you enabled this from the Edit Category screen in your dashboard.]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>37</wp:post_id>
 		<wp:post_date>2012-09-24 19:34:05</wp:post_date>
@@ -186,8 +184,7 @@
 		<dc:creator>bgardner</dc:creator>
 		<guid isPermaLink="false">http://genesisframework.com/2012/09/24/38/</guid>
 		<description></description>
-		<content:encoded><![CDATA[This is an sample category description, which can be used to boost SEO rankings.  Make sure you enabled this from the Edit Category screen in your dashboard.
-]]></content:encoded>
+		<content:encoded><![CDATA[This is an sample category description, which can be used to boost SEO rankings. Make sure you enabled this from the Edit Category screen in your dashboard.]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>38</wp:post_id>
 		<wp:post_date>2012-09-24 19:34:05</wp:post_date>
@@ -242,8 +239,7 @@
 		<dc:creator>bgardner</dc:creator>
 		<guid isPermaLink="false">http://genesisframework.com/2012/09/24/39/</guid>
 		<description></description>
-		<content:encoded><![CDATA[This is an sample category description, which can be used to boost SEO rankings.  Make sure you enabled this from the Edit Category screen in your dashboard.
-]]></content:encoded>
+		<content:encoded><![CDATA[This is an sample category description, which can be used to boost SEO rankings. Make sure you enabled this from the Edit Category screen in your dashboard.]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>39</wp:post_id>
 		<wp:post_date>2012-09-24 19:34:05</wp:post_date>
@@ -293,69 +289,12 @@
 	</item>
 	<item>
 		<title></title>
-		<link>http://www.genesisframework.com/40/</link>
-		<pubDate>Mon, 24 Sep 2012 19:34:05 +0000</pubDate>
-		<dc:creator>bgardner</dc:creator>
-		<guid isPermaLink="false">http://genesisframework.com/2012/09/24/40/</guid>
-		<description></description>
-		<content:encoded><![CDATA[This is an sample category description, which can be used to boost SEO rankings.  Make sure you enabled this from the Edit Category screen in your dashboard.
-]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>40</wp:post_id>
-		<wp:post_date>2012-09-24 19:34:05</wp:post_date>
-		<wp:post_date_gmt>2012-09-24 19:34:05</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>40</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>14</wp:menu_order>
-		<wp:post_type>nav_menu_item</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="nav_menu" nicename="secondary-navigation"><![CDATA[Secondary Navigation]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_type</wp:meta_key>
-			<wp:meta_value><![CDATA[taxonomy]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_menu_item_parent</wp:meta_key>
-			<wp:meta_value><![CDATA[0]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_object_id</wp:meta_key>
-			<wp:meta_value><![CDATA[7]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_object</wp:meta_key>
-			<wp:meta_value><![CDATA[category]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_target</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_classes</wp:meta_key>
-			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_xfn</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_url</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title></title>
 		<link>http://www.genesisframework.com/41/</link>
 		<pubDate>Mon, 24 Sep 2012 19:34:05 +0000</pubDate>
 		<dc:creator>bgardner</dc:creator>
 		<guid isPermaLink="false">http://genesisframework.com/2012/09/24/41/</guid>
 		<description></description>
-		<content:encoded><![CDATA[This is an sample category description, which can be used to boost SEO rankings.  Make sure you enabled this from the Edit Category screen in your dashboard.
-]]></content:encoded>
+		<content:encoded><![CDATA[This is an sample category description, which can be used to boost SEO rankings. Make sure you enabled this from the Edit Category screen in your dashboard.]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>41</wp:post_id>
 		<wp:post_date>2012-09-24 19:34:05</wp:post_date>
@@ -410,8 +349,7 @@
 		<dc:creator>bgardner</dc:creator>
 		<guid isPermaLink="false">http://genesisframework.com/2012/09/24/42/</guid>
 		<description></description>
-		<content:encoded><![CDATA[This is an sample category description, which can be used to boost SEO rankings.  Make sure you enabled this from the Edit Category screen in your dashboard.
-]]></content:encoded>
+		<content:encoded><![CDATA[This is an sample category description, which can be used to boost SEO rankings. Make sure you enabled this from the Edit Category screen in your dashboard.]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>42</wp:post_id>
 		<wp:post_date>2012-09-24 19:34:05</wp:post_date>
@@ -466,8 +404,7 @@
 		<dc:creator>bgardner</dc:creator>
 		<guid isPermaLink="false">http://genesisframework.com/2012/09/24/43/</guid>
 		<description></description>
-		<content:encoded><![CDATA[This is an sample category description, which can be used to boost SEO rankings.  Make sure you enabled this from the Edit Category screen in your dashboard.
-]]></content:encoded>
+		<content:encoded><![CDATA[This is an sample category description, which can be used to boost SEO rankings. Make sure you enabled this from the Edit Category screen in your dashboard.]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>43</wp:post_id>
 		<wp:post_date>2012-09-24 19:34:05</wp:post_date>
@@ -522,8 +459,7 @@
 		<dc:creator>bgardner</dc:creator>
 		<guid isPermaLink="false">http://genesisframework.com/2012/09/24/44/</guid>
 		<description></description>
-		<content:encoded><![CDATA[This is an sample category description, which can be used to boost SEO rankings.  Make sure you enabled this from the Edit Category screen in your dashboard.
-]]></content:encoded>
+		<content:encoded><![CDATA[This is an sample category description, which can be used to boost SEO rankings. Make sure you enabled this from the Edit Category screen in your dashboard.]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>44</wp:post_id>
 		<wp:post_date>2012-09-24 19:34:05</wp:post_date>
@@ -578,8 +514,7 @@
 		<dc:creator>bgardner</dc:creator>
 		<guid isPermaLink="false">http://genesisframework.com/2012/09/24/45/</guid>
 		<description></description>
-		<content:encoded><![CDATA[This is an sample category description, which can be used to boost SEO rankings.  Make sure you enabled this from the Edit Category screen in your dashboard.
-]]></content:encoded>
+		<content:encoded><![CDATA[This is an sample category description, which can be used to boost SEO rankings. Make sure you enabled this from the Edit Category screen in your dashboard.]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>45</wp:post_id>
 		<wp:post_date>2012-09-24 19:34:05</wp:post_date>
@@ -634,8 +569,7 @@
 		<dc:creator>bgardner</dc:creator>
 		<guid isPermaLink="false">http://genesisframework.com/2012/09/24/46/</guid>
 		<description></description>
-		<content:encoded><![CDATA[This is an sample category description, which can be used to boost SEO rankings.  Make sure you enabled this from the Edit Category screen in your dashboard.
-]]></content:encoded>
+		<content:encoded><![CDATA[This is an sample category description, which can be used to boost SEO rankings. Make sure you enabled this from the Edit Category screen in your dashboard.]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>46</wp:post_id>
 		<wp:post_date>2012-09-24 19:34:05</wp:post_date>
@@ -690,8 +624,7 @@
 		<dc:creator>bgardner</dc:creator>
 		<guid isPermaLink="false">http://genesisframework.com/2012/09/24/47/</guid>
 		<description></description>
-		<content:encoded><![CDATA[This is an sample category description, which can be used to boost SEO rankings.  Make sure you enabled this from the Edit Category screen in your dashboard.
-]]></content:encoded>
+		<content:encoded><![CDATA[This is an sample category description, which can be used to boost SEO rankings. Make sure you enabled this from the Edit Category screen in your dashboard.]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>47</wp:post_id>
 		<wp:post_date>2012-09-24 19:34:05</wp:post_date>
@@ -746,8 +679,7 @@
 		<dc:creator>bgardner</dc:creator>
 		<guid isPermaLink="false">http://genesisframework.com/2012/09/24/48/</guid>
 		<description></description>
-		<content:encoded><![CDATA[This is an sample category description, which can be used to boost SEO rankings.  Make sure you enabled this from the Edit Category screen in your dashboard.
-]]></content:encoded>
+		<content:encoded><![CDATA[This is an sample category description, which can be used to boost SEO rankings. Make sure you enabled this from the Edit Category screen in your dashboard.]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>48</wp:post_id>
 		<wp:post_date>2012-09-24 19:34:05</wp:post_date>
@@ -802,8 +734,7 @@
 		<dc:creator>bgardner</dc:creator>
 		<guid isPermaLink="false">http://genesisframework.com/2012/09/24/49/</guid>
 		<description></description>
-		<content:encoded><![CDATA[This is an sample category description, which can be used to boost SEO rankings.  Make sure you enabled this from the Edit Category screen in your dashboard.
-]]></content:encoded>
+		<content:encoded><![CDATA[This is an sample category description, which can be used to boost SEO rankings. Make sure you enabled this from the Edit Category screen in your dashboard.]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>49</wp:post_id>
 		<wp:post_date>2012-09-24 19:34:05</wp:post_date>
@@ -852,7 +783,7 @@
 		</wp:postmeta>
 	</item>
 	<item>
-		<title>Page Layouts</title>
+		<title>Layouts</title>
 		<link>http://www.genesisframework.com/page-layouts/</link>
 		<pubDate>Mon, 24 Sep 2012 19:34:05 +0000</pubDate>
 		<dc:creator>bgardner</dc:creator>
@@ -907,7 +838,7 @@
 		</wp:postmeta>
 	</item>
 	<item>
-		<title>Page Templates</title>
+		<title>Templates</title>
 		<link>http://www.genesisframework.com/page-templates/</link>
 		<pubDate>Mon, 24 Sep 2012 19:34:05 +0000</pubDate>
 		<dc:creator>bgardner</dc:creator>
@@ -923,7 +854,7 @@
 		<wp:post_name>page-templates</wp:post_name>
 		<wp:status>publish</wp:status>
 		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>19</wp:menu_order>
+		<wp:menu_order>18</wp:menu_order>
 		<wp:post_type>nav_menu_item</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
@@ -978,7 +909,7 @@
 		<wp:post_name>183</wp:post_name>
 		<wp:status>publish</wp:status>
 		<wp:post_parent>75</wp:post_parent>
-		<wp:menu_order>20</wp:menu_order>
+		<wp:menu_order>19</wp:menu_order>
 		<wp:post_type>nav_menu_item</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
@@ -1033,7 +964,7 @@
 		<wp:post_name>184</wp:post_name>
 		<wp:status>publish</wp:status>
 		<wp:post_parent>75</wp:post_parent>
-		<wp:menu_order>21</wp:menu_order>
+		<wp:menu_order>20</wp:menu_order>
 		<wp:post_type>nav_menu_item</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
@@ -1088,7 +1019,7 @@
 		<wp:post_name>185</wp:post_name>
 		<wp:status>publish</wp:status>
 		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>22</wp:menu_order>
+		<wp:menu_order>21</wp:menu_order>
 		<wp:post_type>nav_menu_item</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
@@ -1127,37 +1058,6 @@
 		</wp:postmeta>
 	</item>
 	<item>
-		<title>patagonia</title>
-		<link>http://www.genesisframework.com/?attachment_id=222</link>
-		<pubDate>Tue, 30 Oct 2012 21:46:05 +0000</pubDate>
-		<dc:creator>bgardner</dc:creator>
-		<guid isPermaLink="false">http://www.genesisframework.com/wp-content/uploads/patagonia.jpg</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>222</wp:post_id>
-		<wp:post_date>2012-10-30 21:46:05</wp:post_date>
-		<wp:post_date_gmt>2012-10-30 21:46:05</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>patagonia</wp:post_name>
-		<wp:status>inherit</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>attachment</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url>http://www.genesisframework.com/wp-content/uploads/patagonia.jpg</wp:attachment_url>
-		<wp:postmeta>
-			<wp:meta_key>_wp_attached_file</wp:meta_key>
-			<wp:meta_value><![CDATA[patagonia.jpg]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_wp_attachment_metadata</wp:meta_key>
-			<wp:meta_value><![CDATA[a:5:{s:5:"width";i:800;s:6:"height";i:300;s:4:"file";s:13:"patagonia.jpg";s:5:"sizes";a:2:{s:9:"thumbnail";a:4:{s:4:"file";s:21:"patagonia-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}s:6:"medium";a:4:{s:4:"file";s:21:"patagonia-300x112.jpg";s:5:"width";i:300;s:6:"height";i:112;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:10:{s:8:"aperture";i:0;s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";i:0;s:9:"copyright";s:0:"";s:12:"focal_length";i:0;s:3:"iso";i:0;s:13:"shutter_speed";i:0;s:5:"title";s:0:"";}}]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
 		<title></title>
 		<link>http://www.genesisframework.com/186/</link>
 		<pubDate>Mon, 24 Sep 2012 19:34:05 +0000</pubDate>
@@ -1174,7 +1074,7 @@
 		<wp:post_name>186</wp:post_name>
 		<wp:status>publish</wp:status>
 		<wp:post_parent>61</wp:post_parent>
-		<wp:menu_order>13</wp:menu_order>
+		<wp:menu_order>12</wp:menu_order>
 		<wp:post_type>nav_menu_item</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
@@ -1213,6 +1113,37 @@
 		</wp:postmeta>
 	</item>
 	<item>
+		<title>wordpress</title>
+		<link>http://www.genesisframework.com/?attachment_id=434</link>
+		<pubDate>Tue, 04 Jun 2013 01:08:12 +0000</pubDate>
+		<dc:creator>bgardner</dc:creator>
+		<guid isPermaLink="false">http://www.genesisframework.com/wp-content/uploads/wordpress.png</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>434</wp:post_id>
+		<wp:post_date>2013-06-04 01:08:12</wp:post_date>
+		<wp:post_date_gmt>2013-06-04 01:08:12</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>wordpress</wp:post_name>
+		<wp:status>inherit</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>attachment</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:attachment_url>http://www.genesisframework.com/wp-content/uploads/wordpress.png</wp:attachment_url>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attached_file</wp:meta_key>
+			<wp:meta_value><![CDATA[wordpress.png]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attachment_metadata</wp:meta_key>
+			<wp:meta_value><![CDATA[a:5:{s:5:"width";i:150;s:6:"height";i:150;s:4:"file";s:13:"wordpress.png";s:5:"sizes";a:0:{}s:10:"image_meta";a:10:{s:8:"aperture";i:0;s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";i:0;s:9:"copyright";s:0:"";s:12:"focal_length";i:0;s:3:"iso";i:0;s:13:"shutter_speed";i:0;s:5:"title";s:0:"";}}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
 		<title></title>
 		<link>http://www.genesisframework.com/187/</link>
 		<pubDate>Mon, 24 Sep 2012 19:34:05 +0000</pubDate>
@@ -1229,7 +1160,7 @@
 		<wp:post_name>187</wp:post_name>
 		<wp:status>publish</wp:status>
 		<wp:post_parent>61</wp:post_parent>
-		<wp:menu_order>15</wp:menu_order>
+		<wp:menu_order>14</wp:menu_order>
 		<wp:post_type>nav_menu_item</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
@@ -1284,7 +1215,7 @@
 		<wp:post_name>188</wp:post_name>
 		<wp:status>publish</wp:status>
 		<wp:post_parent>61</wp:post_parent>
-		<wp:menu_order>18</wp:menu_order>
+		<wp:menu_order>17</wp:menu_order>
 		<wp:post_type>nav_menu_item</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
@@ -1323,7 +1254,7 @@
 		</wp:postmeta>
 	</item>
 	<item>
-		<title></title>
+		<title>Sample</title>
 		<link>http://www.genesisframework.com/189/</link>
 		<pubDate>Mon, 24 Sep 2012 19:34:05 +0000</pubDate>
 		<dc:creator>bgardner</dc:creator>
@@ -1394,7 +1325,7 @@
 		<wp:post_name>190</wp:post_name>
 		<wp:status>publish</wp:status>
 		<wp:post_parent>61</wp:post_parent>
-		<wp:menu_order>14</wp:menu_order>
+		<wp:menu_order>13</wp:menu_order>
 		<wp:post_type>nav_menu_item</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
@@ -1449,7 +1380,7 @@
 		<wp:post_name>191</wp:post_name>
 		<wp:status>publish</wp:status>
 		<wp:post_parent>61</wp:post_parent>
-		<wp:menu_order>17</wp:menu_order>
+		<wp:menu_order>16</wp:menu_order>
 		<wp:post_type>nav_menu_item</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
@@ -1504,7 +1435,7 @@
 		<wp:post_name>192</wp:post_name>
 		<wp:status>publish</wp:status>
 		<wp:post_parent>61</wp:post_parent>
-		<wp:menu_order>16</wp:menu_order>
+		<wp:menu_order>15</wp:menu_order>
 		<wp:post_type>nav_menu_item</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
@@ -2038,7 +1969,7 @@
 		</wp:postmeta>
 	</item>
 	<item>
-		<title></title>
+		<title>Contact</title>
 		<link>http://www.genesisframework.com/202/</link>
 		<pubDate>Mon, 24 Sep 2012 19:34:06 +0000</pubDate>
 		<dc:creator>bgardner</dc:creator>
@@ -2054,7 +1985,7 @@
 		<wp:post_name>202</wp:post_name>
 		<wp:status>publish</wp:status>
 		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>23</wp:menu_order>
+		<wp:menu_order>22</wp:menu_order>
 		<wp:post_type>nav_menu_item</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
@@ -2081,7 +2012,7 @@
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>_menu_item_classes</wp:meta_key>
-			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+			<wp:meta_value><![CDATA[a:1:{i:0;s:4:"last";}]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>_menu_item_xfn</wp:meta_key>
@@ -2093,140 +2024,30 @@
 		</wp:postmeta>
 	</item>
 	<item>
-		<title>Buy Genesis Now</title>
-		<link>http://www.genesisframework.com/register-now/</link>
-		<pubDate>Mon, 29 Oct 2012 15:21:58 +0000</pubDate>
+		<title>Brian Gardner</title>
+		<link>http://www.genesisframework.com/brian-gardner/</link>
+		<pubDate>Fri, 02 Nov 2012 17:27:40 +0000</pubDate>
 		<dc:creator>bgardner</dc:creator>
-		<guid isPermaLink="false">http://www.genesisframework.com/?p=209</guid>
+		<guid isPermaLink="false">http://www.genesisframework.com/?p=282</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>209</wp:post_id>
-		<wp:post_date>2012-10-29 15:21:58</wp:post_date>
-		<wp:post_date_gmt>2012-10-29 15:21:58</wp:post_date_gmt>
+		<wp:post_id>282</wp:post_id>
+		<wp:post_date>2012-11-02 17:27:40</wp:post_date>
+		<wp:post_date_gmt>2012-11-02 17:27:40</wp:post_date_gmt>
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>register-now</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>24</wp:menu_order>
-		<wp:post_type>nav_menu_item</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="nav_menu" nicename="primary-navigation"><![CDATA[Primary Navigation]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_type</wp:meta_key>
-			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_menu_item_parent</wp:meta_key>
-			<wp:meta_value><![CDATA[0]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_object_id</wp:meta_key>
-			<wp:meta_value><![CDATA[209]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_object</wp:meta_key>
-			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_target</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_classes</wp:meta_key>
-			<wp:meta_value><![CDATA[a:1:{i:0;s:19:"highlight-menu-item";}]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_xfn</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_url</wp:meta_key>
-			<wp:meta_value><![CDATA[http://www.studiopress.com]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>1152 Grid System</title>
-		<link>http://www.genesisframework.com/the-1140-css-grid-system/</link>
-		<pubDate>Mon, 29 Oct 2012 16:10:04 +0000</pubDate>
-		<dc:creator>bgardner</dc:creator>
-		<guid isPermaLink="false">http://www.genesisframework.com/?p=213</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>213</wp:post_id>
-		<wp:post_date>2012-10-29 16:10:04</wp:post_date>
-		<wp:post_date_gmt>2012-10-29 16:10:04</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>the-1140-css-grid-system</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>61</wp:post_parent>
-		<wp:menu_order>12</wp:menu_order>
-		<wp:post_type>nav_menu_item</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="nav_menu" nicename="primary-navigation"><![CDATA[Primary Navigation]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_type</wp:meta_key>
-			<wp:meta_value><![CDATA[post_type]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_menu_item_parent</wp:meta_key>
-			<wp:meta_value><![CDATA[50]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_object_id</wp:meta_key>
-			<wp:meta_value><![CDATA[210]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_object</wp:meta_key>
-			<wp:meta_value><![CDATA[page]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_target</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_classes</wp:meta_key>
-			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_xfn</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_url</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>About</title>
-		<link>http://www.genesisframework.com/about/</link>
-		<pubDate>Wed, 31 Oct 2012 16:46:38 +0000</pubDate>
-		<dc:creator>bgardner</dc:creator>
-		<guid isPermaLink="false">http://www.genesisframework.com/?p=232</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>232</wp:post_id>
-		<wp:post_date>2012-10-31 16:46:38</wp:post_date>
-		<wp:post_date_gmt>2012-10-31 16:46:38</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>about</wp:post_name>
+		<wp:post_name>brian-gardner</wp:post_name>
 		<wp:status>publish</wp:status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>1</wp:menu_order>
 		<wp:post_type>nav_menu_item</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="nav_menu" nicename="mobile-navigation"><![CDATA[Mobile Navigation]]></category>
+		<category domain="nav_menu" nicename="contributors"><![CDATA[Contributors]]></category>
 		<wp:postmeta>
 			<wp:meta_key>_menu_item_type</wp:meta_key>
-			<wp:meta_value><![CDATA[post_type]]></wp:meta_value>
+			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>_menu_item_menu_item_parent</wp:meta_key>
@@ -2234,11 +2055,11 @@
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>_menu_item_object_id</wp:meta_key>
-			<wp:meta_value><![CDATA[31]]></wp:meta_value>
+			<wp:meta_value><![CDATA[282]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>_menu_item_object</wp:meta_key>
-			<wp:meta_value><![CDATA[page]]></wp:meta_value>
+			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>_menu_item_target</wp:meta_key>
@@ -2254,7 +2075,172 @@
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>_menu_item_url</wp:meta_key>
+			<wp:meta_value><![CDATA[http://twitter.com/bgardner]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Nathan Rice</title>
+		<link>http://www.genesisframework.com/nathan-rice/</link>
+		<pubDate>Fri, 02 Nov 2012 17:27:41 +0000</pubDate>
+		<dc:creator>bgardner</dc:creator>
+		<guid isPermaLink="false">http://www.genesisframework.com/?p=283</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>283</wp:post_id>
+		<wp:post_date>2012-11-02 17:27:41</wp:post_date>
+		<wp:post_date_gmt>2012-11-02 17:27:41</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>nathan-rice</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>2</wp:menu_order>
+		<wp:post_type>nav_menu_item</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="nav_menu" nicename="contributors"><![CDATA[Contributors]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_type</wp:meta_key>
+			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_menu_item_parent</wp:meta_key>
+			<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_object_id</wp:meta_key>
+			<wp:meta_value><![CDATA[283]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_object</wp:meta_key>
+			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_target</wp:meta_key>
 			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_classes</wp:meta_key>
+			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_xfn</wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_url</wp:meta_key>
+			<wp:meta_value><![CDATA[http://twitter.com/nathanrice]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Ron Rennick</title>
+		<link>http://www.genesisframework.com/ron-rennick/</link>
+		<pubDate>Fri, 02 Nov 2012 17:27:41 +0000</pubDate>
+		<dc:creator>bgardner</dc:creator>
+		<guid isPermaLink="false">http://www.genesisframework.com/?p=284</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>284</wp:post_id>
+		<wp:post_date>2012-11-02 17:27:41</wp:post_date>
+		<wp:post_date_gmt>2012-11-02 17:27:41</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>ron-rennick</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>5</wp:menu_order>
+		<wp:post_type>nav_menu_item</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="nav_menu" nicename="contributors"><![CDATA[Contributors]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_type</wp:meta_key>
+			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_menu_item_parent</wp:meta_key>
+			<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_object_id</wp:meta_key>
+			<wp:meta_value><![CDATA[284]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_object</wp:meta_key>
+			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_target</wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_classes</wp:meta_key>
+			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_xfn</wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_url</wp:meta_key>
+			<wp:meta_value><![CDATA[http://twitter.com/sillygrampy]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Rafal Tomal</title>
+		<link>http://www.genesisframework.com/rafal-tomal/</link>
+		<pubDate>Fri, 02 Nov 2012 17:27:41 +0000</pubDate>
+		<dc:creator>bgardner</dc:creator>
+		<guid isPermaLink="false">http://www.genesisframework.com/?p=285</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>285</wp:post_id>
+		<wp:post_date>2012-11-02 17:27:41</wp:post_date>
+		<wp:post_date_gmt>2012-11-02 17:27:41</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>rafal-tomal</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>4</wp:menu_order>
+		<wp:post_type>nav_menu_item</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="nav_menu" nicename="contributors"><![CDATA[Contributors]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_type</wp:meta_key>
+			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_menu_item_parent</wp:meta_key>
+			<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_object_id</wp:meta_key>
+			<wp:meta_value><![CDATA[285]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_object</wp:meta_key>
+			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_target</wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_classes</wp:meta_key>
+			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_xfn</wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_url</wp:meta_key>
+			<wp:meta_value><![CDATA[http://twitter.com/rafaltomal]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -2415,6 +2401,10 @@ This is an example of a WordPress page, you could edit this to put information a
 		<wp:postmeta>
 			<wp:meta_key>_wp_page_template</wp:meta_key>
 			<wp:meta_value><![CDATA[default]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_genesis_layout</wp:meta_key>
+			<wp:meta_value><![CDATA[sidebar-content-sidebar]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -2697,883 +2687,6 @@ This is an example of a WordPress page, you could edit this to put information a
 		</wp:postmeta>
 	</item>
 	<item>
-		<title>Blog</title>
-		<link>http://www.genesisframework.com/blog/</link>
-		<pubDate>Wed, 31 Oct 2012 16:46:39 +0000</pubDate>
-		<dc:creator>bgardner</dc:creator>
-		<guid isPermaLink="false">http://www.genesisframework.com/?p=233</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>233</wp:post_id>
-		<wp:post_date>2012-10-31 16:46:39</wp:post_date>
-		<wp:post_date_gmt>2012-10-31 16:46:39</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>blog</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>75</wp:post_parent>
-		<wp:menu_order>2</wp:menu_order>
-		<wp:post_type>nav_menu_item</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="nav_menu" nicename="mobile-navigation"><![CDATA[Mobile Navigation]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_type</wp:meta_key>
-			<wp:meta_value><![CDATA[post_type]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_menu_item_parent</wp:meta_key>
-			<wp:meta_value><![CDATA[0]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_object_id</wp:meta_key>
-			<wp:meta_value><![CDATA[79]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_object</wp:meta_key>
-			<wp:meta_value><![CDATA[page]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_target</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_classes</wp:meta_key>
-			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_xfn</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_url</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Contact</title>
-		<link>http://www.genesisframework.com/contact/</link>
-		<pubDate>Wed, 31 Oct 2012 16:46:39 +0000</pubDate>
-		<dc:creator>bgardner</dc:creator>
-		<guid isPermaLink="false">http://www.genesisframework.com/?p=234</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>234</wp:post_id>
-		<wp:post_date>2012-10-31 16:46:39</wp:post_date>
-		<wp:post_date_gmt>2012-10-31 16:46:39</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>contact</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>4</wp:menu_order>
-		<wp:post_type>nav_menu_item</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="nav_menu" nicename="mobile-navigation"><![CDATA[Mobile Navigation]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_type</wp:meta_key>
-			<wp:meta_value><![CDATA[post_type]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_menu_item_parent</wp:meta_key>
-			<wp:meta_value><![CDATA[0]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_object_id</wp:meta_key>
-			<wp:meta_value><![CDATA[83]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_object</wp:meta_key>
-			<wp:meta_value><![CDATA[page]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_target</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_classes</wp:meta_key>
-			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_xfn</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_url</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Archives</title>
-		<link>http://www.genesisframework.com/archives/</link>
-		<pubDate>Wed, 31 Oct 2012 16:46:39 +0000</pubDate>
-		<dc:creator>bgardner</dc:creator>
-		<guid isPermaLink="false">http://www.genesisframework.com/?p=235</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>235</wp:post_id>
-		<wp:post_date>2012-10-31 16:46:39</wp:post_date>
-		<wp:post_date_gmt>2012-10-31 16:46:39</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>archives</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>75</wp:post_parent>
-		<wp:menu_order>3</wp:menu_order>
-		<wp:post_type>nav_menu_item</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="nav_menu" nicename="mobile-navigation"><![CDATA[Mobile Navigation]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_type</wp:meta_key>
-			<wp:meta_value><![CDATA[post_type]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_menu_item_parent</wp:meta_key>
-			<wp:meta_value><![CDATA[0]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_object_id</wp:meta_key>
-			<wp:meta_value><![CDATA[77]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_object</wp:meta_key>
-			<wp:meta_value><![CDATA[page]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_target</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_classes</wp:meta_key>
-			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_xfn</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_url</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Brian Gardner</title>
-		<link>http://www.genesisframework.com/brian-gardner/</link>
-		<pubDate>Fri, 02 Nov 2012 17:27:40 +0000</pubDate>
-		<dc:creator>bgardner</dc:creator>
-		<guid isPermaLink="false">http://www.genesisframework.com/?p=282</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>282</wp:post_id>
-		<wp:post_date>2012-11-02 17:27:40</wp:post_date>
-		<wp:post_date_gmt>2012-11-02 17:27:40</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>brian-gardner</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>1</wp:menu_order>
-		<wp:post_type>nav_menu_item</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="nav_menu" nicename="contributors"><![CDATA[Contributors]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_type</wp:meta_key>
-			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_menu_item_parent</wp:meta_key>
-			<wp:meta_value><![CDATA[0]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_object_id</wp:meta_key>
-			<wp:meta_value><![CDATA[282]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_object</wp:meta_key>
-			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_target</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_classes</wp:meta_key>
-			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_xfn</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_url</wp:meta_key>
-			<wp:meta_value><![CDATA[http://twitter.com/bgardner]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Nathan Rice</title>
-		<link>http://www.genesisframework.com/nathan-rice/</link>
-		<pubDate>Fri, 02 Nov 2012 17:27:41 +0000</pubDate>
-		<dc:creator>bgardner</dc:creator>
-		<guid isPermaLink="false">http://www.genesisframework.com/?p=283</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>283</wp:post_id>
-		<wp:post_date>2012-11-02 17:27:41</wp:post_date>
-		<wp:post_date_gmt>2012-11-02 17:27:41</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>nathan-rice</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>3</wp:menu_order>
-		<wp:post_type>nav_menu_item</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="nav_menu" nicename="contributors"><![CDATA[Contributors]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_type</wp:meta_key>
-			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_menu_item_parent</wp:meta_key>
-			<wp:meta_value><![CDATA[0]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_object_id</wp:meta_key>
-			<wp:meta_value><![CDATA[283]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_object</wp:meta_key>
-			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_target</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_classes</wp:meta_key>
-			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_xfn</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_url</wp:meta_key>
-			<wp:meta_value><![CDATA[http://twitter.com/nathanrice]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Ron Rennick</title>
-		<link>http://www.genesisframework.com/ron-rennick/</link>
-		<pubDate>Fri, 02 Nov 2012 17:27:41 +0000</pubDate>
-		<dc:creator>bgardner</dc:creator>
-		<guid isPermaLink="false">http://www.genesisframework.com/?p=284</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>284</wp:post_id>
-		<wp:post_date>2012-11-02 17:27:41</wp:post_date>
-		<wp:post_date_gmt>2012-11-02 17:27:41</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>ron-rennick</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>6</wp:menu_order>
-		<wp:post_type>nav_menu_item</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="nav_menu" nicename="contributors"><![CDATA[Contributors]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_type</wp:meta_key>
-			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_menu_item_parent</wp:meta_key>
-			<wp:meta_value><![CDATA[0]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_object_id</wp:meta_key>
-			<wp:meta_value><![CDATA[284]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_object</wp:meta_key>
-			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_target</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_classes</wp:meta_key>
-			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_xfn</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_url</wp:meta_key>
-			<wp:meta_value><![CDATA[http://twitter.com/sillygrampy]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Rafal Tomal</title>
-		<link>http://www.genesisframework.com/rafal-tomal/</link>
-		<pubDate>Fri, 02 Nov 2012 17:27:41 +0000</pubDate>
-		<dc:creator>bgardner</dc:creator>
-		<guid isPermaLink="false">http://www.genesisframework.com/?p=285</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>285</wp:post_id>
-		<wp:post_date>2012-11-02 17:27:41</wp:post_date>
-		<wp:post_date_gmt>2012-11-02 17:27:41</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>rafal-tomal</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>5</wp:menu_order>
-		<wp:post_type>nav_menu_item</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="nav_menu" nicename="contributors"><![CDATA[Contributors]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_type</wp:meta_key>
-			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_menu_item_parent</wp:meta_key>
-			<wp:meta_value><![CDATA[0]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_object_id</wp:meta_key>
-			<wp:meta_value><![CDATA[285]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_object</wp:meta_key>
-			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_target</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_classes</wp:meta_key>
-			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_xfn</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_url</wp:meta_key>
-			<wp:meta_value><![CDATA[http://twitter.com/rafaltomal]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Nick Croft</title>
-		<link>http://www.genesisframework.com/nick-croft/</link>
-		<pubDate>Fri, 02 Nov 2012 17:27:41 +0000</pubDate>
-		<dc:creator>bgardner</dc:creator>
-		<guid isPermaLink="false">http://www.genesisframework.com/?p=286</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>286</wp:post_id>
-		<wp:post_date>2012-11-02 17:27:41</wp:post_date>
-		<wp:post_date_gmt>2012-11-02 17:27:41</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>nick-croft</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>4</wp:menu_order>
-		<wp:post_type>nav_menu_item</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="nav_menu" nicename="contributors"><![CDATA[Contributors]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_type</wp:meta_key>
-			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_menu_item_parent</wp:meta_key>
-			<wp:meta_value><![CDATA[0]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_object_id</wp:meta_key>
-			<wp:meta_value><![CDATA[286]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_object</wp:meta_key>
-			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_target</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_classes</wp:meta_key>
-			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_xfn</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_url</wp:meta_key>
-			<wp:meta_value><![CDATA[http://twitter.com/nick_thegeek]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Josh Byers</title>
-		<link>http://www.genesisframework.com/josh-byers/</link>
-		<pubDate>Fri, 02 Nov 2012 17:27:41 +0000</pubDate>
-		<dc:creator>bgardner</dc:creator>
-		<guid isPermaLink="false">http://www.genesisframework.com/?p=287</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>287</wp:post_id>
-		<wp:post_date>2012-11-02 17:27:41</wp:post_date>
-		<wp:post_date_gmt>2012-11-02 17:27:41</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>josh-byers</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>2</wp:menu_order>
-		<wp:post_type>nav_menu_item</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="nav_menu" nicename="contributors"><![CDATA[Contributors]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_type</wp:meta_key>
-			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_menu_item_parent</wp:meta_key>
-			<wp:meta_value><![CDATA[0]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_object_id</wp:meta_key>
-			<wp:meta_value><![CDATA[287]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_object</wp:meta_key>
-			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_target</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_classes</wp:meta_key>
-			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_xfn</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_url</wp:meta_key>
-			<wp:meta_value><![CDATA[http://twitter.com/joshbyers]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Sample Post With Headlines</title>
-		<link>http://www.genesisframework.com/headlines/</link>
-		<pubDate>Tue, 01 Jan 2013 01:53:58 +0000</pubDate>
-		<dc:creator>bgardner</dc:creator>
-		<guid isPermaLink="false">http://demo.studiopress.com/genesis/?p=5</guid>
-		<description></description>
-		<content:encoded><![CDATA[<h1>Headline 1</h1>
-<h2>Headline 2</h2>
-<h3>Headline 3</h3>
-<h4>Headline 4</h4>
-<h5>Headline 5</h5>
-<h6>Headline 6</h6>]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>5</wp:post_id>
-		<wp:post_date>2013-01-01 01:53:58</wp:post_date>
-		<wp:post_date_gmt>2013-01-01 01:53:58</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>headlines</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>post</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="category" nicename="category-1"><![CDATA[Category #1]]></category>
-		<category domain="category" nicename="category-2"><![CDATA[Category #2]]></category>
-		<category domain="category" nicename="category-3"><![CDATA[Category #3]]></category>
-		<category domain="category" nicename="category-4"><![CDATA[Category #4]]></category>
-		<category domain="category" nicename="category-5"><![CDATA[Category #5]]></category>
-		<category domain="post_tag" nicename="headlines"><![CDATA[Headlines]]></category>
-		<category domain="category" nicename="sub-category-11"><![CDATA[Sub Category 1.1]]></category>
-		<category domain="category" nicename="sub-category-12"><![CDATA[Sub Category 1.2]]></category>
-		<category domain="category" nicename="sub-category-13"><![CDATA[Sub Category 1.3]]></category>
-		<category domain="category" nicename="sub-category-21"><![CDATA[Sub Category 2.1]]></category>
-		<category domain="category" nicename="sub-category-22"><![CDATA[Sub Category 2.2]]></category>
-		<category domain="category" nicename="sub-category-23"><![CDATA[Sub Category 2.3]]></category>
-		<category domain="category" nicename="sub-category-31"><![CDATA[Sub Category 3.1]]></category>
-		<category domain="category" nicename="sub-category-32"><![CDATA[Sub Category 3.2]]></category>
-		<category domain="category" nicename="sub-category-33"><![CDATA[Sub Category 3.3]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[2]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_wp_old_slug</wp:meta_key>
-			<wp:meta_value><![CDATA[sample-post-with-headlines]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Sample Post With an Ordered List</title>
-		<link>http://www.genesisframework.com/ordered-list/</link>
-		<pubDate>Tue, 01 Jan 2013 01:54:32 +0000</pubDate>
-		<dc:creator>bgardner</dc:creator>
-		<guid isPermaLink="false">http://demo.studiopress.com/genesis/?p=9</guid>
-		<description></description>
-		<content:encoded><![CDATA[This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind.
-
-<ol>
-<li>Ordered list item #1</li>
-<li>Ordered list item #2</li>
-<li>Ordered list item #3</li>
-<li>Ordered list item #4</li>
-<li>Ordered list item #5</li>
-</ol>
-
-This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind.
-
-This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind. This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind.]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>9</wp:post_id>
-		<wp:post_date>2013-01-01 01:54:32</wp:post_date>
-		<wp:post_date_gmt>2013-01-01 01:54:32</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>ordered-list</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>post</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="category" nicename="category-1"><![CDATA[Category #1]]></category>
-		<category domain="post_tag" nicename="ordered-lists"><![CDATA[Ordered Lists]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[2]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_wp_old_slug</wp:meta_key>
-			<wp:meta_value><![CDATA[sample-post-with-an-ordered-list]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Sample Post With an Unordered List</title>
-		<link>http://www.genesisframework.com/unordered-list/</link>
-		<pubDate>Tue, 01 Jan 2013 01:54:48 +0000</pubDate>
-		<dc:creator>bgardner</dc:creator>
-		<guid isPermaLink="false">http://demo.studiopress.com/genesis/?p=11</guid>
-		<description></description>
-		<content:encoded><![CDATA[This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind.
-
-<ul>
-<li>Unordered list item #1</li>
-<li>Unordered list item #2</li>
-<li>Unordered list item #3</li>
-<li>Unordered list item #4</li>
-<li>Unordered list item #5</li>
-</ul>
-
-This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind.
-
-This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind. This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind.]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>11</wp:post_id>
-		<wp:post_date>2013-01-01 01:54:48</wp:post_date>
-		<wp:post_date_gmt>2013-01-01 01:54:48</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>unordered-list</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>post</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="category" nicename="category-1"><![CDATA[Category #1]]></category>
-		<category domain="post_tag" nicename="unordered-lists"><![CDATA[Unordered Lists]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[2]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_wp_old_slug</wp:meta_key>
-			<wp:meta_value><![CDATA[sample-post-with-an-unordered-list]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Sample Post With Image Centered</title>
-		<link>http://www.genesisframework.com/image-centered/</link>
-		<pubDate>Tue, 01 Jan 2013 01:55:21 +0000</pubDate>
-		<dc:creator>bgardner</dc:creator>
-		<guid isPermaLink="false">http://demo.studiopress.com/genesis/?p=13</guid>
-		<description></description>
-		<content:encoded><![CDATA[[caption id="" align="aligncenter" width="142" caption="Here's a sample caption with an image centered."]<img alt="Here's a sample caption with a sample image centered." src="http://demo.studiopress.com/images/wordpress.png" width="142" height="142" />[/caption]
-
-This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind.
-
-This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind. This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind.
-
-This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind.
-
-This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind. This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind.]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>13</wp:post_id>
-		<wp:post_date>2013-01-01 01:55:21</wp:post_date>
-		<wp:post_date_gmt>2013-01-01 01:55:21</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>image-centered</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>post</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="category" nicename="category-1"><![CDATA[Category #1]]></category>
-		<category domain="post_tag" nicename="images-centered"><![CDATA[Images Centered]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[2]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_wp_old_slug</wp:meta_key>
-			<wp:meta_value><![CDATA[sample-post-with-image-centered]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Sample Post With Image Aligned Right</title>
-		<link>http://www.genesisframework.com/image-aligned-right/</link>
-		<pubDate>Tue, 01 Jan 2013 01:56:30 +0000</pubDate>
-		<dc:creator>bgardner</dc:creator>
-		<guid isPermaLink="false">http://demo.studiopress.com/genesis/?p=16</guid>
-		<description></description>
-		<content:encoded><![CDATA[[caption id="" align="alignright" width="142" caption="Here's a sample caption with an image aligned right."]<img alt="Here's a sample caption with a sample image aligned right." src="http://demo.studiopress.com/images/wordpress.png" width="142" height="142" />[/caption]
-
-This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like.
-
-This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind. This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like.
-
-This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind.
-
-This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind. This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind.]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>16</wp:post_id>
-		<wp:post_date>2013-01-01 01:56:30</wp:post_date>
-		<wp:post_date_gmt>2013-01-01 01:56:30</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>image-aligned-right</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>post</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="category" nicename="category-1"><![CDATA[Category #1]]></category>
-		<category domain="post_tag" nicename="images-right"><![CDATA[Images Right]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[2]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_wp_old_slug</wp:meta_key>
-			<wp:meta_value><![CDATA[sample-post-with-image-aligned-right]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Sample Post With Image Aligned Left</title>
-		<link>http://www.genesisframework.com/image-aligned-left/</link>
-		<pubDate>Tue, 01 Jan 2013 01:57:05 +0000</pubDate>
-		<dc:creator>bgardner</dc:creator>
-		<guid isPermaLink="false">http://demo.studiopress.com/genesis/?p=18</guid>
-		<description></description>
-		<content:encoded><![CDATA[[caption id="" align="alignleft" width="142" caption="Here&#39;s a sample caption with an image aligned left."]<img alt="Heres a sample caption, with a sample image aligned left." src="http://demo.studiopress.com/images/wordpress.png" width="142" height="142" />[/caption]
-
-This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like.
-
-This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind. This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like.
-
-This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind.
-
-This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind. This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind.]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>18</wp:post_id>
-		<wp:post_date>2013-01-01 01:57:05</wp:post_date>
-		<wp:post_date_gmt>2013-01-01 01:57:05</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>image-aligned-left</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>post</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="category" nicename="category-1"><![CDATA[Category #1]]></category>
-		<category domain="post_tag" nicename="images-left"><![CDATA[Images Left]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[2]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_wp_old_slug</wp:meta_key>
-			<wp:meta_value><![CDATA[sample-post-with-image-aligned-left]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Sample Post With Threaded Comments</title>
-		<link>http://www.genesisframework.com/threaded-comments/</link>
-		<pubDate>Tue, 01 Jan 2013 01:57:18 +0000</pubDate>
-		<dc:creator>bgardner</dc:creator>
-		<guid isPermaLink="false">http://demo.studiopress.com/genesis/?p=20</guid>
-		<description></description>
-		<content:encoded><![CDATA[<img src="http://www.genesisframework.com/wp-content/uploads/patagonia.jpg" alt="Sample Image" />
-
-This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind.
-
-This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind. This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind.
-
-This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind.
-
-This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind. This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind.]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>20</wp:post_id>
-		<wp:post_date>2013-01-01 01:57:18</wp:post_date>
-		<wp:post_date_gmt>2013-01-01 01:57:18</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>threaded-comments</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>post</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="category" nicename="category-1"><![CDATA[Category #1]]></category>
-		<category domain="post_tag" nicename="threaded-comments"><![CDATA[Threaded Comments]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[2]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_wp_old_slug</wp:meta_key>
-			<wp:meta_value><![CDATA[sample-post-with-threaded-comments]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:comment>
-			<wp:comment_id>2</wp:comment_id>
-			<wp:comment_author><![CDATA[Brian Gardner]]></wp:comment_author>
-			<wp:comment_author_email>brian@briangardner.com</wp:comment_author_email>
-			<wp:comment_author_url></wp:comment_author_url>
-			<wp:comment_author_IP>76.29.60.137</wp:comment_author_IP>
-			<wp:comment_date>2013-01-01 19:13:54</wp:comment_date>
-			<wp:comment_date_gmt>2013-01-01 19:13:54</wp:comment_date_gmt>
-			<wp:comment_content><![CDATA[This is an example of a comment made on a post. You can either edit the comment, delete the comment or reply to the comment. Use this as a place to respond to the post or to share what you are thinking.]]></wp:comment_content>
-			<wp:comment_approved>1</wp:comment_approved>
-			<wp:comment_type></wp:comment_type>
-			<wp:comment_parent>0</wp:comment_parent>
-			<wp:comment_user_id>2</wp:comment_user_id>
-		</wp:comment>
-		<wp:comment>
-			<wp:comment_id>3</wp:comment_id>
-			<wp:comment_author><![CDATA[Brian Gardner]]></wp:comment_author>
-			<wp:comment_author_email>brian@briangardner.com</wp:comment_author_email>
-			<wp:comment_author_url></wp:comment_author_url>
-			<wp:comment_author_IP>76.29.60.137</wp:comment_author_IP>
-			<wp:comment_date>2013-01-01 19:14:04</wp:comment_date>
-			<wp:comment_date_gmt>2013-01-01 19:14:04</wp:comment_date_gmt>
-			<wp:comment_content><![CDATA[This is an example of a nested threaded comment which is new in WordPress 2.7. This is where you can reply to a comment that was previously made, and visually makes reading comments to much easier.]]></wp:comment_content>
-			<wp:comment_approved>1</wp:comment_approved>
-			<wp:comment_type></wp:comment_type>
-			<wp:comment_parent>2</wp:comment_parent>
-			<wp:comment_user_id>2</wp:comment_user_id>
-		</wp:comment>
-		<wp:comment>
-			<wp:comment_id>4</wp:comment_id>
-			<wp:comment_author><![CDATA[Brian Gardner]]></wp:comment_author>
-			<wp:comment_author_email>brian@briangardner.com</wp:comment_author_email>
-			<wp:comment_author_url></wp:comment_author_url>
-			<wp:comment_author_IP>76.29.60.137</wp:comment_author_IP>
-			<wp:comment_date>2013-01-01 19:14:11</wp:comment_date>
-			<wp:comment_date_gmt>2013-01-01 19:14:11</wp:comment_date_gmt>
-			<wp:comment_content><![CDATA[This is an example of a comment made on a post. You can either edit the comment, delete the comment or reply to the comment. Use this as a place to respond to the post or to share what you are thinking.]]></wp:comment_content>
-			<wp:comment_approved>1</wp:comment_approved>
-			<wp:comment_type></wp:comment_type>
-			<wp:comment_parent>0</wp:comment_parent>
-			<wp:comment_user_id>2</wp:comment_user_id>
-		</wp:comment>
-		<wp:comment>
-			<wp:comment_id>5</wp:comment_id>
-			<wp:comment_author><![CDATA[Brian Gardner]]></wp:comment_author>
-			<wp:comment_author_email>brian@briangardner.com</wp:comment_author_email>
-			<wp:comment_author_url></wp:comment_author_url>
-			<wp:comment_author_IP>76.29.60.137</wp:comment_author_IP>
-			<wp:comment_date>2013-01-01 19:14:19</wp:comment_date>
-			<wp:comment_date_gmt>2013-01-01 19:14:19</wp:comment_date_gmt>
-			<wp:comment_content><![CDATA[This is an example of a nested threaded comment which is new in WordPress 2.7. This is where you can reply to a comment that was previously made, and visually makes reading comments to much easier.]]></wp:comment_content>
-			<wp:comment_approved>1</wp:comment_approved>
-			<wp:comment_type></wp:comment_type>
-			<wp:comment_parent>4</wp:comment_parent>
-			<wp:comment_user_id>2</wp:comment_user_id>
-		</wp:comment>
-		<wp:comment>
-			<wp:comment_id>6</wp:comment_id>
-			<wp:comment_author><![CDATA[Brian Gardner]]></wp:comment_author>
-			<wp:comment_author_email>brian@briangardner.com</wp:comment_author_email>
-			<wp:comment_author_url></wp:comment_author_url>
-			<wp:comment_author_IP>76.29.60.137</wp:comment_author_IP>
-			<wp:comment_date>2013-01-01 19:14:25</wp:comment_date>
-			<wp:comment_date_gmt>2013-01-01 19:14:25</wp:comment_date_gmt>
-			<wp:comment_content><![CDATA[This is an example of a nested threaded comment which is new in WordPress 2.7. This is where you can reply to a comment that was previously made, and visually makes reading comments to much easier.]]></wp:comment_content>
-			<wp:comment_approved>1</wp:comment_approved>
-			<wp:comment_type></wp:comment_type>
-			<wp:comment_parent>5</wp:comment_parent>
-			<wp:comment_user_id>2</wp:comment_user_id>
-		</wp:comment>
-		<wp:comment>
-			<wp:comment_id>7</wp:comment_id>
-			<wp:comment_author><![CDATA[Brian Gardner]]></wp:comment_author>
-			<wp:comment_author_email>brian@briangardner.com</wp:comment_author_email>
-			<wp:comment_author_url></wp:comment_author_url>
-			<wp:comment_author_IP>76.29.60.137</wp:comment_author_IP>
-			<wp:comment_date>2013-01-01 19:14:38</wp:comment_date>
-			<wp:comment_date_gmt>2013-01-01 19:14:38</wp:comment_date_gmt>
-			<wp:comment_content><![CDATA[This is an example of a comment made on a post. You can either edit the comment, delete the comment or reply to the comment. Use this as a place to respond to the post or to share what you are thinking.]]></wp:comment_content>
-			<wp:comment_approved>1</wp:comment_approved>
-			<wp:comment_type></wp:comment_type>
-			<wp:comment_parent>0</wp:comment_parent>
-			<wp:comment_user_id>2</wp:comment_user_id>
-		</wp:comment>
-	</item>
-	<item>
 		<title>Content/Sidebar</title>
 		<link>http://www.genesisframework.com/layouts/cs/</link>
 		<pubDate>Sun, 15 Aug 2010 19:09:00 +0000</pubDate>
@@ -3838,6 +2951,651 @@ This is an example of a WordPress page, you could edit this to put information a
 		</wp:postmeta>
 	</item>
 	<item>
+		<title>Nick Croft</title>
+		<link>http://www.genesisframework.com/nick-croft/</link>
+		<pubDate>Fri, 02 Nov 2012 17:27:41 +0000</pubDate>
+		<dc:creator>bgardner</dc:creator>
+		<guid isPermaLink="false">http://www.genesisframework.com/?p=286</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>286</wp:post_id>
+		<wp:post_date>2012-11-02 17:27:41</wp:post_date>
+		<wp:post_date_gmt>2012-11-02 17:27:41</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>nick-croft</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>6</wp:menu_order>
+		<wp:post_type>nav_menu_item</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="nav_menu" nicename="contributors"><![CDATA[Contributors]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_type</wp:meta_key>
+			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_menu_item_parent</wp:meta_key>
+			<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_object_id</wp:meta_key>
+			<wp:meta_value><![CDATA[286]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_object</wp:meta_key>
+			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_target</wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_classes</wp:meta_key>
+			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_xfn</wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_url</wp:meta_key>
+			<wp:meta_value><![CDATA[http://twitter.com/nick_thegeek]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Lauren Mancke</title>
+		<link>http://www.genesisframework.com/josh-byers/</link>
+		<pubDate>Fri, 02 Nov 2012 17:27:41 +0000</pubDate>
+		<dc:creator>bgardner</dc:creator>
+		<guid isPermaLink="false">http://www.genesisframework.com/?p=287</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>287</wp:post_id>
+		<wp:post_date>2012-11-02 17:27:41</wp:post_date>
+		<wp:post_date_gmt>2012-11-02 17:27:41</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>josh-byers</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>3</wp:menu_order>
+		<wp:post_type>nav_menu_item</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="nav_menu" nicename="contributors"><![CDATA[Contributors]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_type</wp:meta_key>
+			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_menu_item_parent</wp:meta_key>
+			<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_object_id</wp:meta_key>
+			<wp:meta_value><![CDATA[287]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_object</wp:meta_key>
+			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_target</wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_classes</wp:meta_key>
+			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_xfn</wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_url</wp:meta_key>
+			<wp:meta_value><![CDATA[http://twitter.com/laurenmancke]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Get Genesis Now!</title>
+		<link>http://www.genesisframework.com/get-genesis-now/</link>
+		<pubDate>Thu, 11 Apr 2013 21:38:03 +0000</pubDate>
+		<dc:creator>bgardner</dc:creator>
+		<guid isPermaLink="false">http://www.genesisframework.com/?p=392</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>392</wp:post_id>
+		<wp:post_date>2013-04-11 21:38:03</wp:post_date>
+		<wp:post_date_gmt>2013-04-11 21:38:03</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>get-genesis-now</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>14</wp:menu_order>
+		<wp:post_type>nav_menu_item</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="nav_menu" nicename="secondary-navigation"><![CDATA[Secondary Navigation]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_url</wp:meta_key>
+			<wp:meta_value><![CDATA[http://www.studiopress.com]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_xfn</wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_menu_item_parent</wp:meta_key>
+			<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_object_id</wp:meta_key>
+			<wp:meta_value><![CDATA[392]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_object</wp:meta_key>
+			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_target</wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_classes</wp:meta_key>
+			<wp:meta_value><![CDATA[a:1:{i:0;s:5:"right";}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_type</wp:meta_key>
+			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Sample Post With Headlines</title>
+		<link>http://www.genesisframework.com/headlines/</link>
+		<pubDate>Sun, 01 Sep 2013 01:52:58 +0000</pubDate>
+		<dc:creator>bgardner</dc:creator>
+		<guid isPermaLink="false">http://demo.studiopress.com/genesis/?p=5</guid>
+		<description></description>
+		<content:encoded><![CDATA[<h1>Headline 1</h1>
+<h2>Headline 2</h2>
+<h3>Headline 3</h3>
+<h4>Headline 4</h4>
+<h5>Headline 5</h5>
+<h6>Headline 6</h6>]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>5</wp:post_id>
+		<wp:post_date>2013-09-01 01:52:58</wp:post_date>
+		<wp:post_date_gmt>2013-09-01 01:52:58</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>headlines</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>post</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="category-1"><![CDATA[Category #1]]></category>
+		<category domain="category" nicename="category-2"><![CDATA[Category #2]]></category>
+		<category domain="category" nicename="category-3"><![CDATA[Category #3]]></category>
+		<category domain="category" nicename="category-4"><![CDATA[Category #4]]></category>
+		<category domain="category" nicename="category-5"><![CDATA[Category #5]]></category>
+		<category domain="post_tag" nicename="headlines"><![CDATA[Headlines]]></category>
+		<category domain="category" nicename="sub-category-11"><![CDATA[Sub Category 1.1]]></category>
+		<category domain="category" nicename="sub-category-12"><![CDATA[Sub Category 1.2]]></category>
+		<category domain="category" nicename="sub-category-13"><![CDATA[Sub Category 1.3]]></category>
+		<category domain="category" nicename="sub-category-21"><![CDATA[Sub Category 2.1]]></category>
+		<category domain="category" nicename="sub-category-22"><![CDATA[Sub Category 2.2]]></category>
+		<category domain="category" nicename="sub-category-23"><![CDATA[Sub Category 2.3]]></category>
+		<category domain="category" nicename="sub-category-31"><![CDATA[Sub Category 3.1]]></category>
+		<category domain="category" nicename="sub-category-32"><![CDATA[Sub Category 3.2]]></category>
+		<category domain="category" nicename="sub-category-33"><![CDATA[Sub Category 3.3]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[2]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_old_slug</wp:meta_key>
+			<wp:meta_value><![CDATA[sample-post-with-headlines]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Sample Post With an Ordered List</title>
+		<link>http://www.genesisframework.com/ordered-list/</link>
+		<pubDate>Sun, 01 Sep 2013 01:54:32 +0000</pubDate>
+		<dc:creator>bgardner</dc:creator>
+		<guid isPermaLink="false">http://demo.studiopress.com/genesis/?p=9</guid>
+		<description></description>
+		<content:encoded><![CDATA[This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind.
+
+<ol>
+<li>Ordered list item #1</li>
+<li>Ordered list item #2</li>
+<li>Ordered list item #3</li>
+<li>Ordered list item #4</li>
+<li>Ordered list item #5</li>
+</ol>
+
+This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind.
+
+This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind. This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind.]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>9</wp:post_id>
+		<wp:post_date>2013-09-01 01:54:32</wp:post_date>
+		<wp:post_date_gmt>2013-09-01 01:54:32</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>ordered-list</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>post</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="category-1"><![CDATA[Category #1]]></category>
+		<category domain="post_tag" nicename="ordered-lists"><![CDATA[Ordered Lists]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[2]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_old_slug</wp:meta_key>
+			<wp:meta_value><![CDATA[sample-post-with-an-ordered-list]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Sample Post With an Unordered List</title>
+		<link>http://www.genesisframework.com/unordered-list/</link>
+		<pubDate>Sun, 01 Sep 2013 01:54:48 +0000</pubDate>
+		<dc:creator>bgardner</dc:creator>
+		<guid isPermaLink="false">http://demo.studiopress.com/genesis/?p=11</guid>
+		<description></description>
+		<content:encoded><![CDATA[This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind.
+
+<ul>
+<li>Unordered list item #1</li>
+<li>Unordered list item #2</li>
+<li>Unordered list item #3</li>
+<li>Unordered list item #4</li>
+<li>Unordered list item #5</li>
+</ul>
+
+This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind.
+
+This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind. This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind.]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>11</wp:post_id>
+		<wp:post_date>2013-09-01 01:54:48</wp:post_date>
+		<wp:post_date_gmt>2013-09-01 01:54:48</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>unordered-list</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>post</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="category-1"><![CDATA[Category #1]]></category>
+		<category domain="post_tag" nicename="unordered-lists"><![CDATA[Unordered Lists]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[2]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_old_slug</wp:meta_key>
+			<wp:meta_value><![CDATA[sample-post-with-an-unordered-list]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Sample Post With Image Centered</title>
+		<link>http://www.genesisframework.com/image-centered/</link>
+		<pubDate>Sun, 01 Sep 2013 01:55:21 +0000</pubDate>
+		<dc:creator>bgardner</dc:creator>
+		<guid isPermaLink="false">http://demo.studiopress.com/genesis/?p=13</guid>
+		<description></description>
+		<content:encoded><![CDATA[[caption id="" align="aligncenter" width="142" caption="Here's a sample caption with an image centered."]<img alt="Here's a sample caption with a sample image centered." src="http://www.genesisframework.com/wp-content/uploads/wordpress.png" width="142" height="142" />[/caption]
+
+This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind.
+
+This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind. This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind.
+
+This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind.
+
+This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind. This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind.]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>13</wp:post_id>
+		<wp:post_date>2013-09-01 01:55:21</wp:post_date>
+		<wp:post_date_gmt>2013-09-01 01:55:21</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>image-centered</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>post</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="category-1"><![CDATA[Category #1]]></category>
+		<category domain="post_tag" nicename="images-centered"><![CDATA[Images Centered]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[2]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_old_slug</wp:meta_key>
+			<wp:meta_value><![CDATA[sample-post-with-image-centered]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Sample Post With Image Aligned Right</title>
+		<link>http://www.genesisframework.com/image-aligned-right/</link>
+		<pubDate>Sun, 01 Sep 2013 01:56:30 +0000</pubDate>
+		<dc:creator>bgardner</dc:creator>
+		<guid isPermaLink="false">http://demo.studiopress.com/genesis/?p=16</guid>
+		<description></description>
+		<content:encoded><![CDATA[[caption id="" align="alignright" width="142" caption="Here's a sample caption with an image aligned right."]<img alt="Here's a sample caption with a sample image aligned right." src="http://www.genesisframework.com/wp-content/uploads/wordpress.png" width="142" height="142" />[/caption]
+
+This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like.
+
+This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind. This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like.
+
+This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind.
+
+This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind. This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind.]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>16</wp:post_id>
+		<wp:post_date>2013-09-01 01:56:30</wp:post_date>
+		<wp:post_date_gmt>2013-09-01 01:56:30</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>image-aligned-right</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>post</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="category-1"><![CDATA[Category #1]]></category>
+		<category domain="post_tag" nicename="images-right"><![CDATA[Images Right]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[2]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_old_slug</wp:meta_key>
+			<wp:meta_value><![CDATA[sample-post-with-image-aligned-right]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Sample Post With Image Aligned Left</title>
+		<link>http://www.genesisframework.com/image-aligned-left/</link>
+		<pubDate>Sun, 01 Sep 2013 01:57:05 +0000</pubDate>
+		<dc:creator>bgardner</dc:creator>
+		<guid isPermaLink="false">http://demo.studiopress.com/genesis/?p=18</guid>
+		<description></description>
+		<content:encoded><![CDATA[[caption id="" align="alignleft" width="142" caption="Here&#39;s a sample caption with an image aligned left."]<img alt="Heres a sample caption, with a sample image aligned left." src="http://www.genesisframework.com/wp-content/uploads/wordpress.png" width="142" height="142" />[/caption]
+
+This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like.
+
+This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind. This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like.
+
+This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind.
+
+This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind. This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind.]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>18</wp:post_id>
+		<wp:post_date>2013-09-01 01:57:05</wp:post_date>
+		<wp:post_date_gmt>2013-09-01 01:57:05</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>image-aligned-left</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>post</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="category-1"><![CDATA[Category #1]]></category>
+		<category domain="post_tag" nicename="images-left"><![CDATA[Images Left]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[2]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_old_slug</wp:meta_key>
+			<wp:meta_value><![CDATA[sample-post-with-image-aligned-left]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Sample Post With Threaded Comments</title>
+		<link>http://www.genesisframework.com/threaded-comments/</link>
+		<pubDate>Sun, 01 Sep 2013 01:57:18 +0000</pubDate>
+		<dc:creator>bgardner</dc:creator>
+		<guid isPermaLink="false">http://demo.studiopress.com/genesis/?p=20</guid>
+		<description></description>
+		<content:encoded><![CDATA[This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind.
+
+This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind. This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind.
+
+This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind.
+
+This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind. This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind.]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>20</wp:post_id>
+		<wp:post_date>2013-09-01 01:57:18</wp:post_date>
+		<wp:post_date_gmt>2013-09-01 01:57:18</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>threaded-comments</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>post</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="category-1"><![CDATA[Category #1]]></category>
+		<category domain="post_tag" nicename="threaded-comments"><![CDATA[Threaded Comments]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[2]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_old_slug</wp:meta_key>
+			<wp:meta_value><![CDATA[sample-post-with-threaded-comments]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_encloseme</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_pingme</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_format_url</wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_format_quote</wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_format_audio_embed</wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_format_image</wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_format_video_embed</wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_format_quote_source_name</wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_format_link_url</wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_format_url</wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_format_quote_source_url</wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_format_image</wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:comment>
+			<wp:comment_id>2</wp:comment_id>
+			<wp:comment_author><![CDATA[Brian Gardner]]></wp:comment_author>
+			<wp:comment_author_email>brian@briangardner.com</wp:comment_author_email>
+			<wp:comment_author_url>http://www.briangardner.com/</wp:comment_author_url>
+			<wp:comment_author_IP>76.29.60.137</wp:comment_author_IP>
+			<wp:comment_date>2013-09-01 19:13:54</wp:comment_date>
+			<wp:comment_date_gmt>2013-09-01 19:13:54</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[This is an example of a comment made on a post. You can either edit the comment, delete the comment or reply to the comment. Use this as a place to respond to the post or to share what you are thinking.]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+			<wp:comment_user_id>2</wp:comment_user_id>
+		</wp:comment>
+		<wp:comment>
+			<wp:comment_id>3</wp:comment_id>
+			<wp:comment_author><![CDATA[Brian Gardner]]></wp:comment_author>
+			<wp:comment_author_email>brian@briangardner.com</wp:comment_author_email>
+			<wp:comment_author_url>http://www.briangardner.com/</wp:comment_author_url>
+			<wp:comment_author_IP>76.29.60.137</wp:comment_author_IP>
+			<wp:comment_date>2013-09-01 19:14:04</wp:comment_date>
+			<wp:comment_date_gmt>2013-09-01 19:14:04</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[This is an example of a nested threaded comment which is new in WordPress 2.7. This is where you can reply to a comment that was previously made, and visually makes reading comments to much easier.]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>2</wp:comment_parent>
+			<wp:comment_user_id>2</wp:comment_user_id>
+		</wp:comment>
+		<wp:comment>
+			<wp:comment_id>4</wp:comment_id>
+			<wp:comment_author><![CDATA[Brian Gardner]]></wp:comment_author>
+			<wp:comment_author_email>brian@briangardner.com</wp:comment_author_email>
+			<wp:comment_author_url>http://www.briangardner.com/</wp:comment_author_url>
+			<wp:comment_author_IP>76.29.60.137</wp:comment_author_IP>
+			<wp:comment_date>2013-09-01 19:14:11</wp:comment_date>
+			<wp:comment_date_gmt>2013-09-01 19:14:11</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[This is an example of a comment made on a post. You can either edit the comment, delete the comment or reply to the comment. Use this as a place to respond to the post or to share what you are thinking.]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+			<wp:comment_user_id>2</wp:comment_user_id>
+		</wp:comment>
+		<wp:comment>
+			<wp:comment_id>5</wp:comment_id>
+			<wp:comment_author><![CDATA[Brian Gardner]]></wp:comment_author>
+			<wp:comment_author_email>brian@briangardner.com</wp:comment_author_email>
+			<wp:comment_author_url>http://www.briangardner.com/</wp:comment_author_url>
+			<wp:comment_author_IP>76.29.60.137</wp:comment_author_IP>
+			<wp:comment_date>2013-09-01 19:14:19</wp:comment_date>
+			<wp:comment_date_gmt>2013-09-01 19:14:19</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[This is an example of a nested threaded comment which is new in WordPress 2.7. This is where you can reply to a comment that was previously made, and visually makes reading comments to much easier.]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>4</wp:comment_parent>
+			<wp:comment_user_id>2</wp:comment_user_id>
+		</wp:comment>
+		<wp:comment>
+			<wp:comment_id>6</wp:comment_id>
+			<wp:comment_author><![CDATA[Brian Gardner]]></wp:comment_author>
+			<wp:comment_author_email>brian@briangardner.com</wp:comment_author_email>
+			<wp:comment_author_url>http://www.briangardner.com/</wp:comment_author_url>
+			<wp:comment_author_IP>76.29.60.137</wp:comment_author_IP>
+			<wp:comment_date>2013-09-01 19:14:25</wp:comment_date>
+			<wp:comment_date_gmt>2013-09-01 19:14:25</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[This is an example of a nested threaded comment which is new in WordPress 2.7. This is where you can reply to a comment that was previously made, and visually makes reading comments to much easier.]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>5</wp:comment_parent>
+			<wp:comment_user_id>2</wp:comment_user_id>
+		</wp:comment>
+		<wp:comment>
+			<wp:comment_id>7</wp:comment_id>
+			<wp:comment_author><![CDATA[Brian Gardner]]></wp:comment_author>
+			<wp:comment_author_email>brian@briangardner.com</wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_author_IP>76.29.60.137</wp:comment_author_IP>
+			<wp:comment_date>2013-09-01 19:14:38</wp:comment_date>
+			<wp:comment_date_gmt>2013-09-01 19:14:38</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[This is an example of a comment made on a post. You can either edit the comment, delete the comment or reply to the comment. Use this as a place to respond to the post or to share what you are thinking.]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+			<wp:comment_user_id>2</wp:comment_user_id>
+		</wp:comment>
+		<wp:comment>
+			<wp:comment_id>2497</wp:comment_id>
+			<wp:comment_author><![CDATA[Check Out This Sample Trackback]]></wp:comment_author>
+			<wp:comment_author_email></wp:comment_author_email>
+			<wp:comment_author_url>http://demo.briangardner.com/blog/sample-trackback-2/</wp:comment_author_url>
+			<wp:comment_author_IP>72.10.51.26</wp:comment_author_IP>
+			<wp:comment_date>2013-08-27 00:27:38</wp:comment_date>
+			<wp:comment_date_gmt>2013-08-27 00:27:38</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[[&#8230;] another sample post with threaded comments over at the Genesis Framework demo [&#8230;]]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type>pingback</wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+			<wp:comment_user_id>0</wp:comment_user_id>
+			<wp:commentmeta>
+				<wp:meta_key>akismet_result</wp:meta_key>
+				<wp:meta_value><![CDATA[false]]></wp:meta_value>
+			</wp:commentmeta>
+			<wp:commentmeta>
+				<wp:meta_key>akismet_history</wp:meta_key>
+				<wp:meta_value><![CDATA[a:4:{s:4:"time";d:1372292858.5887229442596435546875;s:7:"message";s:28:"Akismet cleared this comment";s:5:"event";s:9:"check-ham";s:4:"user";s:0:"";}]]></wp:meta_value>
+			</wp:commentmeta>
+			<wp:commentmeta>
+				<wp:meta_key>akismet_history</wp:meta_key>
+				<wp:meta_value><![CDATA[a:4:{s:4:"time";d:1372292865.2219688892364501953125;s:7:"message";s:47:"bgardner changed the comment status to approved";s:5:"event";s:15:"status-approved";s:4:"user";s:8:"bgardner";}]]></wp:meta_value>
+			</wp:commentmeta>
+		</wp:comment>
+		<wp:comment>
+			<wp:comment_id>2496</wp:comment_id>
+			<wp:comment_author><![CDATA[This is a Sample Trackback]]></wp:comment_author>
+			<wp:comment_author_email></wp:comment_author_email>
+			<wp:comment_author_url>http://demo.briangardner.com/blog/sample-trackback/</wp:comment_author_url>
+			<wp:comment_author_IP>72.10.51.26</wp:comment_author_IP>
+			<wp:comment_date>2013-08-27 00:22:43</wp:comment_date>
+			<wp:comment_date_gmt>2013-08-27 00:22:43</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[[&#8230;] have you seen the sample post with threaded comments over at the Genesis Framework demo [&#8230;]]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type>pingback</wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+			<wp:comment_user_id>0</wp:comment_user_id>
+			<wp:commentmeta>
+				<wp:meta_key>akismet_result</wp:meta_key>
+				<wp:meta_value><![CDATA[false]]></wp:meta_value>
+			</wp:commentmeta>
+			<wp:commentmeta>
+				<wp:meta_key>akismet_history</wp:meta_key>
+				<wp:meta_value><![CDATA[a:4:{s:4:"time";d:1372292563.4895150661468505859375;s:7:"message";s:28:"Akismet cleared this comment";s:5:"event";s:9:"check-ham";s:4:"user";s:0:"";}]]></wp:meta_value>
+			</wp:commentmeta>
+			<wp:commentmeta>
+				<wp:meta_key>akismet_history</wp:meta_key>
+				<wp:meta_value><![CDATA[a:4:{s:4:"time";d:1372292592.5121190547943115234375;s:7:"message";s:47:"bgardner changed the comment status to approved";s:5:"event";s:15:"status-approved";s:4:"user";s:8:"bgardner";}]]></wp:meta_value>
+			</wp:commentmeta>
+		</wp:comment>
+	</item>
+	<item>
 		<title>Page Templates</title>
 		<link>http://www.genesisframework.com/templates/</link>
 		<pubDate>Sun, 15 Aug 2010 19:11:56 +0000</pubDate>
@@ -3988,7 +3746,7 @@ This is an example of a WordPress page, you could edit this to put information a
 <p>This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what exactly is on your mind.</p>
 </div>
 
-<div class="clear-line"></div>
+<div style="border-bottom:1px solid #ddd;clear:both;margin-bottom: 26px;"></div>
 
 <h3>Three-Columns</h3>
 
@@ -4004,7 +3762,7 @@ This is an example of a WordPress page, you could edit this to put information a
 <p>This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind.</p>
 </div>
 
-<div class="clear-line"></div>
+<div style="border-bottom:1px solid #ddd;clear:both;margin-bottom: 26px;"></div>
 
 <h3>Four-Columns</h3>
 
@@ -4024,31 +3782,7 @@ This is an example of a WordPress page, you could edit this to put information a
 <p>This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what exactly is on your mind.</p>
 </div>
 
-<div class="clear-line"></div>
-
-<h3>Five-Columns</h3>
-
-<div class="one-fifth first">
-<p>This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what exactly is on your mind.</p>
-</div>
-
-<div class="one-fifth">
-<p>This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what exactly is on your mind.</p>
-</div>
-
-<div class="one-fifth">
-<p>This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what exactly is on your mind.</p>
-</div>
-
-<div class="one-fifth">
-<p>This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what exactly is on your mind.</p>
-</div>
-
-<div class="one-fifth">
-<p>This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what exactly is on your mind.</p>
-</div>
-
-<div class="clear-line"></div>
+<div style="border-bottom:1px solid #ddd;clear:both;margin-bottom: 26px;"></div>
 
 <h3>Six-Columns</h3>
 
@@ -4104,21 +3838,21 @@ This is an example of a WordPress page, you could edit this to put information a
 	<item>
 		<title>Sample Post With a Blockquote</title>
 		<link>http://www.genesisframework.com/blockquote/</link>
-		<pubDate>Tue, 01 Jan 2013 01:54:12 +0000</pubDate>
+		<pubDate>Sun, 01 Sep 2013 01:54:12 +0000</pubDate>
 		<dc:creator>bgardner</dc:creator>
 		<guid isPermaLink="false">http://demo.studiopress.com/genesis/?p=7</guid>
 		<description></description>
 		<content:encoded><![CDATA[This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind.
 
-<blockquote>This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what exactly is on your mind.</blockquote>
+<blockquote>This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind.</blockquote>
 
 This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind.
 
 This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind. This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind.]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>182</wp:post_id>
-		<wp:post_date>2013-01-01 01:54:12</wp:post_date>
-		<wp:post_date_gmt>2013-01-01 01:54:12</wp:post_date_gmt>
+		<wp:post_date>2013-09-01 01:54:12</wp:post_date>
+		<wp:post_date_gmt>2013-09-01 01:54:12</wp:post_date_gmt>
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>blockquote</wp:post_name>
@@ -4140,107 +3874,72 @@ This is an example of a WordPress post, you could edit this to put information a
 		</wp:postmeta>
 	</item>
 	<item>
-		<title></title>
-		<link>http://www.genesisframework.com/layouts/1152-grid-system/</link>
-		<pubDate>Mon, 29 Oct 2012 16:09:15 +0000</pubDate>
+		<title>Sample Post With a Table</title>
+		<link>http://www.genesisframework.com/sample-table/</link>
+		<pubDate>Sun, 01 Sep 2013 01:53:31 +0000</pubDate>
 		<dc:creator>bgardner</dc:creator>
-		<guid isPermaLink="false">http://www.genesisframework.com/?page_id=210</guid>
+		<guid isPermaLink="false">http://www.genesisframework.com/?p=447</guid>
 		<description></description>
-		<content:encoded><![CDATA[<div style="float:left;margin-right:4.166666666%;width:65.277777777%;">
-    <p style="background-color: #1e1e1e;color: #fff;padding: 24px 0;text-align: center;">Content (752px)</p>
-</div>
-<div style="float:left;width:30.555555555%;">
-    <p style="background-color: #1e1e1e;color: #fff;padding: 24px 0;text-align: center;">Sidebar (352px)</p>
-</div>
+		<content:encoded><![CDATA[This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind.
 
-<div class="clear"></div>
+<table>
+<tbody>
+<tr>
+<th>Developer</th>
+<th>Location</th>
+<th>Job Title</th>
+</tr>
+<tr class="odd">
+<td>Brian Gardner</td>
+<td>Illinois</td>
+<td>Project Lead</td>
+</tr>
+<tr class="even">
+<td>Nathan Rice</td>
+<td>South Carolina</td>
+<td>Lead Developer</td>
+</tr>
+<tr class="odd">
+<td>Ron Rennick</td>
+<td>Canada</td>
+<td>Lead Developer</td>
+</tr>
+<tr class="even">
+<td>Rafal Tomal</td>
+<td>Illinois</td>
+<td>Lead Designer</td>
+</tr>
+<tr class="odd">
+<td>Lauren Mancke</td>
+<td>South Carolina</td>
+<td>Lead Designer</td>
+</tr>
+</tbody>
+</table>
 
-<div style="float:left;margin-right:4.166666666%;width:30.555555555%;">
-    <p style="background-color: #1e1e1e;color: #fff;padding: 24px 0;text-align: center;">Sidebar (352px)</p>
-</div>
-<div style="float:left;width:65.277777777%;">
-    <p style="background-color: #1e1e1e;color: #fff;padding: 24px 0;text-align: center;">Content (752px)</p>
-</div>
+This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind. This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind.
 
-<div class="clear"></div>
+This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind.
 
-<div style="float:left;margin-right:4.166666666%;width:45.833333333%;">
-    <p style="background-color: #1e1e1e;color: #fff;padding: 24px 0;text-align: center;">Content (528px)</p>
-</div>
-<div style="float:left;margin-right:4.166666666%;width:30.555555555%;">
-    <p style="background-color: #1e1e1e;color: #fff;padding: 24px 0;text-align: center;">Sidebar (352px)</p>
-</div>
-<div style="float:left;width:15.277777777%;">
-    <p style="background-color: #1e1e1e;color: #fff;padding: 24px 0;text-align: center;">Sidebar-Alt (176px)</p>
-</div>
-
-<div class="clear"></div>
-
-<div style="float:left;margin-right:4.166666666%;width:15.277777777%;">
-    <p style="background-color: #1e1e1e;color: #fff;padding: 24px 0;text-align: center;">Sidebar-Alt (176px)</p>
-</div>
-<div style="float:left;margin-right:4.166666666%;width:30.555555555%;">
-    <p style="background-color: #1e1e1e;color: #fff;padding: 24px 0;text-align: center;">Sidebar (352px)</p>
-</div>
-<div style="float:left;width:45.833333333%;">
-    <p style="background-color: #1e1e1e;color: #fff;padding: 24px 0;text-align: center;">Content (528px)</p>
-</div>
-
-<div style="float:left;margin-right:4.166666666%;width:15.277777777%;">
-    <p style="background-color: #1e1e1e;color: #fff;padding: 24px 0;text-align: center;">Sidebar-Alt (176px)</p>
-</div>
-<div style="float:left;margin-right:4.166666666%;width:45.833333333%;">
-    <p style="background-color: #1e1e1e;color: #fff;padding: 24px 0;text-align: center;">Content (528px)</p>
-</div>
-<div style="float:left;width:30.555555555%;">
-    <p style="background-color: #1e1e1e;color: #fff;padding: 24px 0;text-align: center;">Sidebar (352px)</p>
-</div>
-
-<div class="clear"></div>
-
-<div style="float:left;width:100%;">
-    <p style="background-color: #1e1e1e;color: #fff;padding: 24px 0;text-align: center;">Content (1152px)</p>
-</div>
-
-<div class="clear"></div>
-
-<div style="float:left;margin-right:4.166666666%;width:30.555555555%;">
-    <p style="background-color: #1e1e1e;color: #fff;padding: 24px 0;text-align: center;">Footer Widget (352px)</p>
-</div>
-<div style="float:left;margin-right:4.166666666%;width:30.555555555%;">
-    <p style="background-color: #1e1e1e;color: #fff;padding: 24px 0;text-align: center;">Footer Widget (352px)</p>
-</div>
-<div style="float:left;width:30.555555555%;">
-    <p style="background-color: #1e1e1e;color: #fff;padding: 24px 0;text-align: center;">Footer Widget (352px)</p>
-</div>]]></content:encoded>
+This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind. This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind.]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>210</wp:post_id>
-		<wp:post_date>2012-10-29 16:09:15</wp:post_date>
-		<wp:post_date_gmt>2012-10-29 16:09:15</wp:post_date_gmt>
+		<wp:post_id>447</wp:post_id>
+		<wp:post_date>2013-09-01 01:53:31</wp:post_date>
+		<wp:post_date_gmt>2013-09-01 01:53:31</wp:post_date_gmt>
 		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>closed</wp:ping_status>
-		<wp:post_name>1152-grid-system</wp:post_name>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>sample-table</wp:post_name>
 		<wp:status>publish</wp:status>
-		<wp:post_parent>61</wp:post_parent>
+		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>page</wp:post_type>
+		<wp:post_type>post</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="category-1"><![CDATA[Category #1]]></category>
+		<category domain="post_tag" nicename="tables"><![CDATA[Tables]]></category>
 		<wp:postmeta>
 			<wp:meta_key>_edit_last</wp:meta_key>
 			<wp:meta_value><![CDATA[2]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_wp_page_template</wp:meta_key>
-			<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_genesis_title</wp:meta_key>
-			<wp:meta_value><![CDATA[The 1152 CSS Grid System]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_genesis_layout</wp:meta_key>
-			<wp:meta_value><![CDATA[full-width-content]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 </channel>
