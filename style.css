@@ -786,7 +786,9 @@ Plugins
 --------------------------------------------- */
 
 div.gform_wrapper input[type="email"],
+div.gform_wrapper input[type="tel"],
 div.gform_wrapper input[type="text"],
+div.gform_wrapper input[type="url"],
 div.gform_wrapper textarea,
 div.gform_wrapper .ginput_complex label {
 	font-size: 16px;
