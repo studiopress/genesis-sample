@@ -373,7 +373,7 @@ input[type="reset"],
 input[type="submit"],
 .button {
 	background-color: #333;
-	border: none;
+	border: 0;
 	color: #fff;
 	cursor: pointer;
 	font-size: 16px;
@@ -778,7 +778,7 @@ img.alignright,
 }
 
 .widget li li {
-	border: none;
+	border: 0;
 	margin: 0 0 0 30px;
 	padding: 0;
 }
@@ -972,7 +972,7 @@ img.alignright,
 .genesis-nav-menu .sub-menu a {
 	background-color: #fff;
 	border: 1px solid #eee;
-	border-top: none;
+	border-top: 0;
 	font-size: 14px;
 	padding: 20px;
 	position: relative;
@@ -1186,7 +1186,7 @@ p.entry-meta {
 li.comment {
 	background-color: #f5f5f5;
 	border: 2px solid #fff;
-	border-right: none;
+	border-right: 0;
 }
 
 .comment-content {
