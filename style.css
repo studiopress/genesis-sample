@@ -5,7 +5,7 @@ Description: This is the sample theme created for the Genesis Framework.
 Author: StudioPress  
 Author URI: http://www.studiopress.com/  
 Template: genesis  
-Template Version: 2.1.2  
+Template Version: 2.2.0-beta1 
 Tags: black, orange, white, one-column, two-columns, three-columns, left-sidebar, right-sidebar, responsive-layout, custom-menu, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready  
 License: GPL-2.0+  
 License URI: http://www.gnu.org/licenses/gpl-2.0.html  
@@ -24,6 +24,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	- Gallery
 	- Forms
 	- Tables
+	- Screen reader text
 - Structure and Layout
 	- Site Containers
 	- Column Widths and Positions
@@ -39,10 +40,12 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 - Plugins
 	- Genesis eNews Extended
 	- Jetpack
+- Skip Links
 - Site Header
 	- Title Area
 	- Widget Area
 - Site Navigation
+	- Accessible menu
 	- Header Navigation
 	- Primary Navigation
 	- Secondary Navigation
@@ -452,6 +455,38 @@ th {
 	font-weight: 400;
 }
 
+/* ## Screen reader text
+--------------------------------------------- */
+
+.screen-reader-text,
+.screen-reader-text span,
+.screen-reader-shortcut {
+	position: absolute !important;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	width: 1px;
+	border: 0;
+	overflow: hidden;
+}
+
+.screen-reader-text:focus,
+.screen-reader-shortcut:focus,
+.genesis-nav-menu .search input[type="submit"]:focus,
+.widget_search input[type="submit"]:focus  {
+	clip: auto !important;
+	height: auto;
+	width: auto;
+	display: block;
+	font-size: 1em;
+	font-weight: bold;
+	padding: 15px 23px 14px;
+	color: #333;
+	background: #fff;
+	z-index: 100000; /* Above WP toolbar. */
+	text-decoration: none;
+	box-shadow: 0 0 2px 2px rgba(0,0,0,.6);
+}
+
 
 /* # Structure and Layout
 ---------------------------------------------------------------------------------------------------- */
@@ -859,6 +894,20 @@ img.alignright,
 }
 
 
+/* # Skip Links
+---------------------------------------------------------------------------------------------------- */
+.genesis-skip-link li {
+	height: 0;
+	width: 0;
+	list-style: none;
+}
+
+/* Display outline on focus */
+:focus {
+	color: #333;
+	outline: #ccc solid 1px;
+}
+
 /* # Site Header
 ---------------------------------------------------------------------------------------------------- */
 
@@ -1018,6 +1067,19 @@ img.alignright,
 
 .genesis-nav-menu > .search {
 	padding: 10px 0 0;
+}
+
+/* ## Accessible Menu
+--------------------------------------------- */
+
+.menu .menu-item:focus {
+	position: static;
+}
+
+.menu .menu-item > a:focus + ul.sub-menu,
+.menu .menu-item.genesis-hover > ul.sub-menu {
+	left: auto;
+	opacity: 1;
 }
 
 /* ## Site Header Navigation
