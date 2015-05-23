@@ -875,7 +875,7 @@ img.alignright,
 
 .featured-content .entry-title {
 	font-size: 20px;
-	font-size: 2.0rem;
+	font-size: 2rem;
 }
 
 
@@ -1071,6 +1071,7 @@ img.alignright,
 	padding: 20px;
 	position: relative;
 	width: 200px;
+	word-wrap: break-word;
 }
 
 .genesis-nav-menu .sub-menu .sub-menu {
@@ -1272,12 +1273,14 @@ p.entry-meta {
 	font-size: 16px;
 	font-size: 1.6rem;
 	padding: 8px 12px;
+	text-decoration: none;
 }
 
 .archive-pagination li a:hover,
 .archive-pagination li a:focus,
 .archive-pagination .active a {
 	background-color: #C3251D;
+	text-decoration: underline;
 }
 
 /* ## Comments
