@@ -166,7 +166,7 @@ textarea:focus,
 }
 
 a {
-	color: #C3251D;
+	color: #c3251d;
 	text-decoration: underline;
 }
 
@@ -402,7 +402,7 @@ input[type="submit"],
 .footer-widgets input[type="reset"],
 .footer-widgets input[type="submit"],
 .footer-widgets .button {
-	background-color: #C3251D;
+	background-color: #c3251d;
 	color: #fff;
 }
 
@@ -416,7 +416,7 @@ input:focus[type="button"],
 input:focus[type="reset"],
 input:focus[type="submit"],
 .button:focus {
-	background-color: #C3251D;
+	background-color: #c3251d;
 	color: #fff;
 }
 
@@ -752,7 +752,7 @@ th {
 
 .entry-title a:hover,
 .entry-title a:focus  {
-	color: #C3251D;
+	color: #c3251d;
 }
 
 .widget-title {
@@ -906,7 +906,7 @@ img.alignright,
 }
 
 .enews-widget input[type="submit"] {
-	background-color: #C3251D;
+	background-color: #c3251d;
 	color: #fff;
 	margin: 0;
 	width: 100%;
@@ -1045,7 +1045,7 @@ img.alignright,
 .genesis-nav-menu .current-menu-item > a,
 .genesis-nav-menu .sub-menu .current-menu-item > a:hover,
 .genesis-nav-menu .sub-menu .current-menu-item > a:focus  {
-	color: #C3251D;
+	color: #c3251d;
 	text-decoration: underline;
 }
 
@@ -1171,7 +1171,7 @@ img.alignright,
 .nav-primary .genesis-nav-menu .sub-menu a:hover,
 .nav-primary .genesis-nav-menu .sub-menu a:focus,
 .nav-primary .genesis-nav-menu .sub-menu .current-menu-item > a {
-	color: #C3251D;
+	color: #c3251d;
 	text-decoration: underline;
 }
 
@@ -1279,7 +1279,7 @@ p.entry-meta {
 .archive-pagination li a:hover,
 .archive-pagination li a:focus,
 .archive-pagination .active a {
-	background-color: #C3251D;
+	background-color: #c3251d;
 	text-decoration: underline;
 }
 
