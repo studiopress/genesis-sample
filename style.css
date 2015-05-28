@@ -932,6 +932,10 @@ img.alignright,
 
 /* # Skip Links
 ---------------------------------------------------------------------------------------------------- */
+.genesis-skip-link {
+	margin: 0;
+}
+
 .genesis-skip-link li {
 	height: 0;
 	width: 0;
