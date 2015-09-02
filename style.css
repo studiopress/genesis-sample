@@ -5,7 +5,7 @@ Description: This is the sample theme created for the Genesis Framework.
 Author: StudioPress
 Author URI: http://www.studiopress.com/
 Template: genesis
-Template Version: 2.2.0-beta1
+Template Version: 2.2.0
 Tags: black, orange, white, one-column, two-columns, three-columns, left-sidebar, right-sidebar, responsive-layout, custom-menu, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
 License: GPL-2.0+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -24,7 +24,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	- Gallery
 	- Forms
 	- Tables
-	- Screen reader text
+	- Screen Reader Text
 - Structure and Layout
 	- Site Containers
 	- Column Widths and Positions
@@ -40,28 +40,28 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 - Plugins
 	- Genesis eNews Extended
 	- Jetpack
-- Skip Links
 - Site Header
 	- Title Area
 	- Widget Area
 - Site Navigation
-	- Accessible menu
-	- Header Navigation
+	- Accessible Menu
+	- Site Header Navigation
 	- Primary Navigation
 	- Secondary Navigation
+	- Skip Links
 - Content Area
 	- Entries
 	- Entry Meta
 	- Pagination
 	- Comments
 - Sidebars
-- Footer Widgets
 - Site Footer
 - Media Queries
 	- Retina Display
 	- Max-width: 1200px
 	- Max-width: 960px
 	- Max-width: 800px
+- Print Styles
 */
 
 
@@ -77,12 +77,19 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
 /* ## Box Sizing
 --------------------------------------------- */
 
-*,
-input[type="search"] {
+html,
+input[type="search"]{
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing:    border-box;
 	box-sizing:         border-box;
 }
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
 
 /* ## Float Clearing
 --------------------------------------------- */
@@ -91,7 +98,6 @@ input[type="search"] {
 .clearfix:before,
 .entry:before,
 .entry-content:before,
-.footer-widgets:before,
 .nav-primary:before,
 .nav-secondary:before,
 .pagination:before,
@@ -108,7 +114,6 @@ input[type="search"] {
 .clearfix:after,
 .entry:after,
 .entry-content:after,
-.footer-widgets:after,
 .nav-primary:after,
 .nav-secondary:after,
 .pagination:after,
@@ -189,6 +194,14 @@ ul {
 
 li {
 	list-style-type: none;
+}
+
+hr {
+	border: 0;
+	border-collapse: collapse;
+	border-top: 1px solid #ddd;
+	clear: both;
+	margin: 1em 0;
 }
 
 b,
@@ -397,15 +410,6 @@ input[type="submit"],
 	width: auto;
 }
 
-.footer-widgets button,
-.footer-widgets input[type="button"],
-.footer-widgets input[type="reset"],
-.footer-widgets input[type="submit"],
-.footer-widgets .button {
-	background-color: #c3251d;
-	color: #fff;
-}
-
 button:hover,
 input:hover[type="button"],
 input:hover[type="reset"],
@@ -415,7 +419,7 @@ button:focus,
 input:focus[type="button"],
 input:focus[type="reset"],
 input:focus[type="submit"],
-.button:focus {
+.button:focus  {
 	background-color: #c3251d;
 	color: #fff;
 }
@@ -423,20 +427,6 @@ input:focus[type="submit"],
 .entry-content .button:hover,
 .entry-content .button:focus {
 	color: #fff;
-}
-
-.footer-widgets button:hover,
-.footer-widgets input:hover[type="button"],
-.footer-widgets input:hover[type="reset"],
-.footer-widgets input:hover[type="submit"],
-.footer-widgets .button:hover,
-.footer-widgets button:focus,
-.footer-widgets input:focus[type="button"],
-.footer-widgets input:focus[type="reset"],
-.footer-widgets input:focus[type="submit"],
-.footer-widgets .button:focus {
-	background-color: #fff;
-	color: #333;
 }
 
 .button {
@@ -477,7 +467,7 @@ th {
 	font-weight: 400;
 }
 
-/* ## Screen reader text
+/* ## Screen Reader Text
 --------------------------------------------- */
 
 .screen-reader-text,
@@ -489,8 +479,6 @@ th {
 	width: 1px;
 	border: 0;
 	overflow: hidden;
-	color: #333;
-	background: #fff;
 }
 
 .screen-reader-text:focus,
@@ -504,6 +492,8 @@ th {
 	font-size: 1em;
 	font-weight: bold;
 	padding: 15px 23px 14px;
+	color: #333;
+	background: #fff;
 	z-index: 100000; /* Above WP toolbar. */
 	text-decoration: none;
 	box-shadow: 0 0 2px 2px rgba(0,0,0,.6);
@@ -751,7 +741,7 @@ th {
 }
 
 .entry-title a:hover,
-.entry-title a:focus  {
+.entry-title a:focus {
 	color: #c3251d;
 }
 
@@ -759,10 +749,6 @@ th {
 	font-size: 18px;
 	font-size: 1.8rem;
 	margin-bottom: 20px;
-}
-
-.footer-widgets .widget-title {
-	color: #fff;
 }
 
 /* ## WordPress
@@ -830,6 +816,12 @@ img.alignright,
 .sticky {
 }
 
+.entry-content .wp-audio-shortcode,
+.entry-content .wp-playlist,
+.entry-content .wp-video {
+	margin: 0 0 28px;
+}
+
 
 /* # Widgets
 ---------------------------------------------------------------------------------------------------- */
@@ -867,10 +859,6 @@ img.alignright,
 	border-bottom: 2px solid #f5f5f5;
 	margin-bottom: 20px;
 	padding: 0 0 24px;
-}
-
-.footer-widgets .entry {
-	border-bottom: 1px dotted #666;
 }
 
 .featured-content .entry-title {
@@ -947,6 +935,7 @@ img.alignright,
 	color: #333;
 	outline: #ccc solid 1px;
 }
+
 
 /* # Site Header
 ---------------------------------------------------------------------------------------------------- */
@@ -1039,9 +1028,9 @@ img.alignright,
 
 .genesis-nav-menu a {
 	color: #333;
+	text-decoration: none;
 	display: block;
 	padding: 30px 24px;
-	text-decoration: none;
 }
 
 .genesis-nav-menu a:hover,
@@ -1082,13 +1071,11 @@ img.alignright,
 	margin: -55px 0 0 199px;
 }
 
-.genesis-nav-menu .menu-item:hover,
-.genesis-nav-menu .menu-item:focus {
+.genesis-nav-menu .menu-item:hover {
 	position: static;
 }
 
-.genesis-nav-menu .menu-item:hover > .sub-menu,
-.genesis-nav-menu .menu-item:focus > .sub-menu {
+.genesis-nav-menu .menu-item:hover > .sub-menu {
 	left: auto;
 	opacity: 1;
 }
@@ -1319,6 +1306,7 @@ li.comment {
 
 .comment-content {
 	clear: both;
+	word-wrap: break-word;
 }
 
 .comment-list li {
@@ -1386,64 +1374,6 @@ li.comment {
 }
 
 
-/* # Footer Widgets
----------------------------------------------------------------------------------------------------- */
-
-.footer-widgets {
-	background-color: #333;
-	clear: both;
-	padding-top: 40px;
-}
-
-.footer-widgets,
-.footer-widgets a {
-	color: #aaa;
-}
-
-.footer-widgets input {
-	border: 1px solid #333;
-}
-
-.footer-widgets a.button,
-.footer-widgets a:hover,
-.footer-widgets a:focus {
-	color: #fff;
-}
-
-.footer-widgets li {
-	border-bottom: 1px dotted #666;
-	margin-bottom: 10px;
-	padding-bottom: 10px;
-}
-
-.footer-widgets .widget {
-	margin-bottom: 40px;
-}
-
-.footer-widgets p:last-child {
-	margin-bottom: 0;
-}
-
-.footer-widgets-1,
-.footer-widgets-2,
-.footer-widgets-3 {
-	width: 340px;
-}
-
-.footer-widgets-1 {
-	margin-right: 60px;
-}
-
-.footer-widgets-1,
-.footer-widgets-2 {
-	float: left;
-}
-
-.footer-widgets-3 {
-	float: right;
-}
-
-
 /* # Site Footer
 ---------------------------------------------------------------------------------------------------- */
 
@@ -1488,16 +1418,9 @@ li.comment {
 		width: 400px;
 	}
 
-	.footer-widgets-1,
-	.footer-widgets-2,
-	.footer-widgets-3,
 	.sidebar-primary,
 	.title-area {
 		width: 300px;
-	}
-
-	.footer-widgets-1 {
-		margin-right: 30px;
 	}
 
 }
@@ -1512,9 +1435,6 @@ li.comment {
 	.content,
 	.content-sidebar-sidebar .content,
 	.content-sidebar-sidebar .content-sidebar-wrap,
-	.footer-widgets-1,
-	.footer-widgets-2,
-	.footer-widgets-3,
 	.sidebar-content-sidebar .content,
 	.sidebar-content-sidebar .content-sidebar-wrap,
 	.sidebar-primary,
@@ -1530,7 +1450,7 @@ li.comment {
 		padding: 20px 5%;
 	}
 
-	.header-image .title-area {
+	.header-image .site-title > a {
 		background-position: center top;
 	}
 
@@ -1560,10 +1480,6 @@ li.comment {
 
 	.genesis-nav-menu li.right {
 		display: none;
-	}
-
-	.footer-widgets-1 {
-		margin-right: 0;
 	}
 
 }
@@ -1617,3 +1533,149 @@ li.comment {
 	}
 
 }
+
+
+/* # Print Styles
+---------------------------------------------------------------------------------------------------- */
+
+@media print {
+
+	*,
+	*:before,
+	*:after {
+		background: transparent !important;
+		box-shadow: none !important;
+		color: #000 !important;
+		text-shadow: none !important;
+	}
+
+	a,
+	a:visited {
+		text-decoration: underline;
+	}
+
+	a[href]:after {
+		content: " (" attr(href) ")";
+	}
+
+	abbr[title]:after {
+		content: " (" attr(title) ")";
+	}
+
+	a[href^="javascript:"]:after,
+	a[href^="#"]:after,
+	.site-title > a:after {
+		content: "";
+	}
+
+	thead {
+		display: table-header-group;
+	}
+
+	img,
+	tr {
+		page-break-inside: avoid;
+	}
+
+	img {
+		max-width: 100% !important;
+	}
+
+	@page {
+		margin: 2cm 0.5cm;
+	}
+
+	p,
+	h2,
+	h3 {
+		orphans: 3;
+		widows: 3;
+	}
+
+	blockquote,
+	pre {
+		border: 1px solid #999;
+		page-break-inside: avoid;
+	}
+
+	.content,
+	.content-sidebar {
+		width: 100%;
+	}
+
+	button,
+	input,
+	select,
+	textarea,
+	.breadcrumb,
+	.comment-edit-link,
+	.comment-form,
+	.comment-list .reply a,
+	.comment-reply-title,
+	.edit-link,
+	.entry-comments-link,
+	.entry-footer,
+	.genesis-box,
+	.header-widget-area,
+	.hidden-print,
+	.home-top,
+	.nav-primary,
+	.nav-secondary,
+	.post-edit-link,
+	.sidebar {
+		display: none !important;
+	}
+
+	.title-area {
+		text-align: center;
+		width: 100%;
+	}
+
+	.site-title > a {
+		margin: 0;
+		text-decoration: none;
+		text-indent: 0;
+	}
+
+	.site-inner {
+		padding-top: 0;
+		position: relative;
+		top: -100px;
+	}
+
+	.author-box {
+		margin-bottom: 0;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		orphans: 3;
+		page-break-after: avoid;
+		page-break-inside: avoid;
+		widows: 3;
+	}
+
+
+	img {
+		page-break-after: avoid;
+		page-break-inside: avoid;
+	}
+
+	blockquote,
+	pre,
+	table {
+		page-break-inside: avoid;
+	}
+
+	dl,
+	ol,
+	ul {
+		page-break-before: avoid;
+	}
+
+}
+
