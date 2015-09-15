@@ -5,7 +5,7 @@ Description: This is the sample theme created for the Genesis Framework.
 Author: StudioPress
 Author URI: http://www.studiopress.com/
 Template: genesis
-Template Version: 2.2.0
+Template Version: 2.2.2
 Tags: black, orange, white, one-column, two-columns, three-columns, left-sidebar, right-sidebar, responsive-layout, custom-menu, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
 License: GPL-2.0+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -55,6 +55,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	- Pagination
 	- Comments
 - Sidebars
+- Footer Widgets
 - Site Footer
 - Media Queries
 	- Retina Display
@@ -98,6 +99,7 @@ input[type="search"]{
 .clearfix:before,
 .entry:before,
 .entry-content:before,
+.footer-widgets:before,
 .nav-primary:before,
 .nav-secondary:before,
 .pagination:before,
@@ -114,6 +116,7 @@ input[type="search"]{
 .clearfix:after,
 .entry:after,
 .entry-content:after,
+.footer-widgets:after,
 .nav-primary:after,
 .nav-secondary:after,
 .pagination:after,
@@ -427,6 +430,29 @@ input:focus[type="submit"],
 .entry-content .button:hover,
 .entry-content .button:focus {
 	color: #fff;
+}
+
+.footer-widgets button,
+.footer-widgets input[type="button"],
+.footer-widgets input[type="reset"],
+.footer-widgets input[type="submit"],
+.footer-widgets .button {
+	background-color: #c3251d;
+	color: #fff;
+}
+
+.footer-widgets button:hover,
+.footer-widgets input:hover[type="button"],
+.footer-widgets input:hover[type="reset"],
+.footer-widgets input:hover[type="submit"],
+.footer-widgets .button:hover,
+.footer-widgets button:focus,
+.footer-widgets input:focus[type="button"],
+.footer-widgets input:focus[type="reset"],
+.footer-widgets input:focus[type="submit"],
+.footer-widgets .button:focus {
+	background-color: #fff;
+	color: #333;
 }
 
 .button {
@@ -751,6 +777,10 @@ th {
 	margin-bottom: 20px;
 }
 
+.footer-widgets .widget-title {
+	color: #fff;
+}
+
 /* ## WordPress
 --------------------------------------------- */
 
@@ -859,6 +889,10 @@ img.alignright,
 	border-bottom: 2px solid #f5f5f5;
 	margin-bottom: 20px;
 	padding: 0 0 24px;
+}
+
+.footer-widgets .entry {
+	border-bottom: 1px dotted #666;
 }
 
 .featured-content .entry-title {
@@ -1374,6 +1408,64 @@ li.comment {
 }
 
 
+/* # Footer Widgets
+---------------------------------------------------------------------------------------------------- */
+
+.footer-widgets {
+	background-color: #333;
+	clear: both;
+	padding-top: 40px;
+}
+
+.footer-widgets,
+.footer-widgets a {
+	color: #aaa;
+}
+
+.footer-widgets input {
+	border: 1px solid #333;
+}
+
+.footer-widgets a.button,
+.footer-widgets a:hover,
+.footer-widgets a:focus {
+	color: #fff;
+}
+
+.footer-widgets li {
+	border-bottom: 1px dotted #666;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+.footer-widgets .widget {
+	margin-bottom: 40px;
+}
+
+.footer-widgets p:last-child {
+	margin-bottom: 0;
+}
+
+.footer-widgets-1,
+.footer-widgets-2,
+.footer-widgets-3 {
+	width: 340px;
+}
+
+.footer-widgets-1 {
+	margin-right: 60px;
+}
+
+.footer-widgets-1,
+.footer-widgets-2 {
+	float: left;
+}
+
+.footer-widgets-3 {
+	float: right;
+}
+
+
 /* # Site Footer
 ---------------------------------------------------------------------------------------------------- */
 
@@ -1423,6 +1515,18 @@ li.comment {
 		width: 300px;
 	}
 
+	.footer-widgets-1,
+	.footer-widgets-2,
+	.footer-widgets-3,
+	.sidebar-primary,
+	.title-area {
+		width: 300px;
+	}
+
+	.footer-widgets-1 {
+		margin-right: 30px;
+	}
+
 }
 
 @media only screen and (max-width: 960px) {
@@ -1437,6 +1541,9 @@ li.comment {
 	.content-sidebar-sidebar .content-sidebar-wrap,
 	.sidebar-content-sidebar .content,
 	.sidebar-content-sidebar .content-sidebar-wrap,
+	.footer-widgets-1,
+	.footer-widgets-2,
+	.footer-widgets-3,
 	.sidebar-primary,
 	.sidebar-secondary,
 	.sidebar-sidebar-content .content,
@@ -1480,6 +1587,10 @@ li.comment {
 
 	.genesis-nav-menu li.right {
 		display: none;
+	}
+
+	.footer-widgets-1 {
+		margin-right: 0;
 	}
 
 }
