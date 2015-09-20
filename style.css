@@ -953,25 +953,6 @@ img.alignright,
 }
 
 
-/* # Skip Links
----------------------------------------------------------------------------------------------------- */
-.genesis-skip-link {
-	margin: 0;
-}
-
-.genesis-skip-link li {
-	height: 0;
-	width: 0;
-	list-style: none;
-}
-
-/* Display outline on focus */
-:focus {
-	color: #333;
-	outline: #ccc solid 1px;
-}
-
-
 /* # Site Header
 ---------------------------------------------------------------------------------------------------- */
 
@@ -1207,6 +1188,26 @@ img.alignright,
 .nav-secondary {
 	background-color: #fff;
 }
+
+/* ## Skip Links
+--------------------------------------------- */
+
+.genesis-skip-link {
+	margin: 0;
+}
+
+.genesis-skip-link li {
+	height: 0;
+	width: 0;
+	list-style: none;
+}
+
+/* Display outline on focus */
+:focus {
+	color: #333;
+	outline: #ccc solid 1px;
+}
+
 
 /* # Content Area
 ---------------------------------------------------------------------------------------------------- */
@@ -1790,4 +1791,3 @@ li.comment {
 	}
 
 }
-
