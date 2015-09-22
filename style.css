@@ -40,6 +40,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 - Plugins
 	- Genesis eNews Extended
 	- Jetpack
+- Skip Links
 - Site Header
 	- Title Area
 	- Widget Area
@@ -48,7 +49,6 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	- Site Header Navigation
 	- Primary Navigation
 	- Secondary Navigation
-	- Skip Links
 - Content Area
 	- Entries
 	- Entry Meta
@@ -952,6 +952,25 @@ img.alignright,
 	display: none;
 }
 
+/* # Skip Links
+--------------------------------------------- */
+
+.genesis-skip-link {
+	margin: 0;
+}
+
+.genesis-skip-link li {
+	height: 0;
+	width: 0;
+	list-style: none;
+}
+
+/* Display outline on focus */
+:focus {
+	color: #333;
+	outline: #ccc solid 1px;
+}
+
 
 /* # Site Header
 ---------------------------------------------------------------------------------------------------- */
@@ -1188,26 +1207,6 @@ img.alignright,
 .nav-secondary {
 	background-color: #fff;
 }
-
-/* ## Skip Links
---------------------------------------------- */
-
-.genesis-skip-link {
-	margin: 0;
-}
-
-.genesis-skip-link li {
-	height: 0;
-	width: 0;
-	list-style: none;
-}
-
-/* Display outline on focus */
-:focus {
-	color: #333;
-	outline: #ccc solid 1px;
-}
-
 
 /* # Content Area
 ---------------------------------------------------------------------------------------------------- */
