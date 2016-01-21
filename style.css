@@ -43,12 +43,12 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 - Site Header
 	- Title Area
 	- Widget Area
+- Skip Links
 - Site Navigation
 	- Accessible Menu
 	- Site Header Navigation
 	- Primary Navigation
 	- Secondary Navigation
-	- Skip Links
 - Content Area
 	- Entries
 	- Entry Meta
@@ -1513,11 +1513,6 @@ li.comment {
 	.sidebar-sidebar-content .content,
 	.content-sidebar-sidebar .content {
 		width: 400px;
-	}
-
-	.sidebar-primary,
-	.title-area {
-		width: 300px;
 	}
 
 	.footer-widgets-1,
