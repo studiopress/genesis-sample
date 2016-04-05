@@ -32,8 +32,8 @@
 	<pubDate>Wed, 25 Sep 2013 02:20:49 +0000</pubDate>
 	<language>en-US</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
-	<wp:base_site_url>http://www.genesisframework.com</wp:base_site_url>
-	<wp:base_blog_url>http://www.genesisframework.com</wp:base_blog_url>
+	<wp:genesis_sample_site_url>http://www.genesisframework.com</wp:genesis_sample_site_url>
+	<wp:genesis_sample_blog_url>http://www.genesisframework.com</wp:genesis_sample_blog_url>
 
 	<wp:author><wp:author_id>2</wp:author_id><wp:author_login>bgardner</wp:author_login><wp:author_email>demo-comments@studiopress.com</wp:author_email><wp:author_display_name><![CDATA[Brian Gardner]]></wp:author_display_name><wp:author_first_name><![CDATA[Brian]]></wp:author_first_name><wp:author_last_name><![CDATA[Gardner]]></wp:author_last_name></wp:author>
 
