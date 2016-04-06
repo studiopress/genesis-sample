@@ -176,7 +176,7 @@ textarea:focus,
 }
 
 a {
-	color: #c3251d;
+	color: #cc3d25;
 	text-decoration: underline;
 }
 
@@ -419,9 +419,8 @@ input[type="submit"],
 	cursor: pointer;
 	font-size: 16px;
 	font-size: 1.6rem;
-	font-weight: 300;
+	font-weight: 700;
 	padding: 16px 24px;
-	text-transform: uppercase;
 	white-space: normal;
 	width: auto;
 }
@@ -436,36 +435,13 @@ input:focus[type="button"],
 input:focus[type="reset"],
 input:focus[type="submit"],
 .button:focus  {
-	background-color: #c3251d;
+	background-color: #cc3d25;
 	color: #fff;
 }
 
 .entry-content .button:hover,
 .entry-content .button:focus {
 	color: #fff;
-}
-
-.footer-widgets button,
-.footer-widgets input[type="button"],
-.footer-widgets input[type="reset"],
-.footer-widgets input[type="submit"],
-.footer-widgets .button {
-	background-color: #c3251d;
-	color: #fff;
-}
-
-.footer-widgets button:hover,
-.footer-widgets input:hover[type="button"],
-.footer-widgets input:hover[type="reset"],
-.footer-widgets input:hover[type="submit"],
-.footer-widgets .button:hover,
-.footer-widgets button:focus,
-.footer-widgets input:focus[type="button"],
-.footer-widgets input:focus[type="reset"],
-.footer-widgets input:focus[type="submit"],
-.footer-widgets .button:focus {
-	background-color: #fff;
-	color: #333;
 }
 
 .button {
@@ -808,17 +784,14 @@ th {
 
 .entry-title a:hover,
 .entry-title a:focus {
-	color: #c3251d;
+	color: #cc3d25;
 }
 
 .widget-title {
 	font-size: 18px;
 	font-size: 1.8rem;
+	font-weight: 700;
 	margin-bottom: 20px;
-}
-
-.footer-widgets .widget-title {
-	color: #fff;
 }
 
 /* ## WordPress
@@ -898,10 +871,19 @@ img.alignright,
 	word-wrap: break-word;
 }
 
-.widget p:last-of-type,
+.widget p:last-child,
 .widget ul > li:last-of-type,
 .widget-area .widget:last-of-type {
 	margin-bottom: 0;
+}
+
+.widget ul > li {
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+.widget ul > li:last-of-type {
+	padding-bottom: 0;
 }
 
 .widget ol > li {
@@ -967,7 +949,7 @@ img.alignright,
 }
 
 .sidebar .enews-widget input[type="submit"] {
-	background-color: #c3251d;
+	background-color: #cc3d25;
 	color: #fff;
 }
 
@@ -1036,7 +1018,7 @@ img.alignright,
 
 .title-area {
 	float: left;
-	padding: 20px 0;
+	padding: 10px 0;
 	width: 300px;
 }
 
@@ -1049,9 +1031,9 @@ img.alignright,
 }
 
 .site-title {
-	font-size: 34px;
-	font-size: 3.4rem;
-	font-weight: 400;
+	font-size: 30px;
+	font-size: 3rem;
+	font-weight: 900;
 	line-height: 1.2;
 }
 
@@ -1124,7 +1106,7 @@ img.alignright,
 .genesis-nav-menu .current-menu-item > a,
 .genesis-nav-menu .sub-menu .current-menu-item > a:hover,
 .genesis-nav-menu .sub-menu .current-menu-item > a:focus  {
-	color: #c3251d;
+	color: #cc3d25;
 	text-decoration: underline;
 }
 
@@ -1292,7 +1274,7 @@ p.entry-meta {
 }
 
 .entry-footer .entry-meta {
-	border-top: 2px solid #f5f5f5;
+	border-top: 1px solid #f5f5f5;
 	padding-top: 24px;
 }
 
@@ -1323,12 +1305,13 @@ p.entry-meta {
 }
 
 .archive-pagination li a {
-	background-color: #333;
-	color: #fff;
+	background-color: #fff;
+	color: #333;
 	cursor: pointer;
 	display: inline-block;
 	font-size: 16px;
 	font-size: 1.6rem;
+	font-weight: 700;
 	padding: 8px 12px;
 	text-decoration: none;
 }
@@ -1336,8 +1319,8 @@ p.entry-meta {
 .archive-pagination li a:hover,
 .archive-pagination li a:focus,
 .archive-pagination .active a {
-	background-color: #c3251d;
-	text-decoration: underline;
+	background-color: #cc3d25;
+	color: #fff;
 }
 
 /* ## Comments
@@ -1364,24 +1347,22 @@ p.entry-meta {
 	font-size: 1.6rem;
 }
 
-li.comment {
-	background-color: #f5f5f5;
-	border: 2px solid #fff;
-	border-right: 0;
-}
-
 .comment-content {
 	clear: both;
 	word-wrap: break-word;
 }
 
 .comment-list li {
-	margin-top: 24px;
-	padding: 32px;
+	margin-top: 40px;
+	padding: 10px 40px;
+}
+
+.comment-list .depth-1 {
+	padding-left: 0;
 }
 
 .comment-list li li {
-	margin-right: -32px;
+	margin-right: -40px;
 }
 
 .comment-respond input[type="email"],
@@ -1403,9 +1384,6 @@ li.comment {
 	display: none;
 }
 
-.bypostauthor {
-}
-
 .form-allowed-tags {
 	background-color: #f5f5f5;
 	font-size: 16px;
@@ -1422,12 +1400,6 @@ li.comment {
 	font-size: 1.6rem;
 }
 
-.sidebar li {
-	border-bottom: 1px dotted #ddd;
-	margin-bottom: 10px;
-	padding-bottom: 10px;
-}
-
 .sidebar .widget {
 	background-color: #fff;
 	padding: 40px;
@@ -1438,37 +1410,9 @@ li.comment {
 ---------------------------------------------------------------------------------------------------- */
 
 .footer-widgets {
-	background-color: #333;
+	background-color: #fff;
 	clear: both;
-	padding-top: 40px;
-}
-
-.footer-widgets {
-	color: #aaa;
-}
-
-.footer-widgets a,
-.footer-widgets a.button {
-	color: #fff;
-}
-
-.footer-widgets a:hover,
-.footer-widgets a:focus {
-	color: #aaa;
-}
-
-.footer-widgets input {
-	border: 1px solid #333;
-}
-
-.footer-widgets li {
-	border-bottom: 1px dotted #666;
-	margin-bottom: 10px;
-	padding-bottom: 10px;
-}
-
-.footer-widgets p:last-child {
-	margin-bottom: 0;
+	padding: 40px 0;
 }
 
 .footer-widgets-1,
@@ -1640,7 +1584,6 @@ li.comment {
 
 	.menu-toggle {
 		line-height: 20px;
-		margin-top: 10px;
 		position: relative;
 		right: 0;
 		z-index: 1000;
@@ -1734,7 +1677,7 @@ li.comment {
 	.js nav button:focus,
 	.js .menu-toggle:focus {
 		background-color: #fff;
-		color: #c3251d;
+		color: #cc3d25;
 	}
 
 	.footer-widgets-1 {

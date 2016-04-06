@@ -84,10 +84,7 @@ function genesis_sample_css() {
 		.genesis-nav-menu .sub-menu .current-menu-item > a:focus,
 		.genesis-nav-menu .sub-menu .current-menu-item > a:hover,
 		.js nav button:focus,
-		.js .menu-toggle:focus,
-		.nav-primary .genesis-nav-menu .sub-menu .current-menu-item > a,
-		.nav-primary .genesis-nav-menu .sub-menu a:focus,
-		.nav-primary .genesis-nav-menu .sub-menu a:hover {
+		.js .menu-toggle:focus {
 			color: %1$s;
 		}
 		', $color_link ) : '';
@@ -107,11 +104,6 @@ function genesis_sample_css() {
 		.archive-pagination .active a,
 		.button:focus,
 		.button:hover,
-		.footer-widgets button,
-		.footer-widgets input[type="button"],
-		.footer-widgets input[type="reset"],
-		.footer-widgets input[type="submit"],
-		.footer-widgets .button,
 		.sidebar .enews-widget input[type="submit"] {
 			background-color: %1$s;
 			color: %2$s;
