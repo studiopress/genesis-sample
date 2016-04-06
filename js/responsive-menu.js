@@ -60,7 +60,7 @@
 			$( 'ul.menu-primary > li' ).addClass( 'moved-item' ); // tag moved items so we can move them back
 			$( 'ul.menu-primary > li' ).appendTo( '.nav-header ul.genesis-nav-menu' );
 			$( '.nav-primary' ).hide();
-		} else {
+		} else if ( ( ! $( '.js nav' ).css( 'position' ) == 'relative' ) && $( '.nav-header' ).length ) {
 			$( '.nav-primary' ).show();
 			$( '.nav-header ul.genesis-nav-menu > li.moved-item' ).appendTo( 'ul.menu-primary' );
 			$( 'ul.menu-primary > li' ).removeClass( 'moved-item' );
@@ -86,12 +86,7 @@
 		_toggleAria( $this, 'aria-pressed' );
 		_toggleAria( $this, 'aria-expanded' );
 		$this.toggleClass( 'activated' );
-		$( 'nav.nav-header' ).slideToggle( 'fast' );
-		if ($( '.nav-header' ).length ) {
-			$( 'nav.nav-header' ).slideToggle( 'fast' );
-		} else {
-			$( 'nav.nav-primary' ).slideToggle( 'fast' );
-		}
+		$this.next( 'nav, .sub-menu' ).slideToggle( 'fast' );
 	}
 
 	/**
