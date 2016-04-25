@@ -84,14 +84,32 @@ remove_action( 'genesis_after_header', 'genesis_do_subnav' );
 add_action( 'genesis_footer', 'genesis_do_subnav', 5 );
 
 //* Reduce the secondary navigation menu to one level depth
-add_filter( 'wp_nav_menu_args', 'atmosphere_secondary_menu_args' );
-function atmosphere_secondary_menu_args( $args ) {
+add_filter( 'wp_nav_menu_args', 'genesis_sample_secondary_menu_args' );
+function genesis_sample_secondary_menu_args( $args ) {
 
 	if ( 'secondary' != $args['theme_location'] ) {
 		return $args;
 	}
 
 	$args['depth'] = 1;
+
+	return $args;
+
+}
+
+//* Modify size of the Gravatar in the author box
+add_filter( 'genesis_author_box_gravatar_size', 'genesis_sample_author_box_gravatar' );
+function genesis_sample_author_box_gravatar( $size ) {
+
+	return 180;
+
+}
+
+//* Modify size of the Gravatar in the entry comments
+add_filter( 'genesis_comment_list_args', 'genesis_sample_comments_gravatar' );
+function genesis_sample_comments_gravatar( $args ) {
+
+	$args['avatar_size'] = 120;
 
 	return $args;
 

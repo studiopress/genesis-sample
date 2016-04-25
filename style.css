@@ -698,8 +698,7 @@ th {
 	float: left;
 }
 
-.alignleft .avatar,
-.author-box .avatar {
+.alignleft .avatar {
 	margin-right: 24px;
 }
 
@@ -707,8 +706,16 @@ th {
 	margin-left: 24px;
 }
 
+.author-box .avatar {
+	height: 90px;
+	margin-right: 24px;
+	width: 90px;
+}
+
 .comment .avatar {
+	height: 60px;
 	margin: 0 16px 24px 0;
+	width: 60px;
 }
 
 /* ## Genesis
