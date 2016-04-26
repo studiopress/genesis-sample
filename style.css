@@ -706,6 +706,7 @@ th {
 	margin-bottom: 20px;
 }
 
+.after-entry,
 .archive-description,
 .author-box {
 	background-color: #fff;
@@ -1746,6 +1747,7 @@ li.comment {
 		padding-right: 5%;
 	}
 
+	.after-entry,
 	.archive-description,
 	.author-box,
 	.comment-respond,
