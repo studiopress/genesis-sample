@@ -70,6 +70,9 @@ add_theme_support( 'genesis-after-entry-widget-area' );
 //* Add support for 3-column footer widgets
 add_theme_support( 'genesis-footer-widgets', 3 );
 
+//* Add Image Sizes
+add_image_size( 'featured-image', 720, 400, TRUE );
+
 //* Modify size of the Gravatar in the author box
 add_filter( 'genesis_author_box_gravatar_size', 'genesis_sample_author_box_gravatar' );
 function genesis_sample_author_box_gravatar( $size ) {
