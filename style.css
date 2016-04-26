@@ -45,15 +45,15 @@
 - Plugins
 	- Genesis eNews Extended
 	- Jetpack
+- Skip Links
 - Site Header
 	- Title Area
 	- Widget Area
 - Site Navigation
 	- Accessible Menu
 	- Site Header Navigation
-	- Primary Navigation
-	- Secondary Navigation
-	- Skip Links
+	- After Header Navigation
+	- Footer Navigation
 - Content Area
 	- Entries
 	- Entry Meta
@@ -1074,12 +1074,15 @@ img.alignright,
 	clear: both;
 	font-size: 16px;
 	font-size: 1.6rem;
+	font-weight: 600;
 	line-height: 1;
 	width: 100%;
 }
 
 .genesis-nav-menu .menu-item {
 	display: inline-block;
+	margin-bottom: 0;
+	padding-bottom: 0;
 	text-align: left;
 }
 
@@ -1087,7 +1090,7 @@ img.alignright,
 	color: #333;
 	text-decoration: none;
 	display: block;
-	padding: 30px 24px;
+	padding: 32px 20px;
 }
 
 .genesis-nav-menu a:hover,
@@ -1100,6 +1103,7 @@ img.alignright,
 }
 
 .genesis-nav-menu .sub-menu {
+	border-top: 1px solid #eee;
 	left: -9999px;
 	opacity: 0;
 	position: absolute;
@@ -1125,7 +1129,7 @@ img.alignright,
 }
 
 .genesis-nav-menu .sub-menu .sub-menu {
-	margin: -55px 0 0 199px;
+	margin: -56px 0 0 199px;
 }
 
 .genesis-nav-menu .menu-item:hover {
@@ -1146,23 +1150,7 @@ img.alignright,
 }
 
 .genesis-nav-menu > .right {
-	color: #fff;
 	float: right;
-	list-style-type: none;
-	padding: 30px 0;
-}
-
-.genesis-nav-menu > .right > a {
-	display: inline;
-	padding: 0;
-}
-
-.genesis-nav-menu > .rss > a {
-	margin-left: 48px;
-}
-
-.genesis-nav-menu > .search {
-	padding: 10px 0 0;
 }
 
 /* ## Accessible Menu
@@ -1187,54 +1175,29 @@ img.alignright,
 /* ## Site Header Navigation
 --------------------------------------------- */
 
-.site-header .sub-menu {
-	border-top: 1px solid #eee;
-}
-
-.site-header .sub-menu .sub-menu {
-	margin-top: -56px;
-}
-
 .site-header .genesis-nav-menu li li {
 	margin-left: 0;
 }
 
-/* ## Primary Navigation
+/* ## After Header Navigation
 --------------------------------------------- */
 
 .nav-primary {
-	background-color: #333;
+	background-color: #fff;
+	border-top: 1px solid #eee;
 }
 
-.nav-primary .genesis-nav-menu a {
-	color: #ccc;
-	text-decoration: none;
-}
-
-.nav-primary .genesis-nav-menu a:hover,
-.nav-primary .genesis-nav-menu a:focus,
-.nav-primary .genesis-nav-menu .current-menu-item > a {
-	color: #fff;
-	text-decoration: underline;
-}
-
-.nav-primary .genesis-nav-menu .sub-menu a {
-	color: #333;
-}
-
-.nav-primary .genesis-nav-menu .sub-menu a:hover,
-.nav-primary .genesis-nav-menu .sub-menu a:focus,
-.nav-primary .genesis-nav-menu .sub-menu .current-menu-item > a {
-	color: #c3251d;
-	text-decoration: underline;
-}
-
-/* ## Secondary Navigation
+/* ## Footer Navigation
 --------------------------------------------- */
 
-.nav-secondary {
-	background-color: #fff;
+.site-footer .genesis-nav-menu {
+	padding-bottom: 20px;
 }
+
+.site-footer .genesis-nav-menu a {
+	padding: 0 20px 10px;
+}
+
 
 /* # Content Area
 ---------------------------------------------------------------------------------------------------- */
