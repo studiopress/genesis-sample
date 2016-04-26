@@ -553,6 +553,10 @@ th {
 	padding-top: 40px;
 }
 
+.landing-page .site-inner {
+	max-width: 800px;
+}
+
 /* ## Column Widths and Positions
 --------------------------------------------- */
 
