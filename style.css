@@ -1156,6 +1156,12 @@ img.alignright,
 	opacity: 1;
 }
 
+.sub-menu-toggle,
+.menu-toggle {
+	display: none;
+	visibility: hidden;
+}
+
 /* ## Site Header Navigation
 --------------------------------------------- */
 
@@ -1576,18 +1582,139 @@ li.comment {
 		text-align: center;
 	}
 
-	.genesis-nav-menu a,
-	.genesis-nav-menu > .first > a,
-	.genesis-nav-menu > .last > a {
-		padding: 20px 16px;
-	}
-
 	.site-header .search-form {
 		margin: 16px auto;
 	}
 
-	.genesis-nav-menu li.right {
+	.js nav.nav-primary,
+	.js .site-header nav  {
 		display: none;
+		position: relative;
+	}
+
+	.js .site-header nav .wrap {
+		padding: 0;
+	}
+
+	.js nav.pagination {
+		display: block;
+	}
+
+	.menu-toggle,
+	.sub-menu-toggle {
+		border-width: 0;
+		background-color: #fff;
+		color: #333;
+		display: block;
+		margin: 0 auto;
+		overflow: hidden;
+		text-align: center;
+		visibility: visible;
+	}
+	
+	.menu-toggle:hover,
+	.menu-toggle:focus,
+	.sub-menu-toggle:hover,
+	.sub-menu-toggle:focus {
+		border-width: 0;
+	}
+
+	.menu-toggle {
+		line-height: 20px;
+		position: relative;
+		right: 0;
+		z-index: 1000;
+		width: 100%;
+	}
+
+	.menu-toggle:before,
+	.menu-toggle.activated:before {
+		margin-right: 10px;
+		text-rendering: auto;
+		-webkit-transform: translate(0, 0);
+		-ms-transform:     translate(0, 0);
+		transform:         translate(0, 0);
+	}
+
+	.sub-menu-toggle {
+		float: right;
+		padding: 10px;
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: 100;
+	}
+
+	.sub-menu-toggle:before {
+		display: inline-block;
+		text-rendering: auto;
+		-webkit-transform: translate(0, 0);
+		-ms-transform:     translate(0, 0);
+		transform:         translate(0, 0);
+	}
+
+	.sub-menu-toggle.activated:before {
+		content: "\f142";
+	}
+
+	.js .nav-primary .genesis-nav-menu .menu-item,
+	.js .site-header .genesis-nav-menu .menu-item {
+		display: block;
+		float: none;
+		position: relative;
+		text-align: left;
+	}
+
+	.js .genesis-nav-menu .menu-item:hover {
+		position: relative;
+	}
+
+	.js .nav-primary .genesis-nav-menu .menu-item a,
+	.js .site-header .genesis-nav-menu .menu-item a {
+		border: none;
+		padding: 12px 0;
+		width: 100%;
+	}
+
+	.js .genesis-nav-menu .sub-menu {
+		border: none;
+	}
+
+	.js .genesis-nav-menu .menu-item > a:focus ul.sub-menu,
+	.js .genesis-nav-menu .menu-item > a:focus ul.sub-menu .sub-menu {
+		left: 0;
+		margin-left: 0;
+	}
+
+	.js .genesis-nav-menu > .menu-item-has-children > a:after {
+		content: none;
+	}
+
+	.js .genesis-nav-menu .sub-menu {
+		clear: both;
+		display: none;
+		margin: 0;
+		opacity: 1;
+		padding-left: 15px;
+		position: static;
+		width: 100%;
+	}
+
+	.js .genesis-nav-menu .sub-menu .sub-menu {
+		margin: 0;
+	}
+
+	.js nav button:hover,
+	.js .menu-toggle:hover,
+	.js .nav-primary {
+		background-color: #fff;
+		color: #000;
+	}
+
+	.js nav button:focus,
+	.js .menu-toggle:focus {
+		background-color: #fff;
+		color: #c3251d;
 	}
 
 	.footer-widgets-1 {
