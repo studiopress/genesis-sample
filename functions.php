@@ -41,7 +41,7 @@ function genesis_sample_google_fonts() {
 }
 
 //* Add HTML5 markup structure
-add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list' ) );
+add_theme_support( 'html5', array( 'caption', 'comment-form', 'comment-list', 'gallery', 'search-form' ) );
 
 //* Add Accessibility support
 add_theme_support( 'genesis-accessibility', array( '404-page', 'drop-down-menu', 'headings', 'rems', 'search-form', 'skip-links' ) );
