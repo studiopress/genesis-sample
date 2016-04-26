@@ -1,6 +1,23 @@
 <?php
+/**
+ * Genesis Sample.
+ *
+ * This file adds functions to the Genesis Sample Theme.
+ *
+ * @package Genesis Sample
+ * @author  StudioPress
+ * @license GPL-2.0+
+ * @link    http://www.studiopress.com/
+ */
+
 //* Start the engine
 include_once( get_template_directory() . '/lib/init.php' );
+
+//* Add Image upload and Color select to WordPress Theme Customizer
+require_once( get_stylesheet_directory() . '/lib/customize.php' );
+
+//* Include Customizer CSS
+include_once( get_stylesheet_directory() . '/lib/output.php' );
 
 //* Child theme (do not remove)
 define( 'CHILD_THEME_NAME', 'Genesis Sample Theme' );
