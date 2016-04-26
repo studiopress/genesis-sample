@@ -15,8 +15,12 @@ define( 'CHILD_THEME_VERSION', '2.2.2' );
 add_action( 'wp_enqueue_scripts', 'genesis_sample_enqueue_scripts_styles' );
 function genesis_sample_enqueue_scripts_styles() {
 
+<<<<<<< HEAD
 	wp_enqueue_style( 'genesis-sample-fonts', '//fonts.googleapis.com/css?family=Lato:300,400,700', array(), CHILD_THEME_VERSION );
 >>>>>>> parent of 7b5feb4... 2.2.3 Style Updates
+=======
+	wp_enqueue_style( 'genesis-sample-fonts', '//fonts.googleapis.com/css?family=Lato:300,400,700,900', array(), CHILD_THEME_VERSION );
+>>>>>>> parent of b3c719e... Genesis Sample Style Updates
 	wp_enqueue_style( 'dashicons' );
 =======
 //* Enqueue Google Fonts
@@ -45,7 +49,7 @@ add_theme_support( 'custom-background' );
 add_theme_support( 'genesis-after-entry-widget-area' );
 
 //* Add Image Sizes
-add_image_size( 'featured-image', 720, 400, TRUE );
+add_image_size( 'featured-image', 680, 400, TRUE );
 
 //* Rename primary and secondary navigation menus
 add_theme_support( 'genesis-menus' , array( 'primary' => __( 'After Header Menu', 'genesis-sample' ), 'secondary' => __( 'Footer Menu', 'genesis-sample' ) ) );

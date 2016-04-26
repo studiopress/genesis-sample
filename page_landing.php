@@ -33,9 +33,6 @@ function genesis_sample_dequeue_skip_links() {
 
 }
 
-//* Force full width content layout
-add_filter( 'genesis_site_layout', '__genesis_return_full_width_content' );
-
 //* Remove site header elements
 remove_action( 'genesis_header', 'genesis_header_markup_open', 5 );
 remove_action( 'genesis_header', 'genesis_do_header' );
@@ -47,8 +44,8 @@ remove_theme_support( 'genesis-menus' );
 //* Remove breadcrumbs
 remove_action( 'genesis_before_loop', 'genesis_do_breadcrumbs' );
 
-//* Remove footer widgets
-remove_action( 'genesis_before_footer', 'genesis_footer_widget_areas' );
+//* Remove site footer widgets
+remove_action( 'genesis_before_footer', 'genesis_sample_footer_widgets' );
 
 //* Remove site footer elements
 remove_action( 'genesis_footer', 'genesis_footer_markup_open', 5 );

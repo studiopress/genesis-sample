@@ -78,6 +78,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 - Site Footer
 - Media Queries
 <<<<<<< HEAD
+<<<<<<< HEAD
 	- Max-width: 1340px
 	- Max-width: 1200px
 	- Max-width: 1023px
@@ -88,6 +89,12 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	- Max-width: 960px
 	- Max-width: 800px
 >>>>>>> parent of 9a593fe... 2.2.3 Genesis Sample Theme Changes
+=======
+	- Retina Display
+	- Max-width: 1280px
+	- Max-width: 1023px
+	- Max-width: 880px
+>>>>>>> parent of b3c719e... Genesis Sample Style Updates
 - Print Styles
 */
 
@@ -164,22 +171,21 @@ input[type="search"]{
 --------------------------------------------- */
 
 html {
-	font-size: 62.5%; /* 10px browser default */
+    font-size: 62.5%; /* 10px browser default */
 }
 
 /* Chrome fix */
 body > div {
-	font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 body {
-	background-color: #eee;
+	background-color: #f5f5f5;
 	color: #333;
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 20px;
-	font-size: 2rem;
-	-webkit-font-smoothing: antialiased;
-	font-weight: 400;
+	font-family: Lato, sans-serif;
+	font-size: 18px;
+	font-size: 1.8rem;
+	font-weight: 300;
 	line-height: 1.625;
 	margin: 0;
 }
@@ -201,7 +207,7 @@ textarea:focus,
 }
 
 a {
-	color: #c3251d;
+	color: #cc3d25;
 	text-decoration: underline;
 }
 
@@ -229,7 +235,7 @@ li {
 hr {
 	border: 0;
 	border-collapse: collapse;
-	border-top: 1px solid #eee;
+	border-top: 1px solid #ddd;
 	clear: both;
 	margin: 1em 0;
 }
@@ -272,6 +278,7 @@ h4,
 h5,
 h6 {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 600;
 =======
@@ -279,6 +286,10 @@ h6 {
 	font-family: Lato, sans-serif;
 	font-weight: 400;
 >>>>>>> parent of 9a593fe... 2.2.3 Genesis Sample Theme Changes
+=======
+	font-family: Lato, sans-serif;
+	font-weight: 400;
+>>>>>>> parent of b3c719e... Genesis Sample Style Updates
 	line-height: 1.2;
 	margin: 0 0 10px;
 }
@@ -380,7 +391,7 @@ img {
 }
 
 .gallery img {
-	border: 1px solid #eee;
+	border: 1px solid #ddd;
 	height: auto;
 	padding: 4px;
 }
@@ -401,7 +412,7 @@ textarea {
 	color: #333;
 	font-size: 18px;
 	font-size: 1.8rem;
-	font-weight: 400;
+	font-weight: 300;
 	padding: 16px;
 	width: 100%;
 }
@@ -420,11 +431,13 @@ input[type="radio"] {
 
 ::-moz-placeholder {
 	color: #333;
+	font-weight: 300;
 	opacity: 1;
 }
 
 ::-webkit-input-placeholder {
 	color: #333;
+	font-weight: 300;
 }
 
 button,
@@ -442,10 +455,13 @@ input[type="submit"],
 	padding: 16px 24px;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	text-decoration: none;
 =======
 	text-transform: uppercase;
 >>>>>>> parent of 7b5feb4... 2.2.3 Style Updates
+=======
+>>>>>>> parent of b3c719e... Genesis Sample Style Updates
 	white-space: normal;
 =======
 	text-transform: uppercase;
@@ -463,7 +479,7 @@ input:focus[type="button"],
 input:focus[type="reset"],
 input:focus[type="submit"],
 .button:focus  {
-	background-color: #c3251d;
+	background-color: #cc3d25;
 	color: #fff;
 }
 
@@ -518,7 +534,7 @@ input[type="submit"].small {
 .site-container input[type="reset"]:disabled:hover,
 .site-container input[type="submit"]:disabled,
 .site-container input[type="submit"]:disabled:hover {
-	background-color: #eee;
+	background-color: #ddd;
 	border-width: 0;
 	color: #777;
 	cursor: not-allowed;
@@ -543,7 +559,7 @@ table {
 }
 
 tbody {
-	border-bottom: 1px solid #eee;
+	border-bottom: 1px solid #ddd;
 }
 
 td,
@@ -552,7 +568,7 @@ th {
 }
 
 td {
-	border-top: 1px solid #eee;
+	border-top: 1px solid #ddd;
 	padding: 6px 0;
 }
 
@@ -606,16 +622,12 @@ th {
 .site-inner,
 .wrap {
 	margin: 0 auto;
-	max-width: 1280px;
+	max-width: 1200px;
 }
 
 .site-inner {
 	clear: both;
 	padding-top: 40px;
-}
-
-.landing-page .site-inner {
-	max-width: 800px;
 }
 
 /* ## Column Widths and Positions
@@ -626,7 +638,7 @@ th {
 .content-sidebar-sidebar .content-sidebar-wrap,
 .sidebar-content-sidebar .content-sidebar-wrap,
 .sidebar-sidebar-content .content-sidebar-wrap {
-	width: 1060px;
+	width: 980px;
 }
 
 .content-sidebar-sidebar .content-sidebar-wrap {
@@ -642,7 +654,7 @@ th {
 
 .content {
 	float: right;
-	width: 880px;
+	width: 800px;
 }
 
 .content-sidebar .content,
@@ -654,7 +666,7 @@ th {
 .content-sidebar-sidebar .content,
 .sidebar-content-sidebar .content,
 .sidebar-sidebar-content .content {
-	width: 660px;
+	width: 580px;
 }
 
 .full-width-content .content {
@@ -776,17 +788,21 @@ th {
 
 .breadcrumb {
 	margin-bottom: 20px;
-	font-size: 16px;
-	font-size: 1.6rem;
 }
 
 .archive-description,
 .author-box {
 	background-color: #fff;
-	font-size: 18px;
-	font-size: 1.8rem;
+	font-size: 16px;
+	font-size: 1.6rem;
 	margin-bottom: 40px;
-	padding: 60px;
+	padding: 40px;
+}
+
+.author-box-title {
+	font-size: 16px;
+	font-size: 1.6rem;
+	margin-bottom: 4px;
 }
 
 .archive-description p:last-child,
@@ -825,9 +841,7 @@ th {
 /* ## Titles
 --------------------------------------------- */
 
-.archive-description .entry-title,
-.archive-title,
-.author-box-title {
+.archive-title {
 	font-size: 20px;
 	font-size: 2rem;
 }
@@ -844,12 +858,13 @@ th {
 
 .entry-title a:hover,
 .entry-title a:focus {
-	color: #c3251d;
+	color: #cc3d25;
 }
 
 .widget-title {
 	font-size: 18px;
 	font-size: 1.8rem;
+	font-weight: 700;
 	margin-bottom: 20px;
 }
 
@@ -911,7 +926,7 @@ img.alignright,
 .wp-caption-text {
 	font-size: 14px;
 	font-size: 1.4rem;
-	font-weight: 600;
+	font-weight: 700;
 	text-align: center;
 }
 
@@ -989,11 +1004,13 @@ img.alignright,
 .featured-content .entry {
 <<<<<<< HEAD
 	background: none;
-	padding: 0;
+	margin-bottom: 20px;
+	padding: 0 0 24px;
 }
 
 .featured-content .entry:last-of-type {
 	margin-bottom: 0;
+<<<<<<< HEAD
 =======
 	border-bottom: 2px solid #f5f5f5;
 	margin-bottom: 20px;
@@ -1003,6 +1020,9 @@ img.alignright,
 .footer-widgets .entry {
 	border-bottom: 1px dotted #666;
 >>>>>>> parent of 9a593fe... 2.2.3 Genesis Sample Theme Changes
+=======
+	padding-bottom: 0;
+>>>>>>> parent of b3c719e... Genesis Sample Style Updates
 }
 
 .featured-content .entry-title {
@@ -1034,7 +1054,7 @@ img.alignright,
 <<<<<<< HEAD
 =======
 .sidebar .enews-widget input[type="submit"] {
-	background-color: #c3251d;
+	background-color: #cc3d25;
 	color: #fff;
 }
 
@@ -1078,7 +1098,6 @@ img.alignright,
 
 /* # Skip Links
 ---------------------------------------------------------------------------------------------------- */
-
 .genesis-skip-link {
 	margin: 0;
 }
@@ -1138,6 +1157,7 @@ img.alignright,
 <<<<<<< HEAD
 	font-size: 30px;
 	font-size: 3rem;
+<<<<<<< HEAD
 	font-weight: 700;
 =======
 	font-size: 32px;
@@ -1149,6 +1169,9 @@ img.alignright,
 	font-size: 3.4rem;
 	font-weight: 400;
 >>>>>>> parent of 7b5feb4... 2.2.3 Style Updates
+=======
+	font-weight: 900;
+>>>>>>> parent of b3c719e... Genesis Sample Style Updates
 	line-height: 1.2;
 }
 
@@ -1168,7 +1191,7 @@ img.alignright,
 .site-description {
 	font-size: 16px;
 	font-size: 1.6rem;
-	font-weight: 400;
+	font-weight: 300;
 	line-height: 1.5;
 }
 
@@ -1200,15 +1223,12 @@ img.alignright,
 	clear: both;
 	font-size: 16px;
 	font-size: 1.6rem;
-	font-weight: 600;
 	line-height: 1;
 	width: 100%;
 }
 
 .genesis-nav-menu .menu-item {
 	display: inline-block;
-	margin-bottom: 0;
-	padding-bottom: 0;
 	text-align: left;
 }
 
@@ -1224,7 +1244,7 @@ img.alignright,
 .genesis-nav-menu .current-menu-item > a,
 .genesis-nav-menu .sub-menu .current-menu-item > a:hover,
 .genesis-nav-menu .sub-menu .current-menu-item > a:focus  {
-	color: #c3251d;
+	color: #cc3d25;
 	text-decoration: underline;
 }
 
@@ -1275,7 +1295,23 @@ img.alignright,
 }
 
 .genesis-nav-menu > .right {
+	color: #fff;
 	float: right;
+	list-style-type: none;
+	padding: 30px 0;
+}
+
+.genesis-nav-menu > .right > a {
+	display: inline;
+	padding: 0;
+}
+
+.genesis-nav-menu > .rss > a {
+	margin-left: 48px;
+}
+
+.genesis-nav-menu > .search {
+	padding: 10px 0 0;
 }
 
 /* ## Accessible Menu
@@ -1312,10 +1348,13 @@ img.alignright,
 .nav-primary {
 <<<<<<< HEAD
 	background-color: #fff;
+<<<<<<< HEAD
 	border-top: 1px solid #eee;
 =======
 	background-color: #333;
 >>>>>>> parent of 9a593fe... 2.2.3 Genesis Sample Theme Changes
+=======
+>>>>>>> parent of b3c719e... Genesis Sample Style Updates
 }
 
 .nav-primary .genesis-nav-menu a {
@@ -1355,9 +1394,12 @@ img.alignright,
 --------------------------------------------- */
 
 .entry {
-	background-color: #fff;
 	margin-bottom: 40px;
-	padding: 70px 80px;
+	padding: 50px 60px;
+}
+
+.content .entry {
+	background-color: #fff;
 }
 
 .entry-content ol,
@@ -1381,7 +1423,7 @@ img.alignright,
 
 .entry-content code {
 	background-color: #333;
-	color: #eee;
+	color: #ddd;
 }
 
 /* ## Entry Meta
@@ -1399,10 +1441,14 @@ p.entry-meta {
 
 .entry-footer .entry-meta {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	border-top: 1px solid #eee;
 =======
 	border-top: 2px solid #f5f5f5;
 >>>>>>> parent of 7b5feb4... 2.2.3 Style Updates
+=======
+	border-top: 1px solid #f5f5f5;
+>>>>>>> parent of b3c719e... Genesis Sample Style Updates
 	padding-top: 24px;
 }
 
@@ -1440,9 +1486,13 @@ p.entry-meta {
 	font-size: 16px;
 	font-size: 1.6rem;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	font-weight: 600;
 =======
 >>>>>>> parent of 7b5feb4... 2.2.3 Style Updates
+=======
+	font-weight: 700;
+>>>>>>> parent of b3c719e... Genesis Sample Style Updates
 	padding: 8px 12px;
 	text-decoration: none;
 }
@@ -1450,8 +1500,12 @@ p.entry-meta {
 .archive-pagination li a:hover,
 .archive-pagination li a:focus,
 .archive-pagination .active a {
+<<<<<<< HEAD
 	background-color: #c3251d;
 <<<<<<< HEAD
+=======
+	background-color: #cc3d25;
+>>>>>>> parent of b3c719e... Genesis Sample Style Updates
 	color: #fff;
 =======
 	text-decoration: underline;
@@ -1465,18 +1519,21 @@ p.entry-meta {
 .entry-comments,
 .entry-pings {
 	background-color: #fff;
-	font-size: 16px;
-	font-size: 1.6rem;
 	margin-bottom: 40px;
 }
 
 .comment-respond,
 .entry-pings {
-	padding: 60px 60px 32px;
+	padding: 40px 40px 16px;
 }
 
 .entry-comments {
-	padding: 60px;
+	padding: 40px;
+}
+
+.comment-header {
+	font-size: 16px;
+	font-size: 1.6rem;
 }
 
 li.comment {
@@ -1492,13 +1549,19 @@ li.comment {
 
 .comment-list li {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	padding: 40px 0 0 30px;
+=======
+	margin-top: 40px;
+	padding: 10px 40px;
+>>>>>>> parent of b3c719e... Genesis Sample Style Updates
 }
 
 .comment-list .depth-1 {
 	padding-left: 0;
 }
 
+<<<<<<< HEAD
 =======
 	margin-top: 24px;
 	padding: 32px;
@@ -1509,6 +1572,12 @@ li.comment {
 }
 
 >>>>>>> parent of 7b5feb4... 2.2.3 Style Updates
+=======
+.comment-list li li {
+	margin-right: -40px;
+}
+
+>>>>>>> parent of b3c719e... Genesis Sample Style Updates
 .comment-respond input[type="email"],
 .comment-respond input[type="text"],
 .comment-respond input[type="url"] {
@@ -1529,10 +1598,13 @@ li.comment {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 .bypostauthor {
 }
 
+=======
+>>>>>>> parent of b3c719e... Genesis Sample Style Updates
 .form-allowed-tags {
 	background-color: #f5f5f5;
 	font-size: 16px;
@@ -1540,7 +1612,10 @@ li.comment {
 	padding: 24px;
 }
 
+<<<<<<< HEAD
 >>>>>>> parent of 7b5feb4... 2.2.3 Style Updates
+=======
+>>>>>>> parent of b3c719e... Genesis Sample Style Updates
 
 /* # Sidebars
 ---------------------------------------------------------------------------------------------------- */
@@ -1548,7 +1623,6 @@ li.comment {
 .sidebar {
 	font-size: 16px;
 	font-size: 1.6rem;
-	margin-bottom: 40px;
 }
 
 .sidebar p:last-child,
@@ -1575,9 +1649,8 @@ li.comment {
 .footer-widgets {
 <<<<<<< HEAD
 	background-color: #fff;
-	font-size: 18px;
-	font-size: 1.8rem;
 	clear: both;
+<<<<<<< HEAD
 <<<<<<< HEAD
 	padding: 60px 0;
 =======
@@ -1640,16 +1713,19 @@ li.comment {
 .footer-widgets p:last-child {
 	margin-bottom: 0;
 >>>>>>> parent of 7b5feb4... 2.2.3 Style Updates
+=======
+	padding: 40px 0;
+>>>>>>> parent of b3c719e... Genesis Sample Style Updates
 }
 
 .footer-widgets-1,
 .footer-widgets-2,
 .footer-widgets-3 {
-	width: 380px;
+	width: 340px;
 }
 
 .footer-widgets-1 {
-	margin-right: 70px;
+	margin-right: 60px;
 }
 
 .footer-widgets-1,
@@ -1667,11 +1743,10 @@ li.comment {
 
 .site-footer {
 	background-color: #fff;
-	border-top: 1px solid #eee;
 	font-size: 16px;
 	font-size: 1.6rem;
 	line-height: 1;
-	padding: 60px 0;
+	padding: 40px 0;
 	text-align: center;
 }
 
@@ -1683,6 +1758,7 @@ li.comment {
 /* # Media Queries
 ---------------------------------------------------------------------------------------------------- */
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 @media only screen and (max-width: 1340px) {
 
@@ -1728,6 +1804,9 @@ li.comment {
 =======
 >>>>>>> parent of 9a593fe... 2.2.3 Genesis Sample Theme Changes
 @media only screen and (max-width: 1200px) {
+=======
+@media only screen and (max-width: 1280px) {
+>>>>>>> parent of b3c719e... Genesis Sample Style Updates
 
 	.site-inner,
 	.wrap {
@@ -1753,7 +1832,9 @@ li.comment {
 
 	.footer-widgets-1,
 	.footer-widgets-2,
-	.footer-widgets-3 {
+	.footer-widgets-3,
+	.sidebar-primary,
+	.title-area {
 		width: 300px;
 	}
 
@@ -1820,6 +1901,13 @@ li.comment {
 	}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+	.genesis-nav-menu li.right {
+		display: none;
+	}
+
+>>>>>>> parent of b3c719e... Genesis Sample Style Updates
 	.js nav.nav-primary,
 	.js .site-header nav  {
 		display: none;
@@ -1949,6 +2037,7 @@ li.comment {
 	.js nav button:focus,
 	.js .menu-toggle:focus {
 		background-color: #fff;
+<<<<<<< HEAD
 		color: #c3251d;
 <<<<<<< HEAD
 	}
@@ -1966,10 +2055,18 @@ li.comment {
 	.footer-widgets-1 {
 		margin-right: 0;
 >>>>>>> parent of 9a593fe... 2.2.3 Genesis Sample Theme Changes
+=======
+		color: #cc3d25;
+	}
+
+	.footer-widgets-1 {
+		margin-right: 0;
+>>>>>>> parent of b3c719e... Genesis Sample Style Updates
 	}
 
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 @media only screen and (max-width: 860px) {
 
@@ -1979,39 +2076,31 @@ li.comment {
 =======
 @media only screen and (max-width: 800px) {
 >>>>>>> parent of 9a593fe... 2.2.3 Genesis Sample Theme Changes
+=======
+@media only screen and (max-width: 880px) {
+>>>>>>> parent of b3c719e... Genesis Sample Style Updates
 
 	body {
-		font-size: 18px;
-		font-size: 1.8rem;
+		background-color: #fff;
+		font-size: 16px;
+		font-size: 1.6rem;
 	}
 
-	.site-inner {
-		padding: 5% 5% 0;
-	}
-
+	.site-inner,
 	.wrap {
 		padding-left: 5%;
 		padding-right: 5%;
 	}
 
-	.after-entry,
 	.archive-description,
 	.author-box,
 	.comment-respond,
 	.entry,
 	.entry-comments,
 	.entry-pings,
-	.sidebar .widget {
-		padding: 30px;
-		margin-bottom: 5%;
-	}
-
-	.sidebar {
-		margin-bottom: 5%;
-	}
-
-	.pagination {
-		margin: 5% auto;
+	.sidebar .widget,
+	.site-header {
+		padding: 0;
 	}
 
 	.archive-pagination li a {
@@ -2031,6 +2120,10 @@ li.comment {
 	.two-thirds {
 		margin: 0;
 		width: 100%;
+	}
+
+	.sidebar .widget.enews-widget {
+		padding: 40px;
 	}
 
 }
