@@ -438,10 +438,14 @@ input[type="submit"],
 	cursor: pointer;
 	font-size: 16px;
 	font-size: 1.6rem;
-	font-weight: 700;
+	font-weight: 300;
 	padding: 16px 24px;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	text-decoration: none;
+=======
+	text-transform: uppercase;
+>>>>>>> parent of 7b5feb4... 2.2.3 Style Updates
 	white-space: normal;
 =======
 	text-transform: uppercase;
@@ -466,6 +470,29 @@ input:focus[type="submit"],
 .entry-content .button:hover,
 .entry-content .button:focus {
 	color: #fff;
+}
+
+.footer-widgets button,
+.footer-widgets input[type="button"],
+.footer-widgets input[type="reset"],
+.footer-widgets input[type="submit"],
+.footer-widgets .button {
+	background-color: #c3251d;
+	color: #fff;
+}
+
+.footer-widgets button:hover,
+.footer-widgets input:hover[type="button"],
+.footer-widgets input:hover[type="reset"],
+.footer-widgets input:hover[type="submit"],
+.footer-widgets .button:hover,
+.footer-widgets button:focus,
+.footer-widgets input:focus[type="button"],
+.footer-widgets input:focus[type="reset"],
+.footer-widgets input:focus[type="submit"],
+.footer-widgets .button:focus {
+	background-color: #fff;
+	color: #333;
 }
 
 .button {
@@ -826,6 +853,10 @@ th {
 	margin-bottom: 20px;
 }
 
+.footer-widgets .widget-title {
+	color: #fff;
+}
+
 /* ## WordPress
 --------------------------------------------- */
 
@@ -906,12 +937,17 @@ img.alignright,
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .widget p:last-child,
+=======
+.widget p:last-of-type,
+>>>>>>> parent of 7b5feb4... 2.2.3 Style Updates
 .widget ul > li:last-of-type,
 .widget-area .widget:last-of-type {
 	margin-bottom: 0;
 }
 
+<<<<<<< HEAD
 .widget ul > li {
 	margin-bottom: 10px;
 	padding-bottom: 10px;
@@ -923,6 +959,8 @@ img.alignright,
 
 =======
 >>>>>>> parent of 9a593fe... 2.2.3 Genesis Sample Theme Changes
+=======
+>>>>>>> parent of 7b5feb4... 2.2.3 Style Updates
 .widget ol > li {
 	list-style-position: inside;
 	list-style-type: decimal;
@@ -993,6 +1031,20 @@ img.alignright,
 	border: 1px solid #333;
 }
 
+<<<<<<< HEAD
+=======
+.sidebar .enews-widget input[type="submit"] {
+	background-color: #c3251d;
+	color: #fff;
+}
+
+.sidebar .enews-widget input:hover[type="submit"],
+.sidebar .enews-widget input:focus[type="submit"]  {
+	background-color: #fff;
+	color: #333;
+}
+
+>>>>>>> parent of 7b5feb4... 2.2.3 Style Updates
 .enews-widget input {
 	font-size: 16px;
 	font-size: 1.6rem;
@@ -1061,8 +1113,12 @@ img.alignright,
 
 .title-area {
 	float: left;
+<<<<<<< HEAD
 	padding: 10px 0;
 <<<<<<< HEAD
+=======
+	padding: 20px 0;
+>>>>>>> parent of 7b5feb4... 2.2.3 Style Updates
 	width: 300px;
 }
 
@@ -1079,6 +1135,7 @@ img.alignright,
 
 .site-title {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	font-size: 30px;
 	font-size: 3rem;
 	font-weight: 700;
@@ -1087,6 +1144,11 @@ img.alignright,
 	font-size: 3.2rem;
 	font-weight: 400;
 >>>>>>> parent of 9a593fe... 2.2.3 Genesis Sample Theme Changes
+=======
+	font-size: 34px;
+	font-size: 3.4rem;
+	font-weight: 400;
+>>>>>>> parent of 7b5feb4... 2.2.3 Style Updates
 	line-height: 1.2;
 }
 
@@ -1336,7 +1398,11 @@ p.entry-meta {
 }
 
 .entry-footer .entry-meta {
+<<<<<<< HEAD
 	border-top: 1px solid #eee;
+=======
+	border-top: 2px solid #f5f5f5;
+>>>>>>> parent of 7b5feb4... 2.2.3 Style Updates
 	padding-top: 24px;
 }
 
@@ -1367,13 +1433,16 @@ p.entry-meta {
 }
 
 .archive-pagination li a {
-	background-color: #fff;
-	color: #333;
+	background-color: #333;
+	color: #fff;
 	cursor: pointer;
 	display: inline-block;
 	font-size: 16px;
 	font-size: 1.6rem;
+<<<<<<< HEAD
 	font-weight: 600;
+=======
+>>>>>>> parent of 7b5feb4... 2.2.3 Style Updates
 	padding: 8px 12px;
 	text-decoration: none;
 }
@@ -1382,7 +1451,11 @@ p.entry-meta {
 .archive-pagination li a:focus,
 .archive-pagination .active a {
 	background-color: #c3251d;
+<<<<<<< HEAD
 	color: #fff;
+=======
+	text-decoration: underline;
+>>>>>>> parent of 7b5feb4... 2.2.3 Style Updates
 }
 
 /* ## Comments
@@ -1406,12 +1479,19 @@ p.entry-meta {
 	padding: 60px;
 }
 
+li.comment {
+	background-color: #f5f5f5;
+	border: 2px solid #fff;
+	border-right: 0;
+}
+
 .comment-content {
 	clear: both;
 	word-wrap: break-word;
 }
 
 .comment-list li {
+<<<<<<< HEAD
 	padding: 40px 0 0 30px;
 }
 
@@ -1419,6 +1499,16 @@ p.entry-meta {
 	padding-left: 0;
 }
 
+=======
+	margin-top: 24px;
+	padding: 32px;
+}
+
+.comment-list li li {
+	margin-right: -32px;
+}
+
+>>>>>>> parent of 7b5feb4... 2.2.3 Style Updates
 .comment-respond input[type="email"],
 .comment-respond input[type="text"],
 .comment-respond input[type="url"] {
@@ -1438,6 +1528,19 @@ p.entry-meta {
 	display: none;
 }
 
+<<<<<<< HEAD
+=======
+.bypostauthor {
+}
+
+.form-allowed-tags {
+	background-color: #f5f5f5;
+	font-size: 16px;
+	font-size: 1.6rem;
+	padding: 24px;
+}
+
+>>>>>>> parent of 7b5feb4... 2.2.3 Style Updates
 
 /* # Sidebars
 ---------------------------------------------------------------------------------------------------- */
@@ -1453,6 +1556,12 @@ p.entry-meta {
 	margin-bottom: 0;
 }
 
+.sidebar li {
+	border-bottom: 1px dotted #ddd;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
 .sidebar .widget {
 	background-color: #fff;
 	margin-bottom: 40px;
@@ -1464,6 +1573,7 @@ p.entry-meta {
 ---------------------------------------------------------------------------------------------------- */
 
 .footer-widgets {
+<<<<<<< HEAD
 	background-color: #fff;
 	font-size: 18px;
 	font-size: 1.8rem;
@@ -1487,6 +1597,29 @@ p.entry-meta {
 .footer-widgets a:hover,
 .footer-widgets a:focus {
 	color: #fff;
+=======
+	background-color: #333;
+	clear: both;
+	padding-top: 40px;
+}
+
+.footer-widgets {
+	color: #aaa;
+}
+
+.footer-widgets a,
+.footer-widgets a.button {
+	color: #fff;
+}
+
+.footer-widgets a:hover,
+.footer-widgets a:focus {
+	color: #aaa;
+}
+
+.footer-widgets input {
+	border: 1px solid #333;
+>>>>>>> parent of 7b5feb4... 2.2.3 Style Updates
 }
 
 .footer-widgets li {
@@ -1495,6 +1628,7 @@ p.entry-meta {
 	padding-bottom: 10px;
 }
 
+<<<<<<< HEAD
 .footer-widgets .widget {
 	margin-bottom: 40px;
 }
@@ -1502,6 +1636,10 @@ p.entry-meta {
 .footer-widgets p:last-child {
 	margin-bottom: 0;
 >>>>>>> parent of 9a593fe... 2.2.3 Genesis Sample Theme Changes
+=======
+.footer-widgets p:last-child {
+	margin-bottom: 0;
+>>>>>>> parent of 7b5feb4... 2.2.3 Style Updates
 }
 
 .footer-widgets-1,
@@ -1717,6 +1855,7 @@ p.entry-meta {
 
 	.menu-toggle {
 		line-height: 20px;
+		margin-top: 10px;
 		position: relative;
 		right: 0;
 		z-index: 1000;
@@ -1811,6 +1950,7 @@ p.entry-meta {
 	.js .menu-toggle:focus {
 		background-color: #fff;
 		color: #c3251d;
+<<<<<<< HEAD
 	}
 
 	.footer-widgets-1,
@@ -1819,6 +1959,8 @@ p.entry-meta {
 =======
 	.genesis-nav-menu li.right {
 		display: none;
+=======
+>>>>>>> parent of 7b5feb4... 2.2.3 Style Updates
 	}
 
 	.footer-widgets-1 {
