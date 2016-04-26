@@ -69,3 +69,21 @@ add_theme_support( 'genesis-after-entry-widget-area' );
 
 //* Add support for 3-column footer widgets
 add_theme_support( 'genesis-footer-widgets', 3 );
+
+//* Modify size of the Gravatar in the author box
+add_filter( 'genesis_author_box_gravatar_size', 'genesis_sample_author_box_gravatar' );
+function genesis_sample_author_box_gravatar( $size ) {
+
+	return 180;
+
+}
+
+//* Modify size of the Gravatar in the entry comments
+add_filter( 'genesis_comment_list_args', 'genesis_sample_comments_gravatar' );
+function genesis_sample_comments_gravatar( $args ) {
+
+	$args['avatar_size'] = 120;
+
+	return $args;
+
+}
