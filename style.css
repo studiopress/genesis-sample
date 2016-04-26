@@ -977,11 +977,11 @@ img.alignright,
 
 .site-header {
 	background-color: #fff;
-	min-height: 160px;
+	min-height: 120px;
 }
 
 .site-header .wrap {
-	padding: 40px 0;
+	padding: 20px 0;
 }
 
 /* ## Title Area
@@ -990,7 +990,11 @@ img.alignright,
 .title-area {
 	float: left;
 	padding: 10px 0;
-	width: 360px;
+	width: 300px;
+}
+
+.header-image .title-area {
+	padding: 0;
 }
 
 .header-full-width .title-area {
@@ -998,9 +1002,9 @@ img.alignright,
 }
 
 .site-title {
-	font-size: 32px;
-	font-size: 3.2rem;
-	font-weight: 400;
+	font-size: 30px;
+	font-size: 3rem;
+	font-weight: 700;
 	line-height: 1.2;
 }
 
@@ -1008,19 +1012,19 @@ img.alignright,
 .site-title a:hover,
 .site-title a:focus {
 	color: #333;
+	text-decoration: none;
 }
 
 .header-image .site-title > a {
-	background: url(images/logo.png) no-repeat left;
 	float: left;
-	min-height: 60px;
+	min-height: 80px;
 	width: 100%;
 }
 
 .site-description {
 	font-size: 16px;
 	font-size: 1.6rem;
-	font-weight: 300;
+	font-weight: 400;
 	line-height: 1.5;
 }
 
