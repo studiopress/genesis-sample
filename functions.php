@@ -13,6 +13,9 @@
 //* Start the engine
 include_once( get_template_directory() . '/lib/init.php' );
 
+//* Setup Theme
+include_once( get_stylesheet_directory() . '/lib/theme-defaults.php' );
+
 //* Add Image upload and Color select to WordPress Theme Customizer
 require_once( get_stylesheet_directory() . '/lib/customize.php' );
 
