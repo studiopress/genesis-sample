@@ -98,7 +98,7 @@ function genesis_sample_secondary_menu_args( $args ) {
 add_filter( 'genesis_author_box_gravatar_size', 'genesis_sample_author_box_gravatar' );
 function genesis_sample_author_box_gravatar( $size ) {
 
-	return 180;
+	return 90;
 
 }
 
@@ -106,7 +106,7 @@ function genesis_sample_author_box_gravatar( $size ) {
 add_filter( 'genesis_comment_list_args', 'genesis_sample_comments_gravatar' );
 function genesis_sample_comments_gravatar( $args ) {
 
-	$args['avatar_size'] = 120;
+	$args['avatar_size'] = 60;
 
 	return $args;
 
