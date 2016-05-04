@@ -1028,10 +1028,13 @@ img.alignright,
 }
 
 .header-image .title-area {
+	margin: 0 auto;
+	max-width: 300px;
 	padding: 0;
 }
 
 .header-full-width .title-area {
+	float: none;
 	width: 100%;
 }
 
@@ -1050,6 +1053,7 @@ img.alignright,
 }
 
 .header-image .site-title > a {
+	background-size: contain !important;
 	float: left;
 	min-height: 80px;
 	width: 100%;
@@ -1542,11 +1546,8 @@ p.entry-meta {
 		padding: 20px 5%;
 	}
 
-	.header-image .site-title > a {
-		background-position: center top;
-	}
-
 	.genesis-nav-menu li,
+	.header-image .title-area,
 	.site-header ul.genesis-nav-menu,
 	.site-header .search-form {
 		float: none;
