@@ -15,7 +15,7 @@
  *
  * Abstracted here since at least two functions use it.
  *
- * @since 1.0.0
+ * @since 2.2.3
  *
  * @return string Hex color code for link color.
  */
@@ -28,11 +28,10 @@ function genesis_sample_customizer_get_default_link_color() {
  *
  * Abstracted here since at least two functions use it.
  *
- * @since 1.0.0
+ * @since 2.2.3
  *
  * @return string Hex color code for accent color.
  */
- 
 function genesis_sample_customizer_get_default_accent_color() {
 	return '#c3251d';
 }
@@ -41,7 +40,7 @@ add_action( 'customize_register', 'genesis_sample_customizer_register' );
 /**
  * Register settings and controls with the Customizer.
  *
- * @since 1.0.0
+ * @since 2.2.3
  * 
  * @param WP_Customize_Manager $wp_customize Customizer object.
  */
