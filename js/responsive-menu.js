@@ -28,10 +28,10 @@
 					text : genesisSample.params.subMenu
 				} ) )
 		};
-		if ($( '.nav-header' ).length > 0 ) {
-			$( '.nav-header' ).before( toggleButtons.menu ); // add the main nav buttons
+		if ($( '.nav-primary' ).length > 0 ) {
+			$( '.nav-primary' ).before( toggleButtons.menu ); // add the main nav buttons
 		} else {
-			$( '.nav-primary' ).before( toggleButtons.menu );
+			$( '.nav-header' ).before( toggleButtons.menu );
 		}
 		$( 'nav .sub-menu' ).before( toggleButtons.submenu ); // add the submenu nav buttons
 		$( '.' + mainMenuButtonClass ).each( _addClassID );
@@ -47,7 +47,7 @@
 		var $this = $( this ),
 			nav   = $this.next( 'nav' ),
 			id    = 'class';
-		$this.addClass( $( nav ).attr( 'class' ) );
+		//$this.addClass( $( nav ).attr( 'class' ) );
 		if ( $( nav ).attr( 'id' ) ) {
 			id = 'id';
 		}
@@ -56,14 +56,14 @@
 	
 	// check CSS rule to determine width
 	function _combineMenus(){
-		if ( ( $( '.js nav' ).css( 'position' ) == 'relative' ) && $( '.nav-header' ).length > 0 ) { // depends on .js nav having position: relative; in style.css
-			$( 'ul.menu-primary > li' ).addClass( 'moved-item' ); // tag moved items so we can move them back
-			$( 'ul.menu-primary > li' ).appendTo( '.nav-header ul.genesis-nav-menu' );
-			$( '.nav-primary' ).hide();
-} else if ( ( $( '.js nav' ).css( 'position' ) !== 'relative' ) && $( '.nav-header' ).length > 0 ) {
-			$( '.nav-primary' ).show();
-			$( '.nav-header ul.genesis-nav-menu > li.moved-item' ).appendTo( 'ul.menu-primary' );
-			$( 'ul.menu-primary > li' ).removeClass( 'moved-item' );
+		if ( ( $( '.js nav' ).css( 'position' ) == 'relative' ) && $( '.nav-primary' ).length > 0 ) { // depends on .js nav having position: relative; in style.css
+			$( '.nav-header .menu > li' ).addClass( 'moved-item' ); // tag moved items so we can move them back
+			$( '.nav-header .menu > li' ).prependTo( '.nav-primary ul.genesis-nav-menu' );
+			$( '.nav-header' ).hide();
+		} else if ( ( $( '.js nav' ).css( 'position' ) !== 'relative' ) && $( '.nav-primary' ).length > 0 ) {
+			$( '.nav-header' ).show();
+			$( '.nav-primary ul.genesis-nav-menu > li.moved-item' ).appendTo( '.nav-header .menu' );
+			$( '.nav-header .menu > li' ).removeClass( 'moved-item' );
 		}
 	}
 
