@@ -47,7 +47,6 @@
 		var $this = $( this ),
 			nav   = $this.next( 'nav' ),
 			id    = 'class';
-		//$this.addClass( $( nav ).attr( 'class' ) );
 		if ( $( nav ).attr( 'id' ) ) {
 			id = 'id';
 		}
