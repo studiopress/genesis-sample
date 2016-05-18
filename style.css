@@ -1620,19 +1620,22 @@ p.entry-meta {
 		visibility: visible;
 	}
 	
-	.menu-toggle:hover,
-	.menu-toggle:focus,
 	.sub-menu-toggle:hover,
 	.sub-menu-toggle:focus {
 		border-width: 0;
 	}
 
 	.menu-toggle {
+		border-top: 1px solid #eee;
 		line-height: 20px;
 		position: relative;
 		right: 0;
 		z-index: 1000;
 		width: 100%;
+	}
+
+	.site-header .menu-toggle {
+		border: 0;
 	}
 
 	.menu-toggle:before,
@@ -1669,6 +1672,7 @@ p.entry-meta {
 	.js .site-header .genesis-nav-menu .menu-item {
 		display: block;
 		float: none;
+		margin: 1px 0;
 		position: relative;
 		text-align: left;
 	}
