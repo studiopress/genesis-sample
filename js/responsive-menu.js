@@ -1,3 +1,7 @@
+/**
+ * Accessibility-ready responsive menu.
+ */
+
 ( function ( document, $, undefined ) {
 
 	$( 'body' ).addClass( 'js' );
