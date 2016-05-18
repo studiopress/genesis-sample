@@ -10,11 +10,15 @@
  * @link    http://www.studiopress.com/
  */
 
-//* Genesis Sample Theme Setting Defaults
 add_filter( 'genesis_theme_settings_defaults', 'genesis_sample_theme_defaults' );
+/**
+* Updates theme settings on reset.
+*
+* @since 2.2.3
+*/
 function genesis_sample_theme_defaults( $defaults ) {
 
-	$defaults['blog_cat_num']              = 5;
+	$defaults['blog_cat_num']              = 6;
 	$defaults['content_archive']           = 'full';
 	$defaults['content_archive_limit']     = 0;
 	$defaults['content_archive_thumbnail'] = 0;
@@ -25,14 +29,18 @@ function genesis_sample_theme_defaults( $defaults ) {
 
 }
 
-//* Genesis Sample Theme Setup
 add_action( 'after_switch_theme', 'genesis_sample_theme_setting_defaults' );
+/**
+* Updates theme settings on activation.
+*
+* @since 2.2.3
+*/
 function genesis_sample_theme_setting_defaults() {
 
 	if ( function_exists( 'genesis_update_settings' ) ) {
 
 		genesis_update_settings( array(
-			'blog_cat_num'              => 5,	
+			'blog_cat_num'              => 6,	
 			'content_archive'           => 'full',
 			'content_archive_limit'     => 0,
 			'content_archive_thumbnail' => 0,
@@ -42,6 +50,6 @@ function genesis_sample_theme_setting_defaults() {
 		
 	} 
 
-	update_option( 'posts_per_page', 5 );
+	update_option( 'posts_per_page', 6 );
 
 }
