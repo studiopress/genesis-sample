@@ -7,7 +7,7 @@
 
 	Version: 2.2.3
 
-	Tags: black, red, white, one-column, two-columns, three-columns, left-sidebar, right-sidebar, responsive-layout, custom-menu, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+	Tags: black, red, white, one-column, two-columns, three-columns, left-sidebar, right-sidebar, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
 
 	Template: genesis
 	Template Version: 2.2.3
@@ -1034,7 +1034,7 @@ img.alignright,
 	background-color: #fff;
 }
 
-.site-header .wrap {
+.site-header > .wrap {
 	padding: 20px 0;
 }
 
