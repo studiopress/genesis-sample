@@ -1073,6 +1073,7 @@ img.alignright,
 }
 
 .header-image .site-title > a {
+	background-position: center !important;
 	background-size: contain !important;
 	float: left;
 	min-height: 80px;
