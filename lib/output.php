@@ -58,21 +58,6 @@ function genesis_sample_css() {
 
 	}
 
-	//* Change Color Brightness
-	function genesis_sample_change_brightness( $color ) {
-
-		$hexcolor = str_replace( '#', '', $color );
-
-		$red   = hexdec( substr( $hexcolor, 0, 2 ) );
-		$green = hexdec( substr( $hexcolor, 2, 2 ) );
-		$blue  = hexdec( substr( $hexcolor, 4, 2 ) );
-
-		$luminosity = ( ( $red * 0.2126 ) + ( $green * 0.7152 ) + ( $blue * 0.0722 ) );
-
-		return ( $luminosity > 128 ) ? genesis_sample_color_brightness( '#333333', 20 ) : genesis_sample_color_brightness( '#ffffff', -50 );
-
-	}
-
 	$css .= ( genesis_sample_customizer_get_default_link_color() !== $color_link ) ? sprintf( '
 
 		a,
@@ -85,7 +70,7 @@ function genesis_sample_css() {
 		.genesis-nav-menu .sub-menu .current-menu-item > a:hover,
 		.js nav button:focus,
 		.js .menu-toggle:focus {
-			color: %1$s;
+			color: %s;
 		}
 		', $color_link ) : '';
 
@@ -105,10 +90,10 @@ function genesis_sample_css() {
 		.button:focus,
 		.button:hover,
 		.sidebar .enews-widget input[type="submit"] {
-			background-color: %1$s;
-			color: %2$s;
+			background-color: %s;
+			color: %s;
 		}
-		', $color_accent, genesis_sample_color_contrast( $color_accent ), genesis_sample_change_brightness( $color_accent ) ) : '';
+		', $color_accent, genesis_sample_color_contrast( $color_accent ) ) : '';
 
 	if ( $css ) {
 		wp_add_inline_style( $handle, $css );
