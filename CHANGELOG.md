@@ -7,6 +7,7 @@ _No changes._
 ## [2.2.4] - 2016-06-08
 * Reorder font size on breadcrumbs
 * Add Changelog
+* Update to normalize.css 4.1.1
 
 ## [2.2.3] - 2016-05-18
 * Add accessibile mobile menu
