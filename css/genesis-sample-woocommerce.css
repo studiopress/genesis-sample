@@ -118,6 +118,12 @@
 	list-style-type: none;
 }
 
+#add_payment_method #payment div.form-row,
+.woocommerce-cart #payment div.form-row,
+.woocommerce-checkout #payment div.form-row {
+	padding-bottom: 0;
+}
+
 
 /* Woocommerce Cart Page
 ---------------------------------------------------------------------------------------------------- */
