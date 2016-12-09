@@ -28,7 +28,7 @@ include_once( get_stylesheet_directory() . '/lib/output.php' );
 //* Child theme (do not remove)
 define( 'CHILD_THEME_NAME', 'Genesis Sample' );
 define( 'CHILD_THEME_URL', 'http://www.studiopress.com/' );
-define( 'CHILD_THEME_VERSION', '2.2.4' );
+define( 'CHILD_THEME_VERSION', '2.3.4' );
 
 //* Enqueue Scripts and Styles
 add_action( 'wp_enqueue_scripts', 'genesis_sample_enqueue_scripts_styles' );
@@ -45,6 +45,24 @@ function genesis_sample_enqueue_scripts_styles() {
 	wp_localize_script( 'genesis-sample-responsive-menu', 'genesisSampleL10n', $output );
 
 }
+
+//* Enqueue custom WooCommerce styles when WooCommerce active
+add_filter( 'woocommerce_enqueue_styles', 'genesis_sample_woocommerce_styles' );
+function genesis_sample_woocommerce_styles( $enqueue_styles ) {
+
+	$enqueue_styles['genesis-sample-woocommerce-styles'] = array(
+		'src'     => get_stylesheet_directory_uri() . '/css/genesis-sample-woocommerce.css',
+		'deps'    => '',
+		'version' => CHILD_THEME_VERSION,
+		'media'   => 'screen'
+	);
+
+	return $enqueue_styles;
+
+}
+
+//* Add WooCommerce Support
+add_theme_support( 'genesis-connect-woocommerce' );
 
 //* Add HTML5 markup structure
 add_theme_support( 'html5', array( 'caption', 'comment-form', 'comment-list', 'gallery', 'search-form' ) );

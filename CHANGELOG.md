@@ -24,6 +24,9 @@ _No changes._
 * Set localization
 * Update XML file
 
+## [2.3.3] - 2016-12-09
+* Add WooCommerce support to the theme and customizer
+
 [unreleased]: https://github.com/copyblogger/genesis-sample/compare/2.2.4...HEAD
 [2.2.4]: https://github.com/copyblogger/genesis-sample/compare/2.2.3...2.2.4
 [2.2.3]: https://github.com/copyblogger/genesis-sample/compare/014deb3689323b7bbd4ddbfff4f5f9279a38f741...2.2.3
