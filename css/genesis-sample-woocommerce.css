@@ -80,6 +80,9 @@
 	line-height: 1.5;
 }
 
+.woocommerce div.product form.cart .variations {
+	table-layout: fixed;
+}
 
 /* Woocommerce Product Tabs
 ---------------------------------------------------------------------------------------------------- */
