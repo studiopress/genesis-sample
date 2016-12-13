@@ -1,4 +1,7 @@
-/* Woocommerce Globals
+/* Genesis Sample WooCommerce Styles
+Included with the WooCommerce stylsheet */
+
+/* WooCommerce Globals
 ---------------------------------------------------------------------------------------------------- */
 
 .woocommerce.full-width-content .content,
@@ -46,7 +49,7 @@
 }
 
 
-/* Woocommerce Shop Page
+/* WooCommerce Shop Page
 ---------------------------------------------------------------------------------------------------- */
 
 .woocommerce .content .entry {
@@ -62,13 +65,13 @@
 	color: #000;
 }
 
-.woocommerce ul.products li.product h3::hover,
+.woocommerce ul.products li.product h3:hover,
 .woocommerce ul.products li.product .price {
 	color: #c3251d;
 }
 
 
-/* Woocommerce Product
+/* WooCommerce Product
 ---------------------------------------------------------------------------------------------------- */
 
 .woocommerce div.product p.price,
@@ -84,7 +87,8 @@
 	table-layout: fixed;
 }
 
-/* Woocommerce Product Tabs
+
+/* WooCommerce Product Tabs
 ---------------------------------------------------------------------------------------------------- */
 
 .woocommerce div.product .woocommerce-tabs ul.tabs::before,
@@ -106,13 +110,13 @@
 	color: #000;
 }
 
-.woocommerce div.product .woocommerce-tabs ul.tabs li a::hover,
-.woocommerce div.product .woocommerce-tabs ul.tabs li a::focus {
+.woocommerce div.product .woocommerce-tabs ul.tabs li a:hover,
+.woocommerce div.product .woocommerce-tabs ul.tabs li a:focus {
 	color: #c3251d;
 }
 
 
-/* Woocommerce Checkout
+/* WooCommerce Checkout
 ---------------------------------------------------------------------------------------------------- */
 
 #add_payment_method #payment ul.payment_methods li,
@@ -128,7 +132,7 @@
 }
 
 
-/* Woocommerce Cart Page
+/* WooCommerce Cart Page
 ---------------------------------------------------------------------------------------------------- */
 
 .woocommerce table.shop_table,
@@ -183,7 +187,8 @@
 	vertical-align: middle;
 }
 
-/* Woocommerce Payment
+
+/* WooCommerce Payment
 ---------------------------------------------------------------------------------------------------- */
 
 #add_payment_method #payment,
@@ -213,7 +218,7 @@
 }
 
 
-/* Woocommerce Forms
+/* WooCommerce Forms
 ---------------------------------------------------------------------------------------------------- */
 
 .woocommerce a.button,
@@ -239,23 +244,24 @@
 	width: auto;
 }
 
-.woocommerce a.button::hover,
-.woocommerce a.button::focus,
-.woocommerce a.button.alt::hover,
-.woocommerce a.button.alt::focus,
-.woocommerce button.button::hover,
-.woocommerce button.button::focus,
-.woocommerce button.button.alt::hover,
-.woocommerce button.button.alt::focus,
-.woocommerce input.button::hover,
-.woocommerce input.button::focus,
-.woocommerce input.button.alt::hover,
-.woocommerce input.button.alt::focus,
-.woocommerce input::hover[type="submit"],
-.woocommerce #respond input#submit::hover,
-.woocommerce #respond input#submit::focus,
-.woocommerce #respond input#submit.alt::hover,
-.woocommerce #respond input#submit.alt::focus {
+.woocommerce a.button:hover,
+.woocommerce a.button:focus,
+.woocommerce a.button.alt:hover,
+.woocommerce a.button.alt:focus,
+.woocommerce button.button:hover,
+.woocommerce button.button:focus,
+.woocommerce button.button.alt:hover,
+.woocommerce button.button.alt:focus,
+.woocommerce input.button:hover,
+.woocommerce input.button:focus,
+.woocommerce input.button.alt:hover,
+.woocommerce input.button.alt:focus,
+.woocommerce input[type="submit"]:hover,
+.woocommerce input[type="submit"]:focus,
+.woocommerce #respond input#submit:hover,
+.woocommerce #respond input#submit:focus,
+.woocommerce #respond input#submit.alt:hover,
+.woocommerce #respond input#submit.alt:focus {
 	background-color: #c3251d;
 	color: #fff;
 }
@@ -313,56 +319,56 @@
 }
 
 
-/* Woocommerce Disabled Buttons
+/* WooCommerce Disabled Buttons
 ---------------------------------------------------------------------------------------------------- */
 
 .woocommerce a.button.disabled,
-.woocommerce a.button::disabled,
-.woocommerce a.button::disabled[disabled],
+.woocommerce a.button:disabled,
+.woocommerce a.button:disabled[disabled],
 .woocommerce button.button.disabled,
-.woocommerce button.button::disabled,
-.woocommerce button.button::disabled[disabled],
+.woocommerce button.button:disabled,
+.woocommerce button.button:disabled[disabled],
 .woocommerce input.button.disabled,
-.woocommerce input.button::disabled,
-.woocommerce input.button::disabled[disabled],
+.woocommerce input.button:disabled,
+.woocommerce input.button:disabled[disabled],
 .woocommerce #respond input#submit.disabled,
-.woocommerce #respond input#submit::disabled,
-.woocommerce #respond input#submit::disabled[disabled] {
+.woocommerce #respond input#submit:disabled,
+.woocommerce #respond input#submit:disabled[disabled] {
 	background-color: #000;
 	color: #fff;
 	padding: 16px 24px;
 }
 
 .woocommerce a.button.alt.disabled,
-.woocommerce a.button.alt.disabled::hover,
-.woocommerce a.button.alt::disabled,
-.woocommerce a.button.alt::disabled::hover,
-.woocommerce a.button.alt[disabled]::disabled,
-.woocommerce a.button.alt[disabled]::disabled::hover,
+.woocommerce a.button.alt.disabled:hover,
+.woocommerce a.button.alt:disabled,
+.woocommerce a.button.alt:disabled:hover,
+.woocommerce a.button.alt[disabled]:disabled,
+.woocommerce a.button.alt[disabled]:disabled:hover,
 .woocommerce button.button.alt.disabled,
-.woocommerce button.button.alt.disabled::hover,
-.woocommerce button.button.alt::disabled,
-.woocommerce button.button.alt::disabled::hover,
-.woocommerce button.button.alt[disabled]::disabled,
-.woocommerce button.button.alt[disabled]::disabled::hover,
+.woocommerce button.button.alt.disabled:hover,
+.woocommerce button.button.alt:disabled,
+.woocommerce button.button.alt:disabled:hover,
+.woocommerce button.button.alt[disabled]:disabled,
+.woocommerce button.button.alt[disabled]:disabled:hover,
 .woocommerce input.button.alt.disabled,
-.woocommerce input.button.alt.disabled::hover,
-.woocommerce input.button.alt::disabled,
-.woocommerce input.button.alt::disabled::hover,
-.woocommerce input.button.alt[disabled]::disabled,
-.woocommerce input.button.alt[disabled]::disabled::hover,
+.woocommerce input.button.alt.disabled:hover,
+.woocommerce input.button.alt:disabled,
+.woocommerce input.button.alt:disabled:hover,
+.woocommerce input.button.alt[disabled]:disabled,
+.woocommerce input.button.alt[disabled]:disabled:hover,
 .woocommerce #respond input#submit.alt.disabled,
-.woocommerce #respond input#submit.alt.disabled::hover,
-.woocommerce #respond input#submit.alt::disabled,
-.woocommerce #respond input#submit.alt::disabled::hover,
-.woocommerce #respond input#submit.alt[disabled]::disabled,
-.woocommerce #respond input#submit.alt[disabled]::disabled::hover {
+.woocommerce #respond input#submit.alt.disabled:hover,
+.woocommerce #respond input#submit.alt:disabled,
+.woocommerce #respond input#submit.alt:disabled:hover,
+.woocommerce #respond input#submit.alt[disabled]:disabled,
+.woocommerce #respond input#submit.alt[disabled]:disabled:hover {
 	background-color: #eee;
 	color: #000
 }
 
 
-/* Woocommerce Account Page
+/* WooCommerce Account Page
 ---------------------------------------------------------------------------------------------------- */
 
 .woocommerce-MyAccount-navigation ul {
@@ -382,7 +388,7 @@
 }
 
 
-/* Woocommerce Breadcrumb
+/* WooCommerce Breadcrumb
 ---------------------------------------------------------------------------------------------------- */
 
 .woocommerce .woocommerce-breadcrumb {
@@ -400,12 +406,13 @@
 	text-decoration: none;
 }
 
-.woocommerce .woocommerce-breadcrumb a::hover,
-.woocommerce .woocommerce-breadcrumb a::focus {
+.woocommerce .woocommerce-breadcrumb a:hover,
+.woocommerce .woocommerce-breadcrumb a:focus {
 	color: #c3251d;
 }
 
-/* Woocommerce Reviews
+
+/* WooCommerce Reviews
 ---------------------------------------------------------------------------------------------------- */
 
 .woocommerce #reviews #comments ol.commentlist li img.avatar {
@@ -427,7 +434,8 @@
 	list-style-type: none;
 }
 
-/* Woocommerce Misc
+
+/* WooCommerce Misc
 ---------------------------------------------------------------------------------------------------- */
 
 .woocommerce-error,
@@ -447,7 +455,8 @@ div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricte
 	width: 48%;
 }
 
-/* Woocommerce Widgets
+
+/* WooCommerce Widgets
 ---------------------------------------------------------------------------------------------------- */
 
 /* Woo Search
@@ -539,6 +548,7 @@ div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricte
 	letter-spacing: 1px;
 	text-transform: uppercase;
 }
+
 
 /* Media Queries
 ---------------------------------------------------------------------------------------------------- */

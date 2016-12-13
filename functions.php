@@ -19,11 +19,20 @@ include_once( get_stylesheet_directory() . '/lib/theme-defaults.php' );
 //* Set Localization (do not remove)
 load_child_theme_textdomain( 'genesis-sample', apply_filters( 'child_theme_textdomain', get_stylesheet_directory() . '/languages', 'genesis-sample' ) );
 
+//* Add the helper functions
+include_once( get_stylesheet_directory() . '/lib/helper-functions.php' );
+
 //* Add Image upload and Color select to WordPress Theme Customizer
 require_once( get_stylesheet_directory() . '/lib/customize.php' );
 
 //* Include Customizer CSS
 include_once( get_stylesheet_directory() . '/lib/output.php' );
+
+// Add the required WooCommerce functions
+include_once( get_stylesheet_directory() . '/lib/woocommerce/woocommerce-setup.php' );
+
+// Add the required WooCommerce custom CSS
+include_once( get_stylesheet_directory() . '/lib/woocommerce/woocommerce-output.php' );
 
 //* Child theme (do not remove)
 define( 'CHILD_THEME_NAME', 'Genesis Sample' );
@@ -45,24 +54,6 @@ function genesis_sample_enqueue_scripts_styles() {
 	wp_localize_script( 'genesis-sample-responsive-menu', 'genesisSampleL10n', $output );
 
 }
-
-//* Enqueue custom WooCommerce styles when WooCommerce active
-add_filter( 'woocommerce_enqueue_styles', 'genesis_sample_woocommerce_styles' );
-function genesis_sample_woocommerce_styles( $enqueue_styles ) {
-
-	$enqueue_styles['genesis-sample-woocommerce-styles'] = array(
-		'src'     => get_stylesheet_directory_uri() . '/css/genesis-sample-woocommerce.css',
-		'deps'    => '',
-		'version' => CHILD_THEME_VERSION,
-		'media'   => 'screen'
-	);
-
-	return $enqueue_styles;
-
-}
-
-//* Add WooCommerce Support
-add_theme_support( 'genesis-connect-woocommerce' );
 
 //* Add HTML5 markup structure
 add_theme_support( 'html5', array( 'caption', 'comment-form', 'comment-list', 'gallery', 'search-form' ) );
