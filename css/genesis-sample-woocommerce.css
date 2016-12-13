@@ -20,7 +20,7 @@
 	text-align: center;
 }
 
-.woocommerce .page-title:::after {
+.woocommerce .page-title::after {
 	border-bottom: 1px solid #000;
 	content: "";
 	display: block;
