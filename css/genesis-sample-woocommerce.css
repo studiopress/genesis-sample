@@ -1,4 +1,7 @@
-/* Woocommerce Globals
+/* Genesis Sample WooCommerce
+Loaded on WooCommerce pages */
+
+/* WooCommerce Globals
 ---------------------------------------------------------------------------------------------------- */
 
 .woocommerce.full-width-content .content,
@@ -46,7 +49,7 @@
 }
 
 
-/* Woocommerce Shop Page
+/* WooCommerce Shop Page
 ---------------------------------------------------------------------------------------------------- */
 
 .woocommerce .content .entry {
@@ -68,7 +71,7 @@
 }
 
 
-/* Woocommerce Product
+/* WooCommerce Product
 ---------------------------------------------------------------------------------------------------- */
 
 .woocommerce div.product p.price,
@@ -84,7 +87,8 @@
 	table-layout: fixed;
 }
 
-/* Woocommerce Product Tabs
+
+/* WooCommerce Product Tabs
 ---------------------------------------------------------------------------------------------------- */
 
 .woocommerce div.product .woocommerce-tabs ul.tabs::before,
@@ -112,7 +116,7 @@
 }
 
 
-/* Woocommerce Checkout
+/* WooCommerce Checkout
 ---------------------------------------------------------------------------------------------------- */
 
 #add_payment_method #payment ul.payment_methods li,
@@ -128,7 +132,7 @@
 }
 
 
-/* Woocommerce Cart Page
+/* WooCommerce Cart Page
 ---------------------------------------------------------------------------------------------------- */
 
 .woocommerce table.shop_table,
@@ -183,7 +187,8 @@
 	vertical-align: middle;
 }
 
-/* Woocommerce Payment
+
+/* WooCommerce Payment
 ---------------------------------------------------------------------------------------------------- */
 
 #add_payment_method #payment,
@@ -213,7 +218,7 @@
 }
 
 
-/* Woocommerce Forms
+/* WooCommerce Forms
 ---------------------------------------------------------------------------------------------------- */
 
 .woocommerce a.button,
@@ -313,7 +318,7 @@
 }
 
 
-/* Woocommerce Disabled Buttons
+/* WooCommerce Disabled Buttons
 ---------------------------------------------------------------------------------------------------- */
 
 .woocommerce a.button.disabled,
@@ -362,7 +367,7 @@
 }
 
 
-/* Woocommerce Account Page
+/* WooCommerce Account Page
 ---------------------------------------------------------------------------------------------------- */
 
 .woocommerce-MyAccount-navigation ul {
@@ -382,7 +387,7 @@
 }
 
 
-/* Woocommerce Breadcrumb
+/* WooCommerce Breadcrumb
 ---------------------------------------------------------------------------------------------------- */
 
 .woocommerce .woocommerce-breadcrumb {
@@ -405,7 +410,7 @@
 	color: #c3251d;
 }
 
-/* Woocommerce Reviews
+/* WooCommerce Reviews
 ---------------------------------------------------------------------------------------------------- */
 
 .woocommerce #reviews #comments ol.commentlist li img.avatar {
@@ -427,7 +432,7 @@
 	list-style-type: none;
 }
 
-/* Woocommerce Misc
+/* WooCommerce Misc
 ---------------------------------------------------------------------------------------------------- */
 
 .woocommerce-error,
@@ -447,7 +452,8 @@ div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricte
 	width: 48%;
 }
 
-/* Woocommerce Widgets
+
+/* WooCommerce Widgets
 ---------------------------------------------------------------------------------------------------- */
 
 /* Woo Search

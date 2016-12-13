@@ -27,7 +27,7 @@ function genesis_sample_css() {
 	$css = '';
 	$woo_css = '';
 
-	//* Calculate Color Contrast
+	// Calculate Color Contrast.
 	function genesis_sample_color_contrast( $color ) {
 	
 		$hexcolor = str_replace( '#', '', $color );
@@ -42,7 +42,7 @@ function genesis_sample_css() {
 
 	}
 	
-	//* Calculate Color Brightness
+	// Calculate Color Brightness.
 	function genesis_sample_color_brightness( $color, $change ) {
 
 		$hexcolor = str_replace( '#', '', $color );
@@ -50,7 +50,7 @@ function genesis_sample_css() {
 		$red   = hexdec( substr( $hexcolor, 0, 2 ) );
 		$green = hexdec( substr( $hexcolor, 2, 2 ) );
 		$blue  = hexdec( substr( $hexcolor, 4, 2 ) );
-	
+
 		$red   = max( 0, min( 255, $red + $change ) );
 		$green = max( 0, min( 255, $green + $change ) );  
 		$blue  = max( 0, min( 255, $blue + $change ) );

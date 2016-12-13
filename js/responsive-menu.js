@@ -1,5 +1,9 @@
 /**
- * Accessibility-ready responsive menu.
+ * This script adds the accessibility-ready responsive menu to the Genesis Sample theme.
+ *
+ * @package Genesis Sample\JS
+ * @author StudioPress
+ * @license GPL-2.0+
  */
 
 ( function ( document, $, undefined ) {
@@ -33,11 +37,11 @@
 				} ) )
 		};
 		if ($( '.nav-primary' ).length > 0 ) {
-			$( '.nav-primary' ).before( toggleButtons.menu ); // add the main nav buttons
+			$( '.nav-primary' ).before( toggleButtons.menu ); // Add the main nav buttons.
 		} else {
 			$( '.nav-header' ).before( toggleButtons.menu );
 		}
-		$( 'nav .sub-menu' ).before( toggleButtons.submenu ); // add the submenu nav buttons
+		$( 'nav .sub-menu' ).before( toggleButtons.submenu ); // Add the submenu nav buttons.
 		$( '.' + mainMenuButtonClass ).each( _addClassID );
 		$( '.' + mainMenuButtonClass ).addClass('dashicons-before dashicons-menu');
 		$( '.' + subMenuButtonClass ).addClass('dashicons-before dashicons-arrow-down');
@@ -46,7 +50,7 @@
 		$( '.' + subMenuButtonClass ).on( 'click.genesisSample-subbutton', _submenuToggle );
 	};
 
-	// add nav class and ID to related button
+	// Add nav class and ID to related button.
 	function _addClassID() {
 		var $this = $( this ),
 			nav   = $this.next( 'nav' ),
@@ -57,10 +61,10 @@
 		$this.attr( 'id', 'mobile-' + $( nav ).attr( id ) );
 	}
 	
-	// check CSS rule to determine width
+	// Check CSS rule to determine width.
 	function _combineMenus(){
-		if ( ( $( '.js nav' ).css( 'position' ) == 'relative' ) && $( '.nav-primary' ).length > 0 ) { // depends on .js nav having position: relative; in style.css
-			$( '.nav-header .menu > li' ).addClass( 'moved-item' ); // tag moved items so we can move them back
+		if ( ( $( '.js nav' ).css( 'position' ) == 'relative' ) && $( '.nav-primary' ).length > 0 ) { // Depends on .js nav having position: relative; in style.css.
+			$( '.nav-header .menu > li' ).addClass( 'moved-item' ); // Tag moved items so we can move them back.
 			$( '.nav-header .menu > li' ).prependTo( '.nav-primary ul.genesis-nav-menu' );
 			$( '.nav-header' ).hide();
 		} else if ( ( $( '.js nav' ).css( 'position' ) !== 'relative' ) && $( '.nav-primary' ).length > 0 ) {
@@ -70,7 +74,7 @@
 		}
 	}
 
-	// Change Skiplinks and Superfish
+	// Change Skiplinks and Superfish.
 	function _doResize() {
 		var buttons = $( 'button[id^="mobile-"]' ).attr( 'id' );
 		if ( typeof buttons === 'undefined' ) {
@@ -82,7 +86,7 @@
 	}
 
 	/**
-	 * action to happen when the main menu button is clicked
+	 * Action to happen when the main menu button is clicked.
 	 */
 	function _mainmenuToggle() {
 		var $this = $( this );
@@ -93,7 +97,7 @@
 	}
 
 	/**
-	 * action for submenu toggles
+	 * Action for submenu toggles.
 	 */
 	function _submenuToggle() {
 
@@ -110,7 +114,7 @@
 	}
 
 	/**
-	 * activate/deactivate superfish
+	 * Activate/deactivate superfish.
 	 */
 	function _superfishToggle( buttons ) {
 		if ( typeof $( '.js-superfish' ).superfish !== 'function' ) {
@@ -128,7 +132,7 @@
 	}
 
 	/**
-	 * modify skip links to match mobile buttons
+	 * Modify skip links to match mobile buttons.
 	 */
 	function _changeSkipLink( buttons ) {
 		var startLink = 'genesis-nav',
@@ -157,7 +161,7 @@
 	}
 
 	/**
-	 * generic function to get the display value of an element
+	 * Generic function to get the display value of an element.
 	 * @param  {id} $id ID to check
 	 * @return {string}     CSS value of display property
 	 */
@@ -168,7 +172,7 @@
 	}
 
 	/**
-	 * Toggle aria attributes
+	 * Toggle aria attributes.
 	 * @param  {button} $this     passed through
 	 * @param  {aria-xx} attribute aria attribute to toggle
 	 * @return {bool}           from _ariaReturn
@@ -181,10 +185,10 @@
 
 	$(document).ready(function () {
 
-		// run test on initial page load
+		// Run test on initial page load.
 		_combineMenus();
 
-		// run test on resize of the window
+		// Run test on resize of the window.
 		$( window ).resize( _combineMenus );
 		
 		genesisSample.params = typeof genesisSampleL10n === 'undefined' ? '' : genesisSampleL10n;
