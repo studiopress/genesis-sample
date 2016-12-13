@@ -36,9 +36,9 @@ function genesis_sample_customizer_register() {
 			'genesis_sample_link_color',
 			array(
 				'description' => __( 'Change the default color for linked titles, menu links, post info links and more.', 'genesis-sample' ),
-			    'label'       => __( 'Link Color', 'genesis-sample' ),
-			    'section'     => 'colors',
-			    'settings'    => 'genesis_sample_link_color',
+				'label'       => __( 'Link Color', 'genesis-sample' ),
+				'section'     => 'colors',
+				'settings'    => 'genesis_sample_link_color',
 			)
 		)
 	);
@@ -57,9 +57,9 @@ function genesis_sample_customizer_register() {
 			'genesis_sample_accent_color',
 			array(
 				'description' => __( 'Change the default color for button hovers.', 'genesis-sample' ),
-			    'label'       => __( 'Accent Color', 'genesis-sample' ),
-			    'section'     => 'colors',
-			    'settings'    => 'genesis_sample_accent_color',
+				'label'       => __( 'Accent Color', 'genesis-sample' ),
+				'section'     => 'colors',
+				'settings'    => 'genesis_sample_accent_color',
 			)
 		)
 	);

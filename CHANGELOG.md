@@ -3,6 +3,7 @@
 ## [Unreleased][unreleased]
 * Add WooCommerce support to the theme and customizer
 * Updated the file structure
+* Update Documentation
 
 ## [2.2.4] - 2016-06-08
 * Reorder font size on breadcrumbs
