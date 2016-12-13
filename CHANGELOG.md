@@ -1,8 +1,7 @@
 # Genesis Sample Theme Changelog
 
 ## [Unreleased][unreleased]
-
-_No changes._
+* Add WooCommerce support to the theme and customizer
 
 ## [2.2.4] - 2016-06-08
 * Reorder font size on breadcrumbs
@@ -23,9 +22,6 @@ _No changes._
 * Add image size
 * Set localization
 * Update XML file
-
-## [2.3.3] - 2016-12-09
-* Add WooCommerce support to the theme and customizer
 
 [unreleased]: https://github.com/copyblogger/genesis-sample/compare/2.2.4...HEAD
 [2.2.4]: https://github.com/copyblogger/genesis-sample/compare/2.2.3...2.2.4

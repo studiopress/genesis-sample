@@ -20,7 +20,7 @@
 	text-align: center;
 }
 
-.woocommerce .page-title::after {
+.woocommerce .page-title:::after {
 	border-bottom: 1px solid #000;
 	content: "";
 	display: block;
@@ -62,7 +62,7 @@
 	color: #000;
 }
 
-.woocommerce ul.products li.product h3:hover,
+.woocommerce ul.products li.product h3::hover,
 .woocommerce ul.products li.product .price {
 	color: #c3251d;
 }
@@ -87,13 +87,13 @@
 /* Woocommerce Product Tabs
 ---------------------------------------------------------------------------------------------------- */
 
-.woocommerce div.product .woocommerce-tabs ul.tabs:before,
+.woocommerce div.product .woocommerce-tabs ul.tabs::before,
 .woocommerce div.product .woocommerce-tabs ul.tabs li {
 	border-color: #eee;
 }
 
-.woocommerce div.product .woocommerce-tabs ul.tabs li:after,
-.woocommerce div.product .woocommerce-tabs ul.tabs li:before {
+.woocommerce div.product .woocommerce-tabs ul.tabs li::after,
+.woocommerce div.product .woocommerce-tabs ul.tabs li::before {
 	display: none;
 }
 
@@ -106,8 +106,8 @@
 	color: #000;
 }
 
-.woocommerce div.product .woocommerce-tabs ul.tabs li a:hover,
-.woocommerce div.product .woocommerce-tabs ul.tabs li a:focus {
+.woocommerce div.product .woocommerce-tabs ul.tabs li a::hover,
+.woocommerce div.product .woocommerce-tabs ul.tabs li a::focus {
 	color: #c3251d;
 }
 
@@ -200,9 +200,9 @@
 	background-color: #eee;
 }
 
-#add_payment_method #payment div.payment_box:before,
-.woocommerce-cart #payment div.payment_box:before,
-.woocommerce-checkout #payment div.payment_box:before {
+#add_payment_method #payment div.payment_box::before,
+.woocommerce-cart #payment div.payment_box::before,
+.woocommerce-checkout #payment div.payment_box::before {
 	display: none;
 }
 
@@ -239,15 +239,23 @@
 	width: auto;
 }
 
-.woocommerce a.button:hover,
-.woocommerce a.button.alt:hover,
-.woocommerce button.button:hover,
-.woocommerce button.button.alt:hover,
-.woocommerce input.button:hover,
-.woocommerce input.button.alt:hover,
-.woocommerce input:hover[type="submit"],
-.woocommerce #respond input#submit:hover,
-.woocommerce #respond input#submit.alt:hover {
+.woocommerce a.button::hover,
+.woocommerce a.button::focus,
+.woocommerce a.button.alt::hover,
+.woocommerce a.button.alt::focus,
+.woocommerce button.button::hover,
+.woocommerce button.button::focus,
+.woocommerce button.button.alt::hover,
+.woocommerce button.button.alt::focus,
+.woocommerce input.button::hover,
+.woocommerce input.button::focus,
+.woocommerce input.button.alt::hover,
+.woocommerce input.button.alt::focus,
+.woocommerce input::hover[type="submit"],
+.woocommerce #respond input#submit::hover,
+.woocommerce #respond input#submit::focus,
+.woocommerce #respond input#submit.alt::hover,
+.woocommerce #respond input#submit.alt::focus {
 	background-color: #c3251d;
 	color: #fff;
 }
@@ -309,46 +317,46 @@
 ---------------------------------------------------------------------------------------------------- */
 
 .woocommerce a.button.disabled,
-.woocommerce a.button:disabled,
-.woocommerce a.button:disabled[disabled],
+.woocommerce a.button::disabled,
+.woocommerce a.button::disabled[disabled],
 .woocommerce button.button.disabled,
-.woocommerce button.button:disabled,
-.woocommerce button.button:disabled[disabled],
+.woocommerce button.button::disabled,
+.woocommerce button.button::disabled[disabled],
 .woocommerce input.button.disabled,
-.woocommerce input.button:disabled,
-.woocommerce input.button:disabled[disabled],
+.woocommerce input.button::disabled,
+.woocommerce input.button::disabled[disabled],
 .woocommerce #respond input#submit.disabled,
-.woocommerce #respond input#submit:disabled,
-.woocommerce #respond input#submit:disabled[disabled] {
+.woocommerce #respond input#submit::disabled,
+.woocommerce #respond input#submit::disabled[disabled] {
 	background-color: #000;
 	color: #fff;
 	padding: 16px 24px;
 }
 
 .woocommerce a.button.alt.disabled,
-.woocommerce a.button.alt.disabled:hover,
-.woocommerce a.button.alt:disabled,
-.woocommerce a.button.alt:disabled:hover,
-.woocommerce a.button.alt[disabled]:disabled,
-.woocommerce a.button.alt[disabled]:disabled:hover,
+.woocommerce a.button.alt.disabled::hover,
+.woocommerce a.button.alt::disabled,
+.woocommerce a.button.alt::disabled::hover,
+.woocommerce a.button.alt[disabled]::disabled,
+.woocommerce a.button.alt[disabled]::disabled::hover,
 .woocommerce button.button.alt.disabled,
-.woocommerce button.button.alt.disabled:hover,
-.woocommerce button.button.alt:disabled,
-.woocommerce button.button.alt:disabled:hover,
-.woocommerce button.button.alt[disabled]:disabled,
-.woocommerce button.button.alt[disabled]:disabled:hover,
+.woocommerce button.button.alt.disabled::hover,
+.woocommerce button.button.alt::disabled,
+.woocommerce button.button.alt::disabled::hover,
+.woocommerce button.button.alt[disabled]::disabled,
+.woocommerce button.button.alt[disabled]::disabled::hover,
 .woocommerce input.button.alt.disabled,
-.woocommerce input.button.alt.disabled:hover,
-.woocommerce input.button.alt:disabled,
-.woocommerce input.button.alt:disabled:hover,
-.woocommerce input.button.alt[disabled]:disabled,
-.woocommerce input.button.alt[disabled]:disabled:hover,
+.woocommerce input.button.alt.disabled::hover,
+.woocommerce input.button.alt::disabled,
+.woocommerce input.button.alt::disabled::hover,
+.woocommerce input.button.alt[disabled]::disabled,
+.woocommerce input.button.alt[disabled]::disabled::hover,
 .woocommerce #respond input#submit.alt.disabled,
-.woocommerce #respond input#submit.alt.disabled:hover,
-.woocommerce #respond input#submit.alt:disabled,
-.woocommerce #respond input#submit.alt:disabled:hover,
-.woocommerce #respond input#submit.alt[disabled]:disabled,
-.woocommerce #respond input#submit.alt[disabled]:disabled:hover {
+.woocommerce #respond input#submit.alt.disabled::hover,
+.woocommerce #respond input#submit.alt::disabled,
+.woocommerce #respond input#submit.alt::disabled::hover,
+.woocommerce #respond input#submit.alt[disabled]::disabled,
+.woocommerce #respond input#submit.alt[disabled]::disabled::hover {
 	background-color: #eee;
 	color: #000
 }
@@ -392,8 +400,8 @@
 	text-decoration: none;
 }
 
-.woocommerce .woocommerce-breadcrumb a:hover,
-.woocommerce .woocommerce-breadcrumb a:focus {
+.woocommerce .woocommerce-breadcrumb a::hover,
+.woocommerce .woocommerce-breadcrumb a::focus {
 	color: #c3251d;
 }
 
@@ -429,9 +437,9 @@
 	border-top-color: #c3251d;
 }
 
-.woocommerce-error:before,
-.woocommerce-info:before,
-.woocommerce-message:before {
+.woocommerce-error::before,
+.woocommerce-info::before,
+.woocommerce-message::before {
 	color: #c3251d;
 }
 
@@ -510,8 +518,8 @@ div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricte
 	background-color: #c3251d;
 }
 
-.woocommerce .widget_layered_nav ul li.chosen a:before,
-.woocommerce .widget_layered_nav_filters ul li a:before {
+.woocommerce .widget_layered_nav ul li.chosen a::before,
+.woocommerce .widget_layered_nav_filters ul li a::before {
 	color: #c3251d;
 }
 
