@@ -2,7 +2,7 @@
 /**
  * Genesis Sample.
  *
- * This file adds the required WooCommerce setup functions
+ * This file adds the required WooCommerce setup functions.
  *
  * @package Genesis Sample
  * @author  StudioPress
@@ -10,15 +10,20 @@
  * @link    http://www.studiopress.com/
  */
 
-// Add WooCommerce Support
+/**
+ * Add theme support for WooCommerce to the Genesis Sample Theme.
+ *
+ * @since 2.3.0
+ */
 add_theme_support( 'genesis-connect-woocommerce' );
 
 add_filter( 'woocommerce_enqueue_styles', 'genesis_sample_woocommerce_styles' );
 /**
- * Enqueue custom WooCommerce styles when WooCommerce active
+ * Enqueue the Genesis Sample Theme's custom WooCommerce styles to the WooCommerce plugin.
  *
  * @since 2.3.0
  *
+ * @return array() Required values for the Genesis Sample Theme's WooCommerce stylesheet.
  */
 function genesis_sample_woocommerce_styles( $enqueue_styles ) {
 

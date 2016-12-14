@@ -2,7 +2,7 @@
 
 add_action( 'wp_enqueue_scripts', 'genesis_sample_woocommerce_css' );
 /**
- * Add the custom CSS to the WooCommerce stylesheet.
+ * Add the Genesis Sample Theme's custom CSS to the WooCommerce stylesheet.
  *
  * @since 2.3.0
  *

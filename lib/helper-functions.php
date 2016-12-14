@@ -2,7 +2,7 @@
 /**
  * Genesis Sample.
  *
- * This file adds the required helper functions used elsewhere in the child theme.
+ * This file adds the required helper functions used in the Genesis Sample Theme.
  *
  * @package Genesis Sample
  * @author  StudioPress
@@ -11,7 +11,7 @@
  */
 
 /**
- * Get default link color for Customizer.
+ * Get default link color for Customizer for the Genesis Sample Theme.
  *
  * Abstracted here since at least two functions use it.
  *
@@ -24,7 +24,7 @@ function genesis_sample_customizer_get_default_link_color() {
 }
 
 /**
- * Get default accent color for Customizer.
+ * Get default accent color for Customizer for the Genesis Sample Theme.
  *
  * Abstracted here since at least two functions use it.
  *
@@ -37,7 +37,7 @@ function genesis_sample_customizer_get_default_accent_color() {
 }
 
 /**
- * Calculate the color contrast
+ * Calculate the color contrast for the Genesis Sample Theme.
  *
  * @since 2.2.3
  *
@@ -58,7 +58,7 @@ function genesis_sample_color_contrast( $color ) {
 }
 	
 /**
- * Calculate the color brightness
+ * Calculate the color brightness for the Genesis Sample Theme.
  *
  * @since 2.2.3
  *
