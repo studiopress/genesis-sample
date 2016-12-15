@@ -19,21 +19,8 @@ Loaded on WooCommerce pages */
 	padding: 0;
 }
 
-.woocommerce .page-title {
-	text-align: center;
-}
-
-.woocommerce .page-title::after {
-	border-bottom: 1px solid #000;
-	content: "";
-	display: block;
-	margin: 0 auto 40px;
-	padding-bottom: 30px;
-	width: 2.5%;
-}
-
-.woocommerce ins,
-.woocommerce abbr.required {
+.woocommerce abbr.required,
+.woocommerce ins {
 	text-decoration: none;
 }
 
@@ -46,6 +33,10 @@ Loaded on WooCommerce pages */
 
 .woocommerce fieldset {
 	margin-bottom: 20px;
+}
+
+.woocommerce div.product form.cart .variations {
+	table-layout: fixed;
 }
 
 
@@ -77,6 +68,7 @@ Loaded on WooCommerce pages */
 .woocommerce div.product p.price,
 .woocommerce div.product span.price {
 	color: #c3251d;
+	line-height: 1.5;
 }
 
 .woocommerce div.product form.cart .button {
@@ -104,14 +96,16 @@ Loaded on WooCommerce pages */
 .woocommerce div.product .woocommerce-tabs ul.tabs li {
 	background-color: #f5f5f5;
 	border-radius: 0;
+	padding: 0;
 }
 
 .woocommerce div.product .woocommerce-tabs ul.tabs li a {
 	color: #000;
+	padding: .5em 1em;
 }
 
-.woocommerce div.product .woocommerce-tabs ul.tabs li a:hover,
-.woocommerce div.product .woocommerce-tabs ul.tabs li a:focus {
+.woocommerce div.product .woocommerce-tabs ul.tabs li a:focus,
+.woocommerce div.product .woocommerce-tabs ul.tabs li a:hover {
 	color: #c3251d;
 }
 
@@ -119,15 +113,15 @@ Loaded on WooCommerce pages */
 /* WooCommerce Checkout
 ---------------------------------------------------------------------------------------------------- */
 
-#add_payment_method #payment ul.payment_methods li,
 .woocommerce-cart #payment ul.payment_methods li,
-.woocommerce-checkout #payment ul.payment_methods li {
+.woocommerce-checkout #payment ul.payment_methods li,
+#add_payment_method #payment ul.payment_methods li {
 	list-style-type: none;
 }
 
-#add_payment_method #payment div.form-row,
 .woocommerce-cart #payment div.form-row,
-.woocommerce-checkout #payment div.form-row {
+.woocommerce-checkout #payment div.form-row,
+#add_payment_method #payment div.form-row {
 	padding-bottom: 0;
 }
 
@@ -139,6 +133,7 @@ Loaded on WooCommerce pages */
 .woocommerce table.shop_table td {
 	border-color: #eee;
 	border-radius: 0;
+	line-height: 1.75;
 }
 
 .woocommerce-cart table.cart {
@@ -181,9 +176,9 @@ Loaded on WooCommerce pages */
 	margin-left: 20px;
 }
 
-#add_payment_method table.cart img,
 .woocommerce-cart table.cart img,
-.woocommerce-checkout table.cart img {
+.woocommerce-checkout table.cart img,
+#add_payment_method table.cart img {
 	vertical-align: middle;
 }
 
@@ -191,29 +186,29 @@ Loaded on WooCommerce pages */
 /* WooCommerce Payment
 ---------------------------------------------------------------------------------------------------- */
 
-#add_payment_method #payment,
 .woocommerce-cart #payment,
-.woocommerce-checkout #payment {
+.woocommerce-checkout #payment,
+#add_payment_method #payment {
 	background-color: #f5f5f5;
 	border-radius: 0;
 	padding: 30px;
 }
 
-#add_payment_method #payment div.payment_box,
 .woocommerce-cart #payment div.payment_box,
-.woocommerce-checkout #payment div.payment_box {
+.woocommerce-checkout #payment div.payment_box,
+#add_payment_method #payment div.payment_box {
 	background-color: #eee;
 }
 
-#add_payment_method #payment div.payment_box::before,
 .woocommerce-cart #payment div.payment_box::before,
-.woocommerce-checkout #payment div.payment_box::before {
+.woocommerce-checkout #payment div.payment_box::before,
+#add_payment_method #payment div.payment_box::before {
 	display: none;
 }
 
-#add_payment_method #payment ul.payment_methods,
 .woocommerce-cart #payment ul.payment_methods,
-.woocommerce-checkout #payment ul.payment_methods {
+.woocommerce-checkout #payment ul.payment_methods,
+#add_payment_method #payment ul.payment_methods {
 	border-color: #eee;
 }
 
@@ -239,29 +234,30 @@ Loaded on WooCommerce pages */
 	font-size: 1.6rem;
 	font-weight: 700;
 	padding: 16px 24px;
+	text-align: center;
 	text-decoration: none;
 	white-space: normal;
 	width: auto;
 }
 
-.woocommerce a.button:hover,
 .woocommerce a.button:focus,
-.woocommerce a.button.alt:hover,
+.woocommerce a.button:hover,
 .woocommerce a.button.alt:focus,
-.woocommerce button.button:hover,
+.woocommerce a.button.alt:hover,
 .woocommerce button.button:focus,
-.woocommerce button.button.alt:hover,
+.woocommerce button.button:hover,
 .woocommerce button.button.alt:focus,
-.woocommerce input.button:hover,
+.woocommerce button.button.alt:hover,
 .woocommerce input.button:focus,
-.woocommerce input.button.alt:hover,
+.woocommerce input.button:hover,
 .woocommerce input.button.alt:focus,
-.woocommerce input[type="submit"]:hover,
+.woocommerce input.button.alt:hover,
 .woocommerce input[type="submit"]:focus,
-.woocommerce #respond input#submit:hover,
+.woocommerce input[type="submit"]:hover,
 .woocommerce #respond input#submit:focus,
-.woocommerce #respond input#submit.alt:hover,
-.woocommerce #respond input#submit.alt:focus {
+.woocommerce #respond input#submit:hover,
+.woocommerce #respond input#submit.alt:focus,
+.woocommerce #respond input#submit.alt:hover {
 	background-color: #c3251d;
 	color: #fff;
 }
@@ -285,9 +281,9 @@ Loaded on WooCommerce pages */
 	padding: 8px 20px;
 }
 
-#add_payment_method table.cart td.actions .coupon .input-text,
 .woocommerce-cart table.cart td.actions .coupon .input-text,
-.woocommerce-checkout table.cart td.actions .coupon .input-text {
+.woocommerce-checkout table.cart td.actions .coupon .input-text,
+#add_payment_method table.cart td.actions .coupon .input-text {
 	border-color: #eee;
 	padding: 5px 20px;
 	width: 150px;
@@ -297,16 +293,16 @@ Loaded on WooCommerce pages */
 .woocommerce form.login,
 .woocommerce form.register,
 .woocommerce form .form-row .select2-container,
-.woocommerce form .form-row.woocommerce-validated .select2-container,
 .woocommerce form .form-row.woocommerce-validated input.input-text,
-.woocommerce form .form-row.woocommerce-validated select {
+.woocommerce form .form-row.woocommerce-validated select,
+.woocommerce form .form-row.woocommerce-validated .select2-container {
 	border-color: #eee;
 	border-radius: 0;
 }
 
-#add_payment_method table.cart input,
 .woocommerce-cart table.cart input,
-.woocommerce-checkout table.cart input {
+.woocommerce-checkout table.cart input,
+#add_payment_method table.cart input {
 	vertical-align: top;
 }
 
@@ -371,7 +367,19 @@ Loaded on WooCommerce pages */
 /* WooCommerce Account Page
 ---------------------------------------------------------------------------------------------------- */
 
+.woocommerce-account .woocommerce-Address-title h3 {
+	font-size: 26px;
+	font-size: 2.6rem;
+}
+
+.woocommerce-MyAccount-navigation {
+	border: 1px solid #eee;
+	padding: 20px;
+	margin-bottom: 40px;
+}
+
 .woocommerce-MyAccount-navigation ul {
+	margin-bottom: 0;
 	margin-left: 0;
 }
 
@@ -379,12 +387,43 @@ Loaded on WooCommerce pages */
 	list-style-type: none;
 }
 
+.woocommerce-MyAccount-navigation ul li:last-child {
+	margin-bottom: 0;
+}
+
+.woocommerce-MyAccount-navigation ul li.is-active > a {
+	text-decoration: underline;
+}
+
 .woocommerce-account .woocommerce-MyAccount-navigation {
+	margin-right: 5%;
 	width: 20%;
 }
 
 .woocommerce-account .woocommerce-MyAccount-content {
-	width: 80%;
+	width: 75%;
+}
+
+.content-sidebar.woocommerce-account .woocommerce-MyAccount-navigation,
+.sidebar-content.woocommerce-account .woocommerce-MyAccount-navigation {
+	margin-right: 0;
+	width: 100%;
+}
+
+.content-sidebar.woocommerce-account .woocommerce-MyAccount-navigation ul,
+.sidebar-content.woocommerce-account .woocommerce-MyAccount-navigation ul {
+	text-align: center;
+}
+
+.content-sidebar.woocommerce-account .woocommerce-MyAccount-navigation li,
+.sidebar-content.woocommerce-account .woocommerce-MyAccount-navigation li {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+.content-sidebar.woocommerce-account .woocommerce-MyAccount-content,
+.sidebar-content.woocommerce-account .woocommerce-MyAccount-content {
+	width: 100%;
 }
 
 
@@ -406,8 +445,8 @@ Loaded on WooCommerce pages */
 	text-decoration: none;
 }
 
-.woocommerce .woocommerce-breadcrumb a:hover,
-.woocommerce .woocommerce-breadcrumb a:focus {
+.woocommerce .woocommerce-breadcrumb a:focus,
+.woocommerce .woocommerce-breadcrumb a:hover {
 	color: #c3251d;
 }
 
@@ -503,14 +542,12 @@ div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricte
 }
 
 .sidebar ul.product_list_widget li {
-	/*border-top: 1px solid #eee;*/
 	line-height: 1.4;
 	margin-bottom: 15px;
 	padding: 15px 0 0;
 }
 
 .sidebar ul.product_list_widget li:last-child {
-	/*border-bottom: 1px solid #eee;*/
 	margin-bottom: 0;
 	padding-bottom: 15px;
 }
@@ -552,6 +589,61 @@ div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricte
 
 /* Media Queries
 ---------------------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 860px) {
+
+	.woocommerce-account .woocommerce-MyAccount-content,
+	.woocommerce-account .woocommerce-MyAccount-navigation {
+		margin-right: 0;
+		width: 100%;
+	}
+
+	.woocommerce-account .woocommerce-Address {
+		margin-bottom: 20px;
+	}
+
+	.woocommerce-account .woocommerce-MyAccount-navigation ul {
+		text-align: center;
+	}
+
+	.woocommerce-account .woocommerce-MyAccount-navigation ul li {
+		display: inline-block;
+		margin: 0 10px;
+	}
+
+	.woocommerce div.product .woocommerce-tabs ul.tabs {
+		padding: 0;
+	}
+
+	.woocommerce div.product .woocommerce-tabs ul.tabs li {
+		display: block;
+		margin: 0;
+	}
+
+	.woocommerce div.product .woocommerce-tabs ul.tabs li a {
+		display: block;
+	}
+
+	.woocommerce div.product .woocommerce-tabs ul.tabs li {
+		background-color: #fff;
+		border-bottom: 0;
+	}
+
+	.woocommerce div.product .woocommerce-tabs ul.tabs li:last-child {
+		border-bottom: 1px solid #eee;
+	}
+
+	.woocommerce div.product .woocommerce-tabs ul.tabs li.active {
+		border-bottom-color: #eee;
+	}
+
+	.woocommerce div.product .woocommerce-tabs ul.tabs li.active a::after {
+		content: "\f147";
+		float: right;
+		font-family: "dashicons";
+	}
+
+}
 
 @media only screen and (max-width: 600px) {
 
