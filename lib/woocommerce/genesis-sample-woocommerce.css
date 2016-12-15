@@ -431,7 +431,9 @@ Loaded on WooCommerce pages */
 }
 
 .woocommerce-MyAccount-navigation ul li {
+	line-height: 1.2;
 	list-style-type: none;
+	margin-bottom: 15px;
 }
 
 .woocommerce-MyAccount-navigation ul li:last-child {
