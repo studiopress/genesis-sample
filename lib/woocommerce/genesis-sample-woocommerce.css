@@ -109,6 +109,53 @@ Loaded on WooCommerce pages */
 	color: #c3251d;
 }
 
+/* Two Sidebar Layouts */
+.content-sidebar-sidebar.woocommerce div.product .woocommerce-tabs ul.tabs,
+.sidebar-content-sidebar.woocommerce div.product .woocommerce-tabs ul.tabs,
+.sidebar-sidebar-content.woocommerce div.product .woocommerce-tabs ul.tabs {
+	padding: 0;
+}
+
+.content-sidebar-sidebar.woocommerce div.product .woocommerce-tabs ul.tabs li,
+.sidebar-content-sidebar.woocommerce div.product .woocommerce-tabs ul.tabs li,
+.sidebar-sidebar-content.woocommerce div.product .woocommerce-tabs ul.tabs li {
+	display: block;
+	margin: 0;
+}
+
+.content-sidebar-sidebar.woocommerce div.product .woocommerce-tabs ul.tabs li a,
+.sidebar-content-sidebar.woocommerce div.product .woocommerce-tabs ul.tabs li a,
+.sidebar-sidebar-content.woocommerce div.product .woocommerce-tabs ul.tabs li a {
+	display: block;
+}
+
+.content-sidebar-sidebar.woocommerce div.product .woocommerce-tabs ul.tabs li,
+.sidebar-content-sidebar.woocommerce div.product .woocommerce-tabs ul.tabs li,
+.sidebar-sidebar-content.woocommerce div.product .woocommerce-tabs ul.tabs li {
+	background-color: #fff;
+	border-bottom: 0;
+}
+
+.content-sidebar-sidebar.woocommerce div.product .woocommerce-tabs ul.tabs li:last-child,
+.sidebar-content-sidebar.woocommerce div.product .woocommerce-tabs ul.tabs li:last-child,
+.sidebar-sidebar-content.woocommerce div.product .woocommerce-tabs ul.tabs li:last-child {
+	border-bottom: 1px solid #eee;
+}
+
+.content-sidebar-sidebar.woocommerce div.product .woocommerce-tabs ul.tabs li.active,
+.sidebar-content-sidebar.woocommerce div.product .woocommerce-tabs ul.tabs li.active,
+.sidebar-sidebar-content.woocommerce div.product .woocommerce-tabs ul.tabs li.active {
+	border-bottom-color: #eee;
+}
+
+.content-sidebar-sidebar.woocommerce div.product .woocommerce-tabs ul.tabs li.active a::after,
+.sidebar-content-sidebar.woocommerce div.product .woocommerce-tabs ul.tabs li.active a::after,
+.sidebar-sidebar-content.woocommerce div.product .woocommerce-tabs ul.tabs li.active a::after {
+	content: "\f147";
+	float: right;
+	font-family: "dashicons";
+}
+
 
 /* WooCommerce Checkout
 ---------------------------------------------------------------------------------------------------- */
@@ -589,6 +636,49 @@ div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricte
 
 /* Media Queries
 ---------------------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 1200px) {
+
+	.content-sidebar.woocommerce div.product .woocommerce-tabs ul.tabs,
+	.sidebar-content.woocommerce div.product .woocommerce-tabs ul.tabs {
+		padding: 0;
+	}
+
+	.content-sidebar.woocommerce div.product .woocommerce-tabs ul.tabs li,
+	.sidebar-content.woocommerce div.product .woocommerce-tabs ul.tabs li {
+		display: block;
+		margin: 0;
+	}
+
+	.content-sidebar.woocommerce div.product .woocommerce-tabs ul.tabs li a,
+	.sidebar-content.woocommerce div.product .woocommerce-tabs ul.tabs li a {
+		display: block;
+	}
+
+	.content-sidebar.woocommerce div.product .woocommerce-tabs ul.tabs li,
+	.sidebar-content.woocommerce div.product .woocommerce-tabs ul.tabs li {
+		background-color: #fff;
+		border-bottom: 0;
+	}
+
+	.content-sidebar.woocommerce div.product .woocommerce-tabs ul.tabs li:last-child,
+	.sidebar-content.woocommerce div.product .woocommerce-tabs ul.tabs li:last-child {
+		border-bottom: 1px solid #eee;
+	}
+
+	.content-sidebar.woocommerce div.product .woocommerce-tabs ul.tabs li.active,
+	.sidebar-content.woocommerce div.product .woocommerce-tabs ul.tabs li.active {
+		border-bottom-color: #eee;
+	}
+
+	.content-sidebar.woocommerce div.product .woocommerce-tabs ul.tabs li.active a::after,
+	.sidebar-content.woocommerce div.product .woocommerce-tabs ul.tabs li.active a::after {
+		content: "\f147";
+		float: right;
+		font-family: "dashicons";
+	}
+
+}
 
 @media only screen and (max-width: 860px) {
 
