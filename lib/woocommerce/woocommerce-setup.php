@@ -2,7 +2,7 @@
 /**
  * Genesis Sample.
  *
- * This file adds the required WooCommerce setup functions.
+ * This file adds the required WooCommerce setup functions to the Genesis Sample Theme.
  *
  * @package Genesis Sample
  * @author  StudioPress
@@ -11,7 +11,7 @@
  */
 
 /**
- * Add theme support for WooCommerce to the Genesis Sample Theme.
+ * Add theme support for WooCommerce.
  *
  * @since 2.3.0
  */
@@ -19,7 +19,7 @@ add_theme_support( 'genesis-connect-woocommerce' );
 
 add_filter( 'woocommerce_enqueue_styles', 'genesis_sample_woocommerce_styles' );
 /**
- * Enqueue the Genesis Sample Theme's custom WooCommerce styles to the WooCommerce plugin.
+ * Enqueue the theme's custom WooCommerce styles to the WooCommerce plugin.
  *
  * @since 2.3.0
  *
@@ -40,7 +40,7 @@ function genesis_sample_woocommerce_styles( $enqueue_styles ) {
 
 add_filter( 'woocommerce_style_smallscreen_breakpoint', 'genesis_sample_woocommerce_breakpoint' );
 /**
- * Modify the WooCommerce breakpoints for the Genesis Sample Theme.
+ * Modify the WooCommerce breakpoints.
  *
  * @since 1.1.0
  */
@@ -60,7 +60,7 @@ function genesis_sample_woocommerce_breakpoint() {
 	);
 
 	if ( in_array( $current, $layouts['two-sidebar'] ) ) {
-		return '2000px'; // Show mobile styles immediately
+		return '2000px'; // Show mobile styles immediately.
 	}
 	elseif ( in_array( $current, $layouts['one-sidebar'] ) ) {
 		return '1200px';
@@ -73,7 +73,7 @@ function genesis_sample_woocommerce_breakpoint() {
 
 add_action( 'after_switch_theme', 'genesis_sample_woocommerce_image_dimensions', 1 );
 /**
-* Define WooCommerce image sizes on activation for the Genesis Sample Theme.
+* Define WooCommerce image sizes on activation.
 *
 * @since 1.0.0
 */

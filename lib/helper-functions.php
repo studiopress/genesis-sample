@@ -11,7 +11,7 @@
  */
 
 /**
- * Get default link color for Customizer for the Genesis Sample Theme.
+ * Get default link color for Customizer.
  *
  * Abstracted here since at least two functions use it.
  *
@@ -24,7 +24,7 @@ function genesis_sample_customizer_get_default_link_color() {
 }
 
 /**
- * Get default accent color for Customizer for the Genesis Sample Theme.
+ * Get default accent color for Customizer.
  *
  * Abstracted here since at least two functions use it.
  *
@@ -37,7 +37,7 @@ function genesis_sample_customizer_get_default_accent_color() {
 }
 
 /**
- * Calculate the color contrast for the Genesis Sample Theme.
+ * Calculate the color contrast.
  *
  * @since 2.2.3
  *
@@ -57,7 +57,7 @@ function genesis_sample_color_contrast( $color ) {
 }
 	
 /**
- * Calculate the color brightness for the Genesis Sample Theme.
+ * Calculate the color brightness.
  *
  * @since 2.2.3
  *

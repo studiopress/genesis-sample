@@ -1,8 +1,18 @@
 <?php
+/**
+ * Genesis Sample.
+ *
+ * This file adds the Customizer additions for WooCommerce to the Genesis Sample Theme.
+ *
+ * @package Genesis Sample
+ * @author  StudioPress
+ * @license GPL-2.0+
+ * @link    http://www.studiopress.com/
+ */
 
 add_action( 'wp_enqueue_scripts', 'genesis_sample_woocommerce_css' );
 /**
- * Add the Genesis Sample Theme's custom CSS to the WooCommerce stylesheet.
+ * Add the themes's custom CSS to the WooCommerce stylesheet.
  *
  * @since 2.3.0
  *
