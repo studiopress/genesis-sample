@@ -86,13 +86,13 @@ function genesis_sample_woocommerce_image_dimensions() {
 	}
 
 	$catalog = array(
-		'width'  => '300', // px
-		'height' => '300', // px
+		'width'  => '450', // px
+		'height' => '450', // px
 		'crop'   => 1,     // true
 	);
 	$single = array(
-		'width'  => '600', // px
-		'height' => '600', // px
+		'width'  => '650', // px
+		'height' => '650', // px
 		'crop'   => 1,     // true
 	);
 	$thumbnail = array(

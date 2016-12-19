@@ -699,6 +699,10 @@ div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricte
 
 @media only screen and (max-width: 860px) {
 
+	.woocommerce .content {
+		padding: 30px;
+	}
+
 	.woocommerce-account .woocommerce-Address {
 		margin-bottom: 20px;
 	}
@@ -738,6 +742,12 @@ div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricte
 }
 
 @media only screen and (max-width: 600px) {
+
+	.woocommerce ul.products li.product,
+	.woocommerce-page ul.products li.product {
+		margin-right: 0;
+		width: 100%;
+	}
 
 	.woocommerce input.button,
 	.woocommerce input.button[type="submit"],
