@@ -641,6 +641,21 @@ div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricte
 
 @media only screen and (max-width: 1200px) {
 
+	.woocommerce-account .woocommerce-MyAccount-navigation ul {
+		text-align: center;
+	}
+
+	.woocommerce-account .woocommerce-MyAccount-navigation ul li {
+		display: inline-block;
+		margin: 0 10px;
+	}
+
+	.woocommerce-account .woocommerce-MyAccount-content,
+	.woocommerce-account .woocommerce-MyAccount-navigation {
+		margin-right: 0;
+		width: 100%;
+	}
+
 	.content-sidebar.woocommerce div.product .woocommerce-tabs ul.tabs,
 	.sidebar-content.woocommerce div.product .woocommerce-tabs ul.tabs {
 		padding: 0;
@@ -684,23 +699,8 @@ div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricte
 
 @media only screen and (max-width: 860px) {
 
-	.woocommerce-account .woocommerce-MyAccount-content,
-	.woocommerce-account .woocommerce-MyAccount-navigation {
-		margin-right: 0;
-		width: 100%;
-	}
-
 	.woocommerce-account .woocommerce-Address {
 		margin-bottom: 20px;
-	}
-
-	.woocommerce-account .woocommerce-MyAccount-navigation ul {
-		text-align: center;
-	}
-
-	.woocommerce-account .woocommerce-MyAccount-navigation ul li {
-		display: inline-block;
-		margin: 0 10px;
 	}
 
 	.woocommerce div.product .woocommerce-tabs ul.tabs {

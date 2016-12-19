@@ -227,6 +227,11 @@ i {
 	font-style: italic;
 }
 
+mark {
+	background: #f5f5f5;
+	color: #000;
+}
+
 blockquote {
 	margin: 40px;
 }
