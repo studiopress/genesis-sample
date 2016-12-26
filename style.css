@@ -1721,14 +1721,14 @@ p.entry-meta {
 		margin: 0;
 	}
 
-	.js nav button:hover,
+	.js nav.nav-primary button:hover,
 	.js .menu-toggle:hover,
 	.js .nav-primary {
 		background-color: #fff;
 		color: #000;
 	}
 
-	.js nav button:focus,
+	.js nav.nav-primary button:focus,
 	.js .menu-toggle:focus {
 		background-color: #fff;
 		color: #c3251d;

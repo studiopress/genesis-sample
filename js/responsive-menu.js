@@ -6,25 +6,34 @@
  * @license GPL-2.0+
  */
 
+var genesisMenuParams = typeof genesis_responsive_menu === 'undefined' ? '' : genesis_responsive_menu,
+	genesisMenus      = genesisMenuParams.menuClasses;
+
+
 ( function ( document, $, undefined ) {
 
 	$( 'body' ).addClass( 'js' );
 
 	'use strict';
 
-	var genesisSample              = {},
+	var genesisMenu         = {},
 		mainMenuButtonClass = 'menu-toggle',
-		subMenuButtonClass  = 'sub-menu-toggle';
+		subMenuButtonClass  = 'sub-menu-toggle',
+		responsiveMenuClass = '.genesis-responsive-menu';
 
-	genesisSample.init = function() {
-		var toggleButtons = {
+	genesisMenu.init = function() {
+		var $primaryMenu      = $( genesisMenus.primary ),
+			$secondaryMenu    = $( genesisMenus.secondary ),
+			menuIconClass     = typeof genesisMenuParams.menuIconClass !== 'undefined' ? genesisMenuParams.menuIconClass : 'dashicons-before dashicons-menu',
+			subMenuIconClass  = typeof genesisMenuParams.subMenuIconClass !== 'undefined' ? genesisMenuParams.subMenuIconClass : 'dashicons-before dashicons-arrow-down',
+			toggleButtons     = {
 			menu : $( '<button />', {
 				'class' : mainMenuButtonClass,
 				'aria-expanded' : false,
 				'aria-pressed' : false,
 				'role' : 'button'
 				} )
-				.append( genesisSample.params.mainMenu ),
+				.append( genesisMenuParams.mainMenu ),
 			submenu : $( '<button />', {
 				'class' : subMenuButtonClass,
 				'aria-expanded' : false,
@@ -33,24 +42,45 @@
 				} )
 				.append( $( '<span />', {
 					'class' : 'screen-reader-text',
-					text : genesisSample.params.subMenu
+					text : genesisMenuParams.subMenu
 				} ) )
 		};
-		if ($( '.nav-primary' ).length > 0 ) {
-			$( '.nav-primary' ).before( toggleButtons.menu ); // Add the main nav buttons.
-		} else {
-			$( '.nav-header' ).before( toggleButtons.menu );
+
+		if ( $primaryMenu.length > 0 ) {
+			$primaryMenu.before( toggleButtons.menu ); // Add the main nav buttons.
+			$primaryMenu.find( '.sub-menu' ).before( toggleButtons.submenu ); // Add the submenu nav buttons.
+		} else if ( $secondaryMenu.length > 0 ) {
+			$secondaryMenu.before( toggleButtons.menu ); // Add the main nav buttons.
+			$secondaryMenu.find( '.sub-menu' ).before( toggleButtons.submenu ); // Add the submenu nav buttons.
 		}
-		$( 'nav .sub-menu' ).before( toggleButtons.submenu ); // Add the submenu nav buttons.
-		$( '.' + mainMenuButtonClass ).each( _addClassID );
-		$( '.' + mainMenuButtonClass ).addClass('dashicons-before dashicons-menu');
-		$( '.' + subMenuButtonClass ).addClass('dashicons-before dashicons-arrow-down');
-		$( window ).on( 'resize.genesisSample', _doResize ).triggerHandler( 'resize.genesisSample' );
-		$( '.' + mainMenuButtonClass ).on( 'click.genesisSample-mainbutton', _mainmenuToggle );
-		$( '.' + subMenuButtonClass ).on( 'click.genesisSample-subbutton', _submenuToggle );
+
+		$( '.' + mainMenuButtonClass ).addClass( menuIconClass );
+		$( '.' + subMenuButtonClass ).addClass( subMenuIconClass );
+		$( '.' + mainMenuButtonClass )
+			.on( 'click.genesisMenu-mainbutton', _mainmenuToggle )
+			.each( _addClassID );
+		$( '.' + subMenuButtonClass ).on( 'click.genesisMenu-subbutton', _submenuToggle );
+		$( window ).on( 'resize.genesisMenu', _doResize ).triggerHandler( 'resize.genesisMenu' );
 	};
 
-	// Add nav class and ID to related button.
+	/**
+	 * Execute our responsive menu functions on window resizing.
+	 */
+	function _doResize() {
+		var buttons   = $( 'button[id^="mobile-"]' ).attr( 'id' );
+		if ( typeof buttons === 'undefined' ) {
+			return;
+		}
+		_responsiveMenuClass( buttons );
+		_superfishToggle( buttons );
+		_changeSkipLink( buttons );
+		_maybeClose( buttons );
+		_combineMenus( buttons );
+	}
+
+	/**
+	 * Add nav class and ID to related button.
+	 */
 	function _addClassID() {
 		var $this = $( this ),
 			nav   = $this.next( 'nav' ),
@@ -61,28 +91,23 @@
 		$this.attr( 'id', 'mobile-' + $( nav ).attr( id ) );
 	}
 	
-	// Check CSS rule to determine width.
-	function _combineMenus(){
-		if ( ( $( '.js nav' ).css( 'position' ) == 'relative' ) && $( '.nav-primary' ).length > 0 ) { // Depends on .js nav having position: relative; in style.css.
-			$( '.nav-header .menu > li' ).addClass( 'moved-item' ); // Tag moved items so we can move them back.
-			$( '.nav-header .menu > li' ).prependTo( '.nav-primary ul.genesis-nav-menu' );
-			$( '.nav-header' ).hide();
-		} else if ( ( $( '.js nav' ).css( 'position' ) !== 'relative' ) && $( '.nav-primary' ).length > 0 ) {
-			$( '.nav-header' ).show();
-			$( '.nav-primary ul.genesis-nav-menu > li.moved-item' ).appendTo( '.nav-header .menu' );
-			$( '.nav-header .menu > li' ).removeClass( 'moved-item' );
-		}
-	}
-
-	// Change Skiplinks and Superfish.
-	function _doResize() {
-		var buttons = $( 'button[id^="mobile-"]' ).attr( 'id' );
-		if ( typeof buttons === 'undefined' ) {
+	/**
+	 * Combine our menus if the mobile menu is visible.
+	 * @params buttons
+	 */
+	function _combineMenus( buttons ){
+		if ( $( genesisMenus.primary ).length === 0 || $( genesisMenus.secondary ).length === 0 ) {
 			return;
 		}
-		_superfishToggle( buttons );
-		_changeSkipLink( buttons );
-		_maybeClose( buttons );
+		
+		if ( 'none' !== _getDisplayValue( buttons ) ) {
+			$( genesisMenus.secondary + ' .menu > li' ).addClass( 'moved-item-secondary' ).appendTo( responsiveMenuClass + ' ul.genesis-nav-menu' );
+			$( genesisMenus.secondary ).hide();
+		} else {
+			$( genesisMenus.secondary ).show();
+			$( genesisMenus.primary + ' ul.genesis-nav-menu > li.moved-item-secondary' ).appendTo( genesisMenus.secondary + ' .menu' );
+			$( genesisMenus.secondary + ' .menu > li' ).removeClass( 'moved-item-secondary' );
+		}
 	}
 
 	/**
@@ -93,7 +118,7 @@
 		_toggleAria( $this, 'aria-pressed' );
 		_toggleAria( $this, 'aria-expanded' );
 		$this.toggleClass( 'activated' );
-		$this.next( 'nav, .sub-menu' ).slideToggle( 'fast' );
+		$this.next( 'nav' ).slideToggle( 'fast' );
 	}
 
 	/**
@@ -115,24 +140,28 @@
 
 	/**
 	 * Activate/deactivate superfish.
+	 * @params buttons
 	 */
 	function _superfishToggle( buttons ) {
-		if ( typeof $( '.js-superfish' ).superfish !== 'function' ) {
+		var _superfish = $( genesisMenus.primary + ' .js-superfish' ),
+			$args      = 'destroy';
+		if ( typeof _superfish.superfish !== 'function' ) {
 			return;
 		}
 		if ( 'none' === _getDisplayValue( buttons ) ) {
-			$( '.js-superfish' ).superfish( {
+			$args = {
 				'delay': 100,
 				'animation': {'opacity': 'show', 'height': 'show'},
-				'dropShadows': false
-			});
-		} else {
-			$( '.js-superfish' ).superfish( 'destroy' );
+				'dropShadows': false,
+				'speed': 'fast'
+			};
 		}
+		_superfish.superfish( $args );
 	}
 
 	/**
-	 * Modify skip links to match mobile buttons.
+	 * Modify skip link to match mobile buttons.
+	 * @param buttons
 	 */
 	function _changeSkipLink( buttons ) {
 		var startLink = 'genesis-nav',
@@ -148,16 +177,32 @@
 		});
 	}
 
+	/**
+	 * Close all the menu toggles if buttons are hidden.
+	 * @param buttons
+	 */
 	function _maybeClose( buttons ) {
 		if ( 'none' !== _getDisplayValue( buttons ) ) {
 			return;
 		}
-		$( '.menu-toggle, .sub-menu-toggle' )
+		$( '.' + mainMenuButtonClass + ', ' + genesisMenus.primary + ' .sub-menu-toggle' )
 			.removeClass( 'activated' )
 			.attr( 'aria-expanded', false )
 			.attr( 'aria-pressed', false );
-		$( 'nav, .sub-menu' )
+		$( genesisMenus.primary + ', ' + genesisMenus.primary + ' .sub-menu' )
 			.attr( 'style', '' );
+	}
+
+	/**
+	 * Add a class to the responsive menu.
+	 * @param buttons
+	 */
+	function _responsiveMenuClass( buttons ) {
+		if ( 'none' !== _getDisplayValue( buttons ) ) {
+			$( genesisMenus.primary ).addClass( responsiveMenuClass.replace( '.', '' ) );
+		} else {
+			$( genesisMenus.primary ).removeClass( responsiveMenuClass.replace( '.', '' ) );
+		}
 	}
 
 	/**
@@ -185,16 +230,10 @@
 
 	$(document).ready(function () {
 
-		// Run test on initial page load.
-		_combineMenus();
+		if ( typeof genesisMenuParams !== 'undefined' ) {
 
-		// Run test on resize of the window.
-		$( window ).resize( _combineMenus );
+			genesisMenu.init();
 		
-		genesisSample.params = typeof genesisSampleL10n === 'undefined' ? '' : genesisSampleL10n;
-
-		if ( typeof genesisSample.params !== 'undefined' ) {
-			genesisSample.init();
 		}
 
 	});

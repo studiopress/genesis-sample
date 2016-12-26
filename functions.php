@@ -19,7 +19,7 @@ include_once( get_stylesheet_directory() . '/lib/theme-defaults.php' );
 // Set Localization (do not remove).
 load_child_theme_textdomain( 'genesis-sample', apply_filters( 'child_theme_textdomain', get_stylesheet_directory() . '/languages', 'genesis-sample' ) );
 
-//* Add the helper functions.
+// Add the helper functions.
 include_once( get_stylesheet_directory() . '/lib/helper-functions.php' );
 
 // Add Image upload and Color select to WordPress Theme Customizer.
@@ -28,11 +28,15 @@ require_once( get_stylesheet_directory() . '/lib/customize.php' );
 // Include Customizer CSS.
 include_once( get_stylesheet_directory() . '/lib/output.php' );
 
-// Add the required WooCommerce functions
-include_once( get_stylesheet_directory() . '/lib/woocommerce/woocommerce-setup.php' );
+if ( class_exists( 'WooCommerce' ) ) {
 
-// Add the required WooCommerce custom CSS
-include_once( get_stylesheet_directory() . '/lib/woocommerce/woocommerce-output.php' );
+	// Add the required WooCommerce functions.
+	include_once( get_stylesheet_directory() . '/lib/woocommerce/woocommerce-setup.php' );
+
+	// Add the required WooCommerce custom CSS.
+	include_once( get_stylesheet_directory() . '/lib/woocommerce/woocommerce-output.php' );
+
+}
 
 // Child theme (do not remove).
 define( 'CHILD_THEME_NAME', 'Genesis Sample' );
@@ -48,10 +52,16 @@ function genesis_sample_enqueue_scripts_styles() {
 
 	wp_enqueue_script( 'genesis-sample-responsive-menu', get_stylesheet_directory_uri() . '/js/responsive-menu.js', array( 'jquery' ), '1.0.0', true );
 	$output = array(
-		'mainMenu' => __( 'Menu', 'genesis-sample' ),
-		'subMenu'  => __( 'Menu', 'genesis-sample' ),
+		'mainMenu'          => __( 'Menu', 'genesis-sample' ),
+		'subMenu'           => __( 'Menu', 'genesis-sample' ),
+		'menuClasses'       => array(
+			'primary'   => '.nav-primary',
+			'secondary' => '.nav-secondary',
+		),
+		'menuIconClass'     => 'dashicons-before dashicons-menu',
+		'subMenuIconsClass' => 'dashicons-before dashicons-arrow-down-alt2',
 	);
-	wp_localize_script( 'genesis-sample-responsive-menu', 'genesisSampleL10n', $output );
+	wp_localize_script( 'genesis-sample-responsive-menu', 'genesis_responsive_menu', $output );
 
 }
 
