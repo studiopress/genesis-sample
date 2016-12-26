@@ -207,7 +207,7 @@ Loaded on WooCommerce pages */
 
 .woocommerce-cart table.cart th.product-price,
 .woocommerce-cart table.cart th.product-subtotal {
-	min-width: 70px;
+	min-width: 110px;
 }
 
 .woocommerce table.shop_table td.actions {
@@ -441,7 +441,8 @@ Loaded on WooCommerce pages */
 }
 
 .woocommerce-MyAccount-navigation ul li.is-active > a {
-	text-decoration: underline;
+	color: #333;
+	font-weight: bold;
 }
 
 .woocommerce-account .woocommerce-MyAccount-navigation {
@@ -744,7 +745,11 @@ div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricte
 @media only screen and (max-width: 600px) {
 
 	.woocommerce ul.products li.product,
-	.woocommerce-page ul.products li.product {
+	.woocommerce ul.products li.product .button,
+	.woocommerce .woocommerce-ordering,
+	.woocommerce-page ul.products li.product,
+	.woocommerce-page ul.products li.product .button,
+	.woocommerce-page .woocommerce-ordering {
 		margin-right: 0;
 		width: 100%;
 	}

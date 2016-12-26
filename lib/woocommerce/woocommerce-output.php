@@ -16,6 +16,7 @@ add_action( 'wp_enqueue_scripts', 'genesis_sample_woocommerce_css' );
  *
  * @since 2.3.0
  *
+ * @return string CSS to be outputted after the theme's custom WooCommerce stylesheet.
  */
 function genesis_sample_woocommerce_css() {
 

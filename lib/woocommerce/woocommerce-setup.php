@@ -23,7 +23,7 @@ add_filter( 'woocommerce_enqueue_styles', 'genesis_sample_woocommerce_styles' );
  *
  * @since 2.3.0
  *
- * @return array() Required values for the Genesis Sample Theme's WooCommerce stylesheet.
+ * @return array Required values for the Genesis Sample Theme's WooCommerce stylesheet.
  */
 function genesis_sample_woocommerce_styles( $enqueue_styles ) {
 
@@ -42,7 +42,9 @@ add_filter( 'woocommerce_style_smallscreen_breakpoint', 'genesis_sample_woocomme
 /**
  * Modify the WooCommerce breakpoints.
  *
- * @since 1.1.0
+ * @since 2.3.0
+ *
+ * @return string Pixel width of the theme's breakpoint.
  */
 function genesis_sample_woocommerce_breakpoint() {
 
@@ -71,11 +73,27 @@ function genesis_sample_woocommerce_breakpoint() {
 
 }
 
+add_filter( 'genesiswooc_products_per_page', 'genesis_sample_default_products_per_page' );
+/**
+ * Set the default products per page.
+ *
+ * @since 2.3.0
+ *
+ * @return int Number of products to show per page.
+ */
+function genesis_sample_default_products_per_page() {
+
+	return 8;
+
+}
+
 add_action( 'after_switch_theme', 'genesis_sample_woocommerce_image_dimensions', 1 );
 /**
 * Define WooCommerce image sizes on activation.
 *
 * @since 1.0.0
+*
+* @return array Settings to be used for image dimensions.
 */
 function genesis_sample_woocommerce_image_dimensions() {
 
@@ -86,13 +104,13 @@ function genesis_sample_woocommerce_image_dimensions() {
 	}
 
 	$catalog = array(
-		'width'  => '450', // px
-		'height' => '450', // px
+		'width'  => '500', // px
+		'height' => '500', // px
 		'crop'   => 1,     // true
 	);
 	$single = array(
-		'width'  => '650', // px
-		'height' => '650', // px
+		'width'  => '655', // px
+		'height' => '655', // px
 		'crop'   => 1,     // true
 	);
 	$thumbnail = array(
