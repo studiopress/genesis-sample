@@ -39,6 +39,10 @@ Loaded on WooCommerce pages */
 	table-layout: fixed;
 }
 
+.woocommerce .products .star-rating {
+	padding: 10px;
+}
+
 
 /* WooCommerce Shop Page
 ---------------------------------------------------------------------------------------------------- */
@@ -77,6 +81,10 @@ Loaded on WooCommerce pages */
 
 .woocommerce div.product form.cart .variations {
 	table-layout: fixed;
+}
+
+.woocommerce .woocommerce-variation-price {
+	margin-bottom: 20px;
 }
 
 
@@ -166,10 +174,16 @@ Loaded on WooCommerce pages */
 	list-style-type: none;
 }
 
+.woocommerce-cart table.cart td.actions .coupon input.input-text,
+.woocommerce-checkout table.cart td.actions .coupon input.input-text,
+#add_payment_method table.cart td.actions .coupon input.input-text {
+	width: auto;
+}
+
 .woocommerce-cart #payment div.form-row,
 .woocommerce-checkout #payment div.form-row,
 #add_payment_method #payment div.form-row {
-	padding-bottom: 0;
+	margin-bottom: 0;
 }
 
 
@@ -181,6 +195,7 @@ Loaded on WooCommerce pages */
 	border-color: #eee;
 	border-radius: 0;
 	line-height: 1.75;
+	word-break: break-word;
 }
 
 .woocommerce-cart table.cart {
