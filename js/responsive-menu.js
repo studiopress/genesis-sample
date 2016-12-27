@@ -48,11 +48,14 @@ var genesisMenuParams = typeof genesis_responsive_menu === 'undefined' ? '' : ge
 
 		if ( $primaryMenu.length > 0 ) {
 			$primaryMenu.before( toggleButtons.menu ); // Add the main nav buttons.
-			$primaryMenu.find( '.sub-menu' ).before( toggleButtons.submenu ); // Add the submenu nav buttons.
 		} else if ( $secondaryMenu.length > 0 ) {
 			$secondaryMenu.before( toggleButtons.menu ); // Add the main nav buttons.
-			$secondaryMenu.find( '.sub-menu' ).before( toggleButtons.submenu ); // Add the submenu nav buttons.
 		}
+
+		$.each( genesisMenus, function( key, value ) {
+			$this = $( value );
+			$this.find( '.sub-menu' ).before( toggleButtons.submenu );
+		});
 
 		$( '.' + mainMenuButtonClass ).addClass( menuIconClass );
 		$( '.' + subMenuButtonClass ).addClass( subMenuIconClass );
