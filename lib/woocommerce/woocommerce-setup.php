@@ -87,6 +87,23 @@ function genesis_sample_default_products_per_page() {
 
 }
 
+add_filter( 'woocommerce_pagination_args', 	'genesis_sample_woocommerce_pagination' );
+/**
+ * Update the next and previous arrows to the default Genesis style.
+ *
+ * @since 2.3.0
+ *
+ * @return string New next and previous text string.
+ */
+function genesis_sample_woocommerce_pagination( $args ) {
+
+	$args['prev_text'] = sprintf( '&laquo; %s', __( 'Previous Page', 'genesis-sample' ) );
+	$args['next_text'] = sprintf( '%s &raquo;', __( 'Next Page', 'genesis-sample' ) );
+	
+	return $args;
+
+}
+
 add_action( 'after_switch_theme', 'genesis_sample_woocommerce_image_dimensions', 1 );
 /**
 * Define WooCommerce image sizes on activation.
