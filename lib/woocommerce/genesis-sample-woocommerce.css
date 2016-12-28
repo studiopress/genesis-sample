@@ -43,6 +43,12 @@ Loaded on WooCommerce pages */
 	padding: 10px;
 }
 
+.woocommerce p.stars a,
+.woocommerce p.stars a:focus,
+.woocommerce p.stars a:hover {
+	outline: 0;
+}
+
 
 /* WooCommerce Shop Page
 ---------------------------------------------------------------------------------------------------- */
@@ -53,6 +59,13 @@ Loaded on WooCommerce pages */
 
 .woocommerce a.added_to_cart {
 	line-height: 1;
+}
+
+.woocommerce a.button.loading::after,
+.woocommerce button.button.loading::after,
+.woocommerce input.button.loading::after,
+.woocommerce #respond input#submit.loading::after {
+	top: 1em;
 }
 
 .woocommerce ul.products li.product h3,
@@ -340,7 +353,7 @@ Loaded on WooCommerce pages */
 	font-size: 2rem;
 	line-height: 1.5;
 	margin-right: 5px;
-	padding: 3px 5px 4px;
+	padding: 12px 5px;
 	width: 70px;
 }
 
