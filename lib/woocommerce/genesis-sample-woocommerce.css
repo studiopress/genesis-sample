@@ -779,6 +779,14 @@ div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricte
 
 @media only screen and (max-width: 600px) {
 
+	.woocommerce form .form-row-first,
+	.woocommerce form .form-row-last,
+	.woocommerce-page form .form-row-first,
+	.woocommerce-page form .form-row-last {
+		float: none;
+		width: 100%;
+	}
+
 	.woocommerce ul.products li.product,
 	.woocommerce ul.products li.product .button,
 	.woocommerce .woocommerce-ordering,
