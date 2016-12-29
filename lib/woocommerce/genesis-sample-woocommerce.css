@@ -9,6 +9,10 @@ Loaded on WooCommerce pages */
 	max-width: 1280px;
 }
 
+.woocommerce .site-header {
+	z-index: 1012; /* Show above WooCommerce processing div */
+}
+
 .woocommerce .content {
 	background-color: #fff;
 	margin-bottom: 40px;
