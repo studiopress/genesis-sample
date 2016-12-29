@@ -35,10 +35,6 @@ Loaded on WooCommerce pages */
 	margin-bottom: 20px;
 }
 
-.woocommerce div.product form.cart .variations {
-	table-layout: fixed;
-}
-
 .woocommerce .products .star-rating {
 	padding: 10px;
 }
@@ -226,6 +222,10 @@ Loaded on WooCommerce pages */
 	font-size: 18px;
 	font-size: 1.8rem;
 	padding: 10px 12px;
+}
+
+.woocommerce table.shop_table .order-number {
+	min-width: 75px;
 }
 
 .woocommerce-cart table.cart .product-thumbnail {
@@ -781,6 +781,7 @@ div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricte
 
 	.woocommerce form .form-row-first,
 	.woocommerce form .form-row-last,
+	.woocommerce #reviews #comments .star-rating,
 	.woocommerce-page form .form-row-first,
 	.woocommerce-page form .form-row-last {
 		float: none;
