@@ -812,5 +812,10 @@ div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricte
 		background-color: #fff;
 		margin-bottom: 10px;
 	}
+	
+	.woocommerce-message .button.wc-forward {
+		margin-bottom: 20px;
+		width: 100%;
+	}
 
 }
