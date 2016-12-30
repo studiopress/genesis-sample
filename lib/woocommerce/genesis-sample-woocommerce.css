@@ -9,7 +9,8 @@ Loaded on WooCommerce pages */
 	max-width: 1280px;
 }
 
-.woocommerce .site-header {
+.woocommerce .site-header,
+.woocommerce-page .site-header {
 	z-index: 1012; /* Show above WooCommerce processing div */
 }
 
@@ -47,6 +48,17 @@ Loaded on WooCommerce pages */
 .woocommerce p.stars a:focus,
 .woocommerce p.stars a:hover {
 	outline: 0;
+}
+
+.woocommerce .woocommerce-LoopProduct-link {
+	display: block;
+}
+
+/* MS Edge Bug Fix */
+.woocommerce ul.products li.product a {
+	-webkit-transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
+	-ms-transition:     color 0.2s ease-in-out, background 0.2s ease-in-out;
+	transition:         color 0.2s ease-in-out, background 0.2s ease-in-out;
 }
 
 
