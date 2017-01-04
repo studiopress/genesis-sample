@@ -227,7 +227,7 @@ Loaded on WooCommerce pages */
 	border-color: #eee;
 	border-radius: 0;
 	line-height: 1.75;
-	word-break: break-word;
+	word-break: normal;
 }
 
 .woocommerce-cart table.cart {
