@@ -248,16 +248,14 @@ Loaded on WooCommerce pages */
 	min-width: 56px;
 }
 
-.woocommerce-cart table.cart th.product-quantity {
-	min-width: 110px;
-}
-
 .woocommerce-cart table.cart th.product-name {
 	min-width: 140px;
 }
 
 .woocommerce-cart table.cart th.product-price,
-.woocommerce-cart table.cart th.product-subtotal {
+.woocommerce-cart table.cart th.product-quantity,
+.woocommerce-cart table.cart th.product-subtotal,
+.woocommerce-checkout-review-order-table th.product-total {
 	min-width: 110px;
 }
 
@@ -468,6 +466,10 @@ Loaded on WooCommerce pages */
 .woocommerce-account .woocommerce-Address-title h3 {
 	font-size: 26px;
 	font-size: 2.6rem;
+}
+
+.woocommerce-account table.order_details th.product-total {
+	min-width: 110px;
 }
 
 .woocommerce-MyAccount-navigation {
