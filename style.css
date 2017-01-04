@@ -500,7 +500,7 @@ table {
 	line-height: 2;
 	margin-bottom: 40px;
 	width: 100%;
-	word-break: break-word;
+	word-break: break-all;
 }
 
 tbody {
