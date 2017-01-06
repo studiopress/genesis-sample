@@ -2,6 +2,7 @@
 
 ## [Unreleased][unreleased]
 * Add WooCommerce support to the theme and customizer
+* Add an updated and improved responsive menu script
 * Updated the file structure
 * Update Documentation
 

@@ -29,17 +29,20 @@ function genesis_sample_css() {
 	$css .= ( genesis_sample_customizer_get_default_link_color() !== $color_link ) ? sprintf( '
 
 		a,
-		.entry-title a::focus,
-		.entry-title a::hover,
-		.genesis-nav-menu a::focus,
-		.genesis-nav-menu a::hover,
+		.entry-title a:focus,
+		.entry-title a:hover,
+		.genesis-nav-menu a:focus,
+		.genesis-nav-menu a:hover,
 		.genesis-nav-menu .current-menu-item > a,
-		.genesis-nav-menu .sub-menu .current-menu-item > a::focus,
-		.genesis-nav-menu .sub-menu .current-menu-item > a::hover,
-		.js nav button::focus,
-		.js .menu-toggle::focus {
+		.genesis-nav-menu .sub-menu .current-menu-item > a:focus,
+		.genesis-nav-menu .sub-menu .current-menu-item > a:hover,
+		.menu-toggle:focus,
+		.menu-toggle:hover,
+		.sub-menu-toggle:focus,
+		.sub-menu-toggle:hover {
 			color: %s;
 		}
+
 		', $color_link ) : '';
 
 	$css .= ( genesis_sample_customizer_get_default_accent_color() !== $color_accent ) ? sprintf( '
@@ -52,11 +55,11 @@ function genesis_sample_css() {
 		input:hover[type="button"],
 		input:hover[type="reset"],
 		input:hover[type="submit"],
-		.archive-pagination li a::focus,
-		.archive-pagination li a::hover,
+		.archive-pagination li a:focus,
+		.archive-pagination li a:hover,
 		.archive-pagination .active a,
-		.button::focus,
-		.button::hover,
+		.button:focus,
+		.button:hover,
 		.sidebar .enews-widget input[type="submit"] {
 			background-color: %s;
 			color: %s;
