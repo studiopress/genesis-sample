@@ -52,13 +52,13 @@ function genesis_sample_enqueue_scripts_styles() {
 
 	$suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
 	wp_enqueue_script( 'genesis-sample-responsive-menu', get_bloginfo( 'stylesheet_directory' ) . '/js/responsive-menus' . $suffix . '.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
-	$output = base_responsive_menu_settings();
+	$output = genesis_sample_responsive_menu_settings();
 	wp_localize_script( 'genesis-sample-responsive-menu', 'genesis_responsive_menu', $output );
 
 }
 
 // Define our responsive menu settings.
-function base_responsive_menu_settings() {
+function genesis_sample_responsive_menu_settings() {
 	
 	$settings = array(
 		'mainMenu'          => __( 'Menu', 'genesis-sample' ),
