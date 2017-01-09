@@ -636,6 +636,11 @@ div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricte
 	border-top: 1px solid #eee;
 }
 
+.woocommerce .widget_shopping_cart .cart_list li.empty,
+.woocommerce.widget_shopping_cart .cart_list li.empty {
+	padding-left: 0;
+}
+
 /* Woo Product Lists
 -------------------------------------------------- */
 
@@ -826,7 +831,7 @@ div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricte
 		background-color: #fff;
 		margin-bottom: 10px;
 	}
-	
+
 	.woocommerce-message .button.wc-forward {
 		margin-bottom: 20px;
 		width: 100%;
