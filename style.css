@@ -10,7 +10,7 @@
 	Tags: black, red, white, one-column, two-columns, three-columns, left-sidebar, right-sidebar, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
 
 	Template: genesis
-	Template Version: 2.2.3
+	Template Version: 2.3.0
 
 	License: GPL-2.0+
 	License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -225,6 +225,11 @@ cite,
 em,
 i {
 	font-style: italic;
+}
+
+mark {
+	background: #ddd;
+	color: #000;
 }
 
 blockquote {
@@ -495,7 +500,7 @@ table {
 	line-height: 2;
 	margin-bottom: 40px;
 	width: 100%;
-	word-break: break-word;
+	word-break: break-all;
 }
 
 tbody {
@@ -1207,8 +1212,8 @@ img.alignright,
 	opacity: 1;
 }
 
-.sub-menu-toggle,
-.menu-toggle {
+.menu-toggle,
+.sub-menu-toggle {
 	display: none;
 	visibility: hidden;
 }
@@ -1594,18 +1599,19 @@ p.entry-meta {
 		margin: 16px auto;
 	}
 
-	.js nav.nav-primary,
-	.js .site-header nav  {
+	/* Genesis Responsive Menus */
+	.genesis-responsive-menu .wrap {
+		padding: 0;
+	}
+
+	.genesis-responsive-menu {
 		display: none;
 		position: relative;
 	}
 
-	.js .site-header nav .wrap {
-		padding: 0;
-	}
-
-	.js nav.pagination {
-		display: block;
+	.genesis-skip-link .skip-link-hidden {
+		display: none;
+		visibility: hidden;
 	}
 
 	.menu-toggle,
@@ -1619,32 +1625,27 @@ p.entry-meta {
 		text-align: center;
 		visibility: visible;
 	}
-	
-	.sub-menu-toggle:hover,
-	.sub-menu-toggle:focus {
+
+	.menu-toggle:focus,
+	.menu-toggle:hover,
+	.sub-menu-toggle:focus,
+	.sub-menu-toggle:hover {
+		background-color: #fff;
+		color: #c3251d;
 		border-width: 0;
 	}
 
 	.menu-toggle {
-		border-top: 1px solid #eee;
 		line-height: 20px;
 		position: relative;
-		right: 0;
 		z-index: 1000;
 		width: 100%;
 	}
 
-	.site-header .menu-toggle {
-		border: 0;
-	}
-
-	.menu-toggle:before,
-	.menu-toggle.activated:before {
+	.menu-toggle::before {
+		font-size: 1.5em;
 		margin-right: 10px;
 		text-rendering: auto;
-		-webkit-transform: translate(0, 0);
-		-ms-transform:     translate(0, 0);
-		transform:         translate(0, 0);
 	}
 
 	.sub-menu-toggle {
@@ -1656,53 +1657,57 @@ p.entry-meta {
 		z-index: 100;
 	}
 
-	.sub-menu-toggle:before {
+	.sub-menu-toggle::before {
 		display: inline-block;
 		text-rendering: auto;
-		-webkit-transform: translate(0, 0);
-		-ms-transform:     translate(0, 0);
-		transform:         translate(0, 0);
+		-webkit-transform: rotate( 0 );
+		-ms-transform:     rotate( 0 );
+		transform:         rotate( 0 );
+		-webkit-transition: transform .25s ease-in-out;
+		-ms-transition:     transform .25s ease-in-out;
+		transition:         transform .25s ease-in-out;
 	}
 
-	.sub-menu-toggle.activated:before {
-		content: "\f142";
+	.sub-menu-toggle.activated::before {
+		-webkit-transform: rotate( 180deg );
+		-ms-transform:     rotate( 180deg );
+		transform:         rotate( 180deg );
 	}
 
-	.js .nav-primary .genesis-nav-menu .menu-item,
-	.js .site-header .genesis-nav-menu .menu-item {
+	.genesis-responsive-menu .genesis-nav-menu .menu-item {
 		display: block;
 		float: none;
-		margin: 1px 0;
 		position: relative;
 		text-align: left;
 	}
 
-	.js .genesis-nav-menu .menu-item:hover {
+	.genesis-responsive-menu .genesis-nav-menu .menu-item:focus,
+	.genesis-responsive-menu .genesis-nav-menu .menu-item:hover {
 		position: relative;
 	}
 
-	.js .nav-primary .genesis-nav-menu .menu-item a,
-	.js .site-header .genesis-nav-menu .menu-item a {
+	.genesis-responsive-menu .genesis-nav-menu .menu-item a {
 		border: none;
-		padding: 12px 0;
+		margin-bottom: 1px;
+		padding: 15px 20px;		
 		width: 100%;
 	}
 
-	.js .genesis-nav-menu .sub-menu {
+	.genesis-responsive-menu .genesis-nav-menu .sub-menu {
 		border: none;
 	}
 
-	.js .genesis-nav-menu .menu-item > a:focus ul.sub-menu,
-	.js .genesis-nav-menu .menu-item > a:focus ul.sub-menu .sub-menu {
+	.genesis-responsive-menu .genesis-nav-menu .menu-item > a:focus ul.sub-menu,
+	.genesis-responsive-menu .genesis-nav-menu .menu-item > a:focus ul.sub-menu .sub-menu {
 		left: 0;
 		margin-left: 0;
 	}
 
-	.js .genesis-nav-menu > .menu-item-has-children > a:after {
+	.genesis-responsive-menu .genesis-nav-menu > .menu-item-has-children > a::after {
 		content: none;
 	}
 
-	.js .genesis-nav-menu .sub-menu {
+	.genesis-responsive-menu .genesis-nav-menu .sub-menu {
 		clear: both;
 		display: none;
 		margin: 0;
@@ -1712,21 +1717,8 @@ p.entry-meta {
 		width: 100%;
 	}
 
-	.js .genesis-nav-menu .sub-menu .sub-menu {
+	.genesis-responsive-menu .genesis-nav-menu .sub-menu .sub-menu {
 		margin: 0;
-	}
-
-	.js nav button:hover,
-	.js .menu-toggle:hover,
-	.js .nav-primary {
-		background-color: #fff;
-		color: #000;
-	}
-
-	.js nav button:focus,
-	.js .menu-toggle:focus {
-		background-color: #fff;
-		color: #c3251d;
 	}
 
 	.footer-widgets-1,
