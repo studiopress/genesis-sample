@@ -1563,7 +1563,7 @@ p.entry-meta {
 	.footer-widgets-2,
 	.footer-widgets-3,
 	.js .genesis-nav-menu .sub-menu a,
-	.js .genesis-nav-menu .sub-menu, 
+	.js .genesis-nav-menu .sub-menu,
 	.sidebar-content-sidebar .content,
 	.sidebar-content-sidebar .content-sidebar-wrap,
 	.sidebar-primary,
@@ -1650,7 +1650,7 @@ p.entry-meta {
 
 	.sub-menu-toggle {
 		float: right;
-		padding: 10px;
+		padding: 13px 10px;
 		position: absolute;
 		right: 0;
 		top: 0;
@@ -1689,7 +1689,7 @@ p.entry-meta {
 	.genesis-responsive-menu .genesis-nav-menu .menu-item a {
 		border: none;
 		margin-bottom: 1px;
-		padding: 15px 20px;		
+		padding: 15px 20px;
 		width: 100%;
 	}
 
