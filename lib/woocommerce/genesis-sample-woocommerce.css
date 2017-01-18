@@ -57,8 +57,8 @@ Loaded on WooCommerce pages */
 /* MS Edge Bug Fix */
 .woocommerce ul.products li.product a {
 	-webkit-transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
-	-ms-transition:     color 0.2s ease-in-out, background 0.2s ease-in-out;
-	transition:         color 0.2s ease-in-out, background 0.2s ease-in-out;
+	-ms-transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
 }
 
 
@@ -93,8 +93,8 @@ Loaded on WooCommerce pages */
 /* MS Edge Bug Fix */
 .woocommerce ul.products li.product a {
 	-webkit-transition: color 0.2s ease-in-out;
-	-ms-transition:     color 0.2s ease-in-out;
-	transition:         color 0.2s ease-in-out;
+	-ms-transition: color 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out;
 }
 
 
@@ -141,7 +141,7 @@ Loaded on WooCommerce pages */
 
 .woocommerce div.product .woocommerce-tabs ul.tabs li a {
 	color: #000;
-	padding: .5em 1em;
+	padding: 0.5em 1em;
 }
 
 .woocommerce div.product .woocommerce-tabs ul.tabs li a:focus,
@@ -456,7 +456,7 @@ Loaded on WooCommerce pages */
 .woocommerce #respond input#submit.alt[disabled]:disabled,
 .woocommerce #respond input#submit.alt[disabled]:disabled:hover {
 	background-color: #eee;
-	color: #000
+	color: #000;
 }
 
 
@@ -495,7 +495,7 @@ Loaded on WooCommerce pages */
 
 .woocommerce-MyAccount-navigation ul li.is-active > a {
 	color: #333;
-	font-weight: bold;
+	font-weight: 700;
 }
 
 .woocommerce-account .woocommerce-MyAccount-navigation {
