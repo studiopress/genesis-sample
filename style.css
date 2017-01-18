@@ -544,12 +544,12 @@ th:first-child {
 .genesis-nav-menu .search input[type="submit"]:focus,
 .widget_search input[type="submit"]:focus {
 	background: #fff;
-	box-shadow: 0 0 2px 2px rgba(0, 0, 0, .6);
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
 	clip: auto !important;
 	color: #333;
 	display: block;
 	font-size: 1em;
-	font-weight: bold;
+	font-weight: 700;
 	height: auto;
 	padding: 15px 23px 14px;
 	text-decoration: none;
@@ -1151,11 +1151,11 @@ img.alignright,
 	left: -9999px;
 	opacity: 0;
 	position: absolute;
-	-webkit-transition: opacity .4s ease-in-out;
-	-moz-transition: opacity .4s ease-in-out;
-	-ms-transition: opacity .4s ease-in-out;
-	-o-transition: opacity .4s ease-in-out;
-	transition: opacity .4s ease-in-out;
+	-webkit-transition: opacity 0.4s ease-in-out;
+	-moz-transition: opacity 0.4s ease-in-out;
+	-ms-transition: opacity 0.4s ease-in-out;
+	-o-transition: opacity 0.4s ease-in-out;
+	transition: opacity 0.4s ease-in-out;
 	width: 200px;
 	z-index: 99;
 }
@@ -1661,9 +1661,9 @@ p.entry-meta {
 		-webkit-transform: rotate(0);
 		-ms-transform: rotate(0);
 		transform: rotate(0);
-		-webkit-transition: transform .25s ease-in-out;
-		-ms-transition: transform .25s ease-in-out;
-		transition: transform .25s ease-in-out;
+		-webkit-transition: transform 0.25s ease-in-out;
+		-ms-transition: transform 0.25s ease-in-out;
+		transition: transform 0.25s ease-in-out;
 	}
 
 	.sub-menu-toggle.activated::before {
@@ -1911,7 +1911,6 @@ p.entry-meta {
 		page-break-inside: avoid;
 		widows: 3;
 	}
-
 
 	img {
 		page-break-after: avoid;
