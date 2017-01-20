@@ -9,11 +9,6 @@ Loaded on WooCommerce pages */
 	max-width: 1280px;
 }
 
-.woocommerce .site-header,
-.woocommerce-page .site-header {
-	z-index: 1012; /* Show above WooCommerce processing div */
-}
-
 .woocommerce .content {
 	background-color: #fff;
 	margin-bottom: 40px;
@@ -54,13 +49,6 @@ Loaded on WooCommerce pages */
 	display: block;
 }
 
-/* MS Edge Bug Fix */
-.woocommerce ul.products li.product a {
-	-webkit-transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
-	-ms-transition:     color 0.2s ease-in-out, background 0.2s ease-in-out;
-	transition:         color 0.2s ease-in-out, background 0.2s ease-in-out;
-}
-
 
 /* WooCommerce Shop Page
 ---------------------------------------------------------------------------------------------------- */
@@ -92,9 +80,9 @@ Loaded on WooCommerce pages */
 
 /* MS Edge Bug Fix */
 .woocommerce ul.products li.product a {
-	-webkit-transition: color 0.2s ease-in-out;
-	-ms-transition:     color 0.2s ease-in-out;
-	transition:         color 0.2s ease-in-out;
+	-webkit-transition: color 0.1s ease-in-out, background 0.1s ease-in-out;
+	-ms-transition:     color 0.1s ease-in-out, background 0.1s ease-in-out;
+	transition:         color 0.1s ease-in-out, background 0.1s ease-in-out;
 }
 
 
@@ -468,6 +456,10 @@ Loaded on WooCommerce pages */
 	font-size: 2.6rem;
 }
 
+.woocommerce-account .woocommerce-Address {
+	margin-bottom: 20px;
+}
+
 .woocommerce-account table.order_details th.product-total {
 	min-width: 110px;
 }
@@ -636,6 +628,11 @@ div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricte
 	border-top: 1px solid #eee;
 }
 
+.woocommerce .widget_shopping_cart .buttons a,
+.woocommerce.widget_shopping_cart .buttons a {
+	margin-bottom: 5px;
+}
+
 .woocommerce .widget_shopping_cart .cart_list li.empty,
 .woocommerce.widget_shopping_cart .cart_list li.empty {
 	padding-left: 0;
@@ -673,7 +670,8 @@ div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricte
 }
 
 .woocommerce .widget_layered_nav ul li.chosen a::before,
-.woocommerce .widget_layered_nav_filters ul li a::before {
+.woocommerce .widget_layered_nav_filters ul li a::before,
+.woocommerce .widget_rating_filter ul li.chosen a::before {
 	color: #c3251d;
 }
 
@@ -760,10 +758,6 @@ div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricte
 
 	.woocommerce .content {
 		padding: 30px;
-	}
-
-	.woocommerce-account .woocommerce-Address {
-		margin-bottom: 20px;
 	}
 
 	.woocommerce div.product .woocommerce-tabs ul.tabs {

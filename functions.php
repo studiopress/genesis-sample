@@ -28,15 +28,14 @@ require_once( get_stylesheet_directory() . '/lib/customize.php' );
 // Include Customizer CSS.
 include_once( get_stylesheet_directory() . '/lib/output.php' );
 
-if ( class_exists( 'WooCommerce' ) ) {
+// Add WooCommerce support.
+include_once( get_stylesheet_directory() . '/lib/woocommerce/woocommerce-setup.php' );
 
-	// Add the required WooCommerce functions.
-	include_once( get_stylesheet_directory() . '/lib/woocommerce/woocommerce-setup.php' );
+// Add the required WooCommerce styles and Customizer CSS.
+include_once( get_stylesheet_directory() . '/lib/woocommerce/woocommerce-output.php' );
 
-	// Add the required WooCommerce custom CSS.
-	include_once( get_stylesheet_directory() . '/lib/woocommerce/woocommerce-output.php' );
-
-}
+// Add the Genesis Connect WooCommerce notice.
+include_once( get_stylesheet_directory() . '/lib/woocommerce/woocommerce-notice.php' );
 
 // Child theme (do not remove).
 define( 'CHILD_THEME_NAME', 'Genesis Sample' );
@@ -51,7 +50,7 @@ function genesis_sample_enqueue_scripts_styles() {
 	wp_enqueue_style( 'dashicons' );
 
 	$suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
-	wp_enqueue_script( 'genesis-sample-responsive-menu', get_bloginfo( 'stylesheet_directory' ) . '/js/responsive-menus' . $suffix . '.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
+	wp_enqueue_script( 'genesis-sample-responsive-menu', get_stylesheet_directory_uri() . "/js/responsive-menus{$suffix}.js", array( 'jquery' ), CHILD_THEME_VERSION, true );
 	wp_localize_script(
 		'genesis-sample-responsive-menu',
 		'genesis_responsive_menu',

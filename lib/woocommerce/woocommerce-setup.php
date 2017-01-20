@@ -10,34 +10,6 @@
  * @link    http://www.studiopress.com/
  */
 
-/**
- * Add theme support for WooCommerce.
- *
- * @since 2.3.0
- */
-add_theme_support( 'genesis-connect-woocommerce' );
-
-add_filter( 'woocommerce_enqueue_styles', 'genesis_sample_woocommerce_styles' );
-/**
- * Enqueue the theme's custom WooCommerce styles to the WooCommerce plugin.
- *
- * @since 2.3.0
- *
- * @return array Required values for the Genesis Sample Theme's WooCommerce stylesheet.
- */
-function genesis_sample_woocommerce_styles( $enqueue_styles ) {
-
-	$enqueue_styles['genesis-sample-woocommerce-styles'] = array(
-		'src'     => get_stylesheet_directory_uri() . '/lib/woocommerce/genesis-sample-woocommerce.css',
-		'deps'    => '',
-		'version' => CHILD_THEME_VERSION,
-		'media'   => 'screen'
-	);
-
-	return $enqueue_styles;
-
-}
-
 add_action( 'wp_enqueue_scripts', 'genesis_sample_products_match_height', 99 );
 /**
  * Print an inline script to the footer to keep products the same height.
@@ -46,8 +18,10 @@ add_action( 'wp_enqueue_scripts', 'genesis_sample_products_match_height', 99 );
  */
 function genesis_sample_products_match_height() {
 
-	if ( ! is_shop() && ! is_product_category() && ! is_product_tag() )
+	// If Woocommerce is not activated, or a product page isn't showing, exit early.
+	if ( ! class_exists( 'WooCommerce' ) || ! is_shop() && ! is_product_category() && ! is_product_tag() ) {
 		return;
+	}
 
 	wp_enqueue_script( 'genesis-sample-match-height', get_stylesheet_directory_uri() . '/js/jquery.matchHeight.min.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
 	wp_add_inline_script( 'genesis-sample-match-height', "jQuery(document).ready( function() { jQuery( '.product .woocommerce-LoopProduct-link').matchHeight(); });" );
@@ -115,26 +89,52 @@ function genesis_sample_woocommerce_pagination( $args ) {
 
 	$args['prev_text'] = sprintf( '&laquo; %s', __( 'Previous Page', 'genesis-sample' ) );
 	$args['next_text'] = sprintf( '%s &raquo;', __( 'Next Page', 'genesis-sample' ) );
-	
+
 	return $args;
 
 }
 
-add_action( 'after_switch_theme', 'genesis_sample_woocommerce_image_dimensions', 1 );
+add_action( 'after_switch_theme', 'genesis_sample_woocommerce_image_dimensions_after_theme_setup', 1 );
 /**
-* Define WooCommerce image sizes on activation.
+* Define WooCommerce image sizes on theme activation.
 *
-* @since 1.0.0
-*
-* @return array Settings to be used for image dimensions.
+* @since 2.3.0
 */
-function genesis_sample_woocommerce_image_dimensions() {
+function genesis_sample_woocommerce_image_dimensions_after_theme_setup() {
 
 	global $pagenow;
 
-	if ( ! isset( $_GET['activated'] ) || $pagenow != 'themes.php' ) {
+	if ( ! isset( $_GET['activated'] ) || $pagenow != 'themes.php' || ! class_exists( 'WooCommerce' ) ) {
 		return;
 	}
+
+	genesis_sample_update_woocommerce_image_dimensions();
+
+}
+
+add_action( 'activated_plugin', 'genesis_sample_woocommerce_image_dimensions_after_woo_activation', 10, 2 );
+/**
+ * Define the WooCommerce image sizes on WooCommerce activation.
+ *
+ * @since 2.3.0
+ */
+function genesis_sample_woocommerce_image_dimensions_after_woo_activation( $plugin ) {
+
+	// Check to see if WooCommerce is being activated.
+	if ( $plugin !== 'woocommerce/woocommerce.php' ) {
+		return;
+	}
+
+	genesis_sample_update_woocommerce_image_dimensions();
+
+}
+
+/**
+ * Update WooCommerce image dimensions.
+ *
+ * @since 2.3.0
+ */
+function genesis_sample_update_woocommerce_image_dimensions() {
 
 	$catalog = array(
 		'width'  => '500', // px
