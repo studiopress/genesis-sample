@@ -675,6 +675,17 @@ div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricte
 	color: #c3251d;
 }
 
+.woocommerce .widget_price_filter .ui-slider .ui-slider-handle,
+.woocommerce.widget_price_filter .ui-slider .ui-slider-handle {
+	top: -.28em;
+}
+
+.woocommerce .widget_price_filter .price_slider_amount .button,
+.woocommerce.widget_price_filter .price_slider_amount .button {
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+
 /* Woo Active Filters
 -------------------------------------------------- */
 
