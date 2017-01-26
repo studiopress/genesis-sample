@@ -12,7 +12,6 @@
 
 /**
  * Get default link color for Customizer.
- *
  * Abstracted here since at least two functions use it.
  *
  * @since 2.2.3
@@ -25,7 +24,6 @@ function genesis_sample_customizer_get_default_link_color() {
 
 /**
  * Get default accent color for Customizer.
- *
  * Abstracted here since at least two functions use it.
  *
  * @since 2.2.3
@@ -55,7 +53,7 @@ function genesis_sample_color_contrast( $color ) {
 	return ( $luminosity > 128 ) ? '#333333' : '#ffffff';
 
 }
-	
+
 /**
  * Calculate the color brightness.
  *
@@ -72,7 +70,7 @@ function genesis_sample_color_brightness( $color, $change ) {
 	$blue  = hexdec( substr( $hexcolor, 4, 2 ) );
 
 	$red   = max( 0, min( 255, $red + $change ) );
-	$green = max( 0, min( 255, $green + $change ) );  
+	$green = max( 0, min( 255, $green + $change ) );
 	$blue  = max( 0, min( 255, $blue + $change ) );
 
 	return '#'.dechex( $red ).dechex( $green ).dechex( $blue );
