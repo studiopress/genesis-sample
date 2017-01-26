@@ -80,9 +80,7 @@ add_action( 'wp_ajax_genesis_sample_dismiss_woocommerce_notice', 'genesis_sample
  * @since 2.3.0
  */
 function genesis_sample_dismiss_woocommerce_notice() {
-
 	update_user_option( get_current_user_id(), 'genesis_sample_woocommerce_message_dismissed', 1 );
-
 }
 
 add_action( 'admin_enqueue_scripts', 'genesis_sample_notice_script' );
@@ -92,9 +90,7 @@ add_action( 'admin_enqueue_scripts', 'genesis_sample_notice_script' );
  * @since 2.3.0
  */
 function genesis_sample_notice_script() {
-
 	wp_enqueue_script( 'genesis_sample_notice_script', get_stylesheet_directory_uri() . '/lib/woocommerce/js/notice-update.js', array( 'jquery' ), '1.0', true  );
-
 }
 
 add_action( 'switch_theme', 'genesis_sample_reset_woocommerce_notice', 10, 2 );

@@ -134,9 +134,7 @@ function genesis_sample_secondary_menu_args( $args ) {
 // Modify size of the Gravatar in the author box.
 add_filter( 'genesis_author_box_gravatar_size', 'genesis_sample_author_box_gravatar' );
 function genesis_sample_author_box_gravatar( $size ) {
-
 	return 90;
-
 }
 
 // Modify size of the Gravatar in the entry comments.

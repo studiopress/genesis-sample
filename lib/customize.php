@@ -18,9 +18,7 @@ add_action( 'customize_register', 'genesis_sample_customizer_register' );
  *
  * @param WP_Customize_Manager $wp_customize Customizer object.
  */
-function genesis_sample_customizer_register() {
-
-	global $wp_customize;
+function genesis_sample_customizer_register( $wp_customize ) {
 
 	$wp_customize->add_setting(
 		'genesis_sample_link_color',
