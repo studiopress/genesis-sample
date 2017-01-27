@@ -75,7 +75,7 @@ function genesis_sample_responsive_menu_settings() {
 			'others'  => array(),
 		),
 	);
-
+	
 	return $settings;
 
 }

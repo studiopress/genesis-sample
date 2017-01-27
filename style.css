@@ -5,7 +5,7 @@
 	Author: StudioPress
 	Author URI: http://www.studiopress.com/
 
-	Version: 2.2.4
+	Version: 2.3.0
 
 	Tags: black, red, white, one-column, two-columns, three-columns, left-sidebar, right-sidebar, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
 
@@ -150,6 +150,7 @@ html {
 
 /* Chrome fix */
 body > div {
+	font-size: 20px;
 	font-size: 2rem;
 }
 
@@ -530,33 +531,34 @@ th:first-child {
 /* ## Screen Reader Text
 --------------------------------------------- */
 
+.screen-reader-shortcut,
 .screen-reader-text,
-.screen-reader-text span,
-.screen-reader-shortcut {
-	position: absolute !important;
+.screen-reader-text span {
+	border: 0;
 	clip: rect(0, 0, 0, 0);
 	height: 1px;
-	width: 1px;
-	border: 0;
 	overflow: hidden;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important;
 }
 
 .screen-reader-text:focus,
 .screen-reader-shortcut:focus,
 .genesis-nav-menu .search input[type="submit"]:focus,
 .widget_search input[type="submit"]:focus  {
+	background: #fff;
+	box-shadow: 0 0 2px 2px rgba(0,0,0,.6);
 	clip: auto !important;
-	height: auto;
-	width: auto;
+	color: #333;
 	display: block;
 	font-size: 1em;
 	font-weight: bold;
+	height: auto;
 	padding: 15px 23px 14px;
-	color: #333;
-	background: #fff;
-	z-index: 100000; /* Above WP toolbar. */
 	text-decoration: none;
-	box-shadow: 0 0 2px 2px rgba(0,0,0,.6);
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
 }
 
 .more-link {
@@ -1021,8 +1023,8 @@ img.alignright,
 
 .genesis-skip-link li {
 	height: 0;
-	width: 0;
 	list-style: none;
+	width: 0;
 }
 
 /* Display outline on focus */
@@ -1134,9 +1136,9 @@ img.alignright,
 
 .genesis-nav-menu a {
 	color: #333;
-	text-decoration: none;
 	display: block;
 	padding: 32px 20px;
+	text-decoration: none;
 }
 
 .genesis-nav-menu a:focus,
@@ -1425,9 +1427,9 @@ p.entry-meta {
 
 .footer-widgets {
 	background-color: #fff;
+	clear: both;
 	font-size: 18px;
 	font-size: 1.8rem;
-	clear: both;
 	padding: 60px 0;
 }
 
@@ -1562,8 +1564,8 @@ p.entry-meta {
 	.footer-widgets-1,
 	.footer-widgets-2,
 	.footer-widgets-3,
-	.js .genesis-nav-menu .sub-menu a,
-	.js .genesis-nav-menu .sub-menu,
+	.genesis-responsive-menu .genesis-nav-menu .sub-menu,
+	.genesis-responsive-menu .genesis-nav-menu .sub-menu a,
 	.sidebar-content-sidebar .content,
 	.sidebar-content-sidebar .content-sidebar-wrap,
 	.sidebar-primary,
@@ -1599,7 +1601,8 @@ p.entry-meta {
 		margin: 16px auto;
 	}
 
-	/* Genesis Responsive Menus */
+	/* ### Genesis Responsive Menus */
+
 	.genesis-responsive-menu .wrap {
 		padding: 0;
 	}
@@ -1616,8 +1619,8 @@ p.entry-meta {
 
 	.menu-toggle,
 	.sub-menu-toggle {
-		border-width: 0;
 		background-color: #fff;
+		border-width: 0;
 		color: #333;
 		display: block;
 		margin: 0 auto;
@@ -1631,15 +1634,15 @@ p.entry-meta {
 	.sub-menu-toggle:focus,
 	.sub-menu-toggle:hover {
 		background-color: #fff;
-		color: #c3251d;
 		border-width: 0;
+		color: #c3251d;
 	}
 
 	.menu-toggle {
 		line-height: 22px;
 		position: relative;
-		z-index: 1000;
 		width: 100%;
+		z-index: 1000;
 	}
 
 	.menu-toggle::before {
@@ -1734,11 +1737,8 @@ p.entry-meta {
 
 @media only screen and (max-width: 860px) {
 
+	body,
 	body > div {
-		font-size: 1.8rem;
-	}
-
-	body {
 		font-size: 18px;
 		font-size: 1.8rem;
 	}
