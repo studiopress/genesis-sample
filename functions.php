@@ -69,13 +69,13 @@ function genesis_sample_responsive_menu_settings() {
 		'subMenuIconsClass' => 'dashicons-before dashicons-arrow-down-alt2',
 		'menuClasses'       => array(
 			'combine' => array(
-				'.nav-header',
 				'.nav-primary',
+				'.nav-header',
 			),
 			'others'  => array(),
 		),
 	);
-	
+
 	return $settings;
 
 }

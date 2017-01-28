@@ -1645,6 +1645,12 @@ p.entry-meta {
 		z-index: 1000;
 	}
 
+	.menu-toggle,
+	.menu-toggle:focus,
+	.menu-toggle:hover {
+		border-top: 1px solid #eee;
+	}
+
 	.menu-toggle::before {
 		font-size: 1.5em;
 		margin-right: 10px;
