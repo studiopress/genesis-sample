@@ -17,7 +17,10 @@ include_once( get_template_directory() . '/lib/init.php' );
 include_once( get_stylesheet_directory() . '/lib/theme-defaults.php' );
 
 // Set Localization (do not remove).
-load_child_theme_textdomain( 'genesis-sample', apply_filters( 'child_theme_textdomain', get_stylesheet_directory() . '/languages', 'genesis-sample' ) );
+add_action( 'after_setup_theme', 'genesis_sample_localization_setup' );
+function genesis_sample_localization_setup(){
+	load_child_theme_textdomain( 'genesis-sample', get_stylesheet_directory() . '/languages' );
+}
 
 // Add the helper functions.
 include_once( get_stylesheet_directory() . '/lib/helper-functions.php' );
@@ -111,7 +114,7 @@ add_theme_support( 'genesis-footer-widgets', 3 );
 add_image_size( 'featured-image', 720, 400, TRUE );
 
 // Rename primary and secondary navigation menus.
-add_theme_support( 'genesis-menus' , array( 'primary' => __( 'After Header Menu', 'genesis-sample' ), 'secondary' => __( 'Footer Menu', 'genesis-sample' ) ) );
+add_theme_support( 'genesis-menus', array( 'primary' => __( 'After Header Menu', 'genesis-sample' ), 'secondary' => __( 'Footer Menu', 'genesis-sample' ) ) );
 
 // Reposition the secondary navigation menu.
 remove_action( 'genesis_after_header', 'genesis_do_subnav' );
