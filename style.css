@@ -451,7 +451,7 @@ input[type="reset"]:hover,
 input[type="submit"]:focus,
 input[type="submit"]:hover,
 .button:focus,
-.button:hover  {
+.button:hover {
 	background-color: #c3251d;
 	color: #fff;
 }
