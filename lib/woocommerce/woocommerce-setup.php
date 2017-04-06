@@ -10,6 +10,15 @@
  * @link    http://www.studiopress.com/
  */
 
+// Add product gallery support.
+if ( class_exists( 'WooCommerce' ) ) {
+
+	add_theme_support( 'wc-product-gallery-lightbox' );
+	add_theme_support( 'wc-product-gallery-slider' );
+	add_theme_support( 'wc-product-gallery-zoom' );
+
+}
+
 add_action( 'wp_enqueue_scripts', 'genesis_sample_products_match_height', 99 );
 /**
  * Print an inline script to the footer to keep products the same height.

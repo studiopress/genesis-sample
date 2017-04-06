@@ -1,5 +1,8 @@
 # Genesis Sample Theme Changelog
 
+## [Unrelased]
+* Fix product gallery bug in WooCommerce 3.0 update
+
 ## [2.3.0] - 2017-01-30
 * Add WooCommerce support to the theme and customizer
 * Add an updated and improved responsive menu script
@@ -27,6 +30,7 @@
 * Set localization
 * Update XML file
 
+[Unreleased]: https://github.com/copyblogger/genesis-sample/tree/develop/
 [2.3.0]: https://github.com/copyblogger/genesis-sample/compare/2.2.4...2.3.0
 [2.2.4]: https://github.com/copyblogger/genesis-sample/compare/2.2.3...2.2.4
 [2.2.3]: https://github.com/copyblogger/genesis-sample/compare/014deb3689323b7bbd4ddbfff4f5f9279a38f741...2.2.3
