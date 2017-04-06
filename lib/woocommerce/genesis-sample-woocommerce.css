@@ -50,6 +50,18 @@ Loaded on WooCommerce pages */
 }
 
 
+/* WooCommerce Product Gallery
+---------------------------------------------------------------------------------------------------- */
+
+.woocommerce .woocommerce-product-gallery__wrapper {
+  margin: 0;
+}
+
+.woocommerce .woocommerce-product-gallery__trigger {
+  border-width: 0;
+}
+
+
 /* WooCommerce Shop Page
 ---------------------------------------------------------------------------------------------------- */
 
