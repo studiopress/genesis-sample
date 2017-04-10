@@ -61,6 +61,10 @@ Loaded on WooCommerce pages */
   border-width: 0;
 }
 
+.woocommerce .woocommerce-product-gallery {
+	overflow: hidden;
+}
+
 
 /* WooCommerce Shop Page
 ---------------------------------------------------------------------------------------------------- */
