@@ -544,8 +544,8 @@ Loaded on WooCommerce pages */
 	width: 100%;
 }
 
-.woocommerce table.my_account_orders .button ~ .button {
-	margin-left: 5px;
+.woocommerce table.my_account_orders .button {
+	margin: 5px;
 }
 
 
