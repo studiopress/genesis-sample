@@ -65,6 +65,13 @@ Loaded on WooCommerce pages */
 	overflow: hidden;
 }
 
+.woocommerce .woocommerce-product-gallery .flex-control-nav {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 
 /* WooCommerce Shop Page
 ---------------------------------------------------------------------------------------------------- */
@@ -535,6 +542,10 @@ Loaded on WooCommerce pages */
 .content-sidebar.woocommerce-account .woocommerce-MyAccount-content,
 .sidebar-content.woocommerce-account .woocommerce-MyAccount-content {
 	width: 100%;
+}
+
+.woocommerce table.my_account_orders .button ~ .button {
+	margin-left: 5px;
 }
 
 
