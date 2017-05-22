@@ -2,6 +2,7 @@
 
 ## [Unrelased]
 * Fix product gallery bug in WooCommerce 3.0 update
+* Updated responsive menu to 1.1.3
 
 ## [2.3.0] - 2017-01-30
 * Add WooCommerce support to the theme and customizer

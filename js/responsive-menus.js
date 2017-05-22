@@ -3,20 +3,19 @@
  *
  * @author StudioPress
  * @link https://github.com/copyblogger/responsive-menus
- * @version 1.1.2
+ * @version 1.1.3
  * @license GPL-2.0+
  */
-
-var genesisMenuParams      = typeof genesis_responsive_menu === 'undefined' ? '' : genesis_responsive_menu,
-	genesisMenusUnchecked  = genesisMenuParams.menuClasses,
-	genesisMenus           = {},
-	menusToCombine         = [];
 
 ( function ( document, $, undefined ) {
 
 	'use strict';
 
-	// Make our menus unique if there's more than one instance on the page.
+	var genesisMenuParams      = typeof genesis_responsive_menu === 'undefined' ? '' : genesis_responsive_menu,
+		genesisMenusUnchecked  = genesisMenuParams.menuClasses,
+		genesisMenus           = {},
+		menusToCombine         = [];
+
 	/**
 	 * Validate the menus passed by the theme with what's being loaded on the page,
 	 * and pass the new and accurate information to our new data.
@@ -97,15 +96,13 @@ var genesisMenuParams      = typeof genesis_responsive_menu === 'undefined' ? ''
 				menu : $( '<button />', {
 					'class' : mainMenuButtonClass,
 					'aria-expanded' : false,
-					'aria-pressed' : false,
-					'role' : 'button'
+					'aria-pressed' : false
 					} )
 					.append( genesisMenuParams.mainMenu ),
 				submenu : $( '<button />', {
 					'class' : subMenuButtonClass,
 					'aria-expanded' : false,
-					'aria-pressed' : false,
-					'role' : 'button'
+					'aria-pressed' : false
 					} )
 					.append( $( '<span />', {
 						'class' : 'screen-reader-text',
@@ -118,7 +115,7 @@ var genesisMenuParams      = typeof genesis_responsive_menu === 'undefined' ? ''
 
 		// Add the main nav button to the primary menu, or exit the plugin.
 		_addMenuButtons( toggleButtons );
-		
+
 		// Setup additional classes.
 		$( '.' + mainMenuButtonClass ).addClass( menuIconClass );
 		$( '.' + subMenuButtonClass ).addClass( subMenuIconClass );
@@ -136,11 +133,11 @@ var genesisMenuParams      = typeof genesis_responsive_menu === 'undefined' ? ''
 		// Apply sub menu toggle to each sub-menu found in the menuList.
 		$( _getMenuSelectorString( genesisMenus ) ).find( '.sub-menu' ).before( toggleButtons.submenu );
 
-		
+
 		if ( menusToCombine !== null ) {
 
 			var menusToToggle = genesisMenus.others.concat( menusToCombine[0] );
-		 	
+
 		 	// Only add menu button the primary menu and navs NOT in the combine variable.
 		 	$( _getMenuSelectorString( menusToToggle ) ).before( toggleButtons.menu );
 
@@ -185,13 +182,13 @@ var genesisMenuParams      = typeof genesis_responsive_menu === 'undefined' ? ''
 
 		$this.attr( 'id', 'genesis-mobile-' + $( nav ).attr( id ).match( /nav-\w*\b/ ) );
 	}
-	
+
 	/**
 	 * Combine our menus if the mobile menu is visible.
 	 * @params buttons
 	 */
 	function _combineMenus( buttons ){
-		
+
 		// Exit early if there are no menus to combine.
 		if ( menusToCombine == null ) {
 			return;
@@ -200,7 +197,7 @@ var genesisMenuParams      = typeof genesis_responsive_menu === 'undefined' ? ''
 		// Split up the menus to combine based on order of appearance in the array.
 		var primaryMenu   = menusToCombine[0],
 			combinedMenus = $( menusToCombine ).filter( function(index) { if ( index > 0 ) { return index; } });
-		
+
 		// If the responsive menu is active, append items in 'combinedMenus' object to the 'primaryMenu' object.
 		if ( 'none' !== _getDisplayValue( buttons ) ) {
 
@@ -215,7 +212,7 @@ var genesisMenuParams      = typeof genesis_responsive_menu === 'undefined' ? ''
 			$.each( combinedMenus, function( key, value ) {
 				$( '.moved-item-' + value.replace( '.','' ) ).appendTo( value + ' ul.genesis-nav-menu' ).removeClass( 'moved-item-' + value.replace( '.','' ) );
 			});
-			
+
 		}
 
 	}
@@ -284,7 +281,7 @@ var genesisMenuParams      = typeof genesis_responsive_menu === 'undefined' ? ''
 		}
 
 		$.each( menuToggleList, function ( key, value ) {
-			
+
 			var newValue  = value.replace( '.', '' ),
 				startLink = 'genesis-' + newValue,
 				endLink   = 'genesis-mobile-' + newValue;
@@ -326,8 +323,8 @@ var genesisMenuParams      = typeof genesis_responsive_menu === 'undefined' ? ''
 			.removeClass( 'activated' )
 			.attr( 'aria-expanded', false )
 			.attr( 'aria-pressed', false );
-		
-		$( '.' + responsiveMenuClass + ', ' + responsiveMenuClass + ' .sub-menu' )
+
+		$( '.' + responsiveMenuClass + ', .' + responsiveMenuClass + ' .sub-menu' )
 			.attr( 'style', '' );
 	}
 
@@ -407,7 +404,7 @@ var genesisMenuParams      = typeof genesis_responsive_menu === 'undefined' ? ''
 		if ( _getAllMenusArray() !== null ) {
 
 			genesisMenu.init();
-		
+
 		}
 
 	});
