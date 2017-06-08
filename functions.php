@@ -66,11 +66,11 @@ function genesis_sample_enqueue_scripts_styles() {
 function genesis_sample_responsive_menu_settings() {
 
 	$settings = array(
-		'mainMenu'          => __( 'Menu', 'genesis-sample' ),
-		'menuIconClass'     => 'dashicons-before dashicons-menu',
-		'subMenu'           => __( 'Submenu', 'genesis-sample' ),
-		'subMenuIconsClass' => 'dashicons-before dashicons-arrow-down-alt2',
-		'menuClasses'       => array(
+		'mainMenu'         => __( 'Menu', 'genesis-sample' ),
+		'menuIconClass'    => 'dashicons-before dashicons-menu',
+		'subMenu'          => __( 'Submenu', 'genesis-sample' ),
+		'subMenuIconClass' => 'dashicons-before dashicons-arrow-down-alt2',
+		'menuClasses'      => array(
 			'combine' => array(
 				'.nav-primary',
 				'.nav-header',
