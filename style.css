@@ -46,6 +46,7 @@
 	- Featured Content
 - Plugins
 	- Genesis eNews Extended
+	- Genesis Simple FAQ
 	- Jetpack
 - Skip Links
 - Site Header
@@ -195,7 +196,7 @@ a:hover {
 }
 
 p {
-	margin: 0 0 28px;
+	margin: 0 0 30px;
 	padding: 0;
 }
 
@@ -323,7 +324,7 @@ figure {
 
 .gallery-item {
 	float: left;
-	margin: 0 0 28px;
+	margin: 0 0 30px;
 	text-align: center;
 }
 
@@ -1007,6 +1008,33 @@ img.alignright,
 	margin-top: 24px;
 }
 
+/* Genesis Simple FAQ
+--------------------------------------------- */
+
+.gs-faq__question {
+	background: transparent;
+	border-bottom: 1px solid #eee;
+	color: #333;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.gs-faq__question:focus,
+.gs-faq__question:hover {
+	background: transparent;
+	color: #c3251d;
+}
+
+.gs-faq__question::after {
+	content: "\f132";
+	font-family: "dashicons";
+	float: right;
+}
+
+.gs-faq__question.gs-faq--expanded::after {
+	content: "\f460";
+}
+
 /* Jetpack
 --------------------------------------------- */
 
@@ -1262,7 +1290,7 @@ img.alignright,
 
 .entry-content ol,
 .entry-content ul {
-	margin-bottom: 28px;
+	margin-bottom: 30px;
 	margin-left: 40px;
 }
 
