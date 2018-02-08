@@ -7,7 +7,7 @@
  * @package Genesis Sample
  * @author  StudioPress
  * @license GPL-2.0+
- * @link    http://www.studiopress.com/
+ * @link    https://www.studiopress.com/
  */
 
 add_action( 'wp_enqueue_scripts', 'genesis_sample_css' );
@@ -59,12 +59,10 @@ function genesis_sample_css() {
 		input[type="reset"]:hover,
 		input[type="submit"]:focus,
 		input[type="submit"]:hover,
-		.archive-pagination li a:focus,
-		.archive-pagination li a:hover,
-		.archive-pagination .active a,
 		.button:focus,
 		.button:hover,
-		.sidebar .enews-widget input[type="submit"] {
+		.genesis-nav-menu > .highlight > a:hover,
+		.genesis-nav-menu > .highlight > a:focus {
 			background-color: %s;
 			color: %s;
 		}

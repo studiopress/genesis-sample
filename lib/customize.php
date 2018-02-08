@@ -7,7 +7,7 @@
  * @package Genesis Sample
  * @author  StudioPress
  * @license GPL-2.0+
- * @link    http://www.studiopress.com/
+ * @link    https://www.studiopress.com/
  */
 
 add_action( 'customize_register', 'genesis_sample_customizer_register' );

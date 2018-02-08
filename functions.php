@@ -7,7 +7,7 @@
  * @package Genesis Sample
  * @author  StudioPress
  * @license GPL-2.0+
- * @link    http://www.studiopress.com/
+ * @link    https://www.studiopress.com/
  */
 
 // Start the engine.
@@ -42,14 +42,14 @@ include_once( get_stylesheet_directory() . '/lib/woocommerce/woocommerce-notice.
 
 // Child theme (do not remove).
 define( 'CHILD_THEME_NAME', 'Genesis Sample' );
-define( 'CHILD_THEME_URL', 'http://www.studiopress.com/' );
-define( 'CHILD_THEME_VERSION', '2.3.1' );
+define( 'CHILD_THEME_URL', 'https://www.studiopress.com/' );
+define( 'CHILD_THEME_VERSION', '2.6.0' );
 
 // Enqueue Scripts and Styles.
 add_action( 'wp_enqueue_scripts', 'genesis_sample_enqueue_scripts_styles' );
 function genesis_sample_enqueue_scripts_styles() {
 
-	wp_enqueue_style( 'genesis-sample-fonts', '//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700', array(), CHILD_THEME_VERSION );
+	wp_enqueue_style( 'genesis-sample-fonts', '//fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700', array(), CHILD_THEME_VERSION );
 	wp_enqueue_style( 'dashicons' );
 
 	$suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
@@ -101,20 +101,33 @@ add_theme_support( 'custom-header', array(
 	'flex-height'     => true,
 ) );
 
-// Add support for custom background.
-add_theme_support( 'custom-background' );
-
 // Add support for after entry widget.
 add_theme_support( 'genesis-after-entry-widget-area' );
 
 // Add support for 3-column footer widgets.
 add_theme_support( 'genesis-footer-widgets', 3 );
 
-// Add Image Sizes.
-add_image_size( 'featured-image', 720, 400, TRUE );
+// Remove header right widget area.
+unregister_sidebar( 'header-right' );
+
+// Remove secondary sidebar.
+unregister_sidebar( 'sidebar-alt' );
+
+// Remove site layouts.
+genesis_unregister_layout( 'content-sidebar-sidebar' );
+genesis_unregister_layout( 'sidebar-content-sidebar' );
+genesis_unregister_layout( 'sidebar-sidebar-content' );
+
+// Remove output of primary navigation right extras.
+remove_filter( 'genesis_nav_items', 'genesis_nav_right', 10, 2 );
+remove_filter( 'wp_nav_menu_items', 'genesis_nav_right', 10, 2 );
 
 // Rename primary and secondary navigation menus.
-add_theme_support( 'genesis-menus', array( 'primary' => __( 'After Header Menu', 'genesis-sample' ), 'secondary' => __( 'Footer Menu', 'genesis-sample' ) ) );
+add_theme_support( 'genesis-menus', array( 'primary' => __( 'Header Menu', 'genesis-sample' ), 'secondary' => __( 'Footer Menu', 'genesis-sample' ) ) );
+
+// Reposition primary navigation menu.
+remove_action( 'genesis_after_header', 'genesis_do_nav' );
+add_action( 'genesis_header', 'genesis_do_nav', 12 );
 
 // Reposition the secondary navigation menu.
 remove_action( 'genesis_after_header', 'genesis_do_subnav' );
