@@ -13,4 +13,4 @@ Github project link: https://github.com/copyblogger/genesis-sample/
 
 ## Theme Support
 
-Please visit http://my.studiopress.com/help/ for theme support.
+Please visit https://my.studiopress.com/help/ for theme support.
