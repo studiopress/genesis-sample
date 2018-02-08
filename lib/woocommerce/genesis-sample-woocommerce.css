@@ -6,13 +6,8 @@ Loaded on WooCommerce pages */
 
 .woocommerce.full-width-content .content,
 .woocommerce-page.full-width-content .content {
-	max-width: 1280px;
-}
-
-.woocommerce .content {
-	background-color: #fff;
-	margin-bottom: 40px;
-	padding: 70px 80px;
+	max-width: 1140px;
+	width: 100%;
 }
 
 .woocommerce .entry.product {
@@ -25,7 +20,7 @@ Loaded on WooCommerce pages */
 }
 
 .woocommerce span.onsale {
-	background-color: #c3251d;
+	background-color: #0073e5;
 	border-radius: 0;
 	line-height: 1.75;
 	min-height: auto;
@@ -98,7 +93,7 @@ Loaded on WooCommerce pages */
 
 .woocommerce ul.products li.product h3:hover,
 .woocommerce ul.products li.product .price {
-	color: #c3251d;
+	color: #0073e5;
 }
 
 /* MS Edge Bug Fix */
@@ -108,13 +103,49 @@ Loaded on WooCommerce pages */
 	transition:         color 0.1s ease-in-out, background 0.1s ease-in-out;
 }
 
+.woocommerce nav.woocommerce-pagination {
+	clear: both;
+	margin: 40px 0;
+}
+
+.woocommerce nav.woocommerce-pagination ul,
+.woocommerce nav.woocommerce-pagination ul li {
+	border: none;
+}
+
+.woocommerce nav.woocommerce-pagination ul li {
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.woocommerce nav.woocommerce-pagination ul li a,
+.woocommerce nav.woocommerce-pagination ul li span {
+	background-color: #f5f5f5;
+	color: #333;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 16px;
+	font-size: 1.6rem;
+	font-weight: 600;
+	line-height: 1.625;
+	padding: 8px 12px;
+	text-decoration: none;
+}
+
+.woocommerce nav.woocommerce-pagination ul li a:focus,
+.woocommerce nav.woocommerce-pagination ul li a:hover,
+.woocommerce nav.woocommerce-pagination ul li span.current {
+	background-color: #333;
+	color: #fff;
+}
+
 
 /* WooCommerce Product
 ---------------------------------------------------------------------------------------------------- */
 
 .woocommerce div.product p.price,
 .woocommerce div.product span.price {
-	color: #c3251d;
+	color: #0073e5;
 	line-height: 1.5;
 }
 
@@ -157,7 +188,7 @@ Loaded on WooCommerce pages */
 
 .woocommerce div.product .woocommerce-tabs ul.tabs li a:focus,
 .woocommerce div.product .woocommerce-tabs ul.tabs li a:hover {
-	color: #c3251d;
+	color: #0073e5;
 }
 
 /* Two Sidebar Layouts */
@@ -339,8 +370,8 @@ Loaded on WooCommerce pages */
 	cursor: pointer;
 	font-size: 16px;
 	font-size: 1.6rem;
-	font-weight: 700;
-	padding: 16px 24px;
+	font-weight: 600;
+	padding: 15px 20px;
 	text-align: center;
 	text-decoration: none;
 	white-space: normal;
@@ -365,7 +396,7 @@ Loaded on WooCommerce pages */
 .woocommerce #respond input#submit:hover,
 .woocommerce #respond input#submit.alt:focus,
 .woocommerce #respond input#submit.alt:hover {
-	background-color: #c3251d;
+	background-color: #0073e5;
 	color: #fff;
 }
 
@@ -569,7 +600,7 @@ Loaded on WooCommerce pages */
 
 .woocommerce .woocommerce-breadcrumb a:focus,
 .woocommerce .woocommerce-breadcrumb a:hover {
-	color: #c3251d;
+	color: #0073e5;
 }
 
 
@@ -603,13 +634,13 @@ Loaded on WooCommerce pages */
 .woocommerce-info,
 .woocommerce-message {
 	background-color: #f5f5f5;
-	border-top-color: #c3251d;
+	border-top-color: #0073e5;
 }
 
 .woocommerce-error::before,
 .woocommerce-info::before,
 .woocommerce-message::before {
-	color: #c3251d;
+	color: #0073e5;
 }
 
 div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricted-content-message {
@@ -693,13 +724,13 @@ div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricte
 
 .woocommerce.widget_price_filter .ui-slider .ui-slider-handle,
 .woocommerce.widget_price_filter .ui-slider .ui-slider-range {
-	background-color: #c3251d;
+	background-color: #0073e5;
 }
 
 .woocommerce .widget_layered_nav ul li.chosen a::before,
 .woocommerce .widget_layered_nav_filters ul li a::before,
 .woocommerce .widget_rating_filter ul li.chosen a::before {
-	color: #c3251d;
+	color: #0073e5;
 }
 
 .woocommerce .widget_price_filter .ui-slider .ui-slider-handle,
