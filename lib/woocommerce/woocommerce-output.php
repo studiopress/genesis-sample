@@ -7,7 +7,7 @@
  * @package Genesis Sample
  * @author  StudioPress
  * @license GPL-2.0+
- * @link    http://www.studiopress.com/
+ * @link    https://www.studiopress.com/
  */
 
 add_filter( 'woocommerce_enqueue_styles', 'genesis_sample_woocommerce_styles' );
