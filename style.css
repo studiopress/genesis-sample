@@ -1094,15 +1094,6 @@ img.alignright,
 	margin-bottom: 0;
 }
 
-.wp-custom-logo .site-title {
-	border: 0;
-	clip: rect(0,0,0,0);
-	height: 1px;
-	overflow: hidden;
-	position: absolute !important;
-	width: 1px;
-}
-
 .site-title a,
 .site-title a:focus,
 .site-title a:hover {
@@ -1110,14 +1101,11 @@ img.alignright,
 	text-decoration: none;
 }
 
-.site-description {
+.site-description,
+.wp-custom-logo .site-title {
 	border: 0;
 	clip: rect(0, 0, 0, 0);
-	font-size: 12px;
-	font-size: 1.2rem;
-	font-weight: 400;
 	height: 1px;
-	line-height: 1.5;
 	overflow: hidden;
 	position: absolute !important;
 	width: 1px;
