@@ -749,6 +749,21 @@ th:first-child {
 /* Genesis
 --------------------------------------------- */
 
+.after-entry,
+.archive-description,
+.author-box {
+	margin-bottom: 60px;
+}
+
+.after-entry {
+	box-shadow: 0 0 20px rgba(0,0,0,0.05);
+	padding: 40px 60px;
+}
+
+.after-entry .widget:last-of-type {
+	margin-bottom: 0;
+}
+
 .author-box {
 	background-color: #f5f5f5;
 	padding: 30px;
@@ -760,14 +775,6 @@ th:first-child {
 	font-size: 1.6rem;
 	margin-bottom: 40px;
 	padding-bottom: 10px;
-}
-
-.after-entry,
-.archive-description,
-.author-box {
-	font-size: 18px;
-	font-size: 1.8rem;
-	margin-bottom: 60px;
 }
 
 .archive-description p:last-child,
@@ -984,6 +991,11 @@ img.alignright,
 /* Genesis eNews Extended
 --------------------------------------------- */
 
+.after-entry .enews {
+	text-align: center;
+	padding: 10px 30px;
+}
+
 .sidebar .enews {
 	background-color: #f5f5f5;
 	padding: 30px;
@@ -993,6 +1005,10 @@ img.alignright,
 	font-size: 16px;
 	font-size: 1.6rem;
 	margin-bottom: 10px;
+}
+
+.after-entry .enews-widget input {
+	text-align: center;
 }
 
 .enews-widget input[type="submit"] {
@@ -1431,6 +1447,7 @@ p.entry-meta {
 ---------------------------------------------------------------------------------------------------- */
 
 .footer-widgets {
+	border-top: 1px solid #eee;
 	background-color: #fff;
 	clear: both;
 	font-size: 18px;
@@ -1438,14 +1455,23 @@ p.entry-meta {
 	padding: 60px 0;
 }
 
+.footer-widgets .wrap {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1140px;
+}
+
+.footer-widgets .widget:last-child {
+	margin-bottom: 0
+}
+
 .footer-widgets-1,
 .footer-widgets-2,
 .footer-widgets-3 {
-	width: 380px;
-}
-
-.footer-widgets-1 {
-	margin-right: 70px;
+	padding-left: 30px;
+	padding-right: 30px;
+	width: 33.33%; /* fallback for older browsers */
+	width: calc(100% / 3);
 }
 
 .footer-widgets-1,
