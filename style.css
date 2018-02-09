@@ -7,7 +7,7 @@
 
 	Version: 2.6.0-beta
 
-	Tags: black, blue, white, one-column, two-columns, left-sidebar, right-sidebar, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+	Tags: black, blue, white, one-column, two-columns, left-sidebar, right-sidebar, responsive-layout, accessibility-ready, custom-colors, custom-header, custom-menu, featured-images, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
 
 	Template: genesis
 	Template Version: 2.6.0
@@ -260,7 +260,7 @@ h4,
 h5,
 h6 {
 	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 600;
+	font-weight: 400;
 	line-height: 1.2;
 	margin: 0 0 20px;
 }
@@ -273,6 +273,11 @@ h1 {
 h2 {
 	font-size: 30px;
 	font-size: 3rem;
+}
+
+.entry-content h3,
+.entry-content h4 {
+	font-weight: 600;
 }
 
 h3 {
@@ -805,13 +810,13 @@ th:first-child {
 .author-box-title {
 	font-size: 20px;
 	font-size: 2rem;
+	font-weight: 600;
 	margin-bottom: 10px;
 }
 
 .entry-title {
 	font-size: 30px;
 	font-size: 3rem;
-	font-weight: 400;
 	margin-bottom: 10px;
 }
 
@@ -829,6 +834,7 @@ th:first-child {
 .widget-title {
 	font-size: 18px;
 	font-size: 1.8rem;
+	font-weight: 600;
 	margin-bottom: 20px;
 }
 
@@ -1196,11 +1202,11 @@ img.alignright,
 	opacity: 1;
 }
 
-.genesis-nav-menu > .bold > a {
+.genesis-nav-menu > .menu-bold > a {
 	font-weight: 700;
 }
 
-.genesis-nav-menu > .highlight > a {
+.genesis-nav-menu > .menu-highlight > a {
 	background-color: #333;
 	border-radius: 3px;
 	color: #fff;
@@ -1210,21 +1216,17 @@ img.alignright,
 	padding-right: 20px;
 }
 
-.genesis-nav-menu > .highlight > a:hover,
-.genesis-nav-menu > .highlight > a:focus {
+.genesis-nav-menu > .menu-highlight > a:hover,
+.genesis-nav-menu > .menu-highlight > a:focus {
 	background-color: #0073e5;
 }
 
-.genesis-nav-menu > .first > a {
+.genesis-nav-menu > .menu-first > a {
 	padding-left: 0;
 }
 
-.genesis-nav-menu > .last > a {
+.genesis-nav-menu > .menu-last > a {
 	padding-right: 0;
-}
-
-.genesis-nav-menu > .right {
-	float: right;
 }
 
 /* Accessible Menu
@@ -1256,12 +1258,14 @@ img.alignright,
 /* Footer Menu
 --------------------------------------------- */
 
-.site-footer .genesis-nav-menu {
-	padding-bottom: 20px;
+.nav-secondary {
+	margin-top: 10px;
 }
 
-.site-footer .genesis-nav-menu a {
-	padding: 0 20px 10px;
+.nav-secondary a {
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 0;
 }
 
 
@@ -1573,7 +1577,7 @@ p.entry-meta {
 
 	.sub-menu-toggle {
 		float: right;
-		padding: 13px 10px;
+		padding: 12px 10px;
 		position: absolute;
 		right: 0;
 		top: 0;
@@ -1619,7 +1623,7 @@ p.entry-meta {
 		width: 100%;
 	}
 
-	.genesis-responsive-menu .genesis-nav-menu > .highlight > a {
+	.genesis-responsive-menu .genesis-nav-menu > .menu-highlight > a {
 		margin-left: 0;
 		margin-top: 5px;
 		padding-left: 15px;
