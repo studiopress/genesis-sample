@@ -131,7 +131,7 @@ add_action( 'genesis_header', 'genesis_do_nav', 12 );
 
 // Reposition the secondary navigation menu.
 remove_action( 'genesis_after_header', 'genesis_do_subnav' );
-add_action( 'genesis_footer', 'genesis_do_subnav', 5 );
+add_action( 'genesis_footer', 'genesis_do_subnav', 10 );
 
 // Reduce the secondary navigation menu to one level depth.
 add_filter( 'wp_nav_menu_args', 'genesis_sample_secondary_menu_args' );
