@@ -1076,13 +1076,14 @@ img.alignright,
 
 .title-area {
 	float: left;
-	padding: 10px 0;
+	padding-bottom: 10px;
+	padding-top: 10px;
 }
 
-.header-image .title-area {
-	margin: 0 auto;
-	max-width: 300px;
-	padding: 0;
+.wp-custom-logo .title-area {
+	max-width: 100px;
+	padding-bottom: 5px;
+	padding-top: 5px;
 }
 
 .site-title {
@@ -1093,24 +1094,20 @@ img.alignright,
 	margin-bottom: 0;
 }
 
+.wp-custom-logo .site-title {
+	border: 0;
+	clip: rect(0,0,0,0);
+	height: 1px;
+	overflow: hidden;
+	position: absolute !important;
+	width: 1px;
+}
+
 .site-title a,
 .site-title a:focus,
 .site-title a:hover {
 	color: #333;
 	text-decoration: none;
-}
-
-.header-image .site-title > a {
-	background-position: center !important;
-	background-size: contain !important;
-	float: left;
-	min-height: 80px;
-	width: 100%;
-}
-
-.header-image .site-title {
-	display: block;
-	text-indent: -9999px;
 }
 
 .site-description {

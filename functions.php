@@ -22,10 +22,10 @@ function genesis_sample_localization_setup(){
 	load_child_theme_textdomain( 'genesis-sample', get_stylesheet_directory() . '/languages' );
 }
 
-// Add the helper functions.
+// Add helper functions.
 include_once( get_stylesheet_directory() . '/lib/helper-functions.php' );
 
-// Add Image upload and Color select to WordPress Theme Customizer.
+// Add image upload and color select to Customizer.
 require_once( get_stylesheet_directory() . '/lib/customize.php' );
 
 // Include Customizer CSS.
@@ -83,22 +83,41 @@ function genesis_sample_responsive_menu_settings() {
 
 }
 
-// Add HTML5 markup structure.
-add_theme_support( 'html5', array( 'caption', 'comment-form', 'comment-list', 'gallery', 'search-form' ) );
+// Add support for HTML5 markup structure.
+add_theme_support( 'html5', array(
+	'caption',
+	'comment-form',
+	'comment-list',
+	'gallery',
+	'search-form',
+) );
 
-// Add Accessibility support.
-add_theme_support( 'genesis-accessibility', array( '404-page', 'drop-down-menu', 'headings', 'rems', 'search-form', 'skip-links' ) );
+// Add support for accessibility.
+add_theme_support( 'genesis-accessibility', array(
+	'404-page',
+	'drop-down-menu',
+	'headings',
+	'rems',
+	'search-form',
+	'skip-links',
+) );
 
 // Add viewport meta tag for mobile browsers.
 add_theme_support( 'genesis-responsive-viewport' );
 
-// Add support for custom header.
-add_theme_support( 'custom-header', array(
-	'width'           => 600,
-	'height'          => 160,
-	'header-selector' => '.site-title a',
-	'header-text'     => false,
-	'flex-height'     => true,
+// Add custom logo in Customizer > Site Identity.
+add_theme_support( 'custom-logo', array(
+	'height'      => 60,
+	'width'       => 200,
+	'flex-height' => true,
+	'flex-width'  => true,
+	'header-text' => array( '.site-title', '.site-description' ),
+) );
+
+// Rename primary and secondary navigation menus.
+add_theme_support( 'genesis-menus', array(
+	'primary'   => __( 'Header Menu', 'genesis-sample' ),
+	'secondary' => __( 'Footer Menu', 'genesis-sample' )
 ) );
 
 // Add support for after entry widget.
@@ -122,8 +141,8 @@ genesis_unregister_layout( 'sidebar-sidebar-content' );
 remove_filter( 'genesis_nav_items', 'genesis_nav_right', 10, 2 );
 remove_filter( 'wp_nav_menu_items', 'genesis_nav_right', 10, 2 );
 
-// Rename primary and secondary navigation menus.
-add_theme_support( 'genesis-menus', array( 'primary' => __( 'Header Menu', 'genesis-sample' ), 'secondary' => __( 'Footer Menu', 'genesis-sample' ) ) );
+// Display custom logo.
+add_action( 'genesis_site_title', 'the_custom_logo', 0 );
 
 // Reposition primary navigation menu.
 remove_action( 'genesis_after_header', 'genesis_do_nav' );
@@ -133,7 +152,7 @@ add_action( 'genesis_header', 'genesis_do_nav', 12 );
 remove_action( 'genesis_after_header', 'genesis_do_subnav' );
 add_action( 'genesis_footer', 'genesis_do_subnav', 10 );
 
-// Reduce the secondary navigation menu to one level depth.
+// Reduce secondary navigation menu to one level depth.
 add_filter( 'wp_nav_menu_args', 'genesis_sample_secondary_menu_args' );
 function genesis_sample_secondary_menu_args( $args ) {
 
@@ -142,7 +161,6 @@ function genesis_sample_secondary_menu_args( $args ) {
 	}
 
 	$args['depth'] = 1;
-
 	return $args;
 
 }
@@ -150,7 +168,9 @@ function genesis_sample_secondary_menu_args( $args ) {
 // Modify size of the Gravatar in the author box.
 add_filter( 'genesis_author_box_gravatar_size', 'genesis_sample_author_box_gravatar' );
 function genesis_sample_author_box_gravatar( $size ) {
+
 	return 90;
+
 }
 
 // Modify size of the Gravatar in the entry comments.
@@ -158,7 +178,6 @@ add_filter( 'genesis_comment_list_args', 'genesis_sample_comments_gravatar' );
 function genesis_sample_comments_gravatar( $args ) {
 
 	$args['avatar_size'] = 60;
-
 	return $args;
 
 }
