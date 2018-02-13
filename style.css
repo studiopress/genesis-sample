@@ -1398,6 +1398,9 @@ p.entry-meta {
 	padding-left: 0;
 }
 
+.comment-list .bypostauthor {
+}
+
 .comment-header {
 	margin-bottom: 30px;
 }
