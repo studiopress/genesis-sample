@@ -73,7 +73,6 @@ function genesis_sample_responsive_menu_settings() {
 		'menuClasses'      => array(
 			'combine' => array(
 				'.nav-primary',
-				'.nav-header',
 			),
 			'others'  => array(),
 		),
