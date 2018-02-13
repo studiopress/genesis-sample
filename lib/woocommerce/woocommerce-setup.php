@@ -53,17 +53,9 @@ function genesis_sample_woocommerce_breakpoint() {
 			'content-sidebar',
 			'sidebar-content',
 		),
-		'two-sidebar' => array(
-			'content-sidebar-sidebar',
-			'sidebar-content-sidebar',
-			'sidebar-sidebar-content',
-		),
 	);
 
-	if ( in_array( $current, $layouts['two-sidebar'] ) ) {
-		return '2000px'; // Show mobile styles immediately.
-	}
-	elseif ( in_array( $current, $layouts['one-sidebar'] ) ) {
+	if ( in_array( $current, $layouts['one-sidebar'] ) ) {
 		return '1200px';
 	}
 	else {
