@@ -55,7 +55,7 @@ function genesis_sample_woocommerce_breakpoint() {
 		),
 	);
 
-	if ( in_array( $current, $layouts['one-sidebar'] ) ) {
+	if ( in_array( $current, $layouts['one-sidebar'], true ) ) {
 		return '1200px';
 	}
 	else {
@@ -80,9 +80,10 @@ add_filter( 'woocommerce_pagination_args', 	'genesis_sample_woocommerce_paginati
 /**
  * Update the next and previous arrows to the default Genesis style.
  *
+ * @param array $args The previous and next text arguments.
  * @since 2.3.0
  *
- * @return string New next and previous text string.
+ * @return array New next and previous text arguments.
  */
 function genesis_sample_woocommerce_pagination( $args ) {
 
@@ -103,7 +104,7 @@ function genesis_sample_woocommerce_image_dimensions_after_theme_setup() {
 
 	global $pagenow;
 
-	if ( ! isset( $_GET['activated'] ) || $pagenow != 'themes.php' || ! class_exists( 'WooCommerce' ) ) {
+	if ( ! isset( $_GET['activated'] ) || $pagenow !== 'themes.php' || ! class_exists( 'WooCommerce' ) ) {
 		return;
 	}
 
@@ -136,19 +137,19 @@ function genesis_sample_woocommerce_image_dimensions_after_woo_activation( $plug
 function genesis_sample_update_woocommerce_image_dimensions() {
 
 	$catalog = array(
-		'width'  => '500', // px
-		'height' => '500', // px
-		'crop'   => 1,     // true
+		'width'  => '500', // px.
+		'height' => '500', // px.
+		'crop'   => 1,     // true.
 	);
 	$single = array(
-		'width'  => '655', // px
-		'height' => '655', // px
-		'crop'   => 1,     // true
+		'width'  => '655', // px.
+		'height' => '655', // px.
+		'crop'   => 1,     // true.
 	);
 	$thumbnail = array(
-		'width'  => '180', // px
-		'height' => '180', // px
-		'crop'   => 1,     // true
+		'width'  => '180', // px.
+		'height' => '180', // px.
+		'crop'   => 1,     // true.
 	);
 
 	// Image sizes.
