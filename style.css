@@ -1726,6 +1726,15 @@ p.entry-meta {
 
 }
 
+@media only screen and (max-width: 600px) {
+
+	.author-box {
+		background: none;
+		padding: 0;
+	}
+
+}
+
 
 /* Print Styles
 ---------------------------------------------------------------------------------------------------- */
