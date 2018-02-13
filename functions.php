@@ -111,7 +111,6 @@ add_theme_support( 'custom-logo', array(
 	'width'       => 200,
 	'flex-height' => true,
 	'flex-width'  => true,
-	'header-text' => array( '.site-title', '.site-description' ),
 ) );
 
 // Rename primary and secondary navigation menus.
