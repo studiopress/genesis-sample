@@ -1311,7 +1311,7 @@ img.alignright,
 	text-align: center;
 }
 
-.sticky {
+.content .sticky {
 	background-color: #f5f5f5;
 	padding: 30px;
 }
