@@ -14,9 +14,10 @@ add_filter( 'woocommerce_enqueue_styles', 'genesis_sample_woocommerce_styles' );
 /**
  * Enqueue the theme's custom WooCommerce styles to the WooCommerce plugin.
  *
+ * @param array $enqueue_styles The WooCommerce styles to enqueue.
  * @since 2.3.0
  *
- * @return array Required values for the Genesis Sample Theme's WooCommerce stylesheet.
+ * @return array Modified WooCommerce styles to enqueue.
  */
 function genesis_sample_woocommerce_styles( $enqueue_styles ) {
 

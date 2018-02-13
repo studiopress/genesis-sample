@@ -23,7 +23,7 @@ function genesis_sample_add_body_class( $classes ) {
 }
 
 // Remove Skip Links.
-remove_action ( 'genesis_before_header', 'genesis_skip_links', 5 );
+remove_action( 'genesis_before_header', 'genesis_skip_links', 5 );
 
 // Dequeue Skip Links Script.
 add_action( 'wp_enqueue_scripts', 'genesis_sample_dequeue_skip_links' );
