@@ -12,11 +12,11 @@
 
 add_action( 'wp_enqueue_scripts', 'genesis_sample_css' );
 /**
-* Checks the settings for the link color, and accent color.
-* If any of these value are set the appropriate CSS is output.
-*
-* @since 2.2.3
-*/
+ * Checks the settings for the link color, and accent color.
+ * If any of these value are set the appropriate CSS is output.
+ *
+ * @since 2.2.3
+ */
 function genesis_sample_css() {
 
 	$handle  = defined( 'CHILD_THEME_NAME' ) && CHILD_THEME_NAME ? sanitize_title_with_dashes( CHILD_THEME_NAME ) : 'child-theme';
