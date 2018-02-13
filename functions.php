@@ -139,6 +139,24 @@ genesis_unregister_layout( 'sidebar-sidebar-content' );
 remove_filter( 'genesis_nav_items', 'genesis_nav_right', 10, 2 );
 remove_filter( 'wp_nav_menu_items', 'genesis_nav_right', 10, 2 );
 
+// Remove output of unused Admin settings metaboxes.
+add_action( 'genesis_theme_settings_metaboxes', 'genesis_sample_remove_metaboxes' );
+function genesis_sample_remove_metaboxes( $_genesis_admin_settings ) {
+
+	remove_meta_box( 'genesis-theme-settings-header', $_genesis_admin_settings, 'main' );
+	remove_meta_box( 'genesis-theme-settings-nav', $_genesis_theme_settings_pagehook, 'main' );
+
+}
+
+// Remove output of header settings in the Customizer.
+add_filter( 'genesis_customizer_theme_settings_config', 'genesis_sample_remove_customizer_settings' );
+function genesis_sample_remove_customizer_settings( $config ) {
+
+	unset( $config['genesis']['sections']['genesis_header'] );
+	return $config;
+
+}
+
 // Display custom logo.
 add_action( 'genesis_site_title', 'the_custom_logo', 0 );
 
