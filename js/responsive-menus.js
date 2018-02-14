@@ -1,10 +1,12 @@
 /**
- * This script adds the accessibility-ready responsive menus Genesis Framework child themes.
+ * Add the accessible responsive menu.
+ *
+ * @version 1.1.3
  *
  * @author StudioPress
- * @link https://github.com/copyblogger/responsive-menus
- * @version 1.1.3
+ * @link https://github.com/copyblogger/responsive-menus/
  * @license GPL-2.0+
+ * @package GenesisSample
  */
 
 ( function ( document, $, undefined ) {
