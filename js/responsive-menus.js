@@ -97,32 +97,28 @@
 			return;
 		}
 
-		var menuIconClass    = typeof genesisMenuParams.menuIconClass !== 'undefined' ? genesisMenuParams.menuIconClass : 'dashicons-before dashicons-menu',
-			subMenuIconClass = typeof genesisMenuParams.subMenuIconClass !== 'undefined' ? genesisMenuParams.subMenuIconClass : 'dashicons-before dashicons-arrow-down-alt2',
-			toggleButtons    = {
-				menu : $(
-					'<button />', {
-						'class' : mainMenuButtonClass,
-						'aria-expanded' : false,
-						'aria-pressed' : false
-					}
-				)
-					.append( genesisMenuParams.mainMenu ),
-		submenu : $(
-			'<button />', {
-				'class' : subMenuButtonClass,
-				'aria-expanded' : false,
-				'aria-pressed' : false
+		var menuIconClass    = typeof genesisMenuParams.menuIconClass !== 'undefined' ? genesisMenuParams.menuIconClass : 'dashicons-before dashicons-menu';
+		var	subMenuIconClass = typeof genesisMenuParams.subMenuIconClass !== 'undefined' ? genesisMenuParams.subMenuIconClass : 'dashicons-before dashicons-arrow-down-alt2';
+		var	toggleButtons    = {
+			menu : $( '<button />', {
+					'class' : mainMenuButtonClass,
+					'aria-expanded' : false,
+					'aria-pressed' : false
 				}
 			)
-					.append(
-						$(
-							'<span />', {
-								'class' : 'screen-reader-text',
-								'text' : genesisMenuParams.subMenu
-							}
-						)
-					)
+			.append( genesisMenuParams.mainMenu ),
+				submenu : $(
+					'<button />', {
+					'class' : subMenuButtonClass,
+					'aria-expanded' : false,
+					'aria-pressed' : false
+				}
+			)
+			.append( $('<span />', {
+					'class' : 'screen-reader-text',
+					'text' : genesisMenuParams.subMenu
+				} )
+			)
 		};
 
 		// Add the responsive menu class to the active menus.
