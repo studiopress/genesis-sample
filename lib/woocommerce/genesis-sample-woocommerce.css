@@ -49,11 +49,11 @@ Loaded on WooCommerce pages */
 ---------------------------------------------------------------------------------------------------- */
 
 .woocommerce .woocommerce-product-gallery__wrapper {
-  margin: 0;
+	margin: 0;
 }
 
 .woocommerce .woocommerce-product-gallery__trigger {
-  border-width: 0;
+	border-width: 0;
 }
 
 .woocommerce .woocommerce-product-gallery {
@@ -61,10 +61,10 @@ Loaded on WooCommerce pages */
 }
 
 .woocommerce .woocommerce-product-gallery .flex-control-nav {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 
