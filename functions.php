@@ -11,10 +11,10 @@
  */
 
 // Start the engine.
-include_once( get_template_directory() . '/lib/init.php' );
+require_once get_template_directory() . '/lib/init.php';
 
 // Setup theme.
-include_once( get_stylesheet_directory() . '/lib/theme-defaults.php' );
+require_once get_stylesheet_directory() . '/lib/theme-defaults.php';
 
 add_action( 'after_setup_theme', 'genesis_sample_localization_setup' );
 /**
@@ -27,22 +27,22 @@ function genesis_sample_localization_setup() {
 }
 
 // Add helper functions.
-include_once( get_stylesheet_directory() . '/lib/helper-functions.php' );
+require_once get_stylesheet_directory() . '/lib/helper-functions.php';
 
 // Add image upload and color select to Customizer.
-require_once( get_stylesheet_directory() . '/lib/customize.php' );
+require_once get_stylesheet_directory() . '/lib/customize.php';
 
 // Include Customizer CSS.
-include_once( get_stylesheet_directory() . '/lib/output.php' );
+require_once get_stylesheet_directory() . '/lib/output.php';
 
 // Add WooCommerce support.
-include_once( get_stylesheet_directory() . '/lib/woocommerce/woocommerce-setup.php' );
+require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-setup.php';
 
 // Add the required WooCommerce styles and Customizer CSS.
-include_once( get_stylesheet_directory() . '/lib/woocommerce/woocommerce-output.php' );
+require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-output.php';
 
 // Add the Genesis Connect WooCommerce notice.
-include_once( get_stylesheet_directory() . '/lib/woocommerce/woocommerce-notice.php' );
+require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-notice.php';
 
 // Child theme (do not remove).
 define( 'CHILD_THEME_NAME', 'Genesis Sample' );
@@ -106,40 +106,48 @@ function genesis_sample_responsive_menu_settings() {
 }
 
 // Add support for HTML5 markup structure.
-add_theme_support( 'html5', array(
-	'caption',
-	'comment-form',
-	'comment-list',
-	'gallery',
-	'search-form',
-) );
+add_theme_support(
+	'html5', array(
+		'caption',
+		'comment-form',
+		'comment-list',
+		'gallery',
+		'search-form',
+	)
+);
 
 // Add support for accessibility.
-add_theme_support( 'genesis-accessibility', array(
-	'404-page',
-	'drop-down-menu',
-	'headings',
-	'rems',
-	'search-form',
-	'skip-links',
-) );
+add_theme_support(
+	'genesis-accessibility', array(
+		'404-page',
+		'drop-down-menu',
+		'headings',
+		'rems',
+		'search-form',
+		'skip-links',
+	)
+);
 
 // Add viewport meta tag for mobile browsers.
 add_theme_support( 'genesis-responsive-viewport' );
 
 // Add custom logo in Customizer > Site Identity.
-add_theme_support( 'custom-logo', array(
-	'height'      => 60,
-	'width'       => 200,
-	'flex-height' => true,
-	'flex-width'  => true,
-) );
+add_theme_support(
+	'custom-logo', array(
+		'height'      => 60,
+		'width'       => 200,
+		'flex-height' => true,
+		'flex-width'  => true,
+	)
+);
 
 // Rename primary and secondary navigation menus.
-add_theme_support( 'genesis-menus', array(
-	'primary'   => __( 'Header Menu', 'genesis-sample' ),
-	'secondary' => __( 'Footer Menu', 'genesis-sample' ),
-) );
+add_theme_support(
+	'genesis-menus', array(
+		'primary'   => __( 'Header Menu', 'genesis-sample' ),
+		'secondary' => __( 'Footer Menu', 'genesis-sample' ),
+	)
+);
 
 // Add support for after entry widget.
 add_theme_support( 'genesis-after-entry-widget-area' );
