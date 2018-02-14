@@ -36,6 +36,8 @@ add_action( 'admin_notices', 'genesis_sample_woocommerce_theme_notice' );
  */
 function genesis_sample_woocommerce_theme_notice() {
 
+	global $themes_allowedtags;
+
 	// If WooCommerce isn't installed or Genesis Connect is installed, exit early.
 	if ( ! class_exists( 'WooCommerce' ) || function_exists( 'gencwooc_setup' ) ) {
 		return;
@@ -73,7 +75,7 @@ function genesis_sample_woocommerce_theme_notice() {
 		$notice_html = sprintf( __( 'Please %1$s to <strong>enable WooCommerce support for %2$s</strong>.', 'genesis-sample' ), $install_link, esc_html( CHILD_THEME_NAME ) );
 	}
 
-	echo '<div class="notice notice-info is-dismissible genesis-sample-woocommerce-notice"><p>' . $notice_html . '</p></div>';
+	echo '<div class="notice notice-info is-dismissible genesis-sample-woocommerce-notice"><p>' . wp_kses( $notice_html, $themes_allowedtags ) . '</p></div>';
 
 }
 
