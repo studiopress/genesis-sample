@@ -73,7 +73,7 @@ function genesis_sample_woocommerce_theme_notice() {
 		$notice_html = sprintf( __( 'Please %1$s to <strong>enable WooCommerce support for %2$s</strong>.', 'genesis-sample' ), $install_link, esc_html( CHILD_THEME_NAME ) );
 	}
 
-	echo '<div class="notice notice-info is-dismissible genesis-sample-woocommerce-notice"><p>' . safe_html( $notice_html ) . '</p></div>';
+	echo '<div class="notice notice-info is-dismissible genesis-sample-woocommerce-notice"><p>' . wp_kses_post( $notice_html ) . '</p></div>';
 
 }
 
