@@ -32,8 +32,17 @@ function genesis_sample_products_match_height() {
 		return;
 	}
 
-	wp_enqueue_script( 'genesis-sample-match-height', get_stylesheet_directory_uri() . '/js/jquery.matchHeight.min.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
-	wp_add_inline_script( 'genesis-sample-match-height', "jQuery(document).ready( function() { jQuery( '.product .woocommerce-LoopProduct-link').matchHeight(); });" );
+	wp_enqueue_script(
+		'genesis-sample-match-height',
+		get_stylesheet_directory_uri() . '/js/jquery.matchHeight.min.js',
+		array( 'jquery' ),
+		CHILD_THEME_VERSION,
+		true
+	);
+	wp_add_inline_script(
+		'genesis-sample-match-height',
+		"jQuery(document).ready( function() { jQuery( '.product .woocommerce-LoopProduct-link').matchHeight(); });"
+	);
 
 }
 
@@ -58,9 +67,8 @@ function genesis_sample_woocommerce_breakpoint() {
 	if ( in_array( $current, $layouts['one-sidebar'], true ) ) {
 		return '1200px';
 	}
-	else {
-		return '860px';
-	}
+
+	return '860px';
 
 }
 
@@ -76,7 +84,7 @@ function genesis_sample_default_products_per_page() {
 	return 8;
 }
 
-add_filter( 'woocommerce_pagination_args', 	'genesis_sample_woocommerce_pagination' );
+add_filter( 'woocommerce_pagination_args', 'genesis_sample_woocommerce_pagination' );
 /**
  * Update the next and previous arrows to the default Genesis style.
  *
@@ -96,10 +104,10 @@ function genesis_sample_woocommerce_pagination( $args ) {
 
 add_action( 'after_switch_theme', 'genesis_sample_woocommerce_image_dimensions_after_theme_setup', 1 );
 /**
-* Define WooCommerce image sizes on theme activation.
-*
-* @since 2.3.0
-*/
+ * Define WooCommerce image sizes on theme activation.
+ *
+ * @since 2.3.0
+ */
 function genesis_sample_woocommerce_image_dimensions_after_theme_setup() {
 
 	global $pagenow;
@@ -117,6 +125,8 @@ add_action( 'activated_plugin', 'genesis_sample_woocommerce_image_dimensions_aft
  * Define the WooCommerce image sizes on WooCommerce activation.
  *
  * @since 2.3.0
+ *
+ * @param string $plugin The path of the plugin being activated.
  */
 function genesis_sample_woocommerce_image_dimensions_after_woo_activation( $plugin ) {
 
