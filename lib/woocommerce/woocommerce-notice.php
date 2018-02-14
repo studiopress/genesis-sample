@@ -50,6 +50,7 @@ function genesis_sample_woocommerce_theme_notice() {
 	if ( get_user_option( 'genesis_sample_woocommerce_message_dismissed', get_current_user_id() ) ) {
 		return;
 	}
+	/* translators: %s: child theme name */
 	$notice_html = sprintf( __( 'Please install and activate <a href="https://wordpress.org/plugins/genesis-connect-woocommerce/" target="_blank">Genesis Connect for WooCommerce</a> to <strong>enable WooCommerce support for %s</strong>.', 'genesis-sample' ), esc_html( CHILD_THEME_NAME ) );
 
 	if ( current_user_can( 'install_plugins' ) ) {
@@ -130,7 +131,7 @@ add_action( 'deactivated_plugin', 'genesis_sample_reset_woocommerce_notice_on_de
 function genesis_sample_reset_woocommerce_notice_on_deactivation( $plugin, $network_deactivating ) {
 
 	// Conditional check to see if we're deactivating WooCommerce or Genesis Connect for WooCommerce.
-	if ( $plugin !== 'woocommerce/woocommerce.php' && $plugin !== 'genesis-connect-woocommerce/genesis-connect-woocommerce.php' ) {
+	if ( 'woocommerce/woocommerce.php' !== $plugin && 'genesis-connect-woocommerce/genesis-connect-woocommerce.php' !== $plugin ) {
 		return;
 	}
 

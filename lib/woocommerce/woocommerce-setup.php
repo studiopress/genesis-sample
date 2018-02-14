@@ -112,7 +112,7 @@ function genesis_sample_woocommerce_image_dimensions_after_theme_setup() {
 
 	global $pagenow;
 
-	if ( ! isset( $_GET['activated'] ) || $pagenow !== 'themes.php' || ! class_exists( 'WooCommerce' ) ) {
+	if ( ! isset( $_GET['activated'] ) || 'themes.php' !== $pagenow || ! class_exists( 'WooCommerce' ) ) {
 		return;
 	}
 
@@ -131,7 +131,7 @@ add_action( 'activated_plugin', 'genesis_sample_woocommerce_image_dimensions_aft
 function genesis_sample_woocommerce_image_dimensions_after_woo_activation( $plugin ) {
 
 	// Check to see if WooCommerce is being activated.
-	if ( $plugin !== 'woocommerce/woocommerce.php' ) {
+	if ( 'woocommerce/woocommerce.php' !== $plugin ) {
 		return;
 	}
 
