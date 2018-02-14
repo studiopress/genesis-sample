@@ -55,16 +55,18 @@ function genesis_sample_woocommerce_theme_notice() {
 	if ( current_user_can( 'install_plugins' ) ) {
 		$plugin_slug  = 'genesis-connect-woocommerce';
 		$admin_url    = network_admin_url( 'update.php' );
-		$install_link = sprintf( '<a href="%s">%s</a>', wp_nonce_url(
-			add_query_arg(
-				array(
-					'action' => 'install-plugin',
-					'plugin' => $plugin_slug,
+		$install_link = sprintf(
+			'<a href="%s">%s</a>', wp_nonce_url(
+				add_query_arg(
+					array(
+						'action' => 'install-plugin',
+						'plugin' => $plugin_slug,
+					),
+					$admin_url
 				),
-				$admin_url
-			),
-			'install-plugin_' . $plugin_slug
-		), __( 'install and activate Genesis Connect for WooCommerce', 'genesis-sample' ) );
+				'install-plugin_' . $plugin_slug
+			), __( 'install and activate Genesis Connect for WooCommerce', 'genesis-sample' )
+		);
 
 		/* translators: 1: plugin install prompt presented as link, 2: child theme name */
 		$notice_html = sprintf( __( 'Please %1$s to <strong>enable WooCommerce support for %2$s</strong>.', 'genesis-sample' ), $install_link, esc_html( CHILD_THEME_NAME ) );
@@ -104,7 +106,7 @@ function genesis_sample_reset_woocommerce_notice() {
 
 	global $wpdb;
 
-	$args = array(
+	$args  = array(
 		'meta_key'   => $wpdb->prefix . 'genesis_sample_woocommerce_message_dismissed',
 		'meta_value' => 1,
 	);
@@ -128,7 +130,7 @@ add_action( 'deactivated_plugin', 'genesis_sample_reset_woocommerce_notice_on_de
 function genesis_sample_reset_woocommerce_notice_on_deactivation( $plugin, $network_deactivating ) {
 
 	// Conditional check to see if we're deactivating WooCommerce or Genesis Connect for WooCommerce.
-	if ( $plugin !== 'woocommerce/woocommerce.php' && $plugin !== 'genesis-connect-woocommerce/genesis-connect-woocommerce.php'  ) {
+	if ( $plugin !== 'woocommerce/woocommerce.php' && $plugin !== 'genesis-connect-woocommerce/genesis-connect-woocommerce.php' ) {
 		return;
 	}
 

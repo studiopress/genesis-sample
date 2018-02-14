@@ -146,12 +146,12 @@ function genesis_sample_woocommerce_image_dimensions_after_woo_activation( $plug
  */
 function genesis_sample_update_woocommerce_image_dimensions() {
 
-	$catalog = array(
+	$catalog   = array(
 		'width'  => '500', // px.
 		'height' => '500', // px.
 		'crop'   => 1,     // true.
 	);
-	$single = array(
+	$single    = array(
 		'width'  => '655', // px.
 		'height' => '655', // px.
 		'crop'   => 1,     // true.

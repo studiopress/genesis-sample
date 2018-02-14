@@ -39,14 +39,16 @@ function genesis_sample_theme_setting_defaults() {
 
 	if ( function_exists( 'genesis_update_settings' ) ) {
 
-		genesis_update_settings( array(
-			'blog_cat_num'              => 6,
-			'content_archive'           => 'full',
-			'content_archive_limit'     => 0,
-			'content_archive_thumbnail' => 0,
-			'posts_nav'                 => 'numeric',
-			'site_layout'               => 'content-sidebar',
-		) );
+		genesis_update_settings(
+			array(
+				'blog_cat_num'              => 6,
+				'content_archive'           => 'full',
+				'content_archive_limit'     => 0,
+				'content_archive_thumbnail' => 0,
+				'posts_nav'                 => 'numeric',
+				'site_layout'               => 'content-sidebar',
+			)
+		);
 
 	}
 
