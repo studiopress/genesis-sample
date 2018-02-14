@@ -26,7 +26,8 @@ function genesis_sample_css() {
 
 	$css = '';
 
-	$css .= ( genesis_sample_customizer_get_default_link_color() !== $color_link ) ? sprintf( '
+	$css .= ( genesis_sample_customizer_get_default_link_color() !== $color_link ) ? sprintf(
+		'
 
 		a,
 		.entry-title a:focus,
@@ -43,9 +44,11 @@ function genesis_sample_css() {
 			color: %s;
 		}
 
-		', $color_link ) : '';
+		', $color_link
+	) : '';
 
-	$css .= ( genesis_sample_customizer_get_default_accent_color() !== $color_accent ) ? sprintf( '
+	$css .= ( genesis_sample_customizer_get_default_accent_color() !== $color_accent ) ? sprintf(
+		'
 
 		button:focus,
 		button:hover,
@@ -67,7 +70,8 @@ function genesis_sample_css() {
 			background-color: %s;
 			color: %s;
 		}
-		', $color_accent, genesis_sample_color_contrast( $color_accent ) ) : '';
+		', $color_accent, genesis_sample_color_contrast( $color_accent )
+	) : '';
 
 	if ( $css ) {
 		wp_add_inline_style( $handle, $css );
