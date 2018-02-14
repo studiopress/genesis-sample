@@ -1,6 +1,6 @@
 # Genesis Sample Theme Changelog
 
-## [Unrelased]
+## [Unreleased]
 * Fix product gallery bug in WooCommerce 3.0 update
 * Updated responsive menu to 1.1.3
 * Remove menu toggle border

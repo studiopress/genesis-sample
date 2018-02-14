@@ -35,11 +35,12 @@ function genesis_sample_customizer_get_default_accent_color() {
 }
 
 /**
- * Calculate the color contrast.
+ * Calculates if white or gray would contrast more with the provided color.
  *
  * @since 2.2.3
  *
- * @return string Hex color code for contrast color
+ * @param string $color A color in hex format.
+ * @return string The hex code for the most contrasting color: dark grey or white.
  */
 function genesis_sample_color_contrast( $color ) {
 
@@ -55,11 +56,14 @@ function genesis_sample_color_contrast( $color ) {
 }
 
 /**
- * Calculate the color brightness.
+ * Generate a lighter or darker color from a starting color.
+ * Used to generate complementary hover tints from user-chosen colors.
  *
  * @since 2.2.3
  *
- * @return string Hex color code for the color brightness
+ * @param string $color A color in hex format.
+ * @param int    $change The amount to reduce or increase brightness by.
+ * @return string Hex code for the adjusted color brightness.
  */
 function genesis_sample_color_brightness( $color, $change ) {
 
