@@ -15,6 +15,9 @@ add_filter( 'genesis_theme_settings_defaults', 'genesis_sample_theme_defaults' )
  * Updates theme settings on reset.
  *
  * @since 2.2.3
+ *
+ * @param array $defaults Original theme settings defaults.
+ * @return array Modified defaults.
  */
 function genesis_sample_theme_defaults( $defaults ) {
 
