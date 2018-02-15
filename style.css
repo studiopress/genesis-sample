@@ -1713,6 +1713,15 @@ p.entry-meta {
 		margin-bottom: 4px;
 	}
 
+	.after-entry {
+		padding: 30px;
+	}
+
+	.after-entry .enews {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
 	.five-sixths,
 	.four-sixths,
 	.one-fourth,
@@ -1735,6 +1744,10 @@ p.entry-meta {
 	.author-box {
 		background: none;
 		padding: 0;
+	}
+
+	.after-entry {
+		padding: 20px;
 	}
 
 }
