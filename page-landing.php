@@ -24,7 +24,6 @@ add_filter( 'body_class', 'genesis_sample_add_body_class' );
 function genesis_sample_add_body_class( $classes ) {
 
 	$classes[] = 'landing-page';
-
 	return $classes;
 
 }
@@ -39,7 +38,9 @@ add_action( 'wp_enqueue_scripts', 'genesis_sample_dequeue_skip_links' );
  * @since 1.0.0
  */
 function genesis_sample_dequeue_skip_links() {
+
 	wp_dequeue_script( 'skip-links' );
+
 }
 
 // Force full width content layout.

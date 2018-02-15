@@ -23,7 +23,9 @@ add_action( 'after_setup_theme', 'genesis_sample_localization_setup' );
  * @since 1.0.0
  */
 function genesis_sample_localization_setup() {
+
 	load_child_theme_textdomain( 'genesis-sample', get_stylesheet_directory() . '/languages' );
+
 }
 
 // Add helper functions.
