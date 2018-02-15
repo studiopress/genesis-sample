@@ -19,7 +19,9 @@
  * @return string Hex color code for link color.
  */
 function genesis_sample_customizer_get_default_link_color() {
+
 	return '#0073e5';
+
 }
 
 /**
@@ -31,7 +33,9 @@ function genesis_sample_customizer_get_default_link_color() {
  * @return string Hex color code for accent color.
  */
 function genesis_sample_customizer_get_default_accent_color() {
+
 	return '#0073e5';
+
 }
 
 /**
