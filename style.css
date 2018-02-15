@@ -1598,6 +1598,10 @@ p.entry-meta {
 		text-rendering: auto;
 	}
 
+	.menu-toggle.activated::before {
+		content: "\f335";
+	}
+
 	.sub-menu-toggle {
 		float: right;
 		padding: 12px 10px;
