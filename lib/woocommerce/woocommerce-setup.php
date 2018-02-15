@@ -81,7 +81,9 @@ add_filter( 'genesiswooc_products_per_page', 'genesis_sample_default_products_pe
  * @return int Number of products to show per page.
  */
 function genesis_sample_default_products_per_page() {
+
 	return 8;
+
 }
 
 add_filter( 'woocommerce_pagination_args', 'genesis_sample_woocommerce_pagination' );
