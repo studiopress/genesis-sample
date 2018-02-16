@@ -177,11 +177,7 @@ input[type="submit"],
 textarea:focus,
 .button,
 .gallery img {
-	-webkit-transition: all 0.1s ease-in-out;
-	-moz-transition:    all 0.1s ease-in-out;
-	-ms-transition:     all 0.1s ease-in-out;
-	-o-transition:      all 0.1s ease-in-out;
-	transition:         all 0.1s ease-in-out;
+	transition: all 0.2s ease-in-out;
 }
 
 a {
@@ -1169,11 +1165,7 @@ img.alignright,
 	left: -9999px;
 	opacity: 0;
 	position: absolute;
-	-webkit-transition: opacity .4s ease-in-out;
-	-moz-transition:    opacity .4s ease-in-out;
-	-ms-transition:     opacity .4s ease-in-out;
-	-o-transition:      opacity .4s ease-in-out;
-	transition:         opacity .4s ease-in-out;
+	transition: opacity .4s ease-in-out;
 	width: 180px;
 	z-index: 99;
 }
@@ -1621,9 +1613,7 @@ p.entry-meta {
 		-webkit-transform: rotate( 0 );
 		-ms-transform:     rotate( 0 );
 		transform:         rotate( 0 );
-		-webkit-transition: transform .25s ease-in-out;
-		-ms-transition:     transform .25s ease-in-out;
-		transition:         transform .25s ease-in-out;
+		transition: transform .25s ease-in-out;
 	}
 
 	.sub-menu-toggle.activated::before {
