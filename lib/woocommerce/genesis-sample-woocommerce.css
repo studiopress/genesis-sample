@@ -765,7 +765,7 @@ div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricte
 /* Media Queries
 ---------------------------------------------------------------------------------------------------- */
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1140px) {
 
 	.woocommerce-account .woocommerce-MyAccount-navigation ul {
 		text-align: center;
@@ -823,11 +823,7 @@ div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricte
 
 }
 
-@media only screen and (max-width: 860px) {
-
-	.woocommerce .content {
-		padding: 30px;
-	}
+@media only screen and (max-width: 960px) {
 
 	.woocommerce div.product .woocommerce-tabs ul.tabs {
 		padding: 0;
