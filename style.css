@@ -262,13 +262,13 @@ h6 {
 }
 
 h1 {
-	font-size: 36px;
-	font-size: 3.6rem;
+	font-size: 30px;
+	font-size: 3rem;
 }
 
 h2 {
-	font-size: 30px;
-	font-size: 3rem;
+	font-size: 24px;
+	font-size: 2.4rem;
 }
 
 .entry-content h3,
@@ -277,8 +277,8 @@ h2 {
 }
 
 h3 {
-	font-size: 24px;
-	font-size: 2.4rem;
+	font-size: 22px;
+	font-size: 2.2rem;
 }
 
 h4 {
