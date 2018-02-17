@@ -844,6 +844,10 @@ th:first-child {
 /* WordPress
 --------------------------------------------- */
 
+.aligncenter {
+	text-align: center;
+}
+
 a.aligncenter img {
 	display: block;
 	margin: 0 auto;
