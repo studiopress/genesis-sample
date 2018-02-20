@@ -12,7 +12,7 @@
 
 add_action( 'admin_print_styles', 'genesis_sample_remove_woocommerce_notice' );
 /**
- * Remove the default WooCommerce Notice.
+ * Removes the default WooCommerce Notice.
  *
  * @since 2.3.0
  */
@@ -29,7 +29,7 @@ function genesis_sample_remove_woocommerce_notice() {
 
 add_action( 'admin_notices', 'genesis_sample_woocommerce_theme_notice' );
 /**
- * Add a prompt to activate Genesis Connect for WooCommerce
+ * Adds a prompt to activate Genesis Connect for WooCommerce
  * if WooCommerce is active but Genesis Connect is not.
  *
  * @since 2.3.0
@@ -80,7 +80,7 @@ function genesis_sample_woocommerce_theme_notice() {
 
 add_action( 'wp_ajax_genesis_sample_dismiss_woocommerce_notice', 'genesis_sample_dismiss_woocommerce_notice' );
 /**
- * Add option to dismiss Genesis Connect for Woocommerce plugin install prompt.
+ * Adds option to dismiss Genesis Connect for Woocommerce plugin install prompt.
  *
  * @since 2.3.0
  */
@@ -92,7 +92,7 @@ function genesis_sample_dismiss_woocommerce_notice() {
 
 add_action( 'admin_enqueue_scripts', 'genesis_sample_notice_script' );
 /**
- * Enqueue script to clear the Genesis Connect for WooCommerce plugin install prompt on dismissal.
+ * Enqueues script to clear the Genesis Connect for WooCommerce plugin install prompt on dismissal.
  *
  * @since 2.3.0
  */
@@ -104,7 +104,7 @@ function genesis_sample_notice_script() {
 
 add_action( 'switch_theme', 'genesis_sample_reset_woocommerce_notice', 10, 2 );
 /**
- * Clear the Genesis Connect for WooCommerce plugin install prompt on theme change.
+ * Clears the Genesis Connect for WooCommerce plugin install prompt on theme change.
  *
  * @since 2.3.0
  */
@@ -126,7 +126,7 @@ function genesis_sample_reset_woocommerce_notice() {
 
 add_action( 'deactivated_plugin', 'genesis_sample_reset_woocommerce_notice_on_deactivation', 10, 2 );
 /**
- * Clear the Genesis Connect for WooCommerce plugin prompt on deactivation.
+ * Clears the Genesis Connect for WooCommerce plugin prompt on deactivation.
  *
  * @since 2.3.0
  *

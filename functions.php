@@ -10,15 +10,15 @@
  * @link    https://www.studiopress.com/
  */
 
-// Start the engine.
+// Starts the engine.
 require_once get_template_directory() . '/lib/init.php';
 
-// Setup theme.
+// Sets up the Theme.
 require_once get_stylesheet_directory() . '/lib/theme-defaults.php';
 
 add_action( 'after_setup_theme', 'genesis_sample_localization_setup' );
 /**
- * Set localization (do not remove).
+ * Sets localization (do not remove).
  *
  * @since 1.0.0
  */
@@ -28,32 +28,32 @@ function genesis_sample_localization_setup() {
 
 }
 
-// Add helper functions.
+// Adds helper functions.
 require_once get_stylesheet_directory() . '/lib/helper-functions.php';
 
-// Add image upload and color select to Customizer.
+// Adds image upload and color select to Customizer.
 require_once get_stylesheet_directory() . '/lib/customize.php';
 
-// Include Customizer CSS.
+// Includes Customizer CSS.
 require_once get_stylesheet_directory() . '/lib/output.php';
 
-// Add WooCommerce support.
+// Adds WooCommerce support.
 require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-setup.php';
 
-// Add the required WooCommerce styles and Customizer CSS.
+// Adds the required WooCommerce styles and Customizer CSS.
 require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-output.php';
 
-// Add the Genesis Connect WooCommerce notice.
+// Adds the Genesis Connect WooCommerce notice.
 require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-notice.php';
 
-// Child theme (do not remove).
+// Defines the child theme (do not remove).
 define( 'CHILD_THEME_NAME', 'Genesis Sample' );
 define( 'CHILD_THEME_URL', 'https://www.studiopress.com/' );
 define( 'CHILD_THEME_VERSION', '2.6.0' );
 
 add_action( 'wp_enqueue_scripts', 'genesis_sample_enqueue_scripts_styles' );
 /**
- * Enqueue scripts and styles.
+ * Enqueues scripts and styles.
  *
  * @since 1.0.0
  */
@@ -84,7 +84,7 @@ function genesis_sample_enqueue_scripts_styles() {
 }
 
 /**
- * Define responsive menu settings.
+ * Defines responsive menu settings.
  *
  * @since 2.3.0
  */
@@ -107,7 +107,7 @@ function genesis_sample_responsive_menu_settings() {
 
 }
 
-// Add support for HTML5 markup structure.
+// Adds support for HTML5 markup structure.
 add_theme_support(
 	'html5', array(
 		'caption',
@@ -118,7 +118,7 @@ add_theme_support(
 	)
 );
 
-// Add support for accessibility.
+// Adds support for accessibility.
 add_theme_support(
 	'genesis-accessibility', array(
 		'404-page',
@@ -130,10 +130,10 @@ add_theme_support(
 	)
 );
 
-// Add viewport meta tag for mobile browsers.
+// Adds viewport meta tag for mobile browsers.
 add_theme_support( 'genesis-responsive-viewport' );
 
-// Add custom logo in Customizer > Site Identity.
+// Adds custom logo in Customizer > Site Identity.
 add_theme_support(
 	'custom-logo', array(
 		'height'      => 60,
@@ -143,7 +143,7 @@ add_theme_support(
 	)
 );
 
-// Rename primary and secondary navigation menus.
+// Renames primary and secondary navigation menus.
 add_theme_support(
 	'genesis-menus', array(
 		'primary'   => __( 'Header Menu', 'genesis-sample' ),
@@ -151,30 +151,30 @@ add_theme_support(
 	)
 );
 
-// Add support for after entry widget.
+// Adds support for after entry widget.
 add_theme_support( 'genesis-after-entry-widget-area' );
 
-// Add support for 3-column footer widgets.
+// Adds support for 3-column footer widgets.
 add_theme_support( 'genesis-footer-widgets', 3 );
 
-// Remove header right widget area.
+// Removes header right widget area.
 unregister_sidebar( 'header-right' );
 
 // Remove secondary sidebar.
 unregister_sidebar( 'sidebar-alt' );
 
-// Remove site layouts.
+// Removes site layouts.
 genesis_unregister_layout( 'content-sidebar-sidebar' );
 genesis_unregister_layout( 'sidebar-content-sidebar' );
 genesis_unregister_layout( 'sidebar-sidebar-content' );
 
-// Remove output of primary navigation right extras.
+// Removes output of primary navigation right extras.
 remove_filter( 'genesis_nav_items', 'genesis_nav_right', 10, 2 );
 remove_filter( 'wp_nav_menu_items', 'genesis_nav_right', 10, 2 );
 
 add_action( 'genesis_theme_settings_metaboxes', 'genesis_sample_remove_metaboxes' );
 /**
- * Remove output of unused admin settings metaboxes.
+ * Removes output of unused admin settings metaboxes.
  *
  * @since 2.6.0
  *
@@ -189,7 +189,7 @@ function genesis_sample_remove_metaboxes( $_genesis_admin_settings ) {
 
 add_filter( 'genesis_customizer_theme_settings_config', 'genesis_sample_remove_customizer_settings' );
 /**
- * Remove output of header settings in the Customizer.
+ * Removes output of header settings in the Customizer.
  *
  * @since 2.6.0
  *
@@ -203,20 +203,20 @@ function genesis_sample_remove_customizer_settings( $config ) {
 
 }
 
-// Display custom logo.
+// Displays custom logo.
 add_action( 'genesis_site_title', 'the_custom_logo', 0 );
 
-// Reposition primary navigation menu.
+// Repositions primary navigation menu.
 remove_action( 'genesis_after_header', 'genesis_do_nav' );
 add_action( 'genesis_header', 'genesis_do_nav', 12 );
 
-// Reposition the secondary navigation menu.
+// Repositions the secondary navigation menu.
 remove_action( 'genesis_after_header', 'genesis_do_subnav' );
 add_action( 'genesis_footer', 'genesis_do_subnav', 10 );
 
 add_filter( 'wp_nav_menu_args', 'genesis_sample_secondary_menu_args' );
 /**
- * Reduce secondary navigation menu to one level depth.
+ * Reduces secondary navigation menu to one level depth.
  *
  * @since 2.2.3
  *
@@ -236,7 +236,7 @@ function genesis_sample_secondary_menu_args( $args ) {
 
 add_filter( 'genesis_author_box_gravatar_size', 'genesis_sample_author_box_gravatar' );
 /**
- * Modify size of the Gravatar in the author box.
+ * Modifies size of the Gravatar in the author box.
  *
  * @since 2.2.3
  *
@@ -251,7 +251,7 @@ function genesis_sample_author_box_gravatar( $size ) {
 
 add_filter( 'genesis_comment_list_args', 'genesis_sample_comments_gravatar' );
 /**
- * Modify size of the Gravatar in the entry comments.
+ * Modifies size of the Gravatar in the entry comments.
  *
  * @since 2.2.3
  *
