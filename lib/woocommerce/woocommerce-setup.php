@@ -10,7 +10,7 @@
  * @link    https://www.studiopress.com/
  */
 
-// Add product gallery support.
+// Adds product gallery support.
 if ( class_exists( 'WooCommerce' ) ) {
 
 	add_theme_support( 'wc-product-gallery-lightbox' );
@@ -21,7 +21,7 @@ if ( class_exists( 'WooCommerce' ) ) {
 
 add_action( 'wp_enqueue_scripts', 'genesis_sample_products_match_height', 99 );
 /**
- * Print an inline script to the footer to keep products the same height.
+ * Prints an inline script to the footer to keep products the same height.
  *
  * @since 2.3.0
  */
@@ -48,7 +48,7 @@ function genesis_sample_products_match_height() {
 
 add_filter( 'woocommerce_style_smallscreen_breakpoint', 'genesis_sample_woocommerce_breakpoint' );
 /**
- * Modify the WooCommerce breakpoints.
+ * Modifies the WooCommerce breakpoints.
  *
  * @since 2.3.0
  *
@@ -74,7 +74,7 @@ function genesis_sample_woocommerce_breakpoint() {
 
 add_filter( 'genesiswooc_products_per_page', 'genesis_sample_default_products_per_page' );
 /**
- * Set the default products per page.
+ * Sets the default products per page.
  *
  * @since 2.3.0
  *
@@ -88,7 +88,7 @@ function genesis_sample_default_products_per_page() {
 
 add_filter( 'woocommerce_pagination_args', 'genesis_sample_woocommerce_pagination' );
 /**
- * Update the next and previous arrows to the default Genesis style.
+ * Updates the next and previous arrows to the default Genesis style.
  *
  * @param array $args The previous and next text arguments.
  * @since 2.3.0
@@ -106,7 +106,7 @@ function genesis_sample_woocommerce_pagination( $args ) {
 
 add_action( 'after_switch_theme', 'genesis_sample_woocommerce_image_dimensions_after_theme_setup', 1 );
 /**
- * Define WooCommerce image sizes on theme activation.
+ * Defines WooCommerce image sizes on theme activation.
  *
  * @since 2.3.0
  */
@@ -114,6 +114,7 @@ function genesis_sample_woocommerce_image_dimensions_after_theme_setup() {
 
 	global $pagenow;
 
+	// Checks conditionally to see if we're activating the current theme and that WooCommerce is installed.
 	if ( ! isset( $_GET['activated'] ) || 'themes.php' !== $pagenow || ! class_exists( 'WooCommerce' ) ) {
 		return;
 	}
@@ -124,7 +125,7 @@ function genesis_sample_woocommerce_image_dimensions_after_theme_setup() {
 
 add_action( 'activated_plugin', 'genesis_sample_woocommerce_image_dimensions_after_woo_activation', 10, 2 );
 /**
- * Define the WooCommerce image sizes on WooCommerce activation.
+ * Defines the WooCommerce image sizes on WooCommerce activation.
  *
  * @since 2.3.0
  *
@@ -132,7 +133,7 @@ add_action( 'activated_plugin', 'genesis_sample_woocommerce_image_dimensions_aft
  */
 function genesis_sample_woocommerce_image_dimensions_after_woo_activation( $plugin ) {
 
-	// Check to see if WooCommerce is being activated.
+	// Checks to see if WooCommerce is being activated.
 	if ( 'woocommerce/woocommerce.php' !== $plugin ) {
 		return;
 	}
@@ -142,7 +143,7 @@ function genesis_sample_woocommerce_image_dimensions_after_woo_activation( $plug
 }
 
 /**
- * Update WooCommerce image dimensions.
+ * Updates WooCommerce image dimensions.
  *
  * @since 2.3.0
  */

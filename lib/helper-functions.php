@@ -11,7 +11,7 @@
  */
 
 /**
- * Get default link color for Customizer.
+ * Gets default link color for Customizer.
  * Abstracted here since at least two functions use it.
  *
  * @since 2.2.3
@@ -25,7 +25,7 @@ function genesis_sample_customizer_get_default_link_color() {
 }
 
 /**
- * Get default accent color for Customizer.
+ * Gets default accent color for Customizer.
  * Abstracted here since at least two functions use it.
  *
  * @since 2.2.3
@@ -60,7 +60,7 @@ function genesis_sample_color_contrast( $color ) {
 }
 
 /**
- * Generate a lighter or darker color from a starting color.
+ * Generates a lighter or darker color from a starting color.
  * Used to generate complementary hover tints from user-chosen colors.
  *
  * @since 2.2.3

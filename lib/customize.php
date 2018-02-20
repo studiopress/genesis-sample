@@ -12,7 +12,7 @@
 
 add_action( 'customize_register', 'genesis_sample_customizer_register' );
 /**
- * Register settings and controls with the Customizer.
+ * Registers settings and controls with the Customizer.
  *
  * @since 2.2.3
  *
