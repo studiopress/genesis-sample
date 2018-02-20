@@ -10,6 +10,16 @@ Github project link: https://github.com/copyblogger/genesis-sample/
 3. Activate the Genesis Sample theme.
 4. Inside your WordPress dashboard, go to Genesis > Theme Settings and configure them to your liking.
 
+## For Developers
+
+The version of [Genesis Sample on GitHub](https://github.com/copyblogger/genesis-sample/) includes tooling to check code against WordPress standards. To use it:
+
+1. Install Composer globally on your development machine. [See Composer setup steps](https://getcomposer.org/doc/00-intro.md#downloading-the-composer-executable).
+2. In the command line, change directory to the Genesis Sample folder.
+3. Type the command `composer install` to install PHP development dependencies.
+4. Type `composer phpcs` to run coding standards checks.
+
+You'll see output highlighting issues with PHP files that do not conform to Genesis Sample coding standards.
 
 ## Theme Support
 
