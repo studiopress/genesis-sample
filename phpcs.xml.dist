@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<ruleset name="Genesis Sample Code Standards">
+	<!-- See https://github.com/squizlabs/PHP_CodeSniffer/wiki/Annotated-ruleset.xml -->
+	<!-- See https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards -->
+	<!-- See https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/wiki -->
+	<!-- See https://github.com/wimg/PHPCompatibility -->
+	<!-- See https://github.com/Automattic/_s/blob/master/phpcs.xml.dist -->
+
+	<description>Custom rules for Genesis Sample.</description>
+
+	<!-- Check files in this directory and subdirectories. -->
+	<file>.</file>
+
+	<!-- Prevent sniffs of some directories. -->
+	<exclude-pattern>/vendor/</exclude-pattern>
+
+	<!-- Pass flags to PHPCS:
+		 p: Show progress of the run.
+		 s: Show sniff codes in all reports.
+		 v: Print verbose output.
+	-->
+	<arg value="psv"/>
+
+	<!-- Only check PHP and CSS files. -->
+	<arg name="extensions" value="php,css"/>
+
+	<!-- Use the WordPress ruleset, with exclusions. -->
+	<rule ref="WordPress">
+		<exclude name="WordPress.VIP"/>
+		<exclude name="Squiz.PHP.CommentedOutCode.Found"/>
+	</rule>
+
+	<!-- Test PHP cross-version compatibility. -->
+	<config name="testVersion" value="5.2-"/>
+	<rule ref="PHPCompatibility"/>
+
+	<!-- Check for correct text domain on all translatable strings. -->
+	<rule ref="WordPress.WP.I18n">
+		<properties>
+			<property name="text_domain" type="array" value="genesis-sample"/>
+		</properties>
+	</rule>
+
+	<!-- Verify that no WP functions are used which are deprecated or removed. -->
+	<rule ref="WordPress.WP.DeprecatedFunctions">
+		<properties>
+			<property name="minimum_supported_version" value="4.4"/>
+		</properties>
+	</rule>
+
+	<!-- Check all globals have the expected prefix. -->
+	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+		<properties>
+			<property name="prefixes" type="array" value="genesis_sample,CHILD_THEME"/>
+		</properties>
+	</rule>
+
+	<!-- Allow theme-specific exceptions to WordPress filename rules. -->
+	<rule ref="WordPress.Files.FileName">
+		<properties>
+			<property name="is_theme" value="true"/>
+		</properties>
+	</rule>
+</ruleset>
