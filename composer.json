@@ -17,6 +17,7 @@
     ],
     "require": {},
     "scripts": {
-        "phpcs": "phpcs"
+        "phpcs": "phpcs",
+        "export": "git archive -o genesis-sample.zip HEAD"
     }
 }
