@@ -21,6 +21,13 @@ The version of [Genesis Sample on GitHub](https://github.com/copyblogger/genesis
 
 You'll see output highlighting issues with PHP files that do not conform to Genesis Sample coding standards.
 
+### Packaging for distribution
+
+1. Switch to the branch you plan to distribute.
+2. Run `composer export` to zip all non-development files as `genesis-sample.zip`.
+
+The `export` command is an alias for `git archive -o genesis-sample.zip HEAD`.
+
 ## Theme Support
 
 Please visit https://my.studiopress.com/help/ for theme support.
