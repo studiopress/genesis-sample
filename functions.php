@@ -160,7 +160,7 @@ add_theme_support( 'genesis-footer-widgets', 3 );
 // Removes header right widget area.
 unregister_sidebar( 'header-right' );
 
-// Remove secondary sidebar.
+// Removes secondary sidebar.
 unregister_sidebar( 'sidebar-alt' );
 
 // Removes site layouts.
