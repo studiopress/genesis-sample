@@ -30,6 +30,11 @@
 		<exclude name="Squiz.PHP.CommentedOutCode.Found"/>
 	</rule>
 
+	<!-- Page templates currently use underscores for historic reasons. -->
+	<rule ref="WordPress.Files.FileName.NotHyphenatedLowercase">
+		<exclude-pattern>page_landing.php</exclude-pattern>
+	</rule>
+
 	<!-- Test PHP cross-version compatibility. -->
 	<config name="testVersion" value="5.2-"/>
 	<rule ref="PHPCompatibility"/>
