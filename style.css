@@ -64,6 +64,7 @@
 - Site Footer
 - Media Queries
 	- Min-width: 960px
+		- Site Header
 		- Genesis Menu
 		- Responsive Menu
 		- Header Menu
@@ -565,15 +566,11 @@ th:first-child {
 
 .site-inner {
 	clear: both;
-	margin: 70px auto 0;
+	margin: 0 auto 70px;
 	padding-left: 30px;
 	padding-right: 30px;
 	padding-top: 60px;
 	word-wrap: break-word;
-}
-
-.landing-page .site-inner {
-	margin-top: 0;
 }
 
 
@@ -941,9 +938,6 @@ img.alignright,
 	background-color: #fff;
 	box-shadow: 0 0 20px rgba(0,0,0,0.05);
 	padding: 15px 30px;
-	position: fixed;
-	width: 100%;
-	z-index: 9999;
 }
 
 /* Title Area
@@ -1406,6 +1400,15 @@ p.entry-meta {
 
 @media only screen and (min-width: 960px) {
 
+	/* Site Header
+	--------------------------------------------- */
+
+	.site-header {
+		position: fixed;
+		width: 100%;
+		z-index: 9999;
+	}
+
 	/* Genesis Menu
 	--------------------------------------------- */
 
@@ -1491,6 +1494,7 @@ p.entry-meta {
 	--------------------------------------------- */
 
 	.site-inner {
+		margin-top: 70px;
 		max-width: 1140px;
 	}
 
