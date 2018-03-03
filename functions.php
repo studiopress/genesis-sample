@@ -131,7 +131,9 @@ add_theme_support(
 );
 
 // Adds viewport meta tag for mobile browsers.
-add_theme_support( 'genesis-responsive-viewport' );
+add_theme_support(
+	'genesis-responsive-viewport'
+);
 
 // Adds custom logo in Customizer > Site Identity.
 add_theme_support(
