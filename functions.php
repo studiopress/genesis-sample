@@ -107,6 +107,23 @@ function genesis_sample_responsive_menu_settings() {
 
 }
 
+// Adds support for Gutenberg.
+add_theme_support( 'gutenberg', array(
+
+	// Adds theme colors to Gutenberg editor.
+	'colors' => array(
+		'#f5f5f5',
+		'#999999',
+		'#333333',
+		get_theme_mod( 'genesis_sample_link_color', genesis_sample_customizer_get_default_link_color() ),
+		get_theme_mod( 'genesis_sample_accent_color', genesis_sample_customizer_get_default_accent_color() ),
+	),
+
+) );
+
+// Removes custom colors in Gutenberg editor.
+add_theme_support( 'disable-custom-colors' );
+
 // Adds support for HTML5 markup structure.
 add_theme_support(
 	'html5', array(
