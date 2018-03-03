@@ -232,11 +232,11 @@ i {
 
 mark {
 	background: #ddd;
-	color: #000;
+	color: #333;
 }
 
 blockquote {
-	margin: 40px;
+	margin: 30px;
 }
 
 blockquote::before {
@@ -759,7 +759,7 @@ img.alignright,
 .entry-content .wp-audio-shortcode,
 .entry-content .wp-playlist,
 .entry-content .wp-video {
-	margin: 0 0 28px;
+	margin: 0 0 30px;
 }
 
 
@@ -1192,8 +1192,7 @@ img.alignright,
 }
 
 .entry-content code {
-	background-color: #333;
-	color: #eee;
+	background-color: #f5f5f5;
 }
 
 .entry-content .caption {
@@ -1701,7 +1700,7 @@ p.entry-meta {
 	*::after {
 		background: transparent !important;
 		box-shadow: none !important;
-		color: #000 !important;
+		color: #333 !important;
 		text-shadow: none !important;
 	}
 
