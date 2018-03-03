@@ -121,9 +121,6 @@ add_theme_support( 'gutenberg', array(
 
 ) );
 
-// Removes custom colors in Gutenberg editor.
-add_theme_support( 'disable-custom-colors' );
-
 // Adds support for HTML5 markup structure.
 add_theme_support(
 	'html5', array(
