@@ -999,6 +999,7 @@ img.alignright,
 	font-size: 15px;
 	font-size: 1.5rem;
 	font-weight: 400;
+	outline-offset: -1px;
 	padding-bottom: 12px;
 	padding-top: 12px;
 	text-decoration: none;
@@ -1067,7 +1068,7 @@ img.alignright,
 
 .menu-toggle,
 .sub-menu-toggle {
-	background-color: #fff;
+	background-color: transparent;
 	border-width: 0;
 	color: #333;
 	display: block;
@@ -1081,7 +1082,7 @@ img.alignright,
 .menu-toggle:hover,
 .sub-menu-toggle:focus,
 .sub-menu-toggle:hover {
-	background-color: #fff;
+	background-color: transparent;
 	border-width: 0;
 	color: #0073e5;
 }
@@ -1107,7 +1108,7 @@ img.alignright,
 
 .sub-menu-toggle {
 	float: right;
-	padding: 12px 10px;
+	padding: 9px 10px;
 	position: absolute;
 	right: 0;
 	top: 0;
