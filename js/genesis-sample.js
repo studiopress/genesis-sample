@@ -24,18 +24,24 @@ var genesisSample = ( function( $ ) {
 		$('.site-inner').css('margin-top', siteInnerMarginTop);
 	},
 
+	/** Make videos fit the full container width without losing their ratio.
+	 *
+	 * @since 2.7.0
+	 */
+	correctVideoWidths = function() {
+		$(".site-container").fitVids();
+	},
+
 	/**
 	 * Initialize Genesis Sample.
 	 *
-	 * Internal functions to execute on document load can be called here.
+	 * Internal functions to execute on full page load.
 	 *
 	 * @since 2.6.0
 	 */
-	init = function() {
-		// Run on first load.
+	load = function() {
 		moveContentBelowFixedHeader();
 
-		// Run after window resize.
 		$( window ).resize(function() {
 			moveContentBelowFixedHeader();
 		});
@@ -49,13 +55,24 @@ var genesisSample = ( function( $ ) {
 				  }, 1500);
 			});
 		}
+	},
+
+	/**
+	 * Functions to execute on document ready.
+	 *
+	 * @since 2.7.0
+	 */
+	ready = function() {
+		correctVideoWidths();
 	};
 
-	// Expose the init function only.
+	// Expose the load and ready functions.
 	return {
-		init: init
+		load: load,
+		ready: ready
 	};
 
 })( jQuery );
 
-jQuery( window ).on( 'load', genesisSample.init );
+jQuery( window ).on( 'load', genesisSample.load );
+jQuery( genesisSample.ready );
