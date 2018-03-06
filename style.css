@@ -71,6 +71,7 @@
 		- Site Inner
 		- Content
 		- Sidebar
+		- Gutenberg
 		- Author Box
 		- After Entry
 		- Gallery
@@ -1505,6 +1506,27 @@ p.entry-meta {
 
 	.sidebar-content .sidebar {
 		float: left;
+	}
+
+	/* Gutenberg
+	--------------------------------------------- */
+
+	.full-width-content .alignfull,
+	.full-width-content .alignwide {
+		margin-bottom: 30px;
+		margin-top: 30px;
+		max-width: 1000%;
+		width: auto;
+	}
+
+	.full-width-content .alignfull {
+		margin-left: calc(50% - 50vw);
+		margin-right: calc(50% - 50vw);
+	}
+ 
+	.full-width-content .alignwide {
+		margin-left: calc(25% - 25vw);
+		margin-right: calc(25% - 25vw);
 	}
 
 	/* Author Box
