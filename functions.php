@@ -110,6 +110,9 @@ function genesis_sample_responsive_menu_settings() {
 // Adds support for Gutenberg.
 add_theme_support( 'gutenberg', array(
 
+	// Adds wide images, galleries, and videos.
+	'wide-images' => true,
+    
 	// Adds theme colors to Gutenberg editor.
 	'colors' => array(
 		'#f5f5f5',
