@@ -912,7 +912,7 @@ img.alignright,
 .site-header {
 	background-color: #fff;
 	box-shadow: 0 0 20px rgba(0,0,0,0.05);
-	padding: 15px 30px;
+	padding: 0 30px;
 }
 
 /* Title Area
@@ -920,8 +920,8 @@ img.alignright,
 
 .title-area {
 	float: left;
-	padding-bottom: 10px;
-	padding-top: 10px;
+	padding-bottom: 25px;
+	padding-top: 25px;
 }
 
 .wp-custom-logo .title-area {
@@ -1042,6 +1042,7 @@ img.alignright,
 
 .genesis-responsive-menu {
 	display: none;
+	padding-bottom: 15px;
 	position: relative;
 }
 
@@ -1070,7 +1071,7 @@ img.alignright,
 	float: right;
 	line-height: 20px;
 	margin-top: 10px;
-	padding: 0;
+	padding: 15px 0;
 	position: relative;
 	z-index: 1000;
 }
@@ -1447,6 +1448,7 @@ p.entry-meta {
 
 	.genesis-responsive-menu {
 		display: block;
+		padding-top: 15px;
 	}
 
 	.menu-toggle,
