@@ -544,10 +544,8 @@ th:first-child {
 
 .site-inner {
 	clear: both;
-	margin: 0 auto 70px;
-	padding-left: 30px;
-	padding-right: 30px;
-	padding-top: 60px;
+	margin: 0 auto;
+	padding: 60px 30px 0;
 	word-wrap: break-word;
 }
 
@@ -1223,7 +1221,7 @@ p.entry-meta {
 
 .pagination {
 	clear: both;
-	margin: 40px 0;
+	margin: 60px 0;
 }
 
 .adjacent-entry-pagination {
