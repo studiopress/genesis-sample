@@ -1120,6 +1120,7 @@ img.alignright,
 --------------------------------------------- */
 
 .nav-primary {
+	clear: left;
 	width: 100%;
 }
 
@@ -1459,6 +1460,7 @@ p.entry-meta {
 	--------------------------------------------- */
 
 	.nav-primary {
+		clear: none;
 		float: right;
 		width: auto;
 	}
