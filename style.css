@@ -1076,14 +1076,16 @@ img.alignright,
 	z-index: 1000;
 }
 
-.menu-toggle::before {
-	font-size: 1.5em;
-	margin-right: 5px;
-	text-rendering: auto;
-}
-
 .menu-toggle.activated::before {
 	content: "\f335";
+}
+
+.site-header .menu-toggle::before {
+	float: left;
+	margin-right: 5px;
+	position: relative;
+	text-rendering: auto;
+	top: 1px;
 }
 
 .sub-menu-toggle {
