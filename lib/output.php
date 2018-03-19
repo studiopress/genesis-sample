@@ -21,14 +21,17 @@ function genesis_sample_css() {
 
 	$handle = defined( 'CHILD_THEME_NAME' ) && CHILD_THEME_NAME ? sanitize_title_with_dashes( CHILD_THEME_NAME ) : 'child-theme';
 
-	$color_link            = get_theme_mod( 'genesis_sample_link_color', genesis_sample_customizer_get_default_link_color() );
-	$color_accent          = get_theme_mod( 'genesis_sample_accent_color', genesis_sample_customizer_get_default_accent_color() );
-	$logo                  = wp_get_attachment_image_src( get_theme_mod( 'custom_logo' ), 'full' );
-	$logo_effective_height = min( $logo_width, $logo_max_width ) / $logo_ratio;
-	$logo_height           = absint( $logo[2] );
-	$logo_max_width        = get_theme_mod( 'genesis_sample_logo_width', 350 );
-	$logo_width            = absint( $logo[1] );
-	$logo_ratio            = $logo_width / $logo_height;
+	$color_link   = get_theme_mod( 'genesis_sample_link_color', genesis_sample_customizer_get_default_link_color() );
+	$color_accent = get_theme_mod( 'genesis_sample_accent_color', genesis_sample_customizer_get_default_accent_color() );
+	$logo         = wp_get_attachment_image_src( get_theme_mod( 'custom_logo' ), 'full' );
+
+	if ( $logo ) {
+		$logo_height           = absint( $logo[2] );
+		$logo_max_width        = get_theme_mod( 'genesis_sample_logo_width', 350 );
+		$logo_width            = absint( $logo[1] );
+		$logo_ratio            = $logo_width / $logo_height;
+		$logo_effective_height = min( $logo_width, $logo_max_width ) / $logo_ratio;
+	}
 
 	$css = '';
 
