@@ -149,25 +149,32 @@ function genesis_sample_woocommerce_image_dimensions_after_woo_activation( $plug
  */
 function genesis_sample_update_woocommerce_image_dimensions() {
 
-	$catalog   = array(
-		'width'  => '500', // px.
-		'height' => '500', // px.
-		'crop'   => 1,     // true.
-	);
-	$single    = array(
-		'width'  => '655', // px.
-		'height' => '655', // px.
-		'crop'   => 1,     // true.
-	);
-	$thumbnail = array(
-		'width'  => '180', // px.
-		'height' => '180', // px.
-		'crop'   => 1,     // true.
+	// Updates image size options.
+	update_option( 'woocommerce_single_image_width', 655 );    // Single product image.
+	update_option( 'woocommerce_thumbnail_image_width', 500 ); // Catalog image.
+
+	// Updates image cropping option.
+	update_option( 'woocommerce_thumbnail_cropping', '1:1' );
+
+}
+
+add_filter( 'woocommerce_get_image_size_gallery_thumbnail', 'genesis_sample_gallery_image_thumbnail' );
+/**
+ * Filters the WooCommerce gallery image dimensions.
+ *
+ * @since 2.4.0
+ *
+ * @param array $size The gallery image size and crop arguments.
+ * @return array The modified gallery image size and crop arguments.
+ */
+function genesis_sample_gallery_image_thumbnail( $size ) {
+
+	$size = array(
+		'width'  => 180,
+		'height' => 180,
+		'crop'   => 1,
 	);
 
-	// Image sizes.
-	update_option( 'shop_catalog_image_size', $catalog );     // Product category thumbs.
-	update_option( 'shop_single_image_size', $single );       // Single product image.
-	update_option( 'shop_thumbnail_image_size', $thumbnail ); // Image gallery thumbs.
+	return $size;
 
 }
