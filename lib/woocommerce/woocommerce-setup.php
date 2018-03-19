@@ -162,7 +162,7 @@ add_filter( 'woocommerce_get_image_size_gallery_thumbnail', 'genesis_sample_gall
 /**
  * Filters the WooCommerce gallery image dimensions.
  *
- * @since 2.4.0
+ * @since 2.6.0
  *
  * @param array $size The gallery image size and crop arguments.
  * @return array The modified gallery image size and crop arguments.
