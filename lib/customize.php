@@ -62,13 +62,18 @@ function genesis_sample_customizer_register( $wp_customize ) {
 		)
 	);
 
-	$wp_customize->add_setting( 'genesis_sample_logo_width' );
+	$wp_customize->add_setting(
+		'genesis_sample_logo_width',
+		array(
+			'default'           => 350,
+			'sanitize_callback' => 'absint',
+		)
+	);
 
 	// Add a control for the logo size.
 	$wp_customize->add_control(
 		'genesis_sample_logo_width',
 		array(
-			'default'     => 350,
 			'label'       => __( 'Logo Width', 'genesis-sample' ),
 			'description' => __( 'The maximum width of the logo in pixels.', 'genesis-sample' ),
 			'priority'    => 9,

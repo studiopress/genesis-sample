@@ -21,9 +21,14 @@ function genesis_sample_css() {
 
 	$handle = defined( 'CHILD_THEME_NAME' ) && CHILD_THEME_NAME ? sanitize_title_with_dashes( CHILD_THEME_NAME ) : 'child-theme';
 
-	$color_link     = get_theme_mod( 'genesis_sample_link_color', genesis_sample_customizer_get_default_link_color() );
-	$color_accent   = get_theme_mod( 'genesis_sample_accent_color', genesis_sample_customizer_get_default_accent_color() );
-	$logo_max_width = get_theme_mod( 'genesis_sample_logo_width', false );
+	$color_link            = get_theme_mod( 'genesis_sample_link_color', genesis_sample_customizer_get_default_link_color() );
+	$color_accent          = get_theme_mod( 'genesis_sample_accent_color', genesis_sample_customizer_get_default_accent_color() );
+	$logo                  = wp_get_attachment_image_src( get_theme_mod( 'custom_logo' ), 'full' );
+	$logo_effective_height = min( $logo_width, $logo_max_width ) / $logo_ratio;
+	$logo_height           = absint( $logo[2] );
+	$logo_max_width        = get_theme_mod( 'genesis_sample_logo_width', 350 );
+	$logo_width            = absint( $logo[1] );
+	$logo_ratio            = $logo_width / $logo_height;
 
 	$css = '';
 
@@ -74,40 +79,46 @@ function genesis_sample_css() {
 		', $color_accent, genesis_sample_color_contrast( $color_accent )
 	) : '';
 
-	if ( $logo_max_width && has_custom_logo() ) {
-		$css .=
-		"
+	$css .= ( has_custom_logo() && ( 200 <= $logo_effective_height ) ) ?
+		'
+		.site-header {
+			position: static;
+		}
+		'
+	: '';
+
+	$css .= ( has_custom_logo() && ( 350 !== $logo_max_width ) ) ? sprintf(
+		'
 		.wp-custom-logo .site-container .title-area {
-			max-width: {$logo_max_width}px;
+			max-width: %spx;
 		}
-		";
+		', $logo_max_width
+	) : '';
 
-		// Place menu below logo and center logo once it gets big.
-		if ( $logo_max_width >= 600 ) {
-			$css .=
-			'
-			.wp-custom-logo .title-area,
-			.wp-custom-logo .menu-toggle,
+	// Place menu below logo and center logo once it gets big.
+	$css .= ( has_custom_logo() && ( 600 <= $logo_max_width ) ) ?
+		'
+		.wp-custom-logo .title-area,
+		.wp-custom-logo .menu-toggle,
+		.wp-custom-logo .nav-primary {
+			float: none;
+		}
+
+		.wp-custom-logo .title-area {
+			margin: 0 auto;
+		}
+
+		@media only screen and (min-width: 960px) {
 			.wp-custom-logo .nav-primary {
-				float: none;
+				text-align: center;
 			}
 
-			.wp-custom-logo .title-area {
-				margin: 0 auto;
+			.wp-custom-logo .nav-primary .sub-menu {
+				text-align: left;
 			}
-
-			@media only screen and (min-width: 960px) {
-				.wp-custom-logo .nav-primary {
-					text-align: center;
-				}
-				.wp-custom-logo .sub-menu {
-					text-align: left;
-				}
-			}
-			';
-
 		}
-	}
+		'
+	: '';
 
 	if ( $css ) {
 		wp_add_inline_style( $handle, $css );
