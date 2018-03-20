@@ -115,7 +115,7 @@ function genesis_sample_woocommerce_image_dimensions_after_theme_setup() {
 	global $pagenow;
 
 	// Checks conditionally to see if we're activating the current theme and that WooCommerce is installed.
-	if ( ! isset( $_GET['activated'] ) || 'themes.php' !== $pagenow || ! class_exists( 'WooCommerce' ) ) {
+	if ( ! isset( $_GET['activated'] ) || 'themes.php' !== $pagenow || ! class_exists( 'WooCommerce' ) ) { // phpcs:ignore WordPress.CSRF.NonceVerification.NoNonceVerification -- low risk, follows official snippet at https://goo.gl/nnHHQa.
 		return;
 	}
 

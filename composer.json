@@ -1,0 +1,23 @@
+{
+    "name": "copyblogger/genesis-sample",
+    "description": "Genesis Sample child theme for the Genesis Framework",
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.2",
+        "wp-coding-standards/wpcs": "^0.14.1",
+        "wimg/php-compatibility": "^8.1",
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.4.4",
+        "php": "^5.6|^7"
+    },
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "StudioPress",
+            "email": "support@studiopress.com"
+        }
+    ],
+    "require": {},
+    "scripts": {
+        "phpcs": "phpcs",
+        "export": "git archive -o genesis-sample.zip HEAD"
+    }
+}

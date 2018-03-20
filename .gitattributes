@@ -1,0 +1,32 @@
+# Normalize text file line endings to LF on checkin
+# and prevent conversion to CRLF on checkout.
+* text=auto eol=lf
+
+# Text files.
+*.css text
+*.dist text
+*.js text
+*.json text
+*.md text
+*.php text
+*.po text
+*.pot text
+*.xml text
+
+# Binary files.
+*.eot binary
+*.gif binary
+*.ico binary
+*.jpg binary
+*.mo binary
+*.png binary
+*.ttf binary
+*.woff binary
+*.woff2 binary
+
+# Omit during export.
+.editorconfig export-ignore
+.gitattributes export-ignore
+.gitignore export-ignore
+composer.json export-ignore
+phpcs.xml.dist export-ignore
