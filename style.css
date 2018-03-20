@@ -526,6 +526,7 @@ th:first-child {
 .site-container {
 	-webkit-animation: fadein 1s;
 	animation:         fadein 1s;
+	word-wrap: break-word;
 }
 
 @keyframes fadein {
@@ -545,7 +546,6 @@ th:first-child {
 	clear: both;
 	margin: 0 auto;
 	padding: 60px 30px 0;
-	word-wrap: break-word;
 }
 
 
@@ -747,7 +747,6 @@ img.alignright,
 
 .widget {
 	margin-bottom: 40px;
-	word-wrap: break-word;
 }
 
 .widget p:last-child,
