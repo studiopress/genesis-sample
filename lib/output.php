@@ -31,6 +31,7 @@ function genesis_sample_css() {
 		$logo_width            = absint( $logo[1] );
 		$logo_ratio            = $logo_width / $logo_height;
 		$logo_effective_height = min( $logo_width, $logo_max_width ) / $logo_ratio;
+		$logo_padding          = $logo_effective_height > 100 ? ()
 	}
 
 	$css = '';
