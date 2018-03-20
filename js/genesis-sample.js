@@ -12,7 +12,7 @@ var genesisSample = ( function( $ ) {
 	/**
 	 * Adjust site inner margin top to compensate for sticky header height.
 	 *
-	 * @since 2.4.0
+	 * @since 2.6.0
 	 */
 	var moveContentBelowFixedHeader = function() {
 		var siteInnerMarginTop = 0;
@@ -29,7 +29,7 @@ var genesisSample = ( function( $ ) {
 	 *
 	 * Internal functions to execute on document ready can be called here.
 	 *
-	 * @since 2.4.0
+	 * @since 2.6.0
 	 */
 	init = function() {
 		// Run on first load.
