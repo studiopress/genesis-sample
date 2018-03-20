@@ -27,7 +27,7 @@ var genesisSample = ( function( $ ) {
 	/**
 	 * Initialize Genesis Sample.
 	 *
-	 * Internal functions to execute on document ready can be called here.
+	 * Internal functions to execute on document load can be called here.
 	 *
 	 * @since 2.6.0
 	 */
@@ -58,4 +58,4 @@ var genesisSample = ( function( $ ) {
 
 })( jQuery );
 
-jQuery( genesisSample.init );
+jQuery( window ).on( 'load', genesisSample.init );
