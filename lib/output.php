@@ -31,7 +31,7 @@ function genesis_sample_css() {
 		$logo_width            = absint( $logo[1] );
 		$logo_ratio            = $logo_width / $logo_height;
 		$logo_effective_height = min( $logo_width, $logo_max_width ) / $logo_ratio;
-		$logo_padding          = $logo_effective_height > 100 ? ()
+		$logo_padding          = max( 0, ( 60 - $logo_effective_height ) / 2 );
 	}
 
 	$css = '';
@@ -124,6 +124,15 @@ function genesis_sample_css() {
 		}
 		'
 	: '';
+
+	$css .= ( has_custom_logo() && $logo_padding ) ? sprintf(
+		'
+		.wp-custom-logo .title-area {
+			padding-top: %1$spx;
+			padding-bottom: %1$spx;
+		}
+		', $logo_padding + 5
+	) : '';
 
 	if ( $css ) {
 		wp_add_inline_style( $handle, $css );
