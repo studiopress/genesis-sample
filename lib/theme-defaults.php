@@ -68,7 +68,7 @@ add_filter( 'simple_social_default_styles', 'genesis_sample_social_default_style
  * @param array $defaults Social style defaults.
  * @return array Modified social style defaults.
  */
-function daily_dish_social_default_styles( $defaults ) {
+function genesis_sample_social_default_styles( $defaults ) {
 
 	$args = array(
 		'alignment'              => 'alignleft',
