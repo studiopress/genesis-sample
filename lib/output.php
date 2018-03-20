@@ -109,6 +109,7 @@ function genesis_sample_css() {
 
 		.wp-custom-logo .title-area {
 			margin: 0 auto;
+			text-align: center;
 		}
 
 		@media only screen and (min-width: 960px) {
