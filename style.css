@@ -171,7 +171,6 @@ body {
 	margin: 0;
 }
 
-a,
 button,
 input:focus,
 input[type="button"],
@@ -186,6 +185,7 @@ textarea:focus,
 a {
 	color: #0073e5;
 	text-decoration: underline;
+	transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
 a:focus,
@@ -1589,6 +1589,7 @@ p.entry-meta {
 	.gallery img:focus,
 	.gallery img:hover {
 		border: 1px solid #999;
+		outline: none;
 	}
 
 	/* Column Classes
