@@ -128,8 +128,7 @@ function genesis_sample_css() {
 	$css .= ( has_custom_logo() && $logo_padding ) ? sprintf(
 		'
 		.wp-custom-logo .title-area {
-			padding-top: %1$spx;
-			padding-bottom: %1$spx;
+			padding-top: %spx;
 		}
 		', $logo_padding + 5
 	) : '';
