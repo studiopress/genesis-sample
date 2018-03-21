@@ -115,6 +115,11 @@ function genesis_sample_responsive_menu_settings() {
 
 }
 
+// Sets the content width based on the theme's design and stylesheet.
+if ( ! isset( $content_width ) ) {
+	$content_width = 702; // Pixels.
+}
+
 // Adds support for HTML5 markup structure.
 add_theme_support(
 	'html5', array(
