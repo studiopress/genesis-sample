@@ -1,6 +1,6 @@
 # Genesis Sample Theme Changelog
 
-## [Unreleased]
+## [2.6.0] - 2018-03-22
 * Fix product gallery bug in WooCommerce 3.0 update.
 * Improve compliance with WordPress coding standards.
 * Improve inline documentation.
@@ -13,6 +13,7 @@
 * Update favicon design.
 * Update theme tags.
 * Update typography and style.
+* Update XML demo content.
 * Update responsive menu to 1.1.3.
 * Update image size default functions for WooCommerce 3.3+.
 * Remove menu toggle border.
@@ -45,7 +46,7 @@
 * Set localization.
 * Update XML file.
 
-[Unreleased]: https://github.com/copyblogger/genesis-sample/tree/develop/
+[2.6.0]: https://github.com/copyblogger/genesis-sample/compare/2.3.0...2.6.0
 [2.3.0]: https://github.com/copyblogger/genesis-sample/compare/2.2.4...2.3.0
 [2.2.4]: https://github.com/copyblogger/genesis-sample/compare/2.2.3...2.2.4
 [2.2.3]: https://github.com/copyblogger/genesis-sample/compare/014deb3689323b7bbd4ddbfff4f5f9279a38f741...2.2.3
