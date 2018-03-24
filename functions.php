@@ -167,6 +167,15 @@ add_theme_support(
 	)
 );
 
+// Adds support for editor color palette.
+add_theme_support( 'editor-color-palette',
+	'#f5f5f5',
+	'#999999',
+	'#333333',
+	get_theme_mod( 'genesis_sample_link_color', genesis_sample_customizer_get_default_link_color() ),
+	get_theme_mod( 'genesis_sample_accent_color', genesis_sample_customizer_get_default_accent_color() )
+);
+
 // Adds support for after entry widget.
 add_theme_support( 'genesis-after-entry-widget-area' );
 
