@@ -981,6 +981,11 @@ img.alignright,
 	max-width: 350px;
 	padding-bottom: 5px;
 	padding-top: 5px;
+	width: 100%;
+}
+
+.wp-custom-logo .title-area img {
+	width: auto;
 }
 
 .site-title {

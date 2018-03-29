@@ -29,8 +29,8 @@ function genesis_sample_css() {
 		$logo_height           = absint( $logo[2] );
 		$logo_max_width        = get_theme_mod( 'genesis_sample_logo_width', 350 );
 		$logo_width            = absint( $logo[1] );
-		$logo_ratio            = $logo_width / $logo_height;
-		$logo_effective_height = min( $logo_width, $logo_max_width ) / $logo_ratio;
+		$logo_ratio            = $logo_width / max( $logo_height, 1 );
+		$logo_effective_height = min( $logo_width, $logo_max_width ) / max( $logo_ratio, 1 );
 		$logo_padding          = max( 0, ( 60 - $logo_effective_height ) / 2 );
 	}
 
