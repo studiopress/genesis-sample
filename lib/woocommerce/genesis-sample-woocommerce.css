@@ -814,6 +814,29 @@ div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricte
 
 }
 
+@media only screen and (min-width: 960px) {
+
+	.full-width-content.woocommerce div.product .woocommerce-tabs ul.tabs {
+		padding: 0 0 0 1em;
+	}
+
+	.full-width-content.woocommerce div.product .woocommerce-tabs ul.tabs li {
+		background-color: #f5f5f5;
+		display: inline-block;
+		margin: 0 -5px;
+	}
+
+	.full-width-content.woocommerce div.product .woocommerce-tabs ul.tabs li.active {
+		background-color: #fff;
+		border-bottom: 1px solid #fff;
+	}
+
+	.full-width-content.woocommerce div.product .woocommerce-tabs ul.tabs li.active a::after {
+		display: none;
+	}
+
+}
+
 @media only screen and (min-width: 1140px) {
 
 	.woocommerce div.product .woocommerce-tabs ul.tabs {
@@ -827,6 +850,7 @@ div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricte
 	}
 
 	.woocommerce div.product .woocommerce-tabs ul.tabs li.active {
+		background-color: #fff;
 		border-bottom: 1px solid #fff;
 	}
 
