@@ -86,10 +86,8 @@ Loaded on WooCommerce pages */
 	top: 1em;
 }
 
-.woocommerce ul.products li.product,
 .woocommerce ul.products li.product .button,
 .woocommerce .woocommerce-ordering,
-.woocommerce-page ul.products li.product,
 .woocommerce-page ul.products li.product .button,
 .woocommerce-page .woocommerce-ordering {
 	margin-right: 0;
@@ -791,10 +789,8 @@ div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricte
 		width: 47%;
 	}
 
-	.woocommerce ul.products li.product,
 	.woocommerce ul.products li.product .button,
 	.woocommerce .woocommerce-ordering,
-	.woocommerce-page ul.products li.product,
 	.woocommerce-page ul.products li.product .button,
 	.woocommerce-page .woocommerce-ordering {
 		margin-right: auto;
@@ -815,20 +811,6 @@ div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricte
 	.woocommerce-cart table.cart td.actions .coupon .input-text {
 		margin-bottom: 0;
 	}
-
-}
-
-@media only screen and (min-width: 960px) {
-
-	.woocommerce-account .woocommerce-MyAccount-navigation {
-		margin-right: 5%;
-		width: 20%;
-	}
-
-	.woocommerce-account .woocommerce-MyAccount-content {
-		width: 75%;
-	}
-
 
 }
 
