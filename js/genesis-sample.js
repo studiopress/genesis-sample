@@ -42,7 +42,7 @@ var genesisSample = ( function( $ ) {
 
 		// Run after the Customizer updates.
 		// 1.5s delay is to allow logo area reflow.
-		if (typeof wp != "undefined" && typeof wp.customize != "undefined") {
+		if (typeof wp.customize != "undefined") {
 			wp.customize.bind( 'change', function ( setting ) {
 				setTimeout(function() {
 					moveContentBelowFixedHeader();
