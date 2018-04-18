@@ -1081,6 +1081,7 @@ img.alignright,
 }
 
 .genesis-nav-menu .menu-item:hover > .sub-menu {
+	display: block;
 	left: auto;
 	opacity: 1;
 }
@@ -1100,8 +1101,11 @@ img.alignright,
 
 .genesis-responsive-menu {
 	display: none;
-	padding-bottom: 15px;
 	position: relative;
+}
+
+.genesis-responsive-menu .genesis-nav-menu .menu-item:hover > .sub-menu {
+	display: none;
 }
 
 .menu-toggle,
@@ -1180,6 +1184,8 @@ img.alignright,
 
 .nav-primary {
 	clear: left;
+	padding-bottom: 15px;
+	padding-top: 15px;
 	width: 100%;
 }
 
@@ -1479,8 +1485,8 @@ p.entry-meta {
 		background-color: #0073e5;
 	}
 
-	.genesis-responsive-menu .genesis-nav-menu .sub-menu,
-	.genesis-responsive-menu .genesis-nav-menu .sub-menu a {
+	.genesis-nav-menu .sub-menu,
+	.genesis-nav-menu .sub-menu a {
 		width: 180px;
 	}
 
