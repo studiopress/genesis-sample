@@ -166,13 +166,29 @@ add_theme_support(
 	)
 );
 
+// Enqueues block editor style.
+add_action( 'enqueue_block_editor_assets', 'genesis_sample_block_editor_styles' );
+function genesis_sample_block_editor_styles() {
+
+	wp_enqueue_style( 'genesis-sample-block-editor-fonts', '//fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700', array(), CHILD_THEME_VERSION);
+	wp_enqueue_style( 'genesis-sample-block-editor-styles', get_theme_file_uri( '/style-editor.css' ), false, '1.0', 'all' );
+
+}
+
 // Adds support for editor color palette.
 add_theme_support( 'editor-color-palette',
-	'#f5f5f5',
-	'#999999',
-	'#333333',
-	get_theme_mod( 'genesis_sample_link_color', genesis_sample_customizer_get_default_link_color() ),
-	get_theme_mod( 'genesis_sample_accent_color', genesis_sample_customizer_get_default_accent_color() )
+	array(
+		'name' => 'light gray',
+		'color' => '#f5f5f5',
+	),
+	array(
+		'name' => 'medium gray',
+		'color' => '#999',
+	),
+	array(
+		'name' => 'dark gray',
+		'color' => '#333',
+	)
 );
 
 // Adds support for after entry widget.
