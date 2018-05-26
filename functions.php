@@ -179,15 +179,15 @@ function genesis_sample_block_editor_styles() {
 // Adds support for editor color palette.
 add_theme_support( 'editor-color-palette',
 	array(
-		'name' => 'light gray',
-		'color' => '#f5f5f5',
+		'name'  => __( 'Light gray', 'genesis-sample' ),
+		'color'	=> '#f5f5f5',
 	),
 	array(
-		'name' => 'medium gray',
+		'name'  => __( 'Medium gray', 'genesis-sample' ),
 		'color' => '#999',
 	),
 	array(
-		'name' => 'dark gray',
+		'name'  => __( 'Dark gray', 'genesis-sample' ),
 		'color' => '#333',
 	)
 );
