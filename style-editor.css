@@ -9,7 +9,7 @@
 .gutenberg__editor .editor-block-list__block,
 .gutenberg__editor .editor-default-block-appender,
 .gutenberg__editor .editor-post-title {
-    max-width: 730px;
+    max-width: 732px;
 }
 
 .gutenberg__editor .edit-post-visual-editor,
@@ -20,10 +20,50 @@
 	line-height: 1.625;
 }
 
+.gutenberg__editor .editor-rich-text__tinymce a {
+	color: #0073e5;
+}
+
 .gutenberg__editor .editor-post-title .editor-post-title__input {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 30px;
 	font-weight: 400;
+}
+
+/* Blockquotes
+--------------------------------------------- */
+
+.gutenberg__editor .wp-block-quote,
+.gutenberg__editor .wp-block-quote cite {
+	font-style: italic;
+}
+
+.gutenberg__editor .wp-block-quote.is-style-large p {
+	font-size: 24px;
+}
+
+.gutenberg__editor .wp-block-quote:not(.is-large):not(.is-style-large) {
+	border-left: 0;
+	font-style: italic;
+	margin: 30px;
+	padding-left: 0;
+}
+
+.gutenberg__editor .wp-block-quote cite {
+	color: #666;
+	font-size: 14px;
+	margin-bottom: 0;
+	margin-top: -15px;
+}
+
+/* Figcaption
+--------------------------------------------- */
+
+.gutenberg__editor .wp-block-image figcaption {
+	color: #666;
+	font-size: 14px;
+	font-style: italic;
+	margin-top: 10px;
 }
 
 /* Headings
