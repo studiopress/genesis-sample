@@ -137,7 +137,6 @@ add_theme_support(
 		'404-page',
 		'drop-down-menu',
 		'headings',
-		'rems',
 		'search-form',
 		'skip-links',
 	)

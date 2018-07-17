@@ -133,7 +133,6 @@ Loaded on WooCommerce pages */
 	cursor: pointer;
 	display: inline-block;
 	font-size: 16px;
-	font-size: 1.6rem;
 	font-weight: 600;
 	line-height: 1.625;
 	padding: 8px 12px;
@@ -267,7 +266,6 @@ Loaded on WooCommerce pages */
 
 .woocommerce-cart table.cart td {
 	font-size: 18px;
-	font-size: 1.8rem;
 	padding: 10px 12px;
 }
 
@@ -296,7 +294,6 @@ Loaded on WooCommerce pages */
 
 .woocommerce-cart table.cart td.actions .coupon .input-text {
 	font-size: 18px;
-	font-size: 1.8rem;
 }
 
 .woocommerce-cart td.product-name dl.variation dd {
@@ -358,7 +355,6 @@ Loaded on WooCommerce pages */
 	color: #fff;
 	cursor: pointer;
 	font-size: 16px;
-	font-size: 1.6rem;
 	font-weight: 600;
 	padding: 15px 20px;
 	text-align: center;
@@ -395,7 +391,6 @@ Loaded on WooCommerce pages */
 
 .woocommerce .quantity .qty {
 	font-size: 20px;
-	font-size: 2rem;
 	line-height: 1.5;
 	margin-right: 5px;
 	padding: 12px 5px;
@@ -511,7 +506,6 @@ Loaded on WooCommerce pages */
 
 .woocommerce-account .woocommerce-Address-title h3 {
 	font-size: 26px;
-	font-size: 2.6rem;
 }
 
 .woocommerce-account .woocommerce-Address {
@@ -589,7 +583,6 @@ Loaded on WooCommerce pages */
 
 .woocommerce .woocommerce-breadcrumb {
 	font-size: 18px;
-	font-size: 1.8rem;
 	margin-bottom: 40px;
 }
 
@@ -750,7 +743,6 @@ div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricte
 .woocommerce .widget_price_filter .price_slider_amount .button,
 .woocommerce.widget_price_filter .price_slider_amount .button {
 	font-size: 16px;
-	font-size: 1.6rem;
 }
 
 /* Woo Active Filters
@@ -765,7 +757,6 @@ div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricte
 
 .woocommerce.widget_recent_reviews .reviewer {
 	font-size: 12px;
-	font-size: 1.2rem;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 }
