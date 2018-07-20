@@ -891,7 +891,7 @@ img.alignright,
 	margin-bottom: 0;
 }
 
-.featured-content .entry-image {
+.sidebar .featured-content .entry-image {
 	height: 75px;
 	width: 75px;
 }
