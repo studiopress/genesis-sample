@@ -175,6 +175,9 @@ function genesis_sample_block_editor_styles() {
 
 }
 
+// Adds support for block alignments.
+add_theme_support( 'align-wide' );
+
 // Adds support for editor color palette.
 add_theme_support( 'editor-color-palette',
 	array(

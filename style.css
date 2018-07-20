@@ -41,7 +41,10 @@
 	- Titles
 	- WordPress
 - WordPress Editor
-	- Blockquotes
+	- Alignment
+	- Blockquote
+	- Figcaption
+	- Gallery
 	- Color Palette
 - Widgets
 	- Featured Content
@@ -773,13 +776,28 @@ img.alignright,
 /* WordPress Editor
 ---------------------------------------------------------------------------------------------------- */
 
-/* Blockquotes
+/* Alignment
 --------------------------------------------- */
 
-.wp-block-quote cite {
+.entry-content .alignfull {
+	margin-left: calc( -100vw / 2 + 100% / 2 );
+	margin-right: calc( -100vw / 2 + 100% / 2 );
+	max-width: 100vw;
+}
+
+.entry-content .alignwide {
+	margin-left: -180px;
+	margin-right: -180px;
+	max-width: 1080px;
+}
+
+/* Blockquote
+--------------------------------------------- */
+
+.entry-content .wp-block-quote cite {
 	color: #666;
 	display: block;
-	font-size: 14px;
+	font-size : 14px;
 	margin-top: -25px;
 }
 
@@ -794,45 +812,52 @@ img.alignright,
 	margin-top: 10px;
 }
 
+/* Gallery
+--------------------------------------------- */
+
+.entry-content .wp-block-gallery {
+	padding-left: 0;
+}
+
 /* Color Palette
 --------------------------------------------- */
 
-.has-light-gray-background-color {
+.entry-content .has-light-gray-background-color {
 	background-color: #f5f5f5;
 }
 
-.has-light-gray-color {
+.entry-content .has-light-gray-color {
 	color: #f5f5f5;
 }
 
-.has-medium-gray-background-color {
+.entry-content .has-medium-gray-background-color {
 	background-color: #999;
 }
 
-.has-medium-gray-color {
+.entry-content .has-medium-gray-color {
 	color: #999;
 }
 
-.has-dark-gray-background-color {
+.entry-content .has-dark-gray-background-color {
 	background-color: #333;
 }
 
-.has-dark-gray-color {
+.entry-content .has-dark-gray-color {
 	color: #333;
 }
 
 /* Columns
 --------------------------------------------- */
 
-.wp-block-columns {
+.entry-content .wp-block-columns {
 	margin-bottom: 30px;
 }
 
-.wp-block-columns.has-2-columns .wp-block-column:first-of-type {
+.entry-content .wp-block-columns.has-2-columns .wp-block-column:first-of-type {
 	margin-right: 15px;
 }
 
-.wp-block-columns.has-2-columns .wp-block-column:last-of-type {
+.entry-content .wp-block-columns.has-2-columns .wp-block-column:last-of-type {
 	margin-left: 15px;
 }
 
@@ -1277,7 +1302,7 @@ img.alignright,
 .entry-content ol,
 .entry-content ul {
 	margin-bottom: 30px;
-	margin-left: 40px;
+	padding-left: 40px;
 }
 
 .entry-content ol > li {
