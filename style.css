@@ -548,7 +548,9 @@ th:first-child {
 }
 
 .more-link {
+	display: inline-block;
 	position: relative;
+	margin-bottom: 30px;
 }
 
 
@@ -819,7 +821,20 @@ img.alignright,
 	color: #333;
 }
 
+/* Columns
+--------------------------------------------- */
 
+.wp-block-columns {
+	margin-bottom: 30px;
+}
+
+.wp-block-columns.has-2-columns .wp-block-column:first-of-type {
+	margin-right: 15px;
+}
+
+.wp-block-columns.has-2-columns .wp-block-column:last-of-type {
+	margin-left: 15px;
+}
 
 /* Widgets
 ---------------------------------------------------------------------------------------------------- */
@@ -1582,6 +1597,10 @@ p.entry-meta {
 	.content {
 		float: left;
 		width: 65%;
+	}
+
+	.wide-page .content {
+		width: 100%;
 	}
 
 	.sidebar-content .content {
