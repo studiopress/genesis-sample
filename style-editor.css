@@ -6,12 +6,6 @@
 	-webkit-font-smoothing: antialiased;
 }
 
-.gutenberg__editor .editor-block-list__block,
-.gutenberg__editor .editor-default-block-appender,
-.gutenberg__editor .editor-post-title {
-    max-width: 732px;
-}
-
 .gutenberg__editor .edit-post-visual-editor,
 .gutenberg__editor .edit-post-visual-editor p {
 	font-family: 'Source Sans Pro', sans-serif;
