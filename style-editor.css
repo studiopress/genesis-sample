@@ -89,6 +89,25 @@
 	font-size: 20px;
 }
 
+/* Font Sizes (Coming in Gutenberg 3.4)
+--------------------------------------------- */
+
+.gutenberg__editor p.has-small-font-size {
+    font-size: 12px;
+}
+
+.gutenberg__editor p.has-regular-font-size {
+    font-size: 16px;
+}
+
+.gutenberg__editor p.has-large-font-size {
+    font-size: 20px;
+}
+
+.gutenberg__editor p.has-larger-font-size {
+    font-size: 24px;
+}
+
 /* Color Palette
 --------------------------------------------- */
 

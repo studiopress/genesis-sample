@@ -47,6 +47,7 @@
 	- Color Palette
 	- Columns
 	- Figcaption
+	- Font Sizes
 	- Gallery
 - Widgets
 	- Featured Content
@@ -866,6 +867,25 @@ img.alignright,
 	font-style: italic;
 	margin-bottom: 30px;
 	margin-top: 10px;
+}
+
+/* Font Sizes (Coming in Gutenberg 3.4)
+--------------------------------------------- */
+
+.entry-content p.is-small-text {
+    font-size: 12px;
+}
+
+.entry-content p.is-regular-text{
+    font-size: 16px;
+}
+
+.entry-content p.is-large-text{
+    font-size: 20px;
+}
+
+.entry-content p.is-larger-text {
+    font-size: 24px;
 }
 
 /* Gallery
