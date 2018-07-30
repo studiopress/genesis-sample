@@ -42,16 +42,17 @@
 	- WordPress
 - WordPress Editor
 	- Alignment
+	- Background Color
 	- Blockquote
+	- Color Palette
+	- Columns
 	- Figcaption
 	- Gallery
-	- Color Palette
 - Widgets
 	- Featured Content
 - Plugins
 	- Genesis eNews Extended
 	- Genesis Simple FAQ
-	- Jetpack
 - Skip Links
 - Site Header
 	- Title Area
@@ -453,14 +454,6 @@ input[type="submit"]:hover,
 	display: inline-block;
 }
 
-a.button.small,
-button.small,
-input[type="button"].small,
-input[type="reset"].small,
-input[type="submit"].small {
-	padding: 8px 16px;
-}
-
 .site-container button:disabled,
 .site-container button:disabled:hover,
 .site-container input:disabled,
@@ -791,6 +784,27 @@ img.alignright,
 	max-width: 1080px;
 }
 
+/* Background Color
+--------------------------------------------- */
+
+.entry-content p.has-background {
+	padding: 25px 30px;
+}
+
+.entry-content p.has-background.box-shadow {
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.entry-content p.has-background.light-text a {
+	color: #fff;
+	text-decoration: underline;
+}
+
+.entry-content p.has-background.light-text a:focus,
+.entry-content p.has-background.light-text a:hover {
+	text-decoration: none;
+}
+
 /* Blockquote
 --------------------------------------------- */
 
@@ -799,24 +813,6 @@ img.alignright,
 	display: block;
 	font-size : 14px;
 	margin-top: -25px;
-}
-
-/* Figcaption
---------------------------------------------- */
-
-.entry-content .wp-block-image figcaption {
-	color: #666;
-	font-size: 14px;
-	font-style: italic;
-	margin-bottom: 30px;
-	margin-top: 10px;
-}
-
-/* Gallery
---------------------------------------------- */
-
-.entry-content .wp-block-gallery {
-	padding-left: 0;
 }
 
 /* Color Palette
@@ -860,6 +856,25 @@ img.alignright,
 .entry-content .wp-block-columns.has-2-columns .wp-block-column:last-of-type {
 	margin-left: 15px;
 }
+
+/* Figcaption
+--------------------------------------------- */
+
+.entry-content .wp-block-image figcaption {
+	color: #666;
+	font-size: 14px;
+	font-style: italic;
+	margin-bottom: 30px;
+	margin-top: 10px;
+}
+
+/* Gallery
+--------------------------------------------- */
+
+.entry-content .wp-block-gallery {
+	padding-left: 0;
+}
+
 
 /* Widgets
 ---------------------------------------------------------------------------------------------------- */
@@ -987,13 +1002,6 @@ img.alignright,
 
 .gs-faq__question.gs-faq--expanded::after {
 	content: "\f460";
-}
-
-/* Jetpack
---------------------------------------------- */
-
-#wpstats {
-	display: none;
 }
 
 
@@ -1281,24 +1289,6 @@ img.alignright,
 	margin-bottom: 40px;
 }
 
-.entry-content p.has-background {
-	padding: 25px 30px;
-}
-
-.entry-content p.has-background.box-shadow {
-	box-shadow: 0 0 20px rgba(0,0,0,0.1);
-}
-
-.entry-content p.has-background.light-text a {
-	color: #fff;
-	text-decoration: underline;
-}
-
-.entry-content p.has-background.light-text a:focus,
-.entry-content p.has-background.light-text a:hover {
-	text-decoration: none;
-}
-
 .entry-content ol,
 .entry-content ul {
 	margin-bottom: 30px;
@@ -1320,13 +1310,6 @@ img.alignright,
 
 .entry-content code {
 	background-color: #f5f5f5;
-}
-
-.entry-content .caption {
-	font-size: 14px;
-	font-weight: 600;
-	margin-top: -20px;
-	text-align: center;
 }
 
 .content .sticky {
@@ -1402,7 +1385,6 @@ p.entry-meta {
 .comment-respond,
 .entry-comments,
 .entry-pings {
-	font-size: 18px;
 	margin-bottom: 40px;
 }
 
@@ -1473,7 +1455,6 @@ p.entry-meta {
 	border-top: 1px solid #eee;
 	background-color: #fff;
 	clear: both;
-	font-size: 18px;
 	padding: 60px 0;
 }
 
@@ -1488,7 +1469,7 @@ p.entry-meta {
 	padding-right: 30px;
 }
 
-.footer-widget-area:last-child ,
+.footer-widget-area:last-child,
 .footer-widgets .widget:last-child {
 	margin-bottom: 0;
 }
@@ -1749,7 +1730,6 @@ p.entry-meta {
 	.footer-widget-area {
 		float: left;
 		margin-bottom: 0;
-		width: 33.33%; /* fallback for older browsers */
 		width: calc(100% / 3);
 	}
 
