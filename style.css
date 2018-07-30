@@ -773,13 +773,13 @@ img.alignright,
 /* Alignment
 --------------------------------------------- */
 
-.entry-content .alignfull {
+.full-width-content .entry-content .alignfull {
 	margin-left: calc( -100vw / 2 + 100% / 2 );
 	margin-right: calc( -100vw / 2 + 100% / 2 );
 	max-width: 100vw;
 }
 
-.entry-content .alignwide {
+.full-width-content .entry-content .alignwide {
 	margin-left: -180px;
 	margin-right: -180px;
 	max-width: 1080px;
