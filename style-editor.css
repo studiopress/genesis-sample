@@ -99,6 +99,14 @@
 	color: #333;
 }
 
+/* Cover Image
+--------------------------------------------- */
+
+.gutenberg__editor .wp-block-cover-image .wp-block-cover-image-text {
+	color: #fff;
+	font-size: 48px;
+}
+
 /* Figcaption
 --------------------------------------------- */
 
@@ -109,7 +117,7 @@
 	margin-top: 10px;
 }
 
-/* Font Sizes (Coming in Gutenberg 3.4)
+/* Font Sizes
 --------------------------------------------- */
 
 .gutenberg__editor p.has-small-font-size {

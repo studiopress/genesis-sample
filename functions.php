@@ -178,7 +178,7 @@ function genesis_sample_block_editor_styles() {
 // Adds support for block alignments.
 add_theme_support( 'align-wide' );
 
-// Adds support for editor font sizes. (Coming in Gutenberg 3.4)
+// Adds support for editor font sizes.
 add_theme_support( 'editor-font-sizes', array(
 	array(
 		'name'      => __( 'small', 'genesis-sample' ),
@@ -207,7 +207,7 @@ add_theme_support( 'editor-font-sizes', array(
 ) );
 
 // Adds support for editor color palette.
-add_theme_support( 'editor-color-palette',
+add_theme_support( 'editor-color-palette', array(
 	array(
 		'name'  => __( 'Light gray', 'genesis-sample' ),
 		'color'	=> '#f5f5f5',
@@ -219,8 +219,8 @@ add_theme_support( 'editor-color-palette',
 	array(
 		'name'  => __( 'Dark gray', 'genesis-sample' ),
 		'color' => '#333',
-	)
-);
+       ),
+) );
 
 // Adds support for after entry widget.
 add_theme_support( 'genesis-after-entry-widget-area' );
