@@ -2,9 +2,9 @@
 /**
  * Genesis Sample.
  *
- * This file adds the Wide-width page template to the Genesis Sample Theme.
+ * This file adds the Full-width page template to the Genesis Sample Theme.
  *
- * Template Name: Wide-width
+ * Template Name: Full-width
  *
  * @package Genesis Sample
  * @author  StudioPress
@@ -14,7 +14,7 @@
 
 add_filter( 'body_class', 'genesis_sample_add_body_class' );
 /**
- * Adds wide page body class.
+ * Adds full page body class.
  *
  * @since 1.0.0
  *
@@ -23,13 +23,18 @@ add_filter( 'body_class', 'genesis_sample_add_body_class' );
  */
 function genesis_sample_add_body_class( $classes ) {
 
-	$classes[] = 'wide-width-page';
+	$classes[] = 'full-width-page';
 	return $classes;
 
 }
 
 // Forces full width content layout.
 add_filter( 'genesis_site_layout', '__genesis_return_full_width_content' );
+
+// Removes entry header.
+remove_action( 'genesis_entry_header', 'genesis_entry_header_markup_open', 5 );
+remove_action( 'genesis_entry_header', 'genesis_do_post_title' );
+remove_action( 'genesis_entry_header', 'genesis_entry_header_markup_close', 15 );
 
 // Runs the Genesis loop.
 genesis();
