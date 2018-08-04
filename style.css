@@ -853,12 +853,17 @@ img.alignright,
 	margin-bottom: 30px;
 }
 
-.entry-content .wp-block-columns.has-2-columns .wp-block-column:first-of-type {
+.entry-content .wp-block-columns .wp-block-column {
+	margin-left: 15px;
 	margin-right: 15px;
 }
 
-.entry-content .wp-block-columns.has-2-columns .wp-block-column:last-of-type {
-	margin-left: 15px;
+.entry-content .wp-block-columns .wp-block-column:first-of-type {
+	margin-left: 0;
+}
+
+.entry-content .wp-block-columns .wp-block-column:last-of-type {
+	margin-right: 0;
 }
 
 /* Cover Image
@@ -959,11 +964,6 @@ img.alignright,
 .featured-content .entry:last-of-type {
 	border-bottom: none;
 	margin-bottom: 0;
-}
-
-.sidebar .featured-content .entry-image {
-	height: 75px;
-	width: 75px;
 }
 
 .featured-content .entry-title {
