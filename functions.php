@@ -166,6 +166,9 @@ add_theme_support(
 	)
 );
 
+// Adds image sizes.
+add_image_size( 'sidebar-featured', 75, 75, true );
+
 // Enqueues block editor style.
 add_action( 'enqueue_block_editor_assets', 'genesis_sample_block_editor_styles' );
 function genesis_sample_block_editor_styles() {
