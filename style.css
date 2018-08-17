@@ -779,7 +779,7 @@ img.alignright,
 .full-width-content .entry-content .alignfull {
 	margin-left: calc( -100vw / 2 + 100% / 2 );
 	margin-right: calc( -100vw / 2 + 100% / 2 );
-	width: 100vw;
+	max-width: 100vw;
 }
 
 .full-width-content .entry-content .alignwide {
