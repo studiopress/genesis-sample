@@ -869,6 +869,10 @@ img.alignright,
 /* Cover Image
 --------------------------------------------- */
 
+.full-width-content .entry-content .wp-block-cover-image.alignfull {
+	width: 100vw;
+}
+
 .entry-content .wp-block-cover-image .wp-block-cover-image-text {
 	font-size: 48px;
 }
