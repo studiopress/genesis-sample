@@ -195,3 +195,13 @@ body.wp-admin.gutenberg-editor-page .editor-block-list__block[data-align="full"]
 .gutenberg__editor .wp-block-heading h4 {
 	font-size: 20px;
 }
+
+/* Lists
+--------------------------------------------- */
+
+.gutenberg__editor .editor-block-list__block li {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+	line-height: 1.625;
+	margin-bottom: 0;
+}
