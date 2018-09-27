@@ -115,10 +115,14 @@ function genesis_sample_responsive_menu_settings() {
 
 }
 
-// Sets the content width based on the theme's design and stylesheet.
-if ( ! isset( $content_width ) ) {
-	// phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
-	$content_width = 702; // Pixels.
+add_action( 'after_setup_theme', 'genesis_sample_content_width', 0 );
+/**
+ * Set content width to match the “wide” Gutenberg block width.
+ */
+function genesis_sample_content_width() {
+
+	$GLOBALS['content_width'] = apply_filters( 'genesis_sample_content_width', 1062 );
+
 }
 
 // Adds support for HTML5 markup structure.
