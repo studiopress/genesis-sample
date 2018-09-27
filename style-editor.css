@@ -1,15 +1,36 @@
-/* Editor Defaults
+/* Gutenberg editor column widths
+/* Using extra .wp-admin class to override inline default styles:
+/* https://github.com/WordPress/gutenberg/issues/9894.
+---------------------------------------------------------------- */
+
+/* Regular content width.
+/* 702px + 27px to match paragraph width on front-end and editor.
+---------------------------------------------------------------- */
+body.wp-admin.gutenberg-editor-page .editor-block-list__block,
+body.wp-admin.gutenberg-editor-page .editor-default-block-appender,
+body.wp-admin.gutenberg-editor-page .editor-post-title__block {
+	max-width: 732px;
+}
+
+/* Width of "wide" blocks
+/* 1062px + 30px so wide images match width in front-end and editor.
+/* 1062px = default column width of 702px + .alignwide negative margin of 360px
+---------------------------------------------------------------------------- */
+body.wp-admin.gutenberg-editor-page .editor-block-list__block[data-align="wide"] {
+    max-width: 1092px;
+}
+
+/* Width of "full-wide" blocks */
+body.wp-admin.gutenberg-editor-page .editor-block-list__block[data-align="full"] {
+    max-width: none;
+}
+
+/* Other Editor Defaults
 --------------------------------------------- */
 
 .gutenberg__editor {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
-}
-
-body.gutenberg-editor-page .editor-block-list__block,
-body.gutenberg-editor-page .editor-default-block-appender,
-body.gutenberg-editor-page .editor-post-title__block {
-	max-width: 732px;
 }
 
 .gutenberg__editor .edit-post-visual-editor,
