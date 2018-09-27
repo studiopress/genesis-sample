@@ -166,6 +166,10 @@ body.wp-admin.gutenberg-editor-page .editor-block-list__block[data-align="full"]
 /* Headings
 --------------------------------------------- */
 
+.gutenberg__editor .wp-block-heading {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
 .gutenberg__editor .wp-block-heading h1,
 .gutenberg__editor .wp-block-heading h2 {
 	font-weight: 400;
