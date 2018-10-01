@@ -206,3 +206,13 @@ body.wp-admin.gutenberg-editor-page .editor-block-list__block[data-align="full"]
 	line-height: 1.625;
 	margin-bottom: 0;
 }
+
+/* Preformatted elements
+--------------------------------------------- */
+
+.wp-block-verse pre,
+.wp-block-preformatted pre {
+	font-family: monospace;
+	font-size: 18px;
+	line-height: 1.625 !important;
+}
