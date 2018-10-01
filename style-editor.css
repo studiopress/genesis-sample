@@ -225,3 +225,26 @@ hr.wp-block-separator {
 	border-top: 1px solid #eee;
     margin: 1.65em auto;
 }
+
+/* Tables
+--------------------------------------------- */
+
+.wp-block-table {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+	line-height: 2;
+}
+
+.wp-block-table td,
+.wp-block-table th,
+.wp-block-table tr {
+	border: none;
+}
+
+.wp-block-table tr {
+	border-top: 1px solid #eee;
+}
+
+.wp-block-table tbody {
+	border-bottom: 1px solid #eee;
+}
