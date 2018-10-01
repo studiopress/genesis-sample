@@ -69,6 +69,7 @@
 	- Entry Comments
 - Sidebar
 - Footer Widgets
+- Gutenberg Blocks
 - Site Footer
 - Media Queries
 	- Min-width: 960px
@@ -1481,6 +1482,12 @@ p.entry-meta {
 	margin-bottom: 20px;
 }
 
+/* Gutenberg Blocks
+---------------------------------------------------------------------------------------------------- */
+
+.wp-block-preformatted {
+    white-space: pre-wrap;
+}
 
 /* Footer Widgets
 ---------------------------------------------------------------------------------------------------- */
