@@ -210,7 +210,7 @@ li {
 }
 
 hr {
-	border: 0;
+	border: none;
 	border-collapse: collapse;
 	border-top: 1px solid #eee;
 	clear: both;
@@ -1488,6 +1488,17 @@ p.entry-meta {
 .wp-block-preformatted {
     white-space: pre-wrap;
 }
+
+hr.wp-block-separator {
+	border: none;
+	border-top: 1px solid #eee;
+    margin: 1.65em auto;
+}
+
+.wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
+    max-width: 100px
+}
+
 
 /* Footer Widgets
 ---------------------------------------------------------------------------------------------------- */

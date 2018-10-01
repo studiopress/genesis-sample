@@ -216,3 +216,12 @@ body.wp-admin.gutenberg-editor-page .editor-block-list__block[data-align="full"]
 	font-size: 18px;
 	line-height: 1.625 !important;
 }
+
+/* Separators
+--------------------------------------------- */
+
+hr.wp-block-separator {
+	border: none;
+	border-top: 1px solid #eee;
+    margin: 1.65em auto;
+}
