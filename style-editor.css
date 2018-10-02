@@ -91,6 +91,14 @@ body.wp-admin.gutenberg-editor-page .editor-block-list__block[data-align="full"]
 	text-align: right;
 }
 
+.gutenberg__editor .wp-block-pullquote__citation {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+	font-style: italic;
+	text-align: center;
+	text-transform: none;
+}
+
 .gutenberg__editor .wp-block-quote.is-large p,
 .gutenberg__editor .wp-block-quote.is-style-large p {
 	font-size: 24px;
@@ -108,6 +116,13 @@ body.wp-admin.gutenberg-editor-page .editor-block-list__block[data-align="full"]
 	font-size: 14px;
 	margin-bottom: 0;
 	margin-top: -15px;
+}
+
+.gutenberg__editor .wp-block-pullquote {
+	border: none;
+	font-style: italic;
+	margin: 30px;
+	padding: 0;
 }
 
 /* Color Palette
