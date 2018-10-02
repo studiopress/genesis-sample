@@ -1518,6 +1518,12 @@ hr.wp-block-separator {
 	width: auto;
 }
 
+.content .wp-block-button .wp-block-button__link:focus,
+.content .wp-block-button .wp-block-button__link:hover {
+	background-color: #0073e5;
+	color: #fff;
+}
+
 .wp-block-button.alignleft,
 .wp-block-cover-image.alignleft {
 	margin-right: 2em;
