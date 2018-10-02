@@ -76,7 +76,9 @@ function genesis_sample_css() {
 		.button:hover,
 		.genesis-nav-menu > .menu-highlight > a:hover,
 		.genesis-nav-menu > .menu-highlight > a:focus,
-		.genesis-nav-menu > .menu-highlight.current-menu-item > a {
+		.genesis-nav-menu > .menu-highlight.current-menu-item > a,
+		.content .wp-block-button .wp-block-button__link:focus,
+		.content .wp-block-button .wp-block-button__link:hover {
 			background-color: %s;
 			color: %s;
 		}
