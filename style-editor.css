@@ -262,3 +262,10 @@ hr.wp-block-separator {
 .wp-block-table tbody {
 	border-bottom: 1px solid #eee;
 }
+
+/* Audio Blocks
+--------------------------------------------- */
+
+.wp-block-audio figcaption {
+	font-family: 'Source Sans Pro', sans-serif;
+}
