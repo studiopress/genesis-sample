@@ -77,12 +77,26 @@ body.wp-admin.gutenberg-editor-page .editor-block-list__block[data-align="full"]
 --------------------------------------------- */
 
 .gutenberg__editor .wp-block-quote,
-.gutenberg__editor .wp-block-quote cite {
+.gutenberg__editor .wp-block-quote cite,
+.gutenberg__editor .wp-block-quote__citation {
+	font-family: 'Source Sans Pro', sans-serif;
 	font-style: italic;
 }
 
+.gutenberg__editor .wp-block-quote cite,
+.gutenberg__editor .wp-block-quote__citation {
+	font-size: 14px;
+}
+
+.gutenberg__editor .wp-block-quote.is-large p,
 .gutenberg__editor .wp-block-quote.is-style-large p {
 	font-size: 24px;
+}
+
+.gutenberg__editor .wp-block-quote.is-large cite,
+.gutenberg__editor .wp-block-quote__citation {
+	font-size: 18px;
+	text-align: right;
 }
 
 .gutenberg__editor .wp-block-quote:not(.is-large):not(.is-style-large) {
