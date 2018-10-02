@@ -1518,11 +1518,13 @@ hr.wp-block-separator {
 	width: auto;
 }
 
-.wp-block-button.alignleft {
+.wp-block-button.alignleft,
+.wp-block-cover-image.alignleft {
 	margin-right: 2em;
 }
 
-.wp-block-button.alignright {
+.wp-block-button.alignright,
+.wp-block-cover-image.alignright {
 	margin-left: 2em;
 }
 
