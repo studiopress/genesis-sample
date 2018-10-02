@@ -1528,6 +1528,13 @@ hr.wp-block-separator {
 	margin-left: 2em;
 }
 
+.wp-block-image.alignwide,
+.wp-block-image.alignfull,
+.wp-block-embed.alignwide,
+.wp-block-embed.alignfull {
+	margin-bottom: 30px;
+}
+
 /* Footer Widgets
 ---------------------------------------------------------------------------------------------------- */
 
