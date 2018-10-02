@@ -1503,6 +1503,29 @@ hr.wp-block-separator {
 	width: 100%;
 }
 
+.content .wp-block-button .wp-block-button__link {
+	background-color: #333;
+	border: 0;
+	border-radius: 0;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 600;
+	padding: 15px 30px;
+	text-align: center;
+	text-decoration: none;
+	white-space: normal;
+	width: auto;
+}
+
+.wp-block-button.alignleft {
+	margin-right: 2em;
+}
+
+.wp-block-button.alignright {
+	margin-left: 2em;
+}
+
 /* Footer Widgets
 ---------------------------------------------------------------------------------------------------- */
 
