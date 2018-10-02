@@ -783,12 +783,6 @@ img.alignright,
 	max-width: 100vw;
 }
 
-.full-width-content .entry-content .alignwide {
-	margin-left: -180px;
-	margin-right: -180px;
-	max-width: 1062px;
-}
-
 /* Background Color
 --------------------------------------------- */
 
@@ -1769,6 +1763,16 @@ hr.wp-block-separator {
 		float: left;
 		margin-bottom: 0;
 		width: calc(100% / 3);
+	}
+
+}
+
+@media only screen and (min-width: 1062px) {
+
+	.full-width-content .entry-content .alignwide {
+		margin-left: -180px;
+		margin-right: -180px;
+		min-width: 1062px;
 	}
 
 }
