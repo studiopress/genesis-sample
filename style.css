@@ -888,19 +888,19 @@ img.alignright,
 --------------------------------------------- */
 
 .entry-content p.has-small-font-size{
-    font-size: 12px;
+	font-size: 12px;
 }
 
 .entry-content p.has-regular-font-size{
-    font-size: 16px;
+	font-size: 16px;
 }
 
 .entry-content p.has-large-font-size{
-    font-size: 20px;
+	font-size: 20px;
 }
 
 .entry-content p.has-larger-font-size{
-    font-size: 24px;
+	font-size: 24px;
 }
 
 /* Gallery
@@ -1481,17 +1481,17 @@ p.entry-meta {
 ---------------------------------------------------------------------------------------------------- */
 
 .wp-block-preformatted {
-    white-space: pre-wrap;
+	white-space: pre-wrap;
 }
 
 hr.wp-block-separator {
 	border: none;
 	border-top: 1px solid #eee;
-    margin: 1.65em auto;
+	margin: 1.65em auto;
 }
 
 .wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
-    max-width: 100px
+	max-width: 100px
 }
 
 .wp-block-audio audio {

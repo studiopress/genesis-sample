@@ -17,12 +17,12 @@ body.wp-admin.gutenberg-editor-page .editor-post-title__block {
 /* 1062px = default column width of 702px + .alignwide negative margin of 360px
 ---------------------------------------------------------------------------- */
 body.wp-admin.gutenberg-editor-page .editor-block-list__block[data-align="wide"] {
-    max-width: 1092px;
+	max-width: 1092px;
 }
 
 /* Width of "full-wide" blocks */
 body.wp-admin.gutenberg-editor-page .editor-block-list__block[data-align="full"] {
-    max-width: none;
+	max-width: none;
 }
 
 /* Other Editor Defaults
@@ -249,7 +249,7 @@ body.wp-admin.gutenberg-editor-page .editor-block-list__block[data-align="full"]
 hr.wp-block-separator {
 	border: none;
 	border-top: 1px solid #eee;
-    margin: 1.65em auto;
+	margin: 1.65em auto;
 }
 
 /* Tables
