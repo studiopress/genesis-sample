@@ -121,13 +121,15 @@ add_action( 'after_setup_theme', 'genesis_sample_content_width', 0 );
  */
 function genesis_sample_content_width() {
 
+	// phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound -- See https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/issues/924
 	$GLOBALS['content_width'] = apply_filters( 'genesis_sample_content_width', 1062 );
 
 }
 
 // Adds support for HTML5 markup structure.
 add_theme_support(
-	'html5', array(
+	'html5',
+	array(
 		'caption',
 		'comment-form',
 		'comment-list',
@@ -138,7 +140,8 @@ add_theme_support(
 
 // Adds support for accessibility.
 add_theme_support(
-	'genesis-accessibility', array(
+	'genesis-accessibility',
+	array(
 		'404-page',
 		'drop-down-menu',
 		'headings',
@@ -154,7 +157,8 @@ add_theme_support(
 
 // Adds custom logo in Customizer > Site Identity.
 add_theme_support(
-	'custom-logo', array(
+	'custom-logo',
+	array(
 		'height'      => 120,
 		'width'       => 700,
 		'flex-height' => true,
@@ -164,7 +168,8 @@ add_theme_support(
 
 // Renames primary and secondary navigation menus.
 add_theme_support(
-	'genesis-menus', array(
+	'genesis-menus',
+	array(
 		'primary'   => __( 'Header Menu', 'genesis-sample' ),
 		'secondary' => __( 'Footer Menu', 'genesis-sample' ),
 	)
@@ -173,11 +178,13 @@ add_theme_support(
 // Adds image sizes.
 add_image_size( 'sidebar-featured', 75, 75, true );
 
-// Enqueues block editor style.
 add_action( 'enqueue_block_editor_assets', 'genesis_sample_block_editor_styles' );
+/**
+ * Enqueues block editor style.
+ */
 function genesis_sample_block_editor_styles() {
 
-	wp_enqueue_style( 'genesis-sample-block-editor-fonts', '//fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700', array(), CHILD_THEME_VERSION);
+	wp_enqueue_style( 'genesis-sample-block-editor-fonts', '//fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700', array(), CHILD_THEME_VERSION );
 	wp_enqueue_style( 'genesis-sample-block-editor-styles', get_theme_file_uri( '/style-editor.css' ), false, '1.0', 'all' );
 
 }
@@ -186,51 +193,57 @@ function genesis_sample_block_editor_styles() {
 add_theme_support( 'align-wide' );
 
 // Adds support for editor font sizes.
-add_theme_support( 'editor-font-sizes', array(
+add_theme_support(
+	'editor-font-sizes',
 	array(
-		'name'      => __( 'small', 'genesis-sample' ),
-		'shortName' => __( 'S', 'genesis-sample' ),
-		'size'      => 12,
-		'slug'      => 'small'
-	),
-	array(
-		'name'      => __( 'regular', 'genesis-sample' ),
-		'shortName' => __( 'M', 'genesis-sample' ),
-		'size'      => 16,
-		'slug'      => 'regular'
-	),
-	array(
-		'name'      => __( 'large', 'genesis-sample' ),
-		'shortName' => __( 'L', 'genesis-sample' ),
-		'size'      => 20,
-		'slug'      => 'large'
-	),
-	array(
-		'name'      => __( 'larger', 'genesis-sample' ),
-		'shortName' => __( 'XL', 'genesis-sample' ),
-		'size'      => 24,
-		'slug'      => 'larger'
+		array(
+			'name'      => __( 'small', 'genesis-sample' ),
+			'shortName' => __( 'S', 'genesis-sample' ),
+			'size'      => 12,
+			'slug'      => 'small',
+		),
+		array(
+			'name'      => __( 'regular', 'genesis-sample' ),
+			'shortName' => __( 'M', 'genesis-sample' ),
+			'size'      => 16,
+			'slug'      => 'regular',
+		),
+		array(
+			'name'      => __( 'large', 'genesis-sample' ),
+			'shortName' => __( 'L', 'genesis-sample' ),
+			'size'      => 20,
+			'slug'      => 'large',
+		),
+		array(
+			'name'      => __( 'larger', 'genesis-sample' ),
+			'shortName' => __( 'XL', 'genesis-sample' ),
+			'size'      => 24,
+			'slug'      => 'larger',
+		),
 	)
-) );
+);
 
 // Adds support for editor color palette.
-add_theme_support( 'editor-color-palette', array(
+add_theme_support(
+	'editor-color-palette',
 	array(
-		'name'  => __( 'Light gray', 'genesis-sample' ),
-		'slug'  => 'light-gray',
-		'color'	=> '#f5f5f5',
-	),
-	array(
-		'name'  => __( 'Medium gray', 'genesis-sample' ),
-		'slug'  => 'medium-gray',
-		'color' => '#999',
-	),
-	array(
-		'name'  => __( 'Dark gray', 'genesis-sample' ),
-		'slug'  => 'dark-gray',
-		'color' => '#333',
-       ),
-) );
+		array(
+			'name'  => __( 'Light gray', 'genesis-sample' ),
+			'slug'  => 'light-gray',
+			'color' => '#f5f5f5',
+		),
+		array(
+			'name'  => __( 'Medium gray', 'genesis-sample' ),
+			'slug'  => 'medium-gray',
+			'color' => '#999',
+		),
+		array(
+			'name'  => __( 'Dark gray', 'genesis-sample' ),
+			'slug'  => 'dark-gray',
+			'color' => '#333',
+		),
+	)
+);
 
 // Adds support for after entry widget.
 add_theme_support( 'genesis-after-entry-widget-area' );

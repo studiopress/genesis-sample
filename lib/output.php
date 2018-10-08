@@ -54,7 +54,8 @@ function genesis_sample_css() {
 			color: %s;
 		}
 
-		', $color_link
+		',
+		$color_link
 	) : '';
 
 	$css .= ( genesis_sample_customizer_get_default_accent_color() !== $color_accent ) ? sprintf(
@@ -82,7 +83,9 @@ function genesis_sample_css() {
 			background-color: %s;
 			color: %s;
 		}
-		', $color_accent, genesis_sample_color_contrast( $color_accent )
+		',
+		$color_accent,
+		genesis_sample_color_contrast( $color_accent )
 	) : '';
 
 	$css .= ( has_custom_logo() && ( 200 <= $logo_effective_height ) ) ?
@@ -98,7 +101,8 @@ function genesis_sample_css() {
 		.wp-custom-logo .site-container .title-area {
 			max-width: %spx;
 		}
-		', $logo_max_width
+		',
+		$logo_max_width
 	) : '';
 
 	// Place menu below logo and center logo once it gets big.
@@ -132,7 +136,8 @@ function genesis_sample_css() {
 		.wp-custom-logo .title-area {
 			padding-top: %spx;
 		}
-		', $logo_padding + 5
+		',
+		$logo_padding + 5
 	) : '';
 
 	if ( $css ) {
