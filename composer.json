@@ -1,5 +1,6 @@
 {
     "name": "studiopress/genesis-sample",
+	"type": "wordpress-theme",
     "description": "Genesis Sample child theme for the Genesis Framework",
 	"homepage": "https://github.com/studiopress/genesis-sample",
     "license": "GPL-2.0-or-later",
@@ -10,7 +11,8 @@
         }
     ],
     "require": {
-		"php": "^5.2 || ^7"
+		"php": "^5.2 || ^7",
+		"composer/installers": "^1"
 	},
     "require-dev": {
         "php": "^5.6 || ^7",
