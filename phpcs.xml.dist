@@ -37,7 +37,7 @@
 
 	<!-- Test PHP cross-version compatibility. -->
 	<config name="testVersion" value="5.2-"/>
-	<rule ref="PHPCompatibility"/>
+	<rule ref="PHPCompatibilityWP"/>
 
 	<!-- Check for correct text domain on all translatable strings. -->
 	<rule ref="WordPress.WP.I18n">
