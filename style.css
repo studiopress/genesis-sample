@@ -584,10 +584,6 @@ th:first-child {
 	padding: 60px 30px 0;
 }
 
-.full-width-page .site-inner {
-	padding-top: 0;
-}
-
 /* Common Classes
 ---------------------------------------------------------------------------------------------------- */
 
@@ -1718,10 +1714,6 @@ hr.wp-block-separator {
 	.content {
 		float: left;
 		width: 65%;
-	}
-
-	.wide-width-page .content {
-		width: 100%;
 	}
 
 	.sidebar-content .content {
