@@ -13,6 +13,11 @@
 // Starts the engine.
 require_once get_template_directory() . '/lib/init.php';
 
+// Defines the child theme (do not remove).
+define( 'CHILD_THEME_NAME', 'Genesis Sample' );
+define( 'CHILD_THEME_URL', 'https://www.studiopress.com/' );
+define( 'CHILD_THEME_VERSION', '2.7.0' );
+
 // Sets up the Theme.
 require_once get_stylesheet_directory() . '/lib/theme-defaults.php';
 
@@ -46,10 +51,8 @@ require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-output.p
 // Adds the Genesis Connect WooCommerce notice.
 require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-notice.php';
 
-// Defines the child theme (do not remove).
-define( 'CHILD_THEME_NAME', 'Genesis Sample' );
-define( 'CHILD_THEME_URL', 'https://www.studiopress.com/' );
-define( 'CHILD_THEME_VERSION', '2.7.0' );
+// Adds Gutenberg support.
+require_once get_stylesheet_directory() . '/lib/gutenberg/init.php';
 
 add_action( 'wp_enqueue_scripts', 'genesis_sample_enqueue_scripts_styles' );
 /**
@@ -177,73 +180,6 @@ add_theme_support(
 
 // Adds image sizes.
 add_image_size( 'sidebar-featured', 75, 75, true );
-
-add_action( 'enqueue_block_editor_assets', 'genesis_sample_block_editor_styles' );
-/**
- * Enqueues block editor style.
- */
-function genesis_sample_block_editor_styles() {
-
-	wp_enqueue_style( 'genesis-sample-block-editor-fonts', '//fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700', array(), CHILD_THEME_VERSION );
-	wp_enqueue_style( 'genesis-sample-block-editor-styles', get_theme_file_uri( '/style-editor.css' ), false, '1.0', 'all' );
-
-}
-
-// Adds support for block alignments.
-add_theme_support( 'align-wide' );
-
-// Adds support for editor font sizes.
-add_theme_support(
-	'editor-font-sizes',
-	array(
-		array(
-			'name'      => __( 'small', 'genesis-sample' ),
-			'shortName' => __( 'S', 'genesis-sample' ),
-			'size'      => 12,
-			'slug'      => 'small',
-		),
-		array(
-			'name'      => __( 'regular', 'genesis-sample' ),
-			'shortName' => __( 'M', 'genesis-sample' ),
-			'size'      => 16,
-			'slug'      => 'regular',
-		),
-		array(
-			'name'      => __( 'large', 'genesis-sample' ),
-			'shortName' => __( 'L', 'genesis-sample' ),
-			'size'      => 20,
-			'slug'      => 'large',
-		),
-		array(
-			'name'      => __( 'larger', 'genesis-sample' ),
-			'shortName' => __( 'XL', 'genesis-sample' ),
-			'size'      => 24,
-			'slug'      => 'larger',
-		),
-	)
-);
-
-// Adds support for editor color palette.
-add_theme_support(
-	'editor-color-palette',
-	array(
-		array(
-			'name'  => __( 'Light gray', 'genesis-sample' ),
-			'slug'  => 'light-gray',
-			'color' => '#f5f5f5',
-		),
-		array(
-			'name'  => __( 'Medium gray', 'genesis-sample' ),
-			'slug'  => 'medium-gray',
-			'color' => '#999',
-		),
-		array(
-			'name'  => __( 'Dark gray', 'genesis-sample' ),
-			'slug'  => 'dark-gray',
-			'color' => '#333',
-		),
-	)
-);
 
 // Adds support for after entry widget.
 add_theme_support( 'genesis-after-entry-widget-area' );
