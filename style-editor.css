@@ -298,3 +298,10 @@ hr.wp-block-separator {
 	white-space: normal;
 	width: auto;
 }
+
+/* Galleries
+--------------------------------------------- */
+
+.gutenberg__editor .wp-block-gallery .blocks-gallery-item {
+	margin-bottom: 16px;
+}
