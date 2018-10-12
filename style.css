@@ -1333,6 +1333,11 @@ img.alignright,
 	list-style-type: disc;
 }
 
+.entry-content ol ul > li,
+.entry-content ul ul > li {
+	list-style-type: circle;
+}
+
 .entry-content ol ol,
 .entry-content ul ul {
 	margin-bottom: 0;
