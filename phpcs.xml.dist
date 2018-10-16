@@ -1,5 +1,8 @@
 <?xml version="1.0"?>
-<ruleset name="Genesis-Sample">
+<ruleset name="Genesis-Sample"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="vendor/squizlabs/php_codesniffer/phpcs.xsd">
+
 	<description>Custom ruleset for Genesis Sample.</description>
 
 	<!-- For help in understanding this file: https://github.com/squizlabs/PHP_CodeSniffer/wiki/Annotated-ruleset.xml -->
@@ -32,7 +35,9 @@
 	<rule ref="WordPress-Extra"/><!-- Includes WordPress-Core -->
 	<rule ref="WordPress-Docs"/>
 
-<exclude name="Squiz.PHP.CommentedOutCode.Found"/>
+	<rule ref="Squiz.PHP.CommentedOutCode.Found">
+		<severity>0</severity>
+	</rule>
 
 	<!-- Allow theme-specific exceptions to WordPress filename rules. -->
 	<rule ref="WordPress.Files.FileName">
