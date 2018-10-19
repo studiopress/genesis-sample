@@ -1,4 +1,4 @@
 /composer.lock
-/vendor/
-/.phpcs.xml
 /phpcs.xml
+node_modules/
+vendor/
