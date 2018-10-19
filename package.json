@@ -1,0 +1,47 @@
+{
+	"name": "genesis-sample",
+	"description": "Development files for the Genesis Framework.",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/studiopress/genesis-sample/"
+	},
+	"license": "GPL-2.0-or-later",
+	"devDependencies": {
+		"autoprefixer": "^9.2.1",
+		"chalk": "^2.4.1",
+		"node-wp-i18n": "^1.2.1",
+		"postcss-cli": "^6.0.1",
+		"stylelint": "^9.6.0",
+		"stylelint-config-wordpress": "^13.1.0"
+	},
+	"scripts": {
+		"autoprefixer": "postcss style.css --use autoprefixer --replace --no-map --verbose",
+		"makepot": "node scripts/makepot.js",
+        "lint:css": "stylelint \"style.css\"",
+        "zip": "git archive -o genesis-sample.zip HEAD"
+	},
+	"browserslist": [
+		"> 1%",
+		"ie >= 11",
+		"last 1 Android versions",
+		"last 1 ChromeAndroid versions",
+		"last 2 Chrome versions",
+		"last 2 Firefox versions",
+		"last 2 Safari versions",
+		"last 2 iOS versions",
+		"last 2 Edge versions",
+		"last 2 Opera versions"
+	],
+	"theme": {
+		"name": "Genesis Sample",
+		"uri": "https://demo.studiopress.com/genesis-sample/",
+		"description": "The sample child theme for the Genesis Framework.",
+		"author": "StudioPress",
+		"authoruri": "https://www.studiopress.com/",
+		"version": "2.7.0-dev",
+		"tags": "one-column, two-columns, left-sidebar, right-sidebar, accessibility-ready, custom-colors, custom-logo, custom-menu, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready",
+		"license": "GPL-2.0-or-later",
+		"licenseuri": "https://www.gnu.org/licenses/gpl-2.0.html",
+		"textdomain": "genesis-sample"
+	}
+}

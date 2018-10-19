@@ -25,7 +25,6 @@
 		"sort-order": true
 	},
 	"scripts": {
-		"export": "git archive -o genesis-sample.zip HEAD",
 		"install-codestandards": "Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run",
 		"phpcs": "phpcs"
 	},
