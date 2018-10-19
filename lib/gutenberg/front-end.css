@@ -165,6 +165,7 @@ hr.wp-block-separator {
 }
 
 .wp-block-audio audio {
+	display: inline-block;
 	width: 100%;
 }
 
