@@ -34,24 +34,25 @@ add_action( 'enqueue_block_editor_assets', 'genesis_sample_block_editor_styles' 
 function genesis_sample_block_editor_styles() {
 
 	wp_enqueue_style(
-        'genesis-sample-gutenberg-fonts',
-        'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700',
-        array(),
-        CHILD_THEME_VERSION
+		'genesis-sample-gutenberg-fonts',
+		'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700',
+		array(),
+		CHILD_THEME_VERSION
 	);
 
-	/* Enqueue a separate admin stylesheet from the main `style-editor.css` to
+	/**
+	 * Enqueue a separate admin stylesheet from the main `style-editor.css` to
 	 * style the admin editor title only, due to this issue:
 	 * https://github.com/WordPress/gutenberg/issues/10485.
 	 * TODO: move this to `style-editor.css` once it's possible to style
 	 * elements outside `.editor-block-list__block` via `add_editor_styles`.
 	 */
 	wp_enqueue_style(
-        'genesis-sample-editor-title',
-        get_stylesheet_directory_uri() . '/lib/gutenberg/style-editor-title.css',
-        array(),
-        CHILD_THEME_VERSION
-    );
+		'genesis-sample-editor-title',
+		get_stylesheet_directory_uri() . '/lib/gutenberg/style-editor-title.css',
+		array(),
+		CHILD_THEME_VERSION
+	);
 
 }
 
