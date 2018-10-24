@@ -69,12 +69,12 @@
 --------------------------------------------- */
 
 .wp-block-button.alignleft,
-.wp-block-cover-image.alignleft {
+.wp-block-cover.alignleft {
 	margin-right: 2em;
 }
 
 .wp-block-button.alignright,
-.wp-block-cover-image.alignright {
+.wp-block-cover.alignright {
 	margin-left: 2em;
 }
 
@@ -115,11 +115,11 @@
 /* Cover Image
 --------------------------------------------- */
 
-.full-width-content .entry-content .wp-block-cover-image.alignfull {
+.full-width-content .entry-content .wp-block-cover.alignfull {
 	width: 100vw;
 }
 
-.entry-content .wp-block-cover-image .wp-block-cover-image-text {
+.entry-content .wp-block-cover .wp-block-cover-text {
 	font-size: 48px;
 }
 
