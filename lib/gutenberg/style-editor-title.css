@@ -1,0 +1,9 @@
+/* In a separate file until this is solved:
+https://github.com/WordPress/gutenberg/issues/10485 */
+.editor-post-title__block .editor-post-title__input {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 30px;
+	font-weight: 400;
+    line-height: 1.2;
+	margin: 0 0 20px;
+}
