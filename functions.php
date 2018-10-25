@@ -68,6 +68,7 @@ function genesis_sample_enqueue_scripts_styles() {
 		array(),
 		CHILD_THEME_VERSION
 	);
+
 	wp_enqueue_style( 'dashicons' );
 
 	$suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
@@ -78,6 +79,7 @@ function genesis_sample_enqueue_scripts_styles() {
 		CHILD_THEME_VERSION,
 		true
 	);
+
 	wp_localize_script(
 		'genesis-sample-responsive-menu',
 		'genesis_responsive_menu',
@@ -85,9 +87,17 @@ function genesis_sample_enqueue_scripts_styles() {
 	);
 
 	wp_enqueue_script(
+		'fitvids',
+		get_stylesheet_directory_uri() . '/js/jquery.fitvids.min.js',
+		array( 'jquery' ),
+		'1.1',
+		true
+	);
+
+	wp_enqueue_script(
 		'genesis-sample',
 		get_stylesheet_directory_uri() . '/js/genesis-sample.js',
-		array( 'jquery' ),
+		array( 'jquery', 'fitvids' ),
 		CHILD_THEME_VERSION,
 		true
 	);
