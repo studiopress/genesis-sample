@@ -549,7 +549,7 @@ th:first-child {
 --------------------------------------------- */
 
 .site-container {
-	animation:         fadein 1s;
+	animation: fadein 1s;
 	word-wrap: break-word;
 }
 
@@ -1105,12 +1105,12 @@ img.alignright,
 .sub-menu-toggle::before {
 	display: inline-block;
 	text-rendering: auto;
-	transform:         rotate( 0 );
+	transform: rotate( 0 );
 	transition: transform .25s ease-in-out;
 }
 
 .sub-menu-toggle.activated::before {
-	transform:         rotate( 180deg );
+	transform: rotate( 180deg );
 }
 
 /* Header Menu
