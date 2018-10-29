@@ -15,7 +15,7 @@
 		"stylelint-config-wordpress": "^13.1.0"
 	},
 	"scripts": {
-		"autoprefixer": "postcss style.css --use autoprefixer --replace --no-map --verbose",
+		"autoprefixer": "postcss style.css lib/**/*.css --use autoprefixer --replace --no-map --verbose",
 		"makepot": "node .scripts/makepot.js",
 		"lint:css": "stylelint \"style.css\"",
 		"zip": "git archive -o genesis-sample.zip HEAD"
