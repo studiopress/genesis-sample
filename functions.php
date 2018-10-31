@@ -87,17 +87,9 @@ function genesis_sample_enqueue_scripts_styles() {
 	);
 
 	wp_enqueue_script(
-		'fitvids',
-		get_stylesheet_directory_uri() . '/js/jquery.fitvids.min.js',
-		array( 'jquery' ),
-		'1.1',
-		true
-	);
-
-	wp_enqueue_script(
 		'genesis-sample',
 		get_stylesheet_directory_uri() . '/js/genesis-sample.js',
-		array( 'jquery', 'fitvids' ),
+		array( 'jquery' ),
 		CHILD_THEME_VERSION,
 		true
 	);

@@ -24,14 +24,6 @@ var genesisSample = ( function( $ ) {
 		$('.site-inner').css('margin-top', siteInnerMarginTop);
 	},
 
-	/** Make videos fit the full container width without losing their ratio.
-	 *
-	 * @since 2.7.0
-	 */
-	correctVideoWidths = function() {
-		$(".site-container").fitVids();
-	},
-
 	/**
 	 * Initialize Genesis Sample.
 	 *
@@ -55,24 +47,13 @@ var genesisSample = ( function( $ ) {
 				  }, 1500);
 			});
 		}
-	},
-
-	/**
-	 * Functions to execute on document ready.
-	 *
-	 * @since 2.7.0
-	 */
-	ready = function() {
-		correctVideoWidths();
 	};
 
 	// Expose the load and ready functions.
 	return {
-		load: load,
-		ready: ready
+		load: load
 	};
 
 })( jQuery );
 
 jQuery( window ).on( 'load', genesisSample.load );
-jQuery( genesisSample.ready );

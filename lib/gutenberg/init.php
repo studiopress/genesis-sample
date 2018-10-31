@@ -23,6 +23,22 @@ function genesis_sample_enqueue_gutenberg_frontend_styles() {
 		CHILD_THEME_VERSION
 	);
 
+	wp_enqueue_script(
+		'fitvids',
+		get_stylesheet_directory_uri() . '/lib/gutenberg/js/jquery.fitvids.min.js',
+		array( 'jquery' ),
+		'1.1',
+		true
+	);
+
+	wp_enqueue_script(
+		'fitvids-init',
+		get_stylesheet_directory_uri() . '/lib/gutenberg/js/fitvids-init.js',
+		array( 'jquery', 'fitvids' ),
+		CHILD_THEME_VERSION,
+		true
+	);
+
 }
 
 add_action( 'enqueue_block_editor_assets', 'genesis_sample_block_editor_styles' );
