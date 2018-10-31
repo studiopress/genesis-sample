@@ -147,8 +147,67 @@
 	color: #fff;
 }
 
+/* Blockquotes and captions
+---------------------------------------------------------------------------------------------------- */
+
+.entry-content .wp-block-quote,
+.entry-content .wp-block-pullquote {
+	border: none;
+	margin: 24px 24px 36px;
+}
+
+.entry-content .wp-block-quote p,
+.entry-content .wp-block-pullquote p {
+	font-family: 'Source Sans Pro', serif;
+	font-size: 21px;
+	font-style: italic;
+	line-height: 1.8;
+	margin-bottom: 42px;
+}
+
+.entry-content .wp-block-quote.is-large p,
+.entry-content .wp-block-pullquote.is-large p,
+.entry-content .wp-block-quote.alignwide p,
+.entry-content .wp-block-pullquote.alignwide p,
+.entry-content .wp-block-quote.alignfull p,
+.entry-content .wp-block-pullquote.alignfull p {
+	font-size: 26px;
+	margin-bottom: 52px;
+}
+
+.entry-content .wp-block-quote cite,
+.entry-content .wp-block-pullquote cite {
+	color: #666;
+	display: block;
+	font-family: 'Source Sans Pro', serif;
+	font-size: 16px;
+	font-style: italic;
+	margin-top: -25px;
+	text-align: right;
+}
+
+.entry-content .wp-block-audio figcaption,
+.entry-content .wp-block-embed figcaption,
+.entry-content .wp-block-image figcaption {
+	color: #666;
+	font-size: 16px;
+	font-style: italic;
+	margin-bottom: 30px;
+	margin-top: 10px;
+}
+
+.entry-content .wp-block-quote[class*="align"] cite,
+.entry-content .wp-block-pullquote[class*="align"] cite {
+	text-align: center;
+}
+
 /* Other Blocks
 ---------------------------------------------------------------------------------------------------- */
+
+.wp-block-verse,
+.wp-block-preformatted {
+	font-size: 16px;
+}
 
 .wp-block-preformatted {
 	white-space: pre-wrap;
@@ -171,21 +230,6 @@ hr.wp-block-separator {
 
 .entry-content .wp-block-gallery {
 	padding-left: 0;
-}
-
-.entry-content .wp-block-quote cite {
-	color: #666;
-	display: block;
-	font-size: 14px;
-	margin-top: -25px;
-}
-
-.entry-content .wp-block-image figcaption {
-	color: #666;
-	font-size: 14px;
-	font-style: italic;
-	margin-bottom: 30px;
-	margin-top: 10px;
 }
 
 /* Media Queries

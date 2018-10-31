@@ -97,56 +97,64 @@ p.has-background.light-text a:hover {
 	text-decoration: none;
 }
 
-/* Blockquotes
+/* Blockquotes and captions
 --------------------------------------------- */
 
 .wp-block-quote,
-.wp-block-quote cite,
-.wp-block-quote__citation {
-	font-family: 'Source Sans Pro', sans-serif;
-	font-style: italic;
-	font-size: 14px;
-	text-align: left;
-}
-
-.wp-block-quote.is-large cite,
-.is-large .wp-block-quote__citation {
-	font-size: 18px;
-	text-align: right;
-}
-
-.wp-block-pullquote__citation {
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 18px;
-	font-style: italic;
-	text-align: center;
-	text-transform: none;
-}
-
-.wp-block-quote.is-large p,
-.wp-block-quote.is-style-large p {
-	font-size: 24px;
+.wp-block-pullquote {
+	border: none;
+	margin: 24px 24px 36px;
 }
 
 .wp-block-quote:not(.is-large):not(.is-style-large) {
-	border-left: 0;
-	font-style: italic;
-	margin: 30px;
-	padding-left: 0;
-}
-
-.wp-block-quote cite {
-	color: #666;
-	font-size: 14px;
-	margin-bottom: 0;
-	margin-top: -15px;
-}
-
-.wp-block-pullquote {
 	border: none;
-	font-style: italic;
-	margin: 30px;
 	padding: 0;
+}
+
+.wp-block-quote p,
+.wp-block-pullquote p {
+	font-family: 'Source Sans Pro', serif;
+	font-size: 21px !important;
+	font-style: italic;
+	line-height: 1.8;
+	margin-bottom: 42px;
+}
+
+.wp-block-quote.is-large p,
+.wp-block-pullquote.is-large p,
+.wp-block-quote.alignwide p,
+.wp-block-pullquote.alignwide p,
+.wp-block-quote.alignfull p,
+.wp-block-pullquote.alignfull p {
+	font-size: 26px !important;
+	margin-bottom: 52px;
+}
+
+.wp-block-quote .wp-block-quote__citation,
+.wp-block-pullquote .wp-block-pullquote__citation {
+	color: #666;
+	display: block;
+	font-family: 'Source Sans Pro', serif;
+	font-size: 16px;
+	font-style: italic;
+	margin-top: -25px;
+	text-align: right;
+	text-transform: none;
+}
+
+.wp-block-audio figcaption,
+.wp-block-embed figcaption,
+.wp-block-image figcaption {
+	color: #666;
+	font-size: 16px;
+	font-style: italic;
+	margin-bottom: 30px;
+	margin-top: 10px;
+}
+
+.wp-block-quote[class*="align"] .wp-block-quote__citation,
+.wp-block-pullquote[class*="align"] .wp-block-pullquote__citation {
+	text-align: center;
 }
 
 /* Color Palette
