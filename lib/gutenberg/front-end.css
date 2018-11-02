@@ -69,12 +69,14 @@
 --------------------------------------------- */
 
 .wp-block-button.alignleft,
-.wp-block-cover.alignleft {
+.wp-block-cover.alignleft,
+.wp-block-image .alignleft {
 	margin-right: 2em;
 }
 
 .wp-block-button.alignright,
-.wp-block-cover.alignright {
+.wp-block-cover.alignright,
+.wp-block-image .alignright {
 	margin-left: 2em;
 }
 
