@@ -93,6 +93,12 @@
 	max-width: 100vw;
 }
 
+.content-sidebar .entry-content .alignfull,
+.sidebar-content .entry-content .alignfull {
+	margin: 0 0 2em;
+	width: 100%;
+}
+
 /* Columns
 --------------------------------------------- */
 
