@@ -77,6 +77,14 @@ h6 {
 	font-size: 16px;
 }
 
+.editor-post-title__block .editor-post-title__input {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 1.2;
+	margin: 0 0 20px;
+}
+
 /* Background Color
 --------------------------------------------- */
 
