@@ -23,7 +23,8 @@ p, ul, ol, dl {
 /* 1062px = default column width of 702px + .alignwide negative margin of 360px
 ---------------------------------------------------------------------------- */
 .wp-block[data-align="wide"] {
-	max-width: 1092px;
+	width: 1092px;
+	max-width: 100%;
 }
 
 .wp-block[data-align="full"] {
