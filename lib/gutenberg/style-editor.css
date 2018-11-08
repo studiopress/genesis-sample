@@ -22,12 +22,12 @@ p, ul, ol, dl {
 /* 1062px + 30px so wide images match width in front-end and editor.
 /* 1062px = default column width of 702px + .alignwide negative margin of 360px
 ---------------------------------------------------------------------------- */
-body[data-align="wide"] {
-	max-width: 1092px !important;
+.wp-block[data-align="wide"] {
+	max-width: 1092px;
 }
 
-body[data-align="full"] {
-	max-width: none !important;
+.wp-block[data-align="full"] {
+	width: auto;
 }
 
 /* Typography
