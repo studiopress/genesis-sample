@@ -396,13 +396,19 @@ input[type="radio"] {
 	width: auto;
 }
 
-::-moz-placeholder {
+::-ms-input-placeholder {
 	color: #333;
 	opacity: 1;
 }
 
-::-webkit-input-placeholder {
+:-ms-input-placeholder {
 	color: #333;
+	opacity: 1;
+}
+
+::placeholder {
+	color: #333;
+	opacity: 1;
 }
 
 button,
