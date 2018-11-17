@@ -142,14 +142,9 @@ p.has-background a:hover {
 	margin-bottom: 42px;
 }
 
-.wp-block-quote.is-large p,
-.wp-block-pullquote.is-large p,
-.wp-block-quote.alignwide p,
-.wp-block-pullquote.alignwide p,
-.wp-block-quote.alignfull p,
-.wp-block-pullquote.alignfull p {
-	font-size: 26px !important;
-	margin-bottom: 52px;
+.wp-block-quote.is-style-large p {
+	font-size: 32px !important;
+	margin-bottom: 64px;
 }
 
 .wp-block-quote .wp-block-quote__citation,
@@ -160,7 +155,7 @@ p.has-background a:hover {
 	font-size: 16px;
 	font-style: italic;
 	margin-top: -25px;
-	text-align: right;
+	text-align: left;
 	text-transform: none;
 }
 

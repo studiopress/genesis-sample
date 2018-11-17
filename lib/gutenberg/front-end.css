@@ -203,14 +203,9 @@
 	margin-bottom: 42px;
 }
 
-.entry-content .wp-block-quote.is-large p,
-.entry-content .wp-block-pullquote.is-large p,
-.entry-content .wp-block-quote.alignwide p,
-.entry-content .wp-block-pullquote.alignwide p,
-.entry-content .wp-block-quote.alignfull p,
-.entry-content .wp-block-pullquote.alignfull p {
-	font-size: 26px;
-	margin-bottom: 52px;
+.entry-content .wp-block-pullquote p,
+.entry-content .wp-block-quote.is-style-large p {
+	font-size: 32px;
 }
 
 .entry-content .wp-block-quote cite,
@@ -221,7 +216,11 @@
 	font-size: 16px;
 	font-style: italic;
 	margin-top: -25px;
-	text-align: right;
+	text-align: left;
+}
+
+.entry-content .wp-block-pullquote cite {
+	text-align: center;
 }
 
 .entry-content .wp-block-audio figcaption,
@@ -232,11 +231,6 @@
 	font-style: italic;
 	margin-bottom: 30px;
 	margin-top: 10px;
-}
-
-.entry-content .wp-block-quote[class*="align"] cite,
-.entry-content .wp-block-pullquote[class*="align"] cite {
-	text-align: center;
 }
 
 /* Other Blocks
