@@ -299,10 +299,11 @@ hr.wp-block-separator {
 .wp-block-button .wp-block-button__link {
 	background-color: #333;
 	border: 0;
-	border-radius: 0;
+	border-radius: 5px;
 	color: #fff;
 	cursor: pointer;
 	font-size: 16px;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 600;
 	line-height: 24px;
 	padding: 15px 30px;
@@ -310,6 +311,22 @@ hr.wp-block-separator {
 	text-decoration: none;
 	white-space: normal;
 	width: auto;
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link {
+	background-color: transparent;
+	border: 2px solid currentColor;
+	border-radius: 0;
+	padding: 13px 28px;
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link:focus,
+.wp-block-button.is-style-outline .wp-block-button__link:hover {
+	color: #0073e5;
+}
+
+.wp-block-button.is-style-squared .wp-block-button__link {
+	border-radius: 0;
 }
 
 /* Galleries
