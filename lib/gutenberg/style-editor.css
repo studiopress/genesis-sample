@@ -144,9 +144,19 @@ p.has-background.light-text a:hover {
 	margin-bottom: 42px;
 }
 
+.wp-block-pullquote p,
 .wp-block-quote.is-style-large p {
 	font-size: 32px !important;
-	margin-bottom: 64px;
+}
+
+.wp-block-pullquote.is-style-solid-color p {
+	color: #fff;
+	margin-bottom: 42px;
+	text-align: center;
+}
+
+.wp-block-pullquote.is-style-solid-color {
+	background-color: #333;
 }
 
 .wp-block-quote .wp-block-quote__citation,
@@ -159,6 +169,15 @@ p.has-background.light-text a:hover {
 	margin-top: -25px;
 	text-align: left;
 	text-transform: none;
+}
+
+.wp-block-pullquote .wp-block-pullquote__citation {
+	text-align: center;
+}
+
+.wp-block-pullquote.is-style-solid-color cite {
+	color: #fff;
+	font-style: italic;
 }
 
 .wp-block-audio figcaption,

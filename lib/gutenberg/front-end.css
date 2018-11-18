@@ -208,6 +208,16 @@
 	font-size: 32px;
 }
 
+.entry-content .wp-block-pullquote.is-style-solid-color p {
+	color: #fff;
+	margin-bottom: 42px;
+	text-align: center;
+}
+
+.entry-content .wp-block-pullquote.is-style-solid-color {
+	background-color: #333;
+}
+
 .entry-content .wp-block-quote cite,
 .entry-content .wp-block-pullquote cite {
 	color: #666;
@@ -217,10 +227,16 @@
 	font-style: italic;
 	margin-top: -25px;
 	text-align: left;
+	text-transform: none;
 }
 
 .entry-content .wp-block-pullquote cite {
 	text-align: center;
+}
+
+.entry-content .wp-block-pullquote.is-style-solid-color cite {
+	color: #fff;
+	font-style: italic;
 }
 
 .entry-content .wp-block-audio figcaption,
