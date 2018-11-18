@@ -269,6 +269,10 @@ hr.wp-block-separator {
 	margin: 1.65em auto;
 }
 
+hr.wp-block-separator.is-style-dots {
+	border: none;
+}
+
 /* Tables
 ---------------------------------------------------------------------------- */
 
