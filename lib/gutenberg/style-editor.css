@@ -18,7 +18,7 @@ dl {
 /* 702px + 27px to match paragraph width on front-end and editor.
 ---------------------------------------------------------------------------- */
 .wp-block {
-	width: 732px;
+	max-width: 732px;
 }
 
 /* Width of "wide" blocks
@@ -26,12 +26,11 @@ dl {
 /* 1062px = default column width of 702px + .alignwide negative margin of 360px
 ---------------------------------------------------------------------------- */
 .wp-block[data-align="wide"] {
-	width: 1092px;
-	max-width: 100%;
+	max-width: 1092px;
 }
 
 .wp-block[data-align="full"] {
-	width: auto;
+	max-width: none;
 }
 
 /* Typography
