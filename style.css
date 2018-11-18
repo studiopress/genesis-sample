@@ -7,7 +7,10 @@
 
 	Version: 2.7.0-dev
 
-	Tags: one-column, two-columns, left-sidebar, right-sidebar, accessibility-ready, custom-colors, custom-logo, custom-menu, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+	Tags: accessibility-ready, custom-colors, custom-logo, custom-menu,
+	featured-images, footer-widgets, full-width-template, left-sidebar,
+	one-column, right-sidebar, rtl-language-support, sticky-post,
+	theme-options, threaded-comments, translation-ready, two-columns
 
 	Template: genesis
 
@@ -78,12 +81,13 @@
 
 
 /* HTML5 Reset
----------------------------------------------------------------------------------------------------- */
+---------------------------------------------------------------------------- */
 
-/* Baseline Normalize
---------------------------------------------- */
-/* normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
-button,hr,input{overflow:visible}progress,sub,sup{vertical-align:baseline}[type=checkbox],[type=radio],legend{box-sizing:border-box;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:ButtonText dotted 1px}fieldset{padding:.35em .75em .625em}legend{color:inherit;display:table;max-width:100%;white-space:normal}textarea{overflow:auto}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}[hidden],template{display:none}
+/* Normalize v8.0.0 | MIT License | github.com/necolas/normalize.css
+---------------------------------------------------------------------------- */
+/* stylelint-disable */
+/* button,hr,input{overflow:visible}progress,sub,sup{vertical-align:baseline}[type=checkbox],[type=radio],legend{box-sizing:border-box;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:ButtonText dotted 1px}fieldset{padding:.35em .75em .625em}legend{color:inherit;display:table;max-width:100%;white-space:normal}textarea{overflow:auto}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}[hidden],template{display:none} */
+/* stylelint-enable */
 
 /* Box Sizing
 --------------------------------------------- */
@@ -140,7 +144,7 @@ html {
 
 
 /* Defaults
----------------------------------------------------------------------------------------------------- */
+---------------------------------------------------------------------------- */
 
 /* Typographical Elements
 --------------------------------------------- */
@@ -153,7 +157,7 @@ html {
 body {
 	background-color: #fff;
 	color: #333;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: "Source Sans Pro", sans-serif;
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 1.625;
@@ -237,7 +241,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: "Source Sans Pro", sans-serif;
 	font-weight: 400;
 	line-height: 1.2;
 	margin: 0 0 20px;
@@ -251,17 +255,17 @@ h2 {
 	font-size: 27px;
 }
 
-.entry-content h3,
-.entry-content h4 {
-	font-weight: 600;
-}
-
 h3 {
 	font-size: 24px;
 }
 
 h4 {
 	font-size: 20px;
+}
+
+.entry-content h3,
+.entry-content h4 {
+	font-weight: 600;
 }
 
 .entry-content h4 {
@@ -528,12 +532,12 @@ th:first-child {
 .screen-reader-shortcut:focus,
 .widget_search input[type="submit"]:focus {
 	background: #fff;
-	box-shadow: 0 0 2px 2px rgba(0,0,0,.6);
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
 	clip: auto !important;
 	color: #333;
 	display: block;
 	font-size: 1em;
-	font-weight: bold;
+	font-weight: 700;
 	height: auto;
 	padding: 15px 23px 14px;
 	text-decoration: none;
@@ -549,7 +553,7 @@ th:first-child {
 
 
 /* Structure and Layout
----------------------------------------------------------------------------------------------------- */
+---------------------------------------------------------------------------- */
 
 /* Site Container
 --------------------------------------------- */
@@ -560,8 +564,15 @@ th:first-child {
 }
 
 @keyframes fadein {
-	from { opacity: 0; }
-	to   { opacity: 1; }
+
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+
 }
 
 /* Site Inner
@@ -575,7 +586,7 @@ th:first-child {
 
 
 /* Common Classes
----------------------------------------------------------------------------------------------------- */
+---------------------------------------------------------------------------- */
 
 /* Avatar
 --------------------------------------------- */
@@ -608,7 +619,7 @@ th:first-child {
 }
 
 .after-entry {
-	box-shadow: 0 0 20px rgba(0,0,0,0.05);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
 	padding: 20px 30px;
 }
 
@@ -758,7 +769,7 @@ img.alignright,
 }
 
 /* Widgets
----------------------------------------------------------------------------------------------------- */
+---------------------------------------------------------------------------- */
 
 .widget {
 	margin-bottom: 40px;
@@ -820,7 +831,7 @@ img.alignright,
 
 
 /* Plugins
----------------------------------------------------------------------------------------------------- */
+---------------------------------------------------------------------------- */
 
 /* Genesis eNews Extended
 --------------------------------------------- */
@@ -872,7 +883,7 @@ img.alignright,
 
 .gs-faq__question::after {
 	content: "\f132";
-	font-family: "dashicons";
+	font-family: dashicons; /* stylelint-disable-line font-family-no-missing-generic-family-keyword */
 	float: right;
 }
 
@@ -882,7 +893,7 @@ img.alignright,
 
 
 /* Skip Links
----------------------------------------------------------------------------------------------------- */
+---------------------------------------------------------------------------- */
 
 .genesis-skip-link {
 	margin: 0;
@@ -907,11 +918,11 @@ img.alignright,
 
 
 /* Site Header
----------------------------------------------------------------------------------------------------- */
+---------------------------------------------------------------------------- */
 
 .site-header {
 	background-color: #fff;
-	box-shadow: 0 0 20px rgba(0,0,0,0.05);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
 	padding: 0 30px;
 }
 
@@ -962,7 +973,7 @@ img.alignright,
 
 
 /* Site Navigation
----------------------------------------------------------------------------------------------------- */
+---------------------------------------------------------------------------- */
 
 .genesis-nav-menu {
 	clear: both;
@@ -1111,12 +1122,12 @@ img.alignright,
 .sub-menu-toggle::before {
 	display: inline-block;
 	text-rendering: auto;
-	transform: rotate( 0 );
-	transition: transform .25s ease-in-out;
+	transform: rotate(0);
+	transition: transform 0.25s ease-in-out;
 }
 
 .sub-menu-toggle.activated::before {
-	transform: rotate( 180deg );
+	transform: rotate(180deg);
 }
 
 /* Header Menu
@@ -1152,7 +1163,7 @@ img.alignright,
 
 
 /* Content Area
----------------------------------------------------------------------------------------------------- */
+---------------------------------------------------------------------------- */
 
 /* Entry Content
 --------------------------------------------- */
@@ -1273,9 +1284,6 @@ p.entry-meta {
 	padding-left: 0;
 }
 
-.comment-list .bypostauthor {
-}
-
 .comment-header {
 	margin-bottom: 30px;
 }
@@ -1309,7 +1317,7 @@ p.entry-meta {
 
 
 /* Sidebar
----------------------------------------------------------------------------------------------------- */
+---------------------------------------------------------------------------- */
 
 .sidebar {
 	font-size: 16px;
@@ -1325,7 +1333,7 @@ p.entry-meta {
 }
 
 /* Footer Widgets
----------------------------------------------------------------------------------------------------- */
+---------------------------------------------------------------------------- */
 
 .footer-widgets {
 	border-top: 1px solid #eee;
@@ -1352,7 +1360,7 @@ p.entry-meta {
 
 
 /* Site Footer
----------------------------------------------------------------------------------------------------- */
+---------------------------------------------------------------------------- */
 
 .site-footer {
 	background-color: #fff;
@@ -1369,7 +1377,7 @@ p.entry-meta {
 
 
 /* Media Queries
----------------------------------------------------------------------------------------------------- */
+---------------------------------------------------------------------------- */
 
 @media only screen and (min-width: 960px) {
 
@@ -1423,7 +1431,7 @@ p.entry-meta {
 		opacity: 0;
 		padding-left: 0;
 		position: absolute;
-		transition: opacity .4s ease-in-out;
+		transition: opacity 0.4s ease-in-out;
 	}
 
 	.genesis-nav-menu .sub-menu a {
@@ -1553,7 +1561,7 @@ p.entry-meta {
 }
 
 /* Print Styles
----------------------------------------------------------------------------------------------------- */
+---------------------------------------------------------------------------- */
 
 @media print {
 

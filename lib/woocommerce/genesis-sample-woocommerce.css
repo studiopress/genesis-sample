@@ -2,7 +2,7 @@
 Loaded on WooCommerce pages */
 
 /* WooCommerce Globals
----------------------------------------------------------------------------------------------------- */
+---------------------------------------------------------------------------- */
 
 .woocommerce.full-width-content .content,
 .woocommerce-page.full-width-content .content {
@@ -46,7 +46,7 @@ Loaded on WooCommerce pages */
 
 
 /* WooCommerce Product Gallery
----------------------------------------------------------------------------------------------------- */
+---------------------------------------------------------------------------- */
 
 .woocommerce .woocommerce-product-gallery__wrapper {
 	margin: 0;
@@ -69,7 +69,7 @@ Loaded on WooCommerce pages */
 
 
 /* WooCommerce Shop Page
----------------------------------------------------------------------------------------------------- */
+---------------------------------------------------------------------------- */
 
 .woocommerce .content .entry {
 	border-bottom: 0;
@@ -106,7 +106,7 @@ Loaded on WooCommerce pages */
 
 /* MS Edge Bug Fix */
 .woocommerce ul.products li.product a {
-	transition:         color 0.1s ease-in-out, background 0.1s ease-in-out;
+	transition: color 0.1s ease-in-out, background 0.1s ease-in-out;
 }
 
 .woocommerce nav.woocommerce-pagination {
@@ -146,7 +146,7 @@ Loaded on WooCommerce pages */
 
 
 /* WooCommerce Product
----------------------------------------------------------------------------------------------------- */
+---------------------------------------------------------------------------- */
 
 .woocommerce div.product p.price,
 .woocommerce div.product span.price {
@@ -168,7 +168,7 @@ Loaded on WooCommerce pages */
 
 
 /* WooCommerce Product Tabs
----------------------------------------------------------------------------------------------------- */
+---------------------------------------------------------------------------- */
 
 .woocommerce div.product .woocommerce-tabs ul.tabs {
 	padding: 0;
@@ -217,12 +217,12 @@ Loaded on WooCommerce pages */
 	content: "\f147";
 	display: block;
 	float: right;
-	font-family: "dashicons";
+	font-family: dashicons; /* stylelint-disable-line font-family-no-missing-generic-family-keyword */
 }
 
 
 /* WooCommerce Checkout
----------------------------------------------------------------------------------------------------- */
+---------------------------------------------------------------------------- */
 
 .woocommerce-cart #payment ul.payment_methods li,
 .woocommerce-checkout #payment ul.payment_methods li,
@@ -248,7 +248,7 @@ Loaded on WooCommerce pages */
 
 
 /* WooCommerce Cart Page
----------------------------------------------------------------------------------------------------- */
+---------------------------------------------------------------------------- */
 
 .woocommerce table.shop_table,
 .woocommerce table.shop_table td {
@@ -306,7 +306,7 @@ Loaded on WooCommerce pages */
 
 
 /* WooCommerce Payment
----------------------------------------------------------------------------------------------------- */
+---------------------------------------------------------------------------- */
 
 .woocommerce-cart #payment,
 .woocommerce-checkout #payment,
@@ -336,7 +336,7 @@ Loaded on WooCommerce pages */
 
 
 /* WooCommerce Forms
----------------------------------------------------------------------------------------------------- */
+---------------------------------------------------------------------------- */
 
 .woocommerce a.button,
 .woocommerce a.button.alt,
@@ -451,7 +451,7 @@ Loaded on WooCommerce pages */
 
 
 /* WooCommerce Disabled Buttons
----------------------------------------------------------------------------------------------------- */
+---------------------------------------------------------------------------- */
 
 .woocommerce a.button.disabled,
 .woocommerce a.button:disabled,
@@ -500,7 +500,7 @@ Loaded on WooCommerce pages */
 
 
 /* WooCommerce Account Page
----------------------------------------------------------------------------------------------------- */
+---------------------------------------------------------------------------- */
 
 .woocommerce-account .woocommerce-Address-title h3 {
 	font-size: 26px;
@@ -577,7 +577,7 @@ Loaded on WooCommerce pages */
 
 
 /* WooCommerce Breadcrumb
----------------------------------------------------------------------------------------------------- */
+---------------------------------------------------------------------------- */
 
 .woocommerce .woocommerce-breadcrumb {
 	font-size: 18px;
@@ -600,7 +600,7 @@ Loaded on WooCommerce pages */
 
 
 /* WooCommerce Reviews
----------------------------------------------------------------------------------------------------- */
+---------------------------------------------------------------------------- */
 
 .woocommerce #reviews #comments ol.commentlist li img.avatar {
 	background: transparent;
@@ -623,7 +623,7 @@ Loaded on WooCommerce pages */
 
 
 /* WooCommerce Misc
----------------------------------------------------------------------------------------------------- */
+---------------------------------------------------------------------------- */
 
 .woocommerce-error,
 .woocommerce-info,
@@ -649,7 +649,7 @@ div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricte
 
 
 /* WooCommerce Widgets
----------------------------------------------------------------------------------------------------- */
+---------------------------------------------------------------------------- */
 
 /* Woo Search
 -------------------------------------------------- */
@@ -735,7 +735,7 @@ div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricte
 
 .woocommerce .widget_price_filter .ui-slider .ui-slider-handle,
 .woocommerce.widget_price_filter .ui-slider .ui-slider-handle {
-	top: -.28em;
+	top: -0.28em;
 }
 
 .woocommerce .widget_price_filter .price_slider_amount .button,
@@ -744,7 +744,7 @@ div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricte
 }
 
 /* Woo Active Filters
--------------------------------------------------- */
+--------------------------------------------- */
 
 .woocommerce.widget_layered_nav_filters ul li {
 	margin: 0 20px 20px 0;
@@ -761,7 +761,7 @@ div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricte
 
 
 /* Media Queries
----------------------------------------------------------------------------------------------------- */
+---------------------------------------------------------------------------- */
 
 @media only screen and (min-width: 600px) {
 
