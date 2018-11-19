@@ -232,7 +232,7 @@
 	font-size: 16px;
 	font-style: italic;
 	margin-top: -25px;
-	text-align: left;
+	text-align: inherit;
 	text-transform: none;
 }
 
