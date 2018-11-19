@@ -21,27 +21,27 @@
 ---------------------------------------------------------------------------- */
 
 .entry-content .has-light-gray-background-color {
-	background-color: #f5f5f5;
+	background-color: #f5f5f5 !important;
 }
 
 .entry-content .has-light-gray-color {
-	color: #f5f5f5;
+	color: #f5f5f5 !important;
 }
 
 .entry-content .has-medium-gray-background-color {
-	background-color: #999;
+	background-color: #999 !important;
 }
 
 .entry-content .has-medium-gray-color {
-	color: #999;
+	color: #999 !important;
 }
 
 .entry-content .has-dark-gray-background-color {
-	background-color: #333;
+	background-color: #333 !important;
 }
 
 .entry-content .has-dark-gray-color {
-	color: #333;
+	color: #333 !important;
 }
 
 /* Background Color
