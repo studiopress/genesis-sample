@@ -1312,6 +1312,10 @@ p.entry-meta {
 	display: none;
 }
 
+.comment-form-cookies-consent label {
+	display: inline;
+	padding-left: 10px;
+}
 
 /* Sidebar
 ---------------------------------------------------------------------------- */
