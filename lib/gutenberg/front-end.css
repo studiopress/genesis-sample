@@ -218,6 +218,12 @@
 	background-color: #333;
 }
 
+.entry-content .wp-block-pullquote:not(.is-style-solid-color)[style*="border-color"] {
+	border: 2px solid;
+	border-left: none;
+	border-right: none;
+}
+
 .entry-content .wp-block-quote cite,
 .entry-content .wp-block-pullquote cite {
 	color: #666;
@@ -237,6 +243,11 @@
 .entry-content .wp-block-pullquote.is-style-solid-color cite {
 	color: #fff;
 	font-style: italic;
+}
+
+.entry-content .wp-block-pullquote .has-text-color cite,
+.entry-content .wp-block-pullquote .has-text-color p {
+	color: currentColor;
 }
 
 .entry-content .wp-block-audio figcaption,
