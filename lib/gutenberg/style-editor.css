@@ -386,11 +386,6 @@ hr.wp-block-separator.is-style-dots {
 /* Latest Posts Block
 ---------------------------------------------------------------------------------------------------- */
 
-.wp-block[data-type="core/latest-posts"],
-.wp-block-latest-posts {
-	clear: both;
-}
-
 .wp-block-latest-posts {
 	margin-left: 0;
 	padding-left: 0;
