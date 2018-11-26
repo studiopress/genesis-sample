@@ -366,3 +366,40 @@ hr.wp-block-separator.is-style-dots {
 .wp-block-gallery .blocks-gallery-item {
 	margin-bottom: 16px;
 }
+
+/* Category Block
+---------------------------------------------------------------------------------------------------- */
+
+.wp-block-categories ul {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.wp-block-categories li {
+	list-style-type: none;
+}
+
+.wp-block[data-align="right"] .wp-block-categories__list {
+	text-align: right;
+}
+
+/* Latest Posts Block
+---------------------------------------------------------------------------------------------------- */
+
+.wp-block[data-type="core/latest-posts"],
+.wp-block-latest-posts {
+	clear: both;
+}
+
+.wp-block-latest-posts {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.wp-block-latest-posts li {
+	list-style-type: none;
+}
+
+.wp-block[data-align="center"] .wp-block-latest-posts {
+	text-align: center;
+}

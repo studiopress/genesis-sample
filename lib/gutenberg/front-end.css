@@ -260,6 +260,40 @@
 	margin-top: 10px;
 }
 
+/* Category Block
+---------------------------------------------------------------------------------------------------- */
+
+.entry-content .wp-block-categories,
+.entry-content .wp-block-categories ol,
+.entry-content .wp-block-categories ul {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.entry-content .wp-block-categories li {
+	list-style-type: none;
+}
+
+.entry-content .wp-block-categories.aligncenter {
+	text-align: center;
+}
+
+/* Latest Posts Block
+---------------------------------------------------------------------------------------------------- */
+
+.entry-content .wp-block-latest-posts {
+	clear: both;
+	margin-left: 0;
+}
+
+.entry-content .wp-block-latest-posts li {
+	list-style-type: none;
+}
+
+.entry-content .wp-block-latest-posts.aligncenter {
+	text-align: center;
+}
+
 /* Other Blocks
 ---------------------------------------------------------------------------- */
 
