@@ -1,6 +1,6 @@
 # Genesis Sample Theme
 
-Github project link: https://github.com/copyblogger/genesis-sample/
+GitHub project link: https://github.com/studiopress/genesis-sample/.
 
 
 ## Installation Instructions
@@ -16,7 +16,7 @@ Please visit https://my.studiopress.com/help/ for theme support.
 
 ## For Developers
 
-The version of [Genesis Sample on GitHub](https://github.com/copyblogger/genesis-sample/) includes tooling to check code against WordPress standards. To use it:
+The version of [Genesis Sample on GitHub](https://github.com/studiopress/genesis-sample/) includes tooling to check code against WordPress standards. To use it:
 
 1. Install Composer globally on your development machine. [See Composer setup steps](https://getcomposer.org/doc/00-intro.md#downloading-the-composer-executable).
 2. In the command line, change directory to the Genesis Sample folder.
