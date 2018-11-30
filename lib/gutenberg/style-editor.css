@@ -127,7 +127,7 @@ p.has-background.light-text a:hover {
 .wp-block-quote,
 .wp-block-pullquote {
 	border: none;
-	margin: 24px 24px 36px;
+	margin: 24px 0 36px;
 }
 
 .wp-block-quote:not(.is-large):not(.is-style-large) {
