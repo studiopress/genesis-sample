@@ -383,6 +383,10 @@ hr.wp-block-separator.is-style-dots {
 	text-align: right;
 }
 
+.wp-block[data-align="full"] .wp-block-categories__list {
+	padding: 0 30px;
+}
+
 /* Latest Posts Block
 ---------------------------------------------------------------------------------------------------- */
 
@@ -397,4 +401,15 @@ hr.wp-block-separator.is-style-dots {
 
 .wp-block[data-align="center"] .wp-block-latest-posts {
 	text-align: center;
+}
+
+.wp-block[data-align="full"] .wp-block-latest-posts {
+	padding: 0 30px;
+}
+
+/* Columns block
+---------------------------------------------------------------------------------------------------- */
+
+.wp-block[data-align="full"] .wp-block-columns > .editor-inner-blocks {
+	padding: 0 30px;
 }
