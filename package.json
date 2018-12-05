@@ -7,11 +7,11 @@
 	},
 	"license": "GPL-2.0-or-later",
 	"devDependencies": {
-		"autoprefixer": "^9.2.1",
+		"autoprefixer": "^9.4.2",
 		"chalk": "^2.4.1",
 		"node-wp-i18n": "^1.2.1",
 		"postcss-cli": "^6.0.1",
-		"stylelint": "^9.6.0",
+		"stylelint": "^9.9.0",
 		"stylelint-config-wordpress": "^13.1.0"
 	},
 	"scripts": {
