@@ -7,6 +7,7 @@
 * Fix: Use custom logo height fallback of '1' if an SVG logo is used instead of a bitmap. (SVG support still has to be enabled in WordPress, which disables it by default.)
 * Fix: Prevent featured images in Featured Posts widgets appearing at 75px square.
 * Fix: Prevent JavaScript error if wp object is undefined.
+* Fix: Prevent title overlaying custom logo when printing.
 * Tools: Add npm scripts for automation. See https://github.com/studiopress/genesis-sample#npm-scripts.
 * Tools: PHPCS and Composer improvements.
 
