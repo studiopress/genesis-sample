@@ -29,7 +29,7 @@ function genesis_sample_remove_woocommerce_notice() {
 
 add_action( 'admin_notices', 'genesis_sample_woocommerce_theme_notice' );
 /**
- * Adds a prompt to activate Genesis Connect for WooCommerce
+ * Adds an admin notice to install and activate Genesis Connect for WooCommerce
  * if WooCommerce is active but Genesis Connect is not.
  *
  * @since 2.3.0
@@ -46,6 +46,13 @@ function genesis_sample_woocommerce_theme_notice() {
 		return;
 	}
 
+	$screen = get_current_screen();
+
+	// Don't show the notice when a plugin is installing.
+	if ( is_object( $screen ) && 'update' === $screen->base ) {
+		return;
+	}
+
 	// If message dismissed, exit early.
 	if ( get_user_option( 'genesis_sample_woocommerce_message_dismissed', get_current_user_id() ) ) {
 		return;
@@ -55,25 +62,14 @@ function genesis_sample_woocommerce_theme_notice() {
 	$notice_html = sprintf( __( 'Please install and activate <a href="https://wordpress.org/plugins/genesis-connect-woocommerce/" target="_blank">Genesis Connect for WooCommerce</a> to <strong>enable WooCommerce support for %s</strong>.', 'genesis-sample' ), esc_html( CHILD_THEME_NAME ) );
 
 	if ( current_user_can( 'install_plugins' ) ) {
-		$plugin_slug  = 'genesis-connect-woocommerce';
-		$admin_url    = network_admin_url( 'update.php' );
-		$install_link = sprintf(
-			'<a href="%s">%s</a>',
-			wp_nonce_url(
-				add_query_arg(
-					array(
-						'action' => 'install-plugin',
-						'plugin' => $plugin_slug,
-					),
-					$admin_url
-				),
-				'install-plugin_' . $plugin_slug
-			),
-			__( 'install and activate Genesis Connect for WooCommerce', 'genesis-sample' )
-		);
+		$install_url = genesis_sample_get_genesis_connect_install_url();
 
-		/* translators: 1: plugin install prompt presented as link, 2: child theme name */
-		$notice_html = sprintf( __( 'Please %1$s to <strong>enable WooCommerce support for %2$s</strong>.', 'genesis-sample' ), $install_link, esc_html( CHILD_THEME_NAME ) );
+		$notice_html = sprintf(
+			/* translators: 1: plugin install URL, 2: child theme name */
+			__( 'Please <a href="%1$s">install and activate Genesis Connect for WooCommerce</a> to <strong>enable WooCommerce support for %2$s</strong>.', 'genesis-sample' ),
+			$install_url,
+			esc_html( CHILD_THEME_NAME )
+		);
 	}
 
 	echo '<div class="notice notice-info is-dismissible genesis-sample-woocommerce-notice"><p>' . wp_kses_post( $notice_html ) . '</p></div>';
@@ -143,5 +139,43 @@ function genesis_sample_reset_woocommerce_notice_on_deactivation( $plugin, $netw
 	}
 
 	genesis_sample_reset_woocommerce_notice();
+
+}
+
+/**
+ * Get the admin URL to install or activate Genesis Connect for WooCommerce.
+ *
+ * Returns install URL by default or activate URL if installed but inactive.
+ *
+ * @since 2.7.0
+ *
+ * @return string The HTML anchor tag to install or activate the plugin.
+ */
+function genesis_sample_get_genesis_connect_install_url() {
+
+	$plugin        = 'genesis-connect-woocommerce';
+	$plugin_file   = 'genesis-connect-woocommerce/genesis-connect-woocommerce.php';
+	$plugin_exists = file_exists( WP_PLUGIN_DIR . '/' . $plugin_file );
+	$plugin_active = is_plugin_active( $plugin_file );
+
+	$admin_action = 'install-plugin';
+	$nonce_name   = 'install-plugin_' . $plugin;
+	$admin_page   = 'update.php';
+
+	if ( $plugin_exists && ! $plugin_active ) {
+		$admin_action = 'activate';
+		$nonce_name   = 'activate-plugin_' . $plugin_file;
+		$admin_page   = 'plugins.php';
+	}
+
+	$url = add_query_arg(
+		array(
+			'action' => $admin_action,
+			'plugin' => ( $admin_action  === 'install-plugin' ) ? $plugin : $plugin_file,
+		),
+		network_admin_url( $admin_page )
+	);
+
+	return wp_nonce_url( $url, $nonce_name );
 
 }
