@@ -1,7 +1,8 @@
 # Genesis Sample Theme Changelog
 
 ## [2.7.0] - 2018-12-12
-* New: Add Gutenberg opt-in feature support (wide blocks, fonts, colors, editor and block styling) and FitVids script.
+* New: Add Gutenberg opt-in feature support (wide blocks, fonts, colors, editor and block styling).
+* New: Add theme support for responsive media embeds.
 * Update: General styling adjustments (remove rems for font size, center button text, responsive menu adjustments, use circles for unordered sublists).
 * Update: WooCommerce styling adjustments, make mobile-first.
 * Fix: Use custom logo height fallback of '1' if an SVG logo is used instead of a bitmap. (SVG support still has to be enabled in WordPress, which disables it by default.)

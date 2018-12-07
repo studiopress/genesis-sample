@@ -25,22 +25,6 @@ function genesis_sample_enqueue_gutenberg_frontend_styles() {
 		CHILD_THEME_VERSION
 	);
 
-	wp_enqueue_script(
-		'fitvids',
-		get_stylesheet_directory_uri() . '/lib/gutenberg/js/jquery.fitvids.min.js',
-		array( 'jquery' ),
-		'1.1',
-		true
-	);
-
-	wp_enqueue_script(
-		'fitvids-init',
-		get_stylesheet_directory_uri() . '/lib/gutenberg/js/fitvids-init.js',
-		array( 'jquery', 'fitvids' ),
-		CHILD_THEME_VERSION,
-		true
-	);
-
 }
 
 add_action( 'enqueue_block_editor_assets', 'genesis_sample_block_editor_styles' );
@@ -68,6 +52,9 @@ add_editor_style( '/lib/gutenberg/style-editor.css' );
 
 // Adds support for block alignments.
 add_theme_support( 'align-wide' );
+
+// Make media embeds responsive.
+add_theme_support( 'responsive-embeds' );
 
 // Adds support for editor font sizes.
 add_theme_support(
