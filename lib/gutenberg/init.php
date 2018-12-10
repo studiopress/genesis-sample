@@ -61,25 +61,25 @@ add_theme_support(
 	'editor-font-sizes',
 	array(
 		array(
-			'name'      => __( 'small', 'genesis-sample' ),
+			'name'      => __( 'Small', 'genesis-sample' ),
 			'shortName' => __( 'S', 'genesis-sample' ),
 			'size'      => 12,
 			'slug'      => 'small',
 		),
 		array(
-			'name'      => __( 'regular', 'genesis-sample' ),
+			'name'      => __( 'Normal', 'genesis-sample' ),
 			'shortName' => __( 'M', 'genesis-sample' ),
 			'size'      => 16,
-			'slug'      => 'regular',
+			'slug'      => 'normal',
 		),
 		array(
-			'name'      => __( 'large', 'genesis-sample' ),
+			'name'      => __( 'Large', 'genesis-sample' ),
 			'shortName' => __( 'L', 'genesis-sample' ),
 			'size'      => 20,
 			'slug'      => 'large',
 		),
 		array(
-			'name'      => __( 'larger', 'genesis-sample' ),
+			'name'      => __( 'Larger', 'genesis-sample' ),
 			'shortName' => __( 'XL', 'genesis-sample' ),
 			'size'      => 24,
 			'slug'      => 'larger',
