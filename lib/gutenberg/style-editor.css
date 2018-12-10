@@ -87,6 +87,15 @@ h6 {
 	margin: 0 0 20px;
 }
 
+p.has-drop-cap:not(:focus)::first-letter {
+	margin: 0.02em 0.08em 0 -0.08em;
+}
+
+p.has-larger-font-size.has-drop-cap:not(:focus)::first-letter,
+p.has-small-font-size.has-drop-cap:not(:focus)::first-letter {
+	margin-right: 0.01em;
+}
+
 /* Background Color
 ---------------------------------------------------------------------------- */
 
