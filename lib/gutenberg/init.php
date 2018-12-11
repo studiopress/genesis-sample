@@ -59,54 +59,13 @@ add_theme_support( 'responsive-embeds' );
 // Adds support for editor font sizes.
 add_theme_support(
 	'editor-font-sizes',
-	array(
-		array(
-			'name'      => __( 'Small', 'genesis-sample' ),
-			'shortName' => __( 'S', 'genesis-sample' ),
-			'size'      => 12,
-			'slug'      => 'small',
-		),
-		array(
-			'name'      => __( 'Normal', 'genesis-sample' ),
-			'shortName' => __( 'M', 'genesis-sample' ),
-			'size'      => 16,
-			'slug'      => 'normal',
-		),
-		array(
-			'name'      => __( 'Large', 'genesis-sample' ),
-			'shortName' => __( 'L', 'genesis-sample' ),
-			'size'      => 20,
-			'slug'      => 'large',
-		),
-		array(
-			'name'      => __( 'Larger', 'genesis-sample' ),
-			'shortName' => __( 'XL', 'genesis-sample' ),
-			'size'      => 24,
-			'slug'      => 'larger',
-		),
-	)
+	genesis_get_config( 'editor-font-sizes' )
 );
 
 // Adds support for editor color palette.
 add_theme_support(
 	'editor-color-palette',
-	array(
-		array(
-			'name'  => __( 'Light gray', 'genesis-sample' ),
-			'slug'  => 'light-gray',
-			'color' => '#f5f5f5',
-		),
-		array(
-			'name'  => __( 'Medium gray', 'genesis-sample' ),
-			'slug'  => 'medium-gray',
-			'color' => '#999',
-		),
-		array(
-			'name'  => __( 'Dark gray', 'genesis-sample' ),
-			'slug'  => 'dark-gray',
-			'color' => '#333',
-		),
-	)
+	genesis_get_config( 'editor-color-palette' )
 );
 
 add_action( 'after_setup_theme', 'genesis_sample_content_width', 0 );
