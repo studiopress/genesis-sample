@@ -11,9 +11,9 @@
  * Elements to output as html5.
  */
 return array(
-	'404-page',
-	'drop-down-menu',
-	'headings',
+	'caption',
+	'comment-form',
+	'comment-list',
+	'gallery',
 	'search-form',
-	'skip-links',
 );
