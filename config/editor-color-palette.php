@@ -35,4 +35,4 @@ return array(
 		'size'      => 24,
 		'slug'      => 'larger',
 	),
-)
+);
