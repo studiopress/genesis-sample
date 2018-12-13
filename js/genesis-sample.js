@@ -3,7 +3,7 @@
  *
  * @package GenesisSample\JS
  * @author  StudioPress
- * @license GPL-2.0+
+ * @license GPL-2.0-or-later
  */
 
 var genesisSample = ( function( $ ) {
@@ -27,22 +27,20 @@ var genesisSample = ( function( $ ) {
 	/**
 	 * Initialize Genesis Sample.
 	 *
-	 * Internal functions to execute on document load can be called here.
+	 * Internal functions to execute on full page load.
 	 *
 	 * @since 2.6.0
 	 */
-	init = function() {
-		// Run on first load.
+	load = function() {
 		moveContentBelowFixedHeader();
 
-		// Run after window resize.
 		$( window ).resize(function() {
 			moveContentBelowFixedHeader();
 		});
 
 		// Run after the Customizer updates.
 		// 1.5s delay is to allow logo area reflow.
-		if (typeof wp.customize != "undefined") {
+		if (typeof wp != "undefined" && typeof wp.customize != "undefined") {
 			wp.customize.bind( 'change', function ( setting ) {
 				setTimeout(function() {
 					moveContentBelowFixedHeader();
@@ -51,11 +49,11 @@ var genesisSample = ( function( $ ) {
 		}
 	};
 
-	// Expose the init function only.
+	// Expose the load and ready functions.
 	return {
-		init: init
+		load: load
 	};
 
 })( jQuery );
 
-jQuery( window ).on( 'load', genesisSample.init );
+jQuery( window ).on( 'load', genesisSample.load );

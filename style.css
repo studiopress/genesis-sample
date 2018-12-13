@@ -1,20 +1,20 @@
 /*
-	Theme Name: Genesis Sample
-	Theme URI: https://demo.studiopress.com/
-	Description: This is the sample theme created for the Genesis Framework.
-	Author: StudioPress
-	Author URI: https://www.studiopress.com/
+Theme Name: Genesis Sample
+Theme URI: https://demo.studiopress.com/
+Description: This is the sample theme created for the Genesis Framework.
+Author: StudioPress
+Author URI: https://www.studiopress.com/
 
-	Version: 2.6.0
+Version: 2.7.0
 
-	Tags: one-column, two-columns, left-sidebar, right-sidebar, accessibility-ready, custom-colors, custom-logo, custom-menu, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+Tags: accessibility-ready, custom-colors, custom-logo, custom-menu, featured-images, footer-widgets, full-width-template, left-sidebar, one-column, right-sidebar, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, two-columns
 
-	Template: genesis
+Template: genesis
 
-	License: GPL-2.0+
-	License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License: GPL-2.0-or-later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-	Text Domain: genesis-sample
+Text Domain: genesis-sample
 */
 
 
@@ -45,7 +45,6 @@
 - Plugins
 	- Genesis eNews Extended
 	- Genesis Simple FAQ
-	- Jetpack
 - Skip Links
 - Site Header
 	- Title Area
@@ -72,7 +71,6 @@
 		- Sidebar
 		- Author Box
 		- After Entry
-		- Column Classes
 		- Entry Misc.
 		- Footer Widgets
 - Print Styles
@@ -80,12 +78,13 @@
 
 
 /* HTML5 Reset
----------------------------------------------------------------------------------------------------- */
+---------------------------------------------------------------------------- */
 
-/* Baseline Normalize
---------------------------------------------- */
-/* normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
-button,hr,input{overflow:visible}progress,sub,sup{vertical-align:baseline}[type=checkbox],[type=radio],legend{box-sizing:border-box;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:ButtonText dotted 1px}fieldset{padding:.35em .75em .625em}legend{color:inherit;display:table;max-width:100%;white-space:normal}textarea{overflow:auto}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}[hidden],template{display:none}
+/* Normalize v8.0.0 | MIT License | github.com/necolas/normalize.css
+---------------------------------------------------------------------------- */
+/* stylelint-disable */
+/* button,hr,input{overflow:visible}progress,sub,sup{vertical-align:baseline}[type=checkbox],[type=radio],legend{box-sizing:border-box;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:ButtonText dotted 1px}fieldset{padding:.35em .75em .625em}legend{color:inherit;display:table;max-width:100%;white-space:normal}textarea{overflow:auto}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}[hidden],template{display:none} */
+/* stylelint-enable */
 
 /* Box Sizing
 --------------------------------------------- */
@@ -142,32 +141,25 @@ html {
 
 
 /* Defaults
----------------------------------------------------------------------------------------------------- */
+---------------------------------------------------------------------------- */
 
 /* Typographical Elements
 --------------------------------------------- */
 
 html {
-	font-size: 62.5%; /* 10px browser default */
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
-}
-
-/* Chrome fix */
-body > div {
-	font-size: 18px;
-	font-size: 1.8rem;
 }
 
 body {
 	background-color: #fff;
 	color: #333;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: "Source Sans Pro", sans-serif;
 	font-size: 18px;
-	font-size: 1.8rem;
 	font-weight: 400;
 	line-height: 1.625;
 	margin: 0;
+	overflow-x: hidden;
 }
 
 button,
@@ -209,7 +201,7 @@ li {
 }
 
 hr {
-	border: 0;
+	border: none;
 	border-collapse: collapse;
 	border-top: 1px solid #eee;
 	clear: both;
@@ -237,17 +229,6 @@ blockquote {
 	margin: 30px;
 }
 
-blockquote::before {
-	content: "\201C";
-	display: block;
-	font-size: 30px;
-	font-size: 3rem;
-	height: 0;
-	left: -20px;
-	position: relative;
-	top: -10px;
-}
-
 /* Headings
 --------------------------------------------- */
 
@@ -257,7 +238,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: "Source Sans Pro", sans-serif;
 	font-weight: 400;
 	line-height: 1.2;
 	margin: 0 0 20px;
@@ -265,27 +246,23 @@ h6 {
 
 h1 {
 	font-size: 30px;
-	font-size: 3rem;
 }
 
 h2 {
 	font-size: 27px;
-	font-size: 2.7rem;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+h4 {
+	font-size: 20px;
 }
 
 .entry-content h3,
 .entry-content h4 {
 	font-weight: 600;
-}
-
-h3 {
-	font-size: 24px;
-	font-size: 2.4rem;
-}
-
-h4 {
-	font-size: 20px;
-	font-size: 2rem;
 }
 
 .entry-content h4 {
@@ -294,12 +271,10 @@ h4 {
 
 h5 {
 	font-size: 18px;
-	font-size: 1.8rem;
 }
 
 h6 {
 	font-size: 16px;
-	font-size: 1.6rem;
 }
 
 /* Objects
@@ -405,7 +380,6 @@ textarea {
 	border: 1px solid #ddd;
 	color: #333;
 	font-size: 18px;
-	font-size: 1.8rem;
 	font-weight: 400;
 	padding: 15px;
 	width: 100%;
@@ -423,13 +397,19 @@ input[type="radio"] {
 	width: auto;
 }
 
-::-moz-placeholder {
+::-ms-input-placeholder {
 	color: #333;
 	opacity: 1;
 }
 
-::-webkit-input-placeholder {
+:-ms-input-placeholder {
 	color: #333;
+	opacity: 1;
+}
+
+::placeholder {
+	color: #333;
+	opacity: 1;
 }
 
 button,
@@ -442,9 +422,9 @@ input[type="submit"],
 	color: #fff;
 	cursor: pointer;
 	font-size: 16px;
-	font-size: 1.6rem;
 	font-weight: 600;
 	padding: 15px 30px;
+	text-align: center;
 	text-decoration: none;
 	white-space: normal;
 	width: auto;
@@ -471,14 +451,6 @@ input[type="submit"]:hover,
 
 .button {
 	display: inline-block;
-}
-
-a.button.small,
-button.small,
-input[type="button"].small,
-input[type="reset"].small,
-input[type="submit"].small {
-	padding: 8px 16px;
 }
 
 .site-container button:disabled,
@@ -557,12 +529,12 @@ th:first-child {
 .screen-reader-shortcut:focus,
 .widget_search input[type="submit"]:focus {
 	background: #fff;
-	box-shadow: 0 0 2px 2px rgba(0,0,0,.6);
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
 	clip: auto !important;
 	color: #333;
 	display: block;
 	font-size: 1em;
-	font-weight: bold;
+	font-weight: 700;
 	height: auto;
 	padding: 15px 23px 14px;
 	text-decoration: none;
@@ -571,30 +543,33 @@ th:first-child {
 }
 
 .more-link {
+	display: inline-block;
 	position: relative;
+	margin-bottom: 30px;
 }
 
 
 /* Structure and Layout
----------------------------------------------------------------------------------------------------- */
+---------------------------------------------------------------------------- */
 
 /* Site Container
 --------------------------------------------- */
 
 .site-container {
-	-webkit-animation: fadein 1s;
-	animation:         fadein 1s;
+	animation: fadein 1s;
 	word-wrap: break-word;
 }
 
 @keyframes fadein {
-	from { opacity: 0; }
-	to   { opacity: 1; }
-}
 
-@-webkit-keyframes fadein {
-	from { opacity: 0; }
-	to   { opacity: 1; }
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+
 }
 
 /* Site Inner
@@ -608,7 +583,7 @@ th:first-child {
 
 
 /* Common Classes
----------------------------------------------------------------------------------------------------- */
+---------------------------------------------------------------------------- */
 
 /* Avatar
 --------------------------------------------- */
@@ -641,7 +616,7 @@ th:first-child {
 }
 
 .after-entry {
-	box-shadow: 0 0 20px rgba(0,0,0,0.05);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
 	padding: 20px 30px;
 }
 
@@ -652,7 +627,6 @@ th:first-child {
 .breadcrumb {
 	border-bottom: 1px solid #eee;
 	font-size: 16px;
-	font-size: 1.6rem;
 	margin-bottom: 40px;
 	padding-bottom: 10px;
 }
@@ -696,14 +670,12 @@ th:first-child {
 .archive-title,
 .author-box-title {
 	font-size: 20px;
-	font-size: 2rem;
 	font-weight: 600;
 	margin-bottom: 10px;
 }
 
 .entry-title {
 	font-size: 30px;
-	font-size: 3rem;
 	margin-bottom: 10px;
 }
 
@@ -720,17 +692,12 @@ th:first-child {
 
 .widget-title {
 	font-size: 18px;
-	font-size: 1.8rem;
 	font-weight: 600;
 	margin-bottom: 20px;
 }
 
 /* WordPress
 --------------------------------------------- */
-
-.aligncenter {
-	text-align: center;
-}
 
 a.aligncenter img {
 	display: block;
@@ -783,7 +750,6 @@ img.alignright,
 .gallery-caption,
 .wp-caption-text {
 	font-size: 14px;
-	font-size: 1.4rem;
 	font-weight: 600;
 	margin: 0;
 	text-align: center;
@@ -799,9 +765,8 @@ img.alignright,
 	margin: 0 0 30px;
 }
 
-
 /* Widgets
----------------------------------------------------------------------------------------------------- */
+---------------------------------------------------------------------------- */
 
 .widget {
 	margin-bottom: 40px;
@@ -855,21 +820,15 @@ img.alignright,
 	margin-bottom: 0;
 }
 
-.featured-content .entry-image {
-	height: 75px;
-	width: 75px;
-}
-
 .featured-content .entry-title {
 	font-size: 16px;
-	font-size: 1.6rem;
 	margin-bottom: 5px;
 	margin-top: 10px;
 }
 
 
 /* Plugins
----------------------------------------------------------------------------------------------------- */
+---------------------------------------------------------------------------- */
 
 /* Genesis eNews Extended
 --------------------------------------------- */
@@ -886,7 +845,6 @@ img.alignright,
 
 .enews-widget input {
 	font-size: 16px;
-	font-size: 1.6rem;
 	margin-bottom: 10px;
 }
 
@@ -922,7 +880,7 @@ img.alignright,
 
 .gs-faq__question::after {
 	content: "\f132";
-	font-family: "dashicons";
+	font-family: dashicons; /* stylelint-disable-line font-family-no-missing-generic-family-keyword */
 	float: right;
 }
 
@@ -930,16 +888,9 @@ img.alignright,
 	content: "\f460";
 }
 
-/* Jetpack
---------------------------------------------- */
-
-#wpstats {
-	display: none;
-}
-
 
 /* Skip Links
----------------------------------------------------------------------------------------------------- */
+---------------------------------------------------------------------------- */
 
 .genesis-skip-link {
 	margin: 0;
@@ -964,11 +915,11 @@ img.alignright,
 
 
 /* Site Header
----------------------------------------------------------------------------------------------------- */
+---------------------------------------------------------------------------- */
 
 .site-header {
 	background-color: #fff;
-	box-shadow: 0 0 20px rgba(0,0,0,0.05);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
 	padding: 0 30px;
 }
 
@@ -985,11 +936,15 @@ img.alignright,
 	max-width: 350px;
 	padding-bottom: 5px;
 	padding-top: 5px;
+	width: 100%;
+}
+
+.wp-custom-logo .title-area img {
+	width: auto;
 }
 
 .site-title {
 	font-size: 20px;
-	font-size: 2rem;
 	font-weight: 600;
 	line-height: 1;
 	margin-bottom: 0;
@@ -1015,7 +970,7 @@ img.alignright,
 
 
 /* Site Navigation
----------------------------------------------------------------------------------------------------- */
+---------------------------------------------------------------------------- */
 
 .genesis-nav-menu {
 	clear: both;
@@ -1033,7 +988,6 @@ img.alignright,
 	color: #333;
 	display: block;
 	font-size: 15px;
-	font-size: 1.5rem;
 	font-weight: 400;
 	outline-offset: -1px;
 	padding-bottom: 12px;
@@ -1069,7 +1023,6 @@ img.alignright,
 .genesis-nav-menu .sub-menu a {
 	background-color: #fff;
 	font-size: 14px;
-	font-size: 1.4rem;
 	position: relative;
 	word-wrap: break-word;
 }
@@ -1080,6 +1033,7 @@ img.alignright,
 }
 
 .genesis-nav-menu .menu-item:hover > .sub-menu {
+	display: block;
 	left: auto;
 	opacity: 1;
 }
@@ -1099,8 +1053,11 @@ img.alignright,
 
 .genesis-responsive-menu {
 	display: none;
-	padding-bottom: 15px;
 	position: relative;
+}
+
+.genesis-responsive-menu .genesis-nav-menu .menu-item:hover > .sub-menu {
+	display: none;
 }
 
 .menu-toggle,
@@ -1162,16 +1119,12 @@ img.alignright,
 .sub-menu-toggle::before {
 	display: inline-block;
 	text-rendering: auto;
-	-webkit-transform: rotate( 0 );
-	-ms-transform:     rotate( 0 );
-	transform:         rotate( 0 );
-	transition: transform .25s ease-in-out;
+	transform: rotate(0);
+	transition: transform 0.25s ease-in-out;
 }
 
 .sub-menu-toggle.activated::before {
-	-webkit-transform: rotate( 180deg );
-	-ms-transform:     rotate( 180deg );
-	transform:         rotate( 180deg );
+	transform: rotate(180deg);
 }
 
 /* Header Menu
@@ -1179,6 +1132,8 @@ img.alignright,
 
 .nav-primary {
 	clear: left;
+	padding-bottom: 15px;
+	padding-top: 15px;
 	width: 100%;
 }
 
@@ -1205,7 +1160,7 @@ img.alignright,
 
 
 /* Content Area
----------------------------------------------------------------------------------------------------- */
+---------------------------------------------------------------------------- */
 
 /* Entry Content
 --------------------------------------------- */
@@ -1217,7 +1172,7 @@ img.alignright,
 .entry-content ol,
 .entry-content ul {
 	margin-bottom: 30px;
-	margin-left: 40px;
+	padding-left: 40px;
 }
 
 .entry-content ol > li {
@@ -1228,6 +1183,11 @@ img.alignright,
 	list-style-type: disc;
 }
 
+.entry-content ol ul > li,
+.entry-content ul ul > li {
+	list-style-type: circle;
+}
+
 .entry-content ol ol,
 .entry-content ul ul {
 	margin-bottom: 0;
@@ -1235,13 +1195,6 @@ img.alignright,
 
 .entry-content code {
 	background-color: #f5f5f5;
-}
-
-.entry-content .caption {
-	font-size: 14px;
-	font-weight: 600;
-	margin-top: -20px;
-	text-align: center;
 }
 
 .content .sticky {
@@ -1254,7 +1207,6 @@ img.alignright,
 
 p.entry-meta {
 	font-size: 16px;
-	font-size: 1.6rem;
 	margin-bottom: 0;
 }
 
@@ -1299,7 +1251,6 @@ p.entry-meta {
 	cursor: pointer;
 	display: inline-block;
 	font-size: 16px;
-	font-size: 1.6rem;
 	font-weight: 600;
 	margin-bottom: 4px;
 	padding: 8px 12px;
@@ -1319,8 +1270,6 @@ p.entry-meta {
 .comment-respond,
 .entry-comments,
 .entry-pings {
-	font-size: 18px;
-	font-size: 1.8rem;
 	margin-bottom: 40px;
 }
 
@@ -1330,9 +1279,6 @@ p.entry-meta {
 
 .comment-list .depth-1 {
 	padding-left: 0;
-}
-
-.comment-list .bypostauthor {
 }
 
 .comment-header {
@@ -1366,13 +1312,16 @@ p.entry-meta {
 	display: none;
 }
 
+.comment-form-cookies-consent label {
+	display: inline;
+	padding-left: 10px;
+}
 
 /* Sidebar
----------------------------------------------------------------------------------------------------- */
+---------------------------------------------------------------------------- */
 
 .sidebar {
 	font-size: 16px;
-	font-size: 1.6rem;
 	line-height: 1.5;
 }
 
@@ -1384,16 +1333,13 @@ p.entry-meta {
 	margin-bottom: 20px;
 }
 
-
 /* Footer Widgets
----------------------------------------------------------------------------------------------------- */
+---------------------------------------------------------------------------- */
 
 .footer-widgets {
 	border-top: 1px solid #eee;
 	background-color: #fff;
 	clear: both;
-	font-size: 18px;
-	font-size: 1.8rem;
 	padding: 60px 0;
 }
 
@@ -1408,20 +1354,19 @@ p.entry-meta {
 	padding-right: 30px;
 }
 
-.footer-widget-area:last-child ,
+.footer-widget-area:last-child,
 .footer-widgets .widget:last-child {
 	margin-bottom: 0;
 }
 
 
 /* Site Footer
----------------------------------------------------------------------------------------------------- */
+---------------------------------------------------------------------------- */
 
 .site-footer {
 	background-color: #fff;
 	border-top: 1px solid #eee;
 	font-size: 15px;
-	font-size: 1.5rem;
 	line-height: 1.5;
 	padding: 30px;
 	text-align: center;
@@ -1433,7 +1378,7 @@ p.entry-meta {
 
 
 /* Media Queries
----------------------------------------------------------------------------------------------------- */
+---------------------------------------------------------------------------- */
 
 @media only screen and (min-width: 960px) {
 
@@ -1472,13 +1417,13 @@ p.entry-meta {
 		padding-right: 20px;
 	}
 
-	.genesis-nav-menu > .menu-highlight > a:hover,
-	.genesis-nav-menu > .menu-highlight > a:focus {
+	.genesis-nav-menu > .menu-highlight > a:focus,
+	.genesis-nav-menu > .menu-highlight > a:hover {
 		background-color: #0073e5;
 	}
 
-	.genesis-responsive-menu .genesis-nav-menu .sub-menu,
-	.genesis-responsive-menu .genesis-nav-menu .sub-menu a {
+	.genesis-nav-menu .sub-menu,
+	.genesis-nav-menu .sub-menu a {
 		width: 180px;
 	}
 
@@ -1487,7 +1432,7 @@ p.entry-meta {
 		opacity: 0;
 		padding-left: 0;
 		position: absolute;
-		transition: opacity .4s ease-in-out;
+		transition: opacity 0.4s ease-in-out;
 	}
 
 	.genesis-nav-menu .sub-menu a {
@@ -1588,61 +1533,6 @@ p.entry-meta {
 		padding-right: 30px;
 	}
 
-	/* Column Classes
-	--------------------------------------------- */
-
-	.five-sixths,
-	.four-sixths,
-	.one-fourth,
-	.one-half,
-	.one-sixth,
-	.one-third,
-	.three-fourths,
-	.three-sixths,
-	.two-fourths,
-	.two-sixths,
-	.two-thirds {
-		float: left;
-		margin-left: 2.564102564102564%;
-	}
-
-	.one-half,
-	.three-sixths,
-	.two-fourths {
-		width: 48.717948717948715%;
-	}
-
-	.one-third,
-	.two-sixths {
-		width: 31.623931623931625%;
-	}
-
-	.four-sixths,
-	.two-thirds {
-		width: 65.81196581196582%;
-	}
-
-	.one-fourth {
-		width: 23.076923076923077%;
-	}
-
-	.three-fourths {
-		width: 74.35897435897436%;
-	}
-
-	.one-sixth {
-		width: 14.52991452991453%;
-	}
-
-	.five-sixths {
-		width: 82.90598290598291%;
-	}
-
-	.first {
-		clear: both;
-		margin-left: 0;
-	}
-
 	/* Entry Misc.
 	--------------------------------------------- */
 
@@ -1666,15 +1556,13 @@ p.entry-meta {
 	.footer-widget-area {
 		float: left;
 		margin-bottom: 0;
-		width: 33.33%; /* fallback for older browsers */
 		width: calc(100% / 3);
 	}
 
 }
 
-
 /* Print Styles
----------------------------------------------------------------------------------------------------- */
+---------------------------------------------------------------------------- */
 
 @media print {
 
@@ -1778,7 +1666,6 @@ p.entry-meta {
 	.site-inner {
 		padding-top: 0;
 		position: relative;
-		top: -100px;
 	}
 
 	.author-box {

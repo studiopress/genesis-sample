@@ -6,7 +6,7 @@
  *
  * @package Genesis Sample
  * @author  StudioPress
- * @license GPL-2.0+
+ * @license GPL-2.0-or-later
  * @link    https://www.studiopress.com/
  */
 
@@ -58,7 +58,8 @@ function genesis_sample_woocommerce_theme_notice() {
 		$plugin_slug  = 'genesis-connect-woocommerce';
 		$admin_url    = network_admin_url( 'update.php' );
 		$install_link = sprintf(
-			'<a href="%s">%s</a>', wp_nonce_url(
+			'<a href="%s">%s</a>',
+			wp_nonce_url(
 				add_query_arg(
 					array(
 						'action' => 'install-plugin',
@@ -67,7 +68,8 @@ function genesis_sample_woocommerce_theme_notice() {
 					$admin_url
 				),
 				'install-plugin_' . $plugin_slug
-			), __( 'install and activate Genesis Connect for WooCommerce', 'genesis-sample' )
+			),
+			__( 'install and activate Genesis Connect for WooCommerce', 'genesis-sample' )
 		);
 
 		/* translators: 1: plugin install prompt presented as link, 2: child theme name */

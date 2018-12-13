@@ -6,12 +6,17 @@
  *
  * @package Genesis Sample
  * @author  StudioPress
- * @license GPL-2.0+
+ * @license GPL-2.0-or-later
  * @link    https://www.studiopress.com/
  */
 
 // Starts the engine.
 require_once get_template_directory() . '/lib/init.php';
+
+// Defines the child theme (do not remove).
+define( 'CHILD_THEME_NAME', 'Genesis Sample' );
+define( 'CHILD_THEME_URL', 'https://www.studiopress.com/' );
+define( 'CHILD_THEME_VERSION', '2.7.0' );
 
 // Sets up the Theme.
 require_once get_stylesheet_directory() . '/lib/theme-defaults.php';
@@ -46,10 +51,15 @@ require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-output.p
 // Adds the Genesis Connect WooCommerce notice.
 require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-notice.php';
 
-// Defines the child theme (do not remove).
-define( 'CHILD_THEME_NAME', 'Genesis Sample' );
-define( 'CHILD_THEME_URL', 'https://www.studiopress.com/' );
-define( 'CHILD_THEME_VERSION', '2.6.0' );
+add_action( 'after_setup_theme', 'genesis_child_gutenberg_support' );
+/**
+ * Adds Gutenberg opt-in features and styling.
+ *
+ * @since 2.7.0
+ */
+function genesis_child_gutenberg_support() { // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedFunctionFound -- using same in all child themes to allow action to be unhooked.
+	require_once get_stylesheet_directory() . '/lib/gutenberg/init.php';
+}
 
 add_action( 'wp_enqueue_scripts', 'genesis_sample_enqueue_scripts_styles' );
 /**
@@ -65,6 +75,7 @@ function genesis_sample_enqueue_scripts_styles() {
 		array(),
 		CHILD_THEME_VERSION
 	);
+
 	wp_enqueue_style( 'dashicons' );
 
 	$suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
@@ -75,6 +86,7 @@ function genesis_sample_enqueue_scripts_styles() {
 		CHILD_THEME_VERSION,
 		true
 	);
+
 	wp_localize_script(
 		'genesis-sample-responsive-menu',
 		'genesis_responsive_menu',
@@ -115,14 +127,10 @@ function genesis_sample_responsive_menu_settings() {
 
 }
 
-// Sets the content width based on the theme's design and stylesheet.
-if ( ! isset( $content_width ) ) {
-	$content_width = 702; // Pixels.
-}
-
 // Adds support for HTML5 markup structure.
 add_theme_support(
-	'html5', array(
+	'html5',
+	array(
 		'caption',
 		'comment-form',
 		'comment-list',
@@ -133,11 +141,11 @@ add_theme_support(
 
 // Adds support for accessibility.
 add_theme_support(
-	'genesis-accessibility', array(
+	'genesis-accessibility',
+	array(
 		'404-page',
 		'drop-down-menu',
 		'headings',
-		'rems',
 		'search-form',
 		'skip-links',
 	)
@@ -150,7 +158,8 @@ add_theme_support(
 
 // Adds custom logo in Customizer > Site Identity.
 add_theme_support(
-	'custom-logo', array(
+	'custom-logo',
+	array(
 		'height'      => 120,
 		'width'       => 700,
 		'flex-height' => true,
@@ -160,11 +169,15 @@ add_theme_support(
 
 // Renames primary and secondary navigation menus.
 add_theme_support(
-	'genesis-menus', array(
+	'genesis-menus',
+	array(
 		'primary'   => __( 'Header Menu', 'genesis-sample' ),
 		'secondary' => __( 'Footer Menu', 'genesis-sample' ),
 	)
 );
+
+// Adds image sizes.
+add_image_size( 'sidebar-featured', 75, 75, true );
 
 // Adds support for after entry widget.
 add_theme_support( 'genesis-after-entry-widget-area' );

@@ -1,5 +1,17 @@
 # Genesis Sample Theme Changelog
 
+## [2.7.0] - 2018-12-12
+* New: Add Gutenberg opt-in feature support (wide blocks, fonts, colors, editor and block styling).
+* New: Add theme support for responsive media embeds.
+* Update: General styling adjustments (remove rems for font size, center button text, responsive menu adjustments, use circles for unordered sublists).
+* Update: WooCommerce styling adjustments, make mobile-first.
+* Fix: Use custom logo height fallback of '1' if an SVG logo is used instead of a bitmap. (SVG support still has to be enabled in WordPress, which disables it by default.)
+* Fix: Prevent featured images in Featured Posts widgets appearing at 75px square.
+* Fix: Prevent JavaScript error if wp object is undefined.
+* Fix: Prevent title overlaying custom logo when printing.
+* Tools: Add npm scripts for automation. See https://github.com/studiopress/genesis-sample#npm-scripts.
+* Tools: PHPCS and Composer improvements.
+
 ## [2.6.0] - 2018-03-22
 * Fix product gallery bug in WooCommerce 3.0 update.
 * Improve compliance with WordPress coding standards.
@@ -46,6 +58,7 @@
 * Set localization.
 * Update XML file.
 
+[2.7.0]: https://github.com/copyblogger/genesis-sample/compare/2.6.0...2.7.0
 [2.6.0]: https://github.com/copyblogger/genesis-sample/compare/2.3.0...2.6.0
 [2.3.0]: https://github.com/copyblogger/genesis-sample/compare/2.2.4...2.3.0
 [2.2.4]: https://github.com/copyblogger/genesis-sample/compare/2.2.3...2.2.4

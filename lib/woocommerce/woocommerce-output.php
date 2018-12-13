@@ -6,7 +6,7 @@
  *
  * @package Genesis Sample
  * @author  StudioPress
- * @license GPL-2.0+
+ * @license GPL-2.0-or-later
  * @link    https://www.studiopress.com/
  */
 
@@ -69,7 +69,8 @@ function genesis_sample_woocommerce_css() {
 			color: %s;
 		}
 
-	', $color_link
+	',
+		$color_link
 	) : '';
 
 	$woo_css .= ( genesis_sample_customizer_get_default_accent_color() !== $color_accent ) ? sprintf(
@@ -111,7 +112,9 @@ function genesis_sample_woocommerce_css() {
 			color: %1$s;
 		}
 
-	', $color_accent, genesis_sample_color_contrast( $color_accent )
+	',
+		$color_accent,
+		genesis_sample_color_contrast( $color_accent )
 	) : '';
 
 	if ( $woo_css ) {

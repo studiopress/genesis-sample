@@ -5,7 +5,7 @@
  *
  * @author StudioPress
  * @link https://github.com/copyblogger/responsive-menus/
- * @license GPL-2.0+
+ * @license GPL-2.0-or-later
  * @package GenesisSample
  */
 

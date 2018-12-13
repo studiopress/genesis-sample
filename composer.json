@@ -1,23 +1,35 @@
 {
-    "name": "copyblogger/genesis-sample",
-    "description": "Genesis Sample child theme for the Genesis Framework",
-    "require-dev": {
-        "squizlabs/php_codesniffer": "^3.2",
-        "wp-coding-standards/wpcs": "^0.14.1",
-        "wimg/php-compatibility": "^8.1",
-        "dealerdirect/phpcodesniffer-composer-installer": "^0.4.4",
-        "php": "^5.6|^7"
-    },
-    "license": "GPL-2.0+",
-    "authors": [
-        {
-            "name": "StudioPress",
-            "email": "support@studiopress.com"
-        }
-    ],
-    "require": {},
-    "scripts": {
-        "phpcs": "phpcs",
-        "export": "git archive -o genesis-sample.zip HEAD"
-    }
+	"name": "studiopress/genesis-sample",
+	"type": "wordpress-theme",
+	"description": "Genesis Sample child theme for the Genesis Framework",
+	"homepage": "https://github.com/studiopress/genesis-sample",
+	"license": "GPL-2.0-or-later",
+	"authors": [
+		{
+			"name": "StudioPress",
+			"email": "support@studiopress.com"
+		}
+	],
+	"require": {
+		"php": "^5.2 || ^7",
+		"composer/installers": "^1"
+	},
+	"require-dev": {
+		"php": "^5.6 || ^7",
+		"dealerdirect/phpcodesniffer-composer-installer": "^0.4.4",
+		"phpcompatibility/phpcompatibility-wp": "^2",
+		"squizlabs/php_codesniffer": "^3.3.2",
+		"wp-coding-standards/wpcs": "^1.1"
+	},
+	"config": {
+		"sort-order": true
+	},
+	"scripts": {
+		"install-codestandards": "Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run",
+		"phpcs": "phpcs"
+	},
+	"support": {
+		"issues": "https://github.com/studiopress/genesis-sample/issues",
+		"source": "https://github.com/studiopress/genesis-sample"
+	}
 }
