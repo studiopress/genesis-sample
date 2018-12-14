@@ -1,7 +1,9 @@
 # Genesis Sample Theme Changelog
 
 ## [Unreleased]
-* 
+* New: Add `has-no-blocks` body class if singular post/page contains no blocks.
+* New: Add `first-block-[block-name]` body class. Helps remove top padding when blocks such as the Cover block are first on the page.
+* New: Add `first-block-align-[alignment]` body class. Helps adjust styles if the first block is full-width.
 
 ## [2.7.0] - 2018-12-12
 * New: Add Gutenberg opt-in feature support (wide blocks, fonts, colors, editor and block styling).
