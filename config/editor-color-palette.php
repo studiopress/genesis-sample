@@ -8,31 +8,22 @@
  */
 
 /**
- * Editor font sizes config.
+ * Editor color palette config.
  */
 return array(
 	array(
-		'name'      => __( 'Small', 'genesis-sample' ),
-		'shortName' => __( 'S', 'genesis-sample' ),
-		'size'      => 12,
-		'slug'      => 'small',
+		'name'  => __( 'Light gray', 'genesis-sample' ),
+		'slug'  => 'light-gray',
+		'color' => '#f5f5f5',
 	),
 	array(
-		'name'      => __( 'Normal', 'genesis-sample' ),
-		'shortName' => __( 'M', 'genesis-sample' ),
-		'size'      => 16,
-		'slug'      => 'normal',
+		'name'  => __( 'Medium gray', 'genesis-sample' ),
+		'slug'  => 'medium-gray',
+		'color' => '#999',
 	),
 	array(
-		'name'      => __( 'Large', 'genesis-sample' ),
-		'shortName' => __( 'L', 'genesis-sample' ),
-		'size'      => 20,
-		'slug'      => 'large',
-	),
-	array(
-		'name'      => __( 'Larger', 'genesis-sample' ),
-		'shortName' => __( 'XL', 'genesis-sample' ),
-		'size'      => 24,
-		'slug'      => 'larger',
+		'name'  => __( 'Dark gray', 'genesis-sample' ),
+		'slug'  => 'dark-gray',
+		'color' => '#333',
 	),
 );
