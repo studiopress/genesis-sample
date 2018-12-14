@@ -52,6 +52,8 @@ add_filter( 'body_class', 'genesis_sample_blocks_body_classes' );
  * - `first-block-[block-name]` to allow changes based on the first block (such as removing padding above a Cover block).
  * - `first-block-align-[alignment]` to allow styling adjustment if the first block is wide or full-width.
  *
+ * @since 2.8.0
+ *
  * @param array $classes The original classes.
  * @return array The modified classes.
  */
