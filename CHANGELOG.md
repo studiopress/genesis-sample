@@ -1,5 +1,8 @@
 # Genesis Sample Theme Changelog
 
+## [Unreleased]
+* 
+
 ## [2.7.0] - 2018-12-12
 * New: Add Gutenberg opt-in feature support (wide blocks, fonts, colors, editor and block styling).
 * New: Add theme support for responsive media embeds.
