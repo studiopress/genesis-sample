@@ -44,6 +44,11 @@ function genesis_sample_block_editor_styles() {
 
 }
 
+$config_loader = new Genesis_Config_Getter(
+	sprintf( '%s/config', get_stylesheet_directory() ),
+	sprintf( '%s/config', get_template_directory() )
+);
+
 // Add support for editor styles.
 add_theme_support( 'editor-styles' );
 
@@ -59,13 +64,13 @@ add_theme_support( 'responsive-embeds' );
 // Adds support for editor font sizes.
 add_theme_support(
 	'editor-font-sizes',
-	genesis_get_config( 'editor-font-sizes' )
+	$config_loader->get_primary_config( 'editor-font-sizes' )
 );
 
 // Adds support for editor color palette.
 add_theme_support(
 	'editor-color-palette',
-	genesis_get_config( 'editor-color-palette' )
+	$config_loader->get_primary_config( 'editor-color-palette' )
 );
 
 add_action( 'after_setup_theme', 'genesis_sample_content_width', 0 );

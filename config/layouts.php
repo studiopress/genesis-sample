@@ -7,8 +7,12 @@
  * @link    https://my.studiopress.com/themes/genesis-sample/
  */
 
+ $config_loader = new Genesis_Config_Getter(
+	 sprintf( '%s/config', get_template_directory() )
+ );
+
 // Pull default layouts from Genesis
-$genesis_config = genesis_get_config( 'layouts', 'secondary' );
+$genesis_config = $config_loader->get_primary_config( 'layouts' );
 
 /**
  * The Layouts config. Sets the default layouts for use by Genesis.
