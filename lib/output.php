@@ -74,14 +74,20 @@ function genesis_sample_css() {
 		input[type="submit"]:focus,
 		input[type="submit"]:hover,
 		.button:focus,
-		.button:hover,
-		.genesis-nav-menu > .menu-highlight > a:hover,
-		.genesis-nav-menu > .menu-highlight > a:focus,
-		.genesis-nav-menu > .menu-highlight.current-menu-item > a,
-		.content .wp-block-button .wp-block-button__link:focus,
-		.content .wp-block-button .wp-block-button__link:hover {
-			background-color: %s;
-			color: %s;
+		.button:hover {
+			background-color: %1$s;
+			color: %2$s;
+		}
+
+		@media only screen and (min-width: 960px) {
+			.genesis-nav-menu > .menu-highlight > a:hover,
+			.genesis-nav-menu > .menu-highlight > a:focus,
+			.genesis-nav-menu > .menu-highlight.current-menu-item > a,
+			.content .wp-block-button .wp-block-button__link:focus,
+			.content .wp-block-button .wp-block-button__link:hover {
+				background-color: %1$s;
+				color: %2$s;
+			}
 		}
 		',
 		$color_accent,
