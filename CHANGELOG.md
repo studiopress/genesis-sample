@@ -63,6 +63,7 @@
 * Set localization.
 * Update XML file.
 
+[2.7.1]: https://github.com/copyblogger/genesis-sample/compare/2.7.0...2.7.1
 [2.7.0]: https://github.com/copyblogger/genesis-sample/compare/2.6.0...2.7.0
 [2.6.0]: https://github.com/copyblogger/genesis-sample/compare/2.3.0...2.6.0
 [2.3.0]: https://github.com/copyblogger/genesis-sample/compare/2.2.4...2.3.0
