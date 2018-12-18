@@ -128,53 +128,19 @@ function genesis_sample_responsive_menu_settings() {
 }
 
 // Adds support for HTML5 markup structure.
-add_theme_support(
-	'html5',
-	array(
-		'caption',
-		'comment-form',
-		'comment-list',
-		'gallery',
-		'search-form',
-	)
-);
+add_theme_support( 'html5', genesis_get_config( 'html5' ) );
 
 // Adds support for accessibility.
-add_theme_support(
-	'genesis-accessibility',
-	array(
-		'404-page',
-		'drop-down-menu',
-		'headings',
-		'search-form',
-		'skip-links',
-	)
-);
+add_theme_support( 'genesis-accessibility', genesis_get_config( 'accessibility' ) );
 
 // Adds viewport meta tag for mobile browsers.
-add_theme_support(
-	'genesis-responsive-viewport'
-);
+add_theme_support( 'genesis-responsive-viewport' );
 
 // Adds custom logo in Customizer > Site Identity.
-add_theme_support(
-	'custom-logo',
-	array(
-		'height'      => 120,
-		'width'       => 700,
-		'flex-height' => true,
-		'flex-width'  => true,
-	)
-);
+add_theme_support( 'custom-logo', genesis_get_config( 'custom-logo' ) );
 
 // Renames primary and secondary navigation menus.
-add_theme_support(
-	'genesis-menus',
-	array(
-		'primary'   => __( 'Header Menu', 'genesis-sample' ),
-		'secondary' => __( 'Footer Menu', 'genesis-sample' ),
-	)
-);
+add_theme_support( 'genesis-menus', genesis_get_config( 'menus' ) );
 
 // Adds image sizes.
 add_image_size( 'sidebar-featured', 75, 75, true );
