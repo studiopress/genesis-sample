@@ -1,5 +1,10 @@
 # Genesis Sample Theme Changelog
 
+## [2.7.1] - 2018-12-20
+* Fix: Reinstate normalize.css and update to version 8.0.1.
+* Fix: Reinstate Genesis Column Classes in main stylesheet.
+* Fix: Stop background hover color appearing for mobile menu-highlight button.
+
 ## [2.7.0] - 2018-12-12
 * New: Add Gutenberg opt-in feature support (wide blocks, fonts, colors, editor and block styling).
 * New: Add theme support for responsive media embeds.
