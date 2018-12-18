@@ -336,6 +336,15 @@ hr.wp-block-separator {
 	padding-left: 0;
 }
 
+
+/* Page Templates
+---------------------------------------------------------------------------- */
+
+.page-template-template-blocks .site-inner {
+	padding-top: 0;
+}
+
+
 /* Media Queries
 ---------------------------------------------------------------------------- */
 
