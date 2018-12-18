@@ -127,25 +127,20 @@ function genesis_sample_responsive_menu_settings() {
 
 }
 
-$config_loader = new Genesis_Config_Getter(
-	sprintf( '%s/config', get_stylesheet_directory() ),
-	sprintf( '%s/config', get_template_directory() )
-);
-
 // Adds support for HTML5 markup structure.
-add_theme_support( 'html5', $config_loader->get_priority_config( 'html5' ) );
+add_theme_support( 'html5', genesis_get_config( 'html5' ) );
 
 // Adds support for accessibility.
-add_theme_support( 'genesis-accessibility', $config_loader->get_priority_config( 'accessibility' ) );
+add_theme_support( 'genesis-accessibility', genesis_get_config( 'accessibility' ) );
 
 // Adds viewport meta tag for mobile browsers.
 add_theme_support( 'genesis-responsive-viewport' );
 
 // Adds custom logo in Customizer > Site Identity.
-add_theme_support( 'custom-logo', $config_loader->get_priority_config( 'custom-logo' ) );
+add_theme_support( 'custom-logo', genesis_get_config( 'custom-logo' ) );
 
 // Renames primary and secondary navigation menus.
-add_theme_support( 'genesis-menus', $config_loader->get_priority_config( 'menus' ) );
+add_theme_support( 'genesis-menus', genesis_get_config( 'menus' ) );
 
 // Adds image sizes.
 add_image_size( 'sidebar-featured', 75, 75, true );
