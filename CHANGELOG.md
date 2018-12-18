@@ -4,6 +4,9 @@
 * New: Add `has-no-blocks` body class if singular post/page contains no blocks.
 * New: Add `first-block-[block-name]` body class. Helps remove top padding when blocks such as the Cover block are first on the page.
 * New: Add `first-block-align-[alignment]` body class. Helps adjust styles if the first block is full-width.
+* Fix: Reinstate normalize.css and update to version 8.0.1.
+* Fix: Reinstate Genesis Column Classes.
+* Fix: Stop background hover color appearing for mobile menu-highlight button.
 
 ## [2.7.0] - 2018-12-12
 * New: Add Gutenberg opt-in feature support (wide blocks, fonts, colors, editor and block styling).
