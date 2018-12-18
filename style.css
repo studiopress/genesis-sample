@@ -475,10 +475,6 @@ input[type="search"]::-webkit-search-results-button {
 	display: none;
 }
 
-input[type="search"] {
-	-webkit-appearance: textfield;
-}
-
 /* Tables
 --------------------------------------------- */
 
