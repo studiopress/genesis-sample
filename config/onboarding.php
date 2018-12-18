@@ -25,6 +25,7 @@ return array(
 			'post_content'   => require dirname( __FILE__ ) . '/import/content/homepage.php',
 			'post_type'      => 'page',
 			'post_status'    => 'publish',
+			'page_template'  => 'template-blocks.php',
 			'comment_status' => 'closed',
 			'ping_status'    => 'closed',
 		),
