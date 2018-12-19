@@ -49,5 +49,8 @@ add_filter( 'genesis_site_layout', '__genesis_return_full_width_content' );
 // Removes breadcrumbs.
 remove_action( 'genesis_before_loop', 'genesis_do_breadcrumbs' );
 
+// Removes footer widgets.
+remove_action( 'genesis_before_footer', 'genesis_footer_widget_areas' );
+
 // Runs the Genesis loop.
 genesis();
