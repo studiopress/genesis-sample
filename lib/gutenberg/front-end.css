@@ -29,6 +29,19 @@
 	margin-right: 0.01em;
 }
 
+/* Headings
+---------------------------------------------------------------------------- */
+
+h1.light,
+h2.light,
+h3.light,
+h4.light,
+h5.light,
+h6.light {
+	color: #f5f5f5;
+}
+
+
 /* Color Palette
 ---------------------------------------------------------------------------- */
 
@@ -305,6 +318,22 @@
 	padding: 0 30px;
 }
 
+/* Atomic Blocks
+---------------------------------------------------------------------------- */
+
+.ab-block-post-grid h2 a {
+	text-decoration: none;
+}
+
+/* TODO: improve this workaround for collapsing container at small widths */
+@media only screen and (max-width: 510px) {
+
+	.ab-block-container.alignfull {
+		min-height: 200px;
+	}
+
+}
+
 /* Other Blocks
 ---------------------------------------------------------------------------- */
 
@@ -334,6 +363,19 @@ hr.wp-block-separator {
 
 .entry-content .wp-block-gallery {
 	padding-left: 0;
+}
+
+
+/* Page Templates
+---------------------------------------------------------------------------- */
+
+.page-template-template-blocks .site-inner {
+	padding-top: 0;
+}
+
+.page-template-template-blocks .post-edit-link {
+	display: block;
+	text-align: center;
 }
 
 /* Media Queries
