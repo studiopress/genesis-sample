@@ -318,6 +318,22 @@ h6.light {
 	padding: 0 30px;
 }
 
+/* Atomic Blocks
+---------------------------------------------------------------------------- */
+
+.ab-block-post-grid h2 a {
+	text-decoration: none;
+}
+
+/* TODO: improve this workaround for collapsing container at small widths */
+@media only screen and (max-width: 510px) {
+
+	.ab-block-container.alignfull {
+		min-height: 200px;
+	}
+
+}
+
 /* Other Blocks
 ---------------------------------------------------------------------------- */
 
