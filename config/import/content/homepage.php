@@ -241,7 +241,7 @@ $genesis_sample_homepage_content = <<<CONTENT
 <h4>Share this page</h4>
 <!-- /wp:heading -->
 
-<!-- wp:atomic-blocks/ab-sharing {"google":false,"linkedin":true,"email":true,"shareButtonStyle":"ab-share-icon-only"} /--></div>
+<!-- wp:atomic-blocks/ab-sharing {"google":false,"linkedin":true,"email":true,"shareAlignment":"left","shareButtonStyle":"ab-share-icon-only"} --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
