@@ -1,9 +1,14 @@
 # Genesis Sample Theme Changelog
 
 ## [Unreleased]
+* New: Load configuration with the new `genesis_get_config()` function from Genesis 2.8.0. (See `functions.php` and the `config/` folder.)
+* New: Auto homepage setup upon theme activation using the new onboarding feature from Genesis 2.8.0. (See `config/onboarding.php`.)
 * New: Add `has-no-blocks` body class if singular post/page contains no blocks.
 * New: Add `first-block-[block-name]` body class. Helps remove top padding when blocks such as the Cover block are first on the page.
 * New: Add `first-block-align-[alignment]` body class. Helps adjust styles if the first block is full-width.
+* Update: Small styling adjustments for Atomic Blocks (work in progress).
+
+## [2.7.1] - 2018-12-20
 * Fix: Reinstate normalize.css and update to version 8.0.1.
 * Fix: Reinstate Genesis Column Classes.
 * Fix: Stop background hover color appearing for mobile menu-highlight button.
@@ -66,6 +71,7 @@
 * Set localization.
 * Update XML file.
 
+[2.7.1]: https://github.com/copyblogger/genesis-sample/compare/2.7.0...2.7.1
 [2.7.0]: https://github.com/copyblogger/genesis-sample/compare/2.6.0...2.7.0
 [2.6.0]: https://github.com/copyblogger/genesis-sample/compare/2.3.0...2.6.0
 [2.3.0]: https://github.com/copyblogger/genesis-sample/compare/2.2.4...2.3.0
