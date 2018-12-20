@@ -13,8 +13,9 @@
 return array(
 	'dependencies' => array(
 		'plugins' => array(
-			'atomic-blocks' => array(
+			array(
 				'name'        => __( 'Atomic Blocks', 'genesis-sample' ),
+				'slug'        => 'atomic-blocks/atomicblocks.php',
 			),
 		),
 	),
