@@ -170,7 +170,12 @@ h6.light {
 /* Buttons
 ---------------------------------------------------------------------------- */
 
-.content .wp-block-button .wp-block-button__link {
+.ab-block-cta .ab-button {
+	font-family: "Source Sans Pro", sans-serif;
+	font-weight: 600;
+}
+
+.wp-block-button .wp-block-button__link {
 	background-color: #333;
 	border: 0;
 	border-radius: 5px;
@@ -185,28 +190,25 @@ h6.light {
 	width: auto;
 }
 
-.content .wp-block-button .wp-block-button__link:focus,
-.content .wp-block-button .wp-block-button__link:hover {
-	background-color: #0072e5;
-	color: #fff;
+.wp-block-button.is-style-outline .wp-block-button__link:focus,
+.wp-block-button.is-style-outline .wp-block-button__link:hover,
+.wp-block-button .wp-block-button__link:focus,
+.wp-block-button .wp-block-button__link:hover {
+	box-shadow: inset 0 0 200px rgba(230, 230, 230, 0.15);
 }
 
 /* Button Variations */
-.content .wp-block-button.is-style-squared .wp-block-button__link {
+.wp-block-button.is-style-squared .wp-block-button__link {
 	border-radius: 0;
 }
 
-.content .wp-block-button.is-style-outline .wp-block-button__link {
+.wp-block-button.is-style-outline .wp-block-button__link {
 	background-color: transparent;
 	border: 2px solid currentColor;
 	border-radius: 0;
 	padding: 13px 28px;
 }
 
-.content .wp-block-button.is-style-outline .wp-block-button__link:focus,
-.content .wp-block-button.is-style-outline .wp-block-button__link:hover {
-	color: #0073e5;
-}
 
 /* Blockquotes and captions
 ---------------------------------------------------------------------------- */

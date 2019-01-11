@@ -82,9 +82,7 @@ function genesis_sample_css() {
 		@media only screen and (min-width: 960px) {
 			.genesis-nav-menu > .menu-highlight > a:hover,
 			.genesis-nav-menu > .menu-highlight > a:focus,
-			.genesis-nav-menu > .menu-highlight.current-menu-item > a,
-			.content .wp-block-button .wp-block-button__link:focus,
-			.content .wp-block-button .wp-block-button__link:hover {
+			.genesis-nav-menu > .menu-highlight.current-menu-item > a {
 				background-color: %1$s;
 				color: %2$s;
 			}
