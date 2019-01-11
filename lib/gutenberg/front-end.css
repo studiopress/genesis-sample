@@ -136,6 +136,15 @@ h6.light {
 	width: 100%;
 }
 
+@media only screen and (max-width: 510px) {
+
+	.wp-block-button.alignright {
+		float: left;
+		margin-left: 0;
+	}
+
+}
+
 /* Columns
 ---------------------------------------------------------------------------- */
 
@@ -324,11 +333,17 @@ h6.light {
 	text-decoration: none;
 }
 
-/* TODO: improve this workaround for collapsing container at small widths */
 @media only screen and (max-width: 510px) {
 
-	.ab-block-container.alignfull {
-		min-height: 200px;
+	.ab-block-container.alignfull::before {
+		content: " ";
+		display: table;
+	}
+
+	.ab-block-container.alignfull::after {
+		clear: both;
+		content: " ";
+		display: table;
 	}
 
 }
