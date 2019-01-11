@@ -183,7 +183,7 @@ function genesis_sample_remove_metaboxes( $_genesis_admin_settings ) {
 
 add_filter( 'genesis_customizer_theme_settings_config', 'genesis_sample_remove_customizer_settings' );
 /**
- * Removes output of header settings in the Customizer.
+ * Removes output of header and front page breadcrumb settings in the Customizer.
  *
  * @since 2.6.0
  *
@@ -193,6 +193,7 @@ add_filter( 'genesis_customizer_theme_settings_config', 'genesis_sample_remove_c
 function genesis_sample_remove_customizer_settings( $config ) {
 
 	unset( $config['genesis']['sections']['genesis_header'] );
+	unset( $config['genesis']['sections']['genesis_breadcrumbs']['controls']['breadcrumb_front_page'] );
 	return $config;
 
 }
