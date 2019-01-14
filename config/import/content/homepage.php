@@ -12,8 +12,8 @@
 
 $genesis_homepage_header_image_url = CHILD_URL . '/config/import/images/mountain-bw.jpg';
 
-// Photo by Haley Powers on Unspash: https://unsplash.com/photos/rjhvXX7JBPc
-$genesis_homepage_faq_image_url = CHILD_URL . '/config/import/images/uninvited-haley-powers-unsplash.jpg';
+// Photo by Haley Powers on Unsplash: https://unsplash.com/photos/rjhvXX7JBPc
+$genesis_homepage_faq_image_url = CHILD_URL . '/config/import/images/about.jpg';
 
 $genesis_sample_homepage_content = <<<CONTENT
 <!-- wp:media-text {"align":"full","mediaId":1477,"mediaType":"image","isStackedOnMobile":true} -->
