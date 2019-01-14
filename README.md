@@ -47,4 +47,4 @@ You can then type any of these commands:
 3. Bump version numbers manually and commit those changes.
 4. Type `npm run zip` to create `genesis-sample.zip`. Files marked export-ignore in `.gitattributes` are excluded from the zip.
 
-The `zip` command is an alias for `git archive -o genesis-sample.zip HEAD`.
+The `zip` command is an alias for `git archive -o genesis-sample.zip --prefix=genesis-sample/ HEAD`.
