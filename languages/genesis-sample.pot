@@ -1,14 +1,14 @@
-# <!=Copyright (C) 2018 StudioPress
+# <!=Copyright (C) 2019 StudioPress
 # This file is distributed under the GPL-2.0-or-later.=!>
 msgid ""
 msgstr ""
-"Project-Id-Version: Genesis Sample 2.7.0\n"
+"Project-Id-Version: Genesis Sample 2.8.0\n"
 "Report-Msgid-Bugs-To: StudioPress <translations@studiopress.com>\n"
-"POT-Creation-Date: 2018-12-10 14:42:39+00:00\n"
+"POT-Creation-Date: 2019-01-14 20:41:36+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2019-MO-DA HO:MI+ZONE\n"
 "Last-Translator: StudioPress <translations@studiopress.com>\n"
 "Language-Team: StudioPress <translations@studiopress.com>\n"
 "Language: en\n"
@@ -23,20 +23,52 @@ msgstr ""
 "X-Poedit-Bookmarks: \n"
 "X-Textdomain-Support: yes\n"
 
+#: config/editor-color-palette.php:15
+msgid "Light gray"
+msgstr ""
+
+#: config/editor-color-palette.php:20
+msgid "Medium gray"
+msgstr ""
+
+#: config/editor-color-palette.php:25
+msgid "Dark gray"
+msgstr ""
+
+#: config/editor-font-sizes.php:15
+msgid "Small"
+msgstr ""
+
+#: config/editor-font-sizes.php:20
+msgid "Normal"
+msgstr ""
+
+#: config/editor-font-sizes.php:25
+msgid "Large"
+msgstr ""
+
+#: config/editor-font-sizes.php:30
+msgid "Larger"
+msgstr ""
+
+#: config/menus.php:14
+msgid "Header Menu"
+msgstr ""
+
+#: config/menus.php:15
+msgid "Footer Menu"
+msgstr ""
+
+#: config/onboarding.php:17
+msgid "Atomic Blocks"
+msgstr ""
+
 #: functions.php:114
 msgid "Menu"
 msgstr ""
 
 #: functions.php:116
 msgid "Submenu"
-msgstr ""
-
-#: functions.php:174
-msgid "Header Menu"
-msgstr ""
-
-#: functions.php:175
-msgid "Footer Menu"
 msgstr ""
 
 #: lib/customize.php:36
@@ -50,7 +82,10 @@ msgid "Link Color"
 msgstr ""
 
 #: lib/customize.php:57
-msgid "Change the default hovers color for button."
+msgid ""
+"Change the default hover color for button links, the menu button, and "
+"submit buttons. This setting does not apply to buttons created with the "
+"Buttons block."
 msgstr ""
 
 #: lib/customize.php:58
@@ -63,50 +98,6 @@ msgstr ""
 
 #: lib/customize.php:78
 msgid "The maximum width of the logo in pixels."
-msgstr ""
-
-#: lib/gutenberg/init.php:64
-msgid "Small"
-msgstr ""
-
-#: lib/gutenberg/init.php:65
-msgid "S"
-msgstr ""
-
-#: lib/gutenberg/init.php:70
-msgid "Normal"
-msgstr ""
-
-#: lib/gutenberg/init.php:71
-msgid "M"
-msgstr ""
-
-#: lib/gutenberg/init.php:76
-msgid "Large"
-msgstr ""
-
-#: lib/gutenberg/init.php:77
-msgid "L"
-msgstr ""
-
-#: lib/gutenberg/init.php:82
-msgid "Larger"
-msgstr ""
-
-#: lib/gutenberg/init.php:83
-msgid "XL"
-msgstr ""
-
-#: lib/gutenberg/init.php:95
-msgid "Light gray"
-msgstr ""
-
-#: lib/gutenberg/init.php:100
-msgid "Medium gray"
-msgstr ""
-
-#: lib/gutenberg/init.php:105
-msgid "Dark gray"
 msgstr ""
 
 #: lib/woocommerce/woocommerce-notice.php:55
@@ -157,4 +148,8 @@ msgstr ""
 
 #. Template Name of the plugin/theme
 msgid "Landing"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Blocks"
 msgstr ""
