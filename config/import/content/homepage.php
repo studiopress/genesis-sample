@@ -10,19 +10,6 @@
  * @link    https://www.studiopress.com/
  */
 
-// Photo by Shashank Sahay on Unsplash: https://unsplash.com/photos/vwJFEkK8Kcs
-$genesis_homepage_cta_image_url = CHILD_URL . '/config/import/images/shashank-sahay-272123-unsplash.jpg';
-
-// Icons by Webalys on Iconfinder: https://www.iconfinder.com/iconsets/streamline-icon-set-free-pack
-$genesis_homepage_icons = array(
-	'contact' => CHILD_URL . '/config/import/images/contact-512.png',
-	'dial'    => CHILD_URL . '/config/import/images/dial-512.png',
-	'happy'   => CHILD_URL . '/config/import/images/happy-512.png',
-	'heart'   => CHILD_URL . '/config/import/images/heart-512.png',
-	'mic'     => CHILD_URL . '/config/import/images/mic-512.png',
-	'target'  => CHILD_URL . '/config/import/images/target-512.png'
-);
-
 // Photo by Haley Powers on Unspash: https://unsplash.com/photos/rjhvXX7JBPc
 $genesis_homepage_faq_image_url = CHILD_URL . '/config/import/images/uninvited-haley-powers-unsplash.jpg';
 
