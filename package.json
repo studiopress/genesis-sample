@@ -18,7 +18,7 @@
 		"autoprefixer": "postcss style.css lib/**/*.css --use autoprefixer --replace --no-map --verbose",
 		"makepot": "node .scripts/makepot.js",
 		"lint:css": "stylelint \"style.css\" \"lib/gutenberg/*.css\" \"lib/woocommerce/*.css\"",
-		"zip": "git archive -o genesis-sample.zip HEAD"
+		"zip": "git archive -o genesis-sample.zip --prefix=genesis-sample/ HEAD"
 	},
 	"browserslist": [
 		"> 1%",
