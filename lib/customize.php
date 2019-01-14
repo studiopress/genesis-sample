@@ -54,7 +54,7 @@ function genesis_sample_customizer_register( $wp_customize ) {
 			$wp_customize,
 			'genesis_sample_accent_color',
 			array(
-				'description' => __( 'Change the default hover color for buttons.', 'genesis-sample' ),
+				'description' => __( 'Change the default hover color for button links, the menu button, and submit buttons. This setting does not apply to buttons created with the Buttons block.', 'genesis-sample' ),
 				'label'       => __( 'Accent Color', 'genesis-sample' ),
 				'section'     => 'colors',
 				'settings'    => 'genesis_sample_accent_color',
