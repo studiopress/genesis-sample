@@ -1,8 +1,23 @@
 # Genesis Sample Theme Changelog
 
+## [2.8.0] - 2019-01-16
+Requires Genesis 2.8.0+.
+
+* New: Block-based homepage layout.
+* New: Auto homepage setup upon theme activation using the new onboarding feature from Genesis 2.8.0. (See `config/onboarding.php`.)
+* New: “Blocks” page template for use with the block editor. The template removes the title and breadcrumbs, and forces a full-width layout.
+* New: Load configuration with the new `genesis_get_config()` function from Genesis 2.8.0. (See `functions.php` and the `config/` folder.)
+* New: Add `has-no-blocks` body class if singular post/page contains no blocks.
+* New: Add `first-block-[block-name]` body class. Helps remove top padding when blocks such as the Cover block are first on the page.
+* New: Add `first-block-align-[alignment]` body class. Helps adjust styles if the first block is full-width.
+* Update: Styling adjustments for buttons, content width, and column blocks.
+* Update: Prevent 'admin' user being created during manual XML demo content import.
+* Update: Remove editor font sizes shortname from Gutenberg font sizes config. (The shortname is no longer used in WordPress.)
+* Tools: Improve `npm run zip` command to create archives that unzip to a 'genesis-sample' folder on Windows.
+
 ## [2.7.1] - 2018-12-20
 * Fix: Reinstate normalize.css and update to version 8.0.1.
-* Fix: Reinstate Genesis Column Classes in main stylesheet.
+* Fix: Reinstate Genesis Column Classes.
 * Fix: Stop background hover color appearing for mobile menu-highlight button.
 
 ## [2.7.0] - 2018-12-12
@@ -63,6 +78,7 @@
 * Set localization.
 * Update XML file.
 
+[2.8.0]: https://github.com/copyblogger/genesis-sample/compare/2.7.1...2.8.0
 [2.7.1]: https://github.com/copyblogger/genesis-sample/compare/2.7.0...2.7.1
 [2.7.0]: https://github.com/copyblogger/genesis-sample/compare/2.6.0...2.7.0
 [2.6.0]: https://github.com/copyblogger/genesis-sample/compare/2.3.0...2.6.0

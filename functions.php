@@ -16,7 +16,7 @@ require_once get_template_directory() . '/lib/init.php';
 // Defines the child theme (do not remove).
 define( 'CHILD_THEME_NAME', 'Genesis Sample' );
 define( 'CHILD_THEME_URL', 'https://www.studiopress.com/' );
-define( 'CHILD_THEME_VERSION', '2.7.1' );
+define( 'CHILD_THEME_VERSION', '2.8.0' );
 
 // Sets up the Theme.
 require_once get_stylesheet_directory() . '/lib/theme-defaults.php';
@@ -128,53 +128,19 @@ function genesis_sample_responsive_menu_settings() {
 }
 
 // Adds support for HTML5 markup structure.
-add_theme_support(
-	'html5',
-	array(
-		'caption',
-		'comment-form',
-		'comment-list',
-		'gallery',
-		'search-form',
-	)
-);
+add_theme_support( 'html5', genesis_get_config( 'html5' ) );
 
 // Adds support for accessibility.
-add_theme_support(
-	'genesis-accessibility',
-	array(
-		'404-page',
-		'drop-down-menu',
-		'headings',
-		'search-form',
-		'skip-links',
-	)
-);
+add_theme_support( 'genesis-accessibility', genesis_get_config( 'accessibility' ) );
 
 // Adds viewport meta tag for mobile browsers.
-add_theme_support(
-	'genesis-responsive-viewport'
-);
+add_theme_support( 'genesis-responsive-viewport' );
 
 // Adds custom logo in Customizer > Site Identity.
-add_theme_support(
-	'custom-logo',
-	array(
-		'height'      => 120,
-		'width'       => 700,
-		'flex-height' => true,
-		'flex-width'  => true,
-	)
-);
+add_theme_support( 'custom-logo', genesis_get_config( 'custom-logo' ) );
 
 // Renames primary and secondary navigation menus.
-add_theme_support(
-	'genesis-menus',
-	array(
-		'primary'   => __( 'Header Menu', 'genesis-sample' ),
-		'secondary' => __( 'Footer Menu', 'genesis-sample' ),
-	)
-);
+add_theme_support( 'genesis-menus', genesis_get_config( 'menus' ) );
 
 // Adds image sizes.
 add_image_size( 'sidebar-featured', 75, 75, true );
@@ -217,7 +183,7 @@ function genesis_sample_remove_metaboxes( $_genesis_admin_settings ) {
 
 add_filter( 'genesis_customizer_theme_settings_config', 'genesis_sample_remove_customizer_settings' );
 /**
- * Removes output of header settings in the Customizer.
+ * Removes output of header and front page breadcrumb settings in the Customizer.
  *
  * @since 2.6.0
  *
@@ -227,6 +193,7 @@ add_filter( 'genesis_customizer_theme_settings_config', 'genesis_sample_remove_c
 function genesis_sample_remove_customizer_settings( $config ) {
 
 	unset( $config['genesis']['sections']['genesis_header'] );
+	unset( $config['genesis']['sections']['genesis_breadcrumbs']['controls']['breadcrumb_front_page'] );
 	return $config;
 
 }
