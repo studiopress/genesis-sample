@@ -11,7 +11,7 @@
  */
 
 return array(
-	'dependencies' => array(
+	'dependencies'     => array(
 		'plugins' => array(
 			array(
 				'name' => __( 'Atomic Blocks', 'genesis-sample' ),
@@ -34,7 +34,7 @@ return array(
 			),
 		),
 	),
-	'content'      => array(
+	'content'          => array(
 		'homepage' => array(
 			'post_title'     => 'Homepage',
 			'post_name'      => 'homepage-gutenberg',
@@ -44,6 +44,60 @@ return array(
 			'page_template'  => 'page-templates/blocks.php',
 			'comment_status' => 'closed',
 			'ping_status'    => 'closed',
+		),
+		'blocks'   => array(
+			'post_title'     => 'Block Content Examples',
+			'post_content'   => require dirname( __FILE__ ) . '/import/content/block-examples.php',
+			'post_type'      => 'page',
+			'post_status'    => 'publish',
+			'page_template'  => 'page-templates/blocks.php',
+			'comment_status' => 'closed',
+			'ping_status'    => 'closed',
+		),
+		'about'    => array(
+			'post_title'     => 'About Us',
+			'post_content'   => require dirname( __FILE__ ) . '/import/content/about.php',
+			'post_type'      => 'page',
+			'post_status'    => 'publish',
+			'page_template'  => 'page-templates/blocks.php',
+			'comment_status' => 'closed',
+			'ping_status'    => 'closed',
+		),
+		'contact'  => array(
+			'post_title'     => 'Contact Us',
+			'post_content'   => require dirname( __FILE__ ) . '/import/content/contact.php',
+			'post_type'      => 'page',
+			'post_status'    => 'publish',
+			'comment_status' => 'closed',
+			'ping_status'    => 'closed',
+		),
+		'landing'  => array(
+			'post_title'     => 'Landing Page',
+			'post_content'   => require dirname( __FILE__ ) . '/import/content/landing-page.php',
+			'post_type'      => 'page',
+			'post_status'    => 'publish',
+			'page_template'  => 'page-templates/landing.php',
+			'comment_status' => 'closed',
+			'ping_status'    => 'closed',
+		),
+	),
+	'navigation_menus' => array(
+		'primary' => array(
+			'homepage' => array(
+				'title' => 'Home',
+			),
+			'about'    => array(
+				'title' => 'About Us',
+			),
+			'contact'  => array(
+				'title' => 'Contact Us',
+			),
+			'blocks'   => array(
+				'title' => 'Block Examples',
+			),
+			'landing'  => array(
+				'title' => 'Landing Page',
+			),
 		),
 	),
 );
