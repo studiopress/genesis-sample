@@ -391,11 +391,11 @@ hr.wp-block-separator {
 /* Page Templates
 ---------------------------------------------------------------------------- */
 
-.page-template-template-blocks .site-inner {
+.page-template-blocks .site-inner {
 	padding-top: 0;
 }
 
-.page-template-template-blocks .post-edit-link {
+.page-template-blocks .post-edit-link {
 	display: block;
 	text-align: center;
 }
