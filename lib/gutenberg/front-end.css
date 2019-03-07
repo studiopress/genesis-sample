@@ -440,6 +440,7 @@ hr.wp-block-separator {
 		margin-left: -180px;
 		margin-right: -180px;
 		max-width: 1062px;
+		width: auto;
 	}
 
 }
