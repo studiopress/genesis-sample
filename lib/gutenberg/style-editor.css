@@ -154,11 +154,11 @@ p.has-background.light-text a:hover {
 }
 
 .wp-block-pullquote.alignleft {
-	margin: 0 1.5em 1.5em 0;
+	margin: 0 2em 1.5em 0;
 }
 
 .wp-block-pullquote.alignright {
-	margin: 0 0 1.5em 1.5em;
+	margin: 0 0 1.5em 2em;
 }
 
 .wp-block-quote p,
