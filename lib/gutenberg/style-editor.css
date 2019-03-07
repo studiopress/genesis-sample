@@ -153,6 +153,14 @@ p.has-background.light-text a:hover {
 	padding: 0;
 }
 
+.wp-block-pullquote.alignleft {
+	margin: 0 1.5em 1.5em 0;
+}
+
+.wp-block-pullquote.alignright {
+	margin: 0 0 1.5em 1.5em;
+}
+
 .wp-block-quote p,
 .wp-block-pullquote p {
 	font-family: "Source Sans Pro", serif;
@@ -175,6 +183,12 @@ p.has-background.light-text a:hover {
 
 .wp-block-pullquote.is-style-solid-color {
 	background-color: #333;
+}
+
+
+.wp-block-pullquote.is-style-solid-color.alignleft blockquote,
+.wp-block-pullquote.is-style-solid-color.alignright blockquote {
+	max-width: 80%;
 }
 
 .wp-block-pullquote:not(.is-style-solid-color)[style*="border-color"] {
