@@ -86,7 +86,7 @@ $genesis_sample_homepage_content = <<<CONTENT
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:button {"align":"right","className":"is-style-outline"} -->
-<div class="wp-block-button alignright is-style-outline"><a class="wp-block-button__link" href="/contact">Get in touch</a></div>
+<div class="wp-block-button alignright is-style-outline"><a class="wp-block-button__link" href="#">Get in touch</a></div>
 <!-- /wp:button -->
 
 <!-- wp:paragraph -->
@@ -108,7 +108,7 @@ $genesis_sample_homepage_content = <<<CONTENT
 <div class="wp-block-columns alignwide has-2-columns"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:atomic-blocks/ab-accordion {"accordionOpen":true} -->
 <div class="wp-block-atomic-blocks-ab-accordion ab-block-accordion ab-font-size-18"><details open><summary class="ab-accordion-title">Can I phone or email you?</summary><div class="ab-accordion-text"><!-- wp:paragraph -->
-<p>You can reach us on our <a href="/contact">contact page</a> or by calling us at 1.123.456.7891</p>
+<p>You can reach us on our <a href="#">contact page</a> or by calling us at 1.123.456.7891</p>
 <!-- /wp:paragraph --></div></details></div>
 <!-- /wp:atomic-blocks/ab-accordion -->
 
