@@ -84,10 +84,10 @@ h6.light {
 	color: inherit;
 }
 
-.site-container p.has-text-color a:focus,
 .site-container p.has-background a:focus,
+.site-container p.has-background a:hover,
 .site-container p.has-text-color a:hover,
-.site-container p.has-background a:hover {
+.site-container p.has-text-color a:focus {
 	color: inherit;
 	text-decoration: none;
 }
@@ -213,8 +213,8 @@ h6.light {
 /* Blockquotes and captions
 ---------------------------------------------------------------------------- */
 
-.site-container .wp-block-quote,
-.site-container .wp-block-pullquote {
+.site-container .wp-block-pullquote,
+.site-container .wp-block-quote {
 	border: none;
 	margin: 24px 24px 36px;
 }
@@ -227,8 +227,8 @@ h6.light {
 	margin: 0 0 1.5em 2em;
 }
 
-.site-container .wp-block-quote p,
-.site-container .wp-block-pullquote p {
+.site-container .wp-block-pullquote p,
+.site-container .wp-block-quote p {
 	font-family: "Source Sans Pro", serif;
 	font-size: 21px;
 	font-style: italic;
@@ -262,8 +262,8 @@ h6.light {
 	border-right: none;
 }
 
-.site-container .wp-block-quote cite,
-.site-container .wp-block-pullquote cite {
+.site-container .wp-block-pullquote cite,
+.site-container .wp-block-quote cite {
 	color: #666;
 	display: block;
 	font-family: "Source Sans Pro", serif;
@@ -366,8 +366,8 @@ h6.light {
 /* Other Blocks
 ---------------------------------------------------------------------------- */
 
-.wp-block-verse,
-.wp-block-preformatted {
+.wp-block-preformatted,
+.wp-block-verse {
 	font-size: 16px;
 }
 
