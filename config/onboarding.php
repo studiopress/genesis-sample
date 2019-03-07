@@ -17,6 +17,21 @@ return array(
 				'name' => __( 'Atomic Blocks', 'genesis-sample' ),
 				'slug' => 'atomic-blocks/atomicblocks.php',
 			),
+			array(
+				'name'       => __( 'WP Forms Lite', 'genesis-sample' ),
+				'slug'       => 'wpforms-lite/wpforms.php',
+				'public_url' => 'https://wordpress.org/plugins/wpforms-lite/',
+			),
+			array(
+				'name'       => __( 'Genesis eNews Extended', 'genesis-sample' ),
+				'slug'       => 'genesis-enews-extended/plugin.php',
+				'public_url' => 'https://wordpress.org/plugins/genesis-enews-extended/',
+			),
+			array(
+				'name'       => __( 'Simple Social Icons', 'genesis-sample' ),
+				'slug'       => 'simple-social-icons/simple-social-icons.php',
+				'public_url' => 'https://wordpress.org/plugins/simple-social-icons/',
+			),
 		),
 	),
 	'content'      => array(
