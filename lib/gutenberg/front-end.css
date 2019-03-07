@@ -314,6 +314,7 @@ h6.light {
 .entry-content .wp-block-latest-posts {
 	clear: both;
 	margin-left: 0;
+	padding-left: 0;
 }
 
 .entry-content .wp-block-latest-posts li {
