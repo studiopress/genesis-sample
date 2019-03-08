@@ -12,7 +12,9 @@
 
 add_filter( 'genesis_theme_settings_defaults', 'genesis_sample_theme_defaults' );
 /**
- * Updates theme settings on reset.
+ * Updates theme settings when resetting them at Genesis -> Theme Settings.
+ *
+ * Can be removed when Genesis Theme Settings are removed from WP admin.
  *
  * @since 2.2.3
  *
@@ -21,43 +23,9 @@ add_filter( 'genesis_theme_settings_defaults', 'genesis_sample_theme_defaults' )
  */
 function genesis_sample_theme_defaults( $defaults ) {
 
-	$defaults['blog_cat_num']              = 6;
-	$defaults['breadcrumb_front_page']     = 0;
-	$defaults['content_archive']           = 'full';
-	$defaults['content_archive_limit']     = 0;
-	$defaults['content_archive_thumbnail'] = 0;
-	$defaults['posts_nav']                 = 'numeric';
-	$defaults['site_layout']               = 'content-sidebar';
+	$args = genesis_get_config( 'child-theme-settings-genesis' );
 
-	return $defaults;
-
-}
-
-add_action( 'after_switch_theme', 'genesis_sample_theme_setting_defaults' );
-/**
- * Updates theme settings on activation.
- *
- * @since 2.2.3
- */
-function genesis_sample_theme_setting_defaults() {
-
-	if ( function_exists( 'genesis_update_settings' ) ) {
-
-		genesis_update_settings(
-			array(
-				'blog_cat_num'              => 6,
-				'breadcrumb_front_page'     => 0,
-				'content_archive'           => 'full',
-				'content_archive_limit'     => 0,
-				'content_archive_thumbnail' => 0,
-				'posts_nav'                 => 'numeric',
-				'site_layout'               => 'content-sidebar',
-			)
-		);
-
-	}
-
-	update_option( 'posts_per_page', 6 );
+	return wp_parse_args( $args, $defaults );
 
 }
 
@@ -72,19 +40,8 @@ add_filter( 'simple_social_default_styles', 'genesis_sample_social_default_style
  */
 function genesis_sample_social_default_styles( $defaults ) {
 
-	$args = array(
-		'alignment'              => 'alignleft',
-		'background_color'       => '#f5f5f5',
-		'background_color_hover' => '#333333',
-		'border_radius'          => 3,
-		'border_width'           => 0,
-		'icon_color'             => '#333333',
-		'icon_color_hover'       => '#ffffff',
-		'size'                   => 40,
-	);
+	$args = genesis_get_config( 'simple-social-icons-settings' );
 
-	$args = wp_parse_args( $args, $defaults );
-
-	return $args;
+	return wp_parse_args( $args, $defaults );
 
 }
