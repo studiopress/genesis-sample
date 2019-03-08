@@ -73,6 +73,10 @@ function genesis_sample_css() {
 		input[type="reset"]:hover,
 		input[type="submit"]:focus,
 		input[type="submit"]:hover,
+		.site-container div.wpforms-container-full .wpforms-form input[type="submit"]:focus,
+		.site-container div.wpforms-container-full .wpforms-form input[type="submit"]:hover,
+		.site-container div.wpforms-container-full .wpforms-form button[type="submit"]:focus,
+		.site-container div.wpforms-container-full .wpforms-form button[type="submit"]:hover,
 		.button:focus,
 		.button:hover {
 			background-color: %1$s;
