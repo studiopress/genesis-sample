@@ -14,8 +14,9 @@ return array(
 	'dependencies'     => array(
 		'plugins' => array(
 			array(
-				'name' => __( 'Atomic Blocks', 'genesis-sample' ),
-				'slug' => 'atomic-blocks/atomicblocks.php',
+				'name'       => __( 'Atomic Blocks', 'genesis-sample' ),
+				'slug'       => 'atomic-blocks/atomicblocks.php',
+				'public_url' => 'https://atomicblocks.com/',
 			),
 			array(
 				'name'       => __( 'WP Forms Lite', 'genesis-sample' ),
