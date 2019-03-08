@@ -38,7 +38,6 @@ return array(
 	'content'          => array(
 		'homepage' => array(
 			'post_title'     => 'Homepage',
-			'post_name'      => 'homepage-gutenberg',
 			'post_content'   => require dirname( __FILE__ ) . '/import/content/homepage.php',
 			'post_type'      => 'page',
 			'post_status'    => 'publish',
