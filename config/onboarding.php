@@ -60,6 +60,7 @@ return array(
 			'post_type'      => 'page',
 			'post_status'    => 'publish',
 			'page_template'  => 'page-templates/blocks.php',
+			'featured_image' => CHILD_URL . '/config/import/images/about.jpg',
 			'comment_status' => 'closed',
 			'ping_status'    => 'closed',
 		),
