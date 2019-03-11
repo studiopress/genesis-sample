@@ -14,12 +14,12 @@
 return array(
 	array(
 		'name'  => __( 'Custom color', 'genesis-sample' ), // Called “Link Color” in the Customizer options. Renamed because “Link Color” implies it can only be used for links.
-		'slug'  => 'custom',
+		'slug'  => 'theme-primary',
 		'color' => get_theme_mod( 'genesis_sample_link_color', genesis_sample_customizer_get_default_link_color() ),
 	),
 	array(
 		'name'  => __( 'Accent color', 'genesis-sample' ),
-		'slug'  => 'accent',
+		'slug'  => 'theme-secondary',
 		'color' => get_theme_mod( 'genesis_sample_accent_color', genesis_sample_customizer_get_default_accent_color() ),
 	),
 	array(
