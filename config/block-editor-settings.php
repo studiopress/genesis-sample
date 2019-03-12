@@ -54,7 +54,7 @@ return array(
 		),
 		array(
 			'name' => __( 'Normal', 'genesis-sample' ),
-			'size' => 16,
+			'size' => 18,
 			'slug' => 'normal',
 		),
 		array(
