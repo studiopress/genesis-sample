@@ -1,22 +1,3 @@
-/* Font Sizes
----------------------------------------------------------------------------- */
-
-.entry-content p.has-small-font-size {
-	font-size: 12px;
-}
-
-.entry-content p.has-regular-font-size {
-	font-size: 16px;
-}
-
-.entry-content p.has-large-font-size {
-	font-size: 20px;
-}
-
-.entry-content p.has-larger-font-size {
-	font-size: 24px;
-}
-
 /* Drop Caps
 ---------------------------------------------------------------------------- */
 

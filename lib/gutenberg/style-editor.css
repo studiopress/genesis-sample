@@ -270,25 +270,6 @@ p.has-background.light-text a:hover {
 	margin-top: 10px;
 }
 
-/* Font Sizes
----------------------------------------------------------------------------- */
-
-p.has-small-font-size {
-	font-size: 12px;
-}
-
-p.has-regular-font-size {
-	font-size: 16px;
-}
-
-p.has-large-font-size {
-	font-size: 20px;
-}
-
-p.has-larger-font-size {
-	font-size: 24px;
-}
-
 /* Lists
 ---------------------------------------------------------------------------- */
 
