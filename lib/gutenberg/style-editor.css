@@ -305,10 +305,8 @@ hr.wp-block-separator.is-style-dots {
 }
 
 .wp-block-button .wp-block-button__link {
-	background-color: #333;
 	border: 0;
 	border-radius: 5px;
-	color: #fff;
 	cursor: pointer;
 	font-size: 16px;
 	font-family: "Source Sans Pro", sans-serif;
