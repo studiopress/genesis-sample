@@ -30,21 +30,6 @@ return array(
 			'slug'  => 'theme-secondary',
 			'color' => get_theme_mod( 'genesis_sample_accent_color', genesis_sample_customizer_get_default_accent_color() ),
 		),
-		array(
-			'name'  => __( 'Light gray', 'genesis-sample' ),
-			'slug'  => 'light-gray',
-			'color' => '#f5f5f5',
-		),
-		array(
-			'name'  => __( 'Medium gray', 'genesis-sample' ),
-			'slug'  => 'medium-gray',
-			'color' => '#999',
-		),
-		array(
-			'name'  => __( 'Dark gray', 'genesis-sample' ),
-			'slug'  => 'dark-gray',
-			'color' => '#333',
-		),
 	),
 	'editor-font-sizes'            => array(
 		array(
