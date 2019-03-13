@@ -77,27 +77,19 @@ $genesis_sample_homepage_content = <<<CONTENT
 <!-- /wp:atomic-blocks/ab-spacer -->
 
 <!-- wp:atomic-blocks/ab-container {"containerPaddingTop":12,"containerPaddingRight":5,"containerPaddingBottom":2.5,"containerPaddingLeft":5,"containerMarginTop":6,"containerMarginBottom":5,"containerWidth":"full","containerMaxWidth":1062,"containerBackgroundColor":"#333"} -->
-<div style="background-color:#333;padding-left:5%;padding-right:5%;padding-bottom:2.5%;padding-top:12%;margin-top:6%;margin-bottom:5%" class="wp-block-atomic-blocks-ab-container alignfull ab-block-container"><div class="ab-container-inside"><div class="ab-container-content" style="max-width:1062px"><!-- wp:columns -->
+<div style="background-color:#333;padding-left:5%;padding-right:5%;padding-bottom:2.5%;padding-top:12%;margin-top:6%;margin-bottom:5%" class="wp-block-atomic-blocks-ab-container ab-block-container alignfull"><div class="ab-container-inside"><div class="ab-container-content" style="max-width:1062px"><!-- wp:columns -->
 <div class="wp-block-columns has-2-columns"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:paragraph {"align":"left","textColor":"light-gray","customFontSize":40} -->
-<p style="font-size:40px;text-align:left" class="has-text-color has-light-gray-color">Contact us today</p>
+<div class="wp-block-column"><!-- wp:paragraph {"align":"left","customTextColor":"#f5f5f5","customFontSize":40} -->
+<p style="color:#f5f5f5;font-size:40px;text-align:left" class="has-text-color">Contact us today</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:button {"align":"right","className":"is-style-outline"} -->
-<div class="wp-block-button alignright is-style-outline"><a class="wp-block-button__link" href="#">Get in touch</a></div>
-<!-- /wp:button -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph --></div>
+<div class="wp-block-column"><!-- wp:button {"customTextColor":"#f5f5f5","align":"right","className":"is-style-outline"} -->
+<div class="wp-block-button alignright is-style-outline"><a class="wp-block-button__link has-text-color" href="#" style="color:#f5f5f5">Get in touch</a></div>
+<!-- /wp:button --></div>
 <!-- /wp:column --></div>
-<!-- /wp:columns -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph --></div></div></div>
+<!-- /wp:columns --></div></div></div>
 <!-- /wp:atomic-blocks/ab-container -->
 
 <!-- wp:atomic-blocks/ab-spacer {"spacerHeight":60} -->
