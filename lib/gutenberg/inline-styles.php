@@ -12,7 +12,7 @@ add_action( 'wp_enqueue_scripts', 'genesis_sample_custom_gutenberg_css' );
 /**
  * Outputs front-end inline styles based on colors declared in config/block-editor-settings.php.
  *
- * @since 1.2.0
+ * @since 2.9.0
  */
 function genesis_sample_custom_gutenberg_css() {
 
@@ -58,7 +58,7 @@ add_action( 'enqueue_block_editor_assets', 'genesis_sample_custom_gutenberg_admi
  * Note this will appear before the style-editor.css injected by JavaScript,
  * so overrides will need to have higher specificity.
  *
- * @since 1.2.0
+ * @since 2.9.0
  */
 function genesis_sample_custom_gutenberg_admin_css() {
 
@@ -93,7 +93,7 @@ CSS;
 /**
  * Generate CSS for editor font sizes from the provided theme support.
  *
- * @since 1.2.0
+ * @since 2.9.0
  *
  * @return string The CSS for editor font sizes if theme support was declared.
  */
@@ -121,7 +121,7 @@ CSS;
 /**
  * Generate CSS for editor colors based on theme color palette support.
  *
- * @since 1.2.0
+ * @since 2.9.0
  *
  * @return string The editor colors CSS if `editor-color-palette` theme support was declared.
  */
