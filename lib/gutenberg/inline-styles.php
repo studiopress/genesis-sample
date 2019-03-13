@@ -127,14 +127,11 @@ CSS;
  */
 function genesis_sample_inline_color_palette() {
 
-	$css                  = '';
-	$editor_color_palette = get_theme_support( 'editor-color-palette' );
+	$css                   = '';
+	$block_editor_settings = genesis_get_config( 'block-editor-settings' );
+	$editor_color_palette  = $block_editor_settings['editor-color-palette'];
 
-	if ( ! $editor_color_palette ) {
-		return '';
-	}
-
-	foreach ( $editor_color_palette[0] as $color_info ) {
+	foreach ( $editor_color_palette as $color_info ) {
 		$css .= <<<CSS
 		.site-container .has-{$color_info['slug']}-color,
 		.site-container .wp-block-button .wp-block-button__link.has-{$color_info['slug']}-color,
