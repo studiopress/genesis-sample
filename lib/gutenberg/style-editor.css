@@ -17,6 +17,7 @@ dl {
 /* Regular content width.
 /* 702px + 27px to match paragraph width on front-end and editor.
 ---------------------------------------------------------------------------- */
+
 .wp-block {
 	max-width: 732px;
 }
@@ -25,6 +26,7 @@ dl {
 /* 1062px + 30px so wide images match width in front-end and editor.
 /* 1062px = default column width of 702px + .alignwide negative margin of 360px
 ---------------------------------------------------------------------------- */
+
 .wp-block[data-align="wide"] {
 	max-width: 1092px;
 }
@@ -116,15 +118,15 @@ p.box-shadow {
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-p.has-text-color a,
-p.has-background a {
+p.has-background a,
+p.has-text-color a {
 	color: inherit;
 }
 
-p.has-text-color a:focus,
 p.has-background a:focus,
-p.has-text-color a:hover,
-p.has-background a:hover {
+p.has-background a:hover,
+p.has-text-color a:focus,
+p.has-text-color a:hover {
 	color: inherit;
 	text-decoration: none;
 }
@@ -142,8 +144,8 @@ p.has-background.light-text a:hover {
 /* Blockquotes and captions
 ---------------------------------------------------------------------------- */
 
-.wp-block-quote,
-.wp-block-pullquote {
+.wp-block-pullquote,
+.wp-block-quote {
 	border: none;
 	margin: 24px 0 36px;
 }
@@ -153,8 +155,16 @@ p.has-background.light-text a:hover {
 	padding: 0;
 }
 
-.wp-block-quote p,
-.wp-block-pullquote p {
+.wp-block-pullquote.alignleft {
+	margin: 0 2em 1.5em 0;
+}
+
+.wp-block-pullquote.alignright {
+	margin: 0 0 1.5em 2em;
+}
+
+.wp-block-pullquote p,
+.wp-block-quote p {
 	font-family: "Source Sans Pro", serif;
 	font-size: 21px !important;
 	font-style: italic;
@@ -177,14 +187,20 @@ p.has-background.light-text a:hover {
 	background-color: #333;
 }
 
+
+.wp-block-pullquote.is-style-solid-color.alignleft blockquote,
+.wp-block-pullquote.is-style-solid-color.alignright blockquote {
+	max-width: 80%;
+}
+
 .wp-block-pullquote:not(.is-style-solid-color)[style*="border-color"] {
 	border: 2px solid;
 	border-left: none;
 	border-right: none;
 }
 
-.wp-block-quote .wp-block-quote__citation,
-.wp-block-pullquote .wp-block-pullquote__citation {
+.wp-block-pullquote .wp-block-pullquote__citation,
+.wp-block-quote .wp-block-quote__citation {
 	color: #666;
 	display: block;
 	font-family: "Source Sans Pro", serif;
@@ -219,8 +235,8 @@ p.has-background.light-text a:hover {
 	margin-top: 10px;
 }
 
-.wp-block-quote[class*="align"] .wp-block-quote__citation,
-.wp-block-pullquote[class*="align"] .wp-block-pullquote__citation {
+.wp-block-pullquote[class*="align"] .wp-block-pullquote__citation,
+.wp-block-quote[class*="align"] .wp-block-quote__citation {
 	text-align: center;
 }
 
@@ -254,8 +270,8 @@ p.has-background.light-text a:hover {
 /* Preformatted elements
 ---------------------------------------------------------------------------- */
 
-.wp-block-verse pre,
-.wp-block-preformatted pre {
+.wp-block-preformatted pre,
+.wp-block-verse pre {
 	font-family: monospace;
 	font-size: 18px;
 	line-height: 1.625 !important;

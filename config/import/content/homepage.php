@@ -13,9 +13,9 @@
 $genesis_homepage_header_image_url = CHILD_URL . '/config/import/images/mountain-bw.jpg';
 
 // Photo by Haley Powers on Unsplash: https://unsplash.com/photos/rjhvXX7JBPc
-$genesis_homepage_faq_image_url = CHILD_URL . '/config/import/images/about.jpg';
+$genesis_homepage_faq_image_url = CHILD_URL . '/config/import/images/home-about.jpg';
 
-$genesis_sample_homepage_content = <<<CONTENT
+return <<<CONTENT
 <!-- wp:media-text {"align":"full","mediaId":1477,"mediaType":"image","isStackedOnMobile":true} -->
 <div class="wp-block-media-text alignfull is-stacked-on-mobile"><figure class="wp-block-media-text__media"><img src="$genesis_homepage_header_image_url" alt="" class="wp-image-1477"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"level":1} -->
 <h1>We'll teach you how to build and grow an online business.</h1>
@@ -124,5 +124,3 @@ $genesis_sample_homepage_content = <<<CONTENT
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 CONTENT;
-
-return $genesis_sample_homepage_content;
