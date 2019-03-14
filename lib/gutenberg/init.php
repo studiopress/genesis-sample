@@ -16,12 +16,10 @@ add_action( 'wp_enqueue_scripts', 'genesis_sample_enqueue_gutenberg_frontend_sty
  */
 function genesis_sample_enqueue_gutenberg_frontend_styles() {
 
-	$child_theme_slug = defined( 'CHILD_THEME_NAME' ) && CHILD_THEME_NAME ? sanitize_title_with_dashes( CHILD_THEME_NAME ) : 'genesis-sample';
-
 	wp_enqueue_style(
 		'genesis-sample-gutenberg',
 		get_stylesheet_directory_uri() . '/lib/gutenberg/front-end.css',
-		array( $child_theme_slug ),
+		array( CHILD_THEME_HANDLE ),
 		CHILD_THEME_VERSION
 	);
 
