@@ -10,14 +10,14 @@
  * @link    https://www.studiopress.com/
  */
 
-$genesis_homepage_header_image_url = CHILD_URL . '/config/import/images/mountain-bw.jpg';
+$genesis_sample_homepage_header_image_url = CHILD_URL . '/config/import/images/mountain-bw.jpg';
 
-// Photo by Haley Powers on Unsplash: https://unsplash.com/photos/rjhvXX7JBPc
-$genesis_homepage_faq_image_url = CHILD_URL . '/config/import/images/home-about.jpg';
+// Photo by Haley Powers on Unsplash: https://unsplash.com/photos/rjhvXX7JBPc.
+$genesis_sample_homepage_faq_image_url = CHILD_URL . '/config/import/images/home-about.jpg';
 
 return <<<CONTENT
 <!-- wp:media-text {"align":"full","mediaId":1477,"mediaType":"image","isStackedOnMobile":true} -->
-<div class="wp-block-media-text alignfull is-stacked-on-mobile"><figure class="wp-block-media-text__media"><img src="$genesis_homepage_header_image_url" alt="" class="wp-image-1477"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"level":1} -->
+<div class="wp-block-media-text alignfull is-stacked-on-mobile"><figure class="wp-block-media-text__media"><img src="$genesis_sample_homepage_header_image_url" alt="" class="wp-image-1477"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"level":1} -->
 <h1>We'll teach you how to build and grow an online business.</h1>
 <!-- /wp:heading -->
 
@@ -119,7 +119,7 @@ return <<<CONTENT
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:image {"id":308} -->
-<figure class="wp-block-image"><img src="$genesis_homepage_faq_image_url" alt="" class="wp-image-308"/><figcaption>Photo by&nbsp;<a href="https://unsplash.com/photos/rjhvXX7JBPc">Haley Powers</a>&nbsp;on&nbsp;<a href="https://unsplash.com/">Unsplash</a></figcaption></figure>
+<figure class="wp-block-image"><img src="$genesis_sample_homepage_faq_image_url" alt="" class="wp-image-308"/><figcaption>Photo by&nbsp;<a href="https://unsplash.com/photos/rjhvXX7JBPc">Haley Powers</a>&nbsp;on&nbsp;<a href="https://unsplash.com/">Unsplash</a></figcaption></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
