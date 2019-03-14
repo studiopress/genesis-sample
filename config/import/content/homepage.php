@@ -10,14 +10,14 @@
  * @link    https://www.studiopress.com/
  */
 
-$genesis_homepage_header_image_url = CHILD_URL . '/config/import/images/mountain-bw.jpg';
+$genesis_sample_homepage_header_image_url = CHILD_URL . '/config/import/images/mountain-bw.jpg';
 
-// Photo by Haley Powers on Unsplash: https://unsplash.com/photos/rjhvXX7JBPc
-$genesis_homepage_faq_image_url = CHILD_URL . '/config/import/images/about.jpg';
+// Photo by Haley Powers on Unsplash: https://unsplash.com/photos/rjhvXX7JBPc.
+$genesis_sample_homepage_faq_image_url = CHILD_URL . '/config/import/images/home-about.jpg';
 
-$genesis_sample_homepage_content = <<<CONTENT
+return <<<CONTENT
 <!-- wp:media-text {"align":"full","mediaId":1477,"mediaType":"image","isStackedOnMobile":true} -->
-<div class="wp-block-media-text alignfull is-stacked-on-mobile"><figure class="wp-block-media-text__media"><img src="$genesis_homepage_header_image_url" alt="" class="wp-image-1477"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"level":1} -->
+<div class="wp-block-media-text alignfull is-stacked-on-mobile"><figure class="wp-block-media-text__media"><img src="$genesis_sample_homepage_header_image_url" alt="" class="wp-image-1477"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"level":1} -->
 <h1>We'll teach you how to build and grow an online business.</h1>
 <!-- /wp:heading -->
 
@@ -77,27 +77,19 @@ $genesis_sample_homepage_content = <<<CONTENT
 <!-- /wp:atomic-blocks/ab-spacer -->
 
 <!-- wp:atomic-blocks/ab-container {"containerPaddingTop":12,"containerPaddingRight":5,"containerPaddingBottom":2.5,"containerPaddingLeft":5,"containerMarginTop":6,"containerMarginBottom":5,"containerWidth":"full","containerMaxWidth":1062,"containerBackgroundColor":"#333"} -->
-<div style="background-color:#333;padding-left:5%;padding-right:5%;padding-bottom:2.5%;padding-top:12%;margin-top:6%;margin-bottom:5%" class="wp-block-atomic-blocks-ab-container alignfull ab-block-container"><div class="ab-container-inside"><div class="ab-container-content" style="max-width:1062px"><!-- wp:columns -->
+<div style="background-color:#333;padding-left:5%;padding-right:5%;padding-bottom:2.5%;padding-top:12%;margin-top:6%;margin-bottom:5%" class="wp-block-atomic-blocks-ab-container ab-block-container alignfull"><div class="ab-container-inside"><div class="ab-container-content" style="max-width:1062px"><!-- wp:columns -->
 <div class="wp-block-columns has-2-columns"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:paragraph {"align":"left","textColor":"light-gray","customFontSize":40} -->
-<p style="font-size:40px;text-align:left" class="has-text-color has-light-gray-color">Contact us today</p>
+<div class="wp-block-column"><!-- wp:paragraph {"align":"left","customTextColor":"#f5f5f5","customFontSize":40} -->
+<p style="color:#f5f5f5;font-size:40px;text-align:left" class="has-text-color">Contact us today</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:button {"align":"right","className":"is-style-outline"} -->
-<div class="wp-block-button alignright is-style-outline"><a class="wp-block-button__link" href="/contact">Get in touch</a></div>
-<!-- /wp:button -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph --></div>
+<div class="wp-block-column"><!-- wp:button {"customTextColor":"#f5f5f5","align":"right","className":"is-style-outline"} -->
+<div class="wp-block-button alignright is-style-outline"><a class="wp-block-button__link has-text-color" href="#" style="color:#f5f5f5">Get in touch</a></div>
+<!-- /wp:button --></div>
 <!-- /wp:column --></div>
-<!-- /wp:columns -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph --></div></div></div>
+<!-- /wp:columns --></div></div></div>
 <!-- /wp:atomic-blocks/ab-container -->
 
 <!-- wp:atomic-blocks/ab-spacer {"spacerHeight":60} -->
@@ -108,7 +100,7 @@ $genesis_sample_homepage_content = <<<CONTENT
 <div class="wp-block-columns alignwide has-2-columns"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:atomic-blocks/ab-accordion {"accordionOpen":true} -->
 <div class="wp-block-atomic-blocks-ab-accordion ab-block-accordion ab-font-size-18"><details open><summary class="ab-accordion-title">Can I phone or email you?</summary><div class="ab-accordion-text"><!-- wp:paragraph -->
-<p>You can reach us on our <a href="/contact">contact page</a> or by calling us at 1.123.456.7891</p>
+<p>You can reach us on our <a href="#">contact page</a> or by calling us at 1.123.456.7891</p>
 <!-- /wp:paragraph --></div></details></div>
 <!-- /wp:atomic-blocks/ab-accordion -->
 
@@ -127,10 +119,8 @@ $genesis_sample_homepage_content = <<<CONTENT
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:image {"id":308} -->
-<figure class="wp-block-image"><img src="$genesis_homepage_faq_image_url" alt="" class="wp-image-308"/><figcaption>Photo by&nbsp;<a href="https://unsplash.com/photos/rjhvXX7JBPc">Haley Powers</a>&nbsp;on&nbsp;<a href="https://unsplash.com/">Unsplash</a></figcaption></figure>
+<figure class="wp-block-image"><img src="$genesis_sample_homepage_faq_image_url" alt="" class="wp-image-308"/><figcaption>Photo by&nbsp;<a href="https://unsplash.com/photos/rjhvXX7JBPc">Haley Powers</a>&nbsp;on&nbsp;<a href="https://unsplash.com/">Unsplash</a></figcaption></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 CONTENT;
-
-return $genesis_sample_homepage_content;

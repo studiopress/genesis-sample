@@ -1,5 +1,21 @@
 # Genesis Sample Theme Changelog
 
+## [2.9.0] - 2019-03-14
+Requires Genesis 2.9.0+.
+
+* Added: Additional pages are created during One-Click Theme Setup.
+* Added: A menu is set up during One-Click Theme Setup.
+* Added: Install and activate WPForms Lite, Genesis eNews Extended, and Simple Social Icons during One-Click Theme Setup.
+* Changed: Added Customizer colors to the Block Editor color palette.
+* Changed: Use `theme-primary` and `theme-secondary` slugs for Block Editor color palette to prevent possible loss of styling when switching themes. We are now using this convention for new StudioPress theme releases and updates and encourage theme developers to do the same.
+* Changed: Removed gray colors from the Block Editor color palette.
+* Changed: Generate inline styles for the Block Editor from theme supports, reducing manual Block Editor CSS required. See `lib/gutenberg/inline-styles.php` and https://github.com/studiopress/genesis-sample/pull/198.
+* Changed: The default button block color is now blue and not gray.
+* Changed: Combined all Block Editor config into a single file at `config/block-editor-settings.php`.
+* Changed: Removed the XML sample content file. You can import sample content via One-Click Theme Setup by visiting `/wp-admin/admin.php?page=genesis-getting-started` instead.
+* Changed: CSS adjustments including button, blockquote, latest posts block, and WPForms styling.
+* Changed: improvements to CSS and PHP coding standards.
+
 ## [2.8.0] - 2019-01-16
 Requires Genesis 2.8.0+.
 

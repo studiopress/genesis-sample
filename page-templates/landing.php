@@ -12,7 +12,7 @@
  * @link    https://www.studiopress.com/
  */
 
-add_filter( 'body_class', 'genesis_sample_add_body_class' );
+add_filter( 'body_class', 'genesis_sample_landing_body_class' );
 /**
  * Adds landing page body class.
  *
@@ -21,7 +21,7 @@ add_filter( 'body_class', 'genesis_sample_add_body_class' );
  * @param array $classes Original body classes.
  * @return array Modified body classes.
  */
-function genesis_sample_add_body_class( $classes ) {
+function genesis_sample_landing_body_class( $classes ) {
 
 	$classes[] = 'landing-page';
 	return $classes;
