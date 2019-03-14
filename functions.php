@@ -57,8 +57,7 @@ add_action( 'after_setup_theme', 'genesis_child_gutenberg_support' );
  *
  * @since 2.7.0
  */
-function genesis_child_gutenberg_support() {
- // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedFunctionFound -- using same in all child themes to allow action to be unhooked.
+function genesis_child_gutenberg_support() { // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedFunctionFound -- using same in all child themes to allow action to be unhooked.
 	require_once get_stylesheet_directory() . '/lib/gutenberg/init.php';
 }
 
