@@ -42,6 +42,12 @@ a {
 	color: #0073e5;
 }
 
+a:focus,
+a:hover {
+	color: #333;
+	text-decoration: none;
+}
+
 h1,
 h2,
 h3,
@@ -240,33 +246,6 @@ p.has-background.light-text a:hover {
 	text-align: center;
 }
 
-/* Color Palette
----------------------------------------------------------------------------- */
-
-.has-light-gray-background-color {
-	background-color: #f5f5f5;
-}
-
-.has-light-gray-color {
-	color: #f5f5f5;
-}
-
-.has-medium-gray-background-color {
-	background-color: #999;
-}
-
-.has-medium-gray-color {
-	color: #999;
-}
-
-.has-dark-gray-background-color {
-	background-color: #333;
-}
-
-.has-dark-gray-color {
-	color: #333;
-}
-
 /* Cover Image
 ---------------------------------------------------------------------------- */
 
@@ -284,25 +263,6 @@ p.has-background.light-text a:hover {
 	font-size: 14px;
 	font-style: italic;
 	margin-top: 10px;
-}
-
-/* Font Sizes
----------------------------------------------------------------------------- */
-
-p.has-small-font-size {
-	font-size: 12px;
-}
-
-p.has-regular-font-size {
-	font-size: 16px;
-}
-
-p.has-large-font-size {
-	font-size: 20px;
-}
-
-p.has-larger-font-size {
-	font-size: 24px;
 }
 
 /* Lists
@@ -367,10 +327,8 @@ hr.wp-block-separator.is-style-dots {
 }
 
 .wp-block-button .wp-block-button__link {
-	background-color: #333;
 	border: 0;
 	border-radius: 5px;
-	color: #fff;
 	cursor: pointer;
 	font-size: 16px;
 	font-family: "Source Sans Pro", sans-serif;
@@ -391,7 +349,6 @@ hr.wp-block-separator.is-style-dots {
 	background-color: transparent;
 	border: 2px solid currentColor;
 	border-radius: 0;
-	color: #333;
 	padding: 13px 28px;
 }
 

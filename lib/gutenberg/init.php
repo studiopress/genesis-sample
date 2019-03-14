@@ -35,9 +35,11 @@ add_action( 'enqueue_block_editor_assets', 'genesis_sample_block_editor_styles' 
  */
 function genesis_sample_block_editor_styles() {
 
+	$block_editor_settings = genesis_get_config( 'block-editor-settings' );
+
 	wp_enqueue_style(
 		'genesis-sample-gutenberg-fonts',
-		'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700',
+		$block_editor_settings['admin-fonts-url'],
 		array(),
 		CHILD_THEME_VERSION
 	);
@@ -95,17 +97,21 @@ add_theme_support( 'align-wide' );
 // Make media embeds responsive.
 add_theme_support( 'responsive-embeds' );
 
+$genesis_sample_block_editor_settings = genesis_get_config( 'block-editor-settings' );
+
 // Adds support for editor font sizes.
 add_theme_support(
 	'editor-font-sizes',
-	genesis_get_config( 'editor-font-sizes' )
+	$genesis_sample_block_editor_settings['editor-font-sizes']
 );
 
 // Adds support for editor color palette.
 add_theme_support(
 	'editor-color-palette',
-	genesis_get_config( 'editor-color-palette' )
+	$genesis_sample_block_editor_settings['editor-color-palette']
 );
+
+require_once get_stylesheet_directory() . '/lib/gutenberg/inline-styles.php';
 
 add_action( 'after_setup_theme', 'genesis_sample_content_width', 0 );
 /**
@@ -113,7 +119,9 @@ add_action( 'after_setup_theme', 'genesis_sample_content_width', 0 );
  */
 function genesis_sample_content_width() {
 
+	$block_editor_settings = genesis_get_config( 'block-editor-settings' );
+
 	// phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound -- See https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/issues/924
-	$GLOBALS['content_width'] = apply_filters( 'genesis_sample_content_width', 1062 );
+	$GLOBALS['content_width'] = apply_filters( 'genesis_sample_content_width', $block_editor_settings['content-width'] );
 
 }
