@@ -42,6 +42,12 @@ a {
 	color: #0073e5;
 }
 
+a:focus,
+a:hover {
+	color: #333;
+	text-decoration: none;
+}
+
 h1,
 h2,
 h3,
