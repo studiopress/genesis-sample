@@ -13,8 +13,8 @@
 // Starts the engine.
 require_once get_template_directory() . '/lib/init.php';
 
-// Defines the child theme (do not remove).
-define( 'CHILD_THEME_NAME', 'Genesis Sample' );
+// Defines constants to help enqueue scripts and styles.
+define( 'CHILD_THEME_HANDLE', sanitize_title_with_dashes( wp_get_theme()->get( 'Name' ) ) );
 define( 'CHILD_THEME_VERSION', wp_get_theme()->get( 'Version' ) );
 
 // Sets up the Theme.
