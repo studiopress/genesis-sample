@@ -7,9 +7,11 @@
 	},
 	"license": "GPL-2.0-or-later",
 	"devDependencies": {
+		"adm-zip": "^0.4.13",
 		"autoprefixer": "^9.4.2",
 		"chalk": "^2.4.1",
 		"node-wp-i18n": "^1.2.1",
+		"npm-run-all": "^4.1.5",
 		"postcss-cli": "^6.0.1",
 		"stylelint": "^9.9.0",
 		"stylelint-config-wordpress": "^13.1.0"
@@ -18,7 +20,9 @@
 		"autoprefixer": "postcss style.css lib/**/*.css --use autoprefixer --replace --no-map --verbose",
 		"makepot": "node .scripts/makepot.js",
 		"lint:css": "stylelint \"style.css\" \"lib/gutenberg/*.css\" \"lib/woocommerce/*.css\"",
-		"zip": "git archive -o genesis-sample.zip --prefix=genesis-sample/ HEAD"
+		"build:export-zip": "git archive -o genesis-sample.zip --prefix=genesis-sample/ HEAD",
+		"build:md-to-txt": "node .scripts/md-to-txt.js",
+		"zip": "run-s build:export-zip build:md-to-txt"
 	},
 	"browserslist": [
 		"> 1%",
@@ -43,5 +47,6 @@
 		"license": "GPL-2.0-or-later",
 		"licenseuri": "https://www.gnu.org/licenses/gpl-2.0.html",
 		"textdomain": "genesis-sample"
-	}
+	},
+	"dependencies": {}
 }
