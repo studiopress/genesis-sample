@@ -15,7 +15,6 @@ require_once get_template_directory() . '/lib/init.php';
 
 // Defines the child theme (do not remove).
 define( 'CHILD_THEME_NAME', 'Genesis Sample' );
-define( 'CHILD_THEME_URL', 'https://www.studiopress.com/' );
 define( 'CHILD_THEME_VERSION', wp_get_theme()->get( 'Version' ) );
 
 // Sets up the Theme.
