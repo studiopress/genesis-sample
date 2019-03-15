@@ -14,6 +14,6 @@
 
 return <<<CONTENT
 <!-- wp:paragraph -->
-<p>Add a contact form to this page with the pre-installed WPForms Lite plugin. Learn <a href="https://my.studiopress.com/documentation/wpforms/plugin-usage/create-contact-forms-with-wpforms/" target="_blank" rel="noreferrer noopener" aria-label=" (opens in a new tab)">how to create a form using WPForms</a>.</p>
+<p>Add a contact form to this page with the pre-installed WPForms Lite plugin (Third Party). Learn <a href="https://my.studiopress.com/documentation/wpforms/plugin-usage/create-contact-forms-with-wpforms/" target="_blank" rel="noreferrer noopener" aria-label=" (opens in a new tab)">how to create a form using WPForms</a>.</p>
 <!-- /wp:paragraph -->
 CONTENT;
