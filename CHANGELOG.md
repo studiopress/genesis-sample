@@ -1,5 +1,8 @@
 # Genesis Sample Theme Changelog
 
+## Unreleased
+* 
+
 ## [2.9.0] - 2019-03-14
 Requires Genesis 2.9.0+.
 
