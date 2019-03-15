@@ -19,7 +19,7 @@ return array(
 				'public_url' => 'https://atomicblocks.com/',
 			),
 			array(
-				'name'       => __( 'WP Forms Lite', 'genesis-sample' ),
+				'name'       => __( 'WPForms Lite', 'genesis-sample' ),
 				'slug'       => 'wpforms-lite/wpforms.php',
 				'public_url' => 'https://wordpress.org/plugins/wpforms-lite/',
 			),
