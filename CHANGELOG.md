@@ -1,7 +1,13 @@
 # Genesis Sample Theme Changelog
 
-## Unreleased
-* 
+## [2.9.1] - 2019-03-19
+* Added: Contributing guidelines.
+* Added: Tooling to lint JavaScript to WordPress coding standards (`npm run lint:js` and `npm run fix:js`).
+* Added: GitHub issue templates (in the theme’s GitHub repository only).
+* Added: `editor-style`, `block-styles` and `wide-blocks` Block Editor tags to theme stylesheet header.
+* Changed: Fixed wide and full width table block styling to display correctly on the front end.
+* Changed: Linted theme JavaScript to WordPress standards.
+* Changed: Marked third party plugins with “(Third Party)” in `config/onboarding.php`.
 
 ## [2.9.0] - 2019-03-14
 Requires Genesis 2.9.0+.
