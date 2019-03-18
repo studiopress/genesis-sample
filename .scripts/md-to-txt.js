@@ -24,6 +24,10 @@ for (let entry of zipEntries) {
 		newZip.addFile(`${themeSlug}/CHANGELOG.txt`, zip.readAsText(entry.entryName));
 		newZip.deleteFile(entry.entryName);
 	}
+	if (entry.entryName === `${themeSlug}/CONTRIBUTING.md`) {
+		newZip.addFile(`${themeSlug}/CONTRIBUTING.txt`, zip.readAsText(entry.entryName));
+		newZip.deleteFile(entry.entryName);
+	}
 }
 
 newZip.writeZip(); // Overwrites existing zip.
