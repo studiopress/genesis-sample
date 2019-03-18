@@ -38,6 +38,8 @@ You can then type any of these commands:
 - `npm run autoprefixer` to add and remove vendor prefixes in `style.css`.
 - `npm run makepot` to regenerate the `languages/genesis-sample.pot` file.
 - `npm run lint:css` to generate a report of style violations for `style.css`.
+- `npm run lint:js` to generate a report of style violations for JavaScript files.
+- `npm run fix:js` to fix any JavaScript style violations that can be corrected automatically.
 - `npm run zip` to create a genesis-sample.zip of the current branch. Excludes files marked export-ignore in `.gitattributes`.
 
 ### Packaging for distribution
@@ -47,4 +49,4 @@ You can then type any of these commands:
 3. Bump version numbers manually and commit those changes.
 4. Type `npm run zip` to create `genesis-sample.zip`. Files marked export-ignore in `.gitattributes` are excluded from the zip.
 
-The `zip` command is an alias for `git archive -o genesis-sample.zip --prefix=genesis-sample/ HEAD`.
+The `zip` command is an alias for `git archive -o genesis-sample.zip --prefix=genesis-sample/ HEAD`. The `zip` command also includes a script to rename certain Markdown files to `.txt` files within the created zip file.
