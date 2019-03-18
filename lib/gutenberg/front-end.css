@@ -346,6 +346,25 @@ hr.wp-block-separator {
 	padding-left: 0;
 }
 
+.full-width-content .site-container .wp-block-table.alignfull {
+	margin: 0;
+	width: 100%;
+}
+
+@media only screen and (min-width: 960px) {
+
+	.full-width-content .site-container .wp-block-table.alignwide {
+		width: calc(100% + 360px);
+	}
+
+	.full-width-content .site-container .wp-block-table.alignfull {
+		margin-left: calc(-98vw / 2 + 100% / 2);
+		margin-right: calc(-98vw / 2 + 100% / 2);
+		width: 98vw;
+	}
+
+}
+
 @media only screen and (max-width: 600px) {
 
 	.wp-block-media-text.is-stacked-on-mobile figure {
