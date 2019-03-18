@@ -17,11 +17,11 @@ var genesisSample = ( function( $ ) {
 	var moveContentBelowFixedHeader = function() {
 		var siteInnerMarginTop = 0;
 
-		if( $('.site-header').css('position') === 'fixed' ) {
-			siteInnerMarginTop = $('.site-header').outerHeight();
+		if ( 'fixed' === $( '.site-header' ).css( 'position' ) ) {
+			siteInnerMarginTop = $( '.site-header' ).outerHeight();
 		}
 
-		$('.site-inner').css('margin-top', siteInnerMarginTop);
+		$( '.site-inner' ).css( 'margin-top', siteInnerMarginTop );
 	},
 
 	/**
@@ -34,17 +34,17 @@ var genesisSample = ( function( $ ) {
 	load = function() {
 		moveContentBelowFixedHeader();
 
-		$( window ).resize(function() {
+		$( window ).resize( function() {
 			moveContentBelowFixedHeader();
 		});
 
 		// Run after the Customizer updates.
 		// 1.5s delay is to allow logo area reflow.
-		if (typeof wp != "undefined" && typeof wp.customize != "undefined") {
-			wp.customize.bind( 'change', function ( setting ) {
-				setTimeout(function() {
+		if ( 'undefined' != typeof wp && 'undefined' != typeof wp.customize ) {
+			wp.customize.bind( 'change', function( setting ) {
+				setTimeout( function() {
 					moveContentBelowFixedHeader();
-				  }, 1500);
+				}, 1500 );
 			});
 		}
 	};
@@ -54,6 +54,6 @@ var genesisSample = ( function( $ ) {
 		load: load
 	};
 
-})( jQuery );
+}( jQuery ) );
 
 jQuery( window ).on( 'load', genesisSample.load );
