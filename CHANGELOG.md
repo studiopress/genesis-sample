@@ -1,5 +1,8 @@
 # Genesis Sample Theme Changelog
 
+## [Unreleased]
+*
+
 ## [2.9.1] - 2019-03-19
 * Added: Contributing guidelines.
 * Added: Tooling to lint JavaScript to WordPress coding standards (`npm run lint:js` and `npm run fix:js`).
