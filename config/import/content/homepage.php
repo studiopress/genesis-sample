@@ -86,7 +86,7 @@ return <<<CONTENT
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:button {"customTextColor":"#f5f5f5","align":"right","className":"is-style-outline"} -->
-<div class="wp-block-button alignright is-style-outline"><a class="wp-block-button__link has-text-color" href="#" style="color:#f5f5f5">Get in touch</a></div>
+<div class="wp-block-button alignright is-style-outline home-contact"><a class="wp-block-button__link has-text-color" href="#" style="color:#f5f5f5">Get in touch</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div></div></div>
