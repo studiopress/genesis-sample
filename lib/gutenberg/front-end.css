@@ -90,9 +90,9 @@ h6.light {
 	width: 100%;
 }
 
-@media only screen and (max-width: 510px) {
+@media only screen and (max-width: 600px) {
 
-	.wp-block-button.alignright {
+	.wp-block-button.home-contact {
 		float: left;
 		margin-left: 0;
 	}
