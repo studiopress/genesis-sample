@@ -138,6 +138,30 @@ add_theme_support( 'genesis-responsive-viewport' );
 // Adds custom logo in Customizer > Site Identity.
 add_theme_support( 'custom-logo', genesis_get_config( 'custom-logo' ) );
 
+add_filter( 'genesis_seo_title', 'genesis_sample_header_title', 10, 3 );
+/**
+ * Removes the link from the hidden site title if a custom logo is in use.
+ *
+ * Without this filter, the site title is hidden with CSS when a custom logo
+ * is in use, but the link it contains is still accessible by keyboard.
+ *
+ * @since 1.2.0
+ *
+ * @param string $title  The full title.
+ * @param string $inside The content inside the title element.
+ * @param string $wrap   The wrapping element name, such as h1.
+ * @return string The site title with anchor removed if a custom logo is active.
+ */
+function genesis_sample_header_title( $title, $inside, $wrap ) {
+
+	if ( has_custom_logo() ) {
+		$inside = get_bloginfo( 'name' );
+	}
+
+	return sprintf( '<%1$s class="site-title">%2$s</%1$s>', $wrap, $inside );
+
+}
+
 // Renames primary and secondary navigation menus.
 add_theme_support( 'genesis-menus', genesis_get_config( 'menus' ) );
 
