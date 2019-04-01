@@ -26,9 +26,7 @@
 		"lint:css": "stylelint \"style.css\" \"lib/gutenberg/*.css\" \"lib/woocommerce/*.css\"",
 		"lint:js": "eslint .",
 		"fix:js": "eslint . --fix",
-		"build:export-zip": "git archive -o genesis-sample.zip --prefix=genesis-sample/ HEAD",
-		"build:md-to-txt": "node .scripts/md-to-txt.js",
-		"zip": "run-s build:export-zip build:md-to-txt"
+		"zip": "node .scripts/makezip.js"
 	},
 	"browserslist": [
 		"> 1%",
