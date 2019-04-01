@@ -40,13 +40,11 @@ You can then type any of these commands:
 - `npm run lint:css` to generate a report of style violations for `style.css`.
 - `npm run lint:js` to generate a report of style violations for JavaScript files.
 - `npm run fix:js` to fix any JavaScript style violations that can be corrected automatically.
-- `npm run zip` to create a genesis-sample.zip of the current branch. Excludes files marked export-ignore in `.gitattributes`.
+- `npm run zip` to create a genesis-sample.zip. Files in the `excludes` array in `scripts/makezip.js` are omitted.
 
 ### Packaging for distribution
 
 1. Follow the install instructions for npm scripts above.
 2. Switch to the git branch you plan to distribute.
 3. Bump version numbers manually and commit those changes.
-4. Type `npm run zip` to create `genesis-sample.zip`. Files marked export-ignore in `.gitattributes` are excluded from the zip.
-
-The `zip` command is an alias for `git archive -o genesis-sample.zip --prefix=genesis-sample/ HEAD`. The `zip` command also includes a script to rename certain Markdown files to `.txt` files within the created zip file.
+4. Type `npm run zip` to create `genesis-sample.zip`. Files in the `excludes` array in `scripts/makezip.js` are omitted from the zip. `filename.md` files will be renamed to `filename.txt`.
