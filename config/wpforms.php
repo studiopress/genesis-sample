@@ -18,6 +18,7 @@ return array(
 			'id'       => '0',
 			'type'     => 'name',
 			'label'    => esc_html__( 'Name', 'genesis-sample' ),
+			'format'   => 'simple',
 			'required' => '1',
 			'size'     => 'large',
 		),
