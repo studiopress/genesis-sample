@@ -26,7 +26,7 @@ return array(
 			'type'     => 'email',
 			'label'    => esc_html__( 'Email', 'genesis-sample' ),
 			'required' => '1',
-			'size'     => 'medium',
+			'size'     => 'large',
 		),
 		'2' => array(
 			'id'          => '2',
