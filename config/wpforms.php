@@ -19,7 +19,7 @@ return array(
 			'type'     => 'name',
 			'label'    => esc_html__( 'Name', 'genesis-sample' ),
 			'required' => '1',
-			'size'     => 'medium',
+			'size'     => 'large',
 		),
 		'1' => array(
 			'id'       => '1',
