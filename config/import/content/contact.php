@@ -13,10 +13,13 @@
  * @link    https://www.studiopress.com/
  */
 
-// Requires the helper function to get the WPForms form ID.
+// Requires helper WPForms function to create a new form.
 require_once get_stylesheet_directory() . '/lib/wpforms.php';
 
-$genesis_sample_wpforms_id = studiopress_get_wpforms_id();
+// Creates a WPForms contact form during one-click theme setup if one does not exist already.
+studiopress_create_wpforms_form();
+
+$genesis_sample_wpforms_id = get_option( 'genesis_onboarding_wpforms_id' );
 
 if ( $genesis_sample_wpforms_id ) {
 	return "<!-- wp:wpforms/form-selector {\"formId\":\"{$genesis_sample_wpforms_id}\"} /-->";
