@@ -13,14 +13,6 @@
  */
 
 return <<<CONTENT
-<!-- wp:atomic-blocks/ab-spacer {"spacerHeight":70} -->
-<div style="color:#ddd" class="wp-block-atomic-blocks-ab-spacer ab-block-spacer ab-divider-solid ab-divider-size-1"><hr style="height:70px"/></div>
-<!-- /wp:atomic-blocks/ab-spacer -->
-
-<!-- wp:heading {"level":1} -->
-<h1>Block Content Examples</h1>
-<!-- /wp:heading -->
-
 <!-- wp:paragraph -->
 <p>Below are examples of column classes that are available in the block editor.</p>
 <!-- /wp:paragraph -->
