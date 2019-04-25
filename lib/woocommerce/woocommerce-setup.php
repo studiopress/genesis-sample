@@ -56,7 +56,7 @@ add_filter( 'woocommerce_style_smallscreen_breakpoint', 'genesis_sample_woocomme
  */
 function genesis_sample_woocommerce_breakpoint() {
 
-	$current = genesis_site_layout();
+	$current = genesis_site_layout( false );
 	$layouts = array(
 		'one-sidebar' => array(
 			'content-sidebar',
