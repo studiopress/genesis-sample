@@ -99,6 +99,7 @@ Loaded on WooCommerce pages */
 .woocommerce ul.products {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 .woocommerce ul.products li.product .button,
@@ -821,6 +822,16 @@ div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricte
 
 	.woocommerce-cart table.cart td.actions .coupon .input-text {
 		margin-bottom: 0;
+	}
+
+}
+
+@media only screen and (min-width: 860px) {
+
+	.woocommerce ul.products {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
 	}
 
 }
