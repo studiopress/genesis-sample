@@ -828,9 +828,7 @@ div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricte
 
 @media only screen and (min-width: 860px) {
 
-	.woocommerce ul.products {
-		display: flex;
-		flex-wrap: wrap;
+	.full-width-content .woocommerce ul.products {
 		justify-content: flex-start;
 	}
 
@@ -881,3 +879,13 @@ div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricte
 	}
 
 }
+
+@media only screen and (min-width: 1140px) {
+
+	.content-sidebar .woocommerce ul.products,
+	.sidebar-content .woocommerce ul.products {
+		justify-content: flex-start;
+	}
+
+}
+
