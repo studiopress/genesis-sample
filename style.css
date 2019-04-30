@@ -490,8 +490,8 @@ input[type="search"]::-webkit-search-results-button {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-	line-height: 2;
 	margin-bottom: 40px;
+	table-layout: fixed;
 	width: 100%;
 	word-break: break-all;
 }
@@ -503,21 +503,27 @@ tbody {
 td,
 th {
 	text-align: left;
+	vertical-align: top;
 }
 
 td {
 	border-top: 1px solid #eee;
-	padding: 6px;
+	padding: 10px;
 }
 
 th {
-	font-weight: 400;
-	padding: 0 6px;
+	font-weight: 600;
+	padding: 0 10px 10px;
 }
 
 td:first-child,
 th:first-child {
 	padding-left: 0;
+}
+
+td:last-child,
+th:last-child {
+	padding-right: 0;
 }
 
 /* Screen Reader Text
@@ -1439,6 +1445,15 @@ p.entry-meta {
 
 /* Media Queries
 ---------------------------------------------------------------------------- */
+
+@media only screen and (min-width: 480px) {
+
+	table {
+		table-layout: auto;
+		word-break: normal;
+	}
+
+}
 
 @media only screen and (min-width: 960px) {
 
