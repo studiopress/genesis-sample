@@ -16,14 +16,8 @@
 // Requires helper WPForms function to create a new form.
 require_once get_stylesheet_directory() . '/lib/wpforms.php';
 
-// Creates a WPForms contact form during one-click theme setup if one does not exist already.
-studiopress_create_wpforms_form();
-
-$genesis_sample_wpforms_id = get_option( 'genesis_onboarding_wpforms_id' );
-
-if ( $genesis_sample_wpforms_id ) {
-	return "<!-- wp:wpforms/form-selector {\"formId\":\"{$genesis_sample_wpforms_id}\"} /-->";
-}
+// Swaps the default content below with a WPForms contact form block if the WPForms plugin is active.
+add_action( 'genesis_onboarding_after_import_content', 'studiopress_insert_contact_form', 10, 2 );
 
 return <<<CONTENT
 <!-- wp:paragraph -->
