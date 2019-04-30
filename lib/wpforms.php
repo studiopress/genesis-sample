@@ -2,7 +2,8 @@
 /**
  * StudioPress WPForms helper functions.
  *
- * Creates a form during one-click theme setup if one has not been created already.
+ * Assists with the creation of a WPForms form, and the replacement of contact
+ * page content with a working contact form block during one-click theme setup.
  *
  * @package StudioPress
  * @author  StudioPress
