@@ -14,8 +14,10 @@
  * Creates a WPForms form if one added by a StudioPress theme does not exist.
  *
  * @since 2.10.0
+ *
+ * @return int|null ID of form if one exists or gets created. Null if form creation fails or WPForms is inactive.
  */
-function studiopress_create_wpforms_form() { // phpcs:ignore -- studiopress prefix for functions shared between themes.
+function studiopress_maybe_create_wpforms_form() { // phpcs:ignore -- studiopress prefix for functions shared between themes.
 
 	if ( ! function_exists( 'wpforms' ) ) {
 		return;
@@ -28,7 +30,7 @@ function studiopress_create_wpforms_form() { // phpcs:ignore -- studiopress pref
 
 		// Don't create another form if a valid one already exists.
 		if ( $wpform && 'wpforms' === $wpform->post_type ) {
-			return;
+			return $existing_form_id;
 		}
 
 		// Stored ID no longer points to a WPForms form.
@@ -47,6 +49,10 @@ function studiopress_create_wpforms_form() { // phpcs:ignore -- studiopress pref
 
 	if ( $new_form_id ) {
 		update_option( 'genesis_onboarding_wpforms_id', $new_form_id, false );
+		return $new_form_id;
+	}
+
+}
 	}
 
 }
