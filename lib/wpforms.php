@@ -53,6 +53,26 @@ function studiopress_maybe_create_wpforms_form() { // phpcs:ignore -- studiopres
 	}
 
 }
+
+/**
+ * Replace contact page placeholder content with a block displaying the form.
+ *
+ * @since 2.10.0
+ *
+ * @param array $content The content config.
+ * @param array $imported_posts Imported posts with content short name as keys and IDs as values.
+ */
+function studiopress_insert_contact_form( $content, $imported_posts ) { // phpcs:ignore -- studiopress prefix for functions shared between themes.
+
+	$form_id = studiopress_maybe_create_wpforms_form();
+
+	if ( $form_id && array_key_exists( 'contact', $imported_posts ) ) {
+		$contact_page = array(
+			'ID'           => $imported_posts['contact'],
+			'post_content' => "<!-- wp:wpforms/form-selector {\"formId\":\"{$form_id}\"} /-->",
+		);
+
+		wp_update_post( $contact_page );
 	}
 
 }
