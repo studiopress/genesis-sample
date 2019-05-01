@@ -15,8 +15,9 @@ assignees: ''
 
 **Check standards**
 - [ ] Lint PHP (`composer install` then `composer phpcs`)
-- [ ] Lint CSS (`npm install` then `npm run lint:css`)
 - [ ] Lint JS (`npm install` then `npm run lint:js`)
+- [ ] Lint CSS (`npm install` then `npm run lint:css`)
+- [ ] Autoprefix CSS `npm run autoprefixer`
 
 **Final release**
 - [ ] PR to merge Develop to Master

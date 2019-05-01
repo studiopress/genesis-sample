@@ -19,33 +19,6 @@ if ( class_exists( 'WooCommerce' ) ) {
 
 }
 
-add_action( 'wp_enqueue_scripts', 'genesis_sample_products_match_height', 99 );
-/**
- * Prints an inline script to the footer to keep products the same height.
- *
- * @since 2.3.0
- */
-function genesis_sample_products_match_height() {
-
-	// If Woocommerce is not activated, or a product page isn't showing, exit early.
-	if ( ! class_exists( 'WooCommerce' ) || ! is_shop() && ! is_product_category() && ! is_product_tag() ) {
-		return;
-	}
-
-	wp_enqueue_script(
-		'genesis-sample-match-height',
-		get_stylesheet_directory_uri() . '/js/jquery.matchHeight.min.js',
-		array( 'jquery' ),
-		CHILD_THEME_VERSION,
-		true
-	);
-	wp_add_inline_script(
-		'genesis-sample-match-height',
-		"jQuery(document).ready( function() { jQuery( '.product .woocommerce-LoopProduct-link').matchHeight(); });"
-	);
-
-}
-
 add_filter( 'woocommerce_style_smallscreen_breakpoint', 'genesis_sample_woocommerce_breakpoint' );
 /**
  * Modifies the WooCommerce breakpoints.
@@ -56,7 +29,7 @@ add_filter( 'woocommerce_style_smallscreen_breakpoint', 'genesis_sample_woocomme
  */
 function genesis_sample_woocommerce_breakpoint() {
 
-	$current = genesis_site_layout();
+	$current = genesis_site_layout( false );
 	$layouts = array(
 		'one-sidebar' => array(
 			'content-sidebar',

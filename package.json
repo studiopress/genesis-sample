@@ -7,7 +7,7 @@
 	},
 	"license": "GPL-2.0-or-later",
 	"devDependencies": {
-		"adm-zip": "^0.4.13",
+		"archiver": "^3.0.0",
 		"autoprefixer": "^9.4.2",
 		"chalk": "^2.4.1",
 		"eslint": "^5.15.2",
@@ -15,6 +15,8 @@
 		"node-wp-i18n": "^1.2.1",
 		"npm-run-all": "^4.1.5",
 		"postcss-cli": "^6.0.1",
+		"pretty-bytes": "^5.1.0",
+		"recursive-readdir": "^2.2.2",
 		"stylelint": "^9.9.0",
 		"stylelint-config-wordpress": "^13.1.0"
 	},
@@ -24,9 +26,7 @@
 		"lint:css": "stylelint \"style.css\" \"lib/gutenberg/*.css\" \"lib/woocommerce/*.css\"",
 		"lint:js": "eslint .",
 		"fix:js": "eslint . --fix",
-		"build:export-zip": "git archive -o genesis-sample.zip --prefix=genesis-sample/ HEAD",
-		"build:md-to-txt": "node .scripts/md-to-txt.js",
-		"zip": "run-s build:export-zip build:md-to-txt"
+		"zip": "node .scripts/makezip.js"
 	},
 	"browserslist": [
 		"> 1%",
@@ -46,7 +46,7 @@
 		"description": "The sample child theme for the Genesis Framework.",
 		"author": "StudioPress",
 		"authoruri": "https://www.studiopress.com/",
-		"version": "2.9.1",
+		"version": "2.10.0",
 		"tags": "one-column, two-columns, left-sidebar, right-sidebar, accessibility-ready, custom-colors, custom-logo, custom-menu, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready",
 		"license": "GPL-2.0-or-later",
 		"licenseuri": "https://www.gnu.org/licenses/gpl-2.0.html",

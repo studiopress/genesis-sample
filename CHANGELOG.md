@@ -1,5 +1,18 @@
 # Genesis Sample Theme Changelog
 
+## [2.10.0] - 2019-05-01
+Requires Genesis 2.10.0+.
+
+* Added: create a WPForms form during one-click theme setup and insert a WPForms block on the sample contact page.
+* Added: remove link in hidden title when custom logo is in use for better accessibility.
+* Changed: set full-width page layout for the Block Examples and About pages during one-click theme setup.
+* Changed: improve styling of tables.
+* Changed: improve editor button block styling.
+* Changed: clarify wording of Customizer color labels.
+* Changed: remove matchHeight script and use CSS flex instead to match heights of WooCommerce product lists.
+* Fixed: WooCommmerce shop pages now use the selected page layout instead of the default site layout on sites using object caching.
+* Fixed: update the `npm run zip` script to prevent an issue with zip decompression for apps such as Path Finder. (npm scripts are available in the version of Genesis Sample on GitHub: https://github.com/studiopress/genesis-sample/).
+
 ## [2.9.1] - 2019-03-19
 * Added: Contributing guidelines.
 * Added: Tooling to lint JavaScript to WordPress coding standards (`npm run lint:js` and `npm run fix:js`).

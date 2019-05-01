@@ -33,7 +33,7 @@ function genesis_sample_customizer_register( $wp_customize ) {
 			$wp_customize,
 			'genesis_sample_link_color',
 			array(
-				'description' => __( 'Change the color of post info links, hover color of linked titles, hover color of menu items, and more.', 'genesis-sample' ),
+				'description' => __( 'Change the color of post info links and button blocks, the hover color of linked titles and menu items, and more.', 'genesis-sample' ),
 				'label'       => __( 'Link Color', 'genesis-sample' ),
 				'section'     => 'colors',
 				'settings'    => 'genesis_sample_link_color',
@@ -54,7 +54,7 @@ function genesis_sample_customizer_register( $wp_customize ) {
 			$wp_customize,
 			'genesis_sample_accent_color',
 			array(
-				'description' => __( 'Change the default hover color for button links, the menu button, and submit buttons. This setting does not apply to buttons created with the Buttons block.', 'genesis-sample' ),
+				'description' => __( 'Change the default hover color for button links, menu buttons, and submit buttons. The button block uses the Link Color.', 'genesis-sample' ),
 				'label'       => __( 'Accent Color', 'genesis-sample' ),
 				'section'     => 'colors',
 				'settings'    => 'genesis_sample_accent_color',

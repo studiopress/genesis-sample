@@ -42,6 +42,7 @@ Loaded on WooCommerce pages */
 
 .woocommerce .woocommerce-LoopProduct-link {
 	display: block;
+	flex-shrink: 0; /* IE 11 height fix */
 }
 
 
@@ -75,6 +76,15 @@ Loaded on WooCommerce pages */
 	border-bottom: 0;
 }
 
+.woocommerce .content .entry::after,
+.woocommerce .content .entry::before,
+.woocommerce .products ul::after,
+.woocommerce .products ul::before,
+.woocommerce ul.products::after,
+.woocommerce ul.products::before {
+	display: none;
+}
+
 .woocommerce a.added_to_cart {
 	line-height: 1;
 }
@@ -84,6 +94,12 @@ Loaded on WooCommerce pages */
 .woocommerce input.button.loading::after,
 .woocommerce #respond input#submit.loading::after {
 	top: 1em;
+}
+
+.woocommerce ul.products {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 .woocommerce ul.products li.product .button,
@@ -147,6 +163,13 @@ Loaded on WooCommerce pages */
 
 /* WooCommerce Product
 ---------------------------------------------------------------------------- */
+
+.woocommerce ul.products li.product {
+	align-items: self-start;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
 
 .woocommerce div.product p.price,
 .woocommerce div.product span.price {
@@ -803,6 +826,14 @@ div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricte
 
 }
 
+@media only screen and (min-width: 860px) {
+
+	.full-width-content .woocommerce ul.products {
+		justify-content: flex-start;
+	}
+
+}
+
 @media only screen and (min-width: 960px) {
 
 	.full-width-content.woocommerce div.product .woocommerce-tabs ul.tabs {
@@ -845,6 +876,15 @@ div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricte
 
 	.woocommerce div.product .woocommerce-tabs ul.tabs li.active a::after {
 		display: none;
+	}
+
+}
+
+@media only screen and (min-width: 1140px) {
+
+	.content-sidebar .woocommerce ul.products,
+	.sidebar-content .woocommerce ul.products {
+		justify-content: flex-start;
 	}
 
 }

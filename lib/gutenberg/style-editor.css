@@ -14,6 +14,36 @@ dl {
 	line-height: 1.625;
 }
 
+/* Tables
+---------------------------------------------------------------------------- */
+
+table {
+	width: 100%;
+}
+
+tbody,
+td,
+th {
+	border-color: #eee;
+	text-align: left;
+}
+
+td,
+th {
+	padding: 10px;
+	text-align: left;
+	vertical-align: top;
+}
+
+th {
+	font-weight: 600;
+}
+
+td:first-child,
+th:first-child {
+	padding-left: 0;
+}
+
 /* Regular content width.
 /* 702px + 27px to match paragraph width on front-end and editor.
 ---------------------------------------------------------------------------- */
@@ -338,7 +368,6 @@ hr.wp-block-separator.is-style-dots {
 	text-align: center;
 	text-decoration: none;
 	white-space: normal;
-	width: auto;
 }
 
 .wp-block-button.is-style-squared .wp-block-button__link {
