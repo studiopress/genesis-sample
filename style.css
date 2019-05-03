@@ -1461,9 +1461,13 @@ p.entry-meta {
 	--------------------------------------------- */
 
 	.site-header {
-		position: fixed;
-		width: 100%;
+		position: sticky;
+		top: 0;
 		z-index: 9999;
+	}
+
+	.admin-bar .site-header {
+		top: 32px;
 	}
 
 	/* Genesis Menu
@@ -1553,7 +1557,6 @@ p.entry-meta {
 	--------------------------------------------- */
 
 	.site-inner {
-		margin-top: 70px;
 		max-width: 1140px;
 	}
 
