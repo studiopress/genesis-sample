@@ -60,6 +60,22 @@ function genesis_child_gutenberg_support() { // phpcs:ignore WordPress.NamingCon
 	require_once get_stylesheet_directory() . '/lib/gutenberg/init.php';
 }
 
+// Registers the responsive menus.
+if ( function_exists( 'genesis_register_responsive_menus' ) ) {
+	genesis_register_responsive_menus(
+		array(
+			'script' => array(
+				'menuClasses' => array(
+					'others' => array( '.nav-primary' ),
+				),
+			),
+			'extras' => array(
+				'media_query_width' => '960px',
+			),
+		)
+	);
+}
+
 add_action( 'wp_enqueue_scripts', 'genesis_sample_enqueue_scripts_styles' );
 /**
  * Enqueues scripts and styles.
@@ -76,45 +92,6 @@ function genesis_sample_enqueue_scripts_styles() {
 	);
 
 	wp_enqueue_style( 'dashicons' );
-
-	$suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
-	wp_enqueue_script(
-		'genesis-sample-responsive-menu',
-		get_stylesheet_directory_uri() . "/js/responsive-menus{$suffix}.js",
-		array( 'jquery' ),
-		CHILD_THEME_VERSION,
-		true
-	);
-
-	wp_localize_script(
-		'genesis-sample-responsive-menu',
-		'genesis_responsive_menu',
-		genesis_sample_responsive_menu_settings()
-	);
-
-}
-
-/**
- * Defines responsive menu settings.
- *
- * @since 2.3.0
- */
-function genesis_sample_responsive_menu_settings() {
-
-	$settings = array(
-		'mainMenu'         => __( 'Menu', 'genesis-sample' ),
-		'menuIconClass'    => 'dashicons-before dashicons-menu',
-		'subMenu'          => __( 'Submenu', 'genesis-sample' ),
-		'subMenuIconClass' => 'dashicons-before dashicons-arrow-down-alt2',
-		'menuClasses'      => array(
-			'combine' => array(
-				'.nav-primary',
-			),
-			'others'  => array(),
-		),
-	);
-
-	return $settings;
 
 }
 
