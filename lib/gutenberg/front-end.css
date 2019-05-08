@@ -388,31 +388,14 @@ hr.wp-block-separator {
 /* Media Queries
 ---------------------------------------------------------------------------- */
 
-@media only screen and (min-width: 600px) {
 
-	.site-container .wp-block-columns {
-		flex-wrap: nowrap;
-	}
+@media only screen and (max-width: 781px) {
 
-	.site-container .wp-block-columns[class*="has-"] > * {
-		margin-right: 36px;
+	.has-3-columns .wp-block-column,
+	.has-5-columns .wp-block-column {
+		flex-basis: 100%;
 		margin-left: 0;
-	}
-
-	.site-container .wp-block-columns[class*="has-"] > *:last-child {
 		margin-right: 0;
-	}
-
-}
-
-@media only screen and (min-width: 768px) {
-
-	.site-container .wp-block-columns .wp-block-column > *:first-child {
-		margin-top: 0;
-	}
-
-	.site-container .wp-block-columns .wp-block-column > *:last-child {
-		margin-bottom: 0;
 	}
 
 }
