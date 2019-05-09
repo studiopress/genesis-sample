@@ -82,6 +82,15 @@ function genesis_sample_enqueue_scripts_styles() {
 
 	wp_enqueue_style( 'dashicons' );
 
+	if ( genesis_is_amp() ) {
+		wp_enqueue_style(
+			'genesis-sample-amp',
+			get_stylesheet_directory_uri() . '/lib/amp/amp.css',
+			array( CHILD_THEME_HANDLE ),
+			CHILD_THEME_VERSION
+		);
+	}
+
 }
 
 // Adds support for HTML5 markup structure.
