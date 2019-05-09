@@ -7,22 +7,12 @@ This currently loads only on AMP pages.
 --------------------------------------------- */
 .genesis-nav-menu .menu-item .sub-menu {
 	display: block;
-	-webkit-transform: scaleY(0);
-	-moz-transform: scaleY(0);
-	-ms-transform: scaleY(0);
-	-o-transform: scaleY(0);
 	transform: scaleY(0);
 	transform-origin: top;
-	-webkit-transition: transform 0.5s ease 0.2s;
-	-moz-transition: transform 0.5s ease 0.2s;
 	transition: transform 0.5s ease 0.2s;
 }
 
 .genesis-nav-menu .menu-item:hover > .sub-menu {
-	-webkit-transform: scaleY(1);
-	-moz-transform: scaleY(1);
-	-ms-transform: scaleY(1);
-	-o-transform: scaleY(1);
 	transform: scaleY(1);
 }
 
@@ -35,10 +25,6 @@ This currently loads only on AMP pages.
  * are ignored.  Isolating it ensures the submenu animation works on :hover.
  */
 .menu .menu-item:focus-within > .sub-menu {
-	-webkit-transform: scaleY(1);
-	-moz-transform: scaleY(1);
-	-ms-transform: scaleY(1);
-	-o-transform: scaleY(1);
 	transform: scaleY(1);
 	left: auto;
 	opacity: 1;
@@ -52,14 +38,8 @@ This currently loads only on AMP pages.
 		position: absolute;
 		left: -9999px;
 		opacity: 0;
-		-webkit-transform: scaleY(0);
-		-moz-transform: scaleY(0);
-		-ms-transform: scaleY(0);
-		-o-transform: scaleY(0);
 		transform: scaleY(0);
 		transform-origin: top;
-		-webkit-transition: transform .2s ease;
-		-moz-transition: transform .2s ease;
 		transition: transform .2s ease;
 	}
 
@@ -67,10 +47,6 @@ This currently loads only on AMP pages.
 		opacity: 1;
 		position: relative;
 		left: auto;
-		-webkit-transform: scaleY(1);
-		-moz-transform: scaleY(1);
-		-ms-transform: scaleY(1);
-		-o-transform: scaleY(1);
 		transform: scaleY(1);
 	}
 
@@ -81,9 +57,6 @@ This currently loads only on AMP pages.
 
 	.genesis-responsive-menu.toggled-on .sub-menu-toggle.toggled-on + .sub-menu {
 		display: block;
-		-moz-transform: scaleY(1);
-		-ms-transform: scaleY(1);
-		-o-transform: scaleY(1);
 		transform: scaleY(1);
 	}
 }
