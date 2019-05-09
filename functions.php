@@ -62,18 +62,7 @@ function genesis_child_gutenberg_support() { // phpcs:ignore WordPress.NamingCon
 
 // Registers the responsive menus.
 if ( function_exists( 'genesis_register_responsive_menus' ) ) {
-	genesis_register_responsive_menus(
-		array(
-			'script' => array(
-				'menuClasses' => array(
-					'others' => array( '.nav-primary' ),
-				),
-			),
-			'extras' => array(
-				'media_query_width' => '960px',
-			),
-		)
-	);
+	genesis_register_responsive_menus( genesis_get_config( 'responsive-menus' ) );
 }
 
 add_action( 'wp_enqueue_scripts', 'genesis_sample_enqueue_scripts_styles' );
