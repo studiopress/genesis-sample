@@ -12,7 +12,8 @@ This currently loads only on AMP pages.
 	transition: transform 0.5s ease 0.2s;
 }
 
-.genesis-nav-menu .menu-item:hover > .sub-menu {
+.genesis-responsive-menu .genesis-nav-menu .menu-item:hover > .sub-menu {
+	display: block;
 	transform: scaleY(1);
 }
 
