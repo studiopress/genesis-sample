@@ -21,9 +21,10 @@ This currently loads only on AMP pages.
 --------------------------------------------- */
 
 /*
- * :focus-within needs it own selector.
- * Why? If the event a browser does not recognize this pseudo-class, only this selector and its declarations
- * are ignored.  Isolating it ensures the submenu animation works on :hover.
+ * :focus-within needs its own selector.
+ * Why? If the event a browser does not recognize this pseudo-class, only this
+ * selector and its declarations are ignored. Isolating it ensures the submenu
+ * animation works on :hover.
  */
 .menu .menu-item:focus-within > .sub-menu {
 	transform: scaleY(1);
