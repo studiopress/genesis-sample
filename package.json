@@ -23,7 +23,7 @@
 	"scripts": {
 		"autoprefixer": "postcss style.css lib/**/*.css --use autoprefixer --replace --no-map --verbose",
 		"makepot": "node .scripts/makepot.js",
-		"lint:css": "stylelint \"style.css\" \"lib/gutenberg/*.css\" \"lib/woocommerce/*.css\"",
+		"lint:css": "stylelint \"style.css\" \"lib/gutenberg/*.css\" \"lib/woocommerce/*.css\" \"lib/amp/*.css\"",
 		"lint:js": "eslint .",
 		"fix:js": "eslint . --fix",
 		"zip": "node .scripts/makezip.js"
