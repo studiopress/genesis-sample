@@ -19,8 +19,8 @@ function genesis_sample_enqueue_gutenberg_frontend_styles() {
 	wp_enqueue_style(
 		'genesis-sample-gutenberg',
 		get_stylesheet_directory_uri() . '/lib/gutenberg/front-end.css',
-		array( CHILD_THEME_HANDLE ),
-		CHILD_THEME_VERSION
+		array( genesis_get_theme_handle() ),
+		genesis_get_theme_version()
 	);
 
 }
@@ -39,7 +39,7 @@ function genesis_sample_block_editor_styles() {
 		'genesis-sample-gutenberg-fonts',
 		$block_editor_settings['admin-fonts-url'],
 		array(),
-		CHILD_THEME_VERSION
+		genesis_get_theme_version()
 	);
 
 }
