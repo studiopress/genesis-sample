@@ -147,7 +147,7 @@ function genesis_sample_css() {
 	) : '';
 
 	if ( $css ) {
-		wp_add_inline_style( CHILD_THEME_HANDLE, $css );
+		wp_add_inline_style( genesis_get_theme_handle(), $css );
 	}
 
 }

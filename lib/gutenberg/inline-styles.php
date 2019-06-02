@@ -46,7 +46,7 @@ CSS;
 	$css .= genesis_sample_inline_font_sizes();
 	$css .= genesis_sample_inline_color_palette();
 
-	wp_add_inline_style( CHILD_THEME_HANDLE . '-gutenberg', $css );
+	wp_add_inline_style( genesis_get_theme_handle() . '-gutenberg', $css );
 
 }
 

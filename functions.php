@@ -13,10 +13,6 @@
 // Starts the engine.
 require_once get_template_directory() . '/lib/init.php';
 
-// Defines constants to help enqueue scripts and styles.
-define( 'CHILD_THEME_HANDLE', sanitize_title_with_dashes( wp_get_theme()->get( 'Name' ) ) );
-define( 'CHILD_THEME_VERSION', wp_get_theme()->get( 'Version' ) );
-
 // Sets up the Theme.
 require_once get_stylesheet_directory() . '/lib/theme-defaults.php';
 
@@ -74,20 +70,20 @@ add_action( 'wp_enqueue_scripts', 'genesis_sample_enqueue_scripts_styles' );
 function genesis_sample_enqueue_scripts_styles() {
 
 	wp_enqueue_style(
-		CHILD_THEME_HANDLE . '-fonts',
+		genesis_get_theme_handle() . '-fonts',
 		'//fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700',
 		array(),
-		CHILD_THEME_VERSION
+		genesis_get_theme_version()
 	);
 
 	wp_enqueue_style( 'dashicons' );
 
 	if ( genesis_is_amp() ) {
 		wp_enqueue_style(
-			CHILD_THEME_HANDLE . '-amp',
+			genesis_get_theme_handle() . '-amp',
 			get_stylesheet_directory_uri() . '/lib/amp/amp.css',
-			array( CHILD_THEME_HANDLE ),
-			CHILD_THEME_VERSION
+			array( genesis_get_theme_handle() ),
+			genesis_get_theme_version()
 		);
 	}
 

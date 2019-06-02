@@ -24,7 +24,7 @@ function genesis_sample_woocommerce_styles( $enqueue_styles ) {
 	$enqueue_styles['genesis-sample-woocommerce-styles'] = array(
 		'src'     => get_stylesheet_directory_uri() . '/lib/woocommerce/genesis-sample-woocommerce.css',
 		'deps'    => '',
-		'version' => CHILD_THEME_VERSION,
+		'version' => genesis_get_theme_version(),
 		'media'   => 'screen',
 	);
 
