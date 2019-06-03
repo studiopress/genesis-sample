@@ -23,7 +23,7 @@ function genesis_sample_customizer_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'genesis_sample_link_color',
 		array(
-			'default'           => genesis_sample_customizer_get_default_link_color(),
+			'default'           => genesis_sample_get_default_color( 'link' ),
 			'sanitize_callback' => 'sanitize_hex_color',
 		)
 	);
@@ -44,7 +44,7 @@ function genesis_sample_customizer_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'genesis_sample_accent_color',
 		array(
-			'default'           => genesis_sample_customizer_get_default_accent_color(),
+			'default'           => genesis_sample_get_default_color( 'accent' ),
 			'sanitize_callback' => 'sanitize_hex_color',
 		)
 	);

@@ -11,30 +11,20 @@
  */
 
 /**
- * Gets default link color for Customizer.
+ * Gets default hex code for given color from config.
  * Abstracted here since at least two functions use it.
  *
- * @since 2.2.3
+ * @since 3.0.0
  *
- * @return string Hex color code for link color.
+ * @param string $name Name of color to retrieve.
+ *
+ * @return string Hex color code for specified color.
  */
-function genesis_sample_customizer_get_default_link_color() {
+function genesis_sample_get_default_color( $name ) {
 
-	return '#0073e5';
+	$colors = genesis_get_config( 'color-palette' );
 
-}
-
-/**
- * Gets default accent color for Customizer.
- * Abstracted here since at least two functions use it.
- *
- * @since 2.2.3
- *
- * @return string Hex color code for accent color.
- */
-function genesis_sample_customizer_get_default_accent_color() {
-
-	return '#0073e5';
+	return $colors[ $name ];
 
 }
 
