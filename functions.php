@@ -99,9 +99,6 @@ add_theme_support( 'html5', genesis_get_config( 'html5' ) );
 // Adds support for accessibility.
 add_theme_support( 'genesis-accessibility', genesis_get_config( 'accessibility' ) );
 
-// Adds viewport meta tag for mobile browsers.
-add_theme_support( 'genesis-responsive-viewport' );
-
 // Adds custom logo in Customizer > Site Identity.
 add_theme_support( 'custom-logo', genesis_get_config( 'custom-logo' ) );
 
