@@ -19,8 +19,8 @@ add_action( 'wp_enqueue_scripts', 'genesis_sample_css' );
  */
 function genesis_sample_css() {
 
-	$color_link   = get_theme_mod( 'genesis_sample_link_color', genesis_sample_customizer_get_default_link_color() );
-	$color_accent = get_theme_mod( 'genesis_sample_accent_color', genesis_sample_customizer_get_default_accent_color() );
+	$color_link   = get_theme_mod( 'genesis_sample_link_color', genesis_sample_get_default_color( 'link' ) );
+	$color_accent = get_theme_mod( 'genesis_sample_accent_color', genesis_sample_get_default_color( 'accent' ) );
 	$logo         = wp_get_attachment_image_src( get_theme_mod( 'custom_logo' ), 'full' );
 
 	if ( $logo ) {
@@ -34,7 +34,7 @@ function genesis_sample_css() {
 
 	$css = '';
 
-	$css .= ( genesis_sample_customizer_get_default_link_color() !== $color_link ) ? sprintf(
+	$css .= ( genesis_sample_get_default_color( 'link' ) !== $color_link ) ? sprintf(
 		'
 
 		a,
@@ -56,7 +56,7 @@ function genesis_sample_css() {
 		$color_link
 	) : '';
 
-	$css .= ( genesis_sample_customizer_get_default_accent_color() !== $color_accent ) ? sprintf(
+	$css .= ( genesis_sample_get_default_color( 'accent' ) !== $color_accent ) ? sprintf(
 		'
 
 		button:focus,

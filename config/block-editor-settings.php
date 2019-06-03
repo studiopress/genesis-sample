@@ -8,7 +8,7 @@
  * @link    https://www.studiopress.com/
  */
 
-$genesis_sample_link_color            = get_theme_mod( 'genesis_sample_link_color', genesis_sample_customizer_get_default_link_color() );
+$genesis_sample_link_color            = get_theme_mod( 'genesis_sample_link_color', genesis_sample_get_default_color( 'link' ) );
 $genesis_sample_link_color_contrast   = genesis_sample_color_contrast( $genesis_sample_link_color );
 $genesis_sample_link_color_brightness = genesis_sample_color_brightness( $genesis_sample_link_color, 35 );
 
@@ -23,12 +23,12 @@ return array(
 		array(
 			'name'  => __( 'Custom color', 'genesis-sample' ), // Called “Link Color” in the Customizer options. Renamed because “Link Color” implies it can only be used for links.
 			'slug'  => 'theme-primary',
-			'color' => get_theme_mod( 'genesis_sample_link_color', genesis_sample_customizer_get_default_link_color() ),
+			'color' => $genesis_sample_link_color,
 		),
 		array(
 			'name'  => __( 'Accent color', 'genesis-sample' ),
 			'slug'  => 'theme-secondary',
-			'color' => get_theme_mod( 'genesis_sample_accent_color', genesis_sample_customizer_get_default_accent_color() ),
+			'color' => get_theme_mod( 'genesis_sample_accent_color', genesis_sample_get_default_color( 'accent' ) ),
 		),
 	),
 	'editor-font-sizes'            => array(
