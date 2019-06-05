@@ -13,7 +13,7 @@ $genesis_sample_link_color_contrast   = genesis_sample_color_contrast( $genesis_
 $genesis_sample_link_color_brightness = genesis_sample_color_brightness( $genesis_sample_link_color, 35 );
 
 return array(
-	'admin-fonts-url'              => 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700',
+	'fonts-url'                    => 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700&display=swap',
 	'content-width'                => 1062,
 	'default-button-bg'            => $genesis_sample_link_color,
 	'default-button-color'         => $genesis_sample_link_color_contrast,

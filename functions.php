@@ -69,9 +69,11 @@ add_action( 'wp_enqueue_scripts', 'genesis_sample_enqueue_scripts_styles' );
  */
 function genesis_sample_enqueue_scripts_styles() {
 
+	$block_editor_settings = genesis_get_config( 'block-editor-settings' );
+
 	wp_enqueue_style(
 		genesis_get_theme_handle() . '-fonts',
-		'//fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700',
+		$block_editor_settings['fonts-url'],
 		array(),
 		genesis_get_theme_version()
 	);
