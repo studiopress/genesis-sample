@@ -149,21 +149,6 @@ genesis_unregister_layout( 'sidebar-sidebar-content' );
 remove_filter( 'genesis_nav_items', 'genesis_nav_right', 10, 2 );
 remove_filter( 'wp_nav_menu_items', 'genesis_nav_right', 10, 2 );
 
-add_action( 'genesis_theme_settings_metaboxes', 'genesis_sample_remove_metaboxes' );
-/**
- * Removes output of unused admin settings metaboxes.
- *
- * @since 2.6.0
- *
- * @param string $_genesis_admin_settings The admin screen to remove meta boxes from.
- */
-function genesis_sample_remove_metaboxes( $_genesis_admin_settings ) {
-
-	remove_meta_box( 'genesis-theme-settings-header', $_genesis_admin_settings, 'main' );
-	remove_meta_box( 'genesis-theme-settings-nav', $_genesis_admin_settings, 'main' );
-
-}
-
 add_filter( 'genesis_customizer_theme_settings_config', 'genesis_sample_remove_customizer_settings' );
 /**
  * Removes output of header and front page breadcrumb settings in the Customizer.
