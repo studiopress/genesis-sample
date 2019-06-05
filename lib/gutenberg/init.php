@@ -37,7 +37,7 @@ function genesis_sample_block_editor_styles() {
 
 	wp_enqueue_style(
 		'genesis-sample-gutenberg-fonts',
-		$block_editor_settings['admin-fonts-url'],
+		$block_editor_settings['fonts-url'],
 		array(),
 		genesis_get_theme_version()
 	);
