@@ -8,23 +8,26 @@
  * @link    https://www.studiopress.com/
  */
 
-$genesis_sample_link_color            = get_theme_mod(
-	'genesis_sample_link_color',
-	$genesis_sample_appearance['default-colors']['link']
+$genesis_sample_default_colors = array(
+	'link'   => '#0073e5',
+	'accent' => '#0073e5',
 );
+
+$genesis_sample_link_color = get_theme_mod(
+	'genesis_sample_link_color',
+	$genesis_sample_default_colors['link']
+);
+
 $genesis_sample_link_color_contrast   = genesis_sample_color_contrast( $genesis_sample_link_color );
 $genesis_sample_link_color_brightness = genesis_sample_color_brightness( $genesis_sample_link_color, 35 );
 
-$genesis_sample_appearance = array(
+return array(
 	'fonts-url'                    => 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700&display=swap',
 	'content-width'                => 1062,
 	'default-button-bg'            => $genesis_sample_link_color,
 	'default-button-color'         => $genesis_sample_link_color_contrast,
 	'default-button-outline-hover' => $genesis_sample_link_color_brightness,
-	'default-colors'               => array(
-		'link'   => '#0073e5',
-		'accent' => '#0073e5',
-	),
+	'default-colors'               => $genesis_sample_default_colors,
 	'default-link-color'           => $genesis_sample_link_color,
 	'editor-color-palette'         => array(
 		array(
@@ -37,7 +40,7 @@ $genesis_sample_appearance = array(
 			'slug'  => 'theme-secondary',
 			'color' => get_theme_mod(
 				'genesis_sample_accent_color',
-				$genesis_sample_appearance['default-colors']['accent']
+				$genesis_sample_default_colors['accent']
 			),
 		),
 	),
@@ -64,5 +67,3 @@ $genesis_sample_appearance = array(
 		),
 	),
 );
-
-return $genesis_sample_appearance;
