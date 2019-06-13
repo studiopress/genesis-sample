@@ -22,9 +22,9 @@
  */
 function genesis_sample_get_default_color( $name ) {
 
-	$colors = genesis_get_config( 'color-palette' );
+	$appearance = genesis_get_config( 'appearance' );
 
-	return $colors[ $name ];
+	return $appearance['default-colors'][ $name ];
 
 }
 

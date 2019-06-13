@@ -1,6 +1,6 @@
 <?php
 /**
- * Block Editor settings specific to Genesis Sample.
+ * Genesis Sample appearance settings.
  *
  * @package Genesis Sample
  * @author  StudioPress
@@ -8,16 +8,23 @@
  * @link    https://www.studiopress.com/
  */
 
-$genesis_sample_link_color            = get_theme_mod( 'genesis_sample_link_color', genesis_sample_get_default_color( 'link' ) );
+$genesis_sample_link_color            = get_theme_mod(
+	'genesis_sample_link_color',
+	$genesis_sample_appearance['default-colors']['link']
+);
 $genesis_sample_link_color_contrast   = genesis_sample_color_contrast( $genesis_sample_link_color );
 $genesis_sample_link_color_brightness = genesis_sample_color_brightness( $genesis_sample_link_color, 35 );
 
-return array(
+$genesis_sample_appearance = array(
 	'fonts-url'                    => 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700&display=swap',
 	'content-width'                => 1062,
 	'default-button-bg'            => $genesis_sample_link_color,
 	'default-button-color'         => $genesis_sample_link_color_contrast,
 	'default-button-outline-hover' => $genesis_sample_link_color_brightness,
+	'default-colors'               => array(
+		'link'   => '#0073e5',
+		'accent' => '#0073e5',
+	),
 	'default-link-color'           => $genesis_sample_link_color,
 	'editor-color-palette'         => array(
 		array(
@@ -28,7 +35,10 @@ return array(
 		array(
 			'name'  => __( 'Accent color', 'genesis-sample' ),
 			'slug'  => 'theme-secondary',
-			'color' => get_theme_mod( 'genesis_sample_accent_color', genesis_sample_get_default_color( 'accent' ) ),
+			'color' => get_theme_mod(
+				'genesis_sample_accent_color',
+				$genesis_sample_appearance['default-colors']['accent']
+			),
 		),
 	),
 	'editor-font-sizes'            => array(
@@ -54,3 +64,5 @@ return array(
 		),
 	),
 );
+
+return $genesis_sample_appearance;
