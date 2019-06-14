@@ -91,7 +91,7 @@ function genesis_sample_enqueue_scripts_styles() {
 
 }
 
-add_action( 'after_setup_theme', 'genesis_sample_theme_support' );
+add_action( 'after_setup_theme', 'genesis_sample_theme_support', 9 );
 /**
  * Add desired theme supports.
  *
