@@ -47,12 +47,14 @@ function genesis_sample_woocommerce_css() {
 		return;
 	}
 
-	$color_link   = get_theme_mod( 'genesis_sample_link_color', genesis_sample_get_default_color( 'link' ) );
-	$color_accent = get_theme_mod( 'genesis_sample_accent_color', genesis_sample_get_default_color( 'accent' ) );
+	$appearance = genesis_get_config( 'appearance' );
+
+	$color_link   = get_theme_mod( 'genesis_sample_link_color', $appearance['default-colors']['link'] );
+	$color_accent = get_theme_mod( 'genesis_sample_accent_color', $appearance['default-colors']['accent'] );
 
 	$woo_css = '';
 
-	$woo_css .= ( genesis_sample_get_default_color( 'link' ) !== $color_link ) ? sprintf(
+	$woo_css .= ( $appearance['default-colors']['link'] !== $color_link ) ? sprintf(
 		'
 
 		.woocommerce div.product p.price,
@@ -73,7 +75,7 @@ function genesis_sample_woocommerce_css() {
 		$color_link
 	) : '';
 
-	$woo_css .= ( genesis_sample_get_default_color( 'accent' ) !== $color_accent ) ? sprintf(
+	$woo_css .= ( $appearance['default-colors']['accent'] !== $color_accent ) ? sprintf(
 		'
 		.woocommerce a.button:hover,
 		.woocommerce a.button:focus,

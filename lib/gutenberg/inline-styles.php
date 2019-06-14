@@ -10,36 +10,36 @@
 
 add_action( 'wp_enqueue_scripts', 'genesis_sample_custom_gutenberg_css' );
 /**
- * Outputs front-end inline styles based on colors declared in config/block-editor-settings.php.
+ * Outputs front-end inline styles based on colors declared in config/appearance.php.
  *
  * @since 2.9.0
  */
 function genesis_sample_custom_gutenberg_css() {
 
-	$block_editor_settings = genesis_get_config( 'block-editor-settings' );
+	$appearance = genesis_get_config( 'appearance' );
 
 	$css = <<<CSS
 .ab-block-post-grid .ab-post-grid-items h2 a:hover {
-	color: {$block_editor_settings['default-link-color']};
+	color: {$appearance['link-color']};
 }
 
 .site-container .wp-block-button .wp-block-button__link {
-	background-color: {$block_editor_settings['default-link-color']};
+	background-color: {$appearance['link-color']};
 }
 
 .wp-block-button .wp-block-button__link:not(.has-background),
 .wp-block-button .wp-block-button__link:not(.has-background):focus,
 .wp-block-button .wp-block-button__link:not(.has-background):hover {
-	color: {$block_editor_settings['default-button-color']};
+	color: {$appearance['button-color']};
 }
 
 .site-container .wp-block-button.is-style-outline .wp-block-button__link {
-	color: {$block_editor_settings['default-button-bg']};
+	color: {$appearance['button-bg']};
 }
 
 .site-container .wp-block-button.is-style-outline .wp-block-button__link:focus,
 .site-container .wp-block-button.is-style-outline .wp-block-button__link:hover {
-	color: {$block_editor_settings['default-button-outline-hover']};
+	color: {$appearance['button-outline-hover']};
 }
 CSS;
 
@@ -52,7 +52,7 @@ CSS;
 
 add_action( 'enqueue_block_editor_assets', 'genesis_sample_custom_gutenberg_admin_css' );
 /**
- * Outputs back-end inline styles based on colors declared in config/block-editor-settings.php.
+ * Outputs back-end inline styles based on colors declared in config/appearance.php.
  *
  * Note this will appear before the style-editor.css injected by JavaScript,
  * so overrides will need to have higher specificity.
@@ -61,27 +61,27 @@ add_action( 'enqueue_block_editor_assets', 'genesis_sample_custom_gutenberg_admi
  */
 function genesis_sample_custom_gutenberg_admin_css() {
 
-	$block_editor_settings = genesis_get_config( 'block-editor-settings' );
+	$appearance = genesis_get_config( 'appearance' );
 
 	$css = <<<CSS
 .ab-block-post-grid .ab-post-grid-items h2 a:hover,
 .block-editor__container .editor-block-list__block a {
-	color: {$block_editor_settings['default-link-color']};
+	color: {$appearance['link-color']};
 }
 
 .editor-styles-wrapper .editor-rich-text .button,
 .editor-styles-wrapper .wp-block-button .wp-block-button__link:not(.has-background) {
-	background-color: {$block_editor_settings['default-button-bg']};
-	color: {$block_editor_settings['default-button-color']};
+	background-color: {$appearance['button-bg']};
+	color: {$appearance['button-color']};
 }
 
 .editor-styles-wrapper .wp-block-button.is-style-outline .wp-block-button__link {
-	color: {$block_editor_settings['default-button-bg']};
+	color: {$appearance['button-bg']};
 }
 
 .editor-styles-wrapper .wp-block-button.is-style-outline .wp-block-button__link:focus,
 .editor-styles-wrapper .wp-block-button.is-style-outline .wp-block-button__link:hover {
-	color: {$block_editor_settings['default-button-outline-hover']};
+	color: {$appearance['button-outline-hover']};
 }
 CSS;
 
@@ -126,9 +126,9 @@ CSS;
  */
 function genesis_sample_inline_color_palette() {
 
-	$css                   = '';
-	$block_editor_settings = genesis_get_config( 'block-editor-settings' );
-	$editor_color_palette  = $block_editor_settings['editor-color-palette'];
+	$css                  = '';
+	$appearance           = genesis_get_config( 'appearance' );
+	$editor_color_palette = $appearance['editor-color-palette'];
 
 	foreach ( $editor_color_palette as $color_info ) {
 		$css .= <<<CSS

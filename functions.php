@@ -69,11 +69,11 @@ add_action( 'wp_enqueue_scripts', 'genesis_sample_enqueue_scripts_styles' );
  */
 function genesis_sample_enqueue_scripts_styles() {
 
-	$block_editor_settings = genesis_get_config( 'block-editor-settings' );
+	$appearance = genesis_get_config( 'appearance' );
 
 	wp_enqueue_style(
 		genesis_get_theme_handle() . '-fonts',
-		$block_editor_settings['fonts-url'],
+		$appearance['fonts-url'],
 		array(),
 		genesis_get_theme_version()
 	);
@@ -91,14 +91,23 @@ function genesis_sample_enqueue_scripts_styles() {
 
 }
 
-// Adds support for HTML5 markup structure.
-add_theme_support( 'html5', genesis_get_config( 'html5' ) );
+add_action( 'after_setup_theme', 'genesis_sample_theme_support', 9 );
+/**
+ * Add desired theme supports.
+ *
+ * See config file at `config/theme-supports.php`.
+ *
+ * @since 3.0.0
+ */
+function genesis_sample_theme_support() {
 
-// Adds support for accessibility.
-add_theme_support( 'genesis-accessibility', genesis_get_config( 'accessibility' ) );
+	$theme_supports = genesis_get_config( 'theme-supports' );
 
-// Adds custom logo in Customizer > Site Identity.
-add_theme_support( 'custom-logo', genesis_get_config( 'custom-logo' ) );
+	foreach ( $theme_supports as $feature => $args ) {
+		add_theme_support( $feature, $args );
+	}
+
+}
 
 add_filter( 'genesis_seo_title', 'genesis_sample_header_title', 10, 3 );
 /**
@@ -124,17 +133,8 @@ function genesis_sample_header_title( $title, $inside, $wrap ) {
 
 }
 
-// Renames primary and secondary navigation menus.
-add_theme_support( 'genesis-menus', genesis_get_config( 'menus' ) );
-
 // Adds image sizes.
 add_image_size( 'sidebar-featured', 75, 75, true );
-
-// Adds support for after entry widget.
-add_theme_support( 'genesis-after-entry-widget-area' );
-
-// Adds support for 3-column footer widgets.
-add_theme_support( 'genesis-footer-widgets', 3 );
 
 // Removes header right widget area.
 unregister_sidebar( 'header-right' );

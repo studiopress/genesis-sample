@@ -11,24 +11,6 @@
  */
 
 /**
- * Gets default hex code for given color from config.
- * Abstracted here since at least two functions use it.
- *
- * @since 3.0.0
- *
- * @param string $name Name of color to retrieve.
- *
- * @return string Hex color code for specified color.
- */
-function genesis_sample_get_default_color( $name ) {
-
-	$colors = genesis_get_config( 'color-palette' );
-
-	return $colors[ $name ];
-
-}
-
-/**
  * Calculates if white or gray would contrast more with the provided color.
  *
  * @since 2.2.3
