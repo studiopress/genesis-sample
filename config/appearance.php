@@ -27,14 +27,14 @@ $genesis_sample_link_color_contrast   = genesis_sample_color_contrast( $genesis_
 $genesis_sample_link_color_brightness = genesis_sample_color_brightness( $genesis_sample_link_color, 35 );
 
 return array(
-	'fonts-url'                    => 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700&display=swap',
-	'content-width'                => 1062,
-	'default-button-bg'            => $genesis_sample_link_color,
-	'default-button-color'         => $genesis_sample_link_color_contrast,
-	'default-button-outline-hover' => $genesis_sample_link_color_brightness,
-	'default-colors'               => $genesis_sample_default_colors,
-	'default-link-color'           => $genesis_sample_link_color,
-	'editor-color-palette'         => array(
+	'fonts-url'            => 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700&display=swap',
+	'content-width'        => 1062,
+	'button-bg'            => $genesis_sample_link_color,
+	'button-color'         => $genesis_sample_link_color_contrast,
+	'button-outline-hover' => $genesis_sample_link_color_brightness,
+	'link-color'           => $genesis_sample_link_color,
+	'default-colors'       => $genesis_sample_default_colors,
+	'editor-color-palette' => array(
 		array(
 			'name'  => __( 'Custom color', 'genesis-sample' ), // Called “Link Color” in the Customizer options. Renamed because “Link Color” implies it can only be used for links.
 			'slug'  => 'theme-primary',
@@ -46,7 +46,7 @@ return array(
 			'color' => $genesis_sample_accent_color,
 		),
 	),
-	'editor-font-sizes'            => array(
+	'editor-font-sizes'    => array(
 		array(
 			'name' => __( 'Small', 'genesis-sample' ),
 			'size' => 12,

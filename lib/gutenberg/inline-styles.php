@@ -20,26 +20,26 @@ function genesis_sample_custom_gutenberg_css() {
 
 	$css = <<<CSS
 .ab-block-post-grid .ab-post-grid-items h2 a:hover {
-	color: {$appearance['default-link-color']};
+	color: {$appearance['link-color']};
 }
 
 .site-container .wp-block-button .wp-block-button__link {
-	background-color: {$appearance['default-link-color']};
+	background-color: {$appearance['link-color']};
 }
 
 .wp-block-button .wp-block-button__link:not(.has-background),
 .wp-block-button .wp-block-button__link:not(.has-background):focus,
 .wp-block-button .wp-block-button__link:not(.has-background):hover {
-	color: {$appearance['default-button-color']};
+	color: {$appearance['button-color']};
 }
 
 .site-container .wp-block-button.is-style-outline .wp-block-button__link {
-	color: {$appearance['default-button-bg']};
+	color: {$appearance['button-bg']};
 }
 
 .site-container .wp-block-button.is-style-outline .wp-block-button__link:focus,
 .site-container .wp-block-button.is-style-outline .wp-block-button__link:hover {
-	color: {$appearance['default-button-outline-hover']};
+	color: {$appearance['button-outline-hover']};
 }
 CSS;
 
@@ -66,22 +66,22 @@ function genesis_sample_custom_gutenberg_admin_css() {
 	$css = <<<CSS
 .ab-block-post-grid .ab-post-grid-items h2 a:hover,
 .block-editor__container .editor-block-list__block a {
-	color: {$appearance['default-link-color']};
+	color: {$appearance['link-color']};
 }
 
 .editor-styles-wrapper .editor-rich-text .button,
 .editor-styles-wrapper .wp-block-button .wp-block-button__link:not(.has-background) {
-	background-color: {$appearance['default-button-bg']};
-	color: {$appearance['default-button-color']};
+	background-color: {$appearance['button-bg']};
+	color: {$appearance['button-color']};
 }
 
 .editor-styles-wrapper .wp-block-button.is-style-outline .wp-block-button__link {
-	color: {$appearance['default-button-bg']};
+	color: {$appearance['button-bg']};
 }
 
 .editor-styles-wrapper .wp-block-button.is-style-outline .wp-block-button__link:focus,
 .editor-styles-wrapper .wp-block-button.is-style-outline .wp-block-button__link:hover {
-	color: {$appearance['default-button-outline-hover']};
+	color: {$appearance['button-outline-hover']};
 }
 CSS;
 
