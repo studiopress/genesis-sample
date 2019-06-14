@@ -26,7 +26,8 @@
 	},
 	"scripts": {
 		"install-codestandards": "Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run",
-		"phpcs": "phpcs"
+		"phpcs": "phpcs",
+		"phpcbf": "phpcbf"
 	},
 	"support": {
 		"issues": "https://github.com/studiopress/genesis-sample/issues",
