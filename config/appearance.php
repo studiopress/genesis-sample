@@ -18,6 +18,11 @@ $genesis_sample_link_color = get_theme_mod(
 	$genesis_sample_default_colors['link']
 );
 
+$genesis_sample_accent_color = get_theme_mod(
+	'genesis_sample_accent_color',
+	$genesis_sample_default_colors['accent']
+);
+
 $genesis_sample_link_color_contrast   = genesis_sample_color_contrast( $genesis_sample_link_color );
 $genesis_sample_link_color_brightness = genesis_sample_color_brightness( $genesis_sample_link_color, 35 );
 
@@ -38,10 +43,7 @@ return array(
 		array(
 			'name'  => __( 'Accent color', 'genesis-sample' ),
 			'slug'  => 'theme-secondary',
-			'color' => get_theme_mod(
-				'genesis_sample_accent_color',
-				$genesis_sample_default_colors['accent']
-			),
+			'color' => $genesis_sample_accent_color,
 		),
 	),
 	'editor-font-sizes'            => array(
