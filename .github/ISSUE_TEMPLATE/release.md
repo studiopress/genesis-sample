@@ -10,7 +10,7 @@ assignees: ''
 **Update version**
 - [ ] style.css
 - [ ] package.json
-- [ ] .pot file (regenerate)
+- [ ] .pot file (`npm install` then `npm run makepot`)
 - [ ] Changelog (include changes)
 
 **Check standards**

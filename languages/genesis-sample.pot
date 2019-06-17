@@ -2,9 +2,9 @@
 # This file is distributed under the GPL-2.0-or-later.=!>
 msgid ""
 msgstr ""
-"Project-Id-Version: Genesis Sample 2.10.0\n"
+"Project-Id-Version: Genesis Sample 3.0.0\n"
 "Report-Msgid-Bugs-To: StudioPress <translations@studiopress.com>\n"
-"POT-Creation-Date: 2019-05-01 08:57:02+00:00\n"
+"POT-Creation-Date: 2019-06-17 13:33:45+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -23,36 +23,28 @@ msgstr ""
 "X-Poedit-Bookmarks: \n"
 "X-Textdomain-Support: yes\n"
 
-#: config/block-editor-settings.php:24
+#: config/appearance.php:39
 msgid "Custom color"
 msgstr ""
 
-#: config/block-editor-settings.php:29
+#: config/appearance.php:44
 msgid "Accent color"
 msgstr ""
 
-#: config/block-editor-settings.php:36
+#: config/appearance.php:51
 msgid "Small"
 msgstr ""
 
-#: config/block-editor-settings.php:41
+#: config/appearance.php:56
 msgid "Normal"
 msgstr ""
 
-#: config/block-editor-settings.php:46
+#: config/appearance.php:61
 msgid "Large"
 msgstr ""
 
-#: config/block-editor-settings.php:51
+#: config/appearance.php:66
 msgid "Larger"
-msgstr ""
-
-#: config/menus.php:15
-msgid "Header Menu"
-msgstr ""
-
-#: config/menus.php:16
-msgid "Footer Menu"
 msgstr ""
 
 #: config/onboarding.php:17
@@ -71,39 +63,39 @@ msgstr ""
 msgid "WPForms Lite (Third Party)"
 msgstr ""
 
-#: functions.php:113
-msgid "Menu"
+#: config/theme-supports.php:36
+msgid "Header Menu"
 msgstr ""
 
-#: functions.php:115
-msgid "Submenu"
+#: config/theme-supports.php:37
+msgid "Footer Menu"
 msgstr ""
 
-#: lib/customize.php:36
+#: lib/customize.php:38
 msgid ""
 "Change the color of post info links and button blocks, the hover color of "
 "linked titles and menu items, and more."
 msgstr ""
 
-#: lib/customize.php:37
+#: lib/customize.php:39
 msgid "Link Color"
 msgstr ""
 
-#: lib/customize.php:57
+#: lib/customize.php:59
 msgid ""
 "Change the default hover color for button links, menu buttons, and submit "
 "buttons. The button block uses the Link Color."
 msgstr ""
 
-#: lib/customize.php:58
+#: lib/customize.php:60
 msgid "Accent Color"
 msgstr ""
 
-#: lib/customize.php:77
+#: lib/customize.php:79
 msgid "Logo Width"
 msgstr ""
 
-#: lib/customize.php:78
+#: lib/customize.php:80
 msgid "The maximum width of the logo in pixels."
 msgstr ""
 
@@ -133,7 +125,7 @@ msgstr ""
 msgid "Next Page"
 msgstr ""
 
-#: lib/wpforms.php:43
+#: lib/wpforms.php:55
 msgid "Simple Contact Form"
 msgstr ""
 
