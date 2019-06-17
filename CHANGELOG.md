@@ -139,11 +139,14 @@ Requires Genesis 2.8.0+.
 * Set localization.
 * Update XML file.
 
-[3.0.0]: https://github.com/copyblogger/genesis-sample/compare/2.8.0...3.0.0
-[2.8.0]: https://github.com/copyblogger/genesis-sample/compare/2.7.1...2.8.0
-[2.7.1]: https://github.com/copyblogger/genesis-sample/compare/2.7.0...2.7.1
-[2.7.0]: https://github.com/copyblogger/genesis-sample/compare/2.6.0...2.7.0
-[2.6.0]: https://github.com/copyblogger/genesis-sample/compare/2.3.0...2.6.0
-[2.3.0]: https://github.com/copyblogger/genesis-sample/compare/2.2.4...2.3.0
-[2.2.4]: https://github.com/copyblogger/genesis-sample/compare/2.2.3...2.2.4
-[2.2.3]: https://github.com/copyblogger/genesis-sample/compare/014deb3689323b7bbd4ddbfff4f5f9279a38f741...2.2.3
+[3.0.0]: https://github.com/studiopress/genesis-sample/compare/2.10.0...3.0.0
+[2.10.0]: https://github.com/studiopress/genesis-sample/compare/2.9.1...2.10.0
+[2.9.1]: https://github.com/studiopress/genesis-sample/compare/2.9.0...2.9.1
+[2.9.0]: https://github.com/studiopress/genesis-sample/compare/2.8.0...2.9.0
+[2.8.0]: https://github.com/studiopress/genesis-sample/compare/2.7.1...2.8.0
+[2.7.1]: https://github.com/studiopress/genesis-sample/compare/2.7.0...2.7.1
+[2.7.0]: https://github.com/studiopress/genesis-sample/compare/2.6.0...2.7.0
+[2.6.0]: https://github.com/studiopress/genesis-sample/compare/2.3.0...2.6.0
+[2.3.0]: https://github.com/studiopress/genesis-sample/compare/2.2.4...2.3.0
+[2.2.4]: https://github.com/studiopress/genesis-sample/compare/2.2.3...2.2.4
+[2.2.3]: https://github.com/studiopress/genesis-sample/compare/014deb3689323b7bbd4ddbfff4f5f9279a38f741...2.2.3
