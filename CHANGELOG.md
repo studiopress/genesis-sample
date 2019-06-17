@@ -139,6 +139,7 @@ Requires Genesis 2.8.0+.
 * Set localization.
 * Update XML file.
 
+[3.0.0]: https://github.com/copyblogger/genesis-sample/compare/2.8.0...3.0.0
 [2.8.0]: https://github.com/copyblogger/genesis-sample/compare/2.7.1...2.8.0
 [2.7.1]: https://github.com/copyblogger/genesis-sample/compare/2.7.0...2.7.1
 [2.7.0]: https://github.com/copyblogger/genesis-sample/compare/2.6.0...2.7.0
