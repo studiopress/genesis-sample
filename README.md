@@ -25,6 +25,8 @@ The version of [Genesis Sample on GitHub](https://github.com/studiopress/genesis
 
 You'll see output highlighting issues with PHP files that do not conform to Genesis Sample coding standards.
 
+Run `composer phpcbf` if you see “phpcbf can fix the x marked sniff violations automatically” in the output of `composer phpcs`.
+
 ### npm scripts
 
 Scripts are also provided to help with CSS linting, CSS autoprefixing, and creation of pot language files. To use them:

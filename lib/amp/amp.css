@@ -1,0 +1,64 @@
+/*
+Genesis AMP styling.
+This currently loads only on AMP pages.
+*/
+
+/* Reveals the submenu upon parent hover.
+--------------------------------------------- */
+.genesis-nav-menu .menu-item .sub-menu {
+	display: block;
+	transform: scaleY(0);
+	transform-origin: top;
+	transition: transform 0.5s ease 0.2s;
+}
+
+.genesis-responsive-menu .genesis-nav-menu .menu-item:hover > .sub-menu {
+	display: block;
+	transform: scaleY(1);
+}
+
+/* Reveals the submenu upon tabbing with keyboard.
+--------------------------------------------- */
+
+/*
+ * :focus-within needs its own selector.
+ * Why? If the event a browser does not recognize this pseudo-class, only this
+ * selector and its declarations are ignored. Isolating it ensures the submenu
+ * animation works on :hover.
+ */
+.menu .menu-item:focus-within > .sub-menu {
+	transform: scaleY(1);
+	left: auto;
+	opacity: 1;
+}
+
+/* Overrides for different breakpoint to follow non-AMP implementation. */
+@media only screen and (max-width: 959px) {
+
+	.genesis-responsive-menu {
+		display: block;
+		position: absolute;
+		left: -9999px;
+		opacity: 0;
+		transform: scaleY(0);
+		transform-origin: top;
+		transition: transform 0.2s ease;
+	}
+
+	.genesis-responsive-menu.toggled-on {
+		opacity: 1;
+		position: relative;
+		left: auto;
+		transform: scaleY(1);
+	}
+
+	.genesis-responsive-menu.toggled-on .menu-item .sub-menu,
+	.genesis-responsive-menu.toggled-on .menu-item:hover > .sub-menu {
+		display: none;
+	}
+
+	.genesis-responsive-menu.toggled-on .sub-menu-toggle.toggled-on + .sub-menu {
+		display: block;
+		transform: scaleY(1);
+	}
+}

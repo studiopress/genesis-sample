@@ -20,10 +20,12 @@ add_action( 'customize_register', 'genesis_sample_customizer_register' );
  */
 function genesis_sample_customizer_register( $wp_customize ) {
 
+	$appearance = genesis_get_config( 'appearance' );
+
 	$wp_customize->add_setting(
 		'genesis_sample_link_color',
 		array(
-			'default'           => genesis_sample_customizer_get_default_link_color(),
+			'default'           => $appearance['default-colors']['link'],
 			'sanitize_callback' => 'sanitize_hex_color',
 		)
 	);
@@ -44,7 +46,7 @@ function genesis_sample_customizer_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'genesis_sample_accent_color',
 		array(
-			'default'           => genesis_sample_customizer_get_default_accent_color(),
+			'default'           => $appearance['default-colors']['accent'],
 			'sanitize_callback' => 'sanitize_hex_color',
 		)
 	);

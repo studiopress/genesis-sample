@@ -9,9 +9,15 @@
  */
 
 /**
- * Supported Genesis navigation menus.
+ * Genesis responsive menus settings. (Requires Genesis 3.0+.)
  */
 return array(
-	'primary'   => __( 'Header Menu', 'genesis-sample' ),
-	'secondary' => __( 'Footer Menu', 'genesis-sample' ),
+	'script' => array(
+		'menuClasses' => array(
+			'others' => array( '.nav-primary' ),
+		),
+	),
+	'extras' => array(
+		'media_query_width' => '960px',
+	),
 );

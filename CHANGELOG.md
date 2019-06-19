@@ -1,5 +1,28 @@
 # Genesis Sample Theme Changelog
 
+## [3.0.0] - 2019-06-19
+Requires Genesis 3.0.0+.
+
+### Added
+* AMP support. (Optional, off by default, requires Genesis 3.0.0 and the [AMP plugin](https://wordpress.org/plugins/amp/).)
+* New `composer run phpcbf` command to fix simple PHP linting violations. ([GitHub version](https://github.com/studiopress/genesis-sample/) only.)
+
+### Changed
+* Use `position: sticky` for the header and remove JavaScript that adjusted header height and content position. This prevents content reflow after page load.
+* Reorganized config folder for easier reading and maintenance.
+* Use new `genesis_get_theme_handle()` and `genesis_get_theme_version()` functions from Genesis 3.0.0 in place of declaring `CHILD_THEME_HANDLE` and `CHILD_THEME_VERSION` constants.
+* Update developer dependencies.
+
+### Fixed
+* Improved block column CSS for WordPress 5.2+.
+
+### Removed
+* Responsive menu scripts have been replaced with `genesis_register_responsive_menus()`, which loads required JavaScript from Genesis 3.0.0.
+* `genesis-responsive-viewport` theme support declaration. This is now added by default in Genesis 3.0.0.
+* Deleted Genesis nav extras filter and metabox removal. These are no longer present in Genesis 3.0.0.
+* `child-theme-settings-genesis.php` file and filter. Genesis 3.0.0 no longer includes a settings admin page or `genesis_theme_settings_defaults` filter. 
+* `404-page` accessibility support, as this no longer has an effect.
+
 ## [2.10.0] - 2019-05-01
 Requires Genesis 2.10.0+.
 
@@ -116,10 +139,14 @@ Requires Genesis 2.8.0+.
 * Set localization.
 * Update XML file.
 
-[2.8.0]: https://github.com/copyblogger/genesis-sample/compare/2.7.1...2.8.0
-[2.7.1]: https://github.com/copyblogger/genesis-sample/compare/2.7.0...2.7.1
-[2.7.0]: https://github.com/copyblogger/genesis-sample/compare/2.6.0...2.7.0
-[2.6.0]: https://github.com/copyblogger/genesis-sample/compare/2.3.0...2.6.0
-[2.3.0]: https://github.com/copyblogger/genesis-sample/compare/2.2.4...2.3.0
-[2.2.4]: https://github.com/copyblogger/genesis-sample/compare/2.2.3...2.2.4
-[2.2.3]: https://github.com/copyblogger/genesis-sample/compare/014deb3689323b7bbd4ddbfff4f5f9279a38f741...2.2.3
+[3.0.0]: https://github.com/studiopress/genesis-sample/compare/2.10.0...3.0.0
+[2.10.0]: https://github.com/studiopress/genesis-sample/compare/2.9.1...2.10.0
+[2.9.1]: https://github.com/studiopress/genesis-sample/compare/2.9.0...2.9.1
+[2.9.0]: https://github.com/studiopress/genesis-sample/compare/2.8.0...2.9.0
+[2.8.0]: https://github.com/studiopress/genesis-sample/compare/2.7.1...2.8.0
+[2.7.1]: https://github.com/studiopress/genesis-sample/compare/2.7.0...2.7.1
+[2.7.0]: https://github.com/studiopress/genesis-sample/compare/2.6.0...2.7.0
+[2.6.0]: https://github.com/studiopress/genesis-sample/compare/2.3.0...2.6.0
+[2.3.0]: https://github.com/studiopress/genesis-sample/compare/2.2.4...2.3.0
+[2.2.4]: https://github.com/studiopress/genesis-sample/compare/2.2.3...2.2.4
+[2.2.3]: https://github.com/studiopress/genesis-sample/compare/014deb3689323b7bbd4ddbfff4f5f9279a38f741...2.2.3
