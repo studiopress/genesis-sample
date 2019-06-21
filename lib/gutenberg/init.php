@@ -17,7 +17,7 @@ add_action( 'wp_enqueue_scripts', 'genesis_sample_enqueue_gutenberg_frontend_sty
 function genesis_sample_enqueue_gutenberg_frontend_styles() {
 
 	wp_enqueue_style(
-		'genesis-sample-gutenberg',
+		genesis_get_theme_handle() . '-gutenberg',
 		get_stylesheet_directory_uri() . '/lib/gutenberg/front-end.css',
 		array( genesis_get_theme_handle() ),
 		genesis_get_theme_version()
