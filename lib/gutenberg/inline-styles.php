@@ -85,7 +85,7 @@ function genesis_sample_custom_gutenberg_admin_css() {
 }
 CSS;
 
-	wp_add_inline_style( 'genesis-sample-gutenberg-fonts', $css );
+	wp_add_inline_style( genesis_get_theme_handle() . '-gutenberg-fonts', $css );
 
 }
 
