@@ -37,8 +37,9 @@ const excludes = [
 ];
 
 // Creates a file to stream archive data to.
-// Uses the name in package.json, such as 'child-theme.zip'.
-let output = fs.createWriteStream(`${process.env.npm_package_name}.zip`);
+// Uses the name in package.json, such as 'child-theme.1.1.0.zip'.
+let fileName = `${process.env.npm_package_name}.${process.env.npm_package_theme_version}.zip`;
+let output = fs.createWriteStream(fileName);
 
 let archive = archiver("zip", {
 	zlib: { level: 9 } // Best compression.
@@ -53,7 +54,7 @@ const setupZipArchive = function() {
 	output.on("close", function() {
 		let fileSize = prettyBytes(archive.pointer());
 		console.log(
-			chalk`{cyan Created ${process.env.npm_package_name}.zip, ${fileSize}}`
+			chalk`{cyan Created ${fileName}, ${fileSize}}`
 		);
 
 		renameTxtFilesToMarkdown();
