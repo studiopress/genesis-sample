@@ -1,5 +1,8 @@
 # Genesis Sample Theme Changelog
 
+## [3.0.1] - 2019-06-25
+* Use current theme name instead of 'genesis-sample' when enqueueing assets. This ensures assets continue to load if the theme is renamed.
+
 ## [3.0.0] - 2019-06-19
 Requires Genesis 3.0.0+.
 
@@ -139,6 +142,7 @@ Requires Genesis 2.8.0+.
 * Set localization.
 * Update XML file.
 
+[3.0.1]: https://github.com/studiopress/genesis-sample/compare/3.0.0...3.0.1
 [3.0.0]: https://github.com/studiopress/genesis-sample/compare/2.10.0...3.0.0
 [2.10.0]: https://github.com/studiopress/genesis-sample/compare/2.9.1...2.10.0
 [2.9.1]: https://github.com/studiopress/genesis-sample/compare/2.9.0...2.9.1
