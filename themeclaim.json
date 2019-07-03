@@ -2,10 +2,9 @@
   "from": {
     "Name": "Genesis Sample",
     "Description": "This is the sample theme created for the Genesis Framework.",
-    "Namespace": "",
+    "Namespace": "Genesis Sample",
     "Uri": "https://demo.studiopress.com/",
     "Author": "StudioPress",
-    "AuthorEmail": "",
     "AuthorUri": "https://www.studiopress.com/"
   }
 }
