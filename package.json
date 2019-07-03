@@ -18,7 +18,8 @@
 		"pretty-bytes": "^5.2.0",
 		"recursive-readdir": "^2.2.2",
 		"stylelint": "^9.10.1",
-		"stylelint-config-wordpress": "^13.1.0"
+		"stylelint-config-wordpress": "^13.1.0",
+		"theme-claim": "^0.2.0"
 	},
 	"scripts": {
 		"autoprefixer": "postcss style.css lib/**/*.css --use autoprefixer --replace --no-map --verbose",
@@ -26,7 +27,8 @@
 		"lint:css": "stylelint \"style.css\" \"lib/gutenberg/*.css\" \"lib/woocommerce/*.css\" \"lib/amp/*.css\"",
 		"lint:js": "eslint .",
 		"fix:js": "eslint . --fix",
-		"zip": "node .scripts/makezip.js"
+		"zip": "node .scripts/makezip.js",
+		"rename": "theme-claim"
 	},
 	"browserslist": [
 		"> 1%",
@@ -51,6 +53,5 @@
 		"license": "GPL-2.0-or-later",
 		"licenseuri": "https://www.gnu.org/licenses/gpl-2.0.html",
 		"textdomain": "genesis-sample"
-	},
-	"dependencies": {}
+	}
 }
