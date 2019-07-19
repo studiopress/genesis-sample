@@ -45,7 +45,7 @@
 	"theme": {
 		"name": "Genesis Sample",
 		"uri": "https://demo.studiopress.com/genesis-sample/",
-		"description": "The sample child theme for the Genesis Framework.",
+		"description": "This is the sample theme created for the Genesis Framework.",
 		"author": "StudioPress",
 		"authoruri": "https://www.studiopress.com/",
 		"version": "3.0.1",
