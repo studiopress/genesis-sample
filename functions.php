@@ -109,30 +109,6 @@ function genesis_sample_theme_support() {
 
 }
 
-add_filter( 'genesis_seo_title', 'genesis_sample_header_title', 10, 3 );
-/**
- * Removes the link from the hidden site title if a custom logo is in use.
- *
- * Without this filter, the site title is hidden with CSS when a custom logo
- * is in use, but the link it contains is still accessible by keyboard.
- *
- * @since 1.2.0
- *
- * @param string $title  The full title.
- * @param string $inside The content inside the title element.
- * @param string $wrap   The wrapping element name, such as h1.
- * @return string The site title with anchor removed if a custom logo is active.
- */
-function genesis_sample_header_title( $title, $inside, $wrap ) {
-
-	if ( has_custom_logo() ) {
-		$inside = get_bloginfo( 'name' );
-	}
-
-	return sprintf( '<%1$s class="site-title">%2$s</%1$s>', $wrap, $inside );
-
-}
-
 // Adds image sizes.
 add_image_size( 'sidebar-featured', 75, 75, true );
 
@@ -158,14 +134,10 @@ add_filter( 'genesis_customizer_theme_settings_config', 'genesis_sample_remove_c
  */
 function genesis_sample_remove_customizer_settings( $config ) {
 
-	unset( $config['genesis']['sections']['genesis_header'] );
 	unset( $config['genesis']['sections']['genesis_breadcrumbs']['controls']['breadcrumb_front_page'] );
 	return $config;
 
 }
-
-// Displays custom logo.
-add_action( 'genesis_site_title', 'the_custom_logo', 0 );
 
 // Repositions primary navigation menu.
 remove_action( 'genesis_after_header', 'genesis_do_nav' );
