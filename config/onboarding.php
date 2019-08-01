@@ -10,133 +10,69 @@
  * @link    https://www.studiopress.com/
  */
 
+$genesis_sample_shared_content = genesis_get_config( 'onboarding-shared' );
+
 return array(
-	'dependencies'     => array(
-		'plugins' => array(
-			array(
-				'name'       => __( 'Atomic Blocks', 'genesis-sample' ),
-				'slug'       => 'atomic-blocks/atomicblocks.php',
-				'public_url' => 'https://atomicblocks.com/',
-			),
-			array(
-				'name'       => __( 'Simple Social Icons', 'genesis-sample' ),
-				'slug'       => 'simple-social-icons/simple-social-icons.php',
-				'public_url' => 'https://wordpress.org/plugins/simple-social-icons/',
-			),
-			array(
-				'name'       => __( 'Genesis eNews Extended (Third Party)', 'genesis-sample' ),
-				'slug'       => 'genesis-enews-extended/plugin.php',
-				'public_url' => 'https://wordpress.org/plugins/genesis-enews-extended/',
-			),
-			array(
-				'name'       => __( 'WPForms Lite (Third Party)', 'genesis-sample' ),
-				'slug'       => 'wpforms-lite/wpforms.php',
-				'public_url' => 'https://wordpress.org/plugins/wpforms-lite/',
-			),
-		),
-	),
-	'content'          => array(
-		'homepage' => array(
-			'post_title'     => 'Homepage',
-			'post_content'   => require dirname( __FILE__ ) . '/import/content/homepage.php',
-			'post_type'      => 'page',
-			'post_status'    => 'publish',
-			'comment_status' => 'closed',
-			'ping_status'    => 'closed',
-			'meta_input'     => array(
-				'_genesis_layout'           => 'full-width-content',
-				'_genesis_hide_title'       => true,
-				'_genesis_hide_breadcrumbs' => true,
-			),
-		),
-		'blocks'   => array(
-			'post_title'     => 'Block Content Examples',
-			'post_content'   => require dirname( __FILE__ ) . '/import/content/block-examples.php',
-			'post_type'      => 'page',
-			'post_status'    => 'publish',
-			'comment_status' => 'closed',
-			'ping_status'    => 'closed',
-			'meta_input'     => array( '_genesis_layout' => 'full-width-content' ),
-		),
-		'about'    => array(
-			'post_title'     => 'About Us',
-			'post_content'   => require dirname( __FILE__ ) . '/import/content/about.php',
-			'post_type'      => 'page',
-			'post_status'    => 'publish',
-			'featured_image' => CHILD_URL . '/config/import/images/about.jpg',
-			'comment_status' => 'closed',
-			'ping_status'    => 'closed',
-			'meta_input'     => array( '_genesis_layout' => 'full-width-content' ),
-		),
-		'contact'  => array(
-			'post_title'     => 'Contact Us',
-			'post_content'   => require dirname( __FILE__ ) . '/import/content/contact.php',
-			'post_type'      => 'page',
-			'post_status'    => 'publish',
-			'comment_status' => 'closed',
-			'ping_status'    => 'closed',
-		),
-		'landing'  => array(
-			'post_title'     => 'Landing Page',
-			'post_content'   => require dirname( __FILE__ ) . '/import/content/landing-page.php',
-			'post_type'      => 'page',
-			'post_status'    => 'publish',
-			'page_template'  => 'page-templates/landing.php',
-			'comment_status' => 'closed',
-			'ping_status'    => 'closed',
-		),
-	),
-	'navigation_menus' => array(
-		'primary' => array(
-			'homepage' => array(
-				'title' => 'Home',
-			),
-			'about'    => array(
-				'title' => 'About Us',
-			),
-			'contact'  => array(
-				'title' => 'Contact Us',
-			),
-			'blocks'   => array(
-				'title' => 'Block Examples',
-			),
-			'landing'  => array(
-				'title' => 'Landing Page',
-			),
-		),
-	),
-	'widgets'          => array(
-		'footer-1' => array(
-			array(
-				'type' => 'text',
-				'args' => array(
-					'title'  => 'Design',
-					'text'   => '<p>With an emphasis on typography, white space, and mobile-optimized design, your website will look absolutely breathtaking.</p><p><a href="#">Learn more about design</a>.</p>',
-					'filter' => 1,
-					'visual' => 1,
+	'starter_packs' => array(
+		'black-white' => array(
+			'title'       => __( 'Black & White', 'genesis-sample' ),
+			'description' => __( 'A pack with a homepage designed with black and white images.', 'genesis-sample' ),
+			'thumbnail'   => get_stylesheet_directory_uri() . '/config/import/images/thumbnails/home-black-white.jpg',
+			'demo_url'    => 'https://demo.studiopress.com/genesis-sample/',
+			'config'      => array(
+				'dependencies'     => array(
+					'plugins' => $genesis_sample_shared_content['plugins'],
 				),
+				'content'          => array_merge(
+					array(
+						'homepage' => array(
+							'post_title'     => 'Homepage',
+							'post_content'   => require dirname( __FILE__ ) . '/import/content/home-black-white.php',
+							'post_type'      => 'page',
+							'post_status'    => 'publish',
+							'comment_status' => 'closed',
+							'ping_status'    => 'closed',
+							'meta_input'     => array(
+								'_genesis_layout'     => 'full-width-content',
+								'_genesis_hide_title' => true,
+								'_genesis_hide_breadcrumbs' => true,
+							),
+						),
+					),
+					$genesis_sample_shared_content['content']
+				),
+				'navigation_menus' => $genesis_sample_shared_content['navigation_menus'],
 			),
 		),
-		'footer-2' => array(
-			array(
-				'type' => 'text',
-				'args' => array(
-					'title'  => 'Content',
-					'text'   => '<p>Our team will teach you the art of writing audience-focused content that will help you achieve the success you truly deserve.</p><p><a href="#">Learn more about content</a>.</p>',
-					'filter' => 1,
-					'visual' => 1,
+		'color'       => array(
+			'title'       => __( 'Color', 'genesis-sample' ),
+			'description' => __( 'A pack with a homepage designed with color images.', 'genesis-sample' ),
+			'thumbnail'   => get_stylesheet_directory_uri() . '/config/import/images/thumbnails/home-color.jpg',
+			'demo_url'    => 'https://demo.studiopress.com/genesis-sample/home-color/',
+			'config'      => array(
+				'dependencies'     => array(
+					'plugins' => $genesis_sample_shared_content['plugins'],
 				),
-			),
-		),
-		'footer-3' => array(
-			array(
-				'type' => 'text',
-				'args' => array(
-					'title'  => 'Strategy',
-					'text'   => '<p>We help creative entrepreneurs build their digital business by focusing on three key elements of a successful online platform.</p><p><a href="#">Learn more about strategy</a>.</p>',
-					'filter' => 1,
-					'visual' => 1,
+				'content'          => array_merge(
+					array(
+						'homepage' => array(
+							'post_title'     => 'Homepage',
+							'post_content'   => require dirname( __FILE__ ) . '/import/content/home-color.php',
+							'post_type'      => 'page',
+							'post_status'    => 'publish',
+							'comment_status' => 'closed',
+							'ping_status'    => 'closed',
+							'meta_input'     => array(
+								'_genesis_layout'     => 'full-width-content',
+								'_genesis_hide_title' => true,
+								'_genesis_hide_breadcrumbs' => true,
+							),
+						),
+					),
+					$genesis_sample_shared_content['content']
 				),
+				'navigation_menus' => $genesis_sample_shared_content['navigation_menus'],
+				'widgets'          => $genesis_sample_shared_content['widgets'],
 			),
 		),
 	),
