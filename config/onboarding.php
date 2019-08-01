@@ -43,7 +43,7 @@ return array(
 			'post_status'    => 'publish',
 			'comment_status' => 'closed',
 			'ping_status'    => 'closed',
-			'meta_input'     => array( 
+			'meta_input'     => array(
 				'_genesis_layout'           => 'full-width-content',
 				'_genesis_hide_title'       => true,
 				'_genesis_hide_breadcrumbs' => true,
