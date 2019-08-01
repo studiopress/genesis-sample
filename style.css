@@ -647,6 +647,10 @@ th:last-child {
 	padding-bottom: 10px;
 }
 
+.genesis-title-hidden .breadcrumb {
+	margin-top: 40px;
+}
+
 .archive-description p:last-child,
 .author-box p:last-child {
 	margin-bottom: 0;
@@ -710,6 +714,10 @@ th:last-child {
 	font-size: 18px;
 	font-weight: 600;
 	margin-bottom: 20px;
+}
+
+.genesis-title-hidden .site-inner {
+	padding-top: 0;
 }
 
 /* WordPress
