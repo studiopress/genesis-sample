@@ -41,9 +41,13 @@ return array(
 			'post_content'   => require dirname( __FILE__ ) . '/import/content/homepage.php',
 			'post_type'      => 'page',
 			'post_status'    => 'publish',
-			'page_template'  => 'page-templates/blocks.php',
 			'comment_status' => 'closed',
 			'ping_status'    => 'closed',
+			'meta_input'     => array( 
+				'_genesis_layout'           => 'full-width-content',
+				'_genesis_hide_title'       => true,
+				'_genesis_hide_breadcrumbs' => true,
+			),
 		),
 		'blocks'   => array(
 			'post_title'     => 'Block Content Examples',
