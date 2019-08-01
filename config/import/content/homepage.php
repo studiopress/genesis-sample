@@ -10,6 +10,7 @@
  * @link    https://www.studiopress.com/
  */
 
+// Photo by Rohit Tandon on Unsplash: https://unsplash.com/photos/9wg5jCEPBsw.
 $genesis_sample_homepage_header_image_url = CHILD_URL . '/config/import/images/mountain-bw.jpg';
 
 // Photo by Haley Powers on Unsplash: https://unsplash.com/photos/rjhvXX7JBPc.
