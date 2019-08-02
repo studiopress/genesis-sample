@@ -123,22 +123,6 @@ genesis_unregister_layout( 'content-sidebar-sidebar' );
 genesis_unregister_layout( 'sidebar-content-sidebar' );
 genesis_unregister_layout( 'sidebar-sidebar-content' );
 
-add_filter( 'genesis_customizer_theme_settings_config', 'genesis_sample_remove_customizer_settings' );
-/**
- * Removes output of header and front page breadcrumb settings in the Customizer.
- *
- * @since 2.6.0
- *
- * @param array $config Original Customizer items.
- * @return array Filtered Customizer items.
- */
-function genesis_sample_remove_customizer_settings( $config ) {
-
-	unset( $config['genesis']['sections']['genesis_breadcrumbs']['controls']['breadcrumb_front_page'] );
-	return $config;
-
-}
-
 // Repositions primary navigation menu.
 remove_action( 'genesis_after_header', 'genesis_do_nav' );
 add_action( 'genesis_header', 'genesis_do_nav', 12 );

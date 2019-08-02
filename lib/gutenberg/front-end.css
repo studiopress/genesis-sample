@@ -373,18 +373,6 @@ hr.wp-block-separator {
 
 }
 
-/* Page Templates
----------------------------------------------------------------------------- */
-
-.page-template-blocks .site-inner {
-	padding-top: 0;
-}
-
-.page-template-blocks .post-edit-link {
-	display: block;
-	text-align: center;
-}
-
 /* Media Queries
 ---------------------------------------------------------------------------- */
 
