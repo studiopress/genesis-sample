@@ -42,6 +42,7 @@ return array(
 					$genesis_sample_shared_content['content']
 				),
 				'navigation_menus' => $genesis_sample_shared_content['navigation_menus'],
+				'widgets'          => $genesis_sample_shared_content['widgets'],
 			),
 		),
 		'color'       => array(
