@@ -1,6 +1,6 @@
 <?php
 /**
- * Genesis sample.
+ * Genesis Sample.
  *
  * Landing page content optionally installed after theme activation.
  *
