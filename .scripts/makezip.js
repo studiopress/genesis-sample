@@ -16,6 +16,7 @@ const recursive = require("recursive-readdir");
 const prettyBytes = require("pretty-bytes");
 
 const excludes = [
+	".circleci",
 	".DS_Store",
 	".editorconfig",
 	".eslintignore",
@@ -38,7 +39,9 @@ const excludes = [
 
 // Creates a file to stream archive data to.
 // Uses the name in package.json, such as 'child-theme.1.1.0.zip'.
-let fileName = `${process.env.npm_package_name}.${process.env.npm_package_theme_version}.zip`;
+let fileName = `${process.env.npm_package_name}.${
+	process.env.npm_package_theme_version
+}.zip`;
 let output = fs.createWriteStream(fileName);
 
 let archive = archiver("zip", {
@@ -53,9 +56,7 @@ const setupZipArchive = function() {
 	// Report the zip name and size, and rename *.txt files back to *.md again.
 	output.on("close", function() {
 		let fileSize = prettyBytes(archive.pointer());
-		console.log(
-			chalk`{cyan Created ${fileName}, ${fileSize}}`
-		);
+		console.log(chalk`{cyan Created ${fileName}, ${fileSize}}`);
 
 		renameTxtFilesToMarkdown();
 	});

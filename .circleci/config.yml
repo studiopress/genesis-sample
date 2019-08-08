@@ -1,0 +1,22 @@
+version: 2.1
+jobs:
+  standards:
+    docker:
+      - image: circleci/php:7.3.3-stretch-node-browsers
+    steps:
+      - checkout
+      - install-dependencies
+      - run: composer phpcs
+      - run: npm run lint:css
+      - run: npm run lint:js
+commands:
+  install-dependencies:
+    description: "Install development dependencies."
+    steps:
+      - run: composer install
+      - run: npm ci
+workflows:
+  version: 2
+  check-standards:
+    jobs:
+      - standards
