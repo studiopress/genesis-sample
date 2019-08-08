@@ -10,11 +10,11 @@
  * @link    https://my.studiopress.com/themes/genesis-sample/
  */
 
-return array(
-	'post' => array(
+return [
+	'post' => [
 		'genesis-singular-images',
-	),
-	'page' => array(
+	],
+	'page' => [
 		'genesis-singular-images',
-	),
-);
+	],
+];
