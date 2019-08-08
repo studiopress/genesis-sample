@@ -30,12 +30,12 @@ add_filter( 'woocommerce_style_smallscreen_breakpoint', 'genesis_sample_woocomme
 function genesis_sample_woocommerce_breakpoint() {
 
 	$current = genesis_site_layout( false );
-	$layouts = array(
-		'one-sidebar' => array(
+	$layouts = [
+		'one-sidebar' => [
 			'content-sidebar',
 			'sidebar-content',
-		),
-	);
+		],
+	];
 
 	if ( in_array( $current, $layouts['one-sidebar'], true ) ) {
 		return '1200px';
@@ -142,11 +142,11 @@ add_filter( 'woocommerce_get_image_size_gallery_thumbnail', 'genesis_sample_gall
  */
 function genesis_sample_gallery_image_thumbnail( $size ) {
 
-	$size = array(
+	$size = [
 		'width'  => 180,
 		'height' => 180,
 		'crop'   => 1,
-	);
+	];
 
 	return $size;
 

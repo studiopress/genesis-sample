@@ -72,4 +72,7 @@
 		</properties>
 	</rule>
 
+	<!-- Check that PHP short array syntax is used. -->
+	<rule ref="Generic.Arrays.DisallowLongArraySyntax" />
+
 </ruleset>

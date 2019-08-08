@@ -74,7 +74,7 @@ function genesis_sample_enqueue_scripts_styles() {
 	wp_enqueue_style(
 		genesis_get_theme_handle() . '-fonts',
 		$appearance['fonts-url'],
-		array(),
+		[],
 		genesis_get_theme_version()
 	);
 
@@ -84,7 +84,7 @@ function genesis_sample_enqueue_scripts_styles() {
 		wp_enqueue_style(
 			genesis_get_theme_handle() . '-amp',
 			get_stylesheet_directory_uri() . '/lib/amp/amp.css',
-			array( genesis_get_theme_handle() ),
+			[ genesis_get_theme_handle() ],
 			genesis_get_theme_version()
 		);
 	}

@@ -11,13 +11,13 @@
 /**
  * Genesis responsive menus settings. (Requires Genesis 3.0+.)
  */
-return array(
-	'script' => array(
-		'menuClasses' => array(
-			'others' => array( '.nav-primary' ),
-		),
-	),
-	'extras' => array(
+return [
+	'script' => [
+		'menuClasses' => [
+			'others' => [ '.nav-primary' ],
+		],
+	],
+	'extras' => [
 		'media_query_width' => '960px',
-	),
-);
+	],
+];

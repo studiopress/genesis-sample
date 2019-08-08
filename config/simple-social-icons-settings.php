@@ -8,7 +8,7 @@
  * @link    https://www.studiopress.com/
  */
 
-return array(
+return [
 	'alignment'              => 'alignleft',
 	'background_color'       => '#f5f5f5',
 	'background_color_hover' => '#333333',
@@ -17,4 +17,4 @@ return array(
 	'icon_color'             => '#333333',
 	'icon_color_hover'       => '#ffffff',
 	'size'                   => 40,
-);
+];
