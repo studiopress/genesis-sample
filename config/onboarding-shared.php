@@ -54,7 +54,10 @@ return [
 			'featured_image' => CHILD_URL . '/config/import/images/about.jpg',
 			'comment_status' => 'closed',
 			'ping_status'    => 'closed',
-			'meta_input'     => [ '_genesis_layout' => 'full-width-content' ],
+			'meta_input'     => [
+				'_genesis_layout'              => 'full-width-content',
+				'_genesis_hide_singular_image' => true,
+			],
 		],
 		'contact' => [
 			'post_title'     => 'Contact Us',
@@ -72,6 +75,9 @@ return [
 			'page_template'  => 'page-templates/landing.php',
 			'comment_status' => 'closed',
 			'ping_status'    => 'closed',
+			'meta_input'     => [
+				'_genesis_hide_singular_image' => true,
+			],
 		],
 	],
 	'navigation_menus' => [
