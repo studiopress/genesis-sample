@@ -109,8 +109,27 @@ function genesis_sample_theme_support() {
 
 }
 
+add_action( 'after_setup_theme', 'genesis_sample_post_type_support', 9 );
+/**
+ * Add desired post type supports.
+ *
+ * See config file at `config/post-type-supports.php`.
+ *
+ * @since 3.0.0
+ */
+function genesis_sample_post_type_support() {
+
+	$post_type_supports = genesis_get_config( 'post-type-supports' );
+
+	foreach ( $post_type_supports as $post_type => $args ) {
+		add_post_type_support( $post_type, $args );
+	}
+
+}
+
 // Adds image sizes.
 add_image_size( 'sidebar-featured', 75, 75, true );
+add_image_size( 'genesis-singular-images', 702, 526, true );
 
 // Removes header right widget area.
 unregister_sidebar( 'header-right' );

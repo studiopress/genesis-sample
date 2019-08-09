@@ -749,7 +749,8 @@ a.alignright {
 }
 
 img.centered,
-.aligncenter {
+.aligncenter,
+.singular-image {
 	display: block;
 	margin: 0 auto 30px;
 }
