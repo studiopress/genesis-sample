@@ -43,9 +43,6 @@ function genesis_sample_dequeue_skip_links() {
 
 }
 
-// Forces full width content layout.
-add_filter( 'genesis_site_layout', '__genesis_return_full_width_content' );
-
 // Removes site header elements.
 remove_action( 'genesis_header', 'genesis_header_markup_open', 5 );
 remove_action( 'genesis_header', 'genesis_do_header' );
