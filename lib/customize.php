@@ -68,7 +68,7 @@ function genesis_sample_customizer_register( $wp_customize ) {
 		'genesis_sample_logo_width',
 		[
 			'default'           => 350,
-			'sanitize_callback' => 'absint',
+			'sanitize_callback' => 'genesis_sample_sanitize_min_logo_width',
 		]
 	);
 
@@ -89,4 +89,20 @@ function genesis_sample_customizer_register( $wp_customize ) {
 		]
 	);
 
+}
+
+/**
+ * Sanitizes logo width to clamp minimum to 100 or higher.
+ *
+ * @param int $width The current width.
+ * @return int The new width.
+ */
+function genesis_sample_sanitize_min_logo_width( $width ) {
+	$width = absint ( $width );
+
+	if ( $width < 100 ) {
+		$width = 100;
+	}
+
+	return $width;
 }
