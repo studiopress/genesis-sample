@@ -98,7 +98,7 @@ function genesis_sample_customizer_register( $wp_customize ) {
  * @return int The new width.
  */
 function genesis_sample_sanitize_min_logo_width( $width ) {
-	$width = absint ( $width );
+	$width = absint( $width );
 
 	if ( $width < 100 ) {
 		$width = 100;
