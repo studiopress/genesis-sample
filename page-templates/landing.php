@@ -51,9 +51,6 @@ remove_action( 'genesis_header', 'genesis_header_markup_close', 15 );
 // Removes navigation.
 remove_theme_support( 'genesis-menus' );
 
-// Removes breadcrumbs.
-remove_action( 'genesis_before_loop', 'genesis_do_breadcrumbs' );
-
 // Removes footer widgets.
 remove_action( 'genesis_before_footer', 'genesis_footer_widget_areas' );
 
