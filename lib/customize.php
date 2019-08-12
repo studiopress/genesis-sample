@@ -68,7 +68,8 @@ function genesis_sample_customizer_register( $wp_customize ) {
 		'genesis_sample_logo_width',
 		[
 			'default'           => 350,
-			'sanitize_callback' => 'genesis_sample_sanitize_min_logo_width',
+			'sanitize_callback' => 'absint',
+			'validate_callback' => 'genesis_sample_validate_logo_width',
 		]
 	);
 
@@ -92,17 +93,18 @@ function genesis_sample_customizer_register( $wp_customize ) {
 }
 
 /**
- * Sanitizes logo width to clamp minimum to 100 or higher.
+ * Displays a message if the entered width is not numeric or greater than 100.
  *
- * @param int $width The current width.
+ * @param object $validity The validity status.
+ * @param int    $width The width entered by the user.
  * @return int The new width.
  */
-function genesis_sample_sanitize_min_logo_width( $width ) {
-	$width = absint( $width );
-
-	if ( $width < 100 ) {
-		$width = 100;
+function genesis_sample_validate_logo_width( $validity, $width ) {
+	if ( empty( $width ) || ! is_numeric( $width ) ) {
+		$validity->add( 'required', __( 'You must supply a valid number.', 'genesis-sample' ) );
+	} elseif ( $value < 100 ) {
+		$validity->add( 'logo_too_small', __( 'The maximum logo width cannot be less than 100.', 'genesis-sample' ) );
 	}
 
-	return $width;
+	return $validity;
 }
