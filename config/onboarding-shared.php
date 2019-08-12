@@ -76,6 +76,8 @@ return [
 			'comment_status' => 'closed',
 			'ping_status'    => 'closed',
 			'meta_input'     => [
+				'_genesis_layout'              => 'full-width-content',
+				'_genesis_hide_breadcrumbs'    => true,
 				'_genesis_hide_singular_image' => true,
 			],
 		],

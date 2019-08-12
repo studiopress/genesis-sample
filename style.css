@@ -1582,8 +1582,7 @@ p.entry-meta {
 		float: right;
 	}
 
-	.full-width-content .content,
-	.landing-page .content {
+	.full-width-content .content {
 		float: none;
 		margin-left: auto;
 		margin-right: auto;
