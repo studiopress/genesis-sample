@@ -2,9 +2,9 @@
 # This file is distributed under the GPL-2.0-or-later.=!>
 msgid ""
 msgstr ""
-"Project-Id-Version: Genesis Sample 3.0.1\n"
+"Project-Id-Version: Genesis Sample 3.1.0\n"
 "Report-Msgid-Bugs-To: StudioPress <translations@studiopress.com>\n"
-"POT-Creation-Date: 2019-06-24 16:51:49+00:00\n"
+"POT-Creation-Date: 2019-08-13 20:37:40+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -47,20 +47,36 @@ msgstr ""
 msgid "Larger"
 msgstr ""
 
-#: config/onboarding.php:17
+#: config/onboarding-shared.php:19
 msgid "Atomic Blocks"
 msgstr ""
 
-#: config/onboarding.php:22
+#: config/onboarding-shared.php:24
 msgid "Simple Social Icons"
 msgstr ""
 
-#: config/onboarding.php:27
+#: config/onboarding-shared.php:29
 msgid "Genesis eNews Extended (Third Party)"
 msgstr ""
 
-#: config/onboarding.php:32
+#: config/onboarding-shared.php:34
 msgid "WPForms Lite (Third Party)"
+msgstr ""
+
+#: config/onboarding.php:18
+msgid "Black & White"
+msgstr ""
+
+#: config/onboarding.php:19
+msgid "A pack with a homepage designed with black and white images."
+msgstr ""
+
+#: config/onboarding.php:50
+msgid "Color"
+msgstr ""
+
+#: config/onboarding.php:51
+msgid "A pack with a homepage designed with color images."
 msgstr ""
 
 #: config/theme-supports.php:36
@@ -91,12 +107,20 @@ msgstr ""
 msgid "Accent Color"
 msgstr ""
 
-#: lib/customize.php:79
+#: lib/customize.php:80
 msgid "Logo Width"
 msgstr ""
 
-#: lib/customize.php:80
+#: lib/customize.php:81
 msgid "The maximum width of the logo in pixels."
+msgstr ""
+
+#: lib/customize.php:105
+msgid "You must supply a valid number."
+msgstr ""
+
+#: lib/customize.php:107
+msgid "The logo width cannot be less than 100."
 msgstr ""
 
 #: lib/woocommerce/woocommerce-notice.php:55
@@ -147,10 +171,6 @@ msgstr ""
 
 #. Author URI of the plugin/theme
 msgid "https://www.studiopress.com/"
-msgstr ""
-
-#. Template Name of the plugin/theme
-msgid "Blocks"
 msgstr ""
 
 #. Template Name of the plugin/theme
