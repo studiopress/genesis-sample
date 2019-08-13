@@ -15,9 +15,9 @@ Requires Genesis 3.1.0+
 * Use `genesis-custom-logo` functionality in place of `custom-logo`.
 * Use PHP short array syntax.
 * Update one-click theme setup content page meta to accommodate new Genesis 3.1 features.
-* Add version number to zip files generated with `npm run zip`.
-* Update the phpcs config to include a PHP short array rule and update PHP and WordPress testing versions.
-* Update developer dependencies.
+* Add version number to zip files generated with `npm run zip`. ([GitHub version](https://github.com/studiopress/genesis-sample/) only.)
+* Update the phpcs config to include a PHP short array rule and update PHP and WordPress testing versions. ([GitHub version](https://github.com/studiopress/genesis-sample/) only.)
+* Update developer dependencies. ([GitHub version](https://github.com/studiopress/genesis-sample/) only.)
 
 ## [3.0.1] - 2019-06-25
 * Use current theme name instead of 'genesis-sample' when enqueueing assets. This ensures assets continue to load if the theme is renamed.
