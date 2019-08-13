@@ -24,7 +24,7 @@ return [
 		'content_archive'           => 'full',
 		'content_archive_limit'     => 0,
 		'content_archive_thumbnail' => 0,
-		'image_size'                => '',
+		'image_size'                => 'thumbnail',
 		'image_alignment'           => 'alignleft',
 		'posts_nav'                 => 'numeric',
 		'site_layout'               => 'content-sidebar',
