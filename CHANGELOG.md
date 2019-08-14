@@ -10,6 +10,7 @@ Requires Genesis 3.1.0+
 * Footer widget import with one-click theme setup.
 
 ### Changed
+* Updated Screenshot to reflect one-click theme setup content.
 * Set archive image size to genesis-singular-images on theme activation.
 * Allow breadcrumbs and layout settings to be used on the landing page template.
 * Use `genesis-custom-logo` functionality in place of `custom-logo`.
