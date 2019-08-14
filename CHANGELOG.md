@@ -1,6 +1,6 @@
 # Genesis Sample Theme Changelog
 
-## [3.1.0] - Unreleased
+## [3.1.0] - 2019-08-21
 Requires Genesis 3.1.0+
 
 ### Added
