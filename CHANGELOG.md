@@ -20,6 +20,9 @@ Requires Genesis 3.1.0+
 * Update the phpcs config to include a PHP short array rule and update PHP and WordPress testing versions. ([GitHub version](https://github.com/studiopress/genesis-sample/) only.)
 * Update developer dependencies. ([GitHub version](https://github.com/studiopress/genesis-sample/) only.)
 
+### Removed
+* Block page template in favor of new Genesis per-page settings.
+
 ## [3.0.1] - 2019-06-25
 * Use current theme name instead of 'genesis-sample' when enqueueing assets. This ensures assets continue to load if the theme is renamed.
 
