@@ -19,6 +19,7 @@ Requires Genesis 3.1.0+
 * Add version number to zip files generated with `npm run zip`. ([GitHub version](https://github.com/studiopress/genesis-sample/) only.)
 * Update the phpcs config to include a PHP short array rule and update PHP and WordPress testing versions. ([GitHub version](https://github.com/studiopress/genesis-sample/) only.)
 * Update developer dependencies. ([GitHub version](https://github.com/studiopress/genesis-sample/) only.)
+* Simplified `genesis_sample_secondary_menu_args` function.
 
 ### Removed
 * Block page template in favor of new Genesis per-page settings.

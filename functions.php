@@ -161,11 +161,10 @@ add_filter( 'wp_nav_menu_args', 'genesis_sample_secondary_menu_args' );
  */
 function genesis_sample_secondary_menu_args( $args ) {
 
-	if ( 'secondary' !== $args['theme_location'] ) {
-		return $args;
+	if ( 'secondary' === $args['theme_location'] ) {
+		$args['depth'] = 1;
 	}
 
-	$args['depth'] = 1;
 	return $args;
 
 }
