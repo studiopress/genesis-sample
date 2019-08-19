@@ -154,7 +154,7 @@ add_filter( 'wp_nav_menu_args', 'genesis_sample_secondary_menu_args' );
 /**
  * Reduces secondary navigation menu to one level depth.
  *
- * @since 3.1.0
+ * @since 2.2.3
  *
  * @param array $args Original menu options.
  * @return array Menu options with depth set to 1.
