@@ -10,30 +10,30 @@
  * @link    https://my.studiopress.com/themes/genesis-sample/
  */
 
-return array(
-	'custom-logo'                     => array(
+return [
+	'genesis-custom-logo'             => [
 		'height'      => 120,
 		'width'       => 700,
 		'flex-height' => true,
 		'flex-width'  => true,
-	),
-	'html5'                           => array(
+	],
+	'html5'                           => [
 		'caption',
 		'comment-form',
 		'comment-list',
 		'gallery',
 		'search-form',
-	),
-	'genesis-accessibility'           => array(
+	],
+	'genesis-accessibility'           => [
 		'drop-down-menu',
 		'headings',
 		'search-form',
 		'skip-links',
-	),
+	],
 	'genesis-after-entry-widget-area' => '',
 	'genesis-footer-widgets'          => 3,
-	'genesis-menus'                   => array(
+	'genesis-menus'                   => [
 		'primary'   => __( 'Header Menu', 'genesis-sample' ),
 		'secondary' => __( 'Footer Menu', 'genesis-sample' ),
-	),
-);
+	],
+];

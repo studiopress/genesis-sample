@@ -74,7 +74,7 @@ function genesis_sample_enqueue_scripts_styles() {
 	wp_enqueue_style(
 		genesis_get_theme_handle() . '-fonts',
 		$appearance['fonts-url'],
-		array(),
+		[],
 		genesis_get_theme_version()
 	);
 
@@ -84,7 +84,7 @@ function genesis_sample_enqueue_scripts_styles() {
 		wp_enqueue_style(
 			genesis_get_theme_handle() . '-amp',
 			get_stylesheet_directory_uri() . '/lib/amp/amp.css',
-			array( genesis_get_theme_handle() ),
+			[ genesis_get_theme_handle() ],
 			genesis_get_theme_version()
 		);
 	}
@@ -109,32 +109,27 @@ function genesis_sample_theme_support() {
 
 }
 
-add_filter( 'genesis_seo_title', 'genesis_sample_header_title', 10, 3 );
+add_action( 'after_setup_theme', 'genesis_sample_post_type_support', 9 );
 /**
- * Removes the link from the hidden site title if a custom logo is in use.
+ * Add desired post type supports.
  *
- * Without this filter, the site title is hidden with CSS when a custom logo
- * is in use, but the link it contains is still accessible by keyboard.
+ * See config file at `config/post-type-supports.php`.
  *
- * @since 1.2.0
- *
- * @param string $title  The full title.
- * @param string $inside The content inside the title element.
- * @param string $wrap   The wrapping element name, such as h1.
- * @return string The site title with anchor removed if a custom logo is active.
+ * @since 3.0.0
  */
-function genesis_sample_header_title( $title, $inside, $wrap ) {
+function genesis_sample_post_type_support() {
 
-	if ( has_custom_logo() ) {
-		$inside = get_bloginfo( 'name' );
+	$post_type_supports = genesis_get_config( 'post-type-supports' );
+
+	foreach ( $post_type_supports as $post_type => $args ) {
+		add_post_type_support( $post_type, $args );
 	}
-
-	return sprintf( '<%1$s class="site-title">%2$s</%1$s>', $wrap, $inside );
 
 }
 
 // Adds image sizes.
 add_image_size( 'sidebar-featured', 75, 75, true );
+add_image_size( 'genesis-singular-images', 702, 526, true );
 
 // Removes header right widget area.
 unregister_sidebar( 'header-right' );
@@ -146,26 +141,6 @@ unregister_sidebar( 'sidebar-alt' );
 genesis_unregister_layout( 'content-sidebar-sidebar' );
 genesis_unregister_layout( 'sidebar-content-sidebar' );
 genesis_unregister_layout( 'sidebar-sidebar-content' );
-
-add_filter( 'genesis_customizer_theme_settings_config', 'genesis_sample_remove_customizer_settings' );
-/**
- * Removes output of header and front page breadcrumb settings in the Customizer.
- *
- * @since 2.6.0
- *
- * @param array $config Original Customizer items.
- * @return array Filtered Customizer items.
- */
-function genesis_sample_remove_customizer_settings( $config ) {
-
-	unset( $config['genesis']['sections']['genesis_header'] );
-	unset( $config['genesis']['sections']['genesis_breadcrumbs']['controls']['breadcrumb_front_page'] );
-	return $config;
-
-}
-
-// Displays custom logo.
-add_action( 'genesis_site_title', 'the_custom_logo', 0 );
 
 // Repositions primary navigation menu.
 remove_action( 'genesis_after_header', 'genesis_do_nav' );
@@ -186,11 +161,10 @@ add_filter( 'wp_nav_menu_args', 'genesis_sample_secondary_menu_args' );
  */
 function genesis_sample_secondary_menu_args( $args ) {
 
-	if ( 'secondary' !== $args['theme_location'] ) {
-		return $args;
+	if ( 'secondary' === $args['theme_location'] ) {
+		$args['depth'] = 1;
 	}
 
-	$args['depth'] = 1;
 	return $args;
 
 }

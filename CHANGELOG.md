@@ -1,5 +1,29 @@
 # Genesis Sample Theme Changelog
 
+## [3.1.0] - 2019-08-21
+Requires Genesis 3.1.0+
+
+### Added
+* Starter Pack feature to allow imported content choices.
+* Customizer Logo width validation and messaging.
+* Featured image display options for singular posts and pages.
+* Footer widget import with one-click theme setup.
+
+### Changed
+* Updated Screenshot to reflect one-click theme setup content.
+* Set archive image size to genesis-singular-images on theme activation.
+* Allow breadcrumbs and layout settings to be used on the landing page template.
+* Use `genesis-custom-logo` functionality in place of `custom-logo`.
+* Use PHP short array syntax.
+* Update one-click theme setup content page meta to accommodate new Genesis 3.1 features.
+* Add version number to zip files generated with `npm run zip`. ([GitHub version](https://github.com/studiopress/genesis-sample/) only.)
+* Update the phpcs config to include a PHP short array rule and update PHP and WordPress testing versions. ([GitHub version](https://github.com/studiopress/genesis-sample/) only.)
+* Update developer dependencies. ([GitHub version](https://github.com/studiopress/genesis-sample/) only.)
+* Simplified `genesis_sample_secondary_menu_args` function.
+
+### Removed
+* Block page template in favor of new Genesis per-page settings.
+
 ## [3.0.1] - 2019-06-25
 * Use current theme name instead of 'genesis-sample' when enqueueing assets. This ensures assets continue to load if the theme is renamed.
 

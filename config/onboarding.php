@@ -10,95 +10,73 @@
  * @link    https://www.studiopress.com/
  */
 
-return array(
-	'dependencies'     => array(
-		'plugins' => array(
-			array(
-				'name'       => __( 'Atomic Blocks', 'genesis-sample' ),
-				'slug'       => 'atomic-blocks/atomicblocks.php',
-				'public_url' => 'https://atomicblocks.com/',
-			),
-			array(
-				'name'       => __( 'Simple Social Icons', 'genesis-sample' ),
-				'slug'       => 'simple-social-icons/simple-social-icons.php',
-				'public_url' => 'https://wordpress.org/plugins/simple-social-icons/',
-			),
-			array(
-				'name'       => __( 'Genesis eNews Extended (Third Party)', 'genesis-sample' ),
-				'slug'       => 'genesis-enews-extended/plugin.php',
-				'public_url' => 'https://wordpress.org/plugins/genesis-enews-extended/',
-			),
-			array(
-				'name'       => __( 'WPForms Lite (Third Party)', 'genesis-sample' ),
-				'slug'       => 'wpforms-lite/wpforms.php',
-				'public_url' => 'https://wordpress.org/plugins/wpforms-lite/',
-			),
-		),
-	),
-	'content'          => array(
-		'homepage' => array(
-			'post_title'     => 'Homepage',
-			'post_content'   => require dirname( __FILE__ ) . '/import/content/homepage.php',
-			'post_type'      => 'page',
-			'post_status'    => 'publish',
-			'page_template'  => 'page-templates/blocks.php',
-			'comment_status' => 'closed',
-			'ping_status'    => 'closed',
-		),
-		'blocks'   => array(
-			'post_title'     => 'Block Content Examples',
-			'post_content'   => require dirname( __FILE__ ) . '/import/content/block-examples.php',
-			'post_type'      => 'page',
-			'post_status'    => 'publish',
-			'comment_status' => 'closed',
-			'ping_status'    => 'closed',
-			'meta_input'     => array( '_genesis_layout' => 'full-width-content' ),
-		),
-		'about'    => array(
-			'post_title'     => 'About Us',
-			'post_content'   => require dirname( __FILE__ ) . '/import/content/about.php',
-			'post_type'      => 'page',
-			'post_status'    => 'publish',
-			'featured_image' => CHILD_URL . '/config/import/images/about.jpg',
-			'comment_status' => 'closed',
-			'ping_status'    => 'closed',
-			'meta_input'     => array( '_genesis_layout' => 'full-width-content' ),
-		),
-		'contact'  => array(
-			'post_title'     => 'Contact Us',
-			'post_content'   => require dirname( __FILE__ ) . '/import/content/contact.php',
-			'post_type'      => 'page',
-			'post_status'    => 'publish',
-			'comment_status' => 'closed',
-			'ping_status'    => 'closed',
-		),
-		'landing'  => array(
-			'post_title'     => 'Landing Page',
-			'post_content'   => require dirname( __FILE__ ) . '/import/content/landing-page.php',
-			'post_type'      => 'page',
-			'post_status'    => 'publish',
-			'page_template'  => 'page-templates/landing.php',
-			'comment_status' => 'closed',
-			'ping_status'    => 'closed',
-		),
-	),
-	'navigation_menus' => array(
-		'primary' => array(
-			'homepage' => array(
-				'title' => 'Home',
-			),
-			'about'    => array(
-				'title' => 'About Us',
-			),
-			'contact'  => array(
-				'title' => 'Contact Us',
-			),
-			'blocks'   => array(
-				'title' => 'Block Examples',
-			),
-			'landing'  => array(
-				'title' => 'Landing Page',
-			),
-		),
-	),
-);
+$genesis_sample_shared_content = genesis_get_config( 'onboarding-shared' );
+
+return [
+	'starter_packs' => [
+		'black-white' => [
+			'title'       => __( 'Black & White', 'genesis-sample' ),
+			'description' => __( 'A pack with a homepage designed with black and white images.', 'genesis-sample' ),
+			'thumbnail'   => get_stylesheet_directory_uri() . '/config/import/images/thumbnails/home-black-white.jpg',
+			'demo_url'    => 'https://demo.studiopress.com/genesis-sample/',
+			'config'      => [
+				'dependencies'     => [
+					'plugins' => $genesis_sample_shared_content['plugins'],
+				],
+				'content'          => array_merge(
+					[
+						'homepage' => [
+							'post_title'     => 'Homepage',
+							'post_content'   => require dirname( __FILE__ ) . '/import/content/home-black-white.php',
+							'post_type'      => 'page',
+							'post_status'    => 'publish',
+							'comment_status' => 'closed',
+							'ping_status'    => 'closed',
+							'meta_input'     => [
+								'_genesis_layout'     => 'full-width-content',
+								'_genesis_hide_title' => true,
+								'_genesis_hide_breadcrumbs' => true,
+								'_genesis_hide_singular_image' => true,
+							],
+						],
+					],
+					$genesis_sample_shared_content['content']
+				),
+				'navigation_menus' => $genesis_sample_shared_content['navigation_menus'],
+				'widgets'          => $genesis_sample_shared_content['widgets'],
+			],
+		],
+		'color'       => [
+			'title'       => __( 'Color', 'genesis-sample' ),
+			'description' => __( 'A pack with a homepage designed with color images.', 'genesis-sample' ),
+			'thumbnail'   => get_stylesheet_directory_uri() . '/config/import/images/thumbnails/home-color.jpg',
+			'demo_url'    => 'https://demo.studiopress.com/genesis-sample/home-color/',
+			'config'      => [
+				'dependencies'     => [
+					'plugins' => $genesis_sample_shared_content['plugins'],
+				],
+				'content'          => array_merge(
+					[
+						'homepage' => [
+							'post_title'     => 'Homepage',
+							'post_content'   => require dirname( __FILE__ ) . '/import/content/home-color.php',
+							'post_type'      => 'page',
+							'post_status'    => 'publish',
+							'comment_status' => 'closed',
+							'ping_status'    => 'closed',
+							'meta_input'     => [
+								'_genesis_layout'     => 'full-width-content',
+								'_genesis_hide_title' => true,
+								'_genesis_hide_breadcrumbs' => true,
+								'_genesis_hide_singular_image' => true,
+							],
+						],
+					],
+					$genesis_sample_shared_content['content']
+				),
+				'navigation_menus' => $genesis_sample_shared_content['navigation_menus'],
+				'widgets'          => $genesis_sample_shared_content['widgets'],
+			],
+		],
+	],
+];
