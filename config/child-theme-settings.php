@@ -30,4 +30,5 @@ return [
 		'site_layout'               => 'content-sidebar',
 	],
 	'posts_per_page'       => 6,
+	'footer_text' => 'This is footer text', 
 ];
