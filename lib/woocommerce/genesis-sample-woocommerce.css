@@ -45,6 +45,17 @@ Loaded on WooCommerce pages */
 	flex-shrink: 0; /* IE 11 height fix */
 }
 
+/* WooCommerce Blocks
+---------------------------------------------------------------------------- */
+
+ul.wc-block-grid__products {
+	padding-left: 0;
+}
+
+ul.wc-block-grid__products > li {
+	list-style-type: none;
+}
+
 
 /* WooCommerce Product Gallery
 ---------------------------------------------------------------------------- */
