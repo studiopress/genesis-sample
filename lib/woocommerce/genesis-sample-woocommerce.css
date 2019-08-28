@@ -81,7 +81,9 @@ Loaded on WooCommerce pages */
 .woocommerce .products ul::after,
 .woocommerce .products ul::before,
 .woocommerce ul.products::after,
-.woocommerce ul.products::before {
+.woocommerce ul.products::before,
+.woocommerce ul.products .product::after,
+.woocommerce ul.products .product::before {
 	display: none;
 }
 
@@ -828,7 +830,8 @@ div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricte
 
 @media only screen and (min-width: 860px) {
 
-	.full-width-content .woocommerce ul.products {
+	.full-width-content .woocommerce ul.products
+	.full-width-content.woocommerce ul.products {
 		justify-content: flex-start;
 	}
 
@@ -883,7 +886,9 @@ div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricte
 @media only screen and (min-width: 1140px) {
 
 	.content-sidebar .woocommerce ul.products,
-	.sidebar-content .woocommerce ul.products {
+	.sidebar-content .woocommerce ul.products,
+	.content-sidebar.woocommerce ul.products,
+	.sidebar-content.woocommerce ul.products {
 		justify-content: flex-start;
 	}
 
