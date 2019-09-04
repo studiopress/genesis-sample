@@ -1,5 +1,11 @@
 # Genesis Sample Theme Changelog
 
+## Unreleased
+
+### Fixed
+* Ensure that the flexbox styles equally apply to the WooCommerce shop page and a page using the [products] shortcode.
+* Ensure that general list styles do not apply to WooCommerce product blocks.
+
 ## [3.1.0] - 2019-08-21
 Requires Genesis 3.1.0+
 
