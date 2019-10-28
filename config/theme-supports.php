@@ -23,6 +23,8 @@ return [
 		'comment-list',
 		'gallery',
 		'search-form',
+		'script',
+		'style',
 	],
 	'genesis-accessibility'           => [
 		'drop-down-menu',
