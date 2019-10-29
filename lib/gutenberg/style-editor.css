@@ -44,6 +44,10 @@ th:first-child {
 	padding-left: 0;
 }
 
+.wp-block-table.is-style-stripes {
+	border-bottom-width: 0;
+}
+
 /* Regular content width.
 /* 702px + 27px to match paragraph width on front-end and editor.
 ---------------------------------------------------------------------------- */

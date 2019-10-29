@@ -339,6 +339,10 @@ hr.wp-block-separator {
 	padding-left: 0;
 }
 
+.wp-block-table.is-style-stripes {
+	border-bottom-width: 0;
+}
+
 .full-width-content .site-container .wp-block-table.alignfull {
 	margin: 0;
 	width: 100%;
