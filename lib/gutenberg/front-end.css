@@ -143,15 +143,9 @@ h6.light {
 	width: auto;
 }
 
-/* Button Variations */
-.site-container .wp-block-button.is-style-squared .wp-block-button__link {
-	border-radius: 0;
-}
-
 .site-container .wp-block-button.is-style-outline .wp-block-button__link {
 	background-color: transparent;
 	border: 2px solid currentColor;
-	border-radius: 0;
 	padding: 13px 28px;
 }
 

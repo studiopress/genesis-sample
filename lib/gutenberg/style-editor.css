@@ -370,14 +370,9 @@ hr.wp-block-separator.is-style-dots {
 	white-space: normal;
 }
 
-.wp-block-button.is-style-squared .wp-block-button__link {
-	border-radius: 0;
-}
-
 .wp-block-button.is-style-outline .wp-block-button__link {
 	background-color: transparent;
 	border: 2px solid currentColor;
-	border-radius: 0;
 	padding: 13px 28px;
 }
 
