@@ -102,10 +102,6 @@ h6.light {
 /* Columns
 ---------------------------------------------------------------------------- */
 
-.site-container .wp-block-columns {
-	margin-bottom: 30px;
-}
-
 .site-container .wp-block-columns.alignfull {
 	padding: 0 30px;
 }
@@ -372,18 +368,6 @@ hr.wp-block-separator {
 
 /* Media Queries
 ---------------------------------------------------------------------------- */
-
-
-@media only screen and (max-width: 781px) {
-
-	.has-3-columns .wp-block-column,
-	.has-5-columns .wp-block-column {
-		flex-basis: 100%;
-		margin-left: 0;
-		margin-right: 0;
-	}
-
-}
 
 @media only screen and (min-width: 960px) {
 
