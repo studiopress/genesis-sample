@@ -90,6 +90,18 @@ h6.light {
 	width: 100%;
 }
 
+.has-text-align-center {
+	text-align: center;
+}
+
+.has-text-align-left {
+	text-align: left;
+}
+
+.has-text-align-right {
+	text-align: right;
+}
+
 @media only screen and (max-width: 600px) {
 
 	.wp-block-button.home-contact {
