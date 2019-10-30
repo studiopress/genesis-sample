@@ -512,17 +512,7 @@ td {
 
 th {
 	font-weight: 600;
-	padding: 0 10px 10px;
-}
-
-td:first-child,
-th:first-child {
-	padding-left: 0;
-}
-
-td:last-child,
-th:last-child {
-	padding-right: 0;
+	padding: 10px;
 }
 
 /* Screen Reader Text
