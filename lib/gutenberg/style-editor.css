@@ -30,18 +30,11 @@ th {
 
 td,
 th {
-	padding: 10px;
-	text-align: left;
 	vertical-align: top;
 }
 
 th {
 	font-weight: 600;
-}
-
-td:first-child,
-th:first-child {
-	padding-left: 0;
 }
 
 .wp-block-table.is-style-stripes {

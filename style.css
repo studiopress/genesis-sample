@@ -501,18 +501,22 @@ tbody {
 
 td,
 th {
+	line-height: 2;
 	text-align: left;
 	vertical-align: top;
 }
 
 td {
+	padding: 0.5em;
+}
+
+tr {
 	border-top: 1px solid #eee;
-	padding: 10px;
 }
 
 th {
 	font-weight: 600;
-	padding: 10px;
+	padding: 0.5em;
 }
 
 /* Screen Reader Text
