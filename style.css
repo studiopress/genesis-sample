@@ -491,7 +491,6 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 	margin-bottom: 40px;
-	table-layout: fixed;
 	width: 100%;
 	word-break: break-all;
 }
