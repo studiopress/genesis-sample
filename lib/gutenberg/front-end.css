@@ -368,7 +368,8 @@ hr.wp-block-separator {
 	width: 100%;
 }
 
-.site-container .blocks-gallery-grid {
+.site-container .blocks-gallery-grid,
+.site-container .wp-block-gallery {
 	padding-left: 0;
 }
 
