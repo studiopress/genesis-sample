@@ -321,6 +321,10 @@ h6.light {
 	text-decoration: none;
 }
 
+.ab-block-spacer hr {
+	background-color: transparent;
+}
+
 @media only screen and (max-width: 510px) {
 
 	.ab-block-container.alignfull::before {
