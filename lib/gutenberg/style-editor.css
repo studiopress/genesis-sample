@@ -326,13 +326,15 @@ p.has-background.light-text a:hover {
 ---------------------------------------------------------------------------- */
 
 hr.wp-block-separator {
-	border-width: 0;
+	border-color: #eee;
 	background-color: #eee;
+	height: 1px;
 	margin: 1.65em auto;
 }
 
 hr.wp-block-separator.is-style-dots {
 	border-width: 0;
+	height: unset;
 }
 
 /* Tables
