@@ -10,6 +10,14 @@
 	margin-right: 0.01em;
 }
 
+/* Paragraphs
+---------------------------------------------------------------------------- */
+
+.alignfull:not(.has-background) .wp-block-group__inner-container > p:not(.has-background-color) {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
 /* Headings
 ---------------------------------------------------------------------------- */
 
@@ -78,7 +86,7 @@ h6.light {
 	margin-bottom: 30px;
 }
 
-.full-width-content .site-container .alignfull {
+.full-width-content .entry-content > .alignfull {
 	margin-left: calc(-100vw / 2 + 100% / 2);
 	margin-right: calc(-100vw / 2 + 100% / 2);
 	max-width: 100vw;
@@ -258,11 +266,15 @@ h6.light {
 /* Category Block
 ---------------------------------------------------------------------------- */
 
-.site-container .wp-block-categories,
+.site-container .wp-block-columns .wp-block-categories,
 .site-container .wp-block-categories ol,
 .site-container .wp-block-categories ul {
 	margin-left: 0;
 	padding-left: 0;
+}
+
+.site-container .wp-block-categories {
+	padding-left: 30px;
 }
 
 .site-container .wp-block-categories li {
@@ -280,10 +292,14 @@ h6.light {
 /* Latest Posts Block
 ---------------------------------------------------------------------------- */
 
+.site-container .wp-block-columns .wp-block-latest-posts {
+	padding-left: 0;
+}
+
 .site-container .wp-block-latest-posts {
 	clear: both;
 	margin-left: 0;
-	padding-left: 0;
+	padding-left: 30px;
 }
 
 .site-container .wp-block-latest-posts li {
@@ -387,11 +403,27 @@ hr.wp-block-separator {
 
 @media only screen and (min-width: 960px) {
 
-	.full-width-content .site-container .alignwide {
+	.full-width-content .entry-content > .alignwide {
 		margin-left: -180px;
 		margin-right: -180px;
 		max-width: calc(100% + 360px); /* 360 equals sum of left and right margin */
 		width: auto;
+	}
+
+	.alignfull .alignwide,
+	.alignwide .alignwide {
+		max-width: 1062px;
+		margin: 0 auto;
+	}
+
+}
+
+
+@media only screen and (min-width: 600px) {
+
+	.alignfull:not(.has-background) .wp-block-column:last-child > .wp-block-categories,
+	.alignfull:not(.has-background) .wp-block-column:last-child > .wp-block-latest-posts {
+		padding-left: 0;
 	}
 
 }

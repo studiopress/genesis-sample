@@ -54,6 +54,8 @@ th {
 /* 1062px = default column width of 702px + .alignwide negative margin of 360px
 ---------------------------------------------------------------------------- */
 
+.wp-block[data-align="full"] .wp-block[data-align="wide"],
+.wp-block[data-align="wide"] .wp-block[data-align="wide"],
 .wp-block[data-align="wide"] {
 	max-width: 1092px;
 }
@@ -62,11 +64,9 @@ th {
 	max-width: none;
 }
 
-/* Width of inner blocks
----------------------------------------------------------------------------- */
-
-.wp-block-group__inner-container .wp-block {
-	max-width: none;
+.wp-block[data-align="wide"] .wp-block,
+.wp-block[data-align="full"] .wp-block {
+    max-width: none;
 }
 
 /* Alignment
@@ -415,10 +415,6 @@ hr.wp-block-separator.is-style-dots {
 	text-align: right;
 }
 
-.wp-block[data-align="full"] .wp-block-categories__list {
-	padding: 0 30px;
-}
-
 /* Latest Posts Block
 ---------------------------------------------------------------------------- */
 
@@ -433,15 +429,4 @@ hr.wp-block-separator.is-style-dots {
 
 .wp-block[data-align="center"] .wp-block-latest-posts {
 	text-align: center;
-}
-
-.wp-block[data-align="full"] .wp-block-latest-posts {
-	padding: 0 30px;
-}
-
-/* Columns block
----------------------------------------------------------------------------- */
-
-.wp-block[data-align="full"] .wp-block-columns > .editor-inner-blocks {
-	padding: 0 30px;
 }
