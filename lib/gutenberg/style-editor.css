@@ -14,33 +14,6 @@ dl {
 	line-height: 1.625;
 }
 
-/* Tables
----------------------------------------------------------------------------- */
-
-table {
-	width: 100%;
-}
-
-tbody,
-td,
-th {
-	border-color: #eee;
-	text-align: left;
-}
-
-td,
-th {
-	vertical-align: top;
-}
-
-th {
-	font-weight: 600;
-}
-
-.wp-block-table.is-style-stripes {
-	border-bottom-width: 0;
-}
-
 /* Regular content width.
 /* 702px + 27px to match paragraph width on front-end and editor.
 ---------------------------------------------------------------------------- */
@@ -344,8 +317,11 @@ hr.wp-block-separator.is-style-dots {
 /* Tables
 ---------------------------------------------------------------------------- */
 
+table {
+	width: 100%;
+}
+
 .wp-block-table {
-	font-size: 18px;
 	line-height: 2;
 }
 
@@ -353,14 +329,27 @@ hr.wp-block-separator.is-style-dots {
 .wp-block-table th,
 .wp-block-table tr {
 	border: none;
+	vertical-align: top;
+}
+
+.wp-block-table th {
+	font-weight: 600;
 }
 
 .wp-block-table tr {
 	border-top: 1px solid #eee;
 }
 
+.wp-block-table tr:last-of-type {
+	border-bottom: 1px solid #eee;
+}
+
 .wp-block-table tbody {
 	border-bottom: 1px solid #eee;
+}
+
+.wp-block-table.is-style-stripes {
+	border-bottom-width: 0;
 }
 
 /* Buttons
