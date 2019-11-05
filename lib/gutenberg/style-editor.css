@@ -326,8 +326,8 @@ p.has-background.light-text a:hover {
 ---------------------------------------------------------------------------- */
 
 hr.wp-block-separator {
-	border: none;
-	border-top: 1px solid #eee;
+	border-width: 0;
+	background-color: #eee;
 	margin: 1.65em auto;
 }
 

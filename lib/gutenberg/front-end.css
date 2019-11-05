@@ -333,9 +333,15 @@ h6.light {
 }
 
 hr.wp-block-separator {
-	border: none;
-	border-top: 1px solid #eee;
+	border-width: 0;
+	background-color: #eee;
 	margin: 1.65em auto;
+}
+
+.wp-block-separator.is-style-wide {
+	border-width: 0;
+	height: 1px;
+	max-width: 100%;
 }
 
 .wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
