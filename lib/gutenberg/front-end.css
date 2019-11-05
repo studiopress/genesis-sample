@@ -321,10 +321,6 @@ h6.light {
 	text-decoration: none;
 }
 
-.ab-block-spacer hr {
-	background-color: transparent;
-}
-
 @media only screen and (max-width: 510px) {
 
 	.ab-block-container.alignfull::before {
@@ -353,19 +349,18 @@ h6.light {
 }
 
 hr.wp-block-separator {
-	border-width: 0;
-	background-color: #eee;
+	border: none;
+	border-bottom: 1px solid currentColor;
+	color: #eee;
 	margin: 1.65em auto;
-}
-
-.wp-block-separator.is-style-wide {
-	border-width: 0;
-	height: 1px;
-	max-width: 100%;
 }
 
 .wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
 	max-width: 100px;
+}
+
+.wp-block-separator.is-style-dots {
+	color: #333;
 }
 
 .wp-block-audio audio {
