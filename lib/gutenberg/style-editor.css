@@ -66,7 +66,7 @@ th {
 
 .wp-block[data-align="wide"] .wp-block,
 .wp-block[data-align="full"] .wp-block {
-    max-width: none;
+	max-width: none;
 }
 
 /* Alignment
