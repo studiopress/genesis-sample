@@ -33,10 +33,7 @@ dl {
 	max-width: 1092px;
 }
 
-.wp-block[data-align="full"] {
-	max-width: none;
-}
-
+.wp-block[data-align="full"],
 .wp-block[data-align="wide"] .wp-block,
 .wp-block[data-align="full"] .wp-block {
 	max-width: none;
