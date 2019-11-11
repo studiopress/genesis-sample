@@ -250,15 +250,12 @@ p.has-background.light-text a:hover {
 	color: currentColor;
 }
 
-.blocks-gallery-caption,
-.wp-block-audio figcaption,
-.wp-block-embed figcaption,
-.wp-block-image figcaption {
-	color: #666;
-	font-size: 16px;
-	font-style: italic;
-	margin-bottom: 30px;
-	margin-top: 10px;
+figcaption {
+	color: #333;
+	font-size: 14px;
+	font-weight: 600;
+	margin: 0;
+	text-align: center;
 }
 
 .wp-block-pullquote[class*="align"] .wp-block-pullquote__citation,

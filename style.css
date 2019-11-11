@@ -766,11 +766,15 @@ img.alignright,
 	margin: 0 0 20px 20px;
 }
 
+figcaption,
 .gallery-caption,
 .wp-caption-text {
 	font-size: 14px;
 	font-weight: 600;
-	margin: 0;
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+	padding-left: 10px;
+	padding-right: 10px;
 	text-align: center;
 }
 

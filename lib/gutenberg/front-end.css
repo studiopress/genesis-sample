@@ -250,17 +250,12 @@ h6.light {
 	color: currentColor;
 }
 
-.blocks-gallery-caption,
-.site-container .wp-block-audio figcaption,
-.site-container .wp-block-embed figcaption,
-.site-container .wp-block-image figcaption {
-	color: #666;
-	font-size: 16px;
-	font-style: italic;
-	margin-bottom: 30px;
-	margin-top: 10px;
-	text-align: center;
+.blocks-gallery-caption {
 	width: 100%;
+}
+
+.blocks-gallery-item figcaption {
+	margin-bottom: 0;
 }
 
 /* Category Block
