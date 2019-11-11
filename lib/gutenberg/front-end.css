@@ -266,15 +266,9 @@ h6.light {
 /* Category Block
 ---------------------------------------------------------------------------- */
 
-.site-container .wp-block-columns .wp-block-categories,
-.site-container .wp-block-categories ol,
-.site-container .wp-block-categories ul {
+.site-container .wp-block-categories {
 	margin-left: 0;
 	padding-left: 0;
-}
-
-.site-container .wp-block-categories {
-	padding-left: 30px;
 }
 
 .site-container .wp-block-categories li {
@@ -285,21 +279,20 @@ h6.light {
 	text-align: center;
 }
 
-.site-container .wp-block-categories-list.alignfull {
+.site-container .wp-block-categories.alignfull {
 	padding: 0 30px;
+}
+
+.site-container .wp-block-categories .children {
+	padding-left: 30px;
 }
 
 /* Latest Posts Block
 ---------------------------------------------------------------------------- */
 
-.site-container .wp-block-columns .wp-block-latest-posts {
-	padding-left: 0;
-}
-
 .site-container .wp-block-latest-posts {
-	clear: both;
 	margin-left: 0;
-	padding-left: 30px;
+	padding-left: 0;
 }
 
 .site-container .wp-block-latest-posts li {
@@ -420,16 +413,6 @@ hr.wp-block-separator {
 	.alignwide .alignwide {
 		max-width: 1062px;
 		margin: 0 auto;
-	}
-
-}
-
-
-@media only screen and (min-width: 600px) {
-
-	.alignfull:not(.has-background) .wp-block-column:last-child > .wp-block-categories,
-	.alignfull:not(.has-background) .wp-block-column:last-child > .wp-block-latest-posts {
-		padding-left: 0;
 	}
 
 }
