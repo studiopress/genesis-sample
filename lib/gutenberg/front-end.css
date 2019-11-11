@@ -67,6 +67,18 @@ h6.light {
 /* Alignment
 ---------------------------------------------------------------------------- */
 
+.has-text-align-center {
+	text-align: center;
+}
+
+.has-text-align-left {
+	text-align: left;
+}
+
+.has-text-align-right {
+	text-align: right;
+}
+
 .wp-block-button.alignleft,
 .wp-block-cover.alignleft,
 .wp-block-image .alignleft {
@@ -96,18 +108,6 @@ h6.light {
 .sidebar-content .site-container .alignfull {
 	margin: 0 0 2em;
 	width: 100%;
-}
-
-.has-text-align-center {
-	text-align: center;
-}
-
-.has-text-align-left {
-	text-align: left;
-}
-
-.has-text-align-right {
-	text-align: right;
 }
 
 @media only screen and (max-width: 600px) {
