@@ -129,7 +129,7 @@ h6.light {
 /* Cover Image
 ---------------------------------------------------------------------------- */
 
-.full-width-content .site-container .wp-block-cover.alignfull {
+.full-width-content .site-container > .wp-block-cover.alignfull {
 	width: 100vw;
 }
 
