@@ -407,6 +407,10 @@ table {
 	text-align: right;
 }
 
+.wp-block[data-align="full"] .wp-block-categories__list {
+	padding: 0 30px;
+}
+
 /* Latest Posts Block
 ---------------------------------------------------------------------------- */
 
@@ -421,4 +425,8 @@ table {
 
 .wp-block[data-align="center"] .wp-block-latest-posts {
 	text-align: center;
+}
+
+.wp-block[data-align="full"] .wp-block-latest-posts {
+	padding: 0 30px;
 }
