@@ -6,6 +6,7 @@
 * HTML5 supports for `scripts` and `styles` available in WordPress 5.3.
 * Support for `genesis-lazy-load-images` available in Genesis 3.2.
 * WordPress 5.3 alignment classes.
+* Set post meta on theme activation.
 
 ### Changed
 * Block width CSS for nested blocks.
@@ -13,6 +14,8 @@
 * CSS for image, gallery, and gallery item figcaptions.
 * Spacing between WooCommerce products.
 * CSS for tables for better consistency between editor and front end and to allow for new WordPress 5.3 settings.
+* Allow footer widgets to be displayed on the landing page template.
+* Changed: Set imported landing page meta to hide footer widgets. Requires Genesis 3.2 or higher.
 
 ### Fixed
 * Ensure that the flexbox styles equally apply to the WooCommerce shop page and a page using the [products] shortcode.
