@@ -129,7 +129,7 @@ h6.light {
 /* Cover Image
 ---------------------------------------------------------------------------- */
 
-.full-width-content .site-container > .wp-block-cover.alignfull {
+.full-width-content .entry-content > .wp-block-cover.alignfull {
 	width: 100vw;
 }
 
@@ -377,14 +377,14 @@ hr.wp-block-separator {
 
 @media only screen and (min-width: 960px) {
 
-	.full-width-content .site-container .wp-block-table.alignwide {
+	.full-width-content .site-container > .wp-block-table.alignwide {
 		width: calc(100% + 360px);
 	}
 
-	.full-width-content .site-container .wp-block-table.alignfull {
-		margin-left: calc(-98vw / 2 + 100% / 2);
-		margin-right: calc(-98vw / 2 + 100% / 2);
-		width: 98vw;
+	.full-width-content .site-container > .wp-block-table.alignfull {
+		margin-left: calc(-100vw / 2 + 100% / 2);
+		margin-right: calc(-100vw / 2 + 100% / 2);
+		width: 100vw;
 	}
 
 }
