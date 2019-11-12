@@ -74,7 +74,6 @@ ul.wc-block-grid__products > li {
 
 .woocommerce .woocommerce-product-gallery .flex-control-nav {
 	-webkit-user-select: none;
-	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
 }
