@@ -24,6 +24,8 @@ return [
 		'content_archive'           => 'full',
 		'content_archive_limit'     => 0,
 		'content_archive_thumbnail' => 0,
+		'entry_meta_after_content'  => '[post_categories] [post_tags]',
+		'entry_meta_before_content' => '[post_date] ' . __( 'by', 'genesis-sample' ) . ' [post_author_posts_link] [post_comments] [post_edit]',
 		'image_size'                => 'genesis-singular-images',
 		'image_alignment'           => 'aligncenter',
 		'posts_nav'                 => 'numeric',
