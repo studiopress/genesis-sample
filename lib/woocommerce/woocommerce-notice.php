@@ -115,8 +115,8 @@ function genesis_sample_reset_woocommerce_notice() {
 	global $wpdb;
 
 	$args  = [
-		'meta_key'   => $wpdb->prefix . 'genesis_sample_woocommerce_message_dismissed',
-		'meta_value' => 1,
+		'meta_key'   => $wpdb->prefix . 'genesis_sample_woocommerce_message_dismissed', // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_key
+		'meta_value' => 1, // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_value
 	];
 	$users = get_users( $args );
 
