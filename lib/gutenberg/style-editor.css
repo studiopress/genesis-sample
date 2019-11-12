@@ -14,36 +14,6 @@ dl {
 	line-height: 1.625;
 }
 
-/* Tables
----------------------------------------------------------------------------- */
-
-table {
-	width: 100%;
-}
-
-tbody,
-td,
-th {
-	border-color: #eee;
-	text-align: left;
-}
-
-td,
-th {
-	padding: 10px;
-	text-align: left;
-	vertical-align: top;
-}
-
-th {
-	font-weight: 600;
-}
-
-td:first-child,
-th:first-child {
-	padding-left: 0;
-}
-
 /* Regular content width.
 /* 702px + 27px to match paragraph width on front-end and editor.
 ---------------------------------------------------------------------------- */
@@ -57,12 +27,31 @@ th:first-child {
 /* 1062px = default column width of 702px + .alignwide negative margin of 360px
 ---------------------------------------------------------------------------- */
 
+.wp-block[data-align="full"] .wp-block[data-align="wide"],
+.wp-block[data-align="wide"] .wp-block[data-align="wide"],
 .wp-block[data-align="wide"] {
 	max-width: 1092px;
 }
 
-.wp-block[data-align="full"] {
+.wp-block[data-align="full"],
+.wp-block[data-align="wide"] .wp-block,
+.wp-block[data-align="full"] .wp-block {
 	max-width: none;
+}
+
+/* Alignment
+---------------------------------------------------------------------------- */
+
+.has-text-align-center {
+	text-align: center;
+}
+
+.has-text-align-left {
+	text-align: left;
+}
+
+.has-text-align-right {
+	text-align: right;
 }
 
 /* Typography
@@ -261,14 +250,12 @@ p.has-background.light-text a:hover {
 	color: currentColor;
 }
 
-.wp-block-audio figcaption,
-.wp-block-embed figcaption,
-.wp-block-image figcaption {
-	color: #666;
-	font-size: 16px;
-	font-style: italic;
-	margin-bottom: 30px;
-	margin-top: 10px;
+figcaption {
+	color: #333;
+	font-size: 14px;
+	font-weight: 600;
+	margin: 0;
+	text-align: center;
 }
 
 .wp-block-pullquote[class*="align"] .wp-block-pullquote__citation,
@@ -282,17 +269,6 @@ p.has-background.light-text a:hover {
 .wp-block-cover .wp-block-cover-text {
 	color: #fff;
 	font-size: 48px;
-}
-
-/* Figcaption
----------------------------------------------------------------------------- */
-
-.wp-block-image figcaption {
-	color: #666;
-	font-family: "Source Sans Pro", sans-serif;
-	font-size: 14px;
-	font-style: italic;
-	margin-top: 10px;
 }
 
 /* Lists
@@ -318,19 +294,28 @@ p.has-background.light-text a:hover {
 
 hr.wp-block-separator {
 	border: none;
-	border-top: 1px solid #eee;
+	border-bottom: 1px solid currentColor;
+	color: #eee;
 	margin: 1.65em auto;
 }
 
+.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots) {
+	height: 1px;
+}
+
 hr.wp-block-separator.is-style-dots {
-	border: none;
+	border-width: 0;
+	color: #333;
 }
 
 /* Tables
 ---------------------------------------------------------------------------- */
 
+table {
+	width: 100%;
+}
+
 .wp-block-table {
-	font-size: 18px;
 	line-height: 2;
 }
 
@@ -338,14 +323,27 @@ hr.wp-block-separator.is-style-dots {
 .wp-block-table th,
 .wp-block-table tr {
 	border: none;
+	vertical-align: top;
+}
+
+.wp-block-table th {
+	font-weight: 600;
 }
 
 .wp-block-table tr {
 	border-top: 1px solid #eee;
 }
 
+.wp-block-table tr:last-of-type {
+	border-bottom: 1px solid #eee;
+}
+
 .wp-block-table tbody {
 	border-bottom: 1px solid #eee;
+}
+
+.wp-block-table.is-style-stripes {
+	border-bottom-width: 0;
 }
 
 /* Buttons
@@ -370,14 +368,9 @@ hr.wp-block-separator.is-style-dots {
 	white-space: normal;
 }
 
-.wp-block-button.is-style-squared .wp-block-button__link {
-	border-radius: 0;
-}
-
 .wp-block-button.is-style-outline .wp-block-button__link {
 	background-color: transparent;
 	border: 2px solid currentColor;
-	border-radius: 0;
 	padding: 13px 28px;
 }
 
@@ -432,12 +425,5 @@ hr.wp-block-separator.is-style-dots {
 }
 
 .wp-block[data-align="full"] .wp-block-latest-posts {
-	padding: 0 30px;
-}
-
-/* Columns block
----------------------------------------------------------------------------- */
-
-.wp-block[data-align="full"] .wp-block-columns > .editor-inner-blocks {
 	padding: 0 30px;
 }

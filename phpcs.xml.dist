@@ -40,6 +40,10 @@
 		<severity>0</severity>
 	</rule>
 
+	<rule ref="WordPress">
+		<exclude name="Generic.Arrays.DisallowShortArraySyntax"/>
+	</rule>
+
 	<!-- Allow theme-specific exceptions to WordPress filename rules. -->
 	<rule ref="WordPress.Files.FileName">
 		<properties>

@@ -79,6 +79,7 @@ return [
 				'_genesis_layout'              => 'full-width-content',
 				'_genesis_hide_breadcrumbs'    => true,
 				'_genesis_hide_singular_image' => true,
+				'_genesis_hide_footer_widgets' => true,
 			],
 		],
 	],

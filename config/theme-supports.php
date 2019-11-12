@@ -23,6 +23,8 @@ return [
 		'comment-list',
 		'gallery',
 		'search-form',
+		'script',
+		'style',
 	],
 	'genesis-accessibility'           => [
 		'drop-down-menu',
@@ -30,6 +32,7 @@ return [
 		'search-form',
 		'skip-links',
 	],
+	'genesis-lazy-load-images'        => '',
 	'genesis-after-entry-widget-area' => '',
 	'genesis-footer-widgets'          => 3,
 	'genesis-menus'                   => [

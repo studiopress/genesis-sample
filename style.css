@@ -5,7 +5,7 @@ Description: This is the sample theme created for the Genesis Framework.
 Author: StudioPress
 Author URI: https://www.studiopress.com/
 
-Version: 3.1.0
+Version: 3.2.0
 
 Tags: accessibility-ready, block-styles, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, left-sidebar, one-column, right-sidebar, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, two-columns, wide-blocks
 
@@ -203,11 +203,12 @@ li {
 }
 
 hr {
-	border: none;
+	border: 0;
 	border-collapse: collapse;
-	border-top: 1px solid #eee;
+	border-bottom: 1px solid currentColor;
 	clear: both;
-	margin: 30px 0;
+	color: #eee;
+	margin: 1.65em auto;
 }
 
 b,
@@ -491,7 +492,6 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 	margin-bottom: 40px;
-	table-layout: fixed;
 	width: 100%;
 	word-break: break-all;
 }
@@ -502,28 +502,22 @@ tbody {
 
 td,
 th {
+	line-height: 2;
 	text-align: left;
 	vertical-align: top;
 }
 
 td {
+	padding: 0.5em;
+}
+
+tr {
 	border-top: 1px solid #eee;
-	padding: 10px;
 }
 
 th {
 	font-weight: 600;
-	padding: 0 10px 10px;
-}
-
-td:first-child,
-th:first-child {
-	padding-left: 0;
-}
-
-td:last-child,
-th:last-child {
-	padding-right: 0;
+	padding: 0.5em;
 }
 
 /* Screen Reader Text
@@ -772,11 +766,15 @@ img.alignright,
 	margin: 0 0 20px 20px;
 }
 
+figcaption,
 .gallery-caption,
 .wp-caption-text {
 	font-size: 14px;
 	font-weight: 600;
-	margin: 0;
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+	padding-left: 10px;
+	padding-right: 10px;
 	text-align: center;
 }
 
