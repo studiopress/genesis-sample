@@ -1,6 +1,6 @@
 # Genesis Sample Theme Changelog
 
-## [3.2.0] - 2019-11-12
+## [3.2.0] - 2019-11-13
 
 ### Added
 * HTML5 supports for `scripts` and `styles` available in WordPress 5.3.
