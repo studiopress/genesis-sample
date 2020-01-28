@@ -1,4 +1,5 @@
 version: 2.1
+
 jobs:
   standards:
     docker:
@@ -9,6 +10,19 @@ jobs:
       - run: composer phpcs
       - run: npm run lint:css
       - run: npm run lint:js
+
+  bundle:
+    docker:
+      - image: circleci/node:12.12.0
+    steps:
+      - checkout
+      - run: npm ci
+      - run: npm run zip
+      - run: mkdir /tmp/artifacts
+      - run: mv ./*.zip /tmp/artifacts/.
+      - store_artifacts:
+          path: /tmp/artifacts/
+
 commands:
   install-dependencies:
     description: "Install development dependencies."
@@ -20,3 +34,7 @@ workflows:
   check-standards:
     jobs:
       - standards
+      - bundle:
+          filters:
+            tags:
+              only: /.*/
