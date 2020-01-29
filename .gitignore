@@ -3,3 +3,5 @@
 /phpcs.xml
 node_modules/
 vendor/
+*.zip
+process.yml
