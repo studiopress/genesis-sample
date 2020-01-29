@@ -17,4 +17,4 @@ indent_style = tab
 trim_trailing_whitespace = false
 
 [*.yml]
-indent_size = spaces
+indent_style = space

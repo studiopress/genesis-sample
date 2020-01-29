@@ -3,7 +3,8 @@
 /phpcs.xml
 node_modules/
 vendor/
-*.zip
+
+# Artifacts
 process.yml
-PIServiceData.json
-genesis-sample.*.json
+*.zip
+*.*.json
