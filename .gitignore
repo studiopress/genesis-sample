@@ -6,3 +6,4 @@ vendor/
 *.zip
 process.yml
 PIServiceData.json
+genesis-sample.*.json

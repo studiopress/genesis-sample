@@ -6,9 +6,8 @@
  * @TODO Maybe convert "tags" value to an array?
  */
 const fs = require('fs');
-const path = require('path');
 
-// Decalre empty data object
+// Declare empty data object
 let data = {};
 
 // Get array of "theme" keys from process.env.npm_package_theme_*
@@ -22,4 +21,5 @@ keys.forEach(envKey => {
 });
 
 // Write data object to a JSON file
-fs.writeFileSync(`${process.cwd()}/PIServiceData.json`, JSON.stringify(data));
+const filePath = `${process.cwd()}/${data.textdomain}.${data.version}.json`;
+fs.writeFileSync(filePath, JSON.stringify(data));
