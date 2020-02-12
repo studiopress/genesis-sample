@@ -26,7 +26,8 @@
 		"lint:css": "stylelint \"style.css\" \"lib/gutenberg/*.css\" \"lib/woocommerce/*.css\" \"lib/amp/*.css\"",
 		"lint:js": "eslint .",
 		"fix:js": "eslint . --fix",
-		"zip": "node .scripts/makezip.js"
+		"zip": "node .scripts/makezip.js",
+		"prep:piservice": "node .scripts/makePIServiceData.js"
 	},
 	"browserslist": [
 		"> 1%",
