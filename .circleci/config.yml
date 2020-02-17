@@ -96,8 +96,8 @@ jobs:
       - run:
           command: |
             ARTIFACT_FILE=find /tmp/artifacts -type f -name *.zip -printf "%f\n"
-            DEST_PATH=home/wpe-user/sites/<< STAGING_INSTALL_NAME >>/wp-content/uploads/studiopress-downloads/$ARTIFACT_FILE
-            DEST_HOST=<< STAGING_INSTALL_NAME >>@<< STAGING_INSTALL_NAME >>.ssh.wpengine.net
+            DEST_PATH=home/wpe-user/sites/${STAGING_INSTALL_NAME}/wp-content/uploads/studiopress-downloads/$ARTIFACT_FILE
+            DEST_HOST=${STAGING_INSTALL_NAME}@${STAGING_INSTALL_NAME}.ssh.wpengine.net
             scp /tmp/artifacts/$ARTIFACT_FILE $DEST_HOST/$DEST_PATH
 
   deploy_sp_prod:
@@ -111,8 +111,8 @@ jobs:
       - run:
           command: |
             ARTIFACT_FILE=find /tmp/artifacts -type f -name *.zip -printf "%f\n"
-            DEST_PATH=home/wpe-user/sites/<< PROD_INSTALL_NAME >>/wp-content/uploads/studiopress-downloads/$ARTIFACT_FILE
-            DEST_HOST=<< PROD_INSTALL_NAME >>@<< PROD_INSTALL_NAME >>.ssh.wpengine.net
+            DEST_PATH=home/wpe-user/sites/${PROD_INSTALL_NAME}/wp-content/uploads/studiopress-downloads/$ARTIFACT_FILE
+            DEST_HOST=${PROD_INSTALL_NAME}@${PROD_INSTALL_NAME}.ssh.wpengine.net
             scp /tmp/artifacts/$ARTIFACT_FILE $DEST_HOST/$DEST_PATH
 
 workflows:
