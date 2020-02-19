@@ -7,19 +7,53 @@
  */
 const fs = require('fs');
 
-// Declare empty data object
-let data = {};
+/**
+ * Run the script
+ */
+const runScript = function() {
+	// Set the destination path
+	const destPath = getDestPath(process.argv[2]);
 
-// Get array of "theme" keys from process.env.npm_package_theme_*
-const keys = Object.keys(process.env).filter(key => key.match(/npm_package_theme_.+/));
+	// Declare empty data object
+	let data = {};
 
-// Iterate through keys and populate the data object
-// Note: this isn't using a map because we want the output to be an object, not an array
-keys.forEach(envKey => {
-	key = envKey.match(/npm_package_theme_(.+)/)[1]; // strip npm_package_theme_ from key
-	data[key] = process.env[envKey]; // Save to data object
-});
+	// Get array of "theme" keys from process.env.npm_package_theme_*
+	const keys = Object.keys(process.env).filter(key => key.match(/npm_package_theme_.+/));
 
-// Write data object to a JSON file
-const filePath = `${process.cwd()}/${data.textdomain}.${data.version}.json`;
-fs.writeFileSync(filePath, JSON.stringify(data));
+	// Iterate through keys and populate the data object
+	// Note: this isn't using a map because we want the output to be an object, not an array
+	keys.forEach(envKey => {
+		key = envKey.match(/npm_package_theme_(.+)/)[1]; // strip npm_package_theme_ from key
+		data[key] = process.env[envKey]; // Save to data object
+	});
+
+	// Write data object to a JSON file
+	const filePath = `${destPath}/${data.textdomain}.${data.version}.json`;
+	fs.writeFileSync(filePath, JSON.stringify(data));
+}
+
+/**
+ * Get destination path
+ *
+ * @param {string} path
+ *
+ * @return {string}
+ */
+const getDestPath = function(path) {
+	const defaultPath = process.cwd();
+
+	// Return default if a path wasn't provided
+	if( ! path || ! path.length){
+		return defaultPath;
+	}
+
+	// Return default if the provided path doesn't exist
+	if (!fs.existsSync(path)) {
+		return defaultPath;
+	}
+
+	return path;
+}
+
+// Run the script
+runScript();

@@ -1,42 +1,128 @@
 version: 2.1
 
-jobs:
-  standards:
+commands:
+  install_dependencies:
+    description: "Install development dependencies."
+    steps:
+      - run: composer install
+      - run: npm ci
+  mkdir_artifacts:
+    description: "Make Artifacts directory"
+    steps:
+      - run:
+          command: |
+            [ ! -d "/tmp/artifacts" ] && mkdir /tmp/artifacts &>/dev/null
+
+executors:
+  base:
+    docker:
+      - image: circleci/buildpack-deps:latest
+    working_directory: /tmp
+  php_node:
     docker:
       - image: circleci/php:7.3.3-stretch-node-browsers
+    working_directory: /tmp/theme
+  python:
+    docker:
+      - image: circleci/python:3.7-stretch
+    working_directory: /tmp
+
+jobs:
+  checkout:
+    executor: base
     steps:
-      - checkout
-      - install-dependencies
+      - checkout:
+          path: theme
+      - persist_to_workspace:
+          root: /tmp
+          paths:
+            - theme
+
+  standards:
+    executor: php_node
+    steps:
+      - attach_workspace:
+          at: /tmp
+      - install_dependencies
       - run: composer phpcs
       - run: npm run lint:css
       - run: npm run lint:js
 
   bundle:
-    docker:
-      - image: circleci/node:12.12.0
+    executor: php_node
     steps:
-      - checkout
+      - attach_workspace:
+          at: /tmp
       - run: npm ci
       - run: npm run zip
-      - run: mkdir /tmp/artifacts
+      - mkdir_artifacts
       - run: mv ./*.zip /tmp/artifacts/.
+      - persist_to_workspace:
+          root: /tmp
+          paths:
+            - artifacts
+            - theme
       - store_artifacts:
           path: /tmp/artifacts/
 
-commands:
-  install-dependencies:
-    description: "Install development dependencies."
+  create_data_file:
+    executor: php_node
     steps:
-      - run: composer install
-      - run: npm ci
+      - attach_workspace:
+          at: /tmp
+      - run: npm run prep:piservice /tmp/artifacts
+      - persist_to_workspace:
+          root: /tmp
+          paths:
+            - artifacts
+
+  deploy_s3:
+    executor: python
+    steps:
+      - attach_workspace:
+          at: /tmp
+      - aws-s3/sync:
+          from: "/tmp/artifacts/"
+          to: "s3://update.atomicblocks.com/themes/${S3_PATH}/"
+
 workflows:
   version: 2
   check-standards:
     jobs:
-      - standards
+      - checkout:
+          filters:
+            tags:
+              only: /.*/
+      - standards:
+          filters:
+            tags:
+              only: /.*/
+          requires:
+            - checkout
       - bundle:
+          requires:
+            - standards
           filters:
             tags:
               only: /.*/
             branches:
               only: master
+      - create_data_file:
+          requires:
+            - bundle
+          filters:
+            tags:
+              only: /.*/
+            branches:
+              only: master
+      - deploy_s3:
+          requires:
+            - create_data_file
+          filters:
+            tags:
+              only: /.*/
+            branches:
+              only: master
+
+orbs:
+  aws-s3: circleci/aws-s3@1.0.0
