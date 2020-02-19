@@ -21,7 +21,7 @@ executors:
   php_node:
     docker:
       - image: circleci/php:7.3.3-stretch-node-browsers
-    working_directory: /tmp/genesis-sample
+    working_directory: /tmp/theme
   python:
     docker:
       - image: circleci/python:3.7-stretch
@@ -32,11 +32,11 @@ jobs:
     executor: base
     steps:
       - checkout:
-          path: genesis-sample
+          path: theme
       - persist_to_workspace:
           root: /tmp
           paths:
-            - genesis-sample
+            - theme
 
   standards:
     executor: php_node
@@ -61,7 +61,7 @@ jobs:
           root: /tmp
           paths:
             - artifacts
-            - genesis-sample
+            - theme
       - store_artifacts:
           path: /tmp/artifacts/
 
@@ -83,7 +83,7 @@ jobs:
           at: /tmp
       - aws-s3/sync:
           from: "/tmp/artifacts/"
-          to: "s3://update.atomicblocks.com/themes/genesis_sample/"
+          to: "s3://update.atomicblocks.com/themes/${S3_PATH}/"
 
   deploy_sp_staging:
     executor: python
@@ -114,6 +114,7 @@ jobs:
             DEST_PATH=home/wpe-user/sites/${PROD_INSTALL_NAME}/wp-content/uploads/studiopress-downloads/${ARTIFACT_FILE}
             DEST_HOST=${PROD_INSTALL_NAME}@${PROD_INSTALL_NAME}.ssh.wpengine.net
             scp /tmp/artifacts/${ARTIFACT_FILE} ${DEST_HOST}/${DEST_PATH}
+
 
 workflows:
   version: 2
