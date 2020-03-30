@@ -142,6 +142,10 @@ h6.light {
 /* Buttons
 ---------------------------------------------------------------------------- */
 
+.wp-block-buttons .wp-block-button {
+	margin: 0 0 4px;
+}
+
 .ab-block-cta .ab-button {
 	font-family: "Source Sans Pro", sans-serif;
 	font-weight: 600;
