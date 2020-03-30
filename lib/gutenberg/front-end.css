@@ -363,7 +363,8 @@ hr.wp-block-separator {
 }
 
 .site-container .blocks-gallery-grid,
-.site-container .wp-block-gallery {
+.site-container .wp-block-gallery,
+.site-container .wp-block-social-links {
 	padding-left: 0;
 }
 
