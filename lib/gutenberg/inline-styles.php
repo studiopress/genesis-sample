@@ -65,7 +65,7 @@ function genesis_sample_custom_gutenberg_admin_css() {
 
 	$css = <<<CSS
 .ab-block-post-grid .ab-post-grid-items h2 a:hover,
-.block-editor__container .editor-block-list__block a {
+.block-editor__container .editor-styles-wrapper a {
 	color: {$appearance['link-color']};
 }
 
