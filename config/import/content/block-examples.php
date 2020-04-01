@@ -86,7 +86,7 @@ This is an example of a WordPress post, you could edit this to put information a
 <!-- /wp:button -->
 
 <!-- wp:button {"borderRadius":5,"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link" style="border-radius:5px">Outlined Button</a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="#" style="border-radius:5px">Outlined Button</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 
