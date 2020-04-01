@@ -80,13 +80,15 @@ This is an example of a WordPress post, you could edit this to put information a
 <h2 style="text-align:left">Buttons</h2>
 <!-- /wp:heading -->
 
-<!-- wp:button {"align":"center"} -->
-<div class="wp-block-button aligncenter"><a class="wp-block-button__link" href="#">Button<br></a></div>
+<!-- wp:buttons {"align":"center"} -->
+<div class="wp-block-buttons aligncenter"><!-- wp:button {"borderRadius":5} -->
+<div class="wp-block-button"><a class="wp-block-button__link" href="#" style="border-radius:5px">Button</a></div>
 <!-- /wp:button -->
 
-<!-- wp:button {"align":"center","className":"is-style-outline"} -->
-<div class="wp-block-button aligncenter is-style-outline"><a class="wp-block-button__link" href="#">Outlined Button<br></a></div>
-<!-- /wp:button -->
+<!-- wp:button {"borderRadius":5,"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link" style="border-radius:5px">Outlined Button</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
 
 <!-- wp:separator {"className":"is-style-wide"} -->
 <hr class="wp-block-separator is-style-wide"/>
