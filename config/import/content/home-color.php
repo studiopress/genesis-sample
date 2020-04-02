@@ -27,8 +27,8 @@ return <<<CONTENT
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"align":"left"} -->
-<div class="wp-block-buttons alignleft"><!-- wp:button {"borderRadius":5} -->
-<div class="wp-block-button"><a class="wp-block-button__link" href="#" style="border-radius:5px">Learn More</a></div>
+<div class="wp-block-buttons alignleft"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link" href="#">Learn More</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div></div>
 <!-- /wp:media-text -->

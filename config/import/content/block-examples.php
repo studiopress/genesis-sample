@@ -81,12 +81,14 @@ This is an example of a WordPress post, you could edit this to put information a
 <!-- /wp:heading -->
 
 <!-- wp:buttons {"align":"center"} -->
-<div class="wp-block-buttons aligncenter"><!-- wp:button {"borderRadius":5} -->
-<div class="wp-block-button"><a class="wp-block-button__link" href="#" style="border-radius:5px">Button</a></div>
-<!-- /wp:button -->
+<div class="wp-block-buttons aligncenter"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link" href="#">Button</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
 
-<!-- wp:button {"borderRadius":5,"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="#" style="border-radius:5px">Outlined Button</a></div>
+<!-- wp:buttons {"align":"center"} -->
+<div class="wp-block-buttons aligncenter"><!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="#">Outlined Button</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 
