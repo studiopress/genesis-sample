@@ -1,6 +1,7 @@
 # Genesis Sample Theme Changelog
 
 ## [3.3.0] - 2020-04-07
+Requires WordPress 5.4 or higher.
 
 ### Added
 * CSS to adjust left padding for WordPress 5.4 Social Icons.
