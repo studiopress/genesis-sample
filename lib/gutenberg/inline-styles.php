@@ -65,7 +65,7 @@ function genesis_sample_custom_gutenberg_admin_css() {
 
 	$css = <<<CSS
 .ab-block-post-grid .ab-post-grid-items h2 a:hover,
-.block-editor__container .editor-block-list__block a {
+.block-editor__container .editor-styles-wrapper a {
 	color: {$appearance['link-color']};
 }
 
@@ -84,6 +84,8 @@ function genesis_sample_custom_gutenberg_admin_css() {
 	color: {$appearance['button-outline-hover']};
 }
 CSS;
+
+	$css .= genesis_sample_editor_inline_color_palette();
 
 	wp_add_inline_style( genesis_get_theme_handle() . '-gutenberg-fonts', $css );
 
@@ -142,6 +144,30 @@ function genesis_sample_inline_color_palette() {
 		.site-container .wp-block-button .wp-block-button__link.has-{$color_info['slug']}-background-color,
 		.site-container .wp-block-pullquote.is-style-solid-color.has-{$color_info['slug']}-background-color {
 			background-color: {$color_info['color']};
+		}
+CSS;
+	}
+
+	return $css;
+}
+
+/**
+ * Generate CSS for editor colors based on theme color palette support.
+ *
+ * @since 3.3.0
+ *
+ * @return string The editor colors CSS if `editor-color-palette` theme support was declared.
+ */
+function genesis_sample_editor_inline_color_palette() {
+
+	$css                  = '';
+	$appearance           = genesis_get_config( 'appearance' );
+	$editor_color_palette = $appearance['editor-color-palette'];
+
+	foreach ( $editor_color_palette as $color_info ) {
+		$css .= <<<CSS
+		.has-{$color_info['slug']}-color {
+			color: {$color_info['color']};
 		}
 CSS;
 	}
