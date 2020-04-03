@@ -10,6 +10,7 @@ Requires WordPress 5.4 or higher.
 
 ### Changed
 * Updated one-click theme setup content to include WordPress 5.4 button markup.
+* Update developer dependencies. ([GitHub version](https://github.com/studiopress/genesis-sample/) only.)
 
 ### Removed
 * Unused `light` heading class.
