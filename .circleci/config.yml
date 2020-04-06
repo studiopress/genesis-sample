@@ -1,22 +1,175 @@
 version: 2.1
-jobs:
-  standards:
-    docker:
-      - image: circleci/php:7.3.3-stretch-node-browsers
-    steps:
-      - checkout
-      - install-dependencies
-      - run: composer phpcs
-      - run: npm run lint:css
-      - run: npm run lint:js
+
 commands:
-  install-dependencies:
+  install_dependencies:
     description: "Install development dependencies."
     steps:
       - run: composer install
       - run: npm ci
+  mkdir_artifacts:
+    description: "Make Artifacts directory"
+    steps:
+      - run:
+          command: |
+            [ ! -d "/tmp/artifacts" ] && mkdir /tmp/artifacts &>/dev/null
+
+executors:
+  base:
+    docker:
+      - image: circleci/buildpack-deps:latest
+    working_directory: /tmp
+  php_node:
+    docker:
+      - image: circleci/php:7.3.3-stretch-node-browsers
+    working_directory: /tmp/theme
+  python:
+    docker:
+      - image: circleci/python:3.7-stretch
+    working_directory: /tmp
+
+jobs:
+  checkout:
+    executor: base
+    steps:
+      - checkout:
+          path: theme
+      - persist_to_workspace:
+          root: /tmp
+          paths:
+            - theme
+
+  standards:
+    executor: php_node
+    steps:
+      - attach_workspace:
+          at: /tmp
+      - install_dependencies
+      - run: composer phpcs
+      - run: npm run lint:css
+      - run: npm run lint:js
+
+  bundle:
+    executor: php_node
+    steps:
+      - attach_workspace:
+          at: /tmp
+      - run: npm ci
+      - run: npm run zip
+      - mkdir_artifacts
+      - run: mv ./*.zip /tmp/artifacts/.
+      - persist_to_workspace:
+          root: /tmp
+          paths:
+            - artifacts
+            - theme
+      - store_artifacts:
+          path: /tmp/artifacts/
+
+  create_data_file:
+    executor: php_node
+    steps:
+      - attach_workspace:
+          at: /tmp
+      - run: npm run prep:piservice /tmp/artifacts
+      - persist_to_workspace:
+          root: /tmp
+          paths:
+            - artifacts
+
+  deploy_s3:
+    executor: python
+    steps:
+      - attach_workspace:
+          at: /tmp
+      - aws-s3/sync:
+          from: "/tmp/artifacts/"
+          to: "s3://update.atomicblocks.com/themes/${S3_PATH}/"
+
+  deploy_sp_staging:
+    executor: python
+    steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "f2:c5:53:4d:39:eb:ba:72:06:4d:fc:48:7c:5a:0f:df"
+      - attach_workspace:
+          at: /tmp
+      - run:
+          command: |
+            ARTIFACT_FILE=find /tmp/artifacts -type f -name *.zip -printf "%f\n"
+            DEST_PATH=home/wpe-user/sites/${STAGING_INSTALL_NAME}/wp-content/uploads/member-access/${ARTIFACT_FILE}
+            DEST_HOST=${STAGING_INSTALL_NAME}@${STAGING_INSTALL_NAME}.ssh.wpengine.net
+            scp /tmp/artifacts/${ARTIFACT_FILE} ${DEST_HOST}/${DEST_PATH}
+
+  deploy_sp_prod:
+    executor: python
+    steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "f2:c5:53:4d:39:eb:ba:72:06:4d:fc:48:7c:5a:0f:df"
+      - attach_workspace:
+          at: /tmp
+      - run:
+          command: |
+            ARTIFACT_FILE=find /tmp/artifacts -type f -name *.zip -printf "%f\n"
+            DEST_PATH=home/wpe-user/sites/${PROD_INSTALL_NAME}/wp-content/uploads/member-access/${ARTIFACT_FILE}
+            DEST_HOST=${PROD_INSTALL_NAME}@${PROD_INSTALL_NAME}.ssh.wpengine.net
+            scp /tmp/artifacts/${ARTIFACT_FILE} ${DEST_HOST}/${DEST_PATH}
+
 workflows:
   version: 2
   check-standards:
     jobs:
-      - standards
+      - checkout:
+          filters:
+            tags:
+              only: /.*/
+      - standards:
+          filters:
+            tags:
+              only: /.*/
+          requires:
+            - checkout
+      - bundle:
+          requires:
+            - standards
+          filters:
+            tags:
+              only: /.*/
+            branches:
+              only: master
+      - create_data_file:
+          requires:
+            - bundle
+          filters:
+            tags:
+              only: /.*/
+            branches:
+              only: master
+      - deploy_s3:
+          requires:
+            - create_data_file
+          filters:
+            tags:
+              only: /.*/
+            branches:
+              only: master
+      - deploy_sp_staging:
+          requires:
+            - create_data_file
+          filters:
+            tags:
+              only: /.*/
+            branches:
+              only: master
+      - deploy_sp_prod:
+          requires:
+            - create_data_file
+            - deploy_sp_staging
+          filters:
+            tags:
+              only: /.*/
+            branches:
+              only: master
+
+orbs:
+  aws-s3: circleci/aws-s3@1.0.0

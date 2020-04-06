@@ -26,9 +26,11 @@ return <<<CONTENT
 <p>All the resources, training, and support you need to run your dream online business! </p>
 <!-- /wp:paragraph -->
 
-<!-- wp:button {"textColor":"light-gray","className":"is-style-default"} -->
-<div class="wp-block-button is-style-default"><a class="wp-block-button__link has-text-color has-light-gray-color" href="#">Learn More</a></div>
-<!-- /wp:button --></div></div>
+<!-- wp:buttons {"align":"left"} -->
+<div class="wp-block-buttons alignleft"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link" href="#">Learn More</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div></div>
 <!-- /wp:media-text -->
 
 <!-- wp:atomic-blocks/ab-container {"containerPaddingTop":4.5,"containerPaddingRight":0,"containerPaddingBottom":0,"containerPaddingLeft":0,"containerMarginTop":0,"containerMarginBottom":0,"containerWidth":"full","containerBackgroundColor":"#111111"} -->
@@ -81,9 +83,11 @@ return <<<CONTENT
 <!-- /wp:atomic-blocks/ab-column -->
 
 <!-- wp:atomic-blocks/ab-column -->
-<div class="wp-block-atomic-blocks-ab-column ab-block-layout-column"><div class="ab-block-layout-column-inner"><!-- wp:button {"customTextColor":"#ffffff","borderRadius":0,"align":"right","className":"is-style-outline home-contact"} -->
-<div class="wp-block-button alignright is-style-outline home-contact"><a class="wp-block-button__link has-text-color no-border-radius" href="/contact" style="color:#ffffff">Get in touch</a></div>
-<!-- /wp:button --></div></div>
+<div class="wp-block-atomic-blocks-ab-column ab-block-layout-column"><div class="ab-block-layout-column-inner"><!-- wp:buttons {"align":"right"} -->
+<div class="wp-block-buttons alignright"><!-- wp:button {"customTextColor":"#ffffff","borderRadius":0,"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-text-color no-border-radius" href="#" style="color:#ffffff">Get in touch</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div></div>
 <!-- /wp:atomic-blocks/ab-column --></div></div>
 <!-- /wp:atomic-blocks/ab-columns -->
 

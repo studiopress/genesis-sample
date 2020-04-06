@@ -106,15 +106,6 @@ h6 {
 	font-size: 16px;
 }
 
-.wp-block-heading h1.light,
-.wp-block-heading h2.light,
-.wp-block-heading h3.light,
-.wp-block-heading h4.light,
-.wp-block-heading h5.light,
-.wp-block-heading h6.light {
-	color: #f5f5f5;
-}
-
 .editor-post-title__block .editor-post-title__input {
 	font-family: "Source Sans Pro", sans-serif;
 	font-size: 30px;
