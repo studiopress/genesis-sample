@@ -83,8 +83,8 @@ return <<<CONTENT
 <!-- /wp:atomic-blocks/ab-column -->
 
 <!-- wp:atomic-blocks/ab-column -->
-<div class="wp-block-atomic-blocks-ab-column ab-block-layout-column"><div class="ab-block-layout-column-inner"><!-- wp:buttons {"align":"right"} -->
-<div class="wp-block-buttons alignright"><!-- wp:button {"customTextColor":"#ffffff","borderRadius":0,"className":"is-style-outline"} -->
+<div class="wp-block-atomic-blocks-ab-column ab-block-layout-column"><div class="ab-block-layout-column-inner"><!-- wp:buttons {"align":"right","className":"home-contact"} -->
+<div class="wp-block-buttons alignright home-contact"><!-- wp:button {"customTextColor":"#ffffff","borderRadius":0,"className":"is-style-outline"} -->
 <div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-text-color no-border-radius" href="#" style="color:#ffffff">Get in touch</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div></div>
