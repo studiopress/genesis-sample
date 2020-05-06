@@ -75,7 +75,7 @@ function genesis_sample_enqueue_scripts_styles() {
 		genesis_get_theme_handle() . '-fonts',
 		$appearance['fonts-url'],
 		[],
-		genesis_get_theme_version()
+		null
 	);
 
 	wp_enqueue_style( 'dashicons' );
