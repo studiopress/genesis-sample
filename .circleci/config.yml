@@ -65,6 +65,14 @@ jobs:
       - store_artifacts:
           path: /tmp/artifacts/
 
+  # create_latest_artifact:
+  #   executor: base
+  #   steps:
+  #     - attach_workspace:
+  #         at: /tmp
+  #     - run:
+
+
   create_data_file:
     executor: php_node
     steps:
