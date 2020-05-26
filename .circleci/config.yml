@@ -167,7 +167,7 @@ workflows:
                 - master
       - deploy_s3:
           context: wpe-product-info-aws
-          environment: staging/themes
+          # environment: staging/themes
           requires:
             - create_data_file
             - deploy_studiopress
