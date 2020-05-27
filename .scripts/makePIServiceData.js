@@ -29,7 +29,7 @@ const runScript = function() {
 	// Write data object to a JSON file
 	const themeName = process.env.THEME_SLUG || data.textdomain;
 	const themeVersion = process.env.THEME_VERSION || data.version;
-	const filePath = `${destPath}/${themeName}.${themeVersion}.json`;
+	const filePath = `${destPath}/${process.env.VERSION_DATA_FILE}` || `${destPath}/${themeName}.${themeVersion}.json`;
 	fs.writeFileSync(filePath, JSON.stringify(data));
 }
 
