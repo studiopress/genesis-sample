@@ -2,7 +2,6 @@
 /**
  * Create a JSON file to be consumed by the Product Info Service
  *
- * @TODO Accept a destination file path via CLI arguments
  * @TODO Maybe convert "tags" value to an array?
  */
 const fs = require('fs');
@@ -11,8 +10,8 @@ const fs = require('fs');
  * Run the script
  */
 const runScript = function() {
-	// Set the destination path
-	const destPath = getDestPath(process.argv[2]);
+	// Sanitize the destination path
+	const destPath = sanitizeDestPath(process.argv[2]);
 
 	// Declare empty data object
 	let data = {};
@@ -28,18 +27,20 @@ const runScript = function() {
 	});
 
 	// Write data object to a JSON file
-	const filePath = `${destPath}/${data.textdomain}.${data.version}.json`;
+	const themeName = process.env.THEME_SLUG || data.textdomain;
+	const themeVersion = process.env.THEME_VERSION || data.version;
+	const filePath = `${destPath}/${themeName}.${themeVersion}.json`;
 	fs.writeFileSync(filePath, JSON.stringify(data));
 }
 
 /**
- * Get destination path
+ * Sanitize destination path
  *
  * @param {string} path
  *
  * @return {string}
  */
-const getDestPath = function(path) {
+const sanitizeDestPath = function(path) {
 	const defaultPath = process.cwd();
 
 	// Return default if a path wasn't provided

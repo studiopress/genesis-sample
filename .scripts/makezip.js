@@ -39,12 +39,13 @@ const excludes = [
 
 // Creates a file to stream archive data to.
 // Uses the name in package.json, such as 'child-theme.1.1.0.zip'.
-let fileName = `${process.env.npm_package_name}.${
-	process.env.npm_package_theme_version
-}.zip`;
-let output = fs.createWriteStream(fileName);
+const slug = process.env.THEME_SLUG || process.env.npm_package_theme_textdomain;
+const version = process.env.THEME_VERSION || process.env.npm_package_theme_version;
+const fileName = process.env.VERSION_ARTIFACT_FILE || `${slug}.${version}.zip`;
 
-let archive = archiver("zip", {
+const output = fs.createWriteStream(fileName);
+
+const archive = archiver("zip", {
 	zlib: { level: 9 } // Best compression.
 });
 
@@ -55,7 +56,7 @@ const setupZipArchive = function() {
 	// Listens for all archive data to be written.
 	// Report the zip name and size, and rename *.txt files back to *.md again.
 	output.on("close", function() {
-		let fileSize = prettyBytes(archive.pointer());
+		const fileSize = prettyBytes(archive.pointer());
 		console.log(chalk`{cyan Created ${fileName}, ${fileSize}}`);
 
 		renameTxtFilesToMarkdown();
