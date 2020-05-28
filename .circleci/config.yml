@@ -75,6 +75,7 @@ jobs:
     steps:
       - attach_workspace:
           at: /tmp
+      - set_env_vars
       - run: npm ci
       - run: npm run zip
       - mkdir_artifacts
@@ -92,6 +93,7 @@ jobs:
     steps:
       - attach_workspace:
           at: /tmp
+      - set_env_vars
       - run: npm run prep:piservice /tmp/artifacts
       - persist_to_workspace:
           root: /tmp
@@ -107,6 +109,7 @@ jobs:
     steps:
       - attach_workspace:
           at: /tmp
+      - set_env_vars
       - run:
           command: |
             DEST_PATH=home/wpe-user/sites/<< parameters.sp_install >>/wp-content/uploads/member-access
@@ -124,6 +127,7 @@ jobs:
     steps:
       - attach_workspace:
           at: /tmp
+      - set_env_vars
       - run:
           name: "Copy Version to Latest"
           command: |
