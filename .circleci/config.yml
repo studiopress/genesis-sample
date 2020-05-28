@@ -12,6 +12,27 @@ commands:
       - run:
           command: |
             [ ! -d "/tmp/artifacts" ] && mkdir /tmp/artifacts &>/dev/null
+  set_env_vars:
+    description: "Set commonly used environment variables"
+    steps:
+      - run:
+          name: "Set Theme Slug"
+          command: |
+            echo "export THEME_SLUG=$(grep 'textdomain' /tmp/theme/package.json | awk -F: '{print $2}' | sed -e 's/\s//g' -e 's/[\"\,]//g')" >> ${BASH_ENV}
+      - run:
+          name: "Set Theme Version"
+          command: |
+            echo "export THEME_VERSION=$(grep 'version' /tmp/theme/package.json | awk -F: '{print $2}' | sed -e 's/\s//g' -e 's/[\"\,]//g')" >> ${BASH_ENV}
+      - run:
+          name: "Set Artifact Name"
+          command: |
+            echo "export VERSION_ARTIFACT_FILE=${THEME_SLUG}.${THEME_VERSION}.zip" >> ${BASH_ENV}
+            echo "export VERSION_DATA_FILE=${THEME_SLUG}.${THEME_VERSION}.json" >> ${BASH_ENV}
+      - run:
+          name: "Set Latest Artifact Name"
+          command: |
+            echo "export LATEST_ARTIFACT_FILE=${THEME_SLUG}.latest.zip" >> ${BASH_ENV}
+            echo "export LATEST_DATA_FILE=${THEME_SLUG}.latest.json" >> ${BASH_ENV}
 
 executors:
   base:
@@ -33,6 +54,7 @@ jobs:
     steps:
       - checkout:
           path: theme
+      - set_env_vars
       - persist_to_workspace:
           root: /tmp
           paths:
@@ -56,7 +78,7 @@ jobs:
       - run: npm ci
       - run: npm run zip
       - mkdir_artifacts
-      - run: mv ./*.zip /tmp/artifacts/.
+      - run: mv ./${VERSION_ARTIFACT_FILE} /tmp/artifacts/.
       - persist_to_workspace:
           root: /tmp
           paths:
@@ -87,12 +109,11 @@ jobs:
           at: /tmp
       - run:
           command: |
-            echo "export ARTIFACT_FILE=$(find /tmp/artifacts -type f -name *.zip -printf '%f\n')" >> ${BASH_ENV}
-            echo "export DEST_PATH=home/wpe-user/sites/<< parameters.sp_install >>/wp-content/uploads/member-access" >> ${BASH_ENV}
-            echo "export DEST_HOST=<< parameters.sp_install >>@<< parameters.sp_install >>.ssh.wpengine.net" >> ${BASH_ENV}
+            DEST_PATH=home/wpe-user/sites/<< parameters.sp_install >>/wp-content/uploads/member-access
+            DEST_HOST=<< parameters.sp_install >>@<< parameters.sp_install >>.ssh.wpengine.net
             echo "${SP_DEPLOY_KEY}" | base64 -d > ./sp_deploy_key
             chmod 600 ./sp_deploy_key
-      - run: scp -i ./sp_deploy_key -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null /tmp/artifacts/${ARTIFACT_FILE} ${DEST_HOST}:/${DEST_PATH}
+      - run: scp -i ./sp_deploy_key -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null /tmp/artifacts/${VERSION_ARTIFACT_FILE} ${DEST_HOST}:/${DEST_PATH}
 
   deploy_s3:
     executor: python
@@ -104,12 +125,13 @@ jobs:
       - attach_workspace:
           at: /tmp
       - run:
-          name: "Set S3_PATH env variable"
+          name: "Copy Version to Latest"
           command: |
-            echo "export S3_PATH=$(grep 'textdomain' /tmp/theme/package.json | awk -F: '{print $2}' | sed 's/^\s//' | sed 's/\"//g')" >> ${BASH_ENV}
+            cp /tmp/artifacts/${VERSION_ARTIFACT_FILE} /tmp/artifacts/${LATEST_ARTIFACT_FILE}
+            cp /tmp/artifacts/${VERSION_DATA_FILE} /tmp/artifacts/${LATEST_DATA_FILE}
       - aws-s3/sync:
           from: "/tmp/artifacts/"
-          to: "s3://update.atomicblocks.com/<< parameters.environment >>/${S3_PATH}/"
+          to: "s3://update.atomicblocks.com/<< parameters.environment >>/${THEME_SLUG}/"
 
 workflows:
   version: 2
@@ -167,7 +189,7 @@ workflows:
                 - master
       - deploy_s3:
           context: wpe-product-info-aws
-          environment: staging/themes
+          # environment: staging/themes
           requires:
             - create_data_file
             - deploy_studiopress
