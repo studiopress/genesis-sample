@@ -33,6 +33,7 @@ const runScript = function() {
 	const filePath = `${destPath}/${fileName}`;
 
 	fs.writeFileSync(filePath, JSON.stringify(data));
+}
 
 /**
  * Sanitize destination path
