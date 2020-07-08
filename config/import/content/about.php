@@ -20,9 +20,9 @@ return <<<CONTENT
 <div class="wp-block-image"><figure class="aligncenter"><img src="$genesis_sample_about_image_url" alt="" class="wp-image-2141"/></figure></div>
 <!-- /wp:image -->
 
-<!-- wp:atomic-blocks/ab-spacer {"spacerHeight":29} -->
-<div style="color:#ddd" class="wp-block-atomic-blocks-ab-spacer ab-block-spacer ab-divider-solid ab-divider-size-1"><hr style="height:29px"/></div>
-<!-- /wp:atomic-blocks/ab-spacer -->
+<!-- wp:genesis-blocks/gb-spacer {"spacerHeight":29} -->
+<div style="color:#ddd" class="wp-block-genesis-blocks-gb-spacer gb-block-spacer gb-divider-solid gb-divider-size-1"><hr style="height:29px"/></div>
+<!-- /wp:genesis-blocks/gb-spacer -->
 
 <!-- wp:columns -->
 <div class="wp-block-columns has-2-columns"><!-- wp:column -->

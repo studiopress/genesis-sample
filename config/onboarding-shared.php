@@ -16,9 +16,9 @@
 return [
 	'plugins'          => [
 		[
-			'name'       => __( 'Atomic Blocks', 'genesis-sample' ),
-			'slug'       => 'atomic-blocks/atomicblocks.php',
-			'public_url' => 'https://atomicblocks.com/',
+			'name'       => __( 'Genesis Blocks', 'genesis-sample' ),
+			'slug'       => 'genesis-blocks/genesisblocks.php',
+			'public_url' => 'https://wpeng.in/genesis-blocks/',
 		],
 		[
 			'name'       => __( 'Simple Social Icons', 'genesis-sample' ),

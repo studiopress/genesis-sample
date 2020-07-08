@@ -19,7 +19,7 @@ function genesis_sample_custom_gutenberg_css() {
 	$appearance = genesis_get_config( 'appearance' );
 
 	$css = <<<CSS
-.ab-block-post-grid .ab-post-grid-items h2 a:hover {
+.gb-block-post-grid .gb-post-grid-items h2 a:hover {
 	color: {$appearance['link-color']};
 }
 
@@ -64,7 +64,7 @@ function genesis_sample_custom_gutenberg_admin_css() {
 	$appearance = genesis_get_config( 'appearance' );
 
 	$css = <<<CSS
-.ab-block-post-grid .ab-post-grid-items h2 a:hover,
+.gb-block-post-grid .gb-post-grid-items h2 a:hover,
 .block-editor__container .editor-styles-wrapper a {
 	color: {$appearance['link-color']};
 }

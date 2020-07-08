@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Genesis Sample 3.3.0\n"
 "Report-Msgid-Bugs-To: StudioPress <translations@studiopress.com>\n"
-"POT-Creation-Date: 2020-04-01 20:59:05+00:00\n"
+"POT-Creation-Date: 2020-07-08 18:45:29+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -52,7 +52,7 @@ msgid "by"
 msgstr ""
 
 #: config/onboarding-shared.php:19
-msgid "Atomic Blocks"
+msgid "Genesis Blocks"
 msgstr ""
 
 #: config/onboarding-shared.php:24

@@ -13,7 +13,9 @@
 /* Paragraphs
 ---------------------------------------------------------------------------- */
 
-.alignfull:not(.has-background) .wp-block-group__inner-container > p:not(.has-background-color) {
+.alignfull:not(.has-background)
+	.wp-block-group__inner-container
+	> p:not(.has-background-color) {
 	padding-left: 30px;
 	padding-right: 30px;
 }
@@ -101,13 +103,11 @@
 }
 
 @media only screen and (max-width: 600px) {
-
 	.wp-block-button.home-contact,
 	.wp-block-buttons.home-contact {
 		float: left;
 		margin-left: 0;
 	}
-
 }
 
 /* Columns
@@ -131,7 +131,7 @@
 /* Buttons
 ---------------------------------------------------------------------------- */
 
-.ab-block-cta .ab-button {
+.gb-block-cta .gb-button {
 	font-family: "Source Sans Pro", sans-serif;
 	font-weight: 600;
 }
@@ -209,7 +209,8 @@
 	max-width: 80%;
 }
 
-.site-container .wp-block-pullquote:not(.is-style-solid-color)[style*="border-color"] {
+.site-container
+	.wp-block-pullquote:not(.is-style-solid-color)[style*="border-color"] {
 	border: 2px solid;
 	border-left: none;
 	border-right: none;
@@ -293,26 +294,24 @@
 	padding: 0 30px;
 }
 
-/* Atomic Blocks
+/* Genesis Blocks
 ---------------------------------------------------------------------------- */
 
-.ab-block-post-grid h2 a {
+.gb-block-post-grid h2 a {
 	text-decoration: none;
 }
 
 @media only screen and (max-width: 510px) {
-
-	.ab-block-container.alignfull::before {
+	.gb-block-container.alignfull::before {
 		content: " ";
 		display: table;
 	}
 
-	.ab-block-container.alignfull::after {
+	.gb-block-container.alignfull::after {
 		clear: both;
 		content: " ";
 		display: table;
 	}
-
 }
 
 /* Other Blocks
@@ -363,7 +362,6 @@ hr.wp-block-separator {
 }
 
 @media only screen and (min-width: 960px) {
-
 	.full-width-content .site-container > .wp-block-table.alignwide {
 		width: calc(100% + 360px);
 	}
@@ -373,22 +371,18 @@ hr.wp-block-separator {
 		margin-right: calc(-100vw / 2 + 100% / 2);
 		width: 100vw;
 	}
-
 }
 
 @media only screen and (max-width: 600px) {
-
 	.wp-block-media-text.is-stacked-on-mobile figure {
 		margin-bottom: 20px;
 	}
-
 }
 
 /* Media Queries
 ---------------------------------------------------------------------------- */
 
 @media only screen and (min-width: 960px) {
-
 	.full-width-content .entry-content > .alignwide {
 		margin-left: -180px;
 		margin-right: -180px;
@@ -401,15 +395,12 @@ hr.wp-block-separator {
 		max-width: 1062px;
 		margin: 0 auto;
 	}
-
 }
 
 @media only screen and (max-width: 781px) {
-
 	.site-container .wp-block-column {
 		flex-basis: 100%;
 		margin-left: 0;
 		margin-right: 0;
 	}
-
 }
