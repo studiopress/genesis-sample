@@ -17,7 +17,7 @@ return [
 	'plugins'          => [
 		[
 			'name'       => __( 'Genesis Blocks', 'genesis-sample' ),
-			'slug'       => 'genesis-blocks/genesisblocks.php',
+			'slug'       => 'genesis-blocks/genesis-blocks.php',
 			'public_url' => 'https://wpeng.in/genesis-blocks/',
 		],
 		[

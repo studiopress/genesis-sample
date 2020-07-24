@@ -13,8 +13,7 @@
 /* Paragraphs
 ---------------------------------------------------------------------------- */
 
-.alignfull:not(.has-background)
-.wp-block-group__inner-container > p:not(.has-background-color) {
+.alignfull:not(.has-background) .wp-block-group__inner-container > p:not(.has-background-color) {
 	padding-left: 30px;
 	padding-right: 30px;
 }
@@ -209,8 +208,7 @@
 	max-width: 80%;
 }
 
-.site-container
-.wp-block-pullquote:not(.is-style-solid-color)[style*="border-color"] {
+.site-container .wp-block-pullquote:not(.is-style-solid-color)[style*="border-color"] {
 	border: 2px solid;
 	border-left: none;
 	border-right: none;
