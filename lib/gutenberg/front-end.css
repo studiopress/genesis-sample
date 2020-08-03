@@ -107,6 +107,7 @@
 		float: left;
 		margin-left: 0;
 	}
+
 }
 
 /* Columns
@@ -311,6 +312,7 @@
 		content: " ";
 		display: table;
 	}
+
 }
 
 /* Other Blocks
@@ -371,6 +373,7 @@ hr.wp-block-separator {
 		margin-right: calc(-100vw / 2 + 100% / 2);
 		width: 100vw;
 	}
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -378,6 +381,7 @@ hr.wp-block-separator {
 	.wp-block-media-text.is-stacked-on-mobile figure {
 		margin-bottom: 20px;
 	}
+
 }
 
 /* Media Queries
@@ -397,6 +401,7 @@ hr.wp-block-separator {
 		max-width: 1062px;
 		margin: 0 auto;
 	}
+
 }
 
 @media only screen and (max-width: 781px) {
@@ -406,4 +411,5 @@ hr.wp-block-separator {
 		margin-left: 0;
 		margin-right: 0;
 	}
+
 }
