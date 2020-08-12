@@ -15,22 +15,20 @@ dl {
 }
 
 /* Regular content width.
-/* 702px + 27px to match paragraph width on front-end and editor.
 ---------------------------------------------------------------------------- */
 
 .wp-block {
-	max-width: 732px;
+	max-width: 702px;
 }
 
 /* Width of "wide" blocks
-/* 1062px + 30px so wide images match width in front-end and editor.
 /* 1062px = default column width of 702px + .alignwide negative margin of 360px
 ---------------------------------------------------------------------------- */
 
 .wp-block[data-align="full"] .wp-block[data-align="wide"],
 .wp-block[data-align="wide"] .wp-block[data-align="wide"],
 .wp-block[data-align="wide"] {
-	max-width: 1092px;
+	max-width: 1062px;
 }
 
 .wp-block[data-align="full"],
