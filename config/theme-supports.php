@@ -22,6 +22,7 @@ return [
 		'comment-form',
 		'comment-list',
 		'gallery',
+		'navigation-widgets',
 		'search-form',
 		'script',
 		'style',
