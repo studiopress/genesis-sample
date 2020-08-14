@@ -5,7 +5,7 @@
 ### Added
 * WordPress 5.5 block editor theme support for `custom-line-height`.
 * WordPress 5.5 block editor theme support for `custom-units`.
-* WordPress 5.5 `navigation-widgets` HTML5 theme support declaration.
+* WordPress 5.5 HTML5 theme support for `navigation-widgets`.
 
 ### Changed
 * Ensure front end paragraph margin matches the editor.
