@@ -1169,6 +1169,10 @@ figcaption,
 	content: "\f335";
 }
 
+.site-header .dashicons-before::before {
+	transition: none;
+}
+
 .site-header .menu-toggle::before {
 	float: left;
 	margin-right: 5px;
