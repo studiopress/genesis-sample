@@ -236,6 +236,7 @@ workflows:
             branches:
               ignore: /.*/
       - deploy_studiopress:
+          context: wpe-product-info-aws
           sp_install: myspress
           requires:
             - bundle
