@@ -18,11 +18,11 @@ commands:
       - run:
           name: "Set Theme Slug"
           command: |
-            echo "export THEME_SLUG=$(grep 'textdomain' /tmp/theme/package.json | awk -F: '{print $2}' | sed -e 's/\s//g' -e 's/[\"\,]//g')" >> ${BASH_ENV}
+            echo "export THEME_SLUG=$(grep 'textdomain":' /tmp/theme/package.json | awk -F: '{print $2}' | sed -e 's/\s//g' -e 's/[\"\,]//g')" >> ${BASH_ENV}
       - run:
           name: "Set Theme Version"
           command: |
-            echo "export THEME_VERSION=$(grep 'version' /tmp/theme/package.json | awk -F: '{print $2}' | sed -e 's/\s//g' -e 's/[\"\,]//g')" >> ${BASH_ENV}
+            echo "export THEME_VERSION=$(grep 'version":' /tmp/theme/package.json | awk -F: '{print $2}' | sed -e 's/\s//g' -e 's/[\"\,]//g')" >> ${BASH_ENV}
       - run:
           name: "Set Artifact Name"
           command: |
@@ -111,12 +111,13 @@ jobs:
           at: /tmp
       - set_env_vars
       - run:
+          name: Deploy To StudioPress
           command: |
             DEST_PATH=home/wpe-user/sites/<< parameters.sp_install >>/wp-content/uploads/member-access
             DEST_HOST=<< parameters.sp_install >>@<< parameters.sp_install >>.ssh.wpengine.net
             echo "${SP_DEPLOY_KEY}" | base64 -d > ./sp_deploy_key
             chmod 600 ./sp_deploy_key
-      - run: scp -i ./sp_deploy_key -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null /tmp/artifacts/${VERSION_ARTIFACT_FILE} ${DEST_HOST}:/${DEST_PATH}
+            scp -i ./sp_deploy_key -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null /tmp/artifacts/${VERSION_ARTIFACT_FILE} ${DEST_HOST}:/${DEST_PATH}
 
   deploy_s3:
     executor: python
@@ -193,7 +194,7 @@ workflows:
                 - master
       - deploy_s3:
           context: wpe-product-info-aws
-          # environment: staging/themes
+          environment: staging/themes
           requires:
             - create_data_file
             - deploy_studiopress
@@ -235,6 +236,7 @@ workflows:
             branches:
               ignore: /.*/
       - deploy_studiopress:
+          context: studiopress-deploy
           sp_install: myspress
           requires:
             - bundle

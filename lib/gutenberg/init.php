@@ -95,6 +95,12 @@ add_theme_support( 'align-wide' );
 // Make media embeds responsive.
 add_theme_support( 'responsive-embeds' );
 
+// Add support for custom line heights.
+add_theme_support( 'custom-line-height' );
+
+// Add support for custom units.
+add_theme_support( 'custom-units' );
+
 $genesis_sample_appearance = genesis_get_config( 'appearance' );
 
 // Adds support for editor font sizes.

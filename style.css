@@ -5,7 +5,7 @@ Description: This is the sample theme created for the Genesis Framework.
 Author: StudioPress
 Author URI: https://www.studiopress.com/
 
-Version: 3.3.0
+Version: 3.3.1
 
 Tags: accessibility-ready, block-styles, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, left-sidebar, one-column, right-sidebar, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, two-columns, wide-blocks
 
@@ -189,7 +189,7 @@ a:hover {
 }
 
 p {
-	margin: 0 0 30px;
+	margin: 0 0 28px;
 	padding: 0;
 }
 
@@ -1167,6 +1167,10 @@ figcaption,
 
 .menu-toggle.activated::before {
 	content: "\f335";
+}
+
+.site-header .dashicons-before::before {
+	transition: none;
 }
 
 .site-header .menu-toggle::before {
