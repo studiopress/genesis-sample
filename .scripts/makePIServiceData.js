@@ -31,7 +31,6 @@ const runScript = function() {
 	const themeVersion = process.env.THEME_VERSION || data.version;
 	const fileName = process.env.VERSION_DATA_FILE || `${themeName}.${themeVersion}.json`;
 	const filePath = `${destPath}/${fileName}`;
-
 	fs.writeFileSync(filePath, JSON.stringify(data));
 }
 
