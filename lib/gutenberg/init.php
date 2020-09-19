@@ -18,9 +18,9 @@ function genesis_sample_enqueue_gutenberg_frontend_styles() {
 
 	wp_enqueue_style(
 		genesis_get_theme_handle() . '-gutenberg',
-		get_stylesheet_directory_uri() . '/lib/gutenberg/front-end.css',
+		genesis_sample_get_compiled_asset_url( '/lib/gutenberg/front-end.css' ),
 		[ genesis_get_theme_handle() ],
-		genesis_get_theme_version()
+		null
 	);
 
 }

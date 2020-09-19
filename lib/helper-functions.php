@@ -56,3 +56,23 @@ function genesis_sample_color_brightness( $color, $change ) {
 	return '#' . dechex( $red ) . dechex( $green ) . dechex( $blue );
 
 }
+
+/**
+ * Returns the versioned URL of the compiled asset.
+ *
+ * @param string $asset_path Relative path to the compiled asset file.
+ * @return string
+ */
+function genesis_sample_get_compiled_asset_url( $asset_path ) {
+	static $manifest = null;
+
+	$asset_path = '/' . trim( $asset_path, '/' );
+
+	if ( null === $manifest ) {
+		$manifest = json_decode( file_get_contents( get_stylesheet_directory() . '/mix-manifest.json' ), true );
+	}
+
+	$versioned_filename = $manifest[ $asset_path ] ?? $asset_path;
+
+	return get_stylesheet_directory_uri() . $versioned_filename;
+}

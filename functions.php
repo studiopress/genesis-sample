@@ -61,6 +61,9 @@ if ( function_exists( 'genesis_register_responsive_menus' ) ) {
 	genesis_register_responsive_menus( genesis_get_config( 'responsive-menus' ) );
 }
 
+// Needed in order to enqueue stylesheet with our own versioning.
+remove_action( 'genesis_meta', 'genesis_load_stylesheet' );
+
 add_action( 'wp_enqueue_scripts', 'genesis_sample_enqueue_scripts_styles' );
 /**
  * Enqueues scripts and styles.
@@ -70,6 +73,13 @@ add_action( 'wp_enqueue_scripts', 'genesis_sample_enqueue_scripts_styles' );
 function genesis_sample_enqueue_scripts_styles() {
 
 	$appearance = genesis_get_config( 'appearance' );
+
+	wp_enqueue_style(
+		genesis_get_theme_handle(),
+		genesis_sample_get_compiled_asset_url( '/style.css' ),
+		false,
+		null
+	);
 
 	wp_enqueue_style(
 		genesis_get_theme_handle() . '-fonts',
@@ -83,9 +93,9 @@ function genesis_sample_enqueue_scripts_styles() {
 	if ( genesis_is_amp() ) {
 		wp_enqueue_style(
 			genesis_get_theme_handle() . '-amp',
-			get_stylesheet_directory_uri() . '/lib/amp/amp.css',
+			genesis_sample_get_compiled_asset_url( '/lib/amp/amp.css' ),
 			[ genesis_get_theme_handle() ],
-			genesis_get_theme_version()
+			null
 		);
 	}
 

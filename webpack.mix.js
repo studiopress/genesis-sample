@@ -13,7 +13,8 @@ let mix = require( 'laravel-mix' );
 
 mix.setPublicPath( './' )
     .options( { processCssUrls: false } )
-    .sourceMaps( false, 'source-map' );
+    .sourceMaps( false, 'source-map' )
+	.version();
 
 mix.sass( 'resources/css/main/style.scss', '', {
 	sassOptions: {
