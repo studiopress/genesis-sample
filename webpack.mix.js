@@ -24,6 +24,42 @@ mix.sass( 'resources/css/main/style.scss', '', {
 	implementation: require( 'node-sass' ) // Switch from Dart to node-sass implementation
 } );
 
+mix.sass( 'resources/css/amp/amp.scss', 'lib/amp', {
+	sassOptions: {
+		outputStyle: 'expanded',
+		indentType: 'tab',
+		indentWidth: 1
+	},
+	implementation: require( 'node-sass' )
+} );
+
+mix.sass( 'resources/css/gutenberg/front-end.scss', 'lib/gutenberg', {
+	sassOptions: {
+		outputStyle: 'expanded',
+		indentType: 'tab',
+		indentWidth: 1
+	},
+	implementation: require( 'node-sass' )
+} );
+
+mix.sass( 'resources/css/gutenberg/style-editor.scss', 'lib/gutenberg', {
+	sassOptions: {
+		outputStyle: 'expanded',
+		indentType: 'tab',
+		indentWidth: 1
+	},
+	implementation: require( 'node-sass' )
+} );
+
+mix.sass( 'resources/css/woocommerce/genesis-sample-woocommerce.scss', 'lib/woocommerce', {
+	sassOptions: {
+		outputStyle: 'expanded',
+		indentType: 'tab',
+		indentWidth: 1
+	},
+	implementation: require( 'node-sass' )
+} );
+
 // Full API
 // mix.js(src, output);
 // mix.react(src, output); <-- Identical to mix.js(), but registers React Babel compilation.
