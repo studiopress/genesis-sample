@@ -1,0 +1,140 @@
+/*!
+Theme Name: Genesis Sample
+Theme URI: https://demo.studiopress.com/
+Description: This is the sample theme created for the Genesis Framework.
+Author: StudioPress
+Author URI: https://www.studiopress.com/
+
+Version: 3.3.1
+
+Tags: accessibility-ready, block-styles, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, left-sidebar, one-column, right-sidebar, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, two-columns, wide-blocks
+
+Template: genesis
+
+License: GPL-2.0-or-later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+
+Text Domain: genesis-sample
+Requires at least: 5.4
+Requires PHP: 5.6
+*/
+
+/* Table of Contents
+- HTML5 Reset
+	- Baseline Normalize
+	- Box Sizing
+	- Float Clearing
+- Defaults
+	- Typographical Elements
+	- Headings
+	- Objects
+	- Gallery
+	- Forms
+	- Tables
+	- Screen Reader Text
+- Structure and Layout
+	- Site Container
+	- Site Inner
+- Common Classes
+	- Avatar
+	- Genesis
+	- Search Form
+	- Titles
+	- WordPress
+- Widgets
+	- Featured Content
+- Plugins
+	- Genesis eNews Extended
+	- Genesis Simple FAQ
+	- WPForms
+- Skip Links
+- Site Header
+	- Title Area
+- Site Navigation
+	- Responsive Menu
+	- Header Menu
+	- Footer Menu
+- Content Area
+	- Entry Content
+	- Entry Meta
+	- Pagination
+	- Entry Comments
+- Sidebar
+- Footer Widgets
+- Site Footer
+- Print Styles
+*/
+
+// Config
+@import 'config/variables';
+@import 'config/mixins';
+
+/* HTML5 Reset
+---------------------------------------------------------------------------- */
+
+@import "reset";
+
+/* Defaults
+---------------------------------------------------------------------------- */
+
+@import "defaults";
+
+/* Structure and Layout
+---------------------------------------------------------------------------- */
+
+@import "structure";
+
+/* Common Classes
+---------------------------------------------------------------------------- */
+
+@import "common-classes";
+
+/* Widgets
+---------------------------------------------------------------------------- */
+
+@import "widgets";
+
+/* Plugins
+---------------------------------------------------------------------------- */
+
+@import "plugins";
+
+/* Skip Links
+---------------------------------------------------------------------------- */
+
+@import "skip-links";
+
+/* Site Header
+---------------------------------------------------------------------------- */
+
+@import "site-header";
+
+/* Site Navigation
+---------------------------------------------------------------------------- */
+
+@import "site-navigation";
+
+/* Content Area
+---------------------------------------------------------------------------- */
+
+@import "content-area";
+
+/* Sidebar
+---------------------------------------------------------------------------- */
+
+@import "sidebar";
+
+/* Footer Widgets
+---------------------------------------------------------------------------- */
+
+@import "footer-widgets";
+
+/* Site Footer
+---------------------------------------------------------------------------- */
+
+@import "site-footer";
+
+/* Print Styles
+---------------------------------------------------------------------------- */
+
+@import "print";

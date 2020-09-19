@@ -3,6 +3,7 @@
 /phpcs.xml
 node_modules/
 vendor/
+mix.js.map
 
 # Artifacts
 process.yml

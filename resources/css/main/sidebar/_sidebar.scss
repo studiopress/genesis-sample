@@ -1,0 +1,21 @@
+.sidebar {
+	font-size: 16px;
+	line-height: 1.5;
+
+	@include breakpoint(md) {
+		float: right;
+		width: 30%;
+
+		.sidebar-content & {
+			float: left;
+		}
+	}
+}
+
+.sidebar .widget {
+	margin-bottom: 40px;
+}
+
+.sidebar p {
+	margin-bottom: 20px;
+}

@@ -1,0 +1,20 @@
+@mixin breakpoint( $breakpoint ) {
+
+	@if map-has-key( $breakpoints, $breakpoint ) {
+
+		@media only screen and ( min-width: #{ map-get( $breakpoints, $breakpoint ) } ) {
+			@content;
+		}
+
+	} @else if type_of( $breakpoint ) == number and unit( $breakpoint ) == px or unit( $breakpoint ) == em or unit( $breakpoint ) == rem {
+
+		@media only screen and (min-width: $breakpoint ) {
+			@content;
+		}
+
+	} @else {
+
+		@warn "No value could be retrieved from `#{$breakpoint}`. "
+              + "Please make sure it is defined in `$breakpoints` map, or it is a valid number with supported unit of px, em or rem.";
+	}
+}
