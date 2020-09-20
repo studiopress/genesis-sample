@@ -9,7 +9,7 @@
 .gs-faq__question:focus,
 .gs-faq__question:hover {
 	background: transparent;
-	color: #0073e5;
+	color: $color--accent;
 }
 
 .gs-faq__question::after {

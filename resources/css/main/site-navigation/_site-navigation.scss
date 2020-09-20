@@ -34,7 +34,7 @@
 
 			&:focus,
 			&:hover {
-				background-color: #0073e5;
+				background-color: $color--accent;
 			}
 		}
 
@@ -78,7 +78,7 @@
 .genesis-nav-menu .current-menu-item > a,
 .genesis-nav-menu .sub-menu .current-menu-item > a:focus,
 .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
-	color: #0073e5;
+	color: $color--accent;
 	text-decoration: none;
 }
 

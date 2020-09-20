@@ -26,7 +26,7 @@ textarea:focus,
 }
 
 a {
-	color: #0073e5;
+	color: $color--accent;
 	text-decoration: underline;
 	transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }

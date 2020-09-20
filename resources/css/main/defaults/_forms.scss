@@ -72,7 +72,7 @@ input[type="submit"]:hover,
 .site-container div.wpforms-container-full .wpforms-form button[type="submit"]:hover,
 .button:focus,
 .button:hover {
-	background-color: #0073e5;
+	background-color: $color--accent;
 	border-width: 0;
 	color: #fff;
 }
