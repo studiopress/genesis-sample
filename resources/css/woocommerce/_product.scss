@@ -1,0 +1,24 @@
+.woocommerce ul.products li.product {
+	align-items: self-start;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.woocommerce div.product p.price,
+.woocommerce div.product span.price {
+	color: $color--accent;
+	line-height: 1.5;
+}
+
+.woocommerce div.product form.cart .button {
+	line-height: 1.5;
+}
+
+.woocommerce div.product form.cart .variations {
+	table-layout: fixed;
+}
+
+.woocommerce .woocommerce-variation-price {
+	margin-bottom: 20px;
+}

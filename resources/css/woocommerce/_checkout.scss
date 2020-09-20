@@ -1,0 +1,25 @@
+.woocommerce-cart #payment ul.payment_methods li,
+.woocommerce-checkout #payment ul.payment_methods li,
+#add_payment_method #payment ul.payment_methods li {
+	list-style-type: none;
+}
+
+.woocommerce-cart table.cart td.actions .coupon input.input-text,
+.woocommerce-checkout table.cart td.actions .coupon input.input-text,
+#add_payment_method table.cart td.actions .coupon input.input-text {
+	width: auto;
+}
+
+.woocommerce-cart #payment div.form-row,
+.woocommerce-checkout #payment div.form-row,
+#add_payment_method #payment div.form-row {
+	margin-bottom: 0;
+}
+
+.woocommerce-cart table.cart td.actions .coupon .input-text {
+	margin-bottom: 10px;
+
+	@include breakpoint(sm) {
+		margin-bottom: 0;
+	}
+}

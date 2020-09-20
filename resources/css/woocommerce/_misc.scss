@@ -1,0 +1,26 @@
+.woocommerce-error,
+.woocommerce-info,
+.woocommerce-message {
+	background-color: #f5f5f5;
+	border-top-color: $color--accent;
+}
+
+.woocommerce-error::before,
+.woocommerce-info::before,
+.woocommerce-message::before {
+	color: $color--accent;
+}
+
+div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricted-content-message {
+	width: 48%;
+}
+
+.woocommerce-message .button.wc-forward {
+	margin-bottom: 20px;
+	width: 100%;
+
+	@include breakpoint(sm) {
+		margin-bottom: 0;
+		width: auto;
+	}
+}

@@ -1,0 +1,96 @@
+.woocommerce div.product .woocommerce-tabs ul.tabs {
+	padding: 0;
+
+	@at-root .full-width-content#{&} {
+		@include breakpoint(md) {
+			padding: 0 0 0 1em;
+		}
+	}
+
+	@include breakpoint(lg) {
+		padding: 0 0 0 1em;
+	}
+
+	&::before,
+	li {
+		border-color: #eee;
+	}
+
+	li {
+		display: block;
+		margin: 0;
+		padding: 0;
+		border-radius: 0;
+		border: 1px solid #eee;
+		background-color: #fff;
+		border-bottom: 0;
+
+		@at-root .full-width-content#{&} {
+			@include breakpoint(md) {
+				background-color: #f5f5f5;
+				display: inline-block;
+				margin: 0 -5px;
+			}
+		}
+
+		@include breakpoint(lg) {
+			background-color: #f5f5f5;
+			display: inline-block;
+			margin: 0 -5px;
+		}
+
+		&::after,
+		&::before {
+			display: none;
+		}
+
+		&:last-child {
+			border-bottom: 1px solid #eee;
+		}
+
+		&.active {
+			border-bottom-color: #eee;
+
+			@at-root .full-width-content#{&} {
+				@include breakpoint(md) {
+					background-color: #fff;
+					border-bottom: 1px solid #fff;
+				}
+			}
+
+			@include breakpoint(lg) {
+				background-color: #fff;
+				border-bottom: 1px solid #fff;
+			}
+
+			a::after {
+				content: "\f147";
+				display: block;
+				float: right;
+				font-family: dashicons; /* stylelint-disable-line font-family-no-missing-generic-family-keyword */
+
+
+				@at-root .full-width-content#{&} {
+					@include breakpoint(md) {
+						display: none;
+					}
+				}
+
+				@include breakpoint(lg) {
+					display: none;
+				}
+			}
+		}
+
+		a {
+			display: block;
+			padding: 0.5em 1em;
+			color: #000;
+
+			&:focus,
+			&:hover {
+				color: $color--accent;
+			}
+		}
+	}
+}

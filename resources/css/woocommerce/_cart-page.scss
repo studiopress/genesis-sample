@@ -1,0 +1,53 @@
+.woocommerce table.shop_table,
+.woocommerce table.shop_table td {
+	border-color: #eee;
+	border-radius: 0;
+	line-height: 1.75;
+	word-break: normal;
+}
+
+.woocommerce-cart table.cart {
+	line-height: 1.75;
+}
+
+.woocommerce-cart table.cart td {
+	font-size: 18px;
+	padding: 10px 12px;
+}
+
+.woocommerce table.shop_table .order-number {
+	min-width: 75px;
+}
+
+.woocommerce-cart table.cart .product-thumbnail {
+	min-width: 56px;
+}
+
+.woocommerce-cart table.cart th.product-name {
+	min-width: 140px;
+}
+
+.woocommerce-cart table.cart th.product-price,
+.woocommerce-cart table.cart th.product-quantity,
+.woocommerce-cart table.cart th.product-subtotal,
+.woocommerce-checkout-review-order-table th.product-total {
+	min-width: 110px;
+}
+
+.woocommerce table.shop_table td.actions {
+	padding-top: 15px;
+}
+
+.woocommerce-cart table.cart td.actions .coupon .input-text {
+	font-size: 18px;
+}
+
+.woocommerce-cart td.product-name dl.variation dd {
+	margin-left: 20px;
+}
+
+.woocommerce-cart table.cart img,
+.woocommerce-checkout table.cart img,
+#add_payment_method table.cart img {
+	vertical-align: middle;
+}

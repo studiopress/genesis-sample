@@ -1,0 +1,72 @@
+.woocommerce-account .woocommerce-Address-title h3 {
+	font-size: 26px;
+}
+
+.woocommerce-account .woocommerce-Address {
+	margin-bottom: 20px;
+}
+
+.woocommerce-account table.order_details th.product-total {
+	min-width: 110px;
+}
+
+.woocommerce-MyAccount-navigation {
+	border: 1px solid #eee;
+	padding: 20px;
+	margin-bottom: 40px;
+}
+
+.woocommerce-MyAccount-navigation ul {
+	margin-bottom: 0;
+	margin-left: 0;
+}
+
+.woocommerce-MyAccount-navigation ul li {
+	line-height: 1.2;
+	list-style-type: none;
+	margin-bottom: 15px;
+}
+
+.woocommerce-MyAccount-navigation ul li:last-child {
+	margin-bottom: 0;
+}
+
+.woocommerce-MyAccount-navigation ul li.is-active > a {
+	color: #333;
+	font-weight: 700;
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation ul {
+	text-align: center;
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation ul li {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content,
+.woocommerce-account .woocommerce-MyAccount-navigation {
+	margin-right: 0;
+	width: 100%;
+}
+
+.content-sidebar.woocommerce-account .woocommerce-MyAccount-navigation ul,
+.sidebar-content.woocommerce-account .woocommerce-MyAccount-navigation ul {
+	text-align: center;
+}
+
+.content-sidebar.woocommerce-account .woocommerce-MyAccount-navigation li,
+.sidebar-content.woocommerce-account .woocommerce-MyAccount-navigation li {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+.content-sidebar.woocommerce-account .woocommerce-MyAccount-content,
+.sidebar-content.woocommerce-account .woocommerce-MyAccount-content {
+	width: 100%;
+}
+
+.woocommerce table.my_account_orders .button {
+	margin: 5px;
+}
