@@ -1,0 +1,13 @@
+.site-container .wp-block-columns.alignfull {
+	padding: 0 30px;
+}
+
+@media only screen and (max-width: 781px) {
+
+	.site-container .wp-block-column {
+		flex-basis: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+}
