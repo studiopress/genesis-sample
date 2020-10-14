@@ -47,7 +47,7 @@
 		"description": "The sample child theme for the Genesis Framework.",
 		"author": "StudioPress",
 		"authoruri": "https://www.studiopress.com/",
-		"version": "3.3.0",
+		"version": "3.4.0",
 		"tags": "one-column, two-columns, left-sidebar, right-sidebar, accessibility-ready, custom-colors, custom-logo, custom-menu, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready",
 		"license": "GPL-2.0-or-later",
 		"licenseuri": "https://www.gnu.org/licenses/gpl-2.0.html",
