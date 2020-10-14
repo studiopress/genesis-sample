@@ -4,12 +4,12 @@
  *
  * @TODO Maybe convert "tags" value to an array?
  */
-const fs = require('fs');
+const fs = require("fs");
 
 /**
  * Run the script
  */
-const runScript = function() {
+const runScript = function () {
 	// Sanitize the destination path
 	const destPath = sanitizeDestPath(process.argv[2]);
 
@@ -17,22 +17,26 @@ const runScript = function() {
 	let data = {};
 
 	// Get array of "theme" keys from process.env.npm_package_theme_*
-	const keys = Object.keys(process.env).filter(key => key.match(/npm_package_theme_.+/));
+	const keys = Object.keys(process.env).filter((key) =>
+		key.match(/npm_package_theme_.+/)
+	);
 
 	// Iterate through keys and populate the data object
 	// Note: this isn't using a map because we want the output to be an object, not an array
-	keys.forEach(envKey => {
+	keys.forEach((envKey) => {
 		key = envKey.match(/npm_package_theme_(.+)/)[1]; // strip npm_package_theme_ from key
 		data[key] = process.env[envKey]; // Save to data object
 	});
 
 	// Write data object to a JSON file
-	const themeName = process.env.THEME_SLUG || data.textdomain;
+	const themeName = process.env.THEME_TEXT_DOMAIN || data.textdomain;
 	const themeVersion = process.env.THEME_VERSION || data.version;
-	const fileName = process.env.VERSION_DATA_FILE || `${themeName}.${themeVersion}.json`;
+	const fileName =
+		process.env.VERSION_DATA_FILE || `${themeName}.${themeVersion}.json`;
 	const filePath = `${destPath}/${fileName}`;
+
 	fs.writeFileSync(filePath, JSON.stringify(data));
-}
+};
 
 /**
  * Sanitize destination path
@@ -41,11 +45,11 @@ const runScript = function() {
  *
  * @return {string}
  */
-const sanitizeDestPath = function(path) {
+const sanitizeDestPath = function (path) {
 	const defaultPath = process.cwd();
 
 	// Return default if a path wasn't provided
-	if( ! path || ! path.length){
+	if (!path || !path.length) {
 		return defaultPath;
 	}
 
@@ -55,7 +59,7 @@ const sanitizeDestPath = function(path) {
 	}
 
 	return path;
-}
+};
 
 // Run the script
 runScript();
