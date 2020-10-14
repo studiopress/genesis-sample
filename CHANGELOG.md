@@ -7,6 +7,23 @@ Genesis Sample 3.4.0 requires the Genesis Blocks plugin.
 * Changed: Updated one-click-theme-setup content to use Genesis Blocks.
 * Changed: Updated Editor and front-end styles for Genesis Blocks compatibility.
 
+## [3.3.1] - 2020-08-17
+
+### Added
+* WordPress 5.5 block editor theme support for `custom-line-height`.
+* WordPress 5.5 block editor theme support for `custom-units`.
+* WordPress 5.5 HTML5 theme support for `navigation-widgets`.
+
+### Changed
+* Ensure front end paragraph margin matches the editor.
+* Ensure block width in the editor matches the front end.
+
+### Fixed
+* Ensure the hamburger menu button icon and text CSS transitions match.
+
+### Removed
+* `genesis-lazy-load-images` theme support in favor of the WordPress 5.5 lazy loading feature.
+
 ## [3.3.0] - 2020-04-07
 Requires WordPress 5.4 or higher.
 

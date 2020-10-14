@@ -22,6 +22,7 @@ return [
 		'comment-form',
 		'comment-list',
 		'gallery',
+		'navigation-widgets',
 		'search-form',
 		'script',
 		'style',
@@ -32,7 +33,6 @@ return [
 		'search-form',
 		'skip-links',
 	],
-	'genesis-lazy-load-images'        => '',
 	'genesis-after-entry-widget-area' => '',
 	'genesis-footer-widgets'          => 3,
 	'genesis-menus'                   => [
