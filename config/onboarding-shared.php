@@ -18,7 +18,7 @@ return [
 		[
 			'name'       => __( 'Genesis Blocks', 'genesis-sample' ),
 			'slug'       => 'genesis-blocks/genesis-blocks.php',
-			'public_url' => 'https://wpeng.in/genesis-blocks/',
+			'public_url' => 'https://wordpress.org/plugins/genesis-blocks/',
 		],
 		[
 			'name'       => __( 'Simple Social Icons', 'genesis-sample' ),
