@@ -201,7 +201,6 @@ p.has-background.light-text a:hover {
 	background-color: #333;
 }
 
-
 .wp-block-pullquote.is-style-solid-color.alignleft blockquote,
 .wp-block-pullquote.is-style-solid-color.alignright blockquote {
 	max-width: 80%;
@@ -338,7 +337,7 @@ table {
 /* Buttons
 ---------------------------------------------------------------------------- */
 
-.ab-block-cta .ab-button {
+.gb-block-cta .gb-button {
 	font-family: "Source Sans Pro", sans-serif;
 	font-weight: 600;
 }

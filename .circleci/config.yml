@@ -16,23 +16,21 @@ commands:
     description: "Set commonly used environment variables"
     steps:
       - run:
-          name: "Set Theme Slug"
+          name: "Set Theme Variables"
           command: |
-            echo "export THEME_SLUG=$(grep 'textdomain":' /tmp/theme/package.json | awk -F: '{print $2}' | sed -e 's/\s//g' -e 's/[\"\,]//g')" >> ${BASH_ENV}
-      - run:
-          name: "Set Theme Version"
-          command: |
+            echo "export THEME_SLUG=genesis-sample" >> ${BASH_ENV}
             echo "export THEME_VERSION=$(grep 'version":' /tmp/theme/package.json | awk -F: '{print $2}' | sed -e 's/\s//g' -e 's/[\"\,]//g')" >> ${BASH_ENV}
+            echo "export THEME_TEXT_DOMAIN=genesis-sample" >> ${BASH_ENV}
       - run:
           name: "Set Artifact Name"
           command: |
-            echo "export VERSION_ARTIFACT_FILE=${THEME_SLUG}.${THEME_VERSION}.zip" >> ${BASH_ENV}
-            echo "export VERSION_DATA_FILE=${THEME_SLUG}.${THEME_VERSION}.json" >> ${BASH_ENV}
+            echo "export VERSION_ARTIFACT_FILE=${THEME_TEXT_DOMAIN}.${THEME_VERSION}.zip" >> ${BASH_ENV}
+            echo "export VERSION_DATA_FILE=${THEME_TEXT_DOMAIN}.${THEME_VERSION}.json" >> ${BASH_ENV}
       - run:
           name: "Set Latest Artifact Name"
           command: |
-            echo "export LATEST_ARTIFACT_FILE=${THEME_SLUG}.latest.zip" >> ${BASH_ENV}
-            echo "export LATEST_DATA_FILE=${THEME_SLUG}.latest.json" >> ${BASH_ENV}
+            echo "export LATEST_ARTIFACT_FILE=${THEME_TEXT_DOMAIN}.latest.zip" >> ${BASH_ENV}
+            echo "export LATEST_DATA_FILE=${THEME_TEXT_DOMAIN}.latest.json" >> ${BASH_ENV}
 
 executors:
   base:
@@ -136,7 +134,7 @@ jobs:
             cp /tmp/artifacts/${VERSION_DATA_FILE} /tmp/artifacts/${LATEST_DATA_FILE}
       - aws-s3/sync:
           from: "/tmp/artifacts/"
-          to: "s3://update.atomicblocks.com/<< parameters.environment >>/${THEME_SLUG}/"
+          to: "s3://update.atomicblocks.com/<< parameters.environment >>/${THEME_TEXT_DOMAIN}/"
 
 workflows:
   version: 2
