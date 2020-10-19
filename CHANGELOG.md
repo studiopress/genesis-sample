@@ -1,6 +1,6 @@
 # Genesis Sample Theme Changelog
 
-## [3.4.0] - 2020-10-19
+## [3.4.0] - 2020-10-20
 Genesis Sample 3.4.0 requires the Genesis Blocks plugin.
 
 * Changed: Install Genesis Blocks instead of Atomic Blocks during one-click theme setup.
