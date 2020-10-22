@@ -1,0 +1,15 @@
+hr.wp-block-separator {
+	border: none;
+	border-bottom: 1px solid currentColor;
+	color: #eee;
+	margin: 1.65em auto;
+}
+
+.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots) {
+	height: 1px;
+}
+
+hr.wp-block-separator.is-style-dots {
+	border-width: 0;
+	color: #333;
+}

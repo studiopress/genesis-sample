@@ -1,6 +1,5 @@
 /* Drop Caps
 ---------------------------------------------------------------------------- */
-
 .site-container p.has-drop-cap:not(:focus)::first-letter {
 	margin: 0.02em 0.08em 0 -0.08em;
 }
@@ -12,7 +11,6 @@
 
 /* Paragraphs
 ---------------------------------------------------------------------------- */
-
 .alignfull:not(.has-background) .wp-block-group__inner-container > p:not(.has-background-color) {
 	padding-left: 30px;
 	padding-right: 30px;
@@ -20,7 +18,6 @@
 
 /* Background Color
 ---------------------------------------------------------------------------- */
-
 .site-container p.has-background {
 	padding: 25px 30px;
 }
@@ -54,7 +51,6 @@
 
 /* Alignment
 ---------------------------------------------------------------------------- */
-
 .has-text-align-center {
 	text-align: center;
 }
@@ -100,26 +96,45 @@
 	width: 100%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 960px) {
+	.full-width-content .entry-content > .alignwide {
+		margin-left: -180px;
+		margin-right: -180px;
+		max-width: calc(100% + 360px);
+		/* 360 equals sum of left and right margin */
+		width: auto;
+	}
+	.alignfull .alignwide,
+	.alignwide .alignwide {
+		max-width: 1062px;
+		margin: 0 auto;
+	}
+}
 
+@media only screen and (max-width: 600px) {
 	.wp-block-button.home-contact,
 	.wp-block-buttons.home-contact {
 		float: left;
 		margin-left: 0;
 	}
-
 }
 
 /* Columns
 ---------------------------------------------------------------------------- */
-
 .site-container .wp-block-columns.alignfull {
 	padding: 0 30px;
 }
 
+@media only screen and (max-width: 781px) {
+	.site-container .wp-block-column {
+		flex-basis: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
 /* Cover Image
 ---------------------------------------------------------------------------- */
-
 .full-width-content .entry-content > .wp-block-cover.alignfull {
 	width: 100vw;
 }
@@ -130,7 +145,6 @@
 
 /* Buttons
 ---------------------------------------------------------------------------- */
-
 .gb-block-cta .gb-button {
 	font-family: "Source Sans Pro", sans-serif;
 	font-weight: 600;
@@ -165,7 +179,6 @@
 
 /* Blockquotes and captions
 ---------------------------------------------------------------------------- */
-
 .site-container .wp-block-pullquote,
 .site-container .wp-block-quote {
 	border: none;
@@ -251,7 +264,6 @@
 
 /* Category Block
 ---------------------------------------------------------------------------- */
-
 .site-container .wp-block-categories {
 	margin-left: 0;
 	padding-left: 0;
@@ -275,7 +287,6 @@
 
 /* Latest Posts Block
 ---------------------------------------------------------------------------- */
-
 .site-container .wp-block-latest-posts {
 	margin-left: 0;
 	padding-left: 0;
@@ -295,29 +306,24 @@
 
 /* Genesis Blocks
 ---------------------------------------------------------------------------- */
-
 .gb-block-post-grid h2 a {
 	text-decoration: none;
 }
 
 @media only screen and (max-width: 510px) {
-
 	.gb-block-container.alignfull::before {
 		content: " ";
 		display: table;
 	}
-
 	.gb-block-container.alignfull::after {
 		clear: both;
 		content: " ";
 		display: table;
 	}
-
 }
 
 /* Other Blocks
 ---------------------------------------------------------------------------- */
-
 .wp-block-preformatted,
 .wp-block-verse {
 	font-size: 16px;
@@ -363,53 +369,20 @@ hr.wp-block-separator {
 }
 
 @media only screen and (min-width: 960px) {
-
 	.full-width-content .site-container > .wp-block-table.alignwide {
 		width: calc(100% + 360px);
 	}
-
 	.full-width-content .site-container > .wp-block-table.alignfull {
 		margin-left: calc(-100vw / 2 + 100% / 2);
 		margin-right: calc(-100vw / 2 + 100% / 2);
 		width: 100vw;
 	}
-
 }
 
 @media only screen and (max-width: 600px) {
-
 	.wp-block-media-text.is-stacked-on-mobile figure {
 		margin-bottom: 20px;
 	}
-
 }
 
-/* Media Queries
----------------------------------------------------------------------------- */
-
-@media only screen and (min-width: 960px) {
-
-	.full-width-content .entry-content > .alignwide {
-		margin-left: -180px;
-		margin-right: -180px;
-		max-width: calc(100% + 360px); /* 360 equals sum of left and right margin */
-		width: auto;
-	}
-
-	.alignfull .alignwide,
-	.alignwide .alignwide {
-		max-width: 1062px;
-		margin: 0 auto;
-	}
-
-}
-
-@media only screen and (max-width: 781px) {
-
-	.site-container .wp-block-column {
-		flex-basis: 100%;
-		margin-left: 0;
-		margin-right: 0;
-	}
-
-}
+/*# sourceMappingURL=front-end.css.map*/

@@ -1,0 +1,34 @@
+table {
+	width: 100%;
+}
+
+.wp-block-table {
+	line-height: 2;
+}
+
+.wp-block-table td,
+.wp-block-table th,
+.wp-block-table tr {
+	border: none;
+	vertical-align: top;
+}
+
+.wp-block-table th {
+	font-weight: 600;
+}
+
+.wp-block-table tr {
+	border-top: 1px solid #eee;
+}
+
+.wp-block-table tr:last-of-type {
+	border-bottom: 1px solid #eee;
+}
+
+.wp-block-table tbody {
+	border-bottom: 1px solid #eee;
+}
+
+.wp-block-table.is-style-stripes {
+	border-bottom-width: 0;
+}
