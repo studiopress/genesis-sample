@@ -16,7 +16,6 @@ dl {
 
 /* Regular content width.
 ---------------------------------------------------------------------------- */
-
 .wp-block {
 	max-width: 702px;
 }
@@ -24,7 +23,6 @@ dl {
 /* Width of "wide" blocks
 /* 1062px = default column width of 702px + .alignwide negative margin of 360px
 ---------------------------------------------------------------------------- */
-
 .wp-block[data-align="full"] .wp-block[data-align="wide"],
 .wp-block[data-align="wide"] .wp-block[data-align="wide"],
 .wp-block[data-align="wide"] {
@@ -39,7 +37,6 @@ dl {
 
 /* Alignment
 ---------------------------------------------------------------------------- */
-
 .has-text-align-center {
 	text-align: center;
 }
@@ -54,7 +51,6 @@ dl {
 
 /* Typography
 ---------------------------------------------------------------------------- */
-
 a {
 	color: #0073e5;
 }
@@ -123,7 +119,6 @@ p.has-small-font-size.has-drop-cap:not(:focus)::first-letter {
 
 /* Background Color
 ---------------------------------------------------------------------------- */
-
 p.has-background {
 	padding: 25px 30px;
 }
@@ -157,7 +152,6 @@ p.has-background.light-text a:hover {
 
 /* Blockquotes and captions
 ---------------------------------------------------------------------------- */
-
 .wp-block-pullquote,
 .wp-block-quote {
 	border: none;
@@ -253,7 +247,6 @@ figcaption {
 
 /* Cover Image
 ---------------------------------------------------------------------------- */
-
 .wp-block-cover .wp-block-cover-text {
 	color: #fff;
 	font-size: 48px;
@@ -261,7 +254,6 @@ figcaption {
 
 /* Lists
 ---------------------------------------------------------------------------- */
-
 .editor-block-list__block li {
 	line-height: 1.625;
 	margin-bottom: 0;
@@ -269,7 +261,6 @@ figcaption {
 
 /* Preformatted elements
 ---------------------------------------------------------------------------- */
-
 .wp-block-preformatted pre,
 .wp-block-verse pre {
 	font-family: monospace;
@@ -279,7 +270,6 @@ figcaption {
 
 /* Separators
 ---------------------------------------------------------------------------- */
-
 hr.wp-block-separator {
 	border: none;
 	border-bottom: 1px solid currentColor;
@@ -298,7 +288,6 @@ hr.wp-block-separator.is-style-dots {
 
 /* Tables
 ---------------------------------------------------------------------------- */
-
 table {
 	width: 100%;
 }
@@ -336,7 +325,6 @@ table {
 
 /* Buttons
 ---------------------------------------------------------------------------- */
-
 .gb-block-cta .gb-button {
 	font-family: "Source Sans Pro", sans-serif;
 	font-weight: 600;
@@ -371,14 +359,12 @@ table {
 
 /* Galleries
 ---------------------------------------------------------------------------- */
-
 .wp-block-gallery .blocks-gallery-item {
 	margin-bottom: 16px;
 }
 
 /* Category Block
 ---------------------------------------------------------------------------- */
-
 .wp-block-categories ul {
 	margin-left: 0;
 	padding-left: 0;
@@ -398,7 +384,6 @@ table {
 
 /* Latest Posts Block
 ---------------------------------------------------------------------------- */
-
 .wp-block-latest-posts {
 	margin-left: 0;
 	padding-left: 0;
@@ -415,3 +400,6 @@ table {
 .wp-block[data-align="full"] .wp-block-latest-posts {
 	padding: 0 30px;
 }
+
+
+/*# sourceMappingURL=style-editor.css.map*/

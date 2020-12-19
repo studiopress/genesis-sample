@@ -1,0 +1,20 @@
+.site-container .wp-block-categories {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.site-container .wp-block-categories li {
+	list-style-type: none;
+}
+
+.site-container .wp-block-categories.aligncenter {
+	text-align: center;
+}
+
+.site-container .wp-block-categories.alignfull {
+	padding: 0 30px;
+}
+
+.site-container .wp-block-categories .children {
+	padding-left: 30px;
+}

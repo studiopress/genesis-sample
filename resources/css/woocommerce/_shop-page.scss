@@ -1,0 +1,114 @@
+.woocommerce .content .entry {
+	border-bottom: 0;
+}
+
+.woocommerce .content .entry::after,
+.woocommerce .content .entry::before,
+.woocommerce .products ul::after,
+.woocommerce .products ul::before,
+.woocommerce ul.products::after,
+.woocommerce ul.products::before,
+.woocommerce ul.products .product::after,
+.woocommerce ul.products .product::before {
+	display: none;
+}
+
+.woocommerce a.added_to_cart {
+	line-height: 1;
+}
+
+.woocommerce a.button.loading::after,
+.woocommerce button.button.loading::after,
+.woocommerce input.button.loading::after,
+.woocommerce #respond input#submit.loading::after {
+	top: 1em;
+}
+
+.woocommerce ul.products {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	@at-root {
+		.full-width-content#{&},
+		.full-width-content & {
+			@include breakpoint(sm-md) {
+				justify-content: flex-start;
+			}
+		}
+	}
+
+	@at-root {
+		.content-sidebar &,
+		.sidebar-content &,
+		.content-sidebar#{&},
+		.sidebar-content#{&}{
+			@include breakpoint(lg) {
+				justify-content: flex-start;
+			}
+		}
+	}
+}
+
+.woocommerce ul.products li.product .button,
+.woocommerce .woocommerce-ordering,
+.woocommerce-page ul.products li.product .button,
+.woocommerce-page .woocommerce-ordering {
+	margin-right: 0;
+	width: 100%;
+
+	@include breakpoint(sm) {
+		margin-right: auto;
+		width: auto;
+	}
+}
+
+.woocommerce ul.products li.product h3,
+.woocommerce ul.products li.product .price .from {
+	color: #000;
+}
+
+.woocommerce ul.products li.product h3:hover,
+.woocommerce ul.products li.product .price {
+	color: $color--accent;
+}
+
+/* MS Edge Bug Fix */
+.woocommerce ul.products li.product a {
+	transition: color 0.1s ease-in-out, background 0.1s ease-in-out;
+}
+
+.woocommerce nav.woocommerce-pagination {
+	clear: both;
+	margin: 40px 0;
+}
+
+.woocommerce nav.woocommerce-pagination ul,
+.woocommerce nav.woocommerce-pagination ul li {
+	border: none;
+}
+
+.woocommerce nav.woocommerce-pagination ul li {
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.woocommerce nav.woocommerce-pagination ul li a,
+.woocommerce nav.woocommerce-pagination ul li span {
+	background-color: #f5f5f5;
+	color: #333;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 1.625;
+	padding: 8px 12px;
+	text-decoration: none;
+}
+
+.woocommerce nav.woocommerce-pagination ul li a:focus,
+.woocommerce nav.woocommerce-pagination ul li a:hover,
+.woocommerce nav.woocommerce-pagination ul li span.current {
+	background-color: #333;
+	color: #fff;
+}

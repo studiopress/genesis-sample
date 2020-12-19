@@ -1,0 +1,129 @@
+.woocommerce a.button,
+.woocommerce a.button.alt,
+.woocommerce button.button,
+.woocommerce button.button.alt,
+.woocommerce input.button,
+.woocommerce input.button.alt,
+.woocommerce input.button[type="submit"],
+.woocommerce #respond input#submit,
+.woocommerce #respond input#submit.alt {
+	background-color: #333;
+	border: 0;
+	border-radius: 0;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 600;
+	padding: 15px 20px;
+	text-align: center;
+	text-decoration: none;
+	white-space: normal;
+	width: auto;
+}
+
+.woocommerce a.button:focus,
+.woocommerce a.button:hover,
+.woocommerce a.button.alt:focus,
+.woocommerce a.button.alt:hover,
+.woocommerce button.button:focus,
+.woocommerce button.button:hover,
+.woocommerce button.button.alt:focus,
+.woocommerce button.button.alt:hover,
+.woocommerce input.button:focus,
+.woocommerce input.button:hover,
+.woocommerce input.button.alt:focus,
+.woocommerce input.button.alt:hover,
+.woocommerce input[type="submit"]:focus,
+.woocommerce input[type="submit"]:hover,
+.woocommerce #respond input#submit:focus,
+.woocommerce #respond input#submit:hover,
+.woocommerce #respond input#submit.alt:focus,
+.woocommerce #respond input#submit.alt:hover {
+	background-color: $color--accent;
+	color: #fff;
+}
+
+.woocommerce #reviews #comment {
+	height: 150px;
+}
+
+.woocommerce .quantity .qty {
+	font-size: 20px;
+	line-height: 1.5;
+	margin-right: 5px;
+	padding: 12px 5px;
+	width: 70px;
+}
+
+.woocommerce form .form-row input.input-text,
+.woocommerce form .form-row textarea {
+	line-height: 1.5;
+	padding: 8px 20px;
+}
+
+.woocommerce form .form-row-first,
+.woocommerce form .form-row-last,
+.woocommerce #reviews #comments .star-rating,
+.woocommerce-page form .form-row-first,
+.woocommerce-page form .form-row-last {
+	float: none;
+	width: 100%;
+}
+
+@include breakpoint(sm) {
+	.woocommerce form .form-row-first,
+	.woocommerce-page form .form-row-first,
+	.woocommerce #reviews #comments .star-rating {
+		float: left;
+		width: 47%;
+	}
+
+	.woocommerce form .form-row-last,
+	.woocommerce-page form .form-row-last {
+		float: right;
+		width: 47%;
+	}
+}
+
+.woocommerce-cart table.cart td.actions .coupon .input-text,
+.woocommerce-checkout table.cart td.actions .coupon .input-text,
+#add_payment_method table.cart td.actions .coupon .input-text {
+	border-color: #eee;
+	padding: 5px 20px;
+	width: 150px;
+}
+
+.woocommerce form.checkout_coupon,
+.woocommerce form.login,
+.woocommerce form.register,
+.woocommerce form .form-row .select2-container,
+.woocommerce form .form-row.woocommerce-validated input.input-text,
+.woocommerce form .form-row.woocommerce-validated select,
+.woocommerce form .form-row.woocommerce-validated .select2-container {
+	border-color: #eee;
+	border-radius: 0;
+}
+
+.woocommerce-cart table.cart input,
+.woocommerce-checkout table.cart input,
+#add_payment_method table.cart input {
+	vertical-align: top;
+}
+
+.woocommerce .coupon {
+	line-height: 1;
+}
+
+.woocommerce .coupon .input-text {
+	height: 48px;
+}
+
+.woocommerce input.button,
+.woocommerce input.button[type="submit"],
+.woocommerce-cart table.cart td.actions .coupon .input-text {
+	width: 100% !important;
+
+	@include breakpoint(sm) {
+		width: auto !important;
+	}
+}

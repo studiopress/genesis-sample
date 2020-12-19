@@ -1,0 +1,18 @@
+.woocommerce #reviews #comments ol.commentlist li img.avatar {
+	background: transparent;
+	border: 0;
+	margin: 0 16px 24px 0;
+	padding: 0;
+	position: relative;
+	width: 60px;
+}
+
+.woocommerce #reviews #comments ol.commentlist li .comment-text {
+	border-color: #eee;
+	border-radius: 0;
+	margin-left: 80px;
+}
+
+.woocommerce .entry-content #reviews ol > li {
+	list-style-type: none;
+}

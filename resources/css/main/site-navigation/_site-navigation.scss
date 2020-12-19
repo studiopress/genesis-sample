@@ -1,0 +1,116 @@
+.genesis-nav-menu {
+	clear: both;
+	line-height: 1;
+	width: 100%;
+
+	.menu-item {
+		display: block;
+		float: none;
+		position: relative;
+
+		@include breakpoint(md) {
+			display: inline-block;
+
+			&:focus,
+			&:hover {
+				position: relative;
+			}
+		}
+	}
+
+	a {
+		color: #333;
+		display: block;
+		font-size: 15px;
+		font-weight: 400;
+		outline-offset: -1px;
+		padding-bottom: 12px;
+		padding-top: 12px;
+		text-decoration: none;
+	}
+
+	a:focus,
+	a:hover,
+	.current-menu-item > a,
+	.sub-menu .current-menu-item > a:focus,
+	.sub-menu .current-menu-item > a:hover {
+		color: $color--accent;
+		text-decoration: none;
+	}
+
+	.sub-menu,
+	.sub-menu a {
+		width: 100%;
+	}
+
+	.sub-menu {
+		clear: both;
+		display: none;
+		left: -9999px;
+		margin: 0;
+		opacity: 1;
+		padding-left: 15px;
+		position: static;
+		z-index: 99;
+	}
+
+	.sub-menu a {
+		background-color: #fff;
+		font-size: 14px;
+		position: relative;
+		word-wrap: break-word;
+	}
+
+	.menu-item:focus,
+	.menu-item:hover {
+		position: relative;
+	}
+
+	.menu-item:hover > .sub-menu {
+		display: block;
+		left: auto;
+		opacity: 1;
+	}
+
+	@include breakpoint(md) {
+		> .menu-bold > a {
+			font-weight: 700;
+		}
+
+		> .menu-highlight > a {
+			background-color: #333;
+			border-radius: 3px;
+			color: #fff;
+			font-weight: 600;
+			margin-left: 15px;
+			padding-left: 20px;
+			padding-right: 20px;
+
+			&:focus,
+			&:hover {
+				background-color: $color--accent;
+			}
+		}
+
+		.sub-menu {
+			border-top: 1px solid #eee;
+			opacity: 0;
+			padding-left: 0;
+			position: absolute;
+			transition: opacity 0.4s ease-in-out;
+			width: 180px;
+
+			a {
+				border: 1px solid #eee;
+				border-top: 0;
+				padding-bottom: 15px;
+				padding-top: 15px;
+				width: 180px;
+			}
+
+			.sub-menu {
+				margin: -46px 0 0 179px;
+			}
+		}
+	}
+}

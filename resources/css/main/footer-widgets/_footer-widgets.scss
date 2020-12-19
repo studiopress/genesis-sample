@@ -1,0 +1,32 @@
+.footer-widgets {
+	border-top: 1px solid #eee;
+	background-color: #fff;
+	clear: both;
+	padding: 60px 0;
+}
+
+.footer-widgets .wrap {
+	margin-left: auto;
+	margin-right: auto;
+
+	@include breakpoint(md) {
+		max-width: 1140px;
+	}
+}
+
+.footer-widget-area {
+	margin-bottom: 40px;
+	padding-left: 30px;
+	padding-right: 30px;
+
+	@include breakpoint(md) {
+		float: left;
+		margin-bottom: 0;
+		width: calc(100% / 3);
+	}
+}
+
+.footer-widget-area:last-child,
+.footer-widgets .widget:last-child {
+	margin-bottom: 0;
+}

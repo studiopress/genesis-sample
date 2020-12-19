@@ -1,0 +1,31 @@
+.gb-block-cta .gb-button {
+	font-family: "Source Sans Pro", sans-serif;
+	font-weight: 600;
+}
+
+.site-container .wp-block-button .wp-block-button__link {
+	border-width: 0;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+	font-family: "Source Sans Pro", sans-serif;
+	font-weight: 600;
+	padding: 15px 30px;
+	text-align: center;
+	text-decoration: none;
+	white-space: normal;
+	width: auto;
+}
+
+.site-container .wp-block-button.is-style-outline .wp-block-button__link {
+	background-color: transparent;
+	border: 2px solid currentColor;
+	padding: 13px 28px;
+}
+
+.site-container .wp-block-button .wp-block-button__link:focus,
+.site-container .wp-block-button .wp-block-button__link:hover,
+.site-container .wp-block-button.is-style-outline .wp-block-button__link:focus,
+.site-container .wp-block-button.is-style-outline .wp-block-button__link:hover {
+	box-shadow: inset 0 0 200px rgba(230, 230, 230, 0.25);
+}

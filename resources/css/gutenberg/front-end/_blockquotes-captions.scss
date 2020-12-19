@@ -1,0 +1,82 @@
+.site-container .wp-block-pullquote,
+.site-container .wp-block-quote {
+	border: none;
+	margin: 24px 24px 36px;
+}
+
+.wp-block-pullquote.alignleft {
+	margin: 0 2em 1.5em 0;
+}
+
+.wp-block-pullquote.alignright {
+	margin: 0 0 1.5em 2em;
+}
+
+.site-container .wp-block-pullquote p,
+.site-container .wp-block-quote p {
+	font-family: "Source Sans Pro", serif;
+	font-size: 21px;
+	font-style: italic;
+	line-height: 1.8;
+	margin-bottom: 42px;
+}
+
+.site-container .wp-block-pullquote p,
+.site-container .wp-block-quote.is-style-large p {
+	font-size: 32px;
+}
+
+.site-container .wp-block-pullquote.is-style-solid-color p {
+	color: #fff;
+	margin-bottom: 42px;
+	text-align: center;
+}
+
+.site-container .wp-block-pullquote.is-style-solid-color {
+	background-color: #333;
+}
+
+.wp-block-pullquote.is-style-solid-color.alignleft blockquote,
+.wp-block-pullquote.is-style-solid-color.alignright blockquote {
+	max-width: 80%;
+}
+
+.site-container .wp-block-pullquote:not(.is-style-solid-color)[style*="border-color"] {
+	border: 2px solid;
+	border-left: none;
+	border-right: none;
+}
+
+.site-container .wp-block-pullquote cite,
+.site-container .wp-block-quote cite {
+	color: #666;
+	display: block;
+	font-family: "Source Sans Pro", serif;
+	font-size: 16px;
+	font-style: italic;
+	margin-top: -25px;
+	text-align: inherit;
+	text-transform: none;
+}
+
+.site-container .wp-block-pullquote cite {
+	text-align: center;
+}
+
+.site-container .wp-block-pullquote.is-style-solid-color cite {
+	color: #fff;
+	font-style: italic;
+}
+
+.site-container .wp-block-pullquote .has-text-color cite,
+.site-container .wp-block-pullquote .has-text-color p {
+	color: currentColor;
+}
+
+.blocks-gallery-caption {
+	width: 100%;
+}
+
+.blocks-gallery-item figcaption {
+	margin-bottom: 0;
+}

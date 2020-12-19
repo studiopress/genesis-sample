@@ -1,0 +1,17 @@
+.nav-primary {
+	clear: left;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	width: 100%;
+
+	@include breakpoint(md) {
+		clear: none;
+		float: right;
+		width: auto;
+
+		.genesis-nav-menu a {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+}

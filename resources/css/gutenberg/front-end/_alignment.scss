@@ -1,0 +1,71 @@
+.has-text-align-center {
+	text-align: center;
+}
+
+.has-text-align-left {
+	text-align: left;
+}
+
+.has-text-align-right {
+	text-align: right;
+}
+
+.wp-block-button.alignleft,
+.wp-block-buttons.alignleft,
+.wp-block-cover.alignleft,
+.wp-block-image .alignleft {
+	margin-right: 2em;
+}
+
+.wp-block-button.alignright,
+.wp-block-buttons.alignright,
+.wp-block-cover.alignright,
+.wp-block-image .alignright {
+	margin-left: 2em;
+}
+
+.wp-block-image.alignwide,
+.wp-block-image.alignfull,
+.wp-block-embed.alignwide,
+.wp-block-embed.alignfull {
+	margin-bottom: 30px;
+}
+
+.full-width-content .entry-content > .alignfull {
+	margin-left: calc(-100vw / 2 + 100% / 2);
+	margin-right: calc(-100vw / 2 + 100% / 2);
+	max-width: 100vw;
+}
+
+.content-sidebar .site-container .alignfull,
+.sidebar-content .site-container .alignfull {
+	margin: 0 0 2em;
+	width: 100%;
+}
+
+@include breakpoint(md) {
+
+	.full-width-content .entry-content > .alignwide {
+		margin-left: -180px;
+		margin-right: -180px;
+		max-width: calc(100% + 360px); /* 360 equals sum of left and right margin */
+		width: auto;
+	}
+
+	.alignfull .alignwide,
+	.alignwide .alignwide {
+		max-width: 1062px;
+		margin: 0 auto;
+	}
+
+}
+
+@media only screen and (max-width: 600px) {
+
+	.wp-block-button.home-contact,
+	.wp-block-buttons.home-contact {
+		float: left;
+		margin-left: 0;
+	}
+
+}

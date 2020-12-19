@@ -1,0 +1,32 @@
+.after-entry .enews {
+	text-align: center;
+	padding: 10px;
+
+	@include breakpoint(md) {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}
+
+.sidebar .enews {
+	background-color: #f5f5f5;
+	padding: 30px;
+}
+
+.enews-widget input {
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+.after-entry .enews-widget input {
+	text-align: center;
+}
+
+.enews-widget input[type="submit"] {
+	margin: 0;
+	width: 100%;
+}
+
+.enews form + p {
+	margin-top: 20px;
+}
