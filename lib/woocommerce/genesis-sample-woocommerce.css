@@ -295,7 +295,7 @@ ul.wc-block-grid__products > li {
 }
 
 .woocommerce div.product .woocommerce-tabs ul.tabs li.active a::after {
-	content: "\F147";
+	content: "\f147";
 	display: block;
 	float: right;
 	font-family: dashicons;
@@ -871,5 +871,6 @@ div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricte
 	letter-spacing: 1px;
 	text-transform: uppercase;
 }
+
 
 /*# sourceMappingURL=genesis-sample-woocommerce.css.map*/

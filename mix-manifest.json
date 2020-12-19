@@ -1,13 +1,7 @@
 {
-    "/style.css": "/style.css?id=1fc305f3e125f0efcaa6",
-    "/lib/amp/amp.css": "/lib/amp/amp.css?id=a59f306a6f431a2ac143",
-    "/lib/gutenberg/front-end.css": "/lib/gutenberg/front-end.css?id=f77aa7901fa9a11430aa",
-    "/lib/gutenberg/style-editor.css": "/lib/gutenberg/style-editor.css?id=1807e3c20a28ae6a5fef",
-    "/lib/woocommerce/genesis-sample-woocommerce.css": "/lib/woocommerce/genesis-sample-woocommerce.css?id=bd66cf5a828d0f78703c",
-    "/mix.js.map": "/mix.js.map?id=29fe08cff1f2ee1cfbea",
-    "/style.css.map": "/style.css.map?id=cb3d576a2955d2ecdc9e",
-    "/lib/amp/amp.css.map": "/lib/amp/amp.css.map?id=dd7640d771c35411cf97",
-    "/lib/gutenberg/front-end.css.map": "/lib/gutenberg/front-end.css.map?id=dacf2d50fcbe77450e2f",
-    "/lib/gutenberg/style-editor.css.map": "/lib/gutenberg/style-editor.css.map?id=77594a959cac0d5adb82",
-    "/lib/woocommerce/genesis-sample-woocommerce.css.map": "/lib/woocommerce/genesis-sample-woocommerce.css.map?id=37ab59c70548cd07f45f"
+    "/lib/woocommerce/genesis-sample-woocommerce.css": "/lib/woocommerce/genesis-sample-woocommerce.css?id=477bafeaff693b1f0528",
+    "/lib/gutenberg/style-editor.css": "/lib/gutenberg/style-editor.css?id=11a630e54a2a88a35699",
+    "/lib/gutenberg/front-end.css": "/lib/gutenberg/front-end.css?id=a70134ac314db6a8a351",
+    "/lib/amp/amp.css": "/lib/amp/amp.css?id=01b5cd00e47cc9d2af43",
+    "/style.css": "/style.css?id=8ad006506c282eabf4c1"
 }

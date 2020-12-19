@@ -708,11 +708,6 @@ input[type="radio"] {
 	width: auto;
 }
 
-::-ms-input-placeholder {
-	color: #333;
-	opacity: 1;
-}
-
 :-ms-input-placeholder {
 	color: #333;
 	opacity: 1;
@@ -1301,14 +1296,14 @@ figcaption,
 }
 
 .gs-faq__question::after {
-	content: "\F132";
+	content: "\f132";
 	font-family: dashicons;
 	/* stylelint-disable-line font-family-no-missing-generic-family-keyword */
 	float: right;
 }
 
 .gs-faq__question.gs-faq--expanded::after {
-	content: "\F460";
+	content: "\f460";
 }
 
 /* WP Forms
@@ -1628,7 +1623,7 @@ figcaption,
 }
 
 .menu-toggle.activated::before {
-	content: "\F335";
+	content: "\f335";
 }
 
 .site-header .dashicons-before::before {
@@ -2058,5 +2053,6 @@ p.entry-meta {
 		page-break-before: avoid;
 	}
 }
+
 
 /*# sourceMappingURL=style.css.map*/
