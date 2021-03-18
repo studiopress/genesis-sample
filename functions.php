@@ -91,6 +91,28 @@ function genesis_sample_enqueue_scripts_styles() {
 
 }
 
+add_filter( 'wp_resource_hints', 'genesis_sample_resource_hints', 10, 2 );
+/**
+ * Add preconnect for Google Fonts.
+ *
+ * @since 3.4.1
+ *
+ * @param array  $urls          URLs to print for resource hints.
+ * @param string $relation_type The relation type the URLs are printed.
+ * @return array URLs to print for resource hints.
+ */
+function genesis_sample_resource_hints( $urls, $relation_type ) {
+
+	if ( wp_style_is( genesis_get_theme_handle() . '-fonts', 'queue' ) && 'preconnect' === $relation_type ) {
+		$urls[] = [
+			'href' => 'https://fonts.gstatic.com',
+			'crossorigin',
+		];
+	}
+
+	return $urls;
+}
+
 add_action( 'after_setup_theme', 'genesis_sample_theme_support', 9 );
 /**
  * Add desired theme supports.
