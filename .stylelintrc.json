@@ -2,6 +2,8 @@
 	"extends": "stylelint-config-wordpress",
 	"rules": {
 		"no-descending-specificity": null,
-		"no-duplicate-selectors": null
+		"no-duplicate-selectors": null,
+		"selector-id-pattern": null,
+		"selector-class-pattern": null
 	}
 }
