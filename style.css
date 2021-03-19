@@ -1125,7 +1125,7 @@ figcaption,
 	opacity: 1;
 }
 
-.genesis-responsive-menu {
+.js .nav-primary {
 	display: none;
 	position: relative;
 }
@@ -1541,7 +1541,7 @@ p.entry-meta {
 	/* Responsive Menu
 	--------------------------------------------- */
 
-	.genesis-responsive-menu {
+	.js .nav-primary {
 		display: block;
 		padding-top: 15px;
 	}

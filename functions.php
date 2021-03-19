@@ -91,6 +91,49 @@ function genesis_sample_enqueue_scripts_styles() {
 
 }
 
+add_filter( 'body_class', 'genesis_sample_body_classes' );
+/**
+ * Add additional classes to the body element.
+ *
+ * @since 3.4.1
+ *
+ * @param array $classes Classes array.
+ * @return array $classes Updated class array.
+ */
+function genesis_sample_body_classes( $classes ) {
+
+	if ( ! genesis_is_amp() ) {
+		// Add 'no-js' class to the body class values.
+		$classes[] = 'no-js';
+	}
+	return $classes;
+}
+
+add_action( 'genesis_before', 'genesis_sample_js_nojs_script', 1 );
+/**
+ * Echo the script that changes 'no-js' class to 'js'.
+ *
+ * @since 3.4.1
+ */
+function genesis_sample_js_nojs_script() {
+
+	if ( genesis_is_amp() ) {
+		return;
+	}
+
+	?>
+	<script>
+	//<![CDATA[
+	(function(){
+		var c = document.body.classList;
+		c.remove( 'no-js' );
+		c.add( 'js' );
+	})();
+	//]]>
+	</script>
+	<?php
+}
+
 add_action( 'after_setup_theme', 'genesis_sample_theme_support', 9 );
 /**
  * Add desired theme supports.
@@ -142,17 +185,17 @@ genesis_unregister_layout( 'content-sidebar-sidebar' );
 genesis_unregister_layout( 'sidebar-content-sidebar' );
 genesis_unregister_layout( 'sidebar-sidebar-content' );
 
-// Repositions primary navigation menu.
+// Repositions primary genesis_sample menu.
 remove_action( 'genesis_after_header', 'genesis_do_nav' );
 add_action( 'genesis_header', 'genesis_do_nav', 12 );
 
-// Repositions the secondary navigation menu.
+// Repositions the secondary genesis_sample menu.
 remove_action( 'genesis_after_header', 'genesis_do_subnav' );
 add_action( 'genesis_footer', 'genesis_do_subnav', 10 );
 
 add_filter( 'wp_nav_menu_args', 'genesis_sample_secondary_menu_args' );
 /**
- * Reduces secondary navigation menu to one level depth.
+ * Reduces secondary genesis_sample menu to one level depth.
  *
  * @since 2.2.3
  *
