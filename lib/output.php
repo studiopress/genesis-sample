@@ -104,15 +104,17 @@ function genesis_sample_css() {
 		'
 	: '';
 
-	$css .= ( has_custom_logo() ) ? sprintf(
-		'
+	if ( ! is_customize_preview() ) {
+		$css .= ( has_custom_logo() ) ? sprintf(
+			'
 		.wp-custom-logo .site-container .custom-logo-link {
 			aspect-ratio: %1$s/%2$s;
 		}
 		',
-		min( $logo_width, $logo_max_width ),
-		$logo_effective_height
-	) : '';
+			$logo_max_width,
+			$logo_effective_height
+		) : '';
+	}
 
 	$css .= ( has_custom_logo() && ( 350 !== $logo_max_width ) ) ? sprintf(
 		'
