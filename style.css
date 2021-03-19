@@ -1013,6 +1013,10 @@ figcaption,
 	width: 100%;
 }
 
+.wp-custom-logo .custom-logo-link {
+	display: block;
+}
+
 .wp-custom-logo .title-area img {
 	width: auto;
 }
