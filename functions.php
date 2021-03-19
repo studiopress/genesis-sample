@@ -134,6 +134,28 @@ function genesis_sample_js_nojs_script() {
 	<?php
 }
 
+add_filter( 'wp_resource_hints', 'genesis_sample_resource_hints', 10, 2 );
+/**
+ * Add preconnect for Google Fonts.
+ *
+ * @since 3.4.1
+ *
+ * @param array  $urls          URLs to print for resource hints.
+ * @param string $relation_type The relation type the URLs are printed.
+ * @return array URLs to print for resource hints.
+ */
+function genesis_sample_resource_hints( $urls, $relation_type ) {
+
+	if ( wp_style_is( genesis_get_theme_handle() . '-fonts', 'queue' ) && 'preconnect' === $relation_type ) {
+		$urls[] = [
+			'href' => 'https://fonts.gstatic.com',
+			'crossorigin',
+		];
+	}
+
+	return $urls;
+}
+
 add_action( 'after_setup_theme', 'genesis_sample_theme_support', 9 );
 /**
  * Add desired theme supports.
@@ -185,17 +207,17 @@ genesis_unregister_layout( 'content-sidebar-sidebar' );
 genesis_unregister_layout( 'sidebar-content-sidebar' );
 genesis_unregister_layout( 'sidebar-sidebar-content' );
 
-// Repositions primary genesis_sample menu.
+// Repositions primary navigation menu.
 remove_action( 'genesis_after_header', 'genesis_do_nav' );
 add_action( 'genesis_header', 'genesis_do_nav', 12 );
 
-// Repositions the secondary genesis_sample menu.
+// Repositions the secondary navigation menu.
 remove_action( 'genesis_after_header', 'genesis_do_subnav' );
 add_action( 'genesis_footer', 'genesis_do_subnav', 10 );
 
 add_filter( 'wp_nav_menu_args', 'genesis_sample_secondary_menu_args' );
 /**
- * Reduces secondary genesis_sample menu to one level depth.
+ * Reduces secondary navigation menu to one level depth.
  *
  * @since 2.2.3
  *
