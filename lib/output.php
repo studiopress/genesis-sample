@@ -111,7 +111,7 @@ function genesis_sample_css() {
 			aspect-ratio: %1$s/%2$s;
 		}
 		',
-			$logo_max_width,
+			strip_tags( $logo_max_width ),
 			$logo_effective_height
 		) : '';
 	}
