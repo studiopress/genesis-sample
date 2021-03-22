@@ -91,6 +91,49 @@ function genesis_sample_enqueue_scripts_styles() {
 
 }
 
+add_filter( 'body_class', 'genesis_sample_body_classes' );
+/**
+ * Add additional classes to the body element.
+ *
+ * @since 3.4.1
+ *
+ * @param array $classes Classes array.
+ * @return array $classes Updated class array.
+ */
+function genesis_sample_body_classes( $classes ) {
+
+	if ( ! genesis_is_amp() ) {
+		// Add 'no-js' class to the body class values.
+		$classes[] = 'no-js';
+	}
+	return $classes;
+}
+
+add_action( 'genesis_before', 'genesis_sample_js_nojs_script', 1 );
+/**
+ * Echo the script that changes 'no-js' class to 'js'.
+ *
+ * @since 3.4.1
+ */
+function genesis_sample_js_nojs_script() {
+
+	if ( genesis_is_amp() ) {
+		return;
+	}
+
+	?>
+	<script>
+	//<![CDATA[
+	(function(){
+		var c = document.body.classList;
+		c.remove( 'no-js' );
+		c.add( 'js' );
+	})();
+	//]]>
+	</script>
+	<?php
+}
+
 add_filter( 'wp_resource_hints', 'genesis_sample_resource_hints', 10, 2 );
 /**
  * Add preconnect for Google Fonts.

@@ -1013,6 +1013,10 @@ figcaption,
 	width: 100%;
 }
 
+.wp-custom-logo .custom-logo-link {
+	display: block;
+}
+
 .wp-custom-logo .title-area img {
 	width: auto;
 }
@@ -1125,7 +1129,7 @@ figcaption,
 	opacity: 1;
 }
 
-.genesis-responsive-menu {
+.js .nav-primary {
 	display: none;
 	position: relative;
 }
@@ -1541,7 +1545,7 @@ p.entry-meta {
 	/* Responsive Menu
 	--------------------------------------------- */
 
-	.genesis-responsive-menu {
+	.js .nav-primary {
 		display: block;
 		padding-top: 15px;
 	}
