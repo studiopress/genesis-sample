@@ -105,7 +105,7 @@ function genesis_sample_css() {
 	: '';
 
 	if ( ! is_customize_preview() ) {
-		$css .= ( has_custom_logo() ) ? sprintf(
+		$css .= has_custom_logo() ? sprintf(
 			'
 		.wp-custom-logo .site-container .custom-logo-link {
 			aspect-ratio: %1$s/%2$s;
