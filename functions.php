@@ -71,7 +71,7 @@ function genesis_sample_enqueue_scripts_styles() {
 
 	$appearance = genesis_get_config( 'appearance' );
 
-	wp_enqueue_style(
+	wp_enqueue_style( // phpcs:ignore WordPress.WP.EnqueuedResourceParameters.MissingVersion -- see https://core.trac.wordpress.org/ticket/49742
 		genesis_get_theme_handle() . '-fonts',
 		$appearance['fonts-url'],
 		[],
