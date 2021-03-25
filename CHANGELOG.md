@@ -1,5 +1,19 @@
 # Genesis Sample Theme Changelog
 
+## [3.4.1] - 2021-03-25
+
+### Added
+* Implement preconnect for Google Fonts.
+
+### Changed
+* Use null in place of theme version for Google Fonts URL.
+* Optimize images included with the Black & White one-click theme setup option.
+* Update developer dependencies. ([GitHub version](https://github.com/studiopress/genesis-sample/) only.)
+
+### Fixed
+* Improve Content Layout Shift (CLS) occurring when using a custom logo.
+* Improve Content Layout Shift (CLS) caused by the mobile menu.
+
 ## [3.4.0] - 2020-10-20
 Genesis Sample 3.4.0 requires the Genesis Blocks plugin.
 
