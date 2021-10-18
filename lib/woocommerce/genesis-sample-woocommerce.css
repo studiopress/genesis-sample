@@ -840,7 +840,7 @@ div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricte
 
 @media only screen and (min-width: 860px) {
 
-	.full-width-content .woocommerce ul.products
+	.full-width-content .woocommerce ul.products,
 	.full-width-content.woocommerce ul.products {
 		justify-content: flex-start;
 	}
