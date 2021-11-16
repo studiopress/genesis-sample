@@ -55,8 +55,7 @@ function studiopress_maybe_create_wpforms_form() { // phpcs:ignore -- studiopres
 		esc_html__( 'Simple Contact Form', 'genesis-sample' ),
 		[],
 		[
-			'template' => 'contact',
-			'builder'  => false,
+			'template' => 'simple-contact-form-template',
 		]
 	);
 
