@@ -1,13 +1,17 @@
 {
-	"name": "studiopress/genesis-sample",
+	"name": "gillespieza/genesass",
 	"type": "wordpress-theme",
-	"description": "Genesis Sample child theme for the Genesis Framework",
-	"homepage": "https://github.com/studiopress/genesis-sample",
+	"description": "Genesass child theme for the Genesis Framework",
+	"homepage": "https://github.com/gillespieza/genesass-and-genuflex",
 	"license": "GPL-2.0-or-later",
 	"authors": [
 		{
 			"name": "StudioPress",
 			"email": "support@studiopress.com"
+		},
+		{
+			"name": "Amanda Dominy",
+			"email": "dominy.amanda@gmail.com"
 		}
 	],
 	"require": {
@@ -30,7 +34,7 @@
 		"phpcbf": "phpcbf"
 	},
 	"support": {
-		"issues": "https://github.com/studiopress/genesis-sample/issues",
-		"source": "https://github.com/studiopress/genesis-sample"
+		"issues": "https://github.com/gillespieza/genesass-and-genuflex/issues",
+		"source": "https://github.com/gillespieza/genesass-and-genuflex"
 	}
 }

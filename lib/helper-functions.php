@@ -1,13 +1,13 @@
 <?php
 /**
- * Genesis Sample.
+ * Genesass.
  *
- * This file adds the required helper functions used in the Genesis Sample Theme.
+ * This file adds the required helper functions used in the Genesass Theme.
  *
- * @package Genesis Sample
+ * @package Genesass
  * @author  StudioPress
  * @license GPL-2.0-or-later
- * @link    https://www.studiopress.com/
+ * @link    https://github.com/gillespieza/genesass-and-genuflex/
  */
 
 /**
@@ -18,7 +18,7 @@
  * @param string $color A color in hex format.
  * @return string The hex code for the most contrasting color: dark grey or white.
  */
-function genesis_sample_color_contrast( $color ) {
+function genesass_color_contrast( $color ) {
 
 	$hexcolor = str_replace( '#', '', $color );
 	$red      = hexdec( substr( $hexcolor, 0, 2 ) );
@@ -41,7 +41,7 @@ function genesis_sample_color_contrast( $color ) {
  * @param int    $change The amount to reduce or increase brightness by.
  * @return string Hex code for the adjusted color brightness.
  */
-function genesis_sample_color_brightness( $color, $change ) {
+function genesass_color_brightness( $color, $change ) {
 
 	$hexcolor = str_replace( '#', '', $color );
 

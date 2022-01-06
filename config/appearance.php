@@ -1,71 +1,88 @@
 <?php
 /**
- * Genesis Sample appearance settings.
+ * Genesass appearance settings.
  *
- * @package Genesis Sample
+ * @package Genesass
  * @author  StudioPress
  * @license GPL-2.0-or-later
- * @link    https://www.studiopress.com/
+ * @link    https://github.com/gillespieza/genesass-and-genuflex/
  */
 
-$genesis_sample_default_colors = [
-	'link'   => '#0073e5',
-	'accent' => '#0073e5',
-];
-
-$genesis_sample_link_color = get_theme_mod(
-	'genesis_sample_link_color',
-	$genesis_sample_default_colors['link']
+$genesass_default_colors = array(
+	'link'   => '#036966', // skobeloff.
+	'accent' => '#00b5b0', // tiffany blue.
 );
 
-$genesis_sample_accent_color = get_theme_mod(
-	'genesis_sample_accent_color',
-	$genesis_sample_default_colors['accent']
+$genesass_link_color = get_theme_mod(
+	'genesass_link_color',
+	$genesass_default_colors['link']
 );
 
-$genesis_sample_link_color_contrast   = genesis_sample_color_contrast( $genesis_sample_link_color );
-$genesis_sample_link_color_brightness = genesis_sample_color_brightness( $genesis_sample_link_color, 35 );
+$genesass_accent_color = get_theme_mod(
+	'genesass_accent_color',
+	$genesass_default_colors['accent']
+);
 
-return [
+$genesass_link_color_contrast   = genesass_color_contrast( $genesass_link_color );
+$genesass_link_color_brightness = genesass_color_brightness( $genesass_link_color, 35 );
+
+return array(
 	'fonts-url'            => 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700&display=swap',
 	'content-width'        => 1062,
-	'button-bg'            => $genesis_sample_link_color,
-	'button-color'         => $genesis_sample_link_color_contrast,
-	'button-outline-hover' => $genesis_sample_link_color_brightness,
-	'link-color'           => $genesis_sample_link_color,
-	'default-colors'       => $genesis_sample_default_colors,
-	'editor-color-palette' => [
-		[
-			'name'  => __( 'Custom color', 'genesis-sample' ), // Called “Link Color” in the Customizer options. Renamed because “Link Color” implies it can only be used for links.
+	'button-bg'            => $genesass_link_color,
+	'button-color'         => $genesass_link_color_contrast,
+	'button-outline-hover' => $genesass_link_color_brightness,
+	'link-color'           => $genesass_link_color,
+	'default-colors'       => $genesass_default_colors,
+	'editor-color-palette' => array(
+		array(
+			'name'  => __( 'Primary color', 'genesass' ), // Called “Link Color” in the Customizer options. Renamed because “Link Color” implies it can only be used for links.
 			'slug'  => 'theme-primary',
-			'color' => $genesis_sample_link_color,
-		],
-		[
-			'name'  => __( 'Accent color', 'genesis-sample' ),
+			'color' => $genesass_link_color,
+		),
+		array(
+			'name'  => __( 'Accent color', 'genesass' ),
 			'slug'  => 'theme-secondary',
-			'color' => $genesis_sample_accent_color,
-		],
-	],
-	'editor-font-sizes'    => [
-		[
-			'name' => __( 'Small', 'genesis-sample' ),
-			'size' => 12,
+			'color' => $genesass_accent_color,
+		),
+		array(
+			'name'  => __( 'White', 'genesass' ),
+			'slug'  => 'theme-white',
+			'color' => '#ffffff',
+		),
+		array(
+			'name'  => __( 'Black', 'genesass' ),
+			'slug'  => 'theme-black',
+			'color' => '#000000',
+		),
+	),
+	'editor-font-sizes'    => array(
+		array(
+			'name' => __( 'Small', 'genesass' ),
+			'size' => 14,
 			'slug' => 'small',
-		],
-		[
-			'name' => __( 'Normal', 'genesis-sample' ),
-			'size' => 18,
+		),
+		array(
+			'name' => __( 'Normal', 'genesass' ),
+			'size' => 16,
 			'slug' => 'normal',
-		],
-		[
-			'name' => __( 'Large', 'genesis-sample' ),
+		),
+		array(
+			'name' => __( 'Lead', 'genesass' ),
+			'size' => 18,
+			'slug' => 'lead',
+		),
+		array(
+			'name' => __( 'Large', 'genesass' ),
 			'size' => 20,
 			'slug' => 'large',
-		],
-		[
-			'name' => __( 'Larger', 'genesis-sample' ),
+		),
+		array(
+			'name' => __( 'Larger', 'genesass' ),
 			'size' => 24,
 			'slug' => 'larger',
-		],
-	],
-];
+		),
+	),
+);
+
+

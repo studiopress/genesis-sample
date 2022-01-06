@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
-<ruleset name="Genesis-Sample"
+<ruleset name="Genesass"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:noNamespaceSchemaLocation="vendor/squizlabs/php_codesniffer/phpcs.xsd">
 
-	<description>Custom ruleset for Genesis Sample.</description>
+	<description>Custom ruleset for Genesass.</description>
 
 	<!-- For help in understanding this file: https://github.com/squizlabs/PHP_CodeSniffer/wiki/Annotated-ruleset.xml -->
 	<!-- For help in using PHPCS: https://github.com/squizlabs/PHP_CodeSniffer/wiki/Usage -->
@@ -62,7 +62,7 @@
 	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
 		<properties>
 			<property name="prefixes" type="array">
-				<element value="genesis_sample"/>
+				<element value="genesass"/>
 				<element value="CHILD_THEME"/>
 			</property>
 		</properties>
@@ -72,7 +72,7 @@
 	<rule ref="WordPress.WP.I18n">
 		<properties>
 			<property name="text_domain" type="array">
-				<element value="genesis-sample"/>
+				<element value="genesass"/>
 			</property>
 		</properties>
 	</rule>

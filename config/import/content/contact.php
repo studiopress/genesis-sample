@@ -1,16 +1,16 @@
 <?php
 /**
- * Genesis Sample.
+ * Genesass.
  *
  * Contact page content optionally installed after theme activation.
  * Will create a form with WPForms and embed on the page as a WPForms block.
  *
  * Visit `/wp-admin/admin.php?page=genesis-getting-started` to trigger import.
  *
- * @package Genesis Sample
+ * @package Genesass
  * @author  StudioPress
  * @license GPL-2.0-or-later
- * @link    https://www.studiopress.com/
+ * @link    https://github.com/gillespieza/genesass-and-genuflex/
  */
 
 // Requires helper WPForms function to create a new form.

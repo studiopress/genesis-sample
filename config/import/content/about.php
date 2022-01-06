@@ -1,23 +1,23 @@
 <?php
 /**
- * Genesis Sample.
+ * Genesass.
  *
  * About page content optionally installed after theme activation.
  *
  * Visit `/wp-admin/admin.php?page=genesis-getting-started` to trigger import.
  *
- * @package Genesis Sample
+ * @package Genesass
  * @author  StudioPress
  * @license GPL-2.0-or-later
- * @link    https://www.studiopress.com/
+ * @link    https://github.com/gillespieza/genesass-and-genuflex/
  */
 
 // Photo by Fabrice Villard on Unsplash.
-$genesis_sample_about_image_url = CHILD_URL . '/config/import/images/about.jpg';
+$genesass_about_image_url = CHILD_URL . '/config/import/images/about.jpg';
 
 return <<<CONTENT
 <!-- wp:image {"id":2141,"align":"center"} -->
-<div class="wp-block-image"><figure class="aligncenter"><img src="$genesis_sample_about_image_url" alt="" class="wp-image-2141"/></figure></div>
+<div class="wp-block-image"><figure class="aligncenter"><img src="$genesass_about_image_url" alt="" class="wp-image-2141"/></figure></div>
 <!-- /wp:image -->
 
 <!-- wp:genesis-blocks/gb-spacer {"spacerHeight":29} -->

@@ -1,13 +1,13 @@
 <?php
 /**
- * Genesis Sample.
+ * Genesass.
  *
- * This file adds functions to the Genesis Sample Theme.
+ * This file adds functions to the Genesass Theme.
  *
- * @package Genesis Sample
+ * @package Genesass
  * @author  StudioPress
  * @license GPL-2.0-or-later
- * @link    https://www.studiopress.com/
+ * @link    https://github.com/gillespieza/genesass-and-genuflex/
  */
 
 // Starts the engine.
@@ -16,13 +16,13 @@ require_once get_template_directory() . '/lib/init.php';
 // Sets up the Theme.
 require_once get_stylesheet_directory() . '/lib/theme-defaults.php';
 
-add_action( 'after_setup_theme', 'genesis_sample_localization_setup' );
+add_action( 'after_setup_theme', 'genesass_localization_setup' );
 /**
  * Sets localization (do not remove).
  *
  * @since 1.0.0
  */
-function genesis_sample_localization_setup() {
+function genesass_localization_setup() {
 
 	load_child_theme_textdomain( genesis_get_theme_handle(), get_stylesheet_directory() . '/languages' );
 
@@ -61,13 +61,13 @@ if ( function_exists( 'genesis_register_responsive_menus' ) ) {
 	genesis_register_responsive_menus( genesis_get_config( 'responsive-menus' ) );
 }
 
-add_action( 'wp_enqueue_scripts', 'genesis_sample_enqueue_scripts_styles' );
+add_action( 'wp_enqueue_scripts', 'genesass_enqueue_scripts_styles' );
 /**
  * Enqueues scripts and styles.
  *
  * @since 1.0.0
  */
-function genesis_sample_enqueue_scripts_styles() {
+function genesass_enqueue_scripts_styles() {
 
 	$appearance = genesis_get_config( 'appearance' );
 
@@ -91,7 +91,7 @@ function genesis_sample_enqueue_scripts_styles() {
 
 }
 
-add_filter( 'body_class', 'genesis_sample_body_classes' );
+add_filter( 'body_class', 'genesass_body_classes' );
 /**
  * Add additional classes to the body element.
  *
@@ -100,7 +100,7 @@ add_filter( 'body_class', 'genesis_sample_body_classes' );
  * @param array $classes Classes array.
  * @return array $classes Updated class array.
  */
-function genesis_sample_body_classes( $classes ) {
+function genesass_body_classes( $classes ) {
 
 	if ( ! genesis_is_amp() ) {
 		// Add 'no-js' class to the body class values.
@@ -109,13 +109,13 @@ function genesis_sample_body_classes( $classes ) {
 	return $classes;
 }
 
-add_action( 'genesis_before', 'genesis_sample_js_nojs_script', 1 );
+add_action( 'genesis_before', 'genesass_js_nojs_script', 1 );
 /**
  * Echo the script that changes 'no-js' class to 'js'.
  *
  * @since 3.4.1
  */
-function genesis_sample_js_nojs_script() {
+function genesass_js_nojs_script() {
 
 	if ( genesis_is_amp() ) {
 		return;
@@ -134,7 +134,7 @@ function genesis_sample_js_nojs_script() {
 	<?php
 }
 
-add_filter( 'wp_resource_hints', 'genesis_sample_resource_hints', 10, 2 );
+add_filter( 'wp_resource_hints', 'genesass_resource_hints', 10, 2 );
 /**
  * Add preconnect for Google Fonts.
  *
@@ -144,7 +144,7 @@ add_filter( 'wp_resource_hints', 'genesis_sample_resource_hints', 10, 2 );
  * @param string $relation_type The relation type the URLs are printed.
  * @return array URLs to print for resource hints.
  */
-function genesis_sample_resource_hints( $urls, $relation_type ) {
+function genesass_resource_hints( $urls, $relation_type ) {
 
 	if ( wp_style_is( genesis_get_theme_handle() . '-fonts', 'queue' ) && 'preconnect' === $relation_type ) {
 		$urls[] = [
@@ -156,7 +156,7 @@ function genesis_sample_resource_hints( $urls, $relation_type ) {
 	return $urls;
 }
 
-add_action( 'after_setup_theme', 'genesis_sample_theme_support', 9 );
+add_action( 'after_setup_theme', 'genesass_theme_support', 9 );
 /**
  * Add desired theme supports.
  *
@@ -164,7 +164,7 @@ add_action( 'after_setup_theme', 'genesis_sample_theme_support', 9 );
  *
  * @since 3.0.0
  */
-function genesis_sample_theme_support() {
+function genesass_theme_support() {
 
 	$theme_supports = genesis_get_config( 'theme-supports' );
 
@@ -174,7 +174,7 @@ function genesis_sample_theme_support() {
 
 }
 
-add_action( 'after_setup_theme', 'genesis_sample_post_type_support', 9 );
+add_action( 'after_setup_theme', 'genesass_post_type_support', 9 );
 /**
  * Add desired post type supports.
  *
@@ -182,7 +182,7 @@ add_action( 'after_setup_theme', 'genesis_sample_post_type_support', 9 );
  *
  * @since 3.0.0
  */
-function genesis_sample_post_type_support() {
+function genesass_post_type_support() {
 
 	$post_type_supports = genesis_get_config( 'post-type-supports' );
 
@@ -215,7 +215,7 @@ add_action( 'genesis_header', 'genesis_do_nav', 12 );
 remove_action( 'genesis_after_header', 'genesis_do_subnav' );
 add_action( 'genesis_footer', 'genesis_do_subnav', 10 );
 
-add_filter( 'wp_nav_menu_args', 'genesis_sample_secondary_menu_args' );
+add_filter( 'wp_nav_menu_args', 'genesass_secondary_menu_args' );
 /**
  * Reduces secondary navigation menu to one level depth.
  *
@@ -224,7 +224,7 @@ add_filter( 'wp_nav_menu_args', 'genesis_sample_secondary_menu_args' );
  * @param array $args Original menu options.
  * @return array Menu options with depth set to 1.
  */
-function genesis_sample_secondary_menu_args( $args ) {
+function genesass_secondary_menu_args( $args ) {
 
 	if ( 'secondary' === $args['theme_location'] ) {
 		$args['depth'] = 1;
@@ -234,7 +234,7 @@ function genesis_sample_secondary_menu_args( $args ) {
 
 }
 
-add_filter( 'genesis_author_box_gravatar_size', 'genesis_sample_author_box_gravatar' );
+add_filter( 'genesis_author_box_gravatar_size', 'genesass_author_box_gravatar' );
 /**
  * Modifies size of the Gravatar in the author box.
  *
@@ -243,13 +243,13 @@ add_filter( 'genesis_author_box_gravatar_size', 'genesis_sample_author_box_grava
  * @param int $size Original icon size.
  * @return int Modified icon size.
  */
-function genesis_sample_author_box_gravatar( $size ) {
+function genesass_author_box_gravatar( $size ) {
 
 	return 90;
 
 }
 
-add_filter( 'genesis_comment_list_args', 'genesis_sample_comments_gravatar' );
+add_filter( 'genesis_comment_list_args', 'genesass_comments_gravatar' );
 /**
  * Modifies size of the Gravatar in the entry comments.
  *
@@ -258,9 +258,35 @@ add_filter( 'genesis_comment_list_args', 'genesis_sample_comments_gravatar' );
  * @param array $args Gravatar settings.
  * @return array Gravatar settings with modified size.
  */
-function genesis_sample_comments_gravatar( $args ) {
+function genesass_comments_gravatar( $args ) {
 
 	$args['avatar_size'] = 60;
 	return $args;
 
 }
+
+// Don't load deprecated functions.
+add_filter( 'genesis_load_deprecated', '__return_false' );
+
+/* ----------------------------------------------------- */
+
+// Adds debugging functions.
+require_once get_stylesheet_directory() . '/lib/genesass/debugger.php';
+
+// Adds theme customisations.
+require_once get_stylesheet_directory() . '/lib/genesass/theme.php';
+
+// Clean up head and various bloat meta.
+require_once get_stylesheet_directory() . '/lib/genesass/cleanup.php';
+
+// Performance optimisations.
+require_once get_stylesheet_directory() . '/lib/genesass/performance.php';
+
+// Security optimisations.
+require_once get_stylesheet_directory() . '/lib/genesass/security.php';
+
+// Allow SVGs.
+require_once get_stylesheet_directory() . '/lib/genesass/svg.php';
+
+// Custom social icons
+// require_once get_stylesheet_directory() . '/lib/genesass/custom-social-icons.php';

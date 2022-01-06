@@ -1,11 +1,11 @@
 <?php
 /**
- * Genesis Sample child theme.
+ * Genesass child theme.
  *
- * @package Genesis Sample
+ * @package Genesass
  * @author  StudioPress
  * @license GPL-2.0-or-later
- * @link    https://my.studiopress.com/themes/genesis-sample/
+ * @link    https://github.com/gillespieza/genesass-and-genuflex/
  */
 
 /**

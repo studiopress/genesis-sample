@@ -8,7 +8,7 @@
  * @package StudioPress
  * @author  StudioPress
  * @license GPL-2.0-or-later
- * @link    https://www.studiopress.com/
+ * @link    https://github.com/gillespieza/genesass-and-genuflex/
  */
 
 /**
@@ -52,7 +52,7 @@ function studiopress_maybe_create_wpforms_form() { // phpcs:ignore -- studiopres
 
 	// Creates a form using the WPForms 'contact' template.
 	$new_form_id = wpforms()->form->add(
-		esc_html__( 'Simple Contact Form', 'genesis-sample' ),
+		esc_html__( 'Simple Contact Form', 'genesass' ),
 		[],
 		[
 			'template' => 'contact',

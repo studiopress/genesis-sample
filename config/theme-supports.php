@@ -1,13 +1,13 @@
 <?php
 /**
- * Genesis Sample child theme.
+ * Genesass child theme.
  *
  * Theme supports.
  *
- * @package Genesis Sample
+ * @package Genesass
  * @author  StudioPress
  * @license GPL-2.0-or-later
- * @link    https://my.studiopress.com/themes/genesis-sample/
+ * @link    https://my.studiopress.com/themes/genesass/
  */
 
 return [
@@ -28,15 +28,18 @@ return [
 		'style',
 	],
 	'genesis-accessibility'           => [
-		'drop-down-menu',
-		'headings',
-		'search-form',
+		'404-page',
+		'drop-down-menu', // adds SuperFish.js.
+		'headings', // semantic headings.
+		'rems',
+		'search-form', // input labels.
 		'skip-links',
 	],
 	'genesis-after-entry-widget-area' => '',
 	'genesis-footer-widgets'          => 3,
 	'genesis-menus'                   => [
-		'primary'   => __( 'Header Menu', 'genesis-sample' ),
-		'secondary' => __( 'Footer Menu', 'genesis-sample' ),
+		'primary'   => __( 'Header Menu', 'genesass' ),
+		'secondary' => __( 'Footer Menu', 'genesass' ),
 	],
 ];
+

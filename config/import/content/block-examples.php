@@ -1,15 +1,15 @@
 <?php
 /**
- * Genesis Sample.
+ * Genesass.
  *
  * Block example page content optionally installed after theme activation.
  *
  * Visit `/wp-admin/admin.php?page=genesis-getting-started` to trigger import.
  *
- * @package Genesis Sample
+ * @package Genesass
  * @author  StudioPress
  * @license GPL-2.0-or-later
- * @link    https://www.studiopress.com/
+ * @link    https://www. * @link    https://github.com/gillespieza/genesass-and-genuflex/
  */
 
 return <<<CONTENT

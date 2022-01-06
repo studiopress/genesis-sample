@@ -1,11 +1,11 @@
 <?php
 /**
- * Genesis Sample Simple Social Icons default settings.
+ * Genesass Simple Social Icons default settings.
  *
- * @package Genesis Sample
+ * @package Genesass
  * @author  StudioPress
  * @license GPL-2.0-or-later
- * @link    https://www.studiopress.com/
+ * @link    https://github.com/gillespieza/genesass-and-genuflex/
  */
 
 return [
