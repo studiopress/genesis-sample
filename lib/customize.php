@@ -1,16 +1,16 @@
 <?php
 /**
- * Genesass.
+ * Genuflex.
  *
- * This file adds the Customizer additions to the Genesass Theme.
+ * This file adds the Customizer additions to the Genuflex Theme.
  *
- * @package Genesass
+ * @package Genuflex
  * @author  StudioPress
  * @license GPL-2.0-or-later
  * @link    https://github.com/gillespieza/genesass-and-genuflex/
  */
 
-add_action( 'customize_register', 'genesass_customizer_register' );
+add_action( 'customize_register', 'genuflex_customizer_register' );
 /**
  * Registers settings and controls with the Customizer.
  *
@@ -18,12 +18,12 @@ add_action( 'customize_register', 'genesass_customizer_register' );
  *
  * @param WP_Customize_Manager $wp_customize Customizer object.
  */
-function genesass_customizer_register( $wp_customize ) {
+function genuflex_customizer_register( $wp_customize ) {
 
 	$appearance = genesis_get_config( 'appearance' );
 
 	$wp_customize->add_setting(
-		'genesass_link_color',
+		'genuflex_link_color',
 		[
 			'default'           => $appearance['default-colors']['link'],
 			'sanitize_callback' => 'sanitize_hex_color',
@@ -33,18 +33,18 @@ function genesass_customizer_register( $wp_customize ) {
 	$wp_customize->add_control(
 		new WP_Customize_Color_Control(
 			$wp_customize,
-			'genesass_link_color',
+			'genuflex_link_color',
 			[
-				'description' => __( 'Change the color of post info links and button blocks, the hover color of linked titles and menu items, and more.', 'genesass' ),
-				'label'       => __( 'Link Color', 'genesass' ),
+				'description' => __( 'Change the color of post info links and button blocks, the hover color of linked titles and menu items, and more.', 'genuflex' ),
+				'label'       => __( 'Link Color', 'genuflex' ),
 				'section'     => 'colors',
-				'settings'    => 'genesass_link_color',
+				'settings'    => 'genuflex_link_color',
 			]
 		)
 	);
 
 	$wp_customize->add_setting(
-		'genesass_accent_color',
+		'genuflex_accent_color',
 		[
 			'default'           => $appearance['default-colors']['accent'],
 			'sanitize_callback' => 'sanitize_hex_color',
@@ -54,34 +54,34 @@ function genesass_customizer_register( $wp_customize ) {
 	$wp_customize->add_control(
 		new WP_Customize_Color_Control(
 			$wp_customize,
-			'genesass_accent_color',
+			'genuflex_accent_color',
 			[
-				'description' => __( 'Change the default hover color for button links, menu buttons, and submit buttons. The button block uses the Link Color.', 'genesass' ),
-				'label'       => __( 'Accent Color', 'genesass' ),
+				'description' => __( 'Change the default hover color for button links, menu buttons, and submit buttons. The button block uses the Link Color.', 'genuflex' ),
+				'label'       => __( 'Accent Color', 'genuflex' ),
 				'section'     => 'colors',
-				'settings'    => 'genesass_accent_color',
+				'settings'    => 'genuflex_accent_color',
 			]
 		)
 	);
 
 	$wp_customize->add_setting(
-		'genesass_logo_width',
+		'genuflex_logo_width',
 		[
 			'default'           => 350,
 			'sanitize_callback' => 'absint',
-			'validate_callback' => 'genesass_validate_logo_width',
+			'validate_callback' => 'genuflex_validate_logo_width',
 		]
 	);
 
 	// Add a control for the logo size.
 	$wp_customize->add_control(
-		'genesass_logo_width',
+		'genuflex_logo_width',
 		[
-			'label'       => __( 'Logo Width', 'genesass' ),
-			'description' => __( 'The maximum width of the logo in pixels.', 'genesass' ),
+			'label'       => __( 'Logo Width', 'genuflex' ),
+			'description' => __( 'The maximum width of the logo in pixels.', 'genuflex' ),
 			'priority'    => 9,
 			'section'     => 'title_tagline',
-			'settings'    => 'genesass_logo_width',
+			'settings'    => 'genuflex_logo_width',
 			'type'        => 'number',
 			'input_attrs' => [
 				'min' => 100,
@@ -99,12 +99,12 @@ function genesass_customizer_register( $wp_customize ) {
  * @param int    $width The width entered by the user.
  * @return int The new width.
  */
-function genesass_validate_logo_width( $validity, $width ) {
+function genuflex_validate_logo_width( $validity, $width ) {
 
 	if ( empty( $width ) || ! is_numeric( $width ) ) {
-		$validity->add( 'required', __( 'You must supply a valid number.', 'genesass' ) );
+		$validity->add( 'required', __( 'You must supply a valid number.', 'genuflex' ) );
 	} elseif ( $width < 100 ) {
-		$validity->add( 'logo_too_small', __( 'The logo width cannot be less than 100.', 'genesass' ) );
+		$validity->add( 'logo_too_small', __( 'The logo width cannot be less than 100.', 'genuflex' ) );
 	}
 
 	return $validity;

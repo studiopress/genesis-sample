@@ -3,7 +3,7 @@
  * Cleanup and optimise WordPress.
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
- * @package Genesass
+ * @package Genuflex
  */
 
 // Security Check: Prevent this file being executed outside the WordPress context.
@@ -14,11 +14,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 /*
  * -----------------------------------------------------------------------------
  * TABLE OF CONTENTS:
- * - Disable Emojis: genesass_disable_emojis()
- * - Remove Emojis from TinyMCE: genesass_disable_emojis_tinymce()
- * - Disable emoji DNS prefetch: genesass_disable_emojis_remove_dns_prefetch()
- * - Remove superfluous meta info from head: genesass_remove_header_meta()
- * - Remove generator version number from head: genesass_remove_generator_version()
+ * - Disable Emojis: genuflex_disable_emojis()
+ * - Remove Emojis from TinyMCE: genuflex_disable_emojis_tinymce()
+ * - Disable emoji DNS prefetch: genuflex_disable_emojis_remove_dns_prefetch()
+ * - Remove superfluous meta info from head: genuflex_remove_header_meta()
+ * - Remove generator version number from head: genuflex_remove_generator_version()
  * - Remove inline gallery CSS
  * - Disable email updates for plugin/core updates
  * -----------------------------------------------------------------------------
@@ -35,11 +35,11 @@ if ( ! defined( 'ABSPATH' ) ) {
  * {@link https://developer.wordpress.org/reference/hooks/init/ `init` hook},
  * which fires after WordPress has finished loading but before any headers are sent.
  *
- * @uses genesass_disable_emojis_tinymce()
- * @uses genesass_disable_emojis_remove_dns_prefetch()
+ * @uses genuflex_disable_emojis_tinymce()
+ * @uses genuflex_disable_emojis_remove_dns_prefetch()
  * @return void
  */
-function genesass_disable_emojis() {
+function genuflex_disable_emojis() {
 	// Prevent Emoji from loading on the front-end.
 	remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
 	remove_action( 'wp_print_styles', 'print_emoji_styles' );
@@ -59,25 +59,25 @@ function genesass_disable_emojis() {
 	remove_filter( 'wp_mail', 'wp_staticize_emoji_for_email' );
 
 	// Disable from TinyMCE editor. Currently disabled in block editor by default.
-	add_filter( 'tiny_mce_plugins', 'genesass_disable_emojis_tinymce' );
+	add_filter( 'tiny_mce_plugins', 'genuflex_disable_emojis_tinymce' );
 
 	// Don't bother prefetching DNS for this.
-	add_filter( 'wp_resource_hints', 'genesass_disable_emojis_remove_dns_prefetch', 10, 2 );
+	add_filter( 'wp_resource_hints', 'genuflex_disable_emojis_remove_dns_prefetch', 10, 2 );
 
 	// Finally, prevent character conversion (otherwise emojis still work if available on user's device).
 	add_filter( 'option_use_smilies', '__return_false' );
 }
-add_action( 'init', 'genesass_disable_emojis' );
+add_action( 'init', 'genuflex_disable_emojis' );
 
 
 /**
  * Removes the emoji plugin from TinyMCE.
  *
- * @used-by genesass_disable_emojis()
+ * @used-by genuflex_disable_emojis()
  * @param array $plugins The array of current plugins.
  * @return array         The difference betwen the two arrays.
  */
-function genesass_disable_emojis_tinymce( $plugins ) {
+function genuflex_disable_emojis_tinymce( $plugins ) {
 	if ( is_array( $plugins ) ) {
 		return array_diff( $plugins, array( 'wpemoji' ) );
 	} else {
@@ -89,12 +89,12 @@ function genesass_disable_emojis_tinymce( $plugins ) {
 /**
  * Removes the emoji CDN hostname from DNS prefetching hints.
  *
- * @used-by genesass_disable_emojis()
+ * @used-by genuflex_disable_emojis()
  * @param array  $urls          URLs to print for resource hints.
  * @param string $relation_type The relation type the URLs are printed for.
  * @return array $urls          The difference betwen the two arrays.
  */
-function genesass_disable_emojis_remove_dns_prefetch( $urls, $relation_type ) {
+function genuflex_disable_emojis_remove_dns_prefetch( $urls, $relation_type ) {
 	if ( 'dns-prefetch' === $relation_type ) {
 		/** This filter is documented in wp-includes/formatting.php */
 		$emoji_svg_url = apply_filters( 'emoji_svg_url', 'https://s.w.org/images/core/emoji/2/svg/' ); // phpcs:ignore.
@@ -118,7 +118,7 @@ add_filter( 'emoji_svg_url', '__return_false' );
  * This ensures that the callback we are removing has actually been added before
  * you try to remove it.
  */
-function genesass_remove_header_meta() {
+function genuflex_remove_header_meta() {
 	// for WordPress >= 3.0 adjacent posts.
 	remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0 );
 
@@ -161,7 +161,7 @@ function genesass_remove_header_meta() {
 	// does anybody even use these any more?
 	remove_action( 'wp_head', 'wp_shortlink_wp_head' );
 };
-add_action( 'after_setup_theme', 'genesass_remove_header_meta' );
+add_action( 'after_setup_theme', 'genuflex_remove_header_meta' );
 
 
 
@@ -173,10 +173,10 @@ add_action( 'after_setup_theme', 'genesass_remove_header_meta' );
  *
  * @return empty string.
  */
-function genesass_remove_generator_version() {
+function genuflex_remove_generator_version() {
 	return '';
 }
-add_filter( 'the_generator', 'genesass_remove_generator_version' );
+add_filter( 'the_generator', 'genuflex_remove_generator_version' );
 
 
 

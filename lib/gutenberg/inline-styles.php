@@ -2,19 +2,19 @@
 /**
  * Adds front-end inline styles for the custom Gutenberg color palette.
  *
- * @package Genesass
+ * @package Genuflex
  * @author  StudioPress
  * @license GPL-2.0-or-later
  * @link    https://github.com/gillespieza/genesass-and-genuflex/
  */
 
-add_action( 'wp_enqueue_scripts', 'genesass_custom_gutenberg_css' );
+add_action( 'wp_enqueue_scripts', 'genuflex_custom_gutenberg_css' );
 /**
  * Outputs front-end inline styles based on colors declared in config/appearance.php.
  *
  * @since 2.9.0
  */
-function genesass_custom_gutenberg_css() {
+function genuflex_custom_gutenberg_css() {
 
 	$appearance = genesis_get_config( 'appearance' );
 
@@ -43,14 +43,14 @@ function genesass_custom_gutenberg_css() {
 }
 CSS;
 
-	$css .= genesass_inline_font_sizes();
-	$css .= genesass_inline_color_palette();
+	$css .= genuflex_inline_font_sizes();
+	$css .= genuflex_inline_color_palette();
 
 	wp_add_inline_style( genesis_get_theme_handle() . '-gutenberg', $css );
 
 }
 
-add_action( 'enqueue_block_editor_assets', 'genesass_custom_gutenberg_admin_css' );
+add_action( 'enqueue_block_editor_assets', 'genuflex_custom_gutenberg_admin_css' );
 /**
  * Outputs back-end inline styles based on colors declared in config/appearance.php.
  *
@@ -59,7 +59,7 @@ add_action( 'enqueue_block_editor_assets', 'genesass_custom_gutenberg_admin_css'
  *
  * @since 2.9.0
  */
-function genesass_custom_gutenberg_admin_css() {
+function genuflex_custom_gutenberg_admin_css() {
 
 	$appearance = genesis_get_config( 'appearance' );
 
@@ -85,7 +85,7 @@ function genesass_custom_gutenberg_admin_css() {
 }
 CSS;
 
-	$css .= genesass_editor_inline_color_palette();
+	$css .= genuflex_editor_inline_color_palette();
 
 	wp_add_inline_style( genesis_get_theme_handle() . '-gutenberg-fonts', $css );
 
@@ -98,7 +98,7 @@ CSS;
  *
  * @return string The CSS for editor font sizes if theme support was declared.
  */
-function genesass_inline_font_sizes() {
+function genuflex_inline_font_sizes() {
 
 	$css               = '';
 	$editor_font_sizes = get_theme_support( 'editor-font-sizes' );
@@ -126,7 +126,7 @@ CSS;
  *
  * @return string The editor colors CSS if `editor-color-palette` theme support was declared.
  */
-function genesass_inline_color_palette() {
+function genuflex_inline_color_palette() {
 
 	$css                  = '';
 	$appearance           = genesis_get_config( 'appearance' );
@@ -158,7 +158,7 @@ CSS;
  *
  * @return string The editor colors CSS if `editor-color-palette` theme support was declared.
  */
-function genesass_editor_inline_color_palette() {
+function genuflex_editor_inline_color_palette() {
 
 	$css                  = '';
 	$appearance           = genesis_get_config( 'appearance' );

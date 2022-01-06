@@ -1,8 +1,8 @@
 <?php
 /**
- * Genesass Simple Social Icons default settings.
+ * Genuflex Simple Social Icons default settings.
  *
- * @package Genesass
+ * @package Genuflex
  * @author  StudioPress
  * @license GPL-2.0-or-later
  * @link    https://github.com/gillespieza/genesass-and-genuflex/

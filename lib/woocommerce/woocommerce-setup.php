@@ -1,10 +1,10 @@
 <?php
 /**
- * Genesass.
+ * Genuflex.
  *
  * This file adds the required WooCommerce setup functions to the Genesis Sample Theme.
  *
- * @package Genesass
+ * @package Genuflex
  * @author  StudioPress
  * @license GPL-2.0-or-later
  * @link    https://github.com/gillespieza/genesass-and-genuflex/
@@ -19,7 +19,7 @@ if ( class_exists( 'WooCommerce' ) ) {
 
 }
 
-add_filter( 'woocommerce_style_smallscreen_breakpoint', 'genesass_woocommerce_breakpoint' );
+add_filter( 'woocommerce_style_smallscreen_breakpoint', 'genuflex_woocommerce_breakpoint' );
 /**
  * Modifies the WooCommerce breakpoints.
  *
@@ -27,7 +27,7 @@ add_filter( 'woocommerce_style_smallscreen_breakpoint', 'genesass_woocommerce_br
  *
  * @return string Pixel width of the theme's breakpoint.
  */
-function genesass_woocommerce_breakpoint() {
+function genuflex_woocommerce_breakpoint() {
 
 	$current = genesis_site_layout( false );
 	$layouts = [
@@ -45,7 +45,7 @@ function genesass_woocommerce_breakpoint() {
 
 }
 
-add_filter( 'genesiswooc_products_per_page', 'genesass_default_products_per_page' );
+add_filter( 'genesiswooc_products_per_page', 'genuflex_default_products_per_page' );
 /**
  * Sets the default products per page.
  *
@@ -53,13 +53,13 @@ add_filter( 'genesiswooc_products_per_page', 'genesass_default_products_per_page
  *
  * @return int Number of products to show per page.
  */
-function genesass_default_products_per_page() {
+function genuflex_default_products_per_page() {
 
 	return 8;
 
 }
 
-add_filter( 'woocommerce_pagination_args', 'genesass_woocommerce_pagination' );
+add_filter( 'woocommerce_pagination_args', 'genuflex_woocommerce_pagination' );
 /**
  * Updates the next and previous arrows to the default Genesis style.
  *
@@ -68,22 +68,22 @@ add_filter( 'woocommerce_pagination_args', 'genesass_woocommerce_pagination' );
  *
  * @return array New next and previous text arguments.
  */
-function genesass_woocommerce_pagination( $args ) {
+function genuflex_woocommerce_pagination( $args ) {
 
-	$args['prev_text'] = sprintf( '&laquo; %s', __( 'Previous Page', 'genesass' ) );
-	$args['next_text'] = sprintf( '%s &raquo;', __( 'Next Page', 'genesass' ) );
+	$args['prev_text'] = sprintf( '&laquo; %s', __( 'Previous Page', 'genuflex' ) );
+	$args['next_text'] = sprintf( '%s &raquo;', __( 'Next Page', 'genuflex' ) );
 
 	return $args;
 
 }
 
-add_action( 'after_switch_theme', 'genesass_woocommerce_image_dimensions_after_theme_setup', 1 );
+add_action( 'after_switch_theme', 'genuflex_woocommerce_image_dimensions_after_theme_setup', 1 );
 /**
  * Defines WooCommerce image sizes on theme activation.
  *
  * @since 2.3.0
  */
-function genesass_woocommerce_image_dimensions_after_theme_setup() {
+function genuflex_woocommerce_image_dimensions_after_theme_setup() {
 
 	global $pagenow;
 
@@ -92,11 +92,11 @@ function genesass_woocommerce_image_dimensions_after_theme_setup() {
 		return;
 	}
 
-	genesass_update_woocommerce_image_dimensions();
+	genuflex_update_woocommerce_image_dimensions();
 
 }
 
-add_action( 'activated_plugin', 'genesass_woocommerce_image_dimensions_after_woo_activation', 10, 2 );
+add_action( 'activated_plugin', 'genuflex_woocommerce_image_dimensions_after_woo_activation', 10, 2 );
 /**
  * Defines the WooCommerce image sizes on WooCommerce activation.
  *
@@ -104,14 +104,14 @@ add_action( 'activated_plugin', 'genesass_woocommerce_image_dimensions_after_woo
  *
  * @param string $plugin The path of the plugin being activated.
  */
-function genesass_woocommerce_image_dimensions_after_woo_activation( $plugin ) {
+function genuflex_woocommerce_image_dimensions_after_woo_activation( $plugin ) {
 
 	// Checks to see if WooCommerce is being activated.
 	if ( 'woocommerce/woocommerce.php' !== $plugin ) {
 		return;
 	}
 
-	genesass_update_woocommerce_image_dimensions();
+	genuflex_update_woocommerce_image_dimensions();
 
 }
 
@@ -120,7 +120,7 @@ function genesass_woocommerce_image_dimensions_after_woo_activation( $plugin ) {
  *
  * @since 2.3.0
  */
-function genesass_update_woocommerce_image_dimensions() {
+function genuflex_update_woocommerce_image_dimensions() {
 
 	// Updates image size options.
 	update_option( 'woocommerce_single_image_width', 655 );    // Single product image.
@@ -131,7 +131,7 @@ function genesass_update_woocommerce_image_dimensions() {
 
 }
 
-add_filter( 'woocommerce_get_image_size_gallery_thumbnail', 'genesass_gallery_image_thumbnail' );
+add_filter( 'woocommerce_get_image_size_gallery_thumbnail', 'genuflex_gallery_image_thumbnail' );
 /**
  * Filters the WooCommerce gallery image dimensions.
  *
@@ -140,7 +140,7 @@ add_filter( 'woocommerce_get_image_size_gallery_thumbnail', 'genesass_gallery_im
  * @param array $size The gallery image size and crop arguments.
  * @return array The modified gallery image size and crop arguments.
  */
-function genesass_gallery_image_thumbnail( $size ) {
+function genuflex_gallery_image_thumbnail( $size ) {
 
 	$size = [
 		'width'  => 180,

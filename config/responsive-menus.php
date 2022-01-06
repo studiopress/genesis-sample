@@ -1,8 +1,8 @@
 <?php
 /**
- * Genesass child theme.
+ * Genuflex Theme.
  *
- * @package Genesass
+ * @package Genuflex
  * @author  StudioPress
  * @license GPL-2.0-or-later
  * @link    https://github.com/gillespieza/genesass-and-genuflex/

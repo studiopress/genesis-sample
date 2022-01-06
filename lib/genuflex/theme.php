@@ -1,15 +1,15 @@
 <?php
 /**
- * Genesass Customisations.
+ * Genuflex Customisations.
  *
- * @package Genesass
+ * @package Genuflex
  * @author  StudioPress
  * @license GPL-2.0-or-later
  * @link    https://github.com/gillespieza/genesass-and-genuflex/
  */
 
 /** Add Google Analytics to top of <body> if user is not admin. */
-function genesass_add_google_analytics() {
+function genuflex_add_google_analytics() {
 	if ( ! current_user_can( 'manage_options' ) ) {
 		echo "
 		<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -31,15 +31,15 @@ function genesass_add_google_analytics() {
 		';
 	}
 }
-add_action( 'genesis_before', 'genesass_add_google_analytics' );
+add_action( 'genesis_before', 'genuflex_add_google_analytics' );
 
 
-if ( ! function_exists( 'genesass_mute_jquery_migrator' ) ) {
+if ( ! function_exists( 'genuflex_mute_jquery_migrator' ) ) {
 	/** Set Jquery Migrate on Mute so you don't have such a cluttered console */
-	function genesass_mute_jquery_migrator() {
+	function genuflex_mute_jquery_migrator() {
 		echo '<script>jQuery.migrateMute = true;</script>';
 	}
 }
-add_action( 'wp_head', 'genesass_mute_jquery_migrator' );
-add_action( 'admin_head', 'genesass_mute_jquery_migrator' );
+add_action( 'wp_head', 'genuflex_mute_jquery_migrator' );
+add_action( 'admin_head', 'genuflex_mute_jquery_migrator' );
 

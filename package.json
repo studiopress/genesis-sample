@@ -1,5 +1,5 @@
 {
-	"name": "Genesass",
+	"name": "Genuflex",
 	"description": "Development files for the Genesis Framework.",
 	"repository": {
 		"type": "git",
@@ -43,7 +43,7 @@
 		"last 2 Opera versions"
 	],
 	"theme": {
-		"name": "Genesass",
+		"name": "Genuflex",
 		"uri": "https://github.com/gillespieza/genesass-and-genuflex",
 		"description": "A sassified child theme for the Genesis Framework.",
 		"author": "gillespieza",
@@ -52,7 +52,7 @@
 		"tags": "one-column, two-columns, left-sidebar, right-sidebar, accessibility-ready, custom-colors, custom-logo, custom-menu, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready",
 		"license": "GPL-2.0-or-later",
 		"licenseuri": "https://www.gnu.org/licenses/gpl-2.0.html",
-		"textdomain": "genesass"
+		"textdomain": "genuflex"
 	},
 	"dependencies": {}
 }

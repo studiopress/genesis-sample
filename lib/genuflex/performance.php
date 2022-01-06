@@ -2,7 +2,7 @@
 /**
  * Various security functions not related to cleaning up the WP meta.
  *
- * @package Genesass
+ * @package Genuflex
  */
 
 // Security Check: Prevent this file being executed outside the WordPress context.
@@ -15,8 +15,8 @@ if ( ! defined( 'ABSPATH' ) ) {
  * TABLE OF CONTENTS:
  * - Enable DNS prefetching
  * - Remove password strength meter on unrelated pages
- * - Dequeue Dashicons on front end: genesass_dequeue_dashicons()
- * - Remove query strings so that browsers can cache: genesass_cleanup_query_string()
+ * - Dequeue Dashicons on front end: genuflex_dequeue_dashicons()
+ * - Remove query strings so that browsers can cache: genuflex_cleanup_query_string()
  * - Patch BackWPUp timeout
  * - Speed up Google Fonts
  * -----------------------------------------------------------------
@@ -30,7 +30,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Preconnect: resolves DNS and TCP handshaking
  * Prefetch: fetches resources probably needed for next page load (low priority)
  */
-function genesass_dns_prefetch_preconnect() {
+function genuflex_dns_prefetch_preconnect() {
 	echo "
 	<!-- DNS PREFETCHING FOR PERFORMANCE -->
 	<meta http-equiv='x-dns-prefetch-control' content='on'>
@@ -53,7 +53,7 @@ function genesass_dns_prefetch_preconnect() {
 	";
 
 }
-add_action( 'wp_head', 'genesass_dns_prefetch_preconnect', 0 );
+add_action( 'wp_head', 'genuflex_dns_prefetch_preconnect', 0 );
 
 
 if ( ! function_exists( 'is_woocommerce_activated' ) ) {
@@ -73,7 +73,7 @@ if ( ! function_exists( 'is_woocommerce_activated' ) ) {
 /**
  * Remove the password strength meter check on unrelated pages
  */
-function genesass_remove_password_strength_meter() {
+function genuflex_remove_password_strength_meter() {
 	$valid_pages =
 		isset( $wp->query_vars['lost-password'] )
 		|| ( isset( $_GET['action'] ) && 'lostpassword' === $_GET['action'] )
@@ -126,7 +126,7 @@ function genesass_remove_password_strength_meter() {
 	}
 
 }
-add_action( 'wp_print_scripts', 'genesass_remove_password_strength_meter', 100 );
+add_action( 'wp_print_scripts', 'genuflex_remove_password_strength_meter', 100 );
 
 
 /**
@@ -138,12 +138,12 @@ add_action( 'wp_print_scripts', 'genesass_remove_password_strength_meter', 100 )
  *
  * @param string $src The link from which to remove the version query string.
  */
-function genesass_cleanup_query_string( $src ) {
+function genuflex_cleanup_query_string( $src ) {
 	$parts = explode( '?ver', $src );
 	return $parts[0];
 }
-add_filter( 'script_loader_src', 'genesass_cleanup_query_string', 15, 1 );
-add_filter( 'style_loader_src', 'genesass_cleanup_query_string', 15, 1 );
+add_filter( 'script_loader_src', 'genuflex_cleanup_query_string', 15, 1 );
+add_filter( 'style_loader_src', 'genuflex_cleanup_query_string', 15, 1 );
 
 
 /**
@@ -172,7 +172,7 @@ add_filter( 'http_request_timeout', '__extend_http_request_timeout' );
  *
  * @link https://csswizardry.com/2020/05/the-fastest-google-fonts/
  */
-function genesass_lightning_fast_google_fonts() {
+function genuflex_lightning_fast_google_fonts() {
 	echo "
 	<!-- 0. Lightning fast Google Fonts: https://csswizardry.com/2020/05/the-fastest-google-fonts/ -->
 	<!-- 1. Preemptively warm up the fonts' origin. -->
@@ -203,4 +203,4 @@ function genesass_lightning_fast_google_fonts() {
 
 	";
 }
-add_action( 'genesis_meta', 'genesass_lightning_fast_google_fonts' );
+add_action( 'genesis_meta', 'genuflex_lightning_fast_google_fonts' );

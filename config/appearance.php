@@ -1,84 +1,84 @@
 <?php
 /**
- * Genesass appearance settings.
+ * Genuflex appearance settings.
  *
- * @package Genesass
- * @author  StudioPress
+ * @package Genuflex
+ * @author  StudioPress, gillespieza
  * @license GPL-2.0-or-later
  * @link    https://github.com/gillespieza/genesass-and-genuflex/
  */
 
-$genesass_default_colors = array(
+$genuflex_default_colors = array(
 	'link'   => '#036966', // skobeloff.
 	'accent' => '#00b5b0', // tiffany blue.
 );
 
-$genesass_link_color = get_theme_mod(
-	'genesass_link_color',
-	$genesass_default_colors['link']
+$genuflex_link_color = get_theme_mod(
+	'genuflex_link_color',
+	$genuflex_default_colors['link']
 );
 
-$genesass_accent_color = get_theme_mod(
-	'genesass_accent_color',
-	$genesass_default_colors['accent']
+$genuflex_accent_color = get_theme_mod(
+	'genuflex_accent_color',
+	$genuflex_default_colors['accent']
 );
 
-$genesass_link_color_contrast   = genesass_color_contrast( $genesass_link_color );
-$genesass_link_color_brightness = genesass_color_brightness( $genesass_link_color, 35 );
+$genuflex_link_color_contrast   = genuflex_color_contrast( $genuflex_link_color );
+$genuflex_link_color_brightness = genuflex_color_brightness( $genuflex_link_color, 35 );
 
 return array(
 	'fonts-url'            => 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700&display=swap',
 	'content-width'        => 1062,
-	'button-bg'            => $genesass_link_color,
-	'button-color'         => $genesass_link_color_contrast,
-	'button-outline-hover' => $genesass_link_color_brightness,
-	'link-color'           => $genesass_link_color,
-	'default-colors'       => $genesass_default_colors,
+	'button-bg'            => $genuflex_link_color,
+	'button-color'         => $genuflex_link_color_contrast,
+	'button-outline-hover' => $genuflex_link_color_brightness,
+	'link-color'           => $genuflex_link_color,
+	'default-colors'       => $genuflex_default_colors,
 	'editor-color-palette' => array(
 		array(
-			'name'  => __( 'Primary color', 'genesass' ), // Called “Link Color” in the Customizer options. Renamed because “Link Color” implies it can only be used for links.
+			'name'  => __( 'Primary color', 'genuflex' ), // Called “Link Color” in the Customizer options. Renamed because “Link Color” implies it can only be used for links.
 			'slug'  => 'theme-primary',
-			'color' => $genesass_link_color,
+			'color' => $genuflex_link_color,
 		),
 		array(
-			'name'  => __( 'Accent color', 'genesass' ),
+			'name'  => __( 'Accent color', 'genuflex' ),
 			'slug'  => 'theme-secondary',
-			'color' => $genesass_accent_color,
+			'color' => $genuflex_accent_color,
 		),
 		array(
-			'name'  => __( 'White', 'genesass' ),
+			'name'  => __( 'White', 'genuflex' ),
 			'slug'  => 'theme-white',
 			'color' => '#ffffff',
 		),
 		array(
-			'name'  => __( 'Black', 'genesass' ),
+			'name'  => __( 'Black', 'genuflex' ),
 			'slug'  => 'theme-black',
 			'color' => '#000000',
 		),
 	),
 	'editor-font-sizes'    => array(
 		array(
-			'name' => __( 'Small', 'genesass' ),
+			'name' => __( 'Small', 'genuflex' ),
 			'size' => 14,
 			'slug' => 'small',
 		),
 		array(
-			'name' => __( 'Normal', 'genesass' ),
+			'name' => __( 'Normal', 'genuflex' ),
 			'size' => 16,
 			'slug' => 'normal',
 		),
 		array(
-			'name' => __( 'Lead', 'genesass' ),
+			'name' => __( 'Lead', 'genuflex' ),
 			'size' => 18,
 			'slug' => 'lead',
 		),
 		array(
-			'name' => __( 'Large', 'genesass' ),
+			'name' => __( 'Large', 'genuflex' ),
 			'size' => 20,
 			'slug' => 'large',
 		),
 		array(
-			'name' => __( 'Larger', 'genesass' ),
+			'name' => __( 'Larger', 'genuflex' ),
 			'size' => 24,
 			'slug' => 'larger',
 		),

@@ -1,27 +1,27 @@
 <?php
 /**
- * Genesass.
+ * Genuflex.
  *
  * Onboarding config to load plugins and homepage content on theme activation.
  *
- * @package Genesass
+ * @package Genuflex
  * @author  StudioPress
  * @license GPL-2.0-or-later
  * @link    https://github.com/gillespieza/genesass-and-genuflex/
  */
 
-$genesass_shared_content = genesis_get_config( 'onboarding-shared' );
+$genuflex_shared_content = genesis_get_config( 'onboarding-shared' );
 
 return [
 	'starter_packs' => [
 		'black-white' => [
-			'title'       => __( 'Black & White', 'genesass' ),
-			'description' => __( 'A pack with a homepage designed with black and white images.', 'genesass' ),
+			'title'       => __( 'Black & White', 'genuflex' ),
+			'description' => __( 'A pack with a homepage designed with black and white images.', 'genuflex' ),
 			'thumbnail'   => get_stylesheet_directory_uri() . '/config/import/images/thumbnails/home-black-white.jpg',
 			'demo_url'    => 'https://demo.studiopress.com/genesis-sample/',
 			'config'      => [
 				'dependencies'     => [
-					'plugins' => $genesass_shared_content['plugins'],
+					'plugins' => $genuflex_shared_content['plugins'],
 				],
 				'content'          => array_merge(
 					[
@@ -40,20 +40,20 @@ return [
 							],
 						],
 					],
-					$genesass_shared_content['content']
+					$genuflex_shared_content['content']
 				),
-				'navigation_menus' => $genesass_shared_content['navigation_menus'],
-				'widgets'          => $genesass_shared_content['widgets'],
+				'navigation_menus' => $genuflex_shared_content['navigation_menus'],
+				'widgets'          => $genuflex_shared_content['widgets'],
 			],
 		],
 		'color'       => [
-			'title'       => __( 'Color', 'genesass' ),
-			'description' => __( 'A pack with a homepage designed with color images.', 'genesass' ),
+			'title'       => __( 'Color', 'genuflex' ),
+			'description' => __( 'A pack with a homepage designed with color images.', 'genuflex' ),
 			'thumbnail'   => get_stylesheet_directory_uri() . '/config/import/images/thumbnails/home-color.jpg',
 			'demo_url'    => 'https://demo.studiopress.com/genesis-sample/home-color/',
 			'config'      => [
 				'dependencies'     => [
-					'plugins' => $genesass_shared_content['plugins'],
+					'plugins' => $genuflex_shared_content['plugins'],
 				],
 				'content'          => array_merge(
 					[
@@ -72,10 +72,10 @@ return [
 							],
 						],
 					],
-					$genesass_shared_content['content']
+					$genuflex_shared_content['content']
 				),
-				'navigation_menus' => $genesass_shared_content['navigation_menus'],
-				'widgets'          => $genesass_shared_content['widgets'],
+				'navigation_menus' => $genuflex_shared_content['navigation_menus'],
+				'widgets'          => $genuflex_shared_content['widgets'],
 			],
 		],
 	],

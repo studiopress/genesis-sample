@@ -1,16 +1,16 @@
 <?php
 /**
- * Genesass.
+ * Genuflex.
  *
  * This file adds the WooCommerce styles and the Customizer additions for WooCommerce to the Genesis Sample Theme.
  *
- * @package Genesass
+ * @package Genuflex
  * @author  StudioPress
  * @license GPL-2.0-or-later
  * @link    https://github.com/gillespieza/genesass-and-genuflex/
  */
 
-add_filter( 'woocommerce_enqueue_styles', 'genesass_woocommerce_styles' );
+add_filter( 'woocommerce_enqueue_styles', 'genuflex_woocommerce_styles' );
 /**
  * Enqueues the theme's custom WooCommerce styles to the WooCommerce plugin.
  *
@@ -19,10 +19,10 @@ add_filter( 'woocommerce_enqueue_styles', 'genesass_woocommerce_styles' );
  *
  * @return array Modified WooCommerce styles to enqueue.
  */
-function genesass_woocommerce_styles( $enqueue_styles ) {
+function genuflex_woocommerce_styles( $enqueue_styles ) {
 
 	$enqueue_styles[ genesis_get_theme_handle() . '-woocommerce-styles' ] = [
-		'src'     => get_stylesheet_directory_uri() . '/lib/woocommerce/genesass-woocommerce.css',
+		'src'     => get_stylesheet_directory_uri() . '/lib/woocommerce/genuflex-woocommerce.css',
 		'deps'    => '',
 		'version' => genesis_get_theme_version(),
 		'media'   => 'screen',
@@ -32,7 +32,7 @@ function genesass_woocommerce_styles( $enqueue_styles ) {
 
 }
 
-add_action( 'wp_enqueue_scripts', 'genesass_woocommerce_css' );
+add_action( 'wp_enqueue_scripts', 'genuflex_woocommerce_css' );
 /**
  * Adds the themes's custom CSS to the WooCommerce stylesheet.
  *
@@ -40,7 +40,7 @@ add_action( 'wp_enqueue_scripts', 'genesass_woocommerce_css' );
  *
  * @return string CSS to be outputted after the theme's custom WooCommerce stylesheet.
  */
-function genesass_woocommerce_css() {
+function genuflex_woocommerce_css() {
 
 	// If WooCommerce isn't active, exit early.
 	if ( ! class_exists( 'WooCommerce' ) ) {
@@ -49,8 +49,8 @@ function genesass_woocommerce_css() {
 
 	$appearance = genesis_get_config( 'appearance' );
 
-	$color_link   = get_theme_mod( 'genesass_link_color', $appearance['default-colors']['link'] );
-	$color_accent = get_theme_mod( 'genesass_accent_color', $appearance['default-colors']['accent'] );
+	$color_link   = get_theme_mod( 'genuflex_link_color', $appearance['default-colors']['link'] );
+	$color_accent = get_theme_mod( 'genuflex_accent_color', $appearance['default-colors']['accent'] );
 
 	$woo_css = '';
 
@@ -116,7 +116,7 @@ function genesass_woocommerce_css() {
 
 	',
 		$color_accent,
-		genesass_color_contrast( $color_accent )
+		genuflex_color_contrast( $color_accent )
 	) : '';
 
 	if ( $woo_css ) {

@@ -1,33 +1,33 @@
 <?php
 /**
- * Genesass.
+ * Genuflex.
  *
- * This file adds the required CSS to the front end to the Genesass Theme.
+ * This file adds the required CSS to the front end to the Genuflex Theme.
  *
- * @package Genesass
+ * @package Genuflex
  * @author  StudioPress
  * @license GPL-2.0-or-later
  * @link    https://github.com/gillespieza/genesass-and-genuflex/
  */
 
-add_action( 'wp_enqueue_scripts', 'genesass_css' );
+add_action( 'wp_enqueue_scripts', 'genuflex_css' );
 /**
  * Checks the settings for the link color, and accent color.
  * If any of these value are set the appropriate CSS is output.
  *
  * @since 2.2.3
  */
-function genesass_css() {
+function genuflex_css() {
 
 	$appearance = genesis_get_config( 'appearance' );
 
-	$color_link   = get_theme_mod( 'genesass_link_color', $appearance['default-colors']['link'] );
-	$color_accent = get_theme_mod( 'genesass_accent_color', $appearance['default-colors']['accent'] );
+	$color_link   = get_theme_mod( 'genuflex_link_color', $appearance['default-colors']['link'] );
+	$color_accent = get_theme_mod( 'genuflex_accent_color', $appearance['default-colors']['accent'] );
 	$logo         = wp_get_attachment_image_src( get_theme_mod( 'custom_logo' ), 'full' );
 
 	if ( $logo ) {
 		$logo_height           = absint( $logo[2] );
-		$logo_max_width        = get_theme_mod( 'genesass_logo_width', 350 );
+		$logo_max_width        = get_theme_mod( 'genuflex_logo_width', 350 );
 		$logo_width            = absint( $logo[1] );
 		$logo_ratio            = $logo_width / max( $logo_height, 1 );
 		$logo_effective_height = min( $logo_width, $logo_max_width ) / max( $logo_ratio, 1 );
@@ -93,7 +93,7 @@ function genesass_css() {
 		}
 		',
 		$color_accent,
-		genesass_color_contrast( $color_accent )
+		genuflex_color_contrast( $color_accent )
 	) : '';
 
 	$css .= ( has_custom_logo() && ( 200 <= $logo_effective_height ) ) ?

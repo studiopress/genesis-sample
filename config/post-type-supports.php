@@ -1,11 +1,11 @@
 <?php
 /**
- * Genesass child theme.
+ * Genuflex theme.
  *
  * Post type supports.
  *
- * @package Genesass
- * @author  StudioPress
+ * @package Genuflex
+ * @author  StudioPress, gillespieza
  * @license GPL-2.0-or-later
  * @link    https://github.com/gillespieza/genesass-and-genuflex/
  */

@@ -1,13 +1,13 @@
 <?php
 /**
- * Genesass child theme.
+ * Genuflex child theme.
  *
  * Theme supports.
  *
- * @package Genesass
- * @author  StudioPress
+ * @package Genuflex
+ * @author  StudioPress, gillespieza
  * @license GPL-2.0-or-later
- * @link    https://my.studiopress.com/themes/genesass/
+ * @link    https://github.com/gillespieza/genesass-and-genuflex/
  */
 
 return [
@@ -38,8 +38,8 @@ return [
 	'genesis-after-entry-widget-area' => '',
 	'genesis-footer-widgets'          => 3,
 	'genesis-menus'                   => [
-		'primary'   => __( 'Header Menu', 'genesass' ),
-		'secondary' => __( 'Footer Menu', 'genesass' ),
+		'primary'   => __( 'Header Menu', 'genuflex' ),
+		'secondary' => __( 'Footer Menu', 'genuflex' ),
 	],
 ];
 

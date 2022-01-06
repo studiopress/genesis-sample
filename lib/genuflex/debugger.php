@@ -2,7 +2,7 @@
 /**
  * Pretty-print various debugging functions.
  *
- * @package Genesass
+ * @package Genuflex
  */
 
 // Security Check: Prevent this file being executed outside the WordPress context.

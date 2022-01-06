@@ -1,24 +1,24 @@
 <?php
 /**
- * Genesass.
+ * Genuflex.
  *
  * Homepage content optionally installed after theme activation.
  *
- * @package Genesass
+ * @package Genuflex
  * @author  StudioPress
  * @license GPL-2.0-or-later
  * @link    https://github.com/gillespieza/genesass-and-genuflex/
  */
 
 // Photo by Rohit Tandon on Unsplash: https://unsplash.com/photos/9wg5jCEPBsw.
-$genesass_homepage_header_image_url = CHILD_URL . '/config/import/images/mountain-color.jpg';
+$genuflex_homepage_header_image_url = CHILD_URL . '/config/import/images/mountain-color.jpg';
 
 // Photo by Haley Powers on Unsplash: https://unsplash.com/photos/rjhvXX7JBPc.
-$genesass_homepage_faq_image_url = CHILD_URL . '/config/import/images/home-about-color.jpg';
+$genuflex_homepage_faq_image_url = CHILD_URL . '/config/import/images/home-about-color.jpg';
 
 return <<<CONTENT
 <!-- wp:media-text {"align":"full","mediaId":1657,"mediaType":"image","isStackedOnMobile":true} -->
-<div class="wp-block-media-text alignfull is-stacked-on-mobile"><figure class="wp-block-media-text__media"><img src="$genesass_homepage_header_image_url" alt="" class="wp-image-1657"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"level":1} -->
+<div class="wp-block-media-text alignfull is-stacked-on-mobile"><figure class="wp-block-media-text__media"><img src="$genuflex_homepage_header_image_url" alt="" class="wp-image-1657"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"level":1} -->
 <h1>We'll teach you how to build and grow an online business.</h1>
 <!-- /wp:heading -->
 
@@ -118,7 +118,7 @@ return <<<CONTENT
 
 <!-- wp:genesis-blocks/gb-column -->
 <div class="wp-block-genesis-blocks-gb-column gb-block-layout-column"><div class="gb-block-layout-column-inner"><!-- wp:image {"id":1655,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="$genesass_homepage_faq_image_url" alt="" class="wp-image-1655"/></figure>
+<figure class="wp-block-image size-large"><img src="$genuflex_homepage_faq_image_url" alt="" class="wp-image-1655"/></figure>
 <!-- /wp:image --></div></div>
 <!-- /wp:genesis-blocks/gb-column --></div></div>
 <!-- /wp:genesis-blocks/gb-columns -->

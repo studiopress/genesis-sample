@@ -2,7 +2,7 @@
 /**
  * Various security functions not related to cleaning up the WP meta.
  *
- * @package Genesass
+ * @package Genuflex
  */
 
 // Security Check: Prevent this file being executed outside the WordPress context.
@@ -13,9 +13,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * -----------------------------------------------------------------
  * TABLE OF CONTENTS:
- * - Disable oEmbed: genesass_stop_loading_wp_embed()
- * - Disable Referral Spam: genesass_filter_referral_spam_requests()
- * - Disable blacklisted referrers: genesass_referrals_blacklist()
+ * - Disable oEmbed: genuflex_stop_loading_wp_embed()
+ * - Disable Referral Spam: genuflex_filter_referral_spam_requests()
+ * - Disable blacklisted referrers: genuflex_referrals_blacklist()
  * - Prevent login errors revealing usernames
  * - Disable XML-RPC
  * -----------------------------------------------------------------
@@ -28,19 +28,19 @@ if ( ! defined( 'ABSPATH' ) ) {
  * which loads on every page. It also allows others to embed your post on their blog
  * by simply pasting a URL.
  */
-function genesass_stop_loading_wp_embed() {
+function genuflex_stop_loading_wp_embed() {
 	if ( ! is_admin() ) {
 		/* only do this on the front end. */
 		wp_deregister_script( 'wp-embed' );
 	}
 }
-add_action( 'init', 'genesass_stop_loading_wp_embed' );
+add_action( 'init', 'genuflex_stop_loading_wp_embed' );
 
 
 /* Filters the array of parsed query variables. */
-add_filter( 'request', 'genesass_filter_referral_spam_requests', 0 );
+add_filter( 'request', 'genuflex_filter_referral_spam_requests', 0 );
 /** Serve 404 to referrers on the current Blacklist */
-function genesass_filter_referral_spam_requests( $request ) {
+function genuflex_filter_referral_spam_requests( $request ) {
 	global $wp_query;
 
 	/* Retrieve referer from ‘_wp_http_referer’ or HTTP referer. */
@@ -57,7 +57,7 @@ function genesass_filter_referral_spam_requests( $request ) {
 	$referrer = parse_url( $referrer, PHP_URL_HOST );
 
 	/* Get the blacklist */
-	$referrers_blacklist = genesass_referrals_blacklist();
+	$referrers_blacklist = genuflex_referrals_blacklist();
 
 	if ( empty( $referrers_blacklist ) ) {
 		return $request;
@@ -91,7 +91,7 @@ function genesass_filter_referral_spam_requests( $request ) {
  *
  * @see https://wordpress.org/plugins/stop-referrer-spam/
  */
-function genesass_referrals_blacklist() {
+function genuflex_referrals_blacklist() {
 
 	/* Retrieves the value of a transient. */
 	$ret = get_transient( '_referalls_spam_blacklist' );
@@ -127,10 +127,10 @@ function genesass_referrals_blacklist() {
 
 
 /** Prevent login errors from revealing the username is correct. */
-function genesass_wordpress_errors() {
+function genuflex_wordpress_errors() {
 	return 'Oops. Either the username or the password is incorrect. Check again or try with your email address?';
 }
-add_filter( 'login_errors', 'genesass_wordpress_errors' );
+add_filter( 'login_errors', 'genuflex_wordpress_errors' );
 
 /** Disable XML-RPC from brute force attacks */
 add_filter( 'xmlrpc_enabled', '_return_false' );

@@ -2,7 +2,7 @@
 # This file is distributed under the GPL-2.0-or-later.=!>
 msgid ""
 msgstr ""
-"Project-Id-Version: Genesass 0.0.1\n"
+"Project-Id-Version: Genuflex 0.0.1\n"
 "Report-Msgid-Bugs-To: gillespieza <dominy.amanda@gmail.com>\n"
 "POT-Creation-Date: 2021-03-23 15:47:25+00:00\n"
 "MIME-Version: 1.0\n"
@@ -158,7 +158,7 @@ msgid "Simple Contact Form"
 msgstr ""
 
 #. Theme Name of the plugin/theme
-msgid "Genesass"
+msgid "Genuflex"
 msgstr ""
 
 #. Theme URI of the plugin/theme
