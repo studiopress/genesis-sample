@@ -1,0 +1,69 @@
+/* Widgets
+---------------------------------------------------------------------------- */
+
+.widget {
+	margin-bottom: ($spacer * 4);
+
+	p {
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	ul>li {
+		margin-bottom: $spacer;
+
+		&:last-of-type {
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+	}
+
+	ol>li {
+		list-style-position: inside;
+		list-style-type: decimal;
+		padding-left: ($spacer * 2);
+		text-indent: -($spacer * 2);
+	}
+
+	li li {
+		border: 0;
+		margin: 0 0 0 ($spacer * 3);
+		padding: 0;
+	}
+}
+
+/* Calendar
+--------------------------------------------- */
+.widget_calendar {
+	table {
+		width: 100%;
+	}
+
+	td,
+	th {
+		text-align: center;
+	}
+}
+
+
+/* Featured Content
+--------------------------------------------- */
+
+.featured-content {
+	.entry {
+		border-bottom: $border-width $border-style $border-color;
+		margin-bottom: ($spacer * 2);
+
+		&:last-of-type {
+			border-bottom: none;
+			margin-bottom: 0;
+		}
+	}
+
+	.entry-title {
+		font-size: $featured-content__entry-title--font-size;
+		margin-bottom: ($spacer * 0.5);
+		margin-top: ($spacer);
+	}
+}

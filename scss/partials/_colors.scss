@@ -1,0 +1,127 @@
+@use 'sass:color'; // built in color module
+
+$grays: () !default;
+$grays: map-merge(("gray-100": $gray-100,
+      "gray-200": $gray-200,
+      "gray-300": $gray-300,
+      "gray-400": $gray-400,
+      "gray-500": $gray-500,
+      "gray-600": $gray-600,
+      "gray-700": $gray-700,
+      "gray-800": $gray-800,
+      "gray-900": $gray-900),
+   $grays);
+
+$colors: () !default;
+$colors: map-merge(("red": $red,
+      "pink": $pink,
+      "purple": $purple,
+      "deep-purple":$deep-purple,
+      "indigo": $indigo,
+      "blue": $blue,
+      "light-blue": $light-blue,
+      "cyan": $cyan,
+      "teal": $teal,
+      "green": $green,
+      "light-green":$light-green,
+      "lime": $lime,
+      "yellow": $yellow,
+      "amber": $amber,
+      "orange": $orange,
+      "deep-orange":$deep-orange,
+      "brown": $brown,
+      "gold": $gold,
+      "white": $white,
+      "black": $black),
+   $colors);
+
+$utility-colors: () !default;
+$utility-colors: map-merge(("primary": $primary,
+      "secondary": $secondary,
+      "success": $success,
+      "info": $info,
+      "warning": $warning,
+      "danger": $danger,
+      "light": $light,
+      "muted": $gray-700,
+      "dark": $dark),
+   $utility-colors);
+
+// Merge the maps
+$interimcolors: map-merge($colors, $utility-colors);
+$all-colors: map-merge($interimcolors, $grays);
+
+/* Text Colours
+ ---------------------------------------------------------------------------- */
+@each $color,
+$value in $all-colors {
+   .text-#{$color} {
+      // .text-danger, .text-gray-100, .text-red, .text-primary
+      color: $value !important;
+   }
+}
+
+.text {
+   @at-root #{&}-warning {
+      color: $deep-orange;
+   }
+
+   @at-root #{&}-success {
+      color: scale-color($green, $lightness: -32%); // 008838
+   }
+
+   @at-root #{&}-info {
+      color: $blue;
+   }
+}
+
+
+/* Background Colours
+ --------------------------------------------------------------------------- */
+@each $color,
+$value in $all-colors {
+   .bg-#{$color} {
+      // .bg-red, .bg-prinary, .bg-success
+      background: $value;
+   }
+}
+
+.bg {
+   @at-root #{&}-danger {
+      // don't use darken/lighten().
+      background-color: scale-color($danger, $lightness: 94%);
+      color: $danger;
+   }
+
+   @at-root #{&}-warning {
+      background-color: scale-color($warning, $lightness: 90%);
+      color: $deep-orange;
+   }
+
+   @at-root #{&}-success {
+      background-color: scale-color($light-green, $lightness: 90%);
+      color: scale-color($green, $lightness: -35%);
+   }
+
+   @at-root #{&}-info {
+      background-color: scale-color($info, $lightness: 90%);
+      color: scale-color($blue, $lightness: -25%);
+   }
+}
+
+
+/* Misc
+ --------------------------------------------------------------------------- */
+::selection {
+   background-color: $primary;
+   color: choose-contrast-color($primary);
+}
+
+mark {
+   background-color: rgba(159, 69, 183, 0.2);
+   padding: 0 3px;
+}
+
+span.required {
+   color: $red;
+}

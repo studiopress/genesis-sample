@@ -1,0 +1,136 @@
+/* Media Queries
+---------------------------------------------------------------------------- */
+
+@media only screen and (min-width: 960px) {
+
+   /* Site Header
+	--------------------------------------------- */
+   .admin-bar {
+      .site-header {
+         top: 32px;
+      }
+   }
+
+   /* Genesis Menu
+	--------------------------------------------- */
+
+   .genesis-nav-menu {
+
+      >.menu-bold {
+         >a {
+            font-weight: 700;
+         }
+      }
+
+      >.menu-highlight {
+         >a {
+            background-color: $genesis-nav-menu__highlight-link--background-color;
+            border-radius: 3px;
+            color: choose-contrast-color($genesis-nav-menu__highlight-link--background-color);
+            font-weight: 600;
+            margin-left: ($spacer * 1.5);
+            padding-left: ($spacer * 2);
+            padding-right: ($spacer * 2);
+
+            &:focus,
+            &:hover {
+               background-color: $genesis-nav-menu__highlight-link--background-color-hover;
+            }
+         }
+      }
+   }
+
+   /* Content
+	--------------------------------------------- */
+
+   .content {
+      float: left;
+      width: 65%;
+   }
+
+   .sidebar-content .content {
+      float: right;
+   }
+
+   .full-width-content .content {
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
+   }
+
+   /* Sidebar
+	--------------------------------------------- */
+   .sidebar-content .sidebar {
+      float: left;
+   }
+
+
+   /* Column Classes
+	--------------------------------------------- */
+
+   .five-sixths,
+   .four-sixths,
+   .one-fourth,
+   .one-half,
+   .one-sixth,
+   .one-third,
+   .three-fourths,
+   .three-sixths,
+   .two-fourths,
+   .two-sixths,
+   .two-thirds {
+      float: left;
+      margin-left: 2.564102564102564%;
+   }
+
+   .one-half,
+   .three-sixths,
+   .two-fourths {
+      width: 48.717948717948715%;
+   }
+
+   .one-third,
+   .two-sixths {
+      width: 31.623931623931625%;
+   }
+
+   .four-sixths,
+   .two-thirds {
+      width: 65.81196581196582%;
+   }
+
+   .one-fourth {
+      width: 23.076923076923077%;
+   }
+
+   .three-fourths {
+      width: 74.35897435897436%;
+   }
+
+   .one-sixth {
+      width: 14.52991452991453%;
+   }
+
+   .five-sixths {
+      width: 82.90598290598291%;
+   }
+
+   .first {
+      clear: both;
+      margin-left: 0;
+   }
+
+   /* Entry Misc.
+	--------------------------------------------- */
+
+   .after-entry,
+   .archive-description,
+   .author-box,
+   .comment-respond,
+   .entry,
+   .entry-comments,
+   .entry-pings {
+      margin-bottom: ($spacer * 6);
+   }
+
+}

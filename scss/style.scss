@@ -1,0 +1,101 @@
+/*!
+   Theme Name: Genesass
+   Description: This is a child theme created for the Genesis Framework.
+   Author: StudioPress, gillespieza
+   Author URI: https: //gillespieza.github.io/online-cv/
+
+	Version: 0.0.4
+
+	Tags: accessibility-ready, block-styles, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, left-sidebar, one-column, right-sidebar, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, two-columns, wide-blocks
+
+	Template: genesis
+
+   License: GPL-2.0-or-later
+   License URI: https: //www.gnu.org/licenses/gpl-2.0.html
+
+   Text Domain: genesass
+   Requires at least: 5.4
+   Requires PHP: 5.6
+*/
+
+/* Table of Contents
+- HTML5 Reset
+	- Baseline Normalize
+	- Box Sizing
+	- Float Clearing
+- Defaults
+	- Typographical Elements
+	- Headings
+	- Objects
+	- Gallery
+	- Forms
+	- Tables
+	- Screen Reader Text
+- Structure and Layout
+	- Site Container
+	- Site Inner
+- Common Classes
+	- Avatar
+	- Genesis
+	- Search Form
+   - Skip Links
+	- Titles
+	- WordPress
+- Widgets
+	- Featured Content
+- Plugins
+	- Genesis eNews Extended
+	- Genesis Simple FAQ
+- Site Header
+	- Title Area
+- Site Navigation
+	- Responsive Menu
+	- Header Menu
+	- Footer Menu
+- Content Area
+	- Entry Content
+	- Entry Meta
+	- Pagination
+	- Entry Comments
+- Sidebar
+- Footer Widgets
+- Site Footer
+- Media Queries
+	- Min-width: 960px
+		- Site Header
+		- Genesis Menu
+		- Responsive Menu
+		- Header Menu
+		- Site Inner
+		- Content
+		- Sidebar
+		- Author Box
+		- After Entry
+		- Column Classes
+		- Entry Misc.
+		- Footer Widgets
+- Print Styles
+*/
+
+
+@import "partials/variables";
+@import "partials/mixins";
+@import "partials/resets";
+@import "partials/defaults";
+@import "partials/structure";
+@import "partials/common-classes";
+@import "partials/widgets";
+@import "partials/plugins";
+@import "partials/header";
+@import "partials/menu";
+@import "partials/content-area";
+@import "partials/sidebar";
+@import "partials/footer-area";
+@import "partials/media-queries";
+@import "partials/print";
+@import "partials/colors";
+@import "partials/boilerplate";
+@import "partials/gravityforms";
+
+// @import "partials/custom";
+// @import "partials/404";

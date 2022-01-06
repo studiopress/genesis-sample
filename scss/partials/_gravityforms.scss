@@ -1,0 +1,636 @@
+/* GRAVITY FORMS 2.5
+--------------------------------------------------- */
+body {
+
+   // (div) main form wrapper - contains the entire Gravity Form
+   .gform_wrapper {
+
+      p {
+         margin-bottom: $spacer;
+      }
+
+      /* FORM HEADING and DESCRIPTION (div)
+      --------------------------------------------------- */
+      // contains the form title and description
+      .gform_heading {
+
+         // (h2) the form title
+         .gform_title {}
+
+         // (span) form description
+         .gform_description {}
+      }
+
+      /* PROGRESS BAR
+      --------------------------------------------------- */
+      // (div) multi-page form progress bar container
+      .gf_progressbar_wrapper {
+
+         // (h3) multi-page form progress bar title
+         .gf_progressbar_title {}
+
+         // (div) multi-page form progress bar
+         .gf_progressbar {
+
+            // (div) multi-page form progress bar – percentage completed
+            .gf_progressbar_percentage {}
+         }
+      }
+
+      // (div) multi-page form steps container
+      // Contains the user-defined steps text
+      .gf_page_steps {
+
+         // (div) multi-page form step
+         .gf_step {}
+
+         // (div) multi-page form active step
+         .gf_step_active {}
+      }
+
+
+      /* FORM BODY SECTION (div)
+      --------------------------------------------------- */
+      // contains the main form content
+      .gform_body {
+
+         /* MULTIPAGE FORMS
+         --------------------------------------------------- */
+         // (div) multi-page form page - Wraps each “paged” set of fields
+         .gform_page {
+            .gform_page_fields {}
+         }
+
+         // (div) multi-page form footer - Contains previous and next paging buttons
+         .gform_page_footer {
+
+            // (input) multi-page form – next button
+            .gform_next_button {}
+
+            // (input) multi-page form – previous button
+            .gform_previous_button {}
+
+            // (input) multi-page form – submit button
+            .gform_button {}
+         }
+
+         /* FORM LIST CONTAINER (li)
+            --------------------------------------------------- */
+         // used to structure all of the form elements
+         .gform_fields {
+
+            /* FORM LIST ITEMS (li)
+            --------------------------------------------------- */
+            // individual items containing each form element
+            .gfield {
+
+               /* SECTION BREAKS (li)
+                --------------------------------------------------- */
+
+               // (li) section break container
+               // Wraps the section break elements inside the containing list item
+               &.gsection {
+                  padding-bottom: ($spacer * 0.5);
+
+                  // (h3) section break title
+                  .gsection_title {
+                     margin-bottom: $spacer;
+                  }
+
+                  // (div) section break description
+                  .gsection_description {}
+               }
+
+               // hidden field labels
+               &.hidden_label {
+                  label {}
+               }
+
+               // hidden fields
+               &.gform_hidden {}
+
+               // a required field - this applies to the entire list item
+               &.gfield_contains_required {}
+
+               // (label) standard field label
+               .gfield_label {
+
+                  // this hides the label, so make sure you have a placeholder!!!
+
+                  // border: 0;
+                  // clip: rect(0, 0, 0, 0);
+                  // height: 1px;
+                  // margin: -1px;
+                  // overflow: hidden;
+                  // padding: 0;
+                  // position: absolute;
+                  // width: 1px;
+
+                  // (span) required field indicator (the asterisk)
+                  .gfield_required {}
+               }
+
+               /* INPUT FIELD CONTAINER (div)
+                --------------------------------------------------- */
+               // Wraps the actual form element inside the containing list item
+               .ginput_container,
+               .ginput_container_name,
+               .ginput_container_select {}
+
+               /* INPUT FIELD DESCRIPTIN CONTAINER (div)
+                --------------------------------------------------- */
+               // Contains the field description inside the containing list item
+               // aka, the Help Text
+               .gfield_description {
+                  font-size: $font-size-small;
+                  font-style: italic;
+                  padding-left: ($spacer * 1.5);
+                  padding-top: 0;
+               }
+
+
+               /* STANDARD FIELDS
+               --------------------------------------------------- */
+
+               input,
+               select,
+               textarea {
+                  &::placeholder {
+                     color: $gray-500;
+                     font-size: $forms--font-size;
+                     font-style: italic;
+                  }
+               }
+
+               // standard text field (input)
+               input[type=text] {
+                  background-color: $input__background-color;
+                  border-color: $border-color;
+                  color: $input--font-color;
+                  font-size: $forms--font-size;
+                  font-style: normal;
+                  padding: ($spacer * 1.5);
+
+                  &:focus {
+                     border-color: $primary;
+                     box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
+                  }
+               }
+
+               // standard drop-down field (select)
+               select {
+                  background-color: $input__background-color;
+                  border-color: $border-color;
+                  color: $input--font-color;
+                  font-size: $forms--font-size;
+                  font-style: normal;
+                  min-height: 1em;
+                  padding: ($spacer * 1.5);
+
+                  option {
+                     &.gf_placeholder {
+                        color: $gray-500;
+                        font-size: $font-size-small;
+                        font-style: italic;
+                     }
+                  }
+
+                  &:focus {
+                     border-color: $primary;
+                     box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
+                  }
+               }
+
+               // standard paragraph field (textarea)
+               textarea {
+                  background-color: $input__background-color;
+                  border-color: $border-color;
+                  color: $input--font-color;
+                  font-size: $forms--font-size;
+                  font-style: normal;
+                  padding: ($spacer * 1.5);
+
+                  &:focus {
+                     border-color: $primary;
+                     box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
+                  }
+               }
+
+               // standard multiple-choice list (ul)
+               // unordered list used to structure all of the individual item (list) choices
+               .gfield_radio {
+
+                  // standard multiple-choice input
+                  input[type=radio] {
+                     +br {
+                        display: none;
+                     }
+
+                     &:focus {
+                        border-color: $primary;
+                        box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
+
+                        ~label {
+                           border-color: $primary;
+                           box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
+                        }
+                     }
+                  }
+
+                  // "other
+                  input[type=text] {
+                     margin-top: 0;
+                  }
+
+               }
+
+               // checkbox list (ul)
+               // unordered list used to structure all of the individual item (list) choices
+               .gfield_checkbox {
+
+                  // standard checkbox input (checkbox)
+                  input[type=checkbox] {
+                     +br {
+                        display: none;
+                     }
+
+                     &:focus {
+                        border-color: $primary;
+                        box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
+
+                        ~label {
+                           border-color: $primary;
+                           box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
+                        }
+                     }
+                  }
+
+                  button {
+                     background-color: $button--background-color;
+                     color: choose-contrast-color($button--background-color);
+                     font-size: $button--font-size;
+                     font-weight: 400;
+                     margin-top: 0;
+                     padding: ($spacer * 0.7);
+                  }
+               }
+
+               /* ADVANCED FIELDS
+               --------------------------------------------------- */
+               // (div) advanced field container
+               // wraps the different fields in multi-field sections like the name fields, address fields, etc
+               .ginput_complex {
+
+                  // (span) advanced field – left container
+                  // Contains the left-positioned inputs and sub-labels in the advanced fields
+                  .ginput_left {
+
+                     // (label) advanced field – left container sub-label
+                     // The sub-label beneath the left-positioned elements in the advanced fields
+                     label {}
+                  }
+
+                  // (span) advanced field – right container
+                  // Contains the right-positioned inputs and sub-labels in the advanced fields
+                  .ginput_right {
+
+                     // (label) advanced field – right container sub-label
+                     // The sub-label beneath the right-positioned elements in the advanced fields
+                     label {}
+                  }
+
+                  // (span) advanced field – full container
+                  // Contains the full width inputs and sub-labels in the advanced fields
+                  .ginput_full {
+
+                     // (label) advanced field – full container sub-label
+                     // The sub-label beneath the full width elements in the advanced fields
+                     label {}
+                  }
+               }
+
+               .chosen-container {
+                  .chosen-results {
+                     li {
+                        padding: ($spacer * 1.6);
+                     }
+                  }
+
+                  &-single {
+                     .chosen-single {
+                        background: $white;
+                        border-color: $gray-200;
+                        box-shadow: none;
+                        padding-left: ($spacer * 1.6);
+                     }
+                  }
+
+                  &-multi {
+                     .chosen-choices {
+                        background: $white;
+                        border-color: $gray-200;
+                        padding-left: ($spacer * 1.6);
+                     }
+                  }
+
+                  &-active {
+                     .chosen-choices {
+                        background: $white;
+                        border-color: $gray-200;
+                        box-shadow: 0 0 0 0.2rem rgba(139, 4, 123, 0.25);
+                        padding-left: ($spacer * 1.6);
+                     }
+                  }
+               }
+
+               /* ADVANCED FIELDS: TIME
+               --------------------------------------------------- */
+               // (div) time – hours container. Contains the hours input field and sub-label
+               .gfield_time_hour {
+
+                  // (input) time – hours input field
+                  input {}
+
+                  // (label) time – hours sub-label
+                  label {}
+               }
+
+               .gfield_time_minute {
+                  input {}
+
+                  label {}
+               }
+
+               .gfield_time_ampm {
+                  select {}
+
+                  label {}
+               }
+
+
+
+               /* ADVANCED FIELDS: DATE – INPUT FIELD (DATEPICKER OPTION)
+               ---------------------------------------------------------- */
+               // (input) date – input field
+               .datepicker {}
+
+               // (img) date – icon image
+               .gfield_input_datepicker_icon {}
+
+               // (div) date – month container. Contains the month input field and sub-label
+               .gfield_date_month {
+
+                  // (input) date – month input field
+                  input {}
+
+                  // (label) date – month sub-label
+                  label {}
+               }
+
+               // (div) date – day container. Contains the day input field and sub-label
+               .gfield_date_day {
+
+                  // (input) date – day input field
+                  input {}
+
+                  // (label) date – day sub-label
+                  label {}
+               }
+
+               // (div) date – year container. Contains the year input field and sub-label
+               .gfield_date_year {
+
+                  // (input) date – year input field
+                  input {}
+
+                  // (label) date – year sub-label
+                  label {}
+               }
+
+
+
+               /* ADVANCED FIELDS: HTML5 FIELDS
+               ---------------------------------------------------------- */
+
+               input[type=email],
+               input[type=file],
+               input[type=tel],
+               input[type=number],
+               input[type=password],
+               input[type=url] {
+                  background-color: $white;
+                  border-color: $gray-200;
+                  color: $gray-900;
+                  font-size: $forms--font-size;
+                  padding: ($spacer * 1.6);
+
+                  &:focus {
+                     border-color: $primary;
+                     box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
+                  }
+               }
+
+               .gform_drop_area {
+                  border-color: $primary;
+               }
+
+               .gform_button_select_files {
+                  font-size: $font-size-regular;
+                  font-weight: 400;
+                  padding: ($spacer) ($spacer * 1.5);
+                  text-transform: uppercase;
+               }
+
+               /* ADVANCED FIELDS: LIST FIELDS
+               ---------------------------------------------------------- */
+               // (div) advanced field container - wraps the list field HTML table
+               .ginput_listbody {
+
+                  // (table) List field HTML table structure that contains the list field inputs
+                  table.gfield_list {
+
+                     // Targets the individual HTML table columns (colgroups)
+                     // – useful for specifying sizes or creating alternating-color column styles
+                     colgroup {
+                        col {
+
+                           // (colgroup) odd-numbered column
+                           &.gfield_list_col_odd {}
+
+                           // (colgroup) even-numbered column
+                           &.gfield_list_col_even {}
+
+                           // targeting a specific column (colgroup) by ID – applies just to list 2, column number 1
+                           #gfield_list_2_col1 {}
+                        }
+                     }
+
+                     // Targets the individual HTML table headers
+                     thead {
+                        th {}
+
+                     }
+
+                     // Targets the individual HTML table rows – useful for specifying sizes or creating alternating-color row styles
+                     tbody {
+                        tr {
+
+                           // odd-numbered row
+                           &.gfield_list_row_odd {}
+
+                           // even-numbered row
+                           &.gfield_list_row_even {}
+
+                           // list table cell - Targets the list field HTML table cells
+                           td.gfield_list_cell {}
+                        }
+                     }
+
+                  }
+
+               }
+
+
+               /* CAPTCHA
+                --------------------------------------------------- */
+               // (div) RECAPTCHA container
+               // Third party markup inserted dynamically – contains the ReCaptcha form fields
+               .recaptcha_widget_div {
+                  .recaptcha_area {}
+               }
+
+               // (Div) Really Simple Captcha Option
+               // Wraps the captcha images and form elements
+               .gfield_captcha_container {
+
+                  // (img) captcha image
+                  .gfield_captcha {}
+
+                  .gfield_captcha_input_container {
+
+                     // (input) captcha input field
+                     input {}
+                  }
+               }
+
+            }
+
+            // gfield
+
+            /* not used by GF:
+            ,
+            input[type=range],
+            input[type=date],
+            input[type=datetime-local],
+            input[type=month],
+            ,
+            input[type=search],
+            input[type=time],
+            input[type=week] {}
+            */
+         }
+
+      }
+
+      /* FORM FOOTER SECTION (div)
+      --------------------------------------------------- */
+      // Contains the submit button and admin edit link
+      .gform_footer {
+
+         // submit button (text)
+         input[type=submit] {
+            background-color: $primary;
+            border-radius: 5px;
+            color: choose-contrast-color($primary);
+            float: right;
+            font-family: $base-font;
+            font-size: $button--font-size;
+            font-weight: 400;
+            padding: ($spacer * 1.5) ($spacer * 3);
+            text-transform: uppercase;
+
+            &:hover {
+               background-color: $secondary;
+               color: choose-contrast-color($secondary);
+            }
+
+            &:active {
+               background-color: $green;
+               color: choose-contrast-color($green);
+            }
+
+            &:focus {
+               background-color: $blue;
+               color: choose-contrast-color($blue);
+            }
+         }
+
+         // submit button (image)
+         input[type=image] {}
+
+         br {
+            display: none;
+         }
+      }
+
+
+      /* VALIDATION ERRORS
+      --------------------------------------------------- */
+      // (div) validation error message
+      .validation_error {}
+
+      &.gform_validation_error {
+         .gform_body {
+            .gform_fields {
+
+               // (li) validation – error container. list items containing inputs with invalid values
+               .gfield_error {
+
+                  .gfield_label {}
+
+                  input,
+                  textarea,
+                  select {
+                     &::focus {}
+                  }
+
+                  // (div) validation – error description message
+                  // below inputs with invalid values
+                  .validation_message {}
+               }
+            }
+         }
+      }
+
+   }
+
+   // this is the field that usually says something like `This field is for validation purposes and should be left unchanged.`
+   .gform_validation_container {}
+
+   /* FORM CONFIRMATION
+      --------------------------------------------------- */
+
+   // (div) inline confirmation message - Displays on same page upon successful completion of form
+   .gform_confirmation_message {}
+}
+
+
+.ginput_container_consent {
+
+   // standard checkbox input (checkbox)
+   input[type=checkbox] {
+      +br {
+         display: none;
+      }
+
+      &:focus {
+         border-color: $primary;
+         box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
+
+         ~label {
+            border-color: $primary;
+            box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
+         }
+      }
+   }
+}

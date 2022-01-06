@@ -1,0 +1,28 @@
+/* Sidebar
+---------------------------------------------------------------------------- */
+
+.sidebar {
+	font-size: $sidebar--font-size;
+	line-height: $line-height--medium;
+
+	@media only screen and (min-width: 960px) {
+		float: right;
+		width: 30%;
+	}
+
+	p {
+		margin-bottom: ($spacer * 2);
+	}
+
+	.widget {
+		margin-bottom: ($spacer * 4);
+	}
+
+	.widget-title {
+		a {
+			color: $sidebar__widget-title--font-color;
+			text-decoration: none;
+		}
+	}
+
+}

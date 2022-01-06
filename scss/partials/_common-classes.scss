@@ -1,0 +1,248 @@
+/* Common Classes
+---------------------------------------------------------------------------- */
+
+/* Avatar
+--------------------------------------------- */
+
+.avatar {
+	border-radius: 50%;
+	float: left;
+
+	.author-box &,
+	.alignleft & {
+		margin-right: ($spacer * 2);
+	}
+
+	.alignright & {
+		margin-left: ($spacer * 2);
+	}
+
+	.comment & {
+		margin: 0 ($spacer * 1.5) ($spacer * 2) 0;
+	}
+
+}
+
+
+/* Genesis
+--------------------------------------------- */
+
+.archive-description,
+.author-box {
+	margin-bottom: ($spacer * 4);
+
+	@media only screen and (min-width: 960px) {
+		background-color: $author-box--background-color;
+		padding: ($spacer * 3);
+	}
+}
+
+.after-entry {
+	box-shadow: 0 0 $box-shadow-blur-radius rgba(0, 0, 0, $box-shadow-opacity);
+	margin-bottom: ($spacer * 4);
+	padding: ($spacer * 2) ($spacer * 3);
+
+	@media only screen and (min-width: 960px) {
+		padding: ($spacer * 4) ($spacer * 6);
+	}
+
+	.widget {
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+}
+
+
+.breadcrumb {
+	border-bottom: $border-width $border-style $border-color;
+	font-size: $breadcrumb--font-size;
+	margin-bottom: ($spacer * 4);
+	padding-bottom: $spacer;
+
+	.genesis-title-hidden & {
+		margin-top: ($spacer * 4);
+	}
+}
+
+
+.archive-description p:last-child,
+.author-box p:last-child {
+	margin-bottom: 0;
+}
+
+/* Search Form
+--------------------------------------------- */
+
+.search-form {
+	overflow: hidden;
+
+	.entry-content & {
+		margin-bottom: ($spacer * 4);
+		width: 50%;
+	}
+
+}
+
+input[type="submit"] {
+
+	.search-form &,
+	.post-password-form & {
+		margin-top: $spacer;
+	}
+
+	.widget_search & {
+		border: 0;
+		clip: rect(0, 0, 0, 0);
+		height: 1px;
+		margin: -1px;
+		padding: 0;
+		position: absolute;
+		width: 1px;
+	}
+}
+
+
+/* Skip Links
+---------------------------------------------------------------------------- */
+
+.genesis-skip-link {
+	margin: 0;
+
+	.skip-link-hidden {
+		display: none;
+		visibility: hidden;
+	}
+
+	li {
+		height: 0;
+		list-style: none;
+		width: 0;
+	}
+}
+
+/* Display outline on focus */
+:focus {
+	color: $gray-800;
+	outline: $gray-400 solid 1px;
+}
+
+/* Titles
+--------------------------------------------- */
+
+.archive-description .entry-title,
+.archive-title,
+.author-box-title {
+	font-size: $archive-author-box__entry-title--font-size;
+	font-weight: 600;
+	margin-bottom: $spacer;
+}
+
+.entry-title {
+	font-size: $entry-title--font-size;
+	margin-bottom: $spacer;
+
+	a {
+		color: $sidebar__widget-title--font-color;
+		text-decoration: none;
+
+		&:focus,
+		&:hover {
+			color: $entry-title__link--font-color-hover;
+		}
+	}
+}
+
+
+.widget-title {
+	font-size: $widget-title--font-size;
+	font-weight: 600;
+	margin-bottom: ($spacer * 2);
+}
+
+.genesis-title-hidden {
+	.site-inner {
+		padding-top: 0;
+	}
+}
+
+/* WordPress
+--------------------------------------------- */
+a {
+	&.aligncenter {
+		img {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+
+	&.alignnone {
+		display: inline-block;
+	}
+
+	&.alignleft,
+	&.alignnone,
+	&.alignright {
+		max-width: 100%;
+	}
+}
+
+.alignleft {
+	float: left;
+	text-align: left;
+}
+
+.alignright {
+	float: right;
+	text-align: right;
+}
+
+img.centered,
+.aligncenter,
+.singular-image {
+	display: block;
+	margin: 0 auto ($spacer * 3);
+}
+
+img.alignnone,
+.alignnone {
+	margin-bottom: ($spacer * 1.5);
+}
+
+a.alignleft,
+img.alignleft,
+.wp-caption.alignleft {
+	margin: 0 ($spacer * 2) ($spacer * 2) 0;
+}
+
+a.alignright,
+img.alignright,
+.wp-caption.alignright {
+	margin: 0 0 ($spacer * 2) ($spacer * 2);
+}
+
+figcaption,
+.gallery-caption,
+.wp-caption-text {
+	font-size: $font-size-small;
+	font-weight: 600;
+	margin-top: ($spacer * 0.5);
+	margin-bottom: ($spacer);
+	padding-left: ($spacer);
+	padding-right: ($spacer);
+	text-align: center;
+}
+
+.entry-content {
+	p {
+		&.wp-caption-text {
+			margin-bottom: 0;
+		}
+	}
+
+	.wp-audio-shortcode,
+	.wp-playlist,
+	.wp-video {
+		margin: 0 0 ($spacer * 3);
+	}
+}

@@ -1,0 +1,410 @@
+/* Custom Styles
+-------------------------------------------------- */
+
+/* Buttons
+-------------------------------------------------- */
+body {
+   .site-container {
+
+      /* WordPress Generic Block Buttons */
+      .wp-block-button {
+         .wp-block-button__link {
+            font-family: $base-font;
+            font-size: $button--font-size;
+            font-weight: 400;
+            text-transform: uppercase;
+            padding: 15px 30px;
+
+            strong {
+               font-weight: 400;
+            }
+         }
+      }
+
+      /* WordPress Generic Group buttons */
+      .buttons-small {
+         .wp-block-button {
+            .wp-block-button__link {
+               padding: 10px 15px;
+            }
+         }
+      }
+
+      /* Genesis Buttons */
+      .wp-block-genesis-blocks-gb-button,
+      .gb-block-button {
+         a {
+            font-family: $base-font;
+            font-size: $button--font-size;
+            font-weight: 400;
+            padding: 15px 30px;
+            text-transform: uppercase;
+         }
+      }
+
+
+   }
+
+   .gb-button-size-medium {
+      font-size: $button--font-size;
+   }
+}
+
+
+/* Overflow-X glitch
+-------------------------------------------------- */
+.full-width-content {
+   .site-inner {
+      .entry-content {
+         >.alignfull {
+            max-width: 99vw !important;
+         }
+      }
+   }
+}
+
+
+.wp-block-genesis-blocks-gb-container {
+   &.full-width {
+      margin-left: calc(-100vw / 2 + 100% / 2);
+      margin-right: calc(-100vw / 2 + 100% / 2);
+      max-width: 99vw !important;
+   }
+}
+
+.site-inner {
+   @media only screen and (min-width: $standard-screen-width) {
+      padding: 70px 0 0 0;
+      max-width: none;
+   }
+
+   .content {
+      @media only screen and (min-width: $standard-screen-width) {
+         width: 100%;
+
+         .blog &,
+         .single-post & {
+
+            width: 65%;
+         }
+      }
+   }
+}
+
+/* Wave Overlays
+-------------------------------------------------- */
+.wave-overlay-top {
+
+   .gb-container-content {
+      position: relative;
+
+      &:before {
+         background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxNTBweCIgdmlld0JveD0iMCAwIDEyODAgMTQwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiNmNWY1ZjUiPjxwYXRoIGQ9Ik0xMjgwIDMuNEMxMDUwLjU5IDE4IDEwMTkuNCA4NC44OSA3MzQuNDIgODQuODljLTMyMCAwLTMyMC04NC4zLTY0MC04NC4zQzU5LjQuNTkgMjguMiAxLjYgMCAzLjRWMTQwaDEyODB6IiBmaWxsLW9wYWNpdHk9Ii4zIi8+PHBhdGggZD0iTTAgMjQuMzFjNDMuNDYtNS42OSA5NC41Ni05LjI1IDE1OC40Mi05LjI1IDMyMCAwIDMyMCA4OS4yNCA2NDAgODkuMjQgMjU2LjEzIDAgMzA3LjI4LTU3LjE2IDQ4MS41OC04MFYxNDBIMHoiIGZpbGwtb3BhY2l0eT0iLjUiLz48cGF0aCBkPSJNMTI4MCA1MS43NmMtMjAxIDEyLjQ5LTI0Mi40MyA1My40LTUxMy41OCA1My40LTMyMCAwLTMyMC01Ny02NDAtNTctNDguODUuMDEtOTAuMjEgMS4zNS0xMjYuNDIgMy42VjE0MGgxMjgweiIvPjwvZz48L3N2Zz4=);
+         background-repeat-y: no-repeat;
+         background-size: 100% 150px;
+         content: '';
+         display: block;
+         height: 150px;
+         left: 0;
+         pointer-events: none;
+         position: absolute;
+         right: 0;
+         top: 0;
+         transform: rotateX(180deg);
+         width: 100%;
+         z-index: 2;
+      }
+
+   }
+
+   &.wave-overlay-top-white {
+      .gb-container-content {
+         &:before {
+            background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxNTBweCIgdmlld0JveD0iMCAwIDEyODAgMTQwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiNmZmZmZmYiPjxwYXRoIGQ9Ik0xMjgwIDMuNEMxMDUwLjU5IDE4IDEwMTkuNCA4NC44OSA3MzQuNDIgODQuODljLTMyMCAwLTMyMC04NC4zLTY0MC04NC4zQzU5LjQuNTkgMjguMiAxLjYgMCAzLjRWMTQwaDEyODB6IiBmaWxsLW9wYWNpdHk9Ii4zIi8+PHBhdGggZD0iTTAgMjQuMzFjNDMuNDYtNS42OSA5NC41Ni05LjI1IDE1OC40Mi05LjI1IDMyMCAwIDMyMCA4OS4yNCA2NDAgODkuMjQgMjU2LjEzIDAgMzA3LjI4LTU3LjE2IDQ4MS41OC04MFYxNDBIMHoiIGZpbGwtb3BhY2l0eT0iLjUiLz48cGF0aCBkPSJNMTI4MCA1MS43NmMtMjAxIDEyLjQ5LTI0Mi40MyA1My40LTUxMy41OCA1My40LTMyMCAwLTMyMC01Ny02NDAtNTctNDguODUuMDEtOTAuMjEgMS4zNS0xMjYuNDIgMy42VjE0MGgxMjgweiIvPjwvZz48L3N2Zz4=);
+         }
+      }
+
+   }
+}
+
+.wave-overlay-bottom {
+
+   .gb-container-content {
+      position: relative;
+
+      &:after {
+         background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxNTBweCIgdmlld0JveD0iMCAwIDEyODAgMTQwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiNmNWY1ZjUiPjxwYXRoIGQ9Ik0xMjgwIDMuNEMxMDUwLjU5IDE4IDEwMTkuNCA4NC44OSA3MzQuNDIgODQuODljLTMyMCAwLTMyMC04NC4zLTY0MC04NC4zQzU5LjQuNTkgMjguMiAxLjYgMCAzLjRWMTQwaDEyODB6IiBmaWxsLW9wYWNpdHk9Ii4zIi8+PHBhdGggZD0iTTAgMjQuMzFjNDMuNDYtNS42OSA5NC41Ni05LjI1IDE1OC40Mi05LjI1IDMyMCAwIDMyMCA4OS4yNCA2NDAgODkuMjQgMjU2LjEzIDAgMzA3LjI4LTU3LjE2IDQ4MS41OC04MFYxNDBIMHoiIGZpbGwtb3BhY2l0eT0iLjUiLz48cGF0aCBkPSJNMTI4MCA1MS43NmMtMjAxIDEyLjQ5LTI0Mi40MyA1My40LTUxMy41OCA1My40LTMyMCAwLTMyMC01Ny02NDAtNTctNDguODUuMDEtOTAuMjEgMS4zNS0xMjYuNDIgMy42VjE0MGgxMjgweiIvPjwvZz48L3N2Zz4=);
+         background-repeat-y: no-repeat;
+         background-size: 100% 150px;
+         content: '';
+         display: block;
+         height: 150px;
+         left: 0;
+         pointer-events: none;
+         position: absolute;
+         right: 0;
+         bottom: 0;
+         width: 100%;
+         z-index: 2;
+      }
+
+   }
+
+   &.wave-overlay-bottom-white {
+      .gb-container-content {
+         &:after {
+            background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxNTBweCIgdmlld0JveD0iMCAwIDEyODAgMTQwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiNmZmZmZmYiPjxwYXRoIGQ9Ik0xMjgwIDMuNEMxMDUwLjU5IDE4IDEwMTkuNCA4NC44OSA3MzQuNDIgODQuODljLTMyMCAwLTMyMC04NC4zLTY0MC04NC4zQzU5LjQuNTkgMjguMiAxLjYgMCAzLjRWMTQwaDEyODB6IiBmaWxsLW9wYWNpdHk9Ii4zIi8+PHBhdGggZD0iTTAgMjQuMzFjNDMuNDYtNS42OSA5NC41Ni05LjI1IDE1OC40Mi05LjI1IDMyMCAwIDMyMCA4OS4yNCA2NDAgODkuMjQgMjU2LjEzIDAgMzA3LjI4LTU3LjE2IDQ4MS41OC04MFYxNDBIMHoiIGZpbGwtb3BhY2l0eT0iLjUiLz48cGF0aCBkPSJNMTI4MCA1MS43NmMtMjAxIDEyLjQ5LTI0Mi40MyA1My40LTUxMy41OCA1My40LTMyMCAwLTMyMC01Ny02NDAtNTctNDguODUuMDEtOTAuMjEgMS4zNS0xMjYuNDIgMy42VjE0MGgxMjgweiIvPjwvZz48L3N2Zz4=);
+         }
+      }
+
+   }
+}
+
+
+/* Utility
+-------------------------------------------------- */
+.d-flex {
+   display: flex !important;
+}
+
+.flex-stretch {
+   .gb-block-layout-column-inner {
+      align-content: center;
+      align-items: stretch;
+      display: flex;
+      flex-flow: column;
+      height: 100%;
+      justify-content: space-between;
+   }
+}
+
+.flex-column {
+   .gb-block-layout-column-inner {
+      display: flex;
+      align-items: stretch;
+      align-content: center;
+      justify-content: center;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      height: 100%;
+   }
+}
+
+
+/* Page Title
+ ------------------------------------- */
+.page-title {
+   .gb-block-layout-column-inner {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      height: 100%;
+   }
+
+   h2 {
+      font-size: 48px;
+      line-height: $line-height--medium;
+      margin: 0;
+      padding: 0;
+   }
+}
+
+
+
+
+/* MISC
+ ------------------------------------- */
+.wp-block-media-text {
+   &.p-0 {
+      .wp-block-media-text__content {
+         padding: 0
+      }
+   }
+}
+
+
+
+/* Sticky Footer
+--------------------------------------------- */
+.site-container {
+   display: flex;
+   flex-direction: column;
+   min-height: 98vh;
+}
+
+.site-inner {
+   flex: 1;
+   width: 100%;
+}
+
+
+/* Policies
+--------------------------------------------- */
+.privacy-policy {
+   ol {
+      &.legal {
+         counter-reset: item;
+         /* initialise a counter named 'item', initial value is zero */
+         list-style-position: outside;
+         list-style-type: none;
+         margin: 1rem;
+         padding: 1rem;
+
+         >li {
+            display: block;
+            margin: 0 0 2rem 0;
+            padding: 0;
+            position: relative;
+
+            &:first-line {
+               color: $black;
+               font-size: 18px;
+               text-transform: uppercase;
+               font-family: $heading-font;
+               font-weight: 500;
+            }
+
+            &:before {
+               /* level 1 */
+               color: $black;
+               content: counter(item) ". ";
+               counter-increment: item;
+               /* increment item by 1 */
+               font-weight: 500;
+               font-family: $heading-font;
+               font-size: 18px;
+               line-height: $line-height--small;
+               margin-right: 100%;
+               position: absolute;
+               right: 0.5rem; // space btw number and text.
+            }
+
+            ol {
+               /* level 1.1 */
+               counter-reset: item;
+               list-style-position: outside;
+               list-style-type: none;
+               margin: 0 0 1rem 2.75rem;
+               padding: 0;
+
+               >li {
+                  display: block;
+                  line-height: $line-height--medium-small;
+                  margin: 0 0 0.5rem 0;
+                  padding: 0;
+                  position: relative;
+                  text-transform: none;
+
+                  &:before {
+                     content: counters(item, ".", decimal) ". ";
+                     /* Combines the values of all instances of the section counter, separated by a period */
+                     counter-increment: item;
+                     /* increment item by 1 */
+                     margin-right: 100%;
+                     font-size: 0.9rem;
+                     position: absolute;
+                     right: 0.5rem; // space btw number and text.
+                  }
+
+                  ol {
+                     /* level 1.1.1 */
+                     counter-reset: alpha;
+                     line-height: $line-height--medium-small;
+                     list-style-position: outside;
+                     margin: 0 0 1rem 1.5rem;
+                     padding: 0;
+
+                     >li {
+                        display: block;
+                        position: relative;
+                        margin: 0;
+                        padding: 0;
+
+                        &:before {
+                           /* level 1.1.a */
+                           content: "("counter(alpha, lower-alpha) ") ";
+                           counter-increment: alpha;
+                           /* increment item by 1 */
+                           font-size: 0.9em;
+                           margin-right: 100%;
+                           position: absolute;
+                           right: 0.5rem; // space btw number and text.
+                        }
+                     }
+
+                     &.lroman {
+                        >li {
+                           &:before {
+                              content: "("counter(alpha, lower-roman) ") ";
+                           }
+                        }
+                     }
+
+                     &.decimal {
+                        counter-reset: item;
+
+                        >li {
+                           &:before {
+                              content: counters(item, ".", decimal) ". ";
+                              /* Combines the values of all instances of the section counter, separated by a period */
+                              counter-increment: item;
+                           }
+                        }
+
+                     }
+                  }
+               }
+            }
+
+            dt {
+               color: $black;
+               font-weight: 700;
+               margin-top: 1rem;
+            }
+         }
+
+         h2 {
+            font-size: 30px;
+            margin: 0 0 5px 0;
+         }
+
+         h3 {
+            font-size: 22px;
+            margin: 0 0 5px 0;
+         }
+
+         p {
+            margin: 0 0 1rem 0;
+         }
+
+         a {
+            font-weight: 700;
+         }
+      }
+   }
+
+   .gb-block-accordion {
+
+      .gb-accordion-title,
+      .gb-accordion-text {
+         background-color: $white;
+      }
+   }
+}
+
+
+/* Custom Social Icons
+ ------------------------------------- */
+.simple-social-icons {
+   img.social {
+      padding: 3px;
+   }
+}
+
+/* Youtube videos
+ ------------------------------------- */
+.youtube-border,
+.home-youtube-border {
+   background: $primary;
+   border: 15px solid $white;
+}

@@ -1,0 +1,88 @@
+// --------------------------------------------------------------------------
+// BOILERPLATE
+// --------------------------------------------------------------------------
+// only used on the Boilerplate/Style Guide page - mostly for colour swatches
+
+/* Colour Swatches for Style Guide
+ ----------------------------------------------------------------------------- */
+/*! These classes are really only used on the boilerplate page */
+
+.palette {
+   color: $black;
+   display: flex;
+   flex-direction: column;
+
+   @at-root #{&}__tone {
+      align: {
+         content: center;
+         items: stretch;
+      }
+
+      display: flex;
+
+      flex: {
+         direction: row;
+         grow: 0;
+         wrap: nowrap;
+      }
+
+      justify-content: space-between;
+      min-height: 2.8rem;
+      padding: $spacer;
+   }
+
+   &.column {
+
+      .palette__description,
+      .palette__contrast {
+         // flex-direction: column;
+      }
+
+   }
+
+   @at-root #{&}__description {
+      align-content: center;
+      display: flex;
+      // flex-basis: 75%;
+      flex-grow: 3;
+      justify-content: space-between;
+   }
+
+   @at-root #{&}__label {
+      align-self: flex-start;
+   }
+
+   @at-root #{&}__value {
+      align-self: center;
+   }
+
+   @at-root #{&}__contrast {
+      align-self: center;
+      display: flex;
+      flex-basis: 100%;
+      justify-content: space-between;
+      text-align: right;
+      flex-shrink: 5;
+      flex-basis: 15%;
+
+      @at-root #{&}--white {
+         color: $white;
+      }
+
+      @at-root #{&}--black {
+         color: $black;
+      }
+   }
+}
+
+.wcag {
+   @at-root #{&}--aaa {
+      font-weight: 700;
+      text-decoration: underline;
+   }
+
+   @at-root #{&}--failed {
+      font-size: $font-size-small;
+      text-decoration: line-through;
+   }
+}

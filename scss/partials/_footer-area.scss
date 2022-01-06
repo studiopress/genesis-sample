@@ -1,0 +1,56 @@
+/* Footer Widgets
+---------------------------------------------------------------------------- */
+
+.footer-widgets {
+	background-color: $footer-widgets--background-color;
+	border-top: $border-width $border-style $border-color;
+	clear: both;
+	padding: ($spacer * 6) 0;
+
+	.wrap {
+		margin-left: auto;
+		margin-right: auto;
+
+		@media only screen and (min-width: 960px) {
+			max-width: 1140px;
+		}
+	}
+
+	.widget:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.footer-widget-area {
+	margin-bottom: ($spacer * 4);
+	padding-left: ($spacer * 3);
+	padding-right: ($spacer * 3);
+
+	@media only screen and (min-width: 960px) {
+		float: left;
+		margin-bottom: 0;
+		width: calc(100% / 3);
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+
+
+/* Site Footer
+---------------------------------------------------------------------------- */
+
+.site-footer {
+	background-color: $site-footer--background-color;
+	border-top: $border-width $border-style $border-color;
+	font-size: $site-footer--font-size;
+	line-height: $line-height--medium;
+	padding: ($spacer * 3);
+	text-align: center;
+
+	p {
+		margin-bottom: 0;
+	}
+}
