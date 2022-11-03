@@ -24,14 +24,14 @@ function studiopress_maybe_create_wpforms_form() { // phpcs:ignore -- studiopres
 		return;
 	}
 
-	// Form creation requires WPForms 1.5.2 or higher.
+	// Form creation requires WPForms 1.7.6 or higher.
 	// If the site already as an earlier version of the plugin installed, don't create a form.
 	// Plugins do not get upgraded during one-click theme setup.
 	if ( function_exists( 'get_plugins' ) ) {
 		$plugin_data          = get_plugins();
 		$wpforms_lite_version = isset( $plugin_data['wpforms-lite/wpforms.php']['Version'] ) ? $plugin_data['wpforms-lite/wpforms.php']['Version'] : '';
 
-		if ( version_compare( $wpforms_lite_version, '1.5.2', '<' ) ) {
+		if ( version_compare( $wpforms_lite_version, '1.7.6', '<' ) ) {
 			return;
 		}
 	}
@@ -50,12 +50,12 @@ function studiopress_maybe_create_wpforms_form() { // phpcs:ignore -- studiopres
 		delete_option( 'genesis_onboarding_wpforms_id' );
 	}
 
-	// Creates a form using the WPForms 'contact' template.
+	// Creates a form using the WPForms 'simple-contact-form-template' template.
 	$new_form_id = wpforms()->form->add(
 		esc_html__( 'Simple Contact Form', 'genesis-sample' ),
 		[],
 		[
-			'template' => 'contact',
+			'template' => 'simple-contact-form-template',
 			'builder'  => false,
 		]
 	);
