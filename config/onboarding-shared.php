@@ -21,16 +21,6 @@ return [
 			'public_url' => 'https://wordpress.org/plugins/genesis-blocks/',
 		],
 		[
-			'name'       => __( 'Simple Social Icons', 'genesis-sample' ),
-			'slug'       => 'simple-social-icons/simple-social-icons.php',
-			'public_url' => 'https://wordpress.org/plugins/simple-social-icons/',
-		],
-		[
-			'name'       => __( 'Genesis eNews Extended (Third Party)', 'genesis-sample' ),
-			'slug'       => 'genesis-enews-extended/plugin.php',
-			'public_url' => 'https://wordpress.org/plugins/genesis-enews-extended/',
-		],
-		[
 			'name'       => __( 'WPForms Lite (Third Party)', 'genesis-sample' ),
 			'slug'       => 'wpforms-lite/wpforms.php',
 			'public_url' => 'https://wordpress.org/plugins/wpforms-lite/',
