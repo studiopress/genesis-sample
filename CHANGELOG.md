@@ -1,5 +1,17 @@
 # Genesis Sample Theme Changelog
 
+## [3.4.2] - 2021-12-19
+
+### Changed
+* Update developer dependencies. ([GitHub version](https://github.com/studiopress/genesis-sample/) only.)
+
+### Fixed
+* Add missing comma to WooCommerce styles.
+* WP Forms one-click-theme-setup contact form creation.
+
+### Removed
+* Simple Social Icons and Genesis eNews extended from one-click-theme-setup.
+
 ## [3.4.1] - 2021-03-25
 
 ### Added
@@ -17,9 +29,10 @@
 ## [3.4.0] - 2020-10-20
 Genesis Sample 3.4.0 requires the Genesis Blocks plugin.
 
-* Changed: Install Genesis Blocks instead of Atomic Blocks during one-click theme setup.
-* Changed: Updated one-click-theme-setup content to use Genesis Blocks.
-* Changed: Updated Editor and front-end styles for Genesis Blocks compatibility.
+### Changed
+* Install Genesis Blocks instead of Atomic Blocks during one-click theme setup.
+* Updated one-click-theme-setup content to use Genesis Blocks.
+* Updated Editor and front-end styles for Genesis Blocks compatibility.
 
 ## [3.3.1] - 2020-08-17
 
