@@ -18,7 +18,7 @@
 		"postcss": "^8.4.12",
 		"postcss-cli": "^8.2.0",
 		"pretty-bytes": "^5.4.1",
-		"recursive-readdir": "^2.2.2",
+		"recursive-readdir": "^2.2.3",
 		"stylelint": "^13.8.0"
 	},
 	"scripts": {
