@@ -1,6 +1,6 @@
 # Genesis Sample Theme Changelog
 
-## [3.4.2] - 2021-12-19
+## [3.4.2] - 2022-12-19
 
 ### Changed
 * Update developer dependencies. ([GitHub version](https://github.com/studiopress/genesis-sample/) only.)
