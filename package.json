@@ -15,11 +15,11 @@
 		"eslint-config-wordpress": "^2.0.0",
 		"node-wp-i18n": "^1.2.3",
 		"npm-run-all": "^4.1.5",
-		"postcss": "^8.1.6",
+		"postcss": "^8.4.12",
 		"postcss-cli": "^8.2.0",
 		"pretty-bytes": "^5.4.1",
-		"recursive-readdir": "^2.2.2",
-		"stylelint": "^13.7.2"
+		"recursive-readdir": "^2.2.3",
+		"stylelint": "^13.8.0"
 	},
 	"scripts": {
 		"autoprefixer": "postcss style.css lib/**/*.css --use autoprefixer --replace --no-map --verbose",
@@ -48,7 +48,7 @@
 		"description": "The sample child theme for the Genesis Framework.",
 		"author": "StudioPress",
 		"authoruri": "https://www.studiopress.com/",
-		"version": "3.4.1",
+		"version": "3.4.2",
 		"tags": "one-column, two-columns, left-sidebar, right-sidebar, accessibility-ready, custom-colors, custom-logo, custom-menu, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready",
 		"license": "GPL-2.0-or-later",
 		"licenseuri": "https://www.gnu.org/licenses/gpl-2.0.html",
