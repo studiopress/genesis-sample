@@ -1,0 +1,4 @@
+#team-gen has primary ownership of this repository and is responsible for PR review and approval
+.github/CODEOWNERS @studiopress/team-gen
+
+#jira: GF is where issues related to this repository should be ticketed
