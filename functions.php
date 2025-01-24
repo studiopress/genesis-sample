@@ -56,9 +56,19 @@ function genesis_child_gutenberg_support() { // phpcs:ignore WordPress.NamingCon
 	require_once get_stylesheet_directory() . '/lib/gutenberg/init.php';
 }
 
-// Registers the responsive menus.
-if ( function_exists( 'genesis_register_responsive_menus' ) ) {
-	genesis_register_responsive_menus( genesis_get_config( 'responsive-menus' ) );
+add_action( 'after_setup_theme', 'genesis_sample_register_responsive_menus' );
+/**
+ * Registers the responsive menus.
+ *
+ * @since 3.4.3 Moved from file root to prevent notices about using translations
+ * before the after_setup_theme hook under WP 6.7+.
+ */
+function genesis_sample_register_responsive_menus() {
+
+	if ( function_exists( 'genesis_register_responsive_menus' ) ) {
+		genesis_register_responsive_menus( genesis_get_config( 'responsive-menus' ) );
+	}
+
 }
 
 add_action( 'wp_enqueue_scripts', 'genesis_sample_enqueue_scripts_styles' );
