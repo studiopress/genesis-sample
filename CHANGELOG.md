@@ -1,5 +1,10 @@
 # Genesis Sample Theme Changelog
 
+## [3.4.3] - 2025-03-19
+
+### Fixed
+* Prevent PHP notices about using translations before the after_setup_theme hook under WP 6.7+ by [deferring registration of responsive menus](https://github.com/studiopress/genesis-sample/pull/412/).
+
 ## [3.4.2] - 2022-12-19
 
 ### Changed
