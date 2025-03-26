@@ -53,6 +53,6 @@ function genesis_sample_color_brightness( $color, $change ) {
 	$green = max( 0, min( 255, $green + $change ) );
 	$blue  = max( 0, min( 255, $blue + $change ) );
 
-	return '#' . dechex( $red ) . dechex( $green ) . dechex( $blue );
+	return sprintf( '#%02x%02x%02x', $red, $green, $blue );
 
 }
