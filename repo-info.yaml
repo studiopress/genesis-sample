@@ -10,6 +10,10 @@ spec:
         reason: Please see ASKSEC ticket
         tickets:
           - https://wpengine.atlassian.net/servicedesk/customer/portal/1031/ASKSEC-8945
+      dependabotConfigPresent:
+        reason: Please see ASKSEC ticket
+        tickets:
+          - https://wpengine.atlassian.net/servicedesk/customer/portal/1031/ASKSEC-8945
       dependabotSecurityUpdatesEnabled:
         reason: Please see ASKSEC ticket
         tickets:
