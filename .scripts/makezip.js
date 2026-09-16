@@ -34,6 +34,7 @@ const excludes = [
 	"package-lock.json",
 	"package.json",
 	"phpcs.xml.dist",
+	"repo-info.yaml",
 	"vendor"
 ];
 

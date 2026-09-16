@@ -1,0 +1,33 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: genesis-sample
+spec:
+  type: repository
+  owner: team-gen
+  engineeringExcellence:
+    exemptedChecks:
+      dependabotAutomationPresent:
+        reason: Please see ASKSEC ticket
+        tickets:
+          - https://wpengine.atlassian.net/servicedesk/customer/portal/1031/ASKSEC-8945
+      dependabotSecurityUpdatesEnabled:
+        reason: Please see ASKSEC ticket
+        tickets:
+          - https://wpengine.atlassian.net/servicedesk/customer/portal/1031/ASKSEC-8945
+      dependabotAlertsEnabled:
+        reason: Please see ASKSEC ticket
+        tickets:
+          - https://wpengine.atlassian.net/servicedesk/customer/portal/1031/ASKSEC-8945
+      sonarQubeConfigPresent:
+        reason: Please see ASKSEC ticket
+        tickets:
+          - https://wpengine.atlassian.net/servicedesk/customer/portal/1031/ASKSEC-8945
+      sonarQubeStatusCheckRequired:
+        reason: Please see ASKSEC ticket
+        tickets:
+          - https://wpengine.atlassian.net/servicedesk/customer/portal/1031/ASKSEC-8945
+      branchProtectionRequiresStatusChecks:
+        reason: No checks performed in this repo (exempted from SonarQube).
+        tickets:
+          - https://wpengine.atlassian.net/servicedesk/customer/portal/1031/ASKSEC-8945
