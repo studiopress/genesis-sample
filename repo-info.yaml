@@ -4,7 +4,6 @@ metadata:
   name: genesis-sample
 spec:
   type: repository
-  owner: team-gen
   engineeringExcellence:
     exemptedChecks:
       dependabotAutomationPresent:
